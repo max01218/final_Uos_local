@@ -1,0 +1,75 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/119512795",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1014265857"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#119512795",
+  "code": "6C43.70",
+  "source": "http://id.who.int/icd/entity/119512795",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/119512795/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1395283456",
+        "http://id.who.int/icd/release/11/2024-01/mms/663160065",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/119512795/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/398872858",
+        "http://id.who.int/icd/release/11/2024-01/mms/912365674",
+        "http://id.who.int/icd/release/11/2024-01/mms/1120716949"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Opioid-induced mood disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Opioid-induced mood disorder is characterised by mood symptoms (e.g., depressed or elevated mood, decreased engagement in pleasurable activities, increased or decreased energy levels) that develop during or soon after intoxication with or withdrawal from opioids. The intensity or duration of the symptoms is substantially in excess of mood disturbances that are characteristic of Opioid intoxication or Opioid withdrawal. The amount and duration of opioid use must be capable of producing mood symptoms. The symptoms are not better explained by a primary mental disorder (e.g., a Depressive disorder, a Bipolar disorder, Schizoaffective disorder), as might be the case if the mood symptoms preceded the onset of the opioid use, if the symptoms persist for a substantial period of time after cessation of the opioid use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with mood symptoms (e.g., a history of prior episodes not associated with opioid use)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid-induced mood disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid-induced mood disorder, with depressive symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/873782784"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid-induced mood disorder, with manic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/562127288"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid-induced mood disorder, with mixed depressive and manic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/194952934"
+    }
+  ]
+}

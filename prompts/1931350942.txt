@@ -1,0 +1,26 @@
+Disorder Name: Bipolar type I disorder, current episode hypomanic
+Disorder Code: 1931350942
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Bipolar type I disorder, current episode hypomanic is diagnosed when the definitional requirements for Bipolar type I disorder have been met and the current episode is hypomanic. A hypomanic episode is a persistent mood state lasting at least several days characterised by mild elevation of mood or increased irritability and increased activity or a subjective experience of increased energy, accompanied by other characteristic symptoms such as rapid speech, rapid or racing thoughts, increased self-esteem, an increase in sexual drive or sociability, decreased need for sleep, distractibility, or impulsive or reckless behaviour. The symptoms are not severe enough to cause marked impairment in occupational functioning or in usual social activities or relationships with others, does not necessitate hospitalization, and there are no accompanying delusions or hallucinations.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Bipolar type I disorder, current episode hypomanic is diagnosed when the definitional requirements for Bipolar type I disorder have been met and the current episode is hypomanic. A hypomanic episode is a persistent mood state lasting at least several days characterised by mild elevation of mood or increased irritability and increased activity or a subjective experience of increased energy, accompanied by other characteristic symptoms such as rapid speech, rapid or racing thoughts, increased self-esteem, an increase in sexual drive or sociability, decreased need for sleep, distractibility, or impulsive or reckless behaviour. The symptoms are not severe enough to cause marked impairment in occupational functioning or in usual social activities or relationships with others, does not necessitate hospitalization, and there are no accompanying delusions or hallucinations.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

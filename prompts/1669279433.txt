@@ -1,0 +1,32 @@
+Disorder Name: Single episode depressive disorder, severe, without psychotic symptoms
+Disorder Code: 1669279433
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Single episode depressive disorder, severe, without psychotic symptoms is diagnosed when the definitional requirements for Single episode depressive disorder are met and the current episode is severe and there are no delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a severe depressive episode, many or most symptoms of a Depressive Episode are present to a marked degree, or a smaller number of symptoms are present and manifest to an intense degree. The individual has serious difficulty continuing to function in most domains (personal, family, social, educational, occupational, or other important domains).
+
+Inclusions: Major depression single episode without psychotic symptoms; Vital depression single episode without psychotic symptoms
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Single episode depressive disorder, severe, without psychotic symptoms is diagnosed when the definitional requirements for Single episode depressive disorder are met and the current episode is severe and there are no delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a severe depressive episode, many or most symptoms of a Depressive Episode are present to a marked degree, or a smaller number of symptoms are present and manifest to an intense degree. The individual has serious difficulty continuing to function in most domains (personal, family, social, educational, occupational, or other important domains).
+
+Included Manifestations:
+• Major depression single episode without psychotic symptoms
+• Vital depression single episode without psychotic symptoms
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

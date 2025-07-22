@@ -1,0 +1,57 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/719650647",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1699574100"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#719650647",
+  "code": "6C4A.20",
+  "source": "http://id.who.int/icd/entity/719650647",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/719650647/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1957424191",
+        "http://id.who.int/icd/release/11/2024-01/mms/441538"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Nicotine dependence, current use"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Current nicotine dependence with nicotine use within the past month."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of nicotine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1356720300",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1356720300"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of nicotine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/299901355",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/299901355"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Nicotine dependence, current use"
+      }
+    }
+  ]
+}

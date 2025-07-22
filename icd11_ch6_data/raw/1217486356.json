@@ -1,0 +1,136 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1217486356",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1676588433"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1217486356",
+  "code": "6C40.5",
+  "source": "http://id.who.int/icd/entity/1217486356",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1217486356/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1339202943",
+        "http://id.who.int/icd/release/11/2024-01/mms/998231424"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1217486356/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/766814084",
+        "http://id.who.int/icd/release/11/2024-01/mms/714690795",
+        "http://id.who.int/icd/release/11/2024-01/mms/1580466198"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Alcohol-induced delirium"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Alcohol-induced delirium is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or withdrawal or during the use of alcohol. The amount and duration of alcohol use must be capable of producing delirium. Specific features of alcohol-induced delirium may include impaired consciousness with disorientation, vivid hallucinations and illusions, insomnia, delusions, agitation, disturbances of attention, and accompanying tremor and physiological symptoms of alcohol withdrawal. In some cases of alcohol withdrawal, the withdrawal state may progress to a very severe form of Alcohol-induced delirium. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from a different substance, or by another health condition that is not classified under Mental, behavioural and neurodevelopmental disorders."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium tremens (alcohol-induced)"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium induced by alcohol withdrawal"
+      }
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol-induced delirium"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "alcohol delirium"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "alcohol withdrawal induced delirium tremens"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "alcohol withdrawal with delirium"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "delirium tremens"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium induced by alcohol withdrawal"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute alcohol delirium"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "alcohol delirium tremens"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium tremens (alcohol-induced)"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "alcohol withdrawal state with delirium"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "DTS - [delirium tremens]"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "alcohol withdrawal syndrome with delirium"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "alcoholic psychosis with delirium tremens"
+      }
+    }
+  ]
+}

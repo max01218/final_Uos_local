@@ -1,0 +1,59 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1205760590",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1412387537"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1205760590",
+  "code": "6B85",
+  "source": "http://id.who.int/icd/entity/1205760590",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Rumination-regurgitation disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Rumination-regurgitation disorder is characterised by the intentional and repeated bringing up of previously swallowed food back to the mouth (i.e., regurgitation), which may be re-chewed and re-swallowed (i.e. rumination), or may be deliberately spat out (but not as in vomiting). The regurgitation behaviour is frequent (at least several times per week) and sustained over a period of at least several weeks. The regurgitation behaviour is not fully accounted for by another medical condition that directly causes regurgitation (e.g., oesophageal strictures or neuromuscular disorders affecting oesophageal functioning) or causes nausea or vomiting (e.g. pyloric stenosis). Rumination-regurgitation disorder should only be diagnosed in individuals who have reached a developmental age of at least 2 years."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Adult rumination syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/55732315",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/55732315"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Nausea or vomiting"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/677319549",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/677319549"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Rumination-regurgitation disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Regurgitation disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1094492148"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Rumination disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/879747857"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+Disorder Name: Disorders due to use of hallucinogens
+Disorder Code: 1967909777
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of hallucinogens are characterised by the pattern and consequences of hallucinogen use. Several thousand compounds have hallucinogenic properties, many of which are found in plants (e.g., mescaline) and fungi (e.g., psilocybin) or are chemically synthesized (e.g., lysergic acid diethylamide [LSD]). These compounds have primarily hallucinogenic properties, but some may also be stimulants. Much of the morbidity associated with these compounds arises from the acute effects related to Hallucinogen Intoxication. Hallucinogen Dependence is rare and Hallucinogen Withdrawal is not described. Among the mental disorders related to hallucinogen use, Hallucinogen-Induced Psychotic Disorder is the most frequently seen, although worldwide it is still fairly uncommon.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of hallucinogens are characterised by the pattern and consequences of hallucinogen use. Several thousand compounds have hallucinogenic properties, many of which are found in plants (e.g., mescaline) and fungi (e.g., psilocybin) or are chemically synthesized (e.g., lysergic acid diethylamide [LSD]). These compounds have primarily hallucinogenic properties, but some may also be stimulants. Much of the morbidity associated with these compounds arises from the acute effects related to Hallucinogen Intoxication. Hallucinogen Dependence is rare and Hallucinogen Withdrawal is not described. Among the mental disorders related to hallucinogen use, Hallucinogen-Induced Psychotic Disorder is the most frequently seen, although worldwide it is still fairly uncommon.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

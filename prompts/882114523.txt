@@ -1,0 +1,26 @@
+Disorder Name: Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium
+Disorder Code: 882114523
+Code Range: 6E20-6E2Z
+Class Kind: block
+
+Standard Definition:
+Syndromes associated with pregnancy or the puerperium (commencing within about 6 weeks after delivery) that involve significant mental and behavioural features. If the symptoms meet the diagnostic requirements for a specific mental disorder, that diagnosis should also be assigned.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Syndromes associated with pregnancy or the puerperium (commencing within about 6 weeks after delivery) that involve significant mental and behavioural features. If the symptoms meet the diagnostic requirements for a specific mental disorder, that diagnosis should also be assigned.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

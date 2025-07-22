@@ -1,0 +1,39 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/306103450",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/263852475"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/555272190",
+    "http://id.who.int/icd/release/11/2024-01/mms/544507568",
+    "http://id.who.int/icd/release/11/2024-01/mms/306103450/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#306103450",
+  "code": "6B80.0",
+  "source": "http://id.who.int/icd/entity/306103450",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/306103450/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1381875066",
+        "http://id.who.int/icd/release/11/2024-01/mms/133673893",
+        "http://id.who.int/icd/release/11/2024-01/mms/480150735",
+        "http://id.who.int/icd/release/11/2024-01/mms/286779656",
+        "http://id.who.int/icd/release/11/2024-01/mms/1153296343"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Anorexia Nervosa with significantly low body weight"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Anorexia Nervosa with significantly low body weight meets all definitional requirements for Anorexia Nervosa, with BMI between 18.5 kg/m2 and 14.0 kg/m² for adults or between the fifth percentile and the 0.3 percentile for BMI-for-age in children and adolescents."
+  }
+}

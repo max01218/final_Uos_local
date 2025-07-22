@@ -1,0 +1,69 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1870346724",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1414319298"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1870346724",
+  "code": "6C4G.3",
+  "source": "http://id.who.int/icd/entity/1870346724",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1870346724/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1870346724/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/272358857",
+        "http://id.who.int/icd/release/11/2024-01/mms/341458101",
+        "http://id.who.int/icd/release/11/2024-01/mms/2143971168"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Intoxication due to unknown or unspecified psychoactive substance"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Intoxication due to unknown or unspecified psychoactive substance is a transient condition that develops during or shortly after the administration of an unknown or unspecified psychoactive substance that is characterised by disturbances in level of consciousness, cognition, perception, affect or behaviour, or other psychophysiological functions and responses. This diagnosis should be made only when there is strong evidence that an unidentified substance has been taken and the features cannot be accounted for by another disorder or disease."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Intoxication due to unknown or unspecified psychoactive substance"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "psychoactive substance abuse"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "trance and possession disorders in psychoactive substance intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "drug intoxication NOS"
+      }
+    }
+  ]
+}

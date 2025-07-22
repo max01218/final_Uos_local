@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1995589534",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/804833492"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1995589534",
+  "code": "6C42.6",
+  "source": "http://id.who.int/icd/entity/1995589534",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1995589534/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/508603587",
+        "http://id.who.int/icd/release/11/2024-01/mms/397276103"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1995589534/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/912934263",
+        "http://id.who.int/icd/release/11/2024-01/mms/1055626783",
+        "http://id.who.int/icd/release/11/2024-01/mms/686500513"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Synthetic cannabinoid-induced psychotic disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Synthetic cannabinoid-induced psychotic disorder is characterised by psychotic symptoms (e.g., delusions, hallucinations, disorganised thinking, grossly disorganised behaviour) that develop during or soon after intoxication with or withdrawal from synthetic cannabinoids. The intensity or duration of the symptoms is substantially in excess of psychotic-like disturbances of perception, cognition, or behaviour that are characteristic of Synthetic cannabinoid intoxication or Synthetic cannabinoid withdrawal. The amount and duration of synthetic cannabinoid use must be capable of producing psychotic symptoms. The symptoms are not better explained by a primary mental disorder (e.g., Schizophrenia, a Mood disorder with psychotic symptoms), as might be the case if the psychotic symptoms preceded the onset of the synthetic cannabinoid use, if the symptoms persist for a substantial period of time after cessation of the synthetic cannabinoid use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with psychotic symptoms (e.g., a history of prior episodes not associated with synthetic cannabinoid use)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cannabinoid-induced psychotic disorder"
+      }
+    }
+  ]
+}

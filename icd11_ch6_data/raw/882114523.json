@@ -1,0 +1,36 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/882114523",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1124422593",
+    "http://id.who.int/icd/release/11/2024-01/mms/380591392",
+    "http://id.who.int/icd/release/11/2024-01/mms/882114523/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#882114523",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/882114523",
+  "classKind": "block",
+  "blockId": "BlockL1-6E2",
+  "codeRange": "6E20-6E2Z",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Psychological disorder related to obstetric fistula"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/464703932",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2088138730/other"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Syndromes associated with pregnancy or the puerperium (commencing within about 6 weeks after delivery) that involve significant mental and behavioural features. If the symptoms meet the diagnostic requirements for a specific mental disorder, that diagnosis should also be assigned."
+  }
+}

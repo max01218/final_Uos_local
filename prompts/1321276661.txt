@@ -1,0 +1,26 @@
+Disorder Name: Obsessive-compulsive or related disorders
+Disorder Code: 1321276661
+Code Range: 6B20-6B2Z
+Class Kind: block
+
+Standard Definition:
+Obsessive-compulsive and related disorders is a group of disorders characterised by repetitive thoughts and behaviours that are believed to share similarities in aetiology and key diagnostic validators. Cognitive phenomena such as obsessions, intrusive thoughts and preoccupations are central to a subset of these conditions (i.e., obsessive-compulsive disorder, body dysmorphic disorder, hypochondriasis, and olfactory reference disorder) and are accompanied by related repetitive behaviours. Hoarding Disorder is not associated with intrusive unwanted thoughts but rather is characterised by a compulsive need to accumulate possessions and distress related to discarding them. Also included in the grouping are body-focused repetitive behaviour disorders, which are primarily characterised by recurrent and habitual actions directed at the integument (e.g., hair-pulling, skin-picking) and lack a prominent cognitive aspect. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Obsessive-compulsive and related disorders is a group of disorders characterised by repetitive thoughts and behaviours that are believed to share similarities in aetiology and key diagnostic validators. Cognitive phenomena such as obsessions, intrusive thoughts and preoccupations are central to a subset of these conditions (i.e., obsessive-compulsive disorder, body dysmorphic disorder, hypochondriasis, and olfactory reference disorder) and are accompanied by related repetitive behaviours. Hoarding Disorder is not associated with intrusive unwanted thoughts but rather is characterised by a compulsive need to accumulate possessions and distress related to discarding them. Also included in the grouping are body-focused repetitive behaviour disorders, which are primarily characterised by recurrent and habitual actions directed at the integument (e.g., hair-pulling, skin-picking) and lack a prominent cognitive aspect. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

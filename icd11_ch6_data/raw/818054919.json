@@ -1,0 +1,268 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/818054919",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1456478153"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#818054919",
+  "code": "6A60.5",
+  "source": "http://id.who.int/icd/entity/818054919",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/818054919/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/496273089"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder, current episode depressive, moderate, with psychotic symptoms diagnosed when the definitional requirements for Bipolar type I disorder have been met and the current episode is depressive at a moderate level of severity and there are delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a moderate depressive episode, several symptoms of a depressive episode are present to a marked degree, or a large number of depressive symptoms of lesser severity are present overall. The individual typically has considerable difficulty functioning in multiple domains (personal, family, social, educational, occupational, or other important domains)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bipolar type I disorder, current episode depressive, moderate with psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/281918882"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/513181438"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1632132465"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/517262880"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1273174137"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1708106631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1142478859"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/192617104"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1809240123"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/188306034"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with melancholia and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/23626334"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1066311702"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1600201309"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/259125732"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1890527853"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/786743952"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptom, melancholia, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1445436924"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/704202357"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms and seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/959700931"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/419829633"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1196293986"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2041306410"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1298032556"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with melancholia and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1570045466"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with seasonal pattern and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/575284629"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/324519855"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/487390451"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms, melancholia, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1657939838"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/491697171"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1375674387"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2144574445"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate with psychotic symptoms, additional symptoms unspecified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1577377889"
+    }
+  ]
+}

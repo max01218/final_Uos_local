@@ -1,0 +1,26 @@
+Disorder Name: Synthetic cannabinoid intoxication
+Disorder Code: 508603587
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Synthetic cannabinoid intoxication is a clinically significant transient condition that develops during or shortly after the consumption of synthetic cannabinoids that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of synthetic cannabinoids and their intensity is closely related to the amount of synthetic cannabinoid consumed. They are time-limited and abate as synthetic cannabinoid is cleared from the body. Presenting features may include inappropriate euphoria, impaired attention, impaired judgment, perceptual alterations (such as the sensation of floating, altered perception of time), changes in sociability, increased appetite, anxiety, intensification of ordinary experiences, impaired short-term memory, and sluggishness. Physical signs include conjunctival injection (red or bloodshot eyes) and tachycardia. Intoxication with synthetic cannabinoids may also cause delirium or acute psychosis.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Synthetic cannabinoid intoxication is a clinically significant transient condition that develops during or shortly after the consumption of synthetic cannabinoids that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of synthetic cannabinoids and their intensity is closely related to the amount of synthetic cannabinoid consumed. They are time-limited and abate as synthetic cannabinoid is cleared from the body. Presenting features may include inappropriate euphoria, impaired attention, impaired judgment, perceptual alterations (such as the sensation of floating, altered perception of time), changes in sociability, increased appetite, anxiety, intensification of ordinary experiences, impaired short-term memory, and sluggishness. Physical signs include conjunctival injection (red or bloodshot eyes) and tachycardia. Intoxication with synthetic cannabinoids may also cause delirium or acute psychosis.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

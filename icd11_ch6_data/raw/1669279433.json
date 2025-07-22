@@ -1,0 +1,223 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1669279433",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/578635574"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1669279433",
+  "code": "6A70.3",
+  "source": "http://id.who.int/icd/entity/1669279433",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1669279433/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1119039346",
+        "http://id.who.int/icd/release/11/2024-01/mms/1383708356",
+        "http://id.who.int/icd/release/11/2024-01/mms/1906190365",
+        "http://id.who.int/icd/release/11/2024-01/mms/802537726",
+        "http://id.who.int/icd/release/11/2024-01/mms/1124422593"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Single episode depressive disorder, severe, without psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Single episode depressive disorder, severe, without psychotic symptoms is diagnosed when the definitional requirements for Single episode depressive disorder are met and the current episode is severe and there are no delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a severe depressive episode, many or most symptoms of a Depressive Episode are present to a marked degree, or a smaller number of symptoms are present and manifest to an intense degree. The individual has serious difficulty continuing to function in most domains (personal, family, social, educational, occupational, or other important domains)."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Major depression single episode without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Vital depression single episode without psychotic symptoms"
+      }
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "single episode depressive disorder, severe, without psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "major depression NOS"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "major depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Major depression single episode without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "major depressive disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "single episode of vital depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Vital depression single episode without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "major depressive disorder, single episode"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2106135905"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/499197788"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1122406121"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1308145163"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/183472724"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/448852850"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/468646594"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/285759394"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1683696451"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1093781233"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/622335416"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/524526016"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/444042814"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2143758725"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/24490844"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Agitated depression single episode without psychotic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1223806024"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "agitated depression"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1223806024"
+    }
+  ]
+}

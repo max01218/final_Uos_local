@@ -1,0 +1,31 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1412387537",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/263852475",
+    "http://id.who.int/icd/release/11/2024-01/mms/509381842",
+    "http://id.who.int/icd/release/11/2024-01/mms/1673294767",
+    "http://id.who.int/icd/release/11/2024-01/mms/1242188600",
+    "http://id.who.int/icd/release/11/2024-01/mms/833390860",
+    "http://id.who.int/icd/release/11/2024-01/mms/1205760590",
+    "http://id.who.int/icd/release/11/2024-01/mms/1412387537/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1412387537/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1412387537",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/1412387537",
+  "classKind": "block",
+  "blockId": "BlockL1-6B8",
+  "codeRange": "6B80-6B8Z",
+  "title": {
+    "@language": "en",
+    "@value": "Feeding or eating disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Feeding and Eating Disorders involve abnormal eating or feeding behaviours that are not explained by another health condition and are not developmentally appropriate or culturally sanctioned. Feeding disorders involve behavioural disturbances that are not related to body weight and shape concerns, such as eating of non-edible substances or voluntary regurgitation of foods. Eating disorders involve abnormal eating behaviour and preoccupation with food as well as prominent body weight and shape concerns."
+  }
+}

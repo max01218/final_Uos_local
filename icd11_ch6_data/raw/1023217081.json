@@ -1,0 +1,72 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1023217081",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1120716949"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1023217081",
+  "code": "6C43.21",
+  "source": "http://id.who.int/icd/entity/1023217081",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1023217081/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1416205973",
+        "http://id.who.int/icd/release/11/2024-01/mms/824335105",
+        "http://id.who.int/icd/release/11/2024-01/mms/1014265857"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1023217081/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1395283456",
+        "http://id.who.int/icd/release/11/2024-01/mms/663160065",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Opioid dependence, early full remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "After a diagnosis of opioid dependence, and often following a treatment episode or other intervention (including self-help intervention), the individual has been abstinent from opioid use during a period lasting between 1 and 12 months."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of opioids"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/398872858",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/398872858"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of opioids"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/912365674",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/912365674"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid dependence, early full remission"
+      }
+    }
+  ]
+}

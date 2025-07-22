@@ -1,0 +1,26 @@
+Disorder Name: Opioid-induced mood disorder
+Disorder Code: 119512795
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Opioid-induced mood disorder is characterised by mood symptoms (e.g., depressed or elevated mood, decreased engagement in pleasurable activities, increased or decreased energy levels) that develop during or soon after intoxication with or withdrawal from opioids. The intensity or duration of the symptoms is substantially in excess of mood disturbances that are characteristic of Opioid intoxication or Opioid withdrawal. The amount and duration of opioid use must be capable of producing mood symptoms. The symptoms are not better explained by a primary mental disorder (e.g., a Depressive disorder, a Bipolar disorder, Schizoaffective disorder), as might be the case if the mood symptoms preceded the onset of the opioid use, if the symptoms persist for a substantial period of time after cessation of the opioid use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with mood symptoms (e.g., a history of prior episodes not associated with opioid use).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Opioid-induced mood disorder is characterised by mood symptoms (e.g., depressed or elevated mood, decreased engagement in pleasurable activities, increased or decreased energy levels) that develop during or soon after intoxication with or withdrawal from opioids. The intensity or duration of the symptoms is substantially in excess of mood disturbances that are characteristic of Opioid intoxication or Opioid withdrawal. The amount and duration of opioid use must be capable of producing mood symptoms. The symptoms are not better explained by a primary mental disorder (e.g., a Depressive disorder, a Bipolar disorder, Schizoaffective disorder), as might be the case if the mood symptoms preceded the onset of the opioid use, if the symptoms persist for a substantial period of time after cessation of the opioid use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with mood symptoms (e.g., a history of prior episodes not associated with opioid use).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

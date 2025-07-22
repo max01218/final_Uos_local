@@ -1,0 +1,26 @@
+Disorder Name: Developmental speech or language disorders
+Disorder Code: 33269655
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Developmental speech or language disorders arise during the developmental period and are characterised by difficulties in understanding or producing speech and language or in using language in context for the purposes of communication that are outside the limits of normal variation expected for age and level of intellectual functioning. The observed speech and language problems are not attributable to regional, social, or cultural/ethnic language variations and are not fully explained by anatomical or neurological abnormalities. The presumptive aetiology for Developmental speech or language disorders is complex, and in many individual cases, is unknown.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Developmental speech or language disorders arise during the developmental period and are characterised by difficulties in understanding or producing speech and language or in using language in context for the purposes of communication that are outside the limits of normal variation expected for age and level of intellectual functioning. The observed speech and language problems are not attributable to regional, social, or cultural/ethnic language variations and are not fully explained by anatomical or neurological abnormalities. The presumptive aetiology for Developmental speech or language disorders is complex, and in many individual cases, is unknown.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

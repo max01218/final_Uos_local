@@ -1,0 +1,177 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/399670840",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/578635574"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#399670840",
+  "code": "6A70.1",
+  "source": "http://id.who.int/icd/entity/399670840",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/399670840/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1119039346",
+        "http://id.who.int/icd/release/11/2024-01/mms/1383708356",
+        "http://id.who.int/icd/release/11/2024-01/mms/1906190365",
+        "http://id.who.int/icd/release/11/2024-01/mms/802537726",
+        "http://id.who.int/icd/release/11/2024-01/mms/1124422593"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Single episode depressive disorder, moderate, without psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Single episode depressive disorder, moderate, without psychotic symptoms is diagnosed when the definitional requirements of a depressive episode have been met, there is no history of prior depressive episodes, the episode is of moderate severity, and there are no delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a moderate depressive episode, several symptoms of a depressive episode are present to a marked degree, or a large number of depressive symptoms of lesser severity are present overall. The individual typically has considerable difficulty functioning in multiple domains (personal, family, social, educational, occupational, or other important domains)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "moderate depressive episode"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "single episode depressive disorder, moderate, without psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "major depressive disorder, single episode, moderate"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "major depressive disorder, single episode, moderate degree"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "moderate major depression, single episode"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1293363949"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/854825386"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/935835220"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/228327972"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/477663782"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/379469638"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/142700340"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/127883216"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2093323699"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1827337365"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/435929240"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/963229862"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1716392215"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/101065516"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, moderate, without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1686258306"
+    }
+  ]
+}

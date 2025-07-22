@@ -1,0 +1,84 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1689089786",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/590211325"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/318767128",
+    "http://id.who.int/icd/release/11/2024-01/mms/275218837",
+    "http://id.who.int/icd/release/11/2024-01/mms/1691013484",
+    "http://id.who.int/icd/release/11/2024-01/mms/1965837313",
+    "http://id.who.int/icd/release/11/2024-01/mms/25238782",
+    "http://id.who.int/icd/release/11/2024-01/mms/1919913834",
+    "http://id.who.int/icd/release/11/2024-01/mms/388252416",
+    "http://id.who.int/icd/release/11/2024-01/mms/1081029366",
+    "http://id.who.int/icd/release/11/2024-01/mms/1689089786/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1689089786/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1689089786",
+  "code": "6C45",
+  "source": "http://id.who.int/icd/entity/1689089786",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1689089786/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/334423054",
+        "http://id.who.int/icd/release/11/2024-01/mms/274880002",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/868865918",
+        "http://id.who.int/icd/release/11/2024-01/mms/1218729044",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/197934298",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757",
+        "http://id.who.int/icd/release/11/2024-01/mms/577470983",
+        "http://id.who.int/icd/release/11/2024-01/mms/714000734",
+        "http://id.who.int/icd/release/11/2024-01/mms/1306203631",
+        "http://id.who.int/icd/release/11/2024-01/mms/223744320",
+        "http://id.who.int/icd/release/11/2024-01/mms/1843895818",
+        "http://id.who.int/icd/release/11/2024-01/mms/435227771",
+        "http://id.who.int/icd/release/11/2024-01/mms/850137482",
+        "http://id.who.int/icd/release/11/2024-01/mms/1249056269",
+        "http://id.who.int/icd/release/11/2024-01/mms/1596590595"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Disorders due to use of cocaine"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorders due to use of cocaine are characterised by the pattern and consequences of cocaine use. Cocaine is a compound found in the leaves of the coca plant, Erythroxylum coca, which is indigenous to countries in northern regions of South America. Cocaine has a limited place in medical treatment as an anaesthetic and vasoconstrictive agent. It is commonly used illicitly and widely available across the world, where it is found in two main forms: cocaine hydrochloride and cocaine freebase (also known as ‘crack’). Cocaine is a central nervous system stimulant, and Cocaine Intoxication typically includes a state of euphoria and hyperactivity. Cocaine has potent dependence-producing properties and Cocaine Dependence is a common cause of morbidity and of clinical presentations. Cocaine Withdrawal has a characteristic course that includes lethargy and depressed mood. A range of Cocaine-Induced Mental Disorders is described."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1016273204",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1016273204"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hazardous use of cocaine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1385385359",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1385385359"
+    }
+  ]
+}

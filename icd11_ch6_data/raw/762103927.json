@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/762103927",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/736540987"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#762103927",
+  "code": "6C90.10",
+  "source": "http://id.who.int/icd/entity/762103927",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Oppositional defiant disorder without chronic irritability-anger with limited prosocial emotions"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for oppositional defiant disorder without chronic irritability-anger are met. In addition, the individual exhibits characteristics that are sometimes referred to as ‘callous and unemotional’. These characteristics include a lack of empathy or sensitivity to the feelings of others and a lack of concern for others’ distress; a lack of remorse, shame or guilt over their own behaviour (unless prompted by being apprehended), a relative indifference to the probability of punishment; a lack of concern over poor performance in school or work; and limited expression of emotions, particularly positive or loving feelings toward others, or only doing so in ways that seem shallow, insincere, or instrumental. This pattern is pervasive across situations and relationships (i.e., the qualifier should not be applied based on a single characteristic, a single relationship, or a single instance of behaviour) and is persistent over time (e.g., at least 1 year)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Oppositional defiant disorder without chronic irritability-anger with limited prosocial emotions"
+      }
+    }
+  ]
+}

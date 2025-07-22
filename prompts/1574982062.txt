@@ -1,0 +1,26 @@
+Disorder Name: MDMA or related drug intoxication, including MDA
+Disorder Code: 1574982062
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+MDMA or related drug intoxication, including MDA is a clinically significant transient condition that develops during or shortly after the consumption of MDMA or related drugs that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of MDMA or related drugs and their intensity is closely related to the amount of MDMA or a related drug consumed. They are time-limited and abate as MDMA or a related drug is cleared from the body. Presenting features may include increased or inappropriate sexual interest and activity, anxiety, restlessness, agitation, and sweating. In rare instances, usually in severe intoxication, use of MDMA or related drugs, including MDA can result in dystonia and seizures. Sudden death is a rare but recognised complication.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+MDMA or related drug intoxication, including MDA is a clinically significant transient condition that develops during or shortly after the consumption of MDMA or related drugs that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of MDMA or related drugs and their intensity is closely related to the amount of MDMA or a related drug consumed. They are time-limited and abate as MDMA or a related drug is cleared from the body. Presenting features may include increased or inappropriate sexual interest and activity, anxiety, restlessness, agitation, and sweating. In rare instances, usually in severe intoxication, use of MDMA or related drugs, including MDA can result in dystonia and seizures. Sudden death is a rare but recognised complication.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

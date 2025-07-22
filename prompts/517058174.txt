@@ -1,0 +1,26 @@
+Disorder Name: Pedophilic disorder
+Disorder Code: 517058174
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Pedophilic disorder is characterised by a sustained, focused, and intense pattern of sexual arousal—as manifested by persistent sexual thoughts, fantasies, urges, or behaviours—involving pre-pubertal children. In addition, in order for Pedophilic Disorder to be diagnosed, the individual must have acted on these thoughts, fantasies or urges or be markedly distressed by them. This diagnosis does not apply to sexual behaviours among pre- or post-pubertal children with peers who are close in age.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Pedophilic disorder is characterised by a sustained, focused, and intense pattern of sexual arousal—as manifested by persistent sexual thoughts, fantasies, urges, or behaviours—involving pre-pubertal children. In addition, in order for Pedophilic Disorder to be diagnosed, the individual must have acted on these thoughts, fantasies or urges or be markedly distressed by them. This diagnosis does not apply to sexual behaviours among pre- or post-pubertal children with peers who are close in age.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

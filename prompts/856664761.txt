@@ -1,0 +1,26 @@
+Disorder Name: Impulse control syndrome induced by multiple specified psychoactive substances
+Disorder Code: 856664761
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Impulse control disorder induced by multiple specified psychoactive substances is characterised by persistently repeated behaviours in which there is recurrent failure to resist an impulse, drive, or urge to perform an act that is rewarding to the person, at least in the short-term, despite longer-term harm either to the individual or to others (e.g., fire setting or stealing without apparent motive, repetitive sexual behaviour, aggressive outbursts) that develop during or soon after intoxication with or withdrawal from multiple specified psychoactive substances. The intensity or duration of the symptoms is substantially in excess of disturbances of impulse control that are characteristic of intoxication with or withdrawal from the multiple specified psychoactive substances. The amount and duration of the multiple specified psychoactive substances use must be capable of producing disturbances of impulse control. The symptoms are not better explained by a primary mental disorder (e.g., an Impulse control disorder, a Disorder due to addictive behaviours), as might be the case if the impulse control disturbances preceded the onset of the use of multiple specified psychoactive substances, if the symptoms persist for a substantial period of time after cessation of the multiple specified psychoactive substance use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with impulse control symptoms (e.g., a history of prior episodes not associated with multiple specified psychoactive substances use).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Impulse control disorder induced by multiple specified psychoactive substances is characterised by persistently repeated behaviours in which there is recurrent failure to resist an impulse, drive, or urge to perform an act that is rewarding to the person, at least in the short-term, despite longer-term harm either to the individual or to others (e.g., fire setting or stealing without apparent motive, repetitive sexual behaviour, aggressive outbursts) that develop during or soon after intoxication with or withdrawal from multiple specified psychoactive substances. The intensity or duration of the symptoms is substantially in excess of disturbances of impulse control that are characteristic of intoxication with or withdrawal from the multiple specified psychoactive substances. The amount and duration of the multiple specified psychoactive substances use must be capable of producing disturbances of impulse control. The symptoms are not better explained by a primary mental disorder (e.g., an Impulse control disorder, a Disorder due to addictive behaviours), as might be the case if the impulse control disturbances preceded the onset of the use of multiple specified psychoactive substances, if the symptoms persist for a substantial period of time after cessation of the multiple specified psychoactive substance use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with impulse control symptoms (e.g., a history of prior episodes not associated with multiple specified psychoactive substances use).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

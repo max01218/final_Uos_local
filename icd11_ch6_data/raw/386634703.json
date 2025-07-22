@@ -1,0 +1,38 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/386634703",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1974996783"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#386634703",
+  "code": "6A24.0",
+  "source": "http://id.who.int/icd/entity/386634703",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/386634703/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Delusional disorder, currently symptomatic"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for Delusional disorder in terms of symptoms and duration are currently met, or have been met within the past one month."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delusional disorder, currently symptomatic"
+      }
+    }
+  ]
+}

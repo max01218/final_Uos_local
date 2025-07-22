@@ -1,0 +1,86 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1777436789",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/546689346"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1777436789",
+  "code": "6D82",
+  "source": "http://id.who.int/icd/entity/1777436789",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1777436789/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/148241182"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1777436789/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1777436789/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/2091156678"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Dementia due to Lewy body disease"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dementia preceding or occurring within one year after the onset of motor parkinsonian signs in the setting of Lewy body disease. Characterized by presence of Lewy bodies, which are intraneuronal inclusions containing α-synuclein and ubiquitin in the brain stem, limbic area, forebrain, and neocortex. Onset is insidious with attentional and executive functioning deficits often present. These cognitive deficits are often accompanied by visual hallucinations and symptoms of REM sleep behaviour disorder. Hallucinations in other sensory modalities, depressive symptoms, and delusions may also be present. The symptom presentation usually varies significantly over the course of days necessitating longitudinal assessment and differentiation from delirium. Spontaneous onset of Parkinsonism within approximately 1 year of the onset of cognitive symptoms is common."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "This category should never be used in primary tabulation. The codes are provided for use as supplementary or additional codes when it is desired to identify the presence of dementia in diseases classified elsewhere.\n\nWhen dementia is due to multiple aetiologies, code all that apply."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to Lewy body disease"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "dementia of the Lewy body type"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "dementia with Lewy bodies"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "SDLT - [senile dementia of the Lewy body type]"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "senile dementia of the Lewy body type"
+      }
+    }
+  ]
+}

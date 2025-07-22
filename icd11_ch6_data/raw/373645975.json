@@ -1,0 +1,68 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/373645975",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1129015467"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#373645975",
+  "code": "6C41.20",
+  "source": "http://id.who.int/icd/entity/373645975",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/373645975/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1441674923",
+        "http://id.who.int/icd/release/11/2024-01/mms/816184127",
+        "http://id.who.int/icd/release/11/2024-01/mms/597251719"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/373645975/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1387132352",
+        "http://id.who.int/icd/release/11/2024-01/mms/637576511"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Cannabis dependence, current use"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Current cannabis dependence with use of cannabis within the past month."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of cannabis"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/854520906",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/854520906"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of cannabis"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/937834582",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/937834582"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cannabis dependence, current use"
+      }
+    }
+  ]
+}

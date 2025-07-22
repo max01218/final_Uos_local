@@ -1,0 +1,39 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1207960454",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/605267007"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1207960454",
+  "code": "6A00.0",
+  "source": "http://id.who.int/icd/entity/1207960454",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Disorder of intellectual development, mild"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A mild disorder of intellectual development is a condition originating during the developmental period characterised by significantly below average intellectual functioning and adaptive behaviour that are approximately two to three standard deviations below the mean (approximately 0.1 – 2.3 percentile), based on appropriately normed, individually administered standardized tests or by comparable behavioural indicators when standardized testing is unavailable. Affected persons often exhibit difficulties in the acquisition and comprehension of complex language concepts and academic skills. Most master basic self-care, domestic, and practical activities. Persons affected by a mild disorder of intellectual development can generally achieve relatively independent living and employment as adults but may require appropriate support."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorder of intellectual development, mild"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mild mental retardation"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "mild mental handicap"
+      }
+    }
+  ]
+}

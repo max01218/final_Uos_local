@@ -1,0 +1,51 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1599283639",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1605818663"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1599283639",
+  "code": "6C47.3",
+  "source": "http://id.who.int/icd/entity/1599283639",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1599283639/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1599283639/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1563509056",
+        "http://id.who.int/icd/release/11/2024-01/mms/2057206901",
+        "http://id.who.int/icd/release/11/2024-01/mms/2070676103"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Synthetic cathinone intoxication"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Synthetic cathinone intoxication is a clinically significant transient condition that develops during or shortly after the consumption of synthetic cathinones that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of synthetic cathinones and their intensity is closely related to the amount of synthetic cathinones consumed. They are time-limited and abate as the synthetic cathinone is cleared from the body. Presenting features may include anxiety, anger, impaired attention, hypervigilance, psychomotor agitation, paranoid ideation (possibly of delusional intensity), transient auditory hallucinations, transitory confusion, and changes in sociability. Perspiration or chills, nausea or vomiting, and palpitations may be experienced. Physical signs may include tachycardia, elevated blood pressure, pupillary dilatation, dyskinesias and dystonias, and skin sores. In rare instances, usually in severe intoxication, use of synthetic cathinones can result in seizures."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone intoxication"
+      }
+    }
+  ]
+}

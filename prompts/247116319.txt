@@ -1,0 +1,26 @@
+Disorder Name: Disorders due to use of non-psychoactive substances
+Disorder Code: 247116319
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of non-psychoactive substances are characterised by the pattern and consequences of non-medical use of non-psychoactive substances. Non-psychoactive substances include laxatives, anabolic steroids, growth hormone, erythropoietin, and non-steroidal anti-inflammatory drugs. They may also include proprietary or over-the-counter medicines and folk remedies. Non-medical use of these substances may be associated with harm to the individual due to the direct or secondary toxic effects of the non-psychoactive substance on body organs and systems, or a harmful route of administration (e.g., infections due to intravenous self-administration). They are not associated with intoxication or with a dependence or withdrawal syndrome and are not recognized causes of substance-induced mental disorders.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of non-psychoactive substances are characterised by the pattern and consequences of non-medical use of non-psychoactive substances. Non-psychoactive substances include laxatives, anabolic steroids, growth hormone, erythropoietin, and non-steroidal anti-inflammatory drugs. They may also include proprietary or over-the-counter medicines and folk remedies. Non-medical use of these substances may be associated with harm to the individual due to the direct or secondary toxic effects of the non-psychoactive substance on body organs and systems, or a harmful route of administration (e.g., infections due to intravenous self-administration). They are not associated with intoxication or with a dependence or withdrawal syndrome and are not recognized causes of substance-induced mental disorders.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

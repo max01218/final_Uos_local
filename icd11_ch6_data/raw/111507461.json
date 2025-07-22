@@ -1,0 +1,55 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/111507461",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/590211325"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/398872858",
+    "http://id.who.int/icd/release/11/2024-01/mms/912365674",
+    "http://id.who.int/icd/release/11/2024-01/mms/1120716949",
+    "http://id.who.int/icd/release/11/2024-01/mms/1395283456",
+    "http://id.who.int/icd/release/11/2024-01/mms/663160065",
+    "http://id.who.int/icd/release/11/2024-01/mms/1416205973",
+    "http://id.who.int/icd/release/11/2024-01/mms/824335105",
+    "http://id.who.int/icd/release/11/2024-01/mms/1014265857",
+    "http://id.who.int/icd/release/11/2024-01/mms/111507461/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/111507461/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#111507461",
+  "code": "6C43",
+  "source": "http://id.who.int/icd/entity/111507461",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/111507461/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Disorders due to use of opioids"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorders due to use of opioids are characterised by the pattern and consequences of opioid use. Opioids is a generic term that encompasses the constituents or derivatives of the opium poppy Papaver somniferum as well as a range of synthetic and semisynthetic compounds, some related to morphine and others chemically distinct but all having their primary actions on the µ opioid receptor. Examples of opioids include morphine, diacetylmorphine (heroin), fentanyl, pethidine, oxycodone, hydromorphone, methadone, buprenorphine, codeine and d-propoxyphene. The opioids all have analgesic properties of different potencies and are primarily central nervous system depressants. They suppress respiration as well as other vital functions and are a common cause of overdose and related deaths. Certain opioids are used or administered parenterally, including heroin, a common and potent opioid that is primarily used non-medically. Therapeutic opioids are prescribed for a range of indications worldwide, and are essential for pain management in cancer pain and palliative care, although they are also used for non-therapeutic reasons. In some countries morbidity and mortality related to therapeutic opioids is greater than that related to heroin. All opioids may result in Opioid Intoxication, Opioid Dependence and Opioid Withdrawal. A range of Opioid-Induced Disorders occur, some of which occur following Opioid Withdrawal."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hazardous use of opioids"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/603861372",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/603861372"
+    }
+  ]
+}

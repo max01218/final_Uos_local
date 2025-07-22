@@ -1,0 +1,24 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/313374467",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1884115764"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/528060023",
+    "http://id.who.int/icd/release/11/2024-01/mms/541725793",
+    "http://id.who.int/icd/release/11/2024-01/mms/313374467/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#313374467",
+  "code": "6C01",
+  "source": "http://id.who.int/icd/entity/313374467",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Encopresis"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Encopresis is the repeated passage of faeces in inappropriate places. Encopresis should be diagnosed if inappropriate passage of faeces occurs repeatedly (e.g., at least once per month over a period of several months) in an individual who has reached the developmental age when faecal continence is ordinarily expected (4 years). The faecal incontinence may have been present from birth (i.e., an atypical extension of normal infantile incontinence), or may have arisen following a period of acquired bowel control. Encopresis should not be diagnosed if faecal soiling is fully attributable to another health condition (e.g., aganglionic megacolon, spina bifida, dementia), congenital or acquired abnormalities of the bowel, gastrointestinal infection, or excessive use of laxatives."
+  }
+}

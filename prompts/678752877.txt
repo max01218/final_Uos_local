@@ -1,0 +1,26 @@
+Disorder Name: Bipolar type II disorder, current episode depressive, moderate with psychotic symptoms
+Disorder Code: 678752877
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Bipolar type II disorder, current episode depressive, moderate, with psychotic symptoms diagnosed when the definitional requirements for Bipolar type II disorder have been met and the current episode is depressive at a moderate level of severity and there are delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a moderate depressive episode, several symptoms of a depressive episode are present to a marked degree, or a large number of depressive symptoms of lesser severity are present overall. The individual typically has considerable difficulty functioning in multiple domains (personal, family, social, educational, occupational, or other important domains).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Bipolar type II disorder, current episode depressive, moderate, with psychotic symptoms diagnosed when the definitional requirements for Bipolar type II disorder have been met and the current episode is depressive at a moderate level of severity and there are delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a moderate depressive episode, several symptoms of a depressive episode are present to a marked degree, or a large number of depressive symptoms of lesser severity are present overall. The individual typically has considerable difficulty functioning in multiple domains (personal, family, social, educational, occupational, or other important domains).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

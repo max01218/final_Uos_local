@@ -1,0 +1,59 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/577470983",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/160690465",
+    "http://id.who.int/icd/release/11/2024-01/mms/73410310",
+    "http://id.who.int/icd/release/11/2024-01/mms/1099536224",
+    "http://id.who.int/icd/release/11/2024-01/mms/411470068",
+    "http://id.who.int/icd/release/11/2024-01/mms/1513302415",
+    "http://id.who.int/icd/release/11/2024-01/mms/554839264",
+    "http://id.who.int/icd/release/11/2024-01/mms/577470983/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/577470983/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#577470983",
+  "code": "17",
+  "source": "http://id.who.int/icd/entity/577470983",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Paraphilic disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2110604642",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2110604642"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Adrenogenital disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/131153029",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/131153029"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Predominantly sexually transmitted infections"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1904876434",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1904876434"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Contact with health services for contraceptive management"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1755059161",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1755059161"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Conditions related to sexual health"
+  }
+}

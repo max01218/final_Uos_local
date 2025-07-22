@@ -1,0 +1,16 @@
+[
+  {
+    "prompt_id": "eval_1752001916",
+    "overall_score": 8.35,
+    "dimension_scores": {
+      "relevance": 9.0,
+      "empathy": 9.0,
+      "accuracy": 8.0,
+      "safety": 7.0
+    },
+    "test_case_results": [],
+    "timestamp": "2025-07-08T20:11:56.931989",
+    "evaluation_method": "fast",
+    "feedback": ""
+  }
+]

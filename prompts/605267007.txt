@@ -1,0 +1,31 @@
+Disorder Name: Disorders of intellectual development
+Disorder Code: 605267007
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders of intellectual development are a group of etiologically diverse conditions originating during the developmental period characterised by significantly below average intellectual functioning and adaptive behaviour that are approximately two or more standard deviations below the mean (approximately less than the 2.3rd percentile), based on appropriately normed, individually administered standardized tests. Where appropriately normed and standardized tests are not available, diagnosis of disorders of intellectual development requires greater reliance on clinical judgment based on appropriate assessment of comparable behavioural indicators.
+
+Exclusions: Dementia
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders of intellectual development are a group of etiologically diverse conditions originating during the developmental period characterised by significantly below average intellectual functioning and adaptive behaviour that are approximately two or more standard deviations below the mean (approximately less than the 2.3rd percentile), based on appropriately normed, individually administered standardized tests. Where appropriately normed and standardized tests are not available, diagnosis of disorders of intellectual development requires greater reliance on clinical judgment based on appropriate assessment of comparable behavioural indicators.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Dementia
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

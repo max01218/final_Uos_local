@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/209556851",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/821852937"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#209556851",
+  "code": "6A05.1",
+  "source": "http://id.who.int/icd/entity/209556851",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Attention deficit hyperactivity disorder, predominantly hyperactive-impulsive presentation"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for attention deficit hyperactivity disorder are met and hyperactive-impulsive symptoms are predominant in the clinical presentation. Hyperactivity refers to excessive motor activity and difficulties with remaining still, most evident in structured situations that require behavioural self-control. Impulsivity is a tendency to act in response to immediate stimuli, without deliberation or consideration of the risks and consequences. Some inattentive symptoms may also be present, but these are not clinically significant in relation to the hyperactive-impulsive symptoms."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Attention deficit hyperactivity disorder, predominantly hyperactive-impulsive presentation"
+      }
+    }
+  ]
+}

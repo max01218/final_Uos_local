@@ -1,0 +1,90 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/696956921",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/302122526"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2018051983",
+    "http://id.who.int/icd/release/11/2024-01/mms/566524918",
+    "http://id.who.int/icd/release/11/2024-01/mms/200321643",
+    "http://id.who.int/icd/release/11/2024-01/mms/1603403079"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#696956921",
+  "code": "6E61",
+  "source": "http://id.who.int/icd/entity/696956921",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/696956921/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Secondary psychotic syndrome"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A syndrome characterised by the presence of prominent hallucinations or delusions judged to be a direct pathophysiological consequence of a health condition not classified under mental and behavioural disorders, based on evidence from the history, physical examination, or laboratory findings. The symptoms are not accounted for by delirium or by another mental and behavioural disorder, and are not a psychologically mediated response to a severe medical condition (e.g., an acute stress reaction in response to a life-threatening diagnosis). This category should be used in addition to the diagnosis for the presumed underlying disorder or disease when the psychotic symptoms are sufficiently severe to warrant specific clinical attention."
+  },
+  "fullySpecifiedName": {
+    "@language": "en",
+    "@value": "Psychotic syndrome due to health condition not classified under mental and behavioural disorders"
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute and transient psychotic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/284410555",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/284410555"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/897917531",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/897917531"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/76398729",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/76398729"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary psychotic syndrome"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Psychotic syndrome due to health condition not classified under mental and behavioural disorders"
+      }
+    }
+  ]
+}

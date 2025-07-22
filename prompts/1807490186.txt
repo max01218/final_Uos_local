@@ -1,0 +1,26 @@
+Disorder Name: Trance disorder
+Disorder Code: 1807490186
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Trance disorder is characterised by trance states in which there is a marked alteration in the individual’s state of consciousness or a loss of the individual’s customary sense of personal identity in which the individual experiences a narrowing of awareness of immediate surroundings or unusually narrow and selective focusing on environmental stimuli and restriction of movements, postures, and speech to repetition of a small repertoire that is experienced as being outside of one’s control. The trance state is not characterised by the experience of being replaced by an alternate identity. Trance episodes are recurrent or, if the diagnosis is based on a single episode, the episode has lasted for at least several days. The trance state is involuntary and unwanted and is not accepted as a part of a collective cultural or religious practice. The symptoms do not occur exclusively during another dissociative disorder and are not better explained by another mental, behavioural or neurodevelopmental disorder. The symptoms are not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, exhaustion, or to hypnagogic or hypnopompic states, and are not due to a disease of the nervous system, head trauma, or a sleep-wake disorder. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Trance disorder is characterised by trance states in which there is a marked alteration in the individual’s state of consciousness or a loss of the individual’s customary sense of personal identity in which the individual experiences a narrowing of awareness of immediate surroundings or unusually narrow and selective focusing on environmental stimuli and restriction of movements, postures, and speech to repetition of a small repertoire that is experienced as being outside of one’s control. The trance state is not characterised by the experience of being replaced by an alternate identity. Trance episodes are recurrent or, if the diagnosis is based on a single episode, the episode has lasted for at least several days. The trance state is involuntary and unwanted and is not accepted as a part of a collective cultural or religious practice. The symptoms do not occur exclusively during another dissociative disorder and are not better explained by another mental, behavioural or neurodevelopmental disorder. The symptoms are not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, exhaustion, or to hypnagogic or hypnopompic states, and are not due to a disease of the nervous system, head trauma, or a sleep-wake disorder. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

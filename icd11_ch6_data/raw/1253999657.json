@@ -1,0 +1,57 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1253999657",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1121465374"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1253999657",
+  "code": "6B25.0",
+  "source": "http://id.who.int/icd/entity/1253999657",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Trichotillomania"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Trichotillomania is characterised by recurrent pulling of one’s own hair leading to significant hair loss, accompanied by unsuccessful attempts to decrease or stop the behaviour. Hair pulling may occur from any region of the body in which hair grows but the most common sites are the scalp, eyebrows, and eyelids. Hair pulling may occur in brief episodes scattered throughout the day or in less frequent but more sustained periods. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Compulsive hair plucking"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "stereotyped movement disorder with hair-plucking"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1111628448",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1111628448"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Trichotillomania"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Compulsive hair plucking"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hair pulling disorder"
+      }
+    }
+  ]
+}

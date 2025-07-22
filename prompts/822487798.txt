@@ -1,0 +1,26 @@
+Disorder Name: Seasonal pattern of mood episode onset
+Disorder Code: 822487798
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+In the context of recurrent depressive disorder, bipolar type I or bipolar type II disorder, there has been a regular seasonal pattern of onset and remission of at least one type of episode (i.e., depressive, manic, mixed, or hypomanic episodes), with a substantial majority of the relevant mood episodes corresponding to the seasonal pattern. (In bipolar type I and bipolar type II disorder, all types of mood episodes may not follow this pattern.) A seasonal pattern should be differentiated from an episode that is coincidental with a particular season but predominantly related to a psychological stressor that regularly occurs at that time of the year (e.g., seasonal unemployment).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+In the context of recurrent depressive disorder, bipolar type I or bipolar type II disorder, there has been a regular seasonal pattern of onset and remission of at least one type of episode (i.e., depressive, manic, mixed, or hypomanic episodes), with a substantial majority of the relevant mood episodes corresponding to the seasonal pattern. (In bipolar type I and bipolar type II disorder, all types of mood episodes may not follow this pattern.) A seasonal pattern should be differentiated from an episode that is coincidental with a particular season but predominantly related to a psychological stressor that regularly occurs at that time of the year (e.g., seasonal unemployment).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,57 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1867081699",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/991786158"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1867081699",
+  "code": "6B44",
+  "source": "http://id.who.int/icd/entity/1867081699",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Reactive attachment disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Reactive attachment disorder is characterised by grossly abnormal attachment behaviours in early childhood, occurring in the context of a history of grossly inadequate child care (e.g., severe neglect, maltreatment, institutional deprivation). Even when an adequate primary caregiver is newly available, the child does not turn to the primary caregiver for comfort, support and nurture, rarely displays security-seeking behaviours towards any adult, and does not respond when comfort is offered. Reactive attachment disorder can only be diagnosed in children, and features of the disorder develop within the first 5 years of life. However, the disorder cannot be diagnosed before the age of 1 year (or a developmental age of less than 9 months), when the capacity for selective attachments may not be fully developed, or in the context of Autism spectrum disorder."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Asperger syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/437815624",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/437815624"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "disinhibited attachment disorder of childhood"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/467941148",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/467941148"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Reactive attachment disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "childhood reactive attachment disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "reactive attachment disorder of early childhood"
+      }
+    }
+  ]
+}

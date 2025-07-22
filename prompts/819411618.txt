@@ -1,0 +1,32 @@
+Disorder Name: Synthetic cannabinoid dependence, sustained full remission
+Disorder Code: 819411618
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+After a diagnosis of synthetic cannabinoid dependence, and often following a treatment episode or other intervention (including self-intervention), the person has been abstinent from synthetic cannabinoid use for 12 months or longer.
+
+Exclusions: Episode of harmful use of synthetic cannabinoids; Harmful pattern of use of synthetic cannabinoids
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+After a diagnosis of synthetic cannabinoid dependence, and often following a treatment episode or other intervention (including self-intervention), the person has been abstinent from synthetic cannabinoid use for 12 months or longer.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Episode of harmful use of synthetic cannabinoids
+• Should be differentiated from: Harmful pattern of use of synthetic cannabinoids
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

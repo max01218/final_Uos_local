@@ -1,0 +1,85 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/862918022",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/33269655"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/822134099",
+    "http://id.who.int/icd/release/11/2024-01/mms/1169003948",
+    "http://id.who.int/icd/release/11/2024-01/mms/854708918",
+    "http://id.who.int/icd/release/11/2024-01/mms/1144287315"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#862918022",
+  "code": "6A01.2",
+  "source": "http://id.who.int/icd/entity/862918022",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Developmental language disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Developmental language disorder is characterised by persistent deficits in the acquisition, understanding, production or use of language (spoken or signed), that arise during the developmental period, typically during early childhood, and cause significant limitations in the individual’s ability to communicate. The individual’s ability to understand, produce or use language is markedly below what would be expected given the individual’s age. The language deficits are not explained by another neurodevelopmental disorder or a sensory impairment or neurological condition, including the effects of brain injury or infection."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Autism spectrum disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/437815624",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/437815624"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the nervous system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1296093776",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1296093776"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Deafness not otherwise specified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/947280473",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/947280473"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Selective mutism"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/167946871",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/167946871"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental language disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "language development disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "language learning impairment"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "specific language impairment"
+      }
+    }
+  ]
+}

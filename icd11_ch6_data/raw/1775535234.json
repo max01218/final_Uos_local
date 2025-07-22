@@ -1,0 +1,158 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1775535234",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1016273204"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1775535234",
+  "code": "6C46.3",
+  "source": "http://id.who.int/icd/entity/1775535234",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1775535234/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/16341703",
+        "http://id.who.int/icd/release/11/2024-01/mms/373236638",
+        "http://id.who.int/icd/release/11/2024-01/mms/1756699061",
+        "http://id.who.int/icd/release/11/2024-01/mms/1891241424",
+        "http://id.who.int/icd/release/11/2024-01/mms/1193684303",
+        "http://id.who.int/icd/release/11/2024-01/mms/1853123588",
+        "http://id.who.int/icd/release/11/2024-01/mms/534456613",
+        "http://id.who.int/icd/release/11/2024-01/mms/428256012",
+        "http://id.who.int/icd/release/11/2024-01/mms/33615934",
+        "http://id.who.int/icd/release/11/2024-01/mms/648146092",
+        "http://id.who.int/icd/release/11/2024-01/mms/808405469",
+        "http://id.who.int/icd/release/11/2024-01/mms/1870704429",
+        "http://id.who.int/icd/release/11/2024-01/mms/1732158747",
+        "http://id.who.int/icd/release/11/2024-01/mms/1416993969",
+        "http://id.who.int/icd/release/11/2024-01/mms/2121804732",
+        "http://id.who.int/icd/release/11/2024-01/mms/2043582775",
+        "http://id.who.int/icd/release/11/2024-01/mms/1960627774",
+        "http://id.who.int/icd/release/11/2024-01/mms/1076458680",
+        "http://id.who.int/icd/release/11/2024-01/mms/448177412",
+        "http://id.who.int/icd/release/11/2024-01/mms/1864983449",
+        "http://id.who.int/icd/release/11/2024-01/mms/543245955",
+        "http://id.who.int/icd/release/11/2024-01/mms/2017927415",
+        "http://id.who.int/icd/release/11/2024-01/mms/511194385"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1775535234/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1775535234/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1772665991",
+        "http://id.who.int/icd/release/11/2024-01/mms/211765524",
+        "http://id.who.int/icd/release/11/2024-01/mms/2016549355"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Stimulant intoxication including amphetamines, methamphetamine or methcathinone"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Stimulant intoxication including amphetamines, methamphetamine and methcathinone but excluding caffeine, cocaine and synthetic cathinones is a clinically significant transient condition that develops during or shortly after the consumption of amphetamine or other stimulants that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of amphetamine or other stimulants and their intensity is closely related to the amount of amphetamine or other stimulant consumed. They are time-limited and abate as amphetamine or another stimulant is cleared from the body. Presenting features may include anxiety, anger, impaired attention, hypervigilance, psychomotor agitation, paranoid ideation (possibly of delusional intensity), transient auditory hallucinations, transitory confusion, and changes in sociability. Perspiration or chills, nausea or vomiting, and palpitations may be experienced. Physical signs may include tachycardia, elevated blood pressure, pupillary dilatation, dyskinesias and dystonias, and skin sores. In rare instances, usually in severe intoxication, use of stimulants including amphetamines, methamphetamine and methcathinone can result in seizures."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "amphetamine poisoning"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/117248623",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1868408442"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Caffeine intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1648213213",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1648213213"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1965837313",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1965837313"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1599283639",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1599283639"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Possession trance disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1374925579",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1374925579"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stimulant intoxication including amphetamines, methamphetamine or methcathinone"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Amphetamine or certain specified stimulant intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Amphetamine intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1072097337"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Methamphetamine intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2146441294"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute methamphetamine intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/357971045"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute methamphetamine toxicity"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/357971045"
+    }
+  ]
+}

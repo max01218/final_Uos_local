@@ -1,0 +1,88 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/334423054",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1516623224",
+    "http://id.who.int/icd/release/11/2024-01/mms/405565289",
+    "http://id.who.int/icd/release/11/2024-01/mms/486722075",
+    "http://id.who.int/icd/release/11/2024-01/mms/76398729",
+    "http://id.who.int/icd/release/11/2024-01/mms/1336943699",
+    "http://id.who.int/icd/release/11/2024-01/mms/1321276661",
+    "http://id.who.int/icd/release/11/2024-01/mms/991786158",
+    "http://id.who.int/icd/release/11/2024-01/mms/108180424",
+    "http://id.who.int/icd/release/11/2024-01/mms/1412387537",
+    "http://id.who.int/icd/release/11/2024-01/mms/1884115764",
+    "http://id.who.int/icd/release/11/2024-01/mms/794195577",
+    "http://id.who.int/icd/release/11/2024-01/mms/1602669465",
+    "http://id.who.int/icd/release/11/2024-01/mms/826065555",
+    "http://id.who.int/icd/release/11/2024-01/mms/310393530",
+    "http://id.who.int/icd/release/11/2024-01/mms/37291724",
+    "http://id.who.int/icd/release/11/2024-01/mms/2110604642",
+    "http://id.who.int/icd/release/11/2024-01/mms/430567349",
+    "http://id.who.int/icd/release/11/2024-01/mms/213458094",
+    "http://id.who.int/icd/release/11/2024-01/mms/882114523",
+    "http://id.who.int/icd/release/11/2024-01/mms/523677473",
+    "http://id.who.int/icd/release/11/2024-01/mms/302122526",
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#334423054",
+  "code": "06",
+  "source": "http://id.who.int/icd/entity/334423054",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sleep-wake disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/274880002",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/274880002"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sexual dysfunctions"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/160690465",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/160690465"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Gender incongruence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/411470068",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/411470068"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Mental, behavioural or neurodevelopmental disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Mental, behavioural and neurodevelopmental disorders are syndromes characterised by clinically significant disturbance in an individual's cognition, emotional regulation, or behaviour that reflects a dysfunction in the psychological, biological, or developmental processes that underlie mental and behavioural functioning. These disturbances are usually associated with distress or impairment in personal, family, social, educational, occupational, or other important areas of functioning."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute stress reaction"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/505909942",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/505909942"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Uncomplicated bereavement"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2009949293",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2009949293"
+    }
+  ]
+}

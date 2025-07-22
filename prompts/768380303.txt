@@ -1,0 +1,26 @@
+Disorder Name: Delirium induced by multiple specified psychoactive substances including medications
+Disorder Code: 768380303
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Delirium induced by multiple specified psychoactive substances is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or withdrawal or during the use of multiple specified substances. The amount and duration of use of the multiple specified substances must be capable of producing delirium. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from a substance other than those specified, or by another health condition that is not classified under Mental, behavioural and neurodevelopmental disorders. Note that this diagnosis applies only to those situations in which delirium is present but it cannot be determined which of multiple psychoactive substances is the cause of the delirium. In cases of multiple psychoactive substance use in which more than one specific substance can be identified as a cause of the delirium, the corresponding specific substance-induced delirium diagnoses should be given instead.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Delirium induced by multiple specified psychoactive substances is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or withdrawal or during the use of multiple specified substances. The amount and duration of use of the multiple specified substances must be capable of producing delirium. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from a substance other than those specified, or by another health condition that is not classified under Mental, behavioural and neurodevelopmental disorders. Note that this diagnosis applies only to those situations in which delirium is present but it cannot be determined which of multiple psychoactive substances is the cause of the delirium. In cases of multiple psychoactive substance use in which more than one specific substance can be identified as a cause of the delirium, the corresponding specific substance-induced delirium diagnoses should be given instead.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

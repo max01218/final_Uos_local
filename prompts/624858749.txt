@@ -1,0 +1,26 @@
+Disorder Name: Nocturnal and diurnal enuresis
+Disorder Code: 624858749
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Nocturnal and diurnal enuresis refers to repeated voiding of urine into clothes or bed that occurs both during sleep (i.e., during the night) and during waking hours in an individual who has reached a developmental age when urinary continence is ordinarily expected (5 years). The urinary incontinence may have been present from birth (i.e., an atypical extension of normal infantile incontinence), or may have arisen following a period of acquired bladder control. In most cases, the behaviour is involuntary but in some cases it appears intentional.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Nocturnal and diurnal enuresis refers to repeated voiding of urine into clothes or bed that occurs both during sleep (i.e., during the night) and during waking hours in an individual who has reached a developmental age when urinary continence is ordinarily expected (5 years). The urinary incontinence may have been present from birth (i.e., an atypical extension of normal infantile incontinence), or may have arisen following a period of acquired bladder control. In most cases, the behaviour is involuntary but in some cases it appears intentional.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

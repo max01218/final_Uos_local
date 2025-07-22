@@ -1,0 +1,26 @@
+Disorder Name: Dissociative neurological symptom disorder, with chorea
+Disorder Code: 1665998139
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dissociative neurological symptom disorder, with chorea is characterised by irregular, non-repetitive, brief, jerky, flowing movements that move randomly from one part of the body to another that are not consistent with a recognised disease of the nervous system, other mental, behavioural or neurodevelopmental disorder, or other medical condition and do not occur exclusively during another dissociative disorder.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dissociative neurological symptom disorder, with chorea is characterised by irregular, non-repetitive, brief, jerky, flowing movements that move randomly from one part of the body to another that are not consistent with a recognised disease of the nervous system, other mental, behavioural or neurodevelopmental disorder, or other medical condition and do not occur exclusively during another dissociative disorder.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

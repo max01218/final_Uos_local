@@ -1,0 +1,43 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1069443471",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/108180424"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/197468567",
+    "http://id.who.int/icd/release/11/2024-01/mms/604711335",
+    "http://id.who.int/icd/release/11/2024-01/mms/1155836908",
+    "http://id.who.int/icd/release/11/2024-01/mms/1608456538",
+    "http://id.who.int/icd/release/11/2024-01/mms/1620688958",
+    "http://id.who.int/icd/release/11/2024-01/mms/1504141213",
+    "http://id.who.int/icd/release/11/2024-01/mms/1367613958",
+    "http://id.who.int/icd/release/11/2024-01/mms/1604145596",
+    "http://id.who.int/icd/release/11/2024-01/mms/536986325",
+    "http://id.who.int/icd/release/11/2024-01/mms/71229925",
+    "http://id.who.int/icd/release/11/2024-01/mms/1069443471/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1069443471/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1069443471",
+  "code": "6B60",
+  "source": "http://id.who.int/icd/entity/1069443471",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder is characterised by the presentation of motor, sensory, or cognitive symptoms that imply an involuntary discontinuity in the normal integration of motor, sensory, or cognitive functions and are not consistent with a recognised disease of the nervous system, other mental or behavioural disorder, or other medical condition. The symptoms do not occur exclusively during another dissociative disorder and are not due to the effects of a substance or medication on the central nervous system, including withdrawal effects, or a Sleep-Wake disorder."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Factitious disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/430567349",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/430567349"
+    }
+  ]
+}

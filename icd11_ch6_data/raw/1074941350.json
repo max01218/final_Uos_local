@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1074941350",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/605267007"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1074941350",
+  "code": "6A00.4",
+  "source": "http://id.who.int/icd/entity/1074941350",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Disorder of intellectual development, provisional"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorder of intellectual development, provisional is assigned when there is evidence of a disorder of intellectual development but the individual is an infant or child under the age of four or it is not possible to conduct a valid assessment of intellectual functioning and adaptive behaviour because of sensory or physical impairments (e.g., blindness, pre-lingual deafness), motor or communication impairments, severe problem behaviours or co-occurring mental and behavioural disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorder of intellectual development, provisional"
+      }
+    }
+  ]
+}

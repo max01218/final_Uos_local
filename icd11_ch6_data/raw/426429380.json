@@ -1,0 +1,126 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/924915526",
+    "http://id.who.int/icd/release/11/2024-01/mms/1663360295",
+    "http://id.who.int/icd/release/11/2024-01/mms/1964269418",
+    "http://id.who.int/icd/release/11/2024-01/mms/1059873720",
+    "http://id.who.int/icd/release/11/2024-01/mms/1703442464",
+    "http://id.who.int/icd/release/11/2024-01/mms/1296696944",
+    "http://id.who.int/icd/release/11/2024-01/mms/162683166",
+    "http://id.who.int/icd/release/11/2024-01/mms/1121431779",
+    "http://id.who.int/icd/release/11/2024-01/mms/291726710",
+    "http://id.who.int/icd/release/11/2024-01/mms/2135151223",
+    "http://id.who.int/icd/release/11/2024-01/mms/1457291912",
+    "http://id.who.int/icd/release/11/2024-01/mms/1458683894",
+    "http://id.who.int/icd/release/11/2024-01/mms/1164983645",
+    "http://id.who.int/icd/release/11/2024-01/mms/723430526",
+    "http://id.who.int/icd/release/11/2024-01/mms/1025888387",
+    "http://id.who.int/icd/release/11/2024-01/mms/1925333068",
+    "http://id.who.int/icd/release/11/2024-01/mms/539975693",
+    "http://id.who.int/icd/release/11/2024-01/mms/966120194",
+    "http://id.who.int/icd/release/11/2024-01/mms/1651137927",
+    "http://id.who.int/icd/release/11/2024-01/mms/426429380/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/426429380/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#426429380",
+  "code": "11",
+  "source": "http://id.who.int/icd/entity/426429380",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symptoms, signs or clinical findings of the circulatory system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/796618507",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/796618507"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cerebrovascular diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/843843448",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/843843448"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional vascular disorders of the skin"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/588559962",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/588559962"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the circulatory system complicating pregnancy, childbirth or the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1380872553",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1380872553"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Diseases of the circulatory system"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "This refers to diseases of the organ system that passes nutrients (such as amino acids, electrolytes and lymph), gases, hormones, blood cells, etc. to and from cells in the body to help fight diseases, stabilize body temperature and pH, and to maintain homeostasis."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain infectious or parasitic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1435254666",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1435254666"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain conditions originating in the perinatal period"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1306203631",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1306203631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Congenital malformations, deformations and chromosomal abnormalities"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/223744320",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/223744320"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Complications of pregnancy, childbirth and the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/714000734",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/714000734"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Injury, poisoning or certain other consequences of external causes"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/435227771",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/435227771"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endocrine, nutritional or metabolic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/21500692",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/21500692"
+    }
+  ]
+}

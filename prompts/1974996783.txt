@@ -1,0 +1,26 @@
+Disorder Name: Delusional disorder
+Disorder Code: 1974996783
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Delusional disorder is characterised by the development of a delusion or set of related delusions, typically persisting for at least 3 months and often much longer, in the absence of a Depressive, Manic, or Mixed mood episode. The delusions are variable in content across individuals, but typically stable within individuals, although they may evolve over time. Other characteristic symptoms of Schizophrenia (i.e. clear and persistent hallucinations, negative symptoms, disorganised thinking, or experiences of influence, passivity, or control) are not present, although various forms of perceptual disturbances (e.g. hallucinations, illusions, misidentifications of persons) thematically related to the delusion are still consistent with the diagnosis. Apart from actions and attitudes directly related to the delusion or delusional system, affect, speech, and behavior are typically unaffected. The symptoms are not a manifestation of another medical condition (e.g., a brain tumour) and are not due to the effect of a substance or medication on the central nervous system (e.g. corticosteroids), including withdrawal effects (e.g. alcohol withdrawal).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Delusional disorder is characterised by the development of a delusion or set of related delusions, typically persisting for at least 3 months and often much longer, in the absence of a Depressive, Manic, or Mixed mood episode. The delusions are variable in content across individuals, but typically stable within individuals, although they may evolve over time. Other characteristic symptoms of Schizophrenia (i.e. clear and persistent hallucinations, negative symptoms, disorganised thinking, or experiences of influence, passivity, or control) are not present, although various forms of perceptual disturbances (e.g. hallucinations, illusions, misidentifications of persons) thematically related to the delusion are still consistent with the diagnosis. Apart from actions and attitudes directly related to the delusion or delusional system, affect, speech, and behavior are typically unaffected. The symptoms are not a manifestation of another medical condition (e.g., a brain tumour) and are not due to the effect of a substance or medication on the central nervous system (e.g. corticosteroids), including withdrawal effects (e.g. alcohol withdrawal).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

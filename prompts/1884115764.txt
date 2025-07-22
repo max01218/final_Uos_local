@@ -1,0 +1,26 @@
+Disorder Name: Elimination disorders
+Disorder Code: 1884115764
+Code Range: 6C00-6C0Z
+Class Kind: block
+
+Standard Definition:
+Elimination disorders include the repeated voiding of urine into clothes or bed (enuresis) and the repeated passage of faeces in inappropriate places (encopresis). Elimination disorders should only be diagnosed after the individual has reached a developmental age when continence is ordinarily expected (5 years for enuresis and 4 years for encopresis). The urinary or faecal incontinence may have been present from birth (i.e., an atypical extension of normal infantile incontinence), or may have arisen following a period of acquired bladder or bowel control. An Elimination disorder should not be diagnosed if the behaviour is fully attributable to another health condition that causes incontinence, congenital or acquired abnormalities of the urinary tract or bowel, or excessive use of laxatives or diuretics.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Elimination disorders include the repeated voiding of urine into clothes or bed (enuresis) and the repeated passage of faeces in inappropriate places (encopresis). Elimination disorders should only be diagnosed after the individual has reached a developmental age when continence is ordinarily expected (5 years for enuresis and 4 years for encopresis). The urinary or faecal incontinence may have been present from birth (i.e., an atypical extension of normal infantile incontinence), or may have arisen following a period of acquired bladder or bowel control. An Elimination disorder should not be diagnosed if the behaviour is fully attributable to another health condition that causes incontinence, congenital or acquired abnormalities of the urinary tract or bowel, or excessive use of laxatives or diuretics.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

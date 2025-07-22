@@ -1,0 +1,57 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1456478153",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/613065957"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/374726152",
+    "http://id.who.int/icd/release/11/2024-01/mms/1660456695",
+    "http://id.who.int/icd/release/11/2024-01/mms/1931350942",
+    "http://id.who.int/icd/release/11/2024-01/mms/129188707",
+    "http://id.who.int/icd/release/11/2024-01/mms/306271588",
+    "http://id.who.int/icd/release/11/2024-01/mms/818054919",
+    "http://id.who.int/icd/release/11/2024-01/mms/1952305399",
+    "http://id.who.int/icd/release/11/2024-01/mms/286661987",
+    "http://id.who.int/icd/release/11/2024-01/mms/1061132490",
+    "http://id.who.int/icd/release/11/2024-01/mms/1706773916",
+    "http://id.who.int/icd/release/11/2024-01/mms/167688690",
+    "http://id.who.int/icd/release/11/2024-01/mms/575545179",
+    "http://id.who.int/icd/release/11/2024-01/mms/937141021",
+    "http://id.who.int/icd/release/11/2024-01/mms/139575301",
+    "http://id.who.int/icd/release/11/2024-01/mms/811854024",
+    "http://id.who.int/icd/release/11/2024-01/mms/15761418",
+    "http://id.who.int/icd/release/11/2024-01/mms/1456478153/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1456478153/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1456478153",
+  "code": "6A60",
+  "source": "http://id.who.int/icd/entity/1456478153",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder is an episodic mood disorder defined by the occurrence of one or more manic or mixed episodes. A manic episode is an extreme mood state lasting at least one week unless shortened by a treatment intervention characterised by euphoria, irritability, or expansiveness, and by increased activity or a subjective experience of increased energy, accompanied by other characteristic symptoms such as rapid or pressured speech, flight of ideas, increased self-esteem or grandiosity, decreased need for sleep, distractibility, impulsive or reckless behaviour, and rapid changes among different mood states (i.e., mood lability). A mixed episode is characterised by the presence of several prominent manic and several prominent depressive symptoms consistent with those observed in manic episodes and depressive episodes, which either occur simultaneously or alternate very rapidly (from day to day or within the same day). Symptoms must include an altered mood state consistent with a manic and/or depressive episode (i.e., depressed, dysphoric, euphoric or expansive mood), and be present most of the day, nearly every day, during a period of at least 2 weeks, unless shortened by a treatment intervention. Although the diagnosis can be made based on evidence of a single manic or mixed episode, typically manic or mixed episodes alternate with depressive episodes over the course of the disorder."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cyclothymia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1427638883",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1427638883"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/199053300",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/199053300"
+    }
+  ]
+}

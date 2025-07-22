@@ -1,0 +1,32 @@
+Disorder Name: Harmful pattern of use of nicotine
+Disorder Code: 299901355
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+A pattern of nicotine use that has caused damage to a person’s physical or mental health. The pattern of nicotine use is evident over a period of at least 12 months if substance use is episodic or at least one month if use is continuous (i.e., daily or almost daily). Harm to health of the individual occurs due to one or more of the following: (1) direct or secondary toxic effects on body organs and systems; or (2) a harmful route of administration.
+
+Exclusions: Nicotine dependence; Episode of harmful use of nicotine
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+A pattern of nicotine use that has caused damage to a person’s physical or mental health. The pattern of nicotine use is evident over a period of at least 12 months if substance use is episodic or at least one month if use is continuous (i.e., daily or almost daily). Harm to health of the individual occurs due to one or more of the following: (1) direct or secondary toxic effects on body organs and systems; or (2) a harmful route of administration.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Nicotine dependence
+• Should be differentiated from: Episode of harmful use of nicotine
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

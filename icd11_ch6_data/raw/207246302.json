@@ -1,0 +1,57 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/207246302",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/31898480"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#207246302",
+  "code": "6C48.0",
+  "source": "http://id.who.int/icd/entity/207246302",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/207246302/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1115271910"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/207246302/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1648213213"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Episode of harmful use of caffeine"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "An episode of caffeine use that has caused damage to a person’s physical or mental health. Harm to health of the individual occurs due to one or more of the following: (1) direct or secondary toxic effects on body organs and systems; or (2) a harmful route of administration. This diagnosis should not be made if the harm is attributed to a known pattern of caffeine use."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of caffeine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1252561403",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1252561403"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of caffeine"
+      }
+    }
+  ]
+}

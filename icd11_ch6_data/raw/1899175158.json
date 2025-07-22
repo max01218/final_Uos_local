@@ -1,0 +1,82 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1899175158",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/216291184"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1899175158",
+  "code": "6E62.2",
+  "source": "http://id.who.int/icd/entity/1899175158",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1899175158/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Secondary mood syndrome, with mixed symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A syndrome characterised by the presence of both manic and depressive symptoms, either occurring together or alternating from day to day or over the course of a day that is judged to be a direct pathophysiological consequence of a health condition not classified under mental and behavioural disorders based on evidence from the history, physical examination, or laboratory findings. Manic symptoms may include elevated, euphoric, irritable, or expansive mood states, rapid changes among different mood states (i.e., mood lability), or increased energy or activity. Depressive symptoms may include persistently depressed mood, loss of interest in previously enjoyable activities, or signs such as tearful or downtrodden appearance. The symptoms are not accounted for by delirium or by another mental and behavioural disorder, and are not a psychologically mediated response to a severe medical condition (e.g., depressive symptoms in response to a life-threatening diagnosis). This category should be used in addition to the diagnosis for the presumed underlying disorder or disease when the mood symptoms are sufficiently severe to warrant specific clinical attention."
+  },
+  "fullySpecifiedName": {
+    "@language": "en",
+    "@value": "Mood syndrome due to health condition not classified under mental and behavioural disorders, with mixed symptoms"
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Adjustment disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/264310751",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/264310751"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/897917531",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/897917531"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary mood syndrome, with mixed symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "organic mixed affective disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood syndrome due to health condition not classified under mental and behavioural disorders, with mixed symptoms"
+      }
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1151987203",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1605607466"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1151987203",
+  "code": "6C44.23",
+  "source": "http://id.who.int/icd/entity/1151987203",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1151987203/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1226243628",
+        "http://id.who.int/icd/release/11/2024-01/mms/744305598",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954860287"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1151987203/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1314209089",
+        "http://id.who.int/icd/release/11/2024-01/mms/989359552",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Sedative, hypnotic or anxiolytic dependence, sustained full remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "After a diagnosis of sedative, hypnotic or anxiolytic dependence, and often following a treatment episode or other intervention (including self-intervention), the person has been abstinent from sedative, hypnotic or anxiolytic for 12 months or longer."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of sedatives, hypnotics or anxiolytics"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/475820054",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/475820054"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of sedatives, hypnotics or anxiolytics"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/723448021",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/723448021"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sedative, hypnotic or anxiolytic dependence, sustained full remission"
+      }
+    }
+  ]
+}

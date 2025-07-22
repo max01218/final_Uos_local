@@ -1,0 +1,26 @@
+Disorder Name: Depersonalization-derealization disorder
+Disorder Code: 253124068
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Depersonalization-derealization disorder is characterised by persistent or recurrent experiences of depersonalization, derealization, or both. Depersonalization is characterised by experiencing the self as strange or unreal, or feeling detached from, or as though one were an outside observer of, one’s thoughts, feelings, sensations, body, or actions. Derealization is characterised by experiencing other persons, objects, or the world as strange or unreal (e.g., dreamlike, distant, foggy, lifeless, colourless, or visually distorted) or feeling detached from one’s surroundings. During experiences of depersonalization or derealization, reality testing remains intact. The experiences of depersonalization or derealization do not occur exclusively during another dissociative disorder and are not better explained by another mental, behavioural or neurodevelopmental disorder. The experiences of depersonalization or derealization are not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, and are not due to a disease of the nervous system or to head trauma. The symptoms result in significant distress or impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Depersonalization-derealization disorder is characterised by persistent or recurrent experiences of depersonalization, derealization, or both. Depersonalization is characterised by experiencing the self as strange or unreal, or feeling detached from, or as though one were an outside observer of, one’s thoughts, feelings, sensations, body, or actions. Derealization is characterised by experiencing other persons, objects, or the world as strange or unreal (e.g., dreamlike, distant, foggy, lifeless, colourless, or visually distorted) or feeling detached from one’s surroundings. During experiences of depersonalization or derealization, reality testing remains intact. The experiences of depersonalization or derealization do not occur exclusively during another dissociative disorder and are not better explained by another mental, behavioural or neurodevelopmental disorder. The experiences of depersonalization or derealization are not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, and are not due to a disease of the nervous system or to head trauma. The symptoms result in significant distress or impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

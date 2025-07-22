@@ -1,0 +1,268 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/306271588",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1456478153"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#306271588",
+  "code": "6A60.4",
+  "source": "http://id.who.int/icd/entity/306271588",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/306271588/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/496273089"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder, current episode depressive, moderate, without psychotic symptoms is diagnosed when the definitional requirements for Bipolar type I disorder have been met and the current episode is depressive at a moderate level of severity and there are no delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a moderate depressive episode, several symptoms of a depressive episode are present to a marked degree, or a large number of depressive symptoms of lesser severity are present overall. The individual typically has considerable difficulty functioning in multiple domains (personal, family, social, educational, occupational, or other important domains)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bipolar type I disorder, current episode depressive, moderate without psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1736363705"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1196099323"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/419491354"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/669437010"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1423451595"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1142078589"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1003251700"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/181503432"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/76201620"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2069128475"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with melancholia and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/80279158"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1600865835"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1900543445"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1351648857"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/536036548"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2136903273"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptom, melancholia, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/531696674"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/418299961"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/638116465"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1189568570"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/385332101"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1764321290"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/929202409"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with melancholia and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1118815144"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with seasonal pattern and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1030821927"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/767263121"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/227428819"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, melancholia, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1405460786"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1831043962"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1321475489"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1578009623"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, moderate without psychotic symptoms, additional symptoms unspecified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/567304090"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+Disorder Name: Depressive disorders
+Disorder Code: 1563440232
+Code Range: 6A70-6A7Z
+Class Kind: block
+
+Standard Definition:
+Depressive disorders are characterised by depressive mood (e.g., sad, irritable, empty) or loss of pleasure accompanied by other cognitive, behavioural, or neurovegetative symptoms that significantly affect the individual’s ability to function. A depressive disorder should not be diagnosed in individuals who have ever experienced a manic, mixed or hypomanic episode, which would indicate the presence of a bipolar disorder.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Depressive disorders are characterised by depressive mood (e.g., sad, irritable, empty) or loss of pleasure accompanied by other cognitive, behavioural, or neurovegetative symptoms that significantly affect the individual’s ability to function. A depressive disorder should not be diagnosed in individuals who have ever experienced a manic, mixed or hypomanic episode, which would indicate the presence of a bipolar disorder.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

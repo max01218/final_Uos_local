@@ -1,0 +1,86 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1035710165",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1710319105"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1035710165",
+  "code": "6D84.1",
+  "source": "http://id.who.int/icd/entity/1035710165",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1035710165/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1035710165/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1035710165/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/723448021",
+        "http://id.who.int/icd/release/11/2024-01/mms/1605607466"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Dementia due to use of sedatives, hypnotics or anxiolytics"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dementia due to use of sedatives, hypnotics or anxiolytics is characterised by the development of persistent cognitive impairments (e.g., memory problems, language impairment, and an inability to perform complex motor tasks) that meet the definitional requirements of Dementia that are judged to be a direct consequence of sedative, hypnotic, or anxiolytic use and that persist beyond the usual duration of action or withdrawal syndrome associated with the substance. The amount and duration of sedative, hypnotic, or anxiolytic use must be sufficient to produce the cognitive impairment. The cognitive impairment is not better accounted for by a disorder that is not induced by sedatives, hypnotics, or anxiolytics such as a dementia due to another medical condition."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Late-onset psychoactive substance-induced psychotic disorder"
+      }
+    }
+  ],
+  "codingNote": {
+    "@language": "en",
+    "@value": "This category should never be used in primary tabulation. The codes are provided for use as supplementary or additional codes when it is desired to identify the presence of dementia in diseases classified elsewhere.\n\nWhen dementia is due to multiple aetiologies, code all that apply."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to use of sedatives, hypnotics or anxiolytics"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mental and behavioural disorders due to use of sedatives or hypnotics, residual and late-onset psychotic disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Late-onset psychoactive substance-induced psychotic disorder"
+      }
+    }
+  ]
+}

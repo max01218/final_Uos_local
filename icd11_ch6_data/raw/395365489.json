@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/395365489",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1021901799"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#395365489",
+  "code": "6C91.10",
+  "source": "http://id.who.int/icd/entity/395365489",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Conduct-dissocial disorder, adolescent onset with limited prosocial emotions"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for conduct-dissocial disorder, adolescent onset are met. In addition, the individual exhibits characteristics that are sometimes referred to as ‘callous and unemotional’. These characteristics include a lack of empathy or sensitivity to the feelings of others and a lack of concern for others’ distress; a lack of remorse, shame or guilt over their own behaviour (unless prompted by being apprehended), a relative indifference to the probability of punishment; a lack of concern over poor performance in school or work; and limited expression of emotions, particularly positive or loving feelings toward others, or only doing so in ways that seem shallow, insincere, or instrumental."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Conduct-dissocial disorder, adolescent onset with limited prosocial emotions"
+      }
+    }
+  ]
+}

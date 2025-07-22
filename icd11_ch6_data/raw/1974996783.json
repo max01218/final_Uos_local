@@ -1,0 +1,36 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1974996783",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/405565289"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/386634703",
+    "http://id.who.int/icd/release/11/2024-01/mms/841168541",
+    "http://id.who.int/icd/release/11/2024-01/mms/229201285",
+    "http://id.who.int/icd/release/11/2024-01/mms/1974996783/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1974996783",
+  "code": "6A24",
+  "source": "http://id.who.int/icd/entity/1974996783",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1974996783/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Delusional disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Delusional disorder is characterised by the development of a delusion or set of related delusions, typically persisting for at least 3 months and often much longer, in the absence of a Depressive, Manic, or Mixed mood episode. The delusions are variable in content across individuals, but typically stable within individuals, although they may evolve over time. Other characteristic symptoms of Schizophrenia (i.e. clear and persistent hallucinations, negative symptoms, disorganised thinking, or experiences of influence, passivity, or control) are not present, although various forms of perceptual disturbances (e.g. hallucinations, illusions, misidentifications of persons) thematically related to the delusion are still consistent with the diagnosis. Apart from actions and attitudes directly related to the delusion or delusional system, affect, speech, and behavior are typically unaffected. The symptoms are not a manifestation of another medical condition (e.g., a brain tumour) and are not due to the effect of a substance or medication on the central nervous system (e.g. corticosteroids), including withdrawal effects (e.g. alcohol withdrawal)."
+  }
+}

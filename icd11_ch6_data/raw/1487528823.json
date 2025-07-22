@@ -1,0 +1,24 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1487528823",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/310393530"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/818792113",
+    "http://id.who.int/icd/release/11/2024-01/mms/736540987",
+    "http://id.who.int/icd/release/11/2024-01/mms/1487528823/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1487528823",
+  "code": "6C90",
+  "source": "http://id.who.int/icd/entity/1487528823",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Oppositional defiant disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Oppositional defiant disorder is a persistent pattern (e.g., 6 months or more) of markedly defiant, disobedient, provocative or spiteful behaviour that occurs more frequently than is typically observed in individuals of comparable age and developmental level and that is not restricted to interaction with siblings. Oppositional defiant disorder may be manifest in prevailing, persistent angry or irritable mood, often accompanied by severe temper outbursts or in headstrong, argumentative and defiant behaviour. The behaviour pattern is of sufficient severity to result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning"
+  }
+}

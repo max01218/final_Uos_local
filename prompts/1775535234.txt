@@ -1,0 +1,35 @@
+Disorder Name: Stimulant intoxication including amphetamines, methamphetamine or methcathinone
+Disorder Code: 1775535234
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Stimulant intoxication including amphetamines, methamphetamine and methcathinone but excluding caffeine, cocaine and synthetic cathinones is a clinically significant transient condition that develops during or shortly after the consumption of amphetamine or other stimulants that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of amphetamine or other stimulants and their intensity is closely related to the amount of amphetamine or other stimulant consumed. They are time-limited and abate as amphetamine or another stimulant is cleared from the body. Presenting features may include anxiety, anger, impaired attention, hypervigilance, psychomotor agitation, paranoid ideation (possibly of delusional intensity), transient auditory hallucinations, transitory confusion, and changes in sociability. Perspiration or chills, nausea or vomiting, and palpitations may be experienced. Physical signs may include tachycardia, elevated blood pressure, pupillary dilatation, dyskinesias and dystonias, and skin sores. In rare instances, usually in severe intoxication, use of stimulants including amphetamines, methamphetamine and methcathinone can result in seizures.
+
+Exclusions: amphetamine poisoning; Caffeine intoxication; Cocaine intoxication; Synthetic cathinone intoxication; Possession trance disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Stimulant intoxication including amphetamines, methamphetamine and methcathinone but excluding caffeine, cocaine and synthetic cathinones is a clinically significant transient condition that develops during or shortly after the consumption of amphetamine or other stimulants that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of amphetamine or other stimulants and their intensity is closely related to the amount of amphetamine or other stimulant consumed. They are time-limited and abate as amphetamine or another stimulant is cleared from the body. Presenting features may include anxiety, anger, impaired attention, hypervigilance, psychomotor agitation, paranoid ideation (possibly of delusional intensity), transient auditory hallucinations, transitory confusion, and changes in sociability. Perspiration or chills, nausea or vomiting, and palpitations may be experienced. Physical signs may include tachycardia, elevated blood pressure, pupillary dilatation, dyskinesias and dystonias, and skin sores. In rare instances, usually in severe intoxication, use of stimulants including amphetamines, methamphetamine and methcathinone can result in seizures.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: amphetamine poisoning
+• Should be differentiated from: Caffeine intoxication
+• Should be differentiated from: Cocaine intoxication
+• Should be differentiated from: Synthetic cathinone intoxication
+• Should be differentiated from: Possession trance disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

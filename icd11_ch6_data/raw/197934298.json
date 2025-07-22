@@ -1,0 +1,113 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/197934298",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1971756453",
+    "http://id.who.int/icd/release/11/2024-01/mms/1582386590",
+    "http://id.who.int/icd/release/11/2024-01/mms/915779102",
+    "http://id.who.int/icd/release/11/2024-01/mms/1332995100",
+    "http://id.who.int/icd/release/11/2024-01/mms/111658096",
+    "http://id.who.int/icd/release/11/2024-01/mms/390439470",
+    "http://id.who.int/icd/release/11/2024-01/mms/850824593",
+    "http://id.who.int/icd/release/11/2024-01/mms/370028006",
+    "http://id.who.int/icd/release/11/2024-01/mms/1654881561",
+    "http://id.who.int/icd/release/11/2024-01/mms/760239795",
+    "http://id.who.int/icd/release/11/2024-01/mms/761789312",
+    "http://id.who.int/icd/release/11/2024-01/mms/197934298/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#197934298",
+  "code": "12",
+  "source": "http://id.who.int/icd/entity/197934298",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symptoms, signs or clinical findings of the respiratory system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/346645181",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/346645181"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Pulmonary heart disease or diseases of pulmonary circulation"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1703442464",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1703442464"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sleep-related breathing disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/877557231",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/877557231"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the respiratory system complicating pregnancy, childbirth or the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/923122941",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/923122941"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Diseases of the respiratory system"
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endocrine, nutritional or metabolic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/21500692",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/21500692"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Congenital malformations, deformations and chromosomal abnormalities"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/223744320",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/223744320"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Injury, poisoning or certain other consequences of external causes"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/435227771",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/435227771"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain conditions originating in the perinatal period"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1306203631",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1306203631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain infectious or parasitic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1435254666",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1435254666"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Complications of pregnancy, childbirth and the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/714000734",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/714000734"
+    }
+  ]
+}

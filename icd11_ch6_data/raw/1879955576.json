@@ -1,0 +1,67 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1879955576",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1600451095"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1879955576",
+  "code": "6C4B.11",
+  "source": "http://id.who.int/icd/entity/1879955576",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1879955576/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1030552808",
+        "http://id.who.int/icd/release/11/2024-01/mms/1478963582",
+        "http://id.who.int/icd/release/11/2024-01/mms/1416233126"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1879955576/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/976174979"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Harmful pattern of use of volatile inhalants, continuous"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A pattern of continuous (daily or almost daily) volatile inhalant use that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. The pattern of continuous volatile inhalant use is evident over a period of at least one month. Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour related to volatile inhalant intoxication on the part of the person to whom the diagnosis of Harmful pattern of use of volatile inhalants applies."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of volatile inhalants"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/893652479",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/893652479"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Volatile inhalant dependence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/734634730",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/734634730"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of volatile inhalants, continuous"
+      }
+    }
+  ]
+}

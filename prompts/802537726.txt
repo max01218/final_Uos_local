@@ -1,0 +1,26 @@
+Disorder Name: Current depressive episode with melancholia
+Disorder Code: 802537726
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+In the context of a current Depressive Episode, several of the following symptoms have been present during the worst period of the current episode: loss of interest or pleasure in most activities that are normally enjoyable to the individual (i.e., pervasive anhedonia); lack of emotional reactivity to normally pleasurable stimuli or circumstances (i.e., mood does not lift even transiently with exposure); terminal insomnia (i.e., waking in the morning two hours or more before the usual time); depressive symptoms are worse in the morning; marked psychomotor retardation or agitation; marked loss of appetite or loss of weight.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+In the context of a current Depressive Episode, several of the following symptoms have been present during the worst period of the current episode: loss of interest or pleasure in most activities that are normally enjoyable to the individual (i.e., pervasive anhedonia); lack of emotional reactivity to normally pleasurable stimuli or circumstances (i.e., mood does not lift even transiently with exposure); terminal insomnia (i.e., waking in the morning two hours or more before the usual time); depressive symptoms are worse in the morning; marked psychomotor retardation or agitation; marked loss of appetite or loss of weight.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

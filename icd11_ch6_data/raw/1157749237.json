@@ -1,0 +1,95 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1157749237",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1884115764"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1048673005",
+    "http://id.who.int/icd/release/11/2024-01/mms/210284268",
+    "http://id.who.int/icd/release/11/2024-01/mms/624858749",
+    "http://id.who.int/icd/release/11/2024-01/mms/1157749237/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1157749237",
+  "code": "6C00",
+  "source": "http://id.who.int/icd/entity/1157749237",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Enuresis"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Enuresis is the repeated voiding of urine into clothes or bed, which may occur during the day or at night, in an individual who has reached a developmental age when urinary continence is ordinarily expected (5 years). The urinary incontinence may have been present from birth (i.e., an atypical extension of normal infantile incontinence), or may have arisen following a period of acquired bladder control. In most cases, the behaviour is involuntary but in some cases it appears intentional. Enuresis should not be diagnosed if unintentional voiding of urine is due to a health condition that interferes with continence (e.g., diseases of the nervous system or musculoskeletal disorders) or by congenital or acquired abnormalities of the urinary tract."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional enuresis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Psychogenic enuresis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Urinary incontinence of nonorganic origin"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stress incontinence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/444605491",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/444605491"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Urge Incontinence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1342466282",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1342466282"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional urinary incontinence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1140964489",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1140964489"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Overflow Incontinence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1471418842",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/766129123"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Reflex incontinence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/138852207",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/138852207"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Extraurethral urinary incontinence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/429926918",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/766129123"
+    }
+  ]
+}

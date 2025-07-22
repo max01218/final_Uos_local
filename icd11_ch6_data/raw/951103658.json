@@ -1,0 +1,107 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/951103658",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1016273204"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#951103658",
+  "code": "6C46.5",
+  "source": "http://id.who.int/icd/entity/951103658",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/951103658/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/16341703",
+        "http://id.who.int/icd/release/11/2024-01/mms/373236638",
+        "http://id.who.int/icd/release/11/2024-01/mms/1756699061",
+        "http://id.who.int/icd/release/11/2024-01/mms/1891241424",
+        "http://id.who.int/icd/release/11/2024-01/mms/1193684303",
+        "http://id.who.int/icd/release/11/2024-01/mms/1853123588",
+        "http://id.who.int/icd/release/11/2024-01/mms/534456613",
+        "http://id.who.int/icd/release/11/2024-01/mms/428256012",
+        "http://id.who.int/icd/release/11/2024-01/mms/33615934",
+        "http://id.who.int/icd/release/11/2024-01/mms/648146092",
+        "http://id.who.int/icd/release/11/2024-01/mms/808405469",
+        "http://id.who.int/icd/release/11/2024-01/mms/1870704429",
+        "http://id.who.int/icd/release/11/2024-01/mms/1732158747",
+        "http://id.who.int/icd/release/11/2024-01/mms/1416993969",
+        "http://id.who.int/icd/release/11/2024-01/mms/2121804732",
+        "http://id.who.int/icd/release/11/2024-01/mms/2043582775",
+        "http://id.who.int/icd/release/11/2024-01/mms/1960627774",
+        "http://id.who.int/icd/release/11/2024-01/mms/1076458680",
+        "http://id.who.int/icd/release/11/2024-01/mms/448177412",
+        "http://id.who.int/icd/release/11/2024-01/mms/1864983449",
+        "http://id.who.int/icd/release/11/2024-01/mms/543245955",
+        "http://id.who.int/icd/release/11/2024-01/mms/2017927415",
+        "http://id.who.int/icd/release/11/2024-01/mms/511194385"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/951103658/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1775535234",
+        "http://id.who.int/icd/release/11/2024-01/mms/494523519"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/951103658/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1772665991",
+        "http://id.who.int/icd/release/11/2024-01/mms/211765524",
+        "http://id.who.int/icd/release/11/2024-01/mms/2016549355"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Stimulant-induced delirium including amphetamines, methamphetamine or methcathinone"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Stimulant-induced delirium including amphetamines, methamphetamine and methcathinone is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or withdrawal or during the use of stimulants. The amount and duration of stimulant use must be capable of producing delirium. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from a different substance, or by another health condition that is not classified under Mental, behavioural and neurodevelopmental disorders."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine-induced delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1919913834",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1919913834"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone-induced delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1526280683",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1526280683"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorders due to use of caffeine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/31898480",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/31898480"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stimulant-induced delirium including amphetamines, methamphetamine or methcathinone"
+      }
+    }
+  ]
+}

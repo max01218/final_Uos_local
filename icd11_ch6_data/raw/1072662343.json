@@ -1,0 +1,56 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1072662343",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/795022044"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1072662343",
+  "code": "6D80.3",
+  "source": "http://id.who.int/icd/entity/1072662343",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1072662343/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1611724421",
+        "http://id.who.int/icd/release/11/2024-01/mms/1345814274",
+        "http://id.who.int/icd/release/11/2024-01/mms/2091156678",
+        "http://id.who.int/icd/release/11/2024-01/mms/2099230583"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1072662343/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Alzheimer disease dementia, mixed type, with other nonvascular aetiologies"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dementia due to Alzheimer disease with other concomitant pathology, not including cerebrovascular disease."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "This category should never be used in primary tabulation. The codes are provided for use as supplementary or additional codes when it is desired to identify the presence of dementia in diseases classified elsewhere.\n\nWhen dementia is due to multiple aetiologies, code all that apply."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alzheimer disease dementia, mixed type, with other nonvascular aetiologies"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/544507568",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/306103450"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#544507568",
+  "code": "6B80.01",
+  "source": "http://id.who.int/icd/entity/544507568",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Anorexia Nervosa with significantly low body weight, binge-purge pattern"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Anorexia Nervosa with significantly low body weight, binge-purge pattern refers to individuals who meet the definitional requirements of Anorexia Nervosa with significantly low body weight and who present with episodes of binge eating or purging behaviours. These individuals induce weight loss and maintain low body weight through restricted food intake, commonly accompanied by significant purging behaviours aimed at getting rid of ingested food (e.g. self-induced vomiting, laxative abuse or enemas). This pattern also includes individuals who exhibit binge eating episodes but do not purge."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anorexia Nervosa with significantly low body weight, binge-purge pattern"
+      }
+    }
+  ]
+}

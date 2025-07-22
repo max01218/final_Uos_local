@@ -1,0 +1,26 @@
+Disorder Name: Oppositional defiant disorder with chronic irritability-anger
+Disorder Code: 818792113
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements for oppositional defiant disorder are met. This form of oppositional defiant disorder is characterised by prevailing, persistent angry or irritable mood that may be present independent of any apparent provocation. The negative mood is often accompanied by regularly occurring severe temper outbursts that are grossly out of proportion in intensity or duration to the provocation. Chronic irritability and anger are characteristic of the individual’s functioning nearly every day, are observable across multiple settings or domains of functioning (e.g., home, school, social relationships), and are not restricted to the individual’s relationship with his/her parents or guardians. The pattern of chronic irritability and anger is not limited to occasional episodes (e.g., developmentally typical irritability) or discrete periods (e.g., irritable mood in the context of manic or depressive episodes).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements for oppositional defiant disorder are met. This form of oppositional defiant disorder is characterised by prevailing, persistent angry or irritable mood that may be present independent of any apparent provocation. The negative mood is often accompanied by regularly occurring severe temper outbursts that are grossly out of proportion in intensity or duration to the provocation. Chronic irritability and anger are characteristic of the individual’s functioning nearly every day, are observable across multiple settings or domains of functioning (e.g., home, school, social relationships), and are not restricted to the individual’s relationship with his/her parents or guardians. The pattern of chronic irritability and anger is not limited to occasional episodes (e.g., developmentally typical irritability) or discrete periods (e.g., irritable mood in the context of manic or depressive episodes).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,104 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/384984571",
+    "http://id.who.int/icd/release/11/2024-01/mms/533054712",
+    "http://id.who.int/icd/release/11/2024-01/mms/237197715",
+    "http://id.who.int/icd/release/11/2024-01/mms/106304476",
+    "http://id.who.int/icd/release/11/2024-01/mms/157326074",
+    "http://id.who.int/icd/release/11/2024-01/mms/1569145337",
+    "http://id.who.int/icd/release/11/2024-01/mms/602989108",
+    "http://id.who.int/icd/release/11/2024-01/mms/1803768976",
+    "http://id.who.int/icd/release/11/2024-01/mms/489508344",
+    "http://id.who.int/icd/release/11/2024-01/mms/1223380074",
+    "http://id.who.int/icd/release/11/2024-01/mms/1397253045",
+    "http://id.who.int/icd/release/11/2024-01/mms/1173690756",
+    "http://id.who.int/icd/release/11/2024-01/mms/141396655",
+    "http://id.who.int/icd/release/11/2024-01/mms/1336446723",
+    "http://id.who.int/icd/release/11/2024-01/mms/1365615047",
+    "http://id.who.int/icd/release/11/2024-01/mms/1639304259/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1639304259/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1639304259",
+  "code": "14",
+  "source": "http://id.who.int/icd/entity/1639304259",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Haematoma of surgical wound of skin"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1953940269",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1953940269"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Superficial incisional site infection"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/75951638",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/75951638"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Neonatal phototherapy burn"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1826995932",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1826995932"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symptoms or signs involving the skin"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/610583617",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/610583617"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Diseases of the skin"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Diseases of the skin incorporate conditions affecting the epidermis, its appendages (hair, hair follicle, sebaceous glands, apocrine sweat gland apparatus, eccrine sweat gland apparatus and nails) and associated mucous membranes (conjunctival, oral and genital), the dermis, the cutaneous vasculature and the subcutaneous tissue (subcutis)."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the epidermis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the dermis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the epidermal appendages (hair, hair follicle, sebaceous glands, apocrine sweat gland apparatus, eccrine sweat gland apparatus and nails)"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of subcutaneous tissue"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of cutaneous vasculature"
+      }
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1110405006",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1194756772"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1110405006",
+  "code": "6A71.6",
+  "source": "http://id.who.int/icd/entity/1110405006",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1110405006/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder, currently in partial remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder, currently in partial remission, is diagnosed when the definitional requirements for Recurrent depressive disorder have been met; the full definitional requirements for a depressive episode are no longer met but some significant mood symptoms remain."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, currently in partial remission"
+      }
+    }
+  ]
+}

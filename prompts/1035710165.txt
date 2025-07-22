@@ -1,0 +1,31 @@
+Disorder Name: Dementia due to use of sedatives, hypnotics or anxiolytics
+Disorder Code: 1035710165
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dementia due to use of sedatives, hypnotics or anxiolytics is characterised by the development of persistent cognitive impairments (e.g., memory problems, language impairment, and an inability to perform complex motor tasks) that meet the definitional requirements of Dementia that are judged to be a direct consequence of sedative, hypnotic, or anxiolytic use and that persist beyond the usual duration of action or withdrawal syndrome associated with the substance. The amount and duration of sedative, hypnotic, or anxiolytic use must be sufficient to produce the cognitive impairment. The cognitive impairment is not better accounted for by a disorder that is not induced by sedatives, hypnotics, or anxiolytics such as a dementia due to another medical condition.
+
+Inclusions: Late-onset psychoactive substance-induced psychotic disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia due to use of sedatives, hypnotics or anxiolytics is characterised by the development of persistent cognitive impairments (e.g., memory problems, language impairment, and an inability to perform complex motor tasks) that meet the definitional requirements of Dementia that are judged to be a direct consequence of sedative, hypnotic, or anxiolytic use and that persist beyond the usual duration of action or withdrawal syndrome associated with the substance. The amount and duration of sedative, hypnotic, or anxiolytic use must be sufficient to produce the cognitive impairment. The cognitive impairment is not better accounted for by a disorder that is not induced by sedatives, hypnotics, or anxiolytics such as a dementia due to another medical condition.
+
+Included Manifestations:
+• Late-onset psychoactive substance-induced psychotic disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

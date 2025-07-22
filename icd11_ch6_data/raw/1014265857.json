@@ -1,0 +1,54 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1014265857",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/111507461"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/119512795",
+    "http://id.who.int/icd/release/11/2024-01/mms/963759045"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1014265857",
+  "code": "6C43.7",
+  "source": "http://id.who.int/icd/entity/1014265857",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1014265857/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1395283456",
+        "http://id.who.int/icd/release/11/2024-01/mms/663160065",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1014265857/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/398872858",
+        "http://id.who.int/icd/release/11/2024-01/mms/912365674",
+        "http://id.who.int/icd/release/11/2024-01/mms/1120716949"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Certain specified opioid-induced mental or behavioural disorders"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain specified opioid-induced mental or behavioural disorders"
+      }
+    }
+  ]
+}

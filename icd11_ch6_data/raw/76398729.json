@@ -1,0 +1,39 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/76398729",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/613065957",
+    "http://id.who.int/icd/release/11/2024-01/mms/1563440232",
+    "http://id.who.int/icd/release/11/2024-01/mms/496273089",
+    "http://id.who.int/icd/release/11/2024-01/mms/2133003467",
+    "http://id.who.int/icd/release/11/2024-01/mms/76398729/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/76398729/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#76398729",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/76398729",
+  "classKind": "block",
+  "blockId": "BlockL1-6A6",
+  "codeRange": "6A60-6A8Z",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary mood syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/216291184",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/216291184"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Mood disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Mood Disorders refers to a superordinate grouping of Bipolar and Depressive Disorders. Mood disorders are defined according to particular types of mood episodes and their pattern over time. The primary types of mood episodes are Depressive episode, Manic episode, Mixed episode, and Hypomanic episode. Mood episodes are not independently diagnosable entities, and therefore do not have their own diagnostic codes. Rather, mood episodes make up the primary components of most of the Depressive and Bipolar Disorders."
+  }
+}

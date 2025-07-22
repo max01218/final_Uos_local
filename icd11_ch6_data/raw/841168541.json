@@ -1,0 +1,38 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/841168541",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1974996783"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#841168541",
+  "code": "6A24.1",
+  "source": "http://id.who.int/icd/entity/841168541",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/841168541/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Delusional disorder, in partial remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for Delusional disorder in terms of symptoms and duration were previously met. Symptoms have ameliorated such that the diagnostic requirements for the disorder have not been met for at least one month, but some clinically significant symptoms remain, which may or may not be associated with functional impairment. The partial remission may have occurred in response to medication or other treatment."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delusional disorder, in partial remission"
+      }
+    }
+  ]
+}

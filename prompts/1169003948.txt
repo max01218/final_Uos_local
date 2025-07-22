@@ -1,0 +1,41 @@
+Disorder Name: Developmental language disorder with impairment of mainly expressive language
+Disorder Code: 1169003948
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Developmental language disorder with impairment of mainly expressive language is characterised by persistent difficulties in the acquisition, production, and use of language that arise during the developmental period, typically during early childhood, and cause significant limitations in the individual’s ability to communicate. The ability to produce and use spoken or signed language (i.e., expressive language) is markedly below the expected level given the individual’s age and level of intellectual functioning, but the ability to understand spoken or signed language (i.e., receptive language) is relatively intact.
+
+Inclusions: Developmental dysphasia or aphasia, expressive type
+Exclusions: acquired aphasia with epilepsy [Landau-Kleffner]; Selective mutism; dysphasia and aphasia: developmental, receptive type; dysphasia NOS; aphasia NOS; Diseases of the nervous system; Deafness not otherwise specified
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Developmental language disorder with impairment of mainly expressive language is characterised by persistent difficulties in the acquisition, production, and use of language that arise during the developmental period, typically during early childhood, and cause significant limitations in the individual’s ability to communicate. The ability to produce and use spoken or signed language (i.e., expressive language) is markedly below the expected level given the individual’s age and level of intellectual functioning, but the ability to understand spoken or signed language (i.e., receptive language) is relatively intact.
+
+Included Manifestations:
+• Developmental dysphasia or aphasia, expressive type
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: acquired aphasia with epilepsy [Landau-Kleffner]
+• Should be differentiated from: Selective mutism
+• Should be differentiated from: dysphasia and aphasia: developmental, receptive type
+• Should be differentiated from: dysphasia NOS
+• Should be differentiated from: aphasia NOS
+• Should be differentiated from: Diseases of the nervous system
+• Should be differentiated from: Deafness not otherwise specified
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

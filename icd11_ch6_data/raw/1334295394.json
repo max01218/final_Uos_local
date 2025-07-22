@@ -1,0 +1,92 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1334295394",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1218193465"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1334295394",
+  "code": "6C4C.0",
+  "source": "http://id.who.int/icd/entity/1334295394",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1334295394/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1692885212",
+        "http://id.who.int/icd/release/11/2024-01/mms/342215505",
+        "http://id.who.int/icd/release/11/2024-01/mms/1327107148",
+        "http://id.who.int/icd/release/11/2024-01/mms/1153016464",
+        "http://id.who.int/icd/release/11/2024-01/mms/2102840295",
+        "http://id.who.int/icd/release/11/2024-01/mms/321833104",
+        "http://id.who.int/icd/release/11/2024-01/mms/171496389",
+        "http://id.who.int/icd/release/11/2024-01/mms/565097819",
+        "http://id.who.int/icd/release/11/2024-01/mms/1211762077",
+        "http://id.who.int/icd/release/11/2024-01/mms/1361845976",
+        "http://id.who.int/icd/release/11/2024-01/mms/868004030"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1334295394/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1828722493",
+        "http://id.who.int/icd/release/11/2024-01/mms/1589999330",
+        "http://id.who.int/icd/release/11/2024-01/mms/1157653052"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1334295394/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1574982062"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Episode of harmful use of MDMA or related drugs, including MDA"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "An episode of use of MDMA or related drugs, including MDA, that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour due to intoxication with MDMA or related drugs, including MDA, on the part of the person to whom the diagnosis of single episode of harmful use applies. This diagnosis should not be made if the harm is attributed to a known pattern of use of MDMA or related drugs, including MDA."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of MDMA or related drugs, including MDA"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1662953838",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1662953838"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "MDMA or related drug dependence, including MDA"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/473001402",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/473001402"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of MDMA or related drugs, including MDA"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode of harmful use of ecstasy or related drugs"
+      }
+    }
+  ]
+}

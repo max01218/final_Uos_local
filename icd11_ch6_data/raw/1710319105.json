@@ -1,0 +1,79 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1710319105",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/546689346"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1619582852",
+    "http://id.who.int/icd/release/11/2024-01/mms/1035710165",
+    "http://id.who.int/icd/release/11/2024-01/mms/694002628",
+    "http://id.who.int/icd/release/11/2024-01/mms/1710319105/other"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1710319105",
+  "code": "6D84",
+  "source": "http://id.who.int/icd/entity/1710319105",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1710319105/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/148241182"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1710319105/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1710319105/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/754209924",
+        "http://id.who.int/icd/release/11/2024-01/mms/1934475925"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Dementia due to psychoactive substances including medications"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dementia due to psychoactive substances including medications includes forms of dementia that are judged to be a direct consequence of substance use and that persist beyond the usual duration of action or withdrawal syndrome associated with the substance. The amount and duration of substance use must be sufficient to produce the cognitive impairment. The cognitive impairment is not better accounted for by a disorder that is not induced by substances such as a dementia due to another medical condition."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to exposure to heavy metals and other toxins"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/710305644",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/710305644"
+    }
+  ],
+  "codingNote": {
+    "@language": "en",
+    "@value": "This category should never be used in primary tabulation. The codes are provided for use as supplementary or additional codes when it is desired to identify the presence of dementia in diseases classified elsewhere.\n\nWhen dementia is due to multiple aetiologies, code all that apply."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to psychoactive substances including medications"
+      }
+    }
+  ]
+}

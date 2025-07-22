@@ -1,0 +1,33 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/141881468",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2110604642"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#141881468",
+  "code": "6D30",
+  "source": "http://id.who.int/icd/entity/141881468",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Exhibitionistic disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Exhibitionistic disorder is characterised by a sustained, focused and intense pattern of sexual arousal—as manifested by persistent sexual thoughts, fantasies, urges, or behaviours—that involves exposing one’s genitals to an unsuspecting individual in public places, usually without inviting or intending closer contact. In addition, in order for Exhibitionistic Disorder to be diagnosed, the individual must have acted on these thoughts, fantasies or urges or be markedly distressed by them. Exhibitionistic Disorder specifically excludes consensual exhibitionistic behaviours that occur with the consent of the person or persons involved as well as socially sanctioned forms of exhibitionism."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Exhibitionistic disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "exhibitionist"
+      }
+    }
+  ]
+}

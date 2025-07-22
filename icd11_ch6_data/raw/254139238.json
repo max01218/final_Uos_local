@@ -1,0 +1,65 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/254139238",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1321276661"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#254139238",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/254139238",
+  "classKind": "window",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine-induced obsessive-compulsive or related disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/330885524",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/330885524"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stimulant-induced obsessive-compulsive or related disorder including amphetamines, methamphetamine or methcathinone"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1830469239",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1830469239"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone-induced obsessive-compulsive or related syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/511382862",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/511382862"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Obsessive-compulsive or related disorder induced by other specified psychoactive substance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/69097373",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/69097373"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Obsessive-compulsive or related disorder induced by unknown or unspecified psychoactive substance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/118181509",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/118181509"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Obsessive-compulsive or related disorder induced by multiple specified psychoactive substances"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2039807396",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2039807396"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Substance-induced obsessive-compulsive or related disorders"
+  }
+}

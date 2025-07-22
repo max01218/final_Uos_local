@@ -1,0 +1,68 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/333795413",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/686500513"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#333795413",
+  "code": "6C42.20",
+  "source": "http://id.who.int/icd/entity/333795413",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/333795413/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/138091123",
+        "http://id.who.int/icd/release/11/2024-01/mms/1995589534",
+        "http://id.who.int/icd/release/11/2024-01/mms/738827515"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/333795413/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/508603587",
+        "http://id.who.int/icd/release/11/2024-01/mms/397276103"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Synthetic cannabinoid dependence, current use"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Current synthetic cannabinoid dependence with use of synthetic cannabinoids within the past month."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of synthetic cannabinoids"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/912934263",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/912934263"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of synthetic cannabinoids"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1055626783",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1055626783"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cannabinoid dependence, current use"
+      }
+    }
+  ]
+}

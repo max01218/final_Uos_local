@@ -1,0 +1,83 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1387132352",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1913137404"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1387132352",
+  "code": "6C41.3",
+  "source": "http://id.who.int/icd/entity/1387132352",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1387132352/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1387132352/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/854520906",
+        "http://id.who.int/icd/release/11/2024-01/mms/937834582",
+        "http://id.who.int/icd/release/11/2024-01/mms/1129015467"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Cannabis intoxication"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Cannabis intoxication is a clinically significant transient condition that develops during or shortly after the consumption of cannabis that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of cannabis and their intensity is closely related to the amount of cannabis consumed. They are time-limited and abate as cannabis is cleared from the body. Presenting features may include inappropriate euphoria, impaired attention, impaired judgment, perceptual alterations (such as the sensation of floating, altered perception of time), changes in sociability, increased appetite, anxiety, intensification of ordinary experiences, impaired short-term memory, and sluggishness. Physical signs include conjunctival injection (red or bloodshot eyes) and tachycardia."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "\"Bad trips\" due to cannabinoids"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "cannabinoid poisoning"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/582619511",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1868408442"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Possession trance disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1374925579",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1374925579"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cannabis intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "\"Bad trips\" due to cannabinoids"
+      }
+    }
+  ]
+}

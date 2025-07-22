@@ -1,0 +1,71 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/988431240",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1246085612"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#988431240",
+  "code": "6D72.10",
+  "source": "http://id.who.int/icd/entity/988431240",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/988431240/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1339202943",
+        "http://id.who.int/icd/release/11/2024-01/mms/998231424"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/988431240/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/714690795",
+        "http://id.who.int/icd/release/11/2024-01/mms/1580466198"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Amnestic disorder due to use of alcohol"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for amnestic disorder are met. The memory symptoms are judged to be the direct consequence of alcohol use. The intensity and duration of alcohol use must be known to be capable of producing memory impairment. The memory impairment may develop during or soon after alcohol intoxication or withdrawal, but its intensity and duration are substantially in excess of those normally associated with these conditions. The symptoms are not better accounted for by another disorder or medical condition, as might be the case if the amnestic symptoms preceded the onset of the alcohol use."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Korsakoff syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/428071867",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/428071867"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Wernicke-Korsakoff Syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2017611840",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2017611840"
+    }
+  ],
+  "codingNote": {
+    "@language": "en",
+    "@value": "This category should not be used to describe cognitive changes due to thiamine deficiency associated with chronic alcohol use."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Amnestic disorder due to use of alcohol"
+      }
+    }
+  ]
+}

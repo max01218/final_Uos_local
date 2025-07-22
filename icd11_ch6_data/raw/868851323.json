@@ -1,0 +1,55 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/868851323",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1468768235"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#868851323",
+  "code": "6D85.8",
+  "source": "http://id.who.int/icd/entity/868851323",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/868851323/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/868851323/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1108993080"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Dementia due to pellagra"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dementia due to pellagra is caused by persistent lack of vitamin B3 (niacin) or tryptophan either in the diet or due to poor absorption in the gastrointestinal tract due to disease (e.g., Crohn disease) or due to the effects of some medications (e.g., isoniazid). Core signs of pellagra include dermatological changes (sensitivity to sunlight, lesions, alopecia, and oedema) and diarrhoea. With prolonged nutritional deficiency cognitive symptoms that include aggressivity, motor disturbances (ataxia and restlessness), confusion, and weakness are observed. Treatment with nutritional supplementation (e.g., niacin) typically results in reversal of symptoms."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to pellagra"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to niacin deficiency"
+      }
+    }
+  ]
+}

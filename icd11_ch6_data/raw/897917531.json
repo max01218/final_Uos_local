@@ -1,0 +1,26 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/897917531",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/213458094"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1015017717",
+    "http://id.who.int/icd/release/11/2024-01/mms/80203879",
+    "http://id.who.int/icd/release/11/2024-01/mms/343480877",
+    "http://id.who.int/icd/release/11/2024-01/mms/897917531/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/897917531/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#897917531",
+  "code": "6D70",
+  "source": "http://id.who.int/icd/entity/897917531",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Delirium"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Delirium is characterized by a disturbance of attention, orientation, and awareness that develops within a short period of time, typically presenting as significant confusion or global neurocognitive impairment, with transient symptoms that may fluctuate depending on the underlying causal condition or etiology. Delirium often includes disturbance of behaviour and emotion, and may include impairment in multiple cognitive domains. A disturbance of the sleep-wake cycle, including reduced arousal of acute onset or total sleep loss with reversal of the sleep-wake cycle, may also be present. Delirium may be caused by the direct physiological effects of a medical condition not classified under mental, behavioural or neurodevelopmental disorders, by the direct physiological effects of a substance or medication, including withdrawal, or by multiple or unknown etiological factors."
+  }
+}

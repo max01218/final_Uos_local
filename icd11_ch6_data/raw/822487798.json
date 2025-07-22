@@ -1,0 +1,76 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/822487798",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/496273089"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#822487798",
+  "code": "6A80.4",
+  "source": "http://id.who.int/icd/entity/822487798",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/822487798/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/374726152",
+        "http://id.who.int/icd/release/11/2024-01/mms/1660456695",
+        "http://id.who.int/icd/release/11/2024-01/mms/1931350942",
+        "http://id.who.int/icd/release/11/2024-01/mms/129188707",
+        "http://id.who.int/icd/release/11/2024-01/mms/306271588",
+        "http://id.who.int/icd/release/11/2024-01/mms/818054919",
+        "http://id.who.int/icd/release/11/2024-01/mms/1952305399",
+        "http://id.who.int/icd/release/11/2024-01/mms/286661987",
+        "http://id.who.int/icd/release/11/2024-01/mms/1061132490",
+        "http://id.who.int/icd/release/11/2024-01/mms/1706773916",
+        "http://id.who.int/icd/release/11/2024-01/mms/167688690",
+        "http://id.who.int/icd/release/11/2024-01/mms/575545179",
+        "http://id.who.int/icd/release/11/2024-01/mms/937141021",
+        "http://id.who.int/icd/release/11/2024-01/mms/139575301",
+        "http://id.who.int/icd/release/11/2024-01/mms/811854024",
+        "http://id.who.int/icd/release/11/2024-01/mms/15761418",
+        "http://id.who.int/icd/release/11/2024-01/mms/729639831",
+        "http://id.who.int/icd/release/11/2024-01/mms/485378793",
+        "http://id.who.int/icd/release/11/2024-01/mms/590587802",
+        "http://id.who.int/icd/release/11/2024-01/mms/678752877",
+        "http://id.who.int/icd/release/11/2024-01/mms/183967754",
+        "http://id.who.int/icd/release/11/2024-01/mms/349321697",
+        "http://id.who.int/icd/release/11/2024-01/mms/51767575",
+        "http://id.who.int/icd/release/11/2024-01/mms/520107262",
+        "http://id.who.int/icd/release/11/2024-01/mms/2003493658",
+        "http://id.who.int/icd/release/11/2024-01/mms/2021041320",
+        "http://id.who.int/icd/release/11/2024-01/mms/948425503",
+        "http://id.who.int/icd/release/11/2024-01/mms/1851882275",
+        "http://id.who.int/icd/release/11/2024-01/mms/187348663",
+        "http://id.who.int/icd/release/11/2024-01/mms/419823765",
+        "http://id.who.int/icd/release/11/2024-01/mms/2139612744",
+        "http://id.who.int/icd/release/11/2024-01/mms/449588190",
+        "http://id.who.int/icd/release/11/2024-01/mms/1905765233",
+        "http://id.who.int/icd/release/11/2024-01/mms/1110405006",
+        "http://id.who.int/icd/release/11/2024-01/mms/1763883082"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Seasonal pattern of mood episode onset"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "In the context of recurrent depressive disorder, bipolar type I or bipolar type II disorder, there has been a regular seasonal pattern of onset and remission of at least one type of episode (i.e., depressive, manic, mixed, or hypomanic episodes), with a substantial majority of the relevant mood episodes corresponding to the seasonal pattern. (In bipolar type I and bipolar type II disorder, all types of mood episodes may not follow this pattern.) A seasonal pattern should be differentiated from an episode that is coincidental with a particular season but predominantly related to a psychological stressor that regularly occurs at that time of the year (e.g., seasonal unemployment)."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "These categories should never be used in primary coding. The codes are provided for use as supplementary or additional codes when it is desired to identify specific clinically important features of mood episodes in mood disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Seasonal pattern of mood episode onset"
+      }
+    }
+  ]
+}

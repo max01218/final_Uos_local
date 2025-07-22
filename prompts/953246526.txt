@@ -1,0 +1,26 @@
+Disorder Name: Negative affectivity in personality disorder or personality difficulty
+Disorder Code: 953246526
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+The core feature of the Negative Affectivity trait domain is the tendency to experience a broad range of negative emotions. Common manifestations of Negative Affectivity, not all of which may be present in a given individual at a given time, include: experiencing a broad range of negative emotions with a frequency and intensity out of proportion to the situation; emotional lability and poor emotion regulation; negativistic attitudes; low self-esteem and self-confidence; and mistrustfulness.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+The core feature of the Negative Affectivity trait domain is the tendency to experience a broad range of negative emotions. Common manifestations of Negative Affectivity, not all of which may be present in a given individual at a given time, include: experiencing a broad range of negative emotions with a frequency and intensity out of proportion to the situation; emotional lability and poor emotion regulation; negativistic attitudes; low self-esteem and self-confidence; and mistrustfulness.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

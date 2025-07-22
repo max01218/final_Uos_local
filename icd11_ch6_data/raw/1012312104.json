@@ -1,0 +1,68 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1012312104",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1676588433"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/804785400",
+    "http://id.who.int/icd/release/11/2024-01/mms/2068155409"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1012312104",
+  "code": "6C40.7",
+  "source": "http://id.who.int/icd/entity/1012312104",
+  "classKind": "category",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Amnestic disorder due to use of alcohol"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/988431240",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/988431240"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to use of alcohol"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1619582852",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1619582852"
+    }
+  ],
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1012312104/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1339202943",
+        "http://id.who.int/icd/release/11/2024-01/mms/998231424"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1012312104/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/766814084",
+        "http://id.who.int/icd/release/11/2024-01/mms/714690795",
+        "http://id.who.int/icd/release/11/2024-01/mms/1580466198"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Certain specified alcohol-induced mental or behavioural disorders"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain specified alcohol-induced mental or behavioural disorders"
+      }
+    }
+  ]
+}

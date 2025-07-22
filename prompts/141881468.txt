@@ -1,0 +1,26 @@
+Disorder Name: Exhibitionistic disorder
+Disorder Code: 141881468
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Exhibitionistic disorder is characterised by a sustained, focused and intense pattern of sexual arousal—as manifested by persistent sexual thoughts, fantasies, urges, or behaviours—that involves exposing one’s genitals to an unsuspecting individual in public places, usually without inviting or intending closer contact. In addition, in order for Exhibitionistic Disorder to be diagnosed, the individual must have acted on these thoughts, fantasies or urges or be markedly distressed by them. Exhibitionistic Disorder specifically excludes consensual exhibitionistic behaviours that occur with the consent of the person or persons involved as well as socially sanctioned forms of exhibitionism.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Exhibitionistic disorder is characterised by a sustained, focused and intense pattern of sexual arousal—as manifested by persistent sexual thoughts, fantasies, urges, or behaviours—that involves exposing one’s genitals to an unsuspecting individual in public places, usually without inviting or intending closer contact. In addition, in order for Exhibitionistic Disorder to be diagnosed, the individual must have acted on these thoughts, fantasies or urges or be markedly distressed by them. Exhibitionistic Disorder specifically excludes consensual exhibitionistic behaviours that occur with the consent of the person or persons involved as well as socially sanctioned forms of exhibitionism.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

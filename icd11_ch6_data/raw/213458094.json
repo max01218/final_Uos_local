@@ -1,0 +1,49 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/213458094",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/897917531",
+    "http://id.who.int/icd/release/11/2024-01/mms/195531803",
+    "http://id.who.int/icd/release/11/2024-01/mms/386330688",
+    "http://id.who.int/icd/release/11/2024-01/mms/546689346",
+    "http://id.who.int/icd/release/11/2024-01/mms/213458094/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/213458094/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#213458094",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/213458094",
+  "classKind": "block",
+  "blockId": "BlockL1-6D7",
+  "codeRange": "6D70-6E0Z",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary neurocognitive syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/235421675",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/235421675"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Neurocognitive disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Neurocognitive disorders are characterised by primary clinical deficits in cognitive functioning that are acquired rather than developmental. That is, neurocognitive disorders do not include disorders characterised by deficits in cognitive function that are present from birth or that typically arise during the developmental period, which are classified in the grouping neurodevelopmental disorders. Rather, neurocognitive disorders represent a decline from a previously attained level of functioning. Although cognitive deficits are present in many mental disorders (e.g., schizophrenia, bipolar disorders), only disorders whose core features are cognitive are included in the neurocognitive disorders grouping. In cases where the underlying pathology and aetiology for neurocognitive disorders can be determined, the identified etiology should be classified separately."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Neurodevelopmental disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1516623224",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1516623224"
+    }
+  ]
+}

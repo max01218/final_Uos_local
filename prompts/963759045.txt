@@ -1,0 +1,26 @@
+Disorder Name: Opioid-induced anxiety disorder
+Disorder Code: 963759045
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Opioid-induced anxiety disorder is characterised by anxiety symptoms (e.g., apprehension or worry, fear, physiological symptoms of excessive autonomic arousal, avoidance behaviour) that develop during or soon after intoxication with or withdrawal from opioids. The intensity or duration of the symptoms is substantially in excess of anxiety symptoms that are characteristic of Opioid intoxication or Opioid withdrawal. The amount and duration of opioid use must be capable of producing anxiety symptoms. The symptoms are not better explained by a primary mental disorder (e.g., an Anxiety and Fear-Related Disorder, a Depressive Disorder with prominent anxiety symptoms), as might be the case if the anxiety symptoms preceded the onset of the opioid use, if the symptoms persist for a substantial period of time after cessation of the opioid use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with anxiety symptoms (e.g., a history of prior episodes not associated with opioid use).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Opioid-induced anxiety disorder is characterised by anxiety symptoms (e.g., apprehension or worry, fear, physiological symptoms of excessive autonomic arousal, avoidance behaviour) that develop during or soon after intoxication with or withdrawal from opioids. The intensity or duration of the symptoms is substantially in excess of anxiety symptoms that are characteristic of Opioid intoxication or Opioid withdrawal. The amount and duration of opioid use must be capable of producing anxiety symptoms. The symptoms are not better explained by a primary mental disorder (e.g., an Anxiety and Fear-Related Disorder, a Depressive Disorder with prominent anxiety symptoms), as might be the case if the anxiety symptoms preceded the onset of the opioid use, if the symptoms persist for a substantial period of time after cessation of the opioid use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with anxiety symptoms (e.g., a history of prior episodes not associated with opioid use).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

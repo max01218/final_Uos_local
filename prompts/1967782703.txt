@@ -1,0 +1,26 @@
+Disorder Name: Moderate bodily distress disorder
+Disorder Code: 1967782703
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements of bodily distress disorder are present. There is persistent preoccupation with the distressing symptoms and their consequences (e.g., the individual spends more than an hour a day thinking about them), typically associated with frequent medical visits. The person devotes much of his or her energy to focusing on the symptoms and their consequences. The symptoms and associated distress and preoccupation cause moderate impairment in personal, family, social, educational, occupational, or other important areas of functioning (e.g., relationship conflict, performance problems at work, abandonment of a range of social and leisure activities).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements of bodily distress disorder are present. There is persistent preoccupation with the distressing symptoms and their consequences (e.g., the individual spends more than an hour a day thinking about them), typically associated with frequent medical visits. The person devotes much of his or her energy to focusing on the symptoms and their consequences. The symptoms and associated distress and preoccupation cause moderate impairment in personal, family, social, educational, occupational, or other important areas of functioning (e.g., relationship conflict, performance problems at work, abandonment of a range of social and leisure activities).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

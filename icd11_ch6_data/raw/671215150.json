@@ -1,0 +1,99 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/671215150",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2016549355"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#671215150",
+  "code": "6C46.22",
+  "source": "http://id.who.int/icd/entity/671215150",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/671215150/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/16341703",
+        "http://id.who.int/icd/release/11/2024-01/mms/373236638",
+        "http://id.who.int/icd/release/11/2024-01/mms/1756699061",
+        "http://id.who.int/icd/release/11/2024-01/mms/1891241424",
+        "http://id.who.int/icd/release/11/2024-01/mms/1193684303",
+        "http://id.who.int/icd/release/11/2024-01/mms/1853123588",
+        "http://id.who.int/icd/release/11/2024-01/mms/534456613",
+        "http://id.who.int/icd/release/11/2024-01/mms/428256012",
+        "http://id.who.int/icd/release/11/2024-01/mms/33615934",
+        "http://id.who.int/icd/release/11/2024-01/mms/648146092",
+        "http://id.who.int/icd/release/11/2024-01/mms/808405469",
+        "http://id.who.int/icd/release/11/2024-01/mms/1870704429",
+        "http://id.who.int/icd/release/11/2024-01/mms/1732158747",
+        "http://id.who.int/icd/release/11/2024-01/mms/1416993969",
+        "http://id.who.int/icd/release/11/2024-01/mms/2121804732",
+        "http://id.who.int/icd/release/11/2024-01/mms/2043582775",
+        "http://id.who.int/icd/release/11/2024-01/mms/1960627774",
+        "http://id.who.int/icd/release/11/2024-01/mms/1076458680",
+        "http://id.who.int/icd/release/11/2024-01/mms/448177412",
+        "http://id.who.int/icd/release/11/2024-01/mms/1864983449",
+        "http://id.who.int/icd/release/11/2024-01/mms/543245955",
+        "http://id.who.int/icd/release/11/2024-01/mms/2017927415",
+        "http://id.who.int/icd/release/11/2024-01/mms/511194385"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/671215150/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/951103658",
+        "http://id.who.int/icd/release/11/2024-01/mms/199002751",
+        "http://id.who.int/icd/release/11/2024-01/mms/2096250471"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/671215150/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1775535234",
+        "http://id.who.int/icd/release/11/2024-01/mms/494523519"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Stimulant dependence including amphetamines, methamphetamine or methcathinone, sustained partial remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "After a diagnosis of Stimulant dependence including amphetamines, methamphetamine and methcathinone but excluding caffeine, cocaine and synthetic cathinones, and often following a treatment episode or other intervention (including self-help intervention), there is a significant reduction in amphetamine or other stimulant consumption for more than 12 months, such that even though amphetamine or other stimulant use has occurred during this period, the definitional requirements for dependence have not been met."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of stimulants including amphetamines, methamphetamine or methcathinone"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1772665991",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1772665991"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of stimulants including amphetamines, methamphetamine or methcathinone"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/211765524",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/211765524"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stimulant dependence including amphetamines, methamphetamine or methcathinone, sustained partial remission"
+      }
+    }
+  ]
+}

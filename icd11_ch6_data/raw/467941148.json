@@ -1,0 +1,79 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/467941148",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/991786158"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#467941148",
+  "code": "6B45",
+  "source": "http://id.who.int/icd/entity/467941148",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Disinhibited social engagement disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disinhibited social engagement disorder is characterised by grossly abnormal social behaviour, occurring in the context of a history of grossly inadequate child care (e.g., severe neglect, institutional deprivation). The child approaches adults indiscriminately, lacks reticence to approach, will go away with unfamiliar adults, and exhibits overly familiar behaviour towards strangers. Disinhibited social engagement disorder can only be diagnosed in children, and features of the disorder develop within the first 5 years of life. However, the disorder cannot be diagnosed before the age of 1 year (or a developmental age of less than 9 months), when the capacity for selective attachments may not be fully developed, or in the context of Autism spectrum disorder."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Asperger syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/437815624",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/437815624"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Adjustment disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/264310751",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/264310751"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Attention deficit hyperactivity disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/821852937",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/821852937"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "reactive attachment disorder of childhood"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1867081699",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1867081699"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disinhibited social engagement disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "disinhibited attachment disorder of childhood"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "disinhibited attachment of institutionalization"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "disinhibited attachment disorder"
+      }
+    }
+  ]
+}

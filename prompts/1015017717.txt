@@ -1,0 +1,26 @@
+Disorder Name: Delirium due to disease classified elsewhere
+Disorder Code: 1015017717
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements for delirium are met. There is evidence from history, physical examination, or laboratory findings that Delirium is caused by the direct physiological consequences of a disorder or disease classified elsewhere.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements for delirium are met. There is evidence from history, physical examination, or laboratory findings that Delirium is caused by the direct physiological consequences of a disorder or disease classified elsewhere.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

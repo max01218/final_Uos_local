@@ -1,0 +1,148 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1851882275",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1194756772"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1851882275",
+  "code": "6A71.0",
+  "source": "http://id.who.int/icd/entity/1851882275",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1851882275/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1119039346",
+        "http://id.who.int/icd/release/11/2024-01/mms/1383708356",
+        "http://id.who.int/icd/release/11/2024-01/mms/1906190365",
+        "http://id.who.int/icd/release/11/2024-01/mms/802537726",
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798",
+        "http://id.who.int/icd/release/11/2024-01/mms/1124422593"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder, current episode mild"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder, current episode mild is diagnosed when the definitional requirements for Recurrent depressive disorder have been met and there is currently a depressive episode of mild severity. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a mild depressive episode, the individual is usually distressed by the symptoms and has some difficulty in continuing to function in one or more domains (personal, family, social, educational, occupational, or other important domains). There are no delusions or hallucinations during the episode."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/28346954"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1005272638"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1367939865"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1534047867"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1438285753"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1892717067"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/233415584"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/499565242"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1573925583"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2101496573"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/392308540"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1999246593"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1663491515"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/57601920"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode mild, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/667939602"
+    }
+  ]
+}

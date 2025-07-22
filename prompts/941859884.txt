@@ -1,0 +1,26 @@
+Disorder Name: Personality disorder
+Disorder Code: 941859884
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Personality disorder is characterised by problems in functioning of aspects of the self (e.g., identity, self-worth, accuracy of self-view, self-direction), and/or interpersonal dysfunction (e.g., ability to develop and maintain close and mutually satisfying relationships, ability to understand others’ perspectives and to manage conflict in relationships) that have persisted over an extended period of time (e.g., 2 years or more). The disturbance is manifest in patterns of cognition, emotional experience, emotional expression, and behaviour that are maladaptive (e.g., inflexible or poorly regulated) and is manifest across a range of personal and social situations (i.e., is not limited to specific relationships or social roles). The patterns of behaviour characterizing the disturbance are not developmentally appropriate and cannot be explained primarily by social or cultural factors, including socio-political conflict. The disturbance is associated with substantial distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Personality disorder is characterised by problems in functioning of aspects of the self (e.g., identity, self-worth, accuracy of self-view, self-direction), and/or interpersonal dysfunction (e.g., ability to develop and maintain close and mutually satisfying relationships, ability to understand others’ perspectives and to manage conflict in relationships) that have persisted over an extended period of time (e.g., 2 years or more). The disturbance is manifest in patterns of cognition, emotional experience, emotional expression, and behaviour that are maladaptive (e.g., inflexible or poorly regulated) and is manifest across a range of personal and social situations (i.e., is not limited to specific relationships or social roles). The patterns of behaviour characterizing the disturbance are not developmentally appropriate and cannot be explained primarily by social or cultural factors, including socio-political conflict. The disturbance is associated with substantial distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,56 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1441674923",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1913137404"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1441674923",
+  "code": "6C41.5",
+  "source": "http://id.who.int/icd/entity/1441674923",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1441674923/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1387132352",
+        "http://id.who.int/icd/release/11/2024-01/mms/637576511"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1441674923/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/854520906",
+        "http://id.who.int/icd/release/11/2024-01/mms/937834582",
+        "http://id.who.int/icd/release/11/2024-01/mms/1129015467"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Cannabis-induced delirium"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Cannabis-induced delirium is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or withdrawal or during the use of cannabis. The amount and duration of cannabis use must be capable of producing delirium. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from a different substance, or by another health condition that is not classified under Mental, behavioural and neurodevelopmental disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cannabis-induced delirium"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mental or behavioural disorders due to use of cannabinoids withdrawal state with delirium"
+      }
+    }
+  ]
+}

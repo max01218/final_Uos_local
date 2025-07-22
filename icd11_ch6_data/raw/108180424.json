@@ -1,0 +1,42 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/108180424",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1069443471",
+    "http://id.who.int/icd/release/11/2024-01/mms/626975732",
+    "http://id.who.int/icd/release/11/2024-01/mms/1807490186",
+    "http://id.who.int/icd/release/11/2024-01/mms/1374925579",
+    "http://id.who.int/icd/release/11/2024-01/mms/1829103493",
+    "http://id.who.int/icd/release/11/2024-01/mms/988400777",
+    "http://id.who.int/icd/release/11/2024-01/mms/253124068",
+    "http://id.who.int/icd/release/11/2024-01/mms/108180424/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/108180424/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#108180424",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/108180424",
+  "classKind": "block",
+  "blockId": "BlockL1-6B6",
+  "codeRange": "6B60-6B6Z",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary dissociative syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/440469874",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/440469874"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative disorders are characterised by involuntary disruption or discontinuity in the normal integration of one or more of the following: identity, sensations, perceptions, affects, thoughts, memories, control over bodily movements, or behaviour. Disruption or discontinuity may be complete, but is more commonly partial, and can vary from day to day or even from hour to hour. The symptoms of dissociative disorders are not due to the direct effects of a medication or substance, including withdrawal effects, are not better explained by another Mental, behavioural, or neurodevelopmental disorder, a Sleep-wake disorder, a Disease of the nervous system or other health condition, and are not part of an accepted cultural, religious, or spiritual practice. Dissociative symptoms in dissociative disorders are sufficiently severe to result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  }
+}

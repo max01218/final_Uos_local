@@ -1,0 +1,38 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/80299449",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/675329566"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#80299449",
+  "code": "6B23.0",
+  "source": "http://id.who.int/icd/entity/80299449",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/80299449/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1707067746"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Hypochondriasis with fair to good insight"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements of hypochondriasis are met. Much of the time, the individual is able to entertain the possibility that his or her disorder-specific beliefs may not be true and is willing to accept an alternative explanation for his or her experience. At circumscribed times (e.g., when highly anxious), the individual may demonstrate no insight."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hypochondriasis with fair to good insight"
+      }
+    }
+  ]
+}

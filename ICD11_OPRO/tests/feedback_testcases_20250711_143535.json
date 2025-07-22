@@ -1,0 +1,19 @@
+[
+  {
+    "input": {
+      "question": "I feel sad",
+      "tone": "empathetic_professional"
+    },
+    "target": {
+      "answer": "Hello there! I understand that you're feeling sad today. It's completely normal to experience sadness after a loss, especially if it's been a long time since your partner passed away.\nIt's important to acknowledge and validate your feelings, as they are a natural response to a difficult situation. Allow yourself to feel your emotions without judgment or self-criticism. You're not alone in this, and I'm here to listen to you.\nI also want to remind you that it's okay to take the time you need to grieve. Grief is a process that takes time, and it's okay to take things at your own pace. In fact, sometimes taking a break or doing something you enjoy can actually make it easier to move forward.\nIf you find that your sadness is preventing you from functioning in your daily life, consider reaching out to a trusted friend or family member for support. You may also want to consider speaking with a mental health professional who can provide additional guidance and coping strategies.\nRemember, healing from loss takes time, but with support and understanding, you can navigate this difficult time. Thank you for sharing your feelings with me.",
+      "scores": {
+        "satisfaction": 4,
+        "empathy": 3,
+        "accuracy": 5,
+        "safety": 5,
+        "overall": 4.25
+      },
+      "comment": ""
+    }
+  }
+]

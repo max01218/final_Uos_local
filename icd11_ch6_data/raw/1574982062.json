@@ -1,0 +1,76 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1574982062",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1218193465"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1574982062",
+  "code": "6C4C.3",
+  "source": "http://id.who.int/icd/entity/1574982062",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1574982062/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1692885212",
+        "http://id.who.int/icd/release/11/2024-01/mms/342215505",
+        "http://id.who.int/icd/release/11/2024-01/mms/1327107148",
+        "http://id.who.int/icd/release/11/2024-01/mms/1153016464",
+        "http://id.who.int/icd/release/11/2024-01/mms/2102840295",
+        "http://id.who.int/icd/release/11/2024-01/mms/321833104",
+        "http://id.who.int/icd/release/11/2024-01/mms/171496389",
+        "http://id.who.int/icd/release/11/2024-01/mms/565097819",
+        "http://id.who.int/icd/release/11/2024-01/mms/1211762077",
+        "http://id.who.int/icd/release/11/2024-01/mms/1361845976",
+        "http://id.who.int/icd/release/11/2024-01/mms/868004030"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1574982062/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1574982062/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1334295394",
+        "http://id.who.int/icd/release/11/2024-01/mms/1662953838",
+        "http://id.who.int/icd/release/11/2024-01/mms/473001402"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "MDMA or related drug intoxication, including MDA"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "MDMA or related drug intoxication, including MDA is a clinically significant transient condition that develops during or shortly after the consumption of MDMA or related drugs that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of MDMA or related drugs and their intensity is closely related to the amount of MDMA or a related drug consumed. They are time-limited and abate as MDMA or a related drug is cleared from the body. Presenting features may include increased or inappropriate sexual interest and activity, anxiety, restlessness, agitation, and sweating. In rare instances, usually in severe intoxication, use of MDMA or related drugs, including MDA can result in dystonia and seizures. Sudden death is a rare but recognised complication."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "MDMA or related drug intoxication, including MDA"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Ecstasy or related drug intoxication"
+      }
+    }
+  ]
+}

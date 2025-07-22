@@ -1,0 +1,37 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/295017661",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/826065555"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#295017661",
+  "code": "6C73",
+  "source": "http://id.who.int/icd/entity/295017661",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Intermittent explosive disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Intermittent explosive disorder is characterised by repeated brief episodes of verbal or physical aggression or destruction of property that represent a failure to control aggressive impulses, with the intensity of the outburst or degree of aggressiveness being grossly out of proportion to the provocation or precipitating psychosocial stressors. The symptoms are not better explained by another mental, behavioural, or neurodevelopmental disorder and are not part of a pattern of chronic anger and irritability (e.g., in oppositional defiant disorder). The behaviour pattern is of sufficient severity to result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Oppositional defiant disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1487528823",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1487528823"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Intermittent explosive disorder"
+      }
+    }
+  ]
+}

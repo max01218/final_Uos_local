@@ -1,0 +1,55 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/804604349",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/826065555"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#804604349",
+  "code": "6C71",
+  "source": "http://id.who.int/icd/entity/804604349",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Kleptomania"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Kleptomania is characterised by a recurrent failure to control strong impulses to steal objects in the absence of an apparent motive (e.g., objects are not acquired for personal use or monetary gain). There is an increasing sense of tension or affective arousal before instances of theft and a sense of pleasure, excitement, relief, or gratification during and immediately after the act of stealing. The behaviour is not better explained by intellectual impairment, another mental and behavioural disorder, or substance intoxication."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "pathological stealing"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "shoplifting as the reason for observation for suspected mental disorder, ruled out"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1712543365",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1712543365"
+    }
+  ],
+  "codingNote": {
+    "@language": "en",
+    "@value": "If stealing occurs within the context of conduct-dissocial disorder or a manic episode, Kleptomania should not be diagnosed separately."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Kleptomania"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "pathological stealing"
+      }
+    }
+  ]
+}

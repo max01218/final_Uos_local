@@ -1,0 +1,26 @@
+Disorder Name: Attention deficit hyperactivity disorder, predominantly hyperactive-impulsive presentation
+Disorder Code: 209556851
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements for attention deficit hyperactivity disorder are met and hyperactive-impulsive symptoms are predominant in the clinical presentation. Hyperactivity refers to excessive motor activity and difficulties with remaining still, most evident in structured situations that require behavioural self-control. Impulsivity is a tendency to act in response to immediate stimuli, without deliberation or consideration of the risks and consequences. Some inattentive symptoms may also be present, but these are not clinically significant in relation to the hyperactive-impulsive symptoms.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements for attention deficit hyperactivity disorder are met and hyperactive-impulsive symptoms are predominant in the clinical presentation. Hyperactivity refers to excessive motor activity and difficulties with remaining still, most evident in structured situations that require behavioural self-control. Impulsivity is a tendency to act in response to immediate stimuli, without deliberation or consideration of the risks and consequences. Some inattentive symptoms may also be present, but these are not clinically significant in relation to the hyperactive-impulsive symptoms.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

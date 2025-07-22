@@ -1,0 +1,26 @@
+Disorder Name: Dementia due to normal pressure hydrocephalus
+Disorder Code: 1129134415
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dementia due to normal pressure hydrocephalus results from excess accumulation of cerebrospinal fluid in the brain as a result of idiopathic, non-obstructive causes but can also be secondary to haemorrhage, infection or inflammation. Progression is gradual but intervention (e.g., shunt) may result in improvement of symptoms, especially if administered earlier in the course of the condition. Typically, cognitive impairments include reduced processing speed and deficits in executive functioning and attention. These symptoms are also typically accompanied by gait abnormalities and urinary incontinence. Brain imaging to reveal ventricular volume and characterize brain displacement is often necessary to confirm the diagnosis.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia due to normal pressure hydrocephalus results from excess accumulation of cerebrospinal fluid in the brain as a result of idiopathic, non-obstructive causes but can also be secondary to haemorrhage, infection or inflammation. Progression is gradual but intervention (e.g., shunt) may result in improvement of symptoms, especially if administered earlier in the course of the condition. Typically, cognitive impairments include reduced processing speed and deficits in executive functioning and attention. These symptoms are also typically accompanied by gait abnormalities and urinary incontinence. Brain imaging to reveal ventricular volume and characterize brain displacement is often necessary to confirm the diagnosis.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

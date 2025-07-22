@@ -1,0 +1,56 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/89854667",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1005846640"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#89854667",
+  "code": "6C47.62",
+  "source": "http://id.who.int/icd/entity/89854667",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/89854667/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1599283639",
+        "http://id.who.int/icd/release/11/2024-01/mms/1587633989"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/89854667/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1563509056",
+        "http://id.who.int/icd/release/11/2024-01/mms/2057206901",
+        "http://id.who.int/icd/release/11/2024-01/mms/2070676103"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Synthetic cathinone-induced psychotic disorder with mixed psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Synthetic cathinone-induced psychotic disorder with mixed psychotic symptoms is characterised by the presence of multiple psychotic symptoms, primarily hallucinations and delusions, when these are judged to be the direct consequence of synthetic cathinone use. The symptoms do not occur exclusively during hypnogogic or hypnopompic states, are not better accounted for by another mental and behavioural disorder (e.g., Schizophrenia), and are not due to another disorder or disease classified elsewhere (e.g., epilepsies with visual symptoms)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone-induced psychotic disorder with mixed psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone-induced psychotic disorder with mixed psychotic features"
+      }
+    }
+  ]
+}

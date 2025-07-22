@@ -1,0 +1,28 @@
+# Requirements for Iridis5 Supercomputer Environment
+# Resolves numpy binary compatibility issues
+
+# Core numerical libraries with compatible versions
+numpy==1.24.3
+scipy==1.10.1
+
+# PyTorch ecosystem with CUDA support
+torch==2.0.1+cu118
+torchaudio==2.0.2+cu118
+torchvision==0.15.2+cu118
+
+# Transformers with compatible versions
+transformers==4.30.2
+tokenizers==0.13.3
+accelerate==0.20.3
+safetensors==0.3.1
+
+# Additional required libraries
+tqdm==4.65.0
+python-dotenv==1.0.0
+datasets==2.14.0
+sentence-transformers==2.2.2
+
+# Optional dependencies (comment out if not needed)
+# matplotlib==3.7.1
+# seaborn==0.12.2
+# pandas==2.0.3 

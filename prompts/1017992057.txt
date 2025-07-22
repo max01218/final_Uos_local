@@ -1,0 +1,26 @@
+Disorder Name: Disorder of intellectual development, profound
+Disorder Code: 1017992057
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+A profound disorder of intellectual development is a condition originating during the developmental period characterised by significantly below average intellectual functioning and adaptive behaviour that are approximately four or more standard deviations below the mean (approximately less than the 0.003rd percentile), based on individually administered appropriately normed, standardized tests or by comparable behavioural indicators when standardized testing is unavailable. Affected persons possess very limited communication abilities and capacity for acquisition of academic skills is restricted to basic concrete skills. They may also have co-occurring motor and sensory impairments and typically require daily support in a supervised environment for adequate care. Severe and profound disorders of intellectual development are differentiated exclusively on the basis of adaptive behaviour differences because existing standardized tests of intelligence cannot reliably or validly distinguish among individuals with intellectual functioning below the 0.003rd percentile.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+A profound disorder of intellectual development is a condition originating during the developmental period characterised by significantly below average intellectual functioning and adaptive behaviour that are approximately four or more standard deviations below the mean (approximately less than the 0.003rd percentile), based on individually administered appropriately normed, standardized tests or by comparable behavioural indicators when standardized testing is unavailable. Affected persons possess very limited communication abilities and capacity for acquisition of academic skills is restricted to basic concrete skills. They may also have co-occurring motor and sensory impairments and typically require daily support in a supervised environment for adequate care. Severe and profound disorders of intellectual development are differentiated exclusively on the basis of adaptive behaviour differences because existing standardized tests of intelligence cannot reliably or validly distinguish among individuals with intellectual functioning below the 0.003rd percentile.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,26 @@
+Disorder Name: Attention deficit hyperactivity disorder, predominantly inattentive presentation
+Disorder Code: 294762853
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements for attention deficit hyperactivity disorder are met and inattentive symptoms are predominant in the clinical presentation. Inattention refers to significant difficulty in sustaining attention to tasks that do not provide a high level of stimulation or frequent rewards, distractibility and problems with organisation. Some hyperactive-impulsive symptoms may also be present, but these are not clinically significant in relation to the inattentive symptoms.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements for attention deficit hyperactivity disorder are met and inattentive symptoms are predominant in the clinical presentation. Inattention refers to significant difficulty in sustaining attention to tasks that do not provide a high level of stimulation or frequent rewards, distractibility and problems with organisation. Some hyperactive-impulsive symptoms may also be present, but these are not clinically significant in relation to the inattentive symptoms.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

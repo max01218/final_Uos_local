@@ -1,0 +1,31 @@
+Disorder Name: Panic disorder
+Disorder Code: 56162827
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Panic disorder is characterised by recurrent unexpected panic attacks that are not restricted to particular stimuli or situations. Panic attacks are discrete episodes of intense fear or apprehension accompanied by the rapid and concurrent onset of several characteristic symptoms (e.g. palpitations or increased heart rate, sweating, trembling, shortness of breath, chest pain, dizziness or lightheadedness, chills, hot flushes, fear of imminent death). In addition, panic disorder is characterised by persistent concern about the recurrence or significance of panic attacks, or behaviours intended to avoid their recurrence, that results in significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. The symptoms are not a manifestation of another medical condition and are not due to the effects of a substance or medication on the central nervous system.
+
+Exclusions: Panic attack
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Panic disorder is characterised by recurrent unexpected panic attacks that are not restricted to particular stimuli or situations. Panic attacks are discrete episodes of intense fear or apprehension accompanied by the rapid and concurrent onset of several characteristic symptoms (e.g. palpitations or increased heart rate, sweating, trembling, shortness of breath, chest pain, dizziness or lightheadedness, chills, hot flushes, fear of imminent death). In addition, panic disorder is characterised by persistent concern about the recurrence or significance of panic attacks, or behaviours intended to avoid their recurrence, that results in significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. The symptoms are not a manifestation of another medical condition and are not due to the effects of a substance or medication on the central nervous system.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Panic attack
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

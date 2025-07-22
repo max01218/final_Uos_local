@@ -1,0 +1,65 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1906190365",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/496273089"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1906190365",
+  "code": "6A80.2",
+  "source": "http://id.who.int/icd/entity/1906190365",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1906190365/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/129188707",
+        "http://id.who.int/icd/release/11/2024-01/mms/306271588",
+        "http://id.who.int/icd/release/11/2024-01/mms/818054919",
+        "http://id.who.int/icd/release/11/2024-01/mms/1952305399",
+        "http://id.who.int/icd/release/11/2024-01/mms/286661987",
+        "http://id.who.int/icd/release/11/2024-01/mms/1061132490",
+        "http://id.who.int/icd/release/11/2024-01/mms/485378793",
+        "http://id.who.int/icd/release/11/2024-01/mms/590587802",
+        "http://id.who.int/icd/release/11/2024-01/mms/678752877",
+        "http://id.who.int/icd/release/11/2024-01/mms/183967754",
+        "http://id.who.int/icd/release/11/2024-01/mms/349321697",
+        "http://id.who.int/icd/release/11/2024-01/mms/51767575",
+        "http://id.who.int/icd/release/11/2024-01/mms/1922675618",
+        "http://id.who.int/icd/release/11/2024-01/mms/399670840",
+        "http://id.who.int/icd/release/11/2024-01/mms/651947494",
+        "http://id.who.int/icd/release/11/2024-01/mms/1669279433",
+        "http://id.who.int/icd/release/11/2024-01/mms/104129373",
+        "http://id.who.int/icd/release/11/2024-01/mms/554273362",
+        "http://id.who.int/icd/release/11/2024-01/mms/1851882275",
+        "http://id.who.int/icd/release/11/2024-01/mms/187348663",
+        "http://id.who.int/icd/release/11/2024-01/mms/419823765",
+        "http://id.who.int/icd/release/11/2024-01/mms/2139612744",
+        "http://id.who.int/icd/release/11/2024-01/mms/449588190",
+        "http://id.who.int/icd/release/11/2024-01/mms/1905765233"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Current depressive episode persistent"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "The diagnostic requirements for a depressive episode are currently met and have been met continuously for at least the past 2 years."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "These categories should never be used in primary coding. The codes are provided for use as supplementary or additional codes when it is desired to identify specific clinically important features of mood episodes in mood disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Current depressive episode persistent"
+      }
+    }
+  ]
+}

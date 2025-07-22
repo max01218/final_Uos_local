@@ -1,0 +1,26 @@
+Disorder Name: Severe personality disorder
+Disorder Code: 40156192
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All general diagnostic requirements for Personality Disorder are met. There are severe disturbances in functioning of the self (e.g., sense of self may be so unstable that individuals report not having a sense of who they are or so rigid that they refuse to participate in any but an extremely narrow range of situations; self view may be characterised by self-contempt or be grandiose or highly eccentric). Problems in interpersonal functioning seriously affect virtually all relationships and the ability and willingness to perform expected social and occupational roles is absent or severely compromised. Specific manifestations of personality disturbance are severe and affect most, if not all, areas of personality functioning. Severe Personality Disorder is often associated with harm to self or others, and is associated with severe impairment in all or nearly all areas of life, including personal, family, social, educational, occupational, and other important areas of functioning.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All general diagnostic requirements for Personality Disorder are met. There are severe disturbances in functioning of the self (e.g., sense of self may be so unstable that individuals report not having a sense of who they are or so rigid that they refuse to participate in any but an extremely narrow range of situations; self view may be characterised by self-contempt or be grandiose or highly eccentric). Problems in interpersonal functioning seriously affect virtually all relationships and the ability and willingness to perform expected social and occupational roles is absent or severely compromised. Specific manifestations of personality disturbance are severe and affect most, if not all, areas of personality functioning. Severe Personality Disorder is often associated with harm to self or others, and is associated with severe impairment in all or nearly all areas of life, including personal, family, social, educational, occupational, and other important areas of functioning.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

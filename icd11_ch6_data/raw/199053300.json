@@ -1,0 +1,34 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/199053300",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/613065957"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/729639831",
+    "http://id.who.int/icd/release/11/2024-01/mms/485378793",
+    "http://id.who.int/icd/release/11/2024-01/mms/590587802",
+    "http://id.who.int/icd/release/11/2024-01/mms/678752877",
+    "http://id.who.int/icd/release/11/2024-01/mms/183967754",
+    "http://id.who.int/icd/release/11/2024-01/mms/349321697",
+    "http://id.who.int/icd/release/11/2024-01/mms/51767575",
+    "http://id.who.int/icd/release/11/2024-01/mms/520107262",
+    "http://id.who.int/icd/release/11/2024-01/mms/2003493658",
+    "http://id.who.int/icd/release/11/2024-01/mms/2021041320",
+    "http://id.who.int/icd/release/11/2024-01/mms/948425503",
+    "http://id.who.int/icd/release/11/2024-01/mms/199053300/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/199053300/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#199053300",
+  "code": "6A61",
+  "source": "http://id.who.int/icd/entity/199053300",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder is an episodic mood disorder defined by the occurrence of one or more hypomanic episodes and at least one depressive episode. A hypomanic episode is a persistent mood state lasting for at least several days characterised by persistent elevation of mood or increased irritability as well as increased activity or a subjective experience of increased energy, accompanied by other characteristic symptoms such as increased talkativeness, rapid or racing thoughts, increased self-esteem, decreased need for sleep, distractability, and impulsive or reckless behavior. The symptoms represent a change from the individual’s typical mood, energy level, and behavior but are not severe enough to cause marked impairment in functioning. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as changes in appetite or sleep, psychomotor agitation or retardation, fatigue, feelings of worthless or excessive or inappropriate guilt, feelings or hopelessness, difficulty concentrating, and suicidality. There is no history of manic or mixed episodes."
+  }
+}

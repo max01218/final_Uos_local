@@ -1,0 +1,45 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/604711335",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1069443471"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#604711335",
+  "code": "6B60.1",
+  "source": "http://id.who.int/icd/entity/604711335",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with auditory disturbance"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with auditory disturbance is characterised by auditory symptoms such as loss of hearing or auditory hallucinations that are not consistent with a recognised disease of the nervous system, other mental, behavioural or neurodevelopmental disorder, or other medical condition and do not occur exclusively during another dissociative disorder."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative neurological symptom disorder, with auditory disturbance"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional neurological symptom disorder, with auditory symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional neurological symptom disorder, with auditory disturbance"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional auditory disorder"
+      }
+    }
+  ]
+}

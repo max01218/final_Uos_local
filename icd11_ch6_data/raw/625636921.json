@@ -1,0 +1,36 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/625636921",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1683919430"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/692993572",
+    "http://id.who.int/icd/release/11/2024-01/mms/553710121",
+    "http://id.who.int/icd/release/11/2024-01/mms/476035222",
+    "http://id.who.int/icd/release/11/2024-01/mms/625636921/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#625636921",
+  "code": "6A20.0",
+  "source": "http://id.who.int/icd/entity/625636921",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/625636921/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Schizophrenia, first episode"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Schizophrenia, first episode should be used to identify individuals experiencing symptoms that meet the diagnostic requirements for Schizophrenia (including duration) but who have never before experienced an episode during which diagnostic requirements for Schizophrenia were met."
+  }
+}

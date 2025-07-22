@@ -1,0 +1,32 @@
+Disorder Name: Other specified psychoactive substance dependence, current use
+Disorder Code: 392011264
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Current Other specified psychoactive substance dependence, with use of the specified psychoactive substance within the past month.
+
+Exclusions: Episode of harmful use of other specified psychoactive substance; Harmful pattern of use of other specified psychoactive substance
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Current Other specified psychoactive substance dependence, with use of the specified psychoactive substance within the past month.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Episode of harmful use of other specified psychoactive substance
+• Should be differentiated from: Harmful pattern of use of other specified psychoactive substance
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

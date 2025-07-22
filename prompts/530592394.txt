@@ -1,0 +1,26 @@
+Disorder Name: Agoraphobia
+Disorder Code: 530592394
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Agoraphobia is characterised by marked and excessive fear or anxiety that occurs in response to multiple situations where escape might be difficult or help might not be available, such as using public transportation, being in crowds, being outside the home alone (e.g., in shops, theatres, standing in line). The individual is consistently anxious about these situations due to a fear of specific negative outcomes (e.g., panic attacks, other incapacitating or embarrassing physical symptoms). The situations are actively avoided, entered only under specific circumstances such as in the presence of a trusted companion, or endured with intense fear or anxiety. The symptoms persist for at least several months, and are sufficiently severe to result in significant distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Agoraphobia is characterised by marked and excessive fear or anxiety that occurs in response to multiple situations where escape might be difficult or help might not be available, such as using public transportation, being in crowds, being outside the home alone (e.g., in shops, theatres, standing in line). The individual is consistently anxious about these situations due to a fear of specific negative outcomes (e.g., panic attacks, other incapacitating or embarrassing physical symptoms). The situations are actively avoided, entered only under specific circumstances such as in the presence of a trusted companion, or endured with intense fear or anxiety. The symptoms persist for at least several months, and are sufficiently severe to result in significant distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

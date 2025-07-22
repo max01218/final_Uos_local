@@ -1,0 +1,32 @@
+Disorder Name: Rumination-regurgitation disorder
+Disorder Code: 1205760590
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Rumination-regurgitation disorder is characterised by the intentional and repeated bringing up of previously swallowed food back to the mouth (i.e., regurgitation), which may be re-chewed and re-swallowed (i.e. rumination), or may be deliberately spat out (but not as in vomiting). The regurgitation behaviour is frequent (at least several times per week) and sustained over a period of at least several weeks. The regurgitation behaviour is not fully accounted for by another medical condition that directly causes regurgitation (e.g., oesophageal strictures or neuromuscular disorders affecting oesophageal functioning) or causes nausea or vomiting (e.g. pyloric stenosis). Rumination-regurgitation disorder should only be diagnosed in individuals who have reached a developmental age of at least 2 years.
+
+Exclusions: Adult rumination syndrome; Nausea or vomiting
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Rumination-regurgitation disorder is characterised by the intentional and repeated bringing up of previously swallowed food back to the mouth (i.e., regurgitation), which may be re-chewed and re-swallowed (i.e. rumination), or may be deliberately spat out (but not as in vomiting). The regurgitation behaviour is frequent (at least several times per week) and sustained over a period of at least several weeks. The regurgitation behaviour is not fully accounted for by another medical condition that directly causes regurgitation (e.g., oesophageal strictures or neuromuscular disorders affecting oesophageal functioning) or causes nausea or vomiting (e.g. pyloric stenosis). Rumination-regurgitation disorder should only be diagnosed in individuals who have reached a developmental age of at least 2 years.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Adult rumination syndrome
+• Should be differentiated from: Nausea or vomiting
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

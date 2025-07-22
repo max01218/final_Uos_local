@@ -1,0 +1,49 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1075129954",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/626975732"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1075129954",
+  "code": "6B61.0",
+  "source": "http://id.who.int/icd/entity/1075129954",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative amnesia with dissociative fugue"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative amnesia with dissociative fugue is characterised by all of the features of Dissociative Amnesia, accompanied by dissociative fugue, i.e., a loss of a sense of personal identity and sudden travel away from home, work, or significant others for an extended period of time (days or weeks). A new identity may be assumed."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "postictal fugue in epilepsy"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1397288146",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1397288146"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative amnesia with dissociative fugue"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "hysterical fugue"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative fugue"
+      }
+    }
+  ]
+}

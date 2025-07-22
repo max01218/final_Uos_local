@@ -1,0 +1,35 @@
+Disorder Name: Trichotillomania
+Disorder Code: 1253999657
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Trichotillomania is characterised by recurrent pulling of one’s own hair leading to significant hair loss, accompanied by unsuccessful attempts to decrease or stop the behaviour. Hair pulling may occur from any region of the body in which hair grows but the most common sites are the scalp, eyebrows, and eyelids. Hair pulling may occur in brief episodes scattered throughout the day or in less frequent but more sustained periods. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Inclusions: Compulsive hair plucking
+Exclusions: stereotyped movement disorder with hair-plucking
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Trichotillomania is characterised by recurrent pulling of one’s own hair leading to significant hair loss, accompanied by unsuccessful attempts to decrease or stop the behaviour. Hair pulling may occur from any region of the body in which hair grows but the most common sites are the scalp, eyebrows, and eyelids. Hair pulling may occur in brief episodes scattered throughout the day or in less frequent but more sustained periods. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Included Manifestations:
+• Compulsive hair plucking
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: stereotyped movement disorder with hair-plucking
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

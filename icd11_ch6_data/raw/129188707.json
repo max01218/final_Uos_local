@@ -1,0 +1,261 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/129188707",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1456478153"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#129188707",
+  "code": "6A60.3",
+  "source": "http://id.who.int/icd/entity/129188707",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/129188707/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/496273089"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder, current episode depressive, mild"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder, current episode depressive, mild is diagnosed when the definitional requirements for Bipolar type I disorder have been met and the current episode is depressive at a mild level of severity. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a mild depressive episode, the individual is usually distressed by the symptoms and has some difficulty in continuing to function in one or more domains (personal, family, social, educational, occupational, or other important domains). There are no delusions or hallucinations during the episode."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bipolar affective disorder, current episode mild or moderate depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1365581129"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/24497910"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2125141369"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/551615898"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/309769450"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1839755109"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2103637715"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1565998737"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/52221556"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1039856700"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with melancholia and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/151998142"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/432396044"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1713048709"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1460072127"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1499321827"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/646123116"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptom, melancholia, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1495244035"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/263336297"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms and seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/564038295"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/4845851"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1328165762"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/797440299"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with melancholia and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1332247392"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with seasonal pattern and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1161407312"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2078247176"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/456133453"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms, melancholia, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1260443890"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/889062269"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1790307230"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/141200512"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode depressive, mild, additional symptoms unspecified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2008307471"
+    }
+  ]
+}

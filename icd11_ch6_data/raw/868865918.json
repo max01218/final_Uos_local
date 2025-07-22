@@ -1,0 +1,152 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/868865918",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/946652467",
+    "http://id.who.int/icd/release/11/2024-01/mms/65880823",
+    "http://id.who.int/icd/release/11/2024-01/mms/2000687626",
+    "http://id.who.int/icd/release/11/2024-01/mms/503601360",
+    "http://id.who.int/icd/release/11/2024-01/mms/696932440",
+    "http://id.who.int/icd/release/11/2024-01/mms/551713432",
+    "http://id.who.int/icd/release/11/2024-01/mms/1060046426",
+    "http://id.who.int/icd/release/11/2024-01/mms/1266833063",
+    "http://id.who.int/icd/release/11/2024-01/mms/566574133",
+    "http://id.who.int/icd/release/11/2024-01/mms/1611601779",
+    "http://id.who.int/icd/release/11/2024-01/mms/30317704",
+    "http://id.who.int/icd/release/11/2024-01/mms/201567715",
+    "http://id.who.int/icd/release/11/2024-01/mms/940938694",
+    "http://id.who.int/icd/release/11/2024-01/mms/868865918/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/868865918/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#868865918",
+  "code": "09",
+  "source": "http://id.who.int/icd/entity/868865918",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Contusion of eyeball or orbital tissues"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/969612493",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/969612493"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Foreign body in multiple parts of external eye"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1513405703",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1513405703"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Oculocutaneous albinism"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1189424097",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1189424097"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Traumatic injury to eyeball"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1743180897",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1743180897"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Birth injury to eye"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1804006919",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1804006919"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Late congenital syphilitic oculopathy"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1665042685",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1665042685"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symptoms, signs or clinical findings of the visual system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2138796426",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2138796426"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Structural developmental anomalies of the eye, eyelid or lacrimal apparatus"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/750435296",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/750435296"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Diseases of the visual system"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "This refers to any diseases of the visual system, which includes the eyes and adnexa, the visual pathways and brain areas, which initiate and control visual perception and visually guided behaviour."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain conditions originating in the perinatal period"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1306203631",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1306203631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain infectious or parasitic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1435254666",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1435254666"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Complications of pregnancy, childbirth and the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/714000734",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/714000734"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endocrine, nutritional or metabolic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/21500692",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/21500692"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Injury, poisoning or certain other consequences of external causes"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/435227771",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/435227771"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Posterior cortical atrophy"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/377572273",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/377572273"
+    }
+  ]
+}

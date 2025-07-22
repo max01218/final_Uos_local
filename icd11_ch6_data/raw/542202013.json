@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/542202013",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/821852937"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#542202013",
+  "code": "6A05.2",
+  "source": "http://id.who.int/icd/entity/542202013",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Attention deficit hyperactivity disorder, combined presentation"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for attention deficit hyperactivity disorder are met. Both inattentive and hyperactive-impulsive symptoms are clinically significant, with neither predominating in the clinical presentation. Inattention refers to significant difficulty in sustaining attention to tasks that do not provide a high level of stimulation or frequent rewards, distractibility and problems with organisation. Hyperactivity refers to excessive motor activity and difficulties with remaining still, most evident in structured situations that require behavioural self-control. Impulsivity is a tendency to act in response to immediate stimuli, without deliberation or consideration of the risks and consequences."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Attention deficit hyperactivity disorder, combined presentation"
+      }
+    }
+  ]
+}

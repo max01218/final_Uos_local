@@ -1,0 +1,49 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1379043297",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/470484338"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1866047295",
+    "http://id.who.int/icd/release/11/2024-01/mms/1552098464"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1379043297",
+  "code": "6C4D.6",
+  "source": "http://id.who.int/icd/entity/1379043297",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1379043297/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1192105868"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1379043297/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/706633269",
+        "http://id.who.int/icd/release/11/2024-01/mms/1418561556",
+        "http://id.who.int/icd/release/11/2024-01/mms/1177354811"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Certain specified dissociative drug-induced mental or behavioural disorders, including ketamine and phencyclidine [PCP]"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain specified dissociative drug-induced mental or behavioural disorders, including ketamine and phencyclidine [PCP]"
+      }
+    }
+  ]
+}

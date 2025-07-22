@@ -1,0 +1,38 @@
+Disorder Name: Pyromania
+Disorder Code: 1532500290
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Pyromania is characterised by a recurrent failure to control strong impulses to set fires, resulting in multiple acts of, or attempts at, setting fire to property or other objects, in the absence of an apparent motive (e.g., monetary gain, revenge, sabotage, political statement, attracting attention or recognition). There is an increasing sense of tension or affective arousal prior to instances of fire setting, persistent fascination or preoccupation with fire and related stimuli (e.g., watching fires, building fires, fascination with firefighting equipment), and a sense of pleasure, excitement, relief or gratification during, and immediately after the act of setting the fire, witnessing its effects, or participating in its aftermath. The behaviour is not better explained by intellectual impairment, another mental and behavioural disorder, or substance intoxication.
+
+Inclusions: pathological fire-setting
+Exclusions: Conduct-dissocial disorder; Bipolar type I disorder; Schizophrenia or other primary psychotic disorders; Fire-setting as the reason for observation for suspected mental or behavioural disorders, ruled out
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Pyromania is characterised by a recurrent failure to control strong impulses to set fires, resulting in multiple acts of, or attempts at, setting fire to property or other objects, in the absence of an apparent motive (e.g., monetary gain, revenge, sabotage, political statement, attracting attention or recognition). There is an increasing sense of tension or affective arousal prior to instances of fire setting, persistent fascination or preoccupation with fire and related stimuli (e.g., watching fires, building fires, fascination with firefighting equipment), and a sense of pleasure, excitement, relief or gratification during, and immediately after the act of setting the fire, witnessing its effects, or participating in its aftermath. The behaviour is not better explained by intellectual impairment, another mental and behavioural disorder, or substance intoxication.
+
+Included Manifestations:
+• pathological fire-setting
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Conduct-dissocial disorder
+• Should be differentiated from: Bipolar type I disorder
+• Should be differentiated from: Schizophrenia or other primary psychotic disorders
+• Should be differentiated from: Fire-setting as the reason for observation for suspected mental or behavioural disorders, ruled out
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

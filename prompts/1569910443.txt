@@ -1,0 +1,26 @@
+Disorder Name: Caffeine withdrawal
+Disorder Code: 1569910443
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Caffeine withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of caffeine (typically in the form of coffee, caffeinated drinks, or as an ingredient in certain over-the-counter medications) in individuals who have used caffeine for a prolonged period or in large amounts. Presenting features of Caffeine withdrawal may include headache, marked fatigue or drowsiness, irritability, depressed or dysphoric mood, nausea or vomiting, and difficulty concentrating.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Caffeine withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of caffeine (typically in the form of coffee, caffeinated drinks, or as an ingredient in certain over-the-counter medications) in individuals who have used caffeine for a prolonged period or in large amounts. Presenting features of Caffeine withdrawal may include headache, marked fatigue or drowsiness, irritability, depressed or dysphoric mood, nausea or vomiting, and difficulty concentrating.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

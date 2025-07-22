@@ -1,0 +1,135 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/384289569",
+    "http://id.who.int/icd/release/11/2024-01/mms/1719545571",
+    "http://id.who.int/icd/release/11/2024-01/mms/724748131",
+    "http://id.who.int/icd/release/11/2024-01/mms/1397288146",
+    "http://id.who.int/icd/release/11/2024-01/mms/28995849",
+    "http://id.who.int/icd/release/11/2024-01/mms/843843448",
+    "http://id.who.int/icd/release/11/2024-01/mms/2021326314",
+    "http://id.who.int/icd/release/11/2024-01/mms/1861279867",
+    "http://id.who.int/icd/release/11/2024-01/mms/1730644960",
+    "http://id.who.int/icd/release/11/2024-01/mms/1297080916",
+    "http://id.who.int/icd/release/11/2024-01/mms/76906748",
+    "http://id.who.int/icd/release/11/2024-01/mms/1119245712",
+    "http://id.who.int/icd/release/11/2024-01/mms/23958598",
+    "http://id.who.int/icd/release/11/2024-01/mms/1397803237",
+    "http://id.who.int/icd/release/11/2024-01/mms/1965146397",
+    "http://id.who.int/icd/release/11/2024-01/mms/81068077",
+    "http://id.who.int/icd/release/11/2024-01/mms/988657115",
+    "http://id.who.int/icd/release/11/2024-01/mms/1510094736",
+    "http://id.who.int/icd/release/11/2024-01/mms/1743839677",
+    "http://id.who.int/icd/release/11/2024-01/mms/1125774661",
+    "http://id.who.int/icd/release/11/2024-01/mms/1296093776/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1296093776/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1296093776",
+  "code": "08",
+  "source": "http://id.who.int/icd/entity/1296093776",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Structural developmental anomalies of the nervous system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/215057274",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/215057274"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Syndromes with central nervous system anomalies as a major feature"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1800958996",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1800958996"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Non-viral and unspecified infections of the central nervous system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1585949804",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1585949804"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symptoms, signs or clinical findings of the nervous system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1088544686",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1088544686"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Paralytic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1882771459",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1882771459"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative neurological symptom disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1069443471",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1069443471"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the nervous system complicating pregnancy, childbirth or the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/564191997",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/564191997"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Diseases of the nervous system"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "This is a group of conditions characterised as being in or associated with the nervous system."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endocrine, nutritional or metabolic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/21500692",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/21500692"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Complications of pregnancy, childbirth and the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/714000734",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/714000734"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain conditions originating in the perinatal period"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1306203631",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1306203631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Injury, poisoning or certain other consequences of external causes"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/435227771",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/435227771"
+    }
+  ]
+}

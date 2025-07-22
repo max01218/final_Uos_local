@@ -1,0 +1,26 @@
+Disorder Name: Moderate personality disorder
+Disorder Code: 758339377
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All general diagnostic requirements for Personality Disorder are met. Disturbances affect multiple areas of personality functioning (e.g., identity or sense of self, ability to form intimate relationships, ability to control impulses and modulate behaviour). However, some areas of personality functioning may be relatively less affected. There are marked problems in most interpersonal relationships and the performance of most expected social and occupational roles is compromised to some degree. Relationships are likely to be characterised by conflict, avoidance, withdrawal, or extreme dependency (e.g., few friendships maintained, persistent conflict in work relationships and consequent occupational problems, romantic relationships characterised by serious disruption or inappropriate submissiveness). Specific manifestations of personality disturbance are generally of moderate severity. Moderate Personality Disorder is sometimes associated with harm to self or others, and is associated with marked impairment in personal, family, social, educational, occupational or other important areas of functioning, although functioning in circumscribed areas may be maintained.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All general diagnostic requirements for Personality Disorder are met. Disturbances affect multiple areas of personality functioning (e.g., identity or sense of self, ability to form intimate relationships, ability to control impulses and modulate behaviour). However, some areas of personality functioning may be relatively less affected. There are marked problems in most interpersonal relationships and the performance of most expected social and occupational roles is compromised to some degree. Relationships are likely to be characterised by conflict, avoidance, withdrawal, or extreme dependency (e.g., few friendships maintained, persistent conflict in work relationships and consequent occupational problems, romantic relationships characterised by serious disruption or inappropriate submissiveness). Specific manifestations of personality disturbance are generally of moderate severity. Moderate Personality Disorder is sometimes associated with harm to self or others, and is associated with marked impairment in personal, family, social, educational, occupational or other important areas of functioning, although functioning in circumscribed areas may be maintained.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

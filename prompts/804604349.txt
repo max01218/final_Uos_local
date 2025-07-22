@@ -1,0 +1,35 @@
+Disorder Name: Kleptomania
+Disorder Code: 804604349
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Kleptomania is characterised by a recurrent failure to control strong impulses to steal objects in the absence of an apparent motive (e.g., objects are not acquired for personal use or monetary gain). There is an increasing sense of tension or affective arousal before instances of theft and a sense of pleasure, excitement, relief, or gratification during and immediately after the act of stealing. The behaviour is not better explained by intellectual impairment, another mental and behavioural disorder, or substance intoxication.
+
+Inclusions: pathological stealing
+Exclusions: shoplifting as the reason for observation for suspected mental disorder, ruled out
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Kleptomania is characterised by a recurrent failure to control strong impulses to steal objects in the absence of an apparent motive (e.g., objects are not acquired for personal use or monetary gain). There is an increasing sense of tension or affective arousal before instances of theft and a sense of pleasure, excitement, relief, or gratification during and immediately after the act of stealing. The behaviour is not better explained by intellectual impairment, another mental and behavioural disorder, or substance intoxication.
+
+Included Manifestations:
+• pathological stealing
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: shoplifting as the reason for observation for suspected mental disorder, ruled out
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

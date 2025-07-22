@@ -1,0 +1,26 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1884115764",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1157749237",
+    "http://id.who.int/icd/release/11/2024-01/mms/313374467",
+    "http://id.who.int/icd/release/11/2024-01/mms/1884115764/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1884115764",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/1884115764",
+  "classKind": "block",
+  "blockId": "BlockL1-6C0",
+  "codeRange": "6C00-6C0Z",
+  "title": {
+    "@language": "en",
+    "@value": "Elimination disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Elimination disorders include the repeated voiding of urine into clothes or bed (enuresis) and the repeated passage of faeces in inappropriate places (encopresis). Elimination disorders should only be diagnosed after the individual has reached a developmental age when continence is ordinarily expected (5 years for enuresis and 4 years for encopresis). The urinary or faecal incontinence may have been present from birth (i.e., an atypical extension of normal infantile incontinence), or may have arisen following a period of acquired bladder or bowel control. An Elimination disorder should not be diagnosed if the behaviour is fully attributable to another health condition that causes incontinence, congenital or acquired abnormalities of the urinary tract or bowel, or excessive use of laxatives or diuretics."
+  }
+}

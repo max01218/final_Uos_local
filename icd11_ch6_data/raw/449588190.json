@@ -1,0 +1,222 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/449588190",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1194756772"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#449588190",
+  "code": "6A71.4",
+  "source": "http://id.who.int/icd/entity/449588190",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/449588190/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1119039346",
+        "http://id.who.int/icd/release/11/2024-01/mms/1383708356",
+        "http://id.who.int/icd/release/11/2024-01/mms/1906190365",
+        "http://id.who.int/icd/release/11/2024-01/mms/802537726",
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798",
+        "http://id.who.int/icd/release/11/2024-01/mms/380591392"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms is diagnosed when the definitional requirements for Recurrent depressive disorder are met and the current episode is severe and there are delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a severe depressive episode, many or most symptoms of a Depressive Episode are present to a marked degree, or a smaller number of symptoms are present and manifest to an intense degree. The individual has serious difficulty continuing to function in most domains (personal, family, social, educational, occupational, or other important domains). In a severe depressive episode, many or most symptoms of a Depressive Episode are present to a marked degree, or a smaller number of symptoms are present and manifest to an intense degree. The individual has serious difficulty continuing to function in most domains (personal, family, social, educational, occupational, or other important domains)."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endogenous depression with psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Manic-depressive psychosis, depressed type with psychotic symptoms"
+      }
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "severe recurrent major depression with psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "major depressive disorder, recurrent episode, severe degree, specified as with psychotic behaviour"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "recurrent depressive disorder, current episode severe, with psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Manic-depressive psychosis, depressed type with psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "recurrent severe episodes of major depression with psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "vital depression with psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "recurrent severe episodes of reactive depressive psychosis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "recurrent severe episodes of psychotic depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "recurrent severe episodes of psychogenic depressive psychosis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endogenous depression with psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/934742379"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1028760585"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1208146156"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1835545946"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1355985685"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1787365219"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1806110419"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1261795041"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/336781140"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1952116073"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1539671967"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/999142820"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1688869911"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1806968053"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, with psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2141725043"
+    }
+  ]
+}

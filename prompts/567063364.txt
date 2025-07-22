@@ -1,0 +1,26 @@
+Disorder Name: Rapid cycling
+Disorder Code: 567063364
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+In the context of bipolar type I or bipolar type II disorder, there has been a high frequency of mood episodes (at least four) over the past 12 months. There may be a switch from one polarity of mood to the other, or the mood episodes may be demarcated by a period of remission. In individuals with a high frequency of mood episodes, some may have a shorter duration than those usually observed in bipolar type I or bipolar type II disorder. In particular, depressive periods may only last several days. If depressive and manic symptoms alternate very rapidly (i.e., from day to day or within the same day), a mixed episode should be diagnosed rather than rapid cycling.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+In the context of bipolar type I or bipolar type II disorder, there has been a high frequency of mood episodes (at least four) over the past 12 months. There may be a switch from one polarity of mood to the other, or the mood episodes may be demarcated by a period of remission. In individuals with a high frequency of mood episodes, some may have a shorter duration than those usually observed in bipolar type I or bipolar type II disorder. In particular, depressive periods may only last several days. If depressive and manic symptoms alternate very rapidly (i.e., from day to day or within the same day), a mixed episode should be diagnosed rather than rapid cycling.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

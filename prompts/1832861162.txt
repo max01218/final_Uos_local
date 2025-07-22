@@ -1,0 +1,26 @@
+Disorder Name: Voyeuristic disorder
+Disorder Code: 1832861162
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Voyeuristic disorder is characterised by a sustained, focused and intense pattern of sexual arousal—as manifested by persistent sexual thoughts, fantasies, urges, or behaviours—that involves observing an unsuspecting individual who is naked, in the process of disrobing, or engaging in sexual activity. In addition, in order for Voyeuristic Disorder to be diagnosed, the individual must have acted on these thoughts, fantasies or urges or be markedly distressed by them. Voyeuristic Disorder specifically excludes consensual voyeuristic behaviours that occur with the consent of the person or persons being observed.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Voyeuristic disorder is characterised by a sustained, focused and intense pattern of sexual arousal—as manifested by persistent sexual thoughts, fantasies, urges, or behaviours—that involves observing an unsuspecting individual who is naked, in the process of disrobing, or engaging in sexual activity. In addition, in order for Voyeuristic Disorder to be diagnosed, the individual must have acted on these thoughts, fantasies or urges or be markedly distressed by them. Voyeuristic Disorder specifically excludes consensual voyeuristic behaviours that occur with the consent of the person or persons being observed.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

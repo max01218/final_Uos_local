@@ -1,0 +1,26 @@
+Disorder Name: Anankastia in personality disorder or personality difficulty
+Disorder Code: 848330288
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+The core feature of the Anankastia trait domain is a narrow focus on one’s rigid standard of perfection and of right and wrong, and on controlling one’s own and others’ behaviour and controlling situations to ensure conformity to these standards. Common manifestations of Anankastia, not all of which may be present in a given individual at a given time, include: perfectionism (e.g., concern with social rules, obligations, and norms of right and wrong, scrupulous attention to detail, rigid, systematic, day-to-day routines, hyper-scheduling and planfulness, emphasis on organisation, orderliness, and neatness); and emotional and behavioural constraint (e.g., rigid control over emotional expression, stubbornness and inflexibility, risk-avoidance, perseveration, and deliberativeness).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+The core feature of the Anankastia trait domain is a narrow focus on one’s rigid standard of perfection and of right and wrong, and on controlling one’s own and others’ behaviour and controlling situations to ensure conformity to these standards. Common manifestations of Anankastia, not all of which may be present in a given individual at a given time, include: perfectionism (e.g., concern with social rules, obligations, and norms of right and wrong, scrupulous attention to detail, rigid, systematic, day-to-day routines, hyper-scheduling and planfulness, emphasis on organisation, orderliness, and neatness); and emotional and behavioural constraint (e.g., rigid control over emotional expression, stubbornness and inflexibility, risk-avoidance, perseveration, and deliberativeness).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

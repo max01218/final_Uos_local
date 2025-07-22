@@ -1,0 +1,26 @@
+Disorder Name: Schizoaffective disorder, multiple episodes
+Disorder Code: 1730029381
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Schizoaffective disorder, multiple episodes should be used to identify individuals experiencing symptoms that meet the diagnostic requirements for Schizoaffective disorder and who have also previously experienced episodes during which diagnostic requirements for Schizoaffective disorder or Schizophrenia were met, with substantial remission of symptoms between episodes. Some attenuated symptoms may remain during period of remission, and remissions may have occurred in response to medication or other treatment.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Schizoaffective disorder, multiple episodes should be used to identify individuals experiencing symptoms that meet the diagnostic requirements for Schizoaffective disorder and who have also previously experienced episodes during which diagnostic requirements for Schizoaffective disorder or Schizophrenia were met, with substantial remission of symptoms between episodes. Some attenuated symptoms may remain during period of remission, and remissions may have occurred in response to medication or other treatment.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

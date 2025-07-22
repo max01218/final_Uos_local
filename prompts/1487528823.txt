@@ -1,0 +1,26 @@
+Disorder Name: Oppositional defiant disorder
+Disorder Code: 1487528823
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Oppositional defiant disorder is a persistent pattern (e.g., 6 months or more) of markedly defiant, disobedient, provocative or spiteful behaviour that occurs more frequently than is typically observed in individuals of comparable age and developmental level and that is not restricted to interaction with siblings. Oppositional defiant disorder may be manifest in prevailing, persistent angry or irritable mood, often accompanied by severe temper outbursts or in headstrong, argumentative and defiant behaviour. The behaviour pattern is of sufficient severity to result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Oppositional defiant disorder is a persistent pattern (e.g., 6 months or more) of markedly defiant, disobedient, provocative or spiteful behaviour that occurs more frequently than is typically observed in individuals of comparable age and developmental level and that is not restricted to interaction with siblings. Oppositional defiant disorder may be manifest in prevailing, persistent angry or irritable mood, often accompanied by severe temper outbursts or in headstrong, argumentative and defiant behaviour. The behaviour pattern is of sufficient severity to result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,26 @@
+Disorder Name: Single episode depressive disorder, currently in partial remission
+Disorder Code: 1841833296
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Single episode depressive disorder, currently in partial remission, is diagnosed when the full definitional requirements for a depressive episode have been met and there is no history of prior depressive episodes. The full definitional requirements for a depressive episode are no longer met but some significant mood symptoms remain.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Single episode depressive disorder, currently in partial remission, is diagnosed when the full definitional requirements for a depressive episode have been met and there is no history of prior depressive episodes. The full definitional requirements for a depressive episode are no longer met but some significant mood symptoms remain.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

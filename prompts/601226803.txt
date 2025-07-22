@@ -1,0 +1,26 @@
+Disorder Name: Disorders due to use of multiple specified psychoactive substances, including medications
+Disorder Code: 601226803
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of multiple specified psychoactive substances, including medications are characterised by the pattern and consequences of multiple psychoactive substances. Although this grouping is provided for coding purposes, in most clinical situations it is recommended that multiple specific disorders due to substance use be assigned rather than using categories from this grouping.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of multiple specified psychoactive substances, including medications are characterised by the pattern and consequences of multiple psychoactive substances. Although this grouping is provided for coding purposes, in most clinical situations it is recommended that multiple specific disorders due to substance use be assigned rather than using categories from this grouping.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

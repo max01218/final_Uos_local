@@ -1,0 +1,38 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1488115862",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/219731531"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1488115862",
+  "code": "6C4G.43",
+  "source": "http://id.who.int/icd/entity/1488115862",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1488115862/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/2143971168"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Withdrawal due to unknown or unspecified psychoactive, with perceptual disturbances and seizures"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "The development of a withdrawal syndrome accompanied by both perceptual disturbances and seizures following cessation or reduction of use of the unknown or unspecified substance."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Withdrawal due to unknown or unspecified psychoactive, with perceptual disturbances and seizures"
+      }
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2070699808",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/991786158"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2070699808",
+  "code": "6B40",
+  "source": "http://id.who.int/icd/entity/2070699808",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Post traumatic stress disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Post traumatic stress disorder (PTSD) may develop following exposure to an extremely threatening or horrific event or series of events. It is characterised by all of the following: 1) re-experiencing the traumatic event or events in the present in the form of vivid intrusive memories, flashbacks, or nightmares. Re-experiencing may occur via one or multiple sensory modalities and is typically accompanied by strong or overwhelming emotions, particularly fear or horror, and strong physical sensations; 2) avoidance of thoughts and memories of the event or events, or avoidance of activities, situations, or people reminiscent of the event(s); and 3) persistent perceptions of heightened current threat, for example as indicated by hypervigilance or an enhanced startle reaction to stimuli such as unexpected noises. The symptoms persist for at least several weeks and cause significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Traumatic neurosis"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute stress reaction"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/505909942",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/505909942"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Complex post traumatic stress disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/585833559",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/585833559"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Post traumatic stress disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Traumatic neurosis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "PTSD - [post traumatic stress disorder]"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "trauma-related disorders"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Battered person syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1478396671"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Combat neurosis"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1174526603"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Rape trauma syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1449980749"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/289492002",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/486722075"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#289492002",
+  "code": "6A41",
+  "source": "http://id.who.int/icd/entity/289492002",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/289492002/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/2054210520",
+        "http://id.who.int/icd/release/11/2024-01/mms/515681918",
+        "http://id.who.int/icd/release/11/2024-01/mms/2079810536",
+        "http://id.who.int/icd/release/11/2024-01/mms/915343154",
+        "http://id.who.int/icd/release/11/2024-01/mms/186500648"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/289492002/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/1098540500",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Catatonia induced by substances or medications"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Catatonia induced by substances or medications is a syndrome of primarily psychomotor disturbances, characterized by the co-occurrence of several symptoms of decreased, increased, or abnormal psychomotor activity, which develops during or soon after intoxication or withdrawal from certain psychoactive substances, including phencyclidine (PCP), cannabis, hallucinogens such as mescaline or LSD, cocaine and MDMA or related drugs, or during the use of certain psychoactive and non-psychoactive medications (e.g. antipsychotic medications, benzodiazepines, steroids, disulfiram, ciprofloxacin)."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Neuroleptic malignant syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/498240876",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/384289569"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Serotonin syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/678764364",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/203881550"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Catatonia induced by substances or medications"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Catatonia induced by psychoactive substances, including medications"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Catatonia induced by specified psychoactive substance or medication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1420765653"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Catatonia induced by unknown or unspecified psychoactive substance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/511063600"
+    }
+  ]
+}

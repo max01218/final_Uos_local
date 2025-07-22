@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1824621163",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/388252416"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1824621163",
+  "code": "6C45.60",
+  "source": "http://id.who.int/icd/entity/1824621163",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1824621163/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1965837313",
+        "http://id.who.int/icd/release/11/2024-01/mms/25238782"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1824621163/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/318767128",
+        "http://id.who.int/icd/release/11/2024-01/mms/275218837",
+        "http://id.who.int/icd/release/11/2024-01/mms/1691013484"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Cocaine-induced psychotic disorder with hallucinations"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Cocaine-induced psychotic disorder with hallucinations is characterised by the presence of hallucinations that are judged to be the direct consequence of cocaine use. Neither delusions nor other psychotic symptoms are present. The symptoms do not occur exclusively during hypnogogic or hypnopompic states, are not better accounted for by another mental and behavioural disorder (e.g., schizophrenia), and are not due to another disorder or disease classified elsewhere (e.g., epilepsies with visual symptoms)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine-induced psychotic disorder with hallucinations"
+      }
+    }
+  ]
+}

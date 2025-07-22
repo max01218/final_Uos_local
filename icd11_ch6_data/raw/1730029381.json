@@ -1,0 +1,36 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1730029381",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/106339515"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/963384259",
+    "http://id.who.int/icd/release/11/2024-01/mms/468697510",
+    "http://id.who.int/icd/release/11/2024-01/mms/746381528",
+    "http://id.who.int/icd/release/11/2024-01/mms/1730029381/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1730029381",
+  "code": "6A21.1",
+  "source": "http://id.who.int/icd/entity/1730029381",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1730029381/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Schizoaffective disorder, multiple episodes"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Schizoaffective disorder, multiple episodes should be used to identify individuals experiencing symptoms that meet the diagnostic requirements for Schizoaffective disorder and who have also previously experienced episodes during which diagnostic requirements for Schizoaffective disorder or Schizophrenia were met, with substantial remission of symptoms between episodes. Some attenuated symptoms may remain during period of remission, and remissions may have occurred in response to medication or other treatment."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1676588433",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/590211325"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/766814084",
+    "http://id.who.int/icd/release/11/2024-01/mms/714690795",
+    "http://id.who.int/icd/release/11/2024-01/mms/1580466198",
+    "http://id.who.int/icd/release/11/2024-01/mms/1339202943",
+    "http://id.who.int/icd/release/11/2024-01/mms/998231424",
+    "http://id.who.int/icd/release/11/2024-01/mms/1217486356",
+    "http://id.who.int/icd/release/11/2024-01/mms/769299330",
+    "http://id.who.int/icd/release/11/2024-01/mms/1012312104",
+    "http://id.who.int/icd/release/11/2024-01/mms/1676588433/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1676588433/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1676588433",
+  "code": "6C40",
+  "source": "http://id.who.int/icd/entity/1676588433",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1676588433/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/334423054",
+        "http://id.who.int/icd/release/11/2024-01/mms/274880002",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/868865918",
+        "http://id.who.int/icd/release/11/2024-01/mms/1218729044",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/197934298",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757",
+        "http://id.who.int/icd/release/11/2024-01/mms/577470983",
+        "http://id.who.int/icd/release/11/2024-01/mms/714000734",
+        "http://id.who.int/icd/release/11/2024-01/mms/1306203631",
+        "http://id.who.int/icd/release/11/2024-01/mms/223744320",
+        "http://id.who.int/icd/release/11/2024-01/mms/1843895818",
+        "http://id.who.int/icd/release/11/2024-01/mms/435227771",
+        "http://id.who.int/icd/release/11/2024-01/mms/850137482",
+        "http://id.who.int/icd/release/11/2024-01/mms/1249056269",
+        "http://id.who.int/icd/release/11/2024-01/mms/1596590595"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Disorders due to use of alcohol"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorders due to use of alcohol are characterised by the pattern and consequences of alcohol use. Alcohol—more specifically termed ethyl alcohol or ethanol—is an intoxicating compound produced by fermentation of sugars usually in agricultural products such as fruits, cereals, and vegetables with or without subsequent distillation. There are a wide variety of alcoholic drinks, with alcohol concentrations typically ranging from 1.5% to 60%. Alcohol is predominantly a central nervous system depressant. In addition to ability to produce Alcohol Intoxication, alcohol has dependence-producing properties, resulting in Alcohol Dependence in some people and Alcohol Withdrawal when alcohol use is reduced or discontinued. Unlike most other substances, elimination of alcohol from the body occurs at a constant rate, such that its clearance follows a linear rather than a logarithmic course. Alcohol is implicated in a wide range of harms affecting most organs and systems of the body (e.g., cirrhosis of the liver, gastrointestinal cancers, pancreatitis). Harm to others resulting from behaviour during Alcohol Intoxication is well recognized and is included in the definitions of harmful use of alcohol (i.e., Episode of Harmful Use of Alcohol and Harmful Pattern of Use of Alcohol). Several alcohol-induced mental disorders (e.g., Alcohol-Induced Psychotic Disorder) and alcohol-related forms of neurocognitive impairment (e.g., Dementia Due to Use of Alcohol) are recognized."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hazardous alcohol use"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/499098434",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/499098434"
+    }
+  ]
+}

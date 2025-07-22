@@ -1,0 +1,26 @@
+Disorder Name: Anorexia Nervosa with significantly low body weight, restricting pattern
+Disorder Code: 555272190
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Anorexia Nervosa with significantly low body weight, restricting pattern refers to individuals who meet the definitional requirements of Anorexia Nervosa with significantly low body weight and who induce weight loss and maintain low body weight through restricted food intake or fasting alone or in combination with increased energy expenditure (such as through excessive exercise) but who do not engage in binge eating or purging behaviours.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Anorexia Nervosa with significantly low body weight, restricting pattern refers to individuals who meet the definitional requirements of Anorexia Nervosa with significantly low body weight and who induce weight loss and maintain low body weight through restricted food intake or fasting alone or in combination with increased energy expenditure (such as through excessive exercise) but who do not engage in binge eating or purging behaviours.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

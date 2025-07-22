@@ -1,0 +1,26 @@
+Disorder Name: Disorders due to substance use or addictive behaviours
+Disorder Code: 1602669465
+Code Range: 6C40-6C5Z
+Class Kind: block
+
+Standard Definition:
+Disorders due to substance use and addictive behaviours are mental and behavioural disorders that develop as a result of the use of predominantly psychoactive substances, including medications, or specific repetitive rewarding and reinforcing behaviours.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to substance use and addictive behaviours are mental and behavioural disorders that develop as a result of the use of predominantly psychoactive substances, including medications, or specific repetitive rewarding and reinforcing behaviours.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

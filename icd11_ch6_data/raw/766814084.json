@@ -1,0 +1,67 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/766814084",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1676588433"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#766814084",
+  "code": "6C40.0",
+  "source": "http://id.who.int/icd/entity/766814084",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/766814084/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1217486356",
+        "http://id.who.int/icd/release/11/2024-01/mms/769299330",
+        "http://id.who.int/icd/release/11/2024-01/mms/1012312104"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/766814084/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1339202943"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Episode of harmful use of alcohol"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "An episode of use of alcohol that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour due to alcohol intoxication on the part of the person to whom the diagnosis of single episode of harmful use applies. This diagnosis should not be made if the harm is attributed to a known pattern of alcohol use."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of alcohol"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/714690795",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/714690795"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol dependence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1580466198",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1580466198"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of alcohol"
+      }
+    }
+  ]
+}

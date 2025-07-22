@@ -1,0 +1,26 @@
+Disorder Name: Prolonged grief disorder
+Disorder Code: 1183832314
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Prolonged grief disorder is a disturbance in which, following the death of a partner, parent, child, or other person close to the bereaved, there is persistent and pervasive grief response characterised by longing for the deceased or persistent preoccupation with the deceased accompanied by intense emotional pain (e.g. sadness, guilt, anger, denial, blame, difficulty accepting the death, feeling one has lost a part of one’s self, an inability to experience positive mood, emotional numbness, difficulty in engaging with social or other activities). The grief response has persisted for an atypically long period of time following the loss (more than 6 months at a minimum) and clearly exceeds expected social, cultural or religious norms for the individual’s culture and context. Grief reactions that have persisted for longer periods that are within a normative period of grieving given the person’s cultural and religious context are viewed as normal bereavement responses and are not assigned a diagnosis. The disturbance causes significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Prolonged grief disorder is a disturbance in which, following the death of a partner, parent, child, or other person close to the bereaved, there is persistent and pervasive grief response characterised by longing for the deceased or persistent preoccupation with the deceased accompanied by intense emotional pain (e.g. sadness, guilt, anger, denial, blame, difficulty accepting the death, feeling one has lost a part of one’s self, an inability to experience positive mood, emotional numbness, difficulty in engaging with social or other activities). The grief response has persisted for an atypically long period of time following the loss (more than 6 months at a minimum) and clearly exceeds expected social, cultural or religious norms for the individual’s culture and context. Grief reactions that have persisted for longer periods that are within a normative period of grieving given the person’s cultural and religious context are viewed as normal bereavement responses and are not assigned a diagnosis. The disturbance causes significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

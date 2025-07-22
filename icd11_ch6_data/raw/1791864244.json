@@ -1,0 +1,57 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1791864244",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1218193465"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1791864244",
+  "code": "6C4C.4",
+  "source": "http://id.who.int/icd/entity/1791864244",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1791864244/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1692885212",
+        "http://id.who.int/icd/release/11/2024-01/mms/342215505",
+        "http://id.who.int/icd/release/11/2024-01/mms/1327107148",
+        "http://id.who.int/icd/release/11/2024-01/mms/1153016464",
+        "http://id.who.int/icd/release/11/2024-01/mms/2102840295",
+        "http://id.who.int/icd/release/11/2024-01/mms/321833104",
+        "http://id.who.int/icd/release/11/2024-01/mms/171496389",
+        "http://id.who.int/icd/release/11/2024-01/mms/565097819",
+        "http://id.who.int/icd/release/11/2024-01/mms/1211762077",
+        "http://id.who.int/icd/release/11/2024-01/mms/1361845976",
+        "http://id.who.int/icd/release/11/2024-01/mms/868004030"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1791864244/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/473001402"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "MDMA or related drug withdrawal, including MDA"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "MDMA or related drug withdrawal, including MDA is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of MDMA or related drugs in individuals who have developed MDMA or related drug dependence or have used MDMA or related drugs for a prolonged period or in large amounts. Presenting features of MDMA or related drug withdrawal may include fatigue, lethargy, hypersomnia or insomnia, depressed mood, anxiety, irritability, craving, difficulty in concentrating, and appetite disturbance."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "MDMA or related drug withdrawal, including MDA"
+      }
+    }
+  ]
+}

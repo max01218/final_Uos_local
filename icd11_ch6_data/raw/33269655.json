@@ -1,0 +1,26 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/33269655",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1516623224"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/551966778",
+    "http://id.who.int/icd/release/11/2024-01/mms/654956298",
+    "http://id.who.int/icd/release/11/2024-01/mms/862918022",
+    "http://id.who.int/icd/release/11/2024-01/mms/33269655/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/33269655/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#33269655",
+  "code": "6A01",
+  "source": "http://id.who.int/icd/entity/33269655",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Developmental speech or language disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Developmental speech or language disorders arise during the developmental period and are characterised by difficulties in understanding or producing speech and language or in using language in context for the purposes of communication that are outside the limits of normal variation expected for age and level of intellectual functioning. The observed speech and language problems are not attributable to regional, social, or cultural/ethnic language variations and are not fully explained by anatomical or neurological abnormalities. The presumptive aetiology for Developmental speech or language disorders is complex, and in many individual cases, is unknown."
+  }
+}

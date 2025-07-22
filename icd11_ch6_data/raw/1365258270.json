@@ -1,0 +1,244 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1365258270",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/546689346"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1365258270",
+  "code": "6D81",
+  "source": "http://id.who.int/icd/entity/1365258270",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1365258270/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/148241182"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1365258270/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1365258270/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1990827977",
+        "http://id.who.int/icd/release/11/2024-01/mms/1427441570",
+        "http://id.who.int/icd/release/11/2024-01/mms/1442995018",
+        "http://id.who.int/icd/release/11/2024-01/mms/1935481507",
+        "http://id.who.int/icd/release/11/2024-01/mms/581897143",
+        "http://id.who.int/icd/release/11/2024-01/mms/1606819573",
+        "http://id.who.int/icd/release/11/2024-01/mms/805990521",
+        "http://id.who.int/icd/release/11/2024-01/mms/982373217",
+        "http://id.who.int/icd/release/11/2024-01/mms/1173205716",
+        "http://id.who.int/icd/release/11/2024-01/mms/843843448/unspecified"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Dementia due to cerebrovascular disease"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dementia due to brain parenchyma injury resulting from cerebrovascular disease (ischemic or haemorrhagic). The onset of the cognitive deficits is temporally related to one or more vascular events. Cognitive decline is typically most prominent in speed of information processing, complex attention, and frontal-executive functioning. There is evidence of the presence of cerebrovascular disease considered to be sufficient to account for the neurocognitive deficits from history, physical examination and neuroimaging."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alzheimer disease dementia, mixed type, with cerebrovascular disease"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1543494610",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1543494610"
+    }
+  ],
+  "codingNote": {
+    "@language": "en",
+    "@value": "This category should never be used in primary tabulation. The codes are provided for use as supplementary or additional codes when it is desired to identify the presence of dementia in diseases classified elsewhere."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to cerebrovascular disease"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "arteriosclerotic dementia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Strategic-infarct dementia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Post stroke dementia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "vascular cognitive impairment"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "vascular dementia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Vascular dementia haemorrhagic subtype"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/235360465"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Vascular dementia ischaemic subtype"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/198608831"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Multi-infarct dementia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/645643099"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "multi-infarct dementia or psychosis"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/645643099"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "multi-infarct vascular dementia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/645643099"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "predominantly cortical vascular dementia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/645643099"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "predominantly cortical dementia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/645643099"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "MID - [multi-infarct dementia]"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/645643099"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single strategic infarct dementia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/783707885"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to subcortical vascular encephalopathy"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2078986772"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Binswanger's dementia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2078986772"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Binswanger dementia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2078986772"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "subcortical atherosclerotic dementia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2078986772"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to hypoxic encephalopathy"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1638788298"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to genetic causes"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1957030048"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to central nervous system vasculitides"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/131014120"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to hypertensive encephalopathy"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/240932449"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to intracerebral hypertensive haemorrhage"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2116571084"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to cerebral amyloid angiopathy"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2097075589"
+    }
+  ]
+}

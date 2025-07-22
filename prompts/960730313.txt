@@ -1,0 +1,45 @@
+Disorder Name: Gambling disorder, predominantly offline
+Disorder Code: 960730313
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+!markdown
+Gambling disorder, predominantly offline is characterised by a pattern of persistent or recurrent gambling behaviour that is not primarily conducted over the internet and is manifested by: 
+
+1. impaired control over gambling (e.g., onset, frequency, intensity, duration, termination, context); 
+2. increasing priority given to gambling to the extent that gambling takes precedence over other life interests and daily activities; and 
+3. continuation or escalation of gambling despite the occurrence of negative consequences. The behaviour pattern is of sufficient severity to result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning. 
+
+The pattern of gambling behaviour may be continuous or episodic and recurrent. The gambling behaviour and other features are normally evident over a period of at least 12 months in order for a diagnosis to be assigned, although the required duration may be shortened if all diagnostic requirements are met and symptoms are severe.
+
+Exclusions: Hazardous gambling or betting
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+!markdown
+Gambling disorder, predominantly offline is characterised by a pattern of persistent or recurrent gambling behaviour that is not primarily conducted over the internet and is manifested by: 
+
+1. impaired control over gambling (e.g., onset, frequency, intensity, duration, termination, context); 
+2. increasing priority given to gambling to the extent that gambling takes precedence over other life interests and daily activities; and 
+3. continuation or escalation of gambling despite the occurrence of negative consequences. The behaviour pattern is of sufficient severity to result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning. 
+
+The pattern of gambling behaviour may be continuous or episodic and recurrent. The gambling behaviour and other features are normally evident over a period of at least 12 months in order for a diagnosis to be assigned, although the required duration may be shortened if all diagnostic requirements are met and symptoms are severe.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Hazardous gambling or betting
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

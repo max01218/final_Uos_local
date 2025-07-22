@@ -1,0 +1,37 @@
+Disorder Name: Adjustment disorder
+Disorder Code: 264310751
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Adjustment disorder is a maladaptive reaction to an identifiable psychosocial stressor or multiple stressors (e.g. divorce, illness or disability, socio-economic problems, conflicts at home or work) that usually emerges within a month of the stressor. The disorder is characterised by preoccupation with the stressor or its consequences, including excessive worry, recurrent and distressing thoughts about the stressor, or constant rumination about its implications, as well as by failure to adapt to the stressor that causes significant impairment in personal, family, social, educational, occupational or other important areas of functioning. The symptoms are not better explained by another mental disorder (e.g., Mood Disorder, another Disorder Specifically Associated with Stress) and typically resolve within 6 months, unless the stressor persists for a longer duration.
+
+Exclusions: separation anxiety disorder of childhood; Recurrent depressive disorder; Single episode depressive disorder; Prolonged grief disorder; Uncomplicated bereavement; Burnout; Acute stress reaction
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Adjustment disorder is a maladaptive reaction to an identifiable psychosocial stressor or multiple stressors (e.g. divorce, illness or disability, socio-economic problems, conflicts at home or work) that usually emerges within a month of the stressor. The disorder is characterised by preoccupation with the stressor or its consequences, including excessive worry, recurrent and distressing thoughts about the stressor, or constant rumination about its implications, as well as by failure to adapt to the stressor that causes significant impairment in personal, family, social, educational, occupational or other important areas of functioning. The symptoms are not better explained by another mental disorder (e.g., Mood Disorder, another Disorder Specifically Associated with Stress) and typically resolve within 6 months, unless the stressor persists for a longer duration.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: separation anxiety disorder of childhood
+• Should be differentiated from: Recurrent depressive disorder
+• Should be differentiated from: Single episode depressive disorder
+• Should be differentiated from: Prolonged grief disorder
+• Should be differentiated from: Uncomplicated bereavement
+• Should be differentiated from: Burnout
+• Should be differentiated from: Acute stress reaction
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

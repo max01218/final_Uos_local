@@ -1,0 +1,38 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/637576511",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1913137404"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#637576511",
+  "code": "6C41.4",
+  "source": "http://id.who.int/icd/entity/637576511",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/637576511/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1129015467"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Cannabis withdrawal"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Cannabis withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of cannabis in individuals who have developed Cannabis dependence or have used cannabis for a prolonged period or in large amounts. Presenting features of Cannabis withdrawal may include irritability, anger or aggressive behaviour, shakiness, insomnia, restlessness, anxiety, depressed or dysphoric mood, decreased appetite and weight loss, headache, sweating or chills, abdominal cramps and muscle aches."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cannabis withdrawal"
+      }
+    }
+  ]
+}

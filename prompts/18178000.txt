@@ -1,0 +1,36 @@
+Disorder Name: Schizotypal disorder
+Disorder Code: 18178000
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Schizotypal disorder is characterised by an enduring pattern (i.e. characteristic of the person’s functioning over a period of at least several years) of eccentricities in behaviour, appearance and speech, accompanied by cognitive and perceptual distortions, unusual beliefs, and discomfort with— and often reduced capacity for— interpersonal relationships. Symptoms may include constricted or inappropriate affect and anhedonia. Paranoid ideas, ideas of reference, or other psychotic symptoms, including hallucinations in any modality, may occur, but are not of sufficient intensity or duration to meet the diagnostic requirements of schizophrenia, schizoaffective disorder, or delusional disorder. The symptoms cause distress or impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Inclusions: Schizotypal personality disorder
+Exclusions: Autism spectrum disorder; Personality disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Schizotypal disorder is characterised by an enduring pattern (i.e. characteristic of the person’s functioning over a period of at least several years) of eccentricities in behaviour, appearance and speech, accompanied by cognitive and perceptual distortions, unusual beliefs, and discomfort with— and often reduced capacity for— interpersonal relationships. Symptoms may include constricted or inappropriate affect and anhedonia. Paranoid ideas, ideas of reference, or other psychotic symptoms, including hallucinations in any modality, may occur, but are not of sufficient intensity or duration to meet the diagnostic requirements of schizophrenia, schizoaffective disorder, or delusional disorder. The symptoms cause distress or impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Included Manifestations:
+• Schizotypal personality disorder
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Autism spectrum disorder
+• Should be differentiated from: Personality disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

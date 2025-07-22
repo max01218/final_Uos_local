@@ -1,0 +1,178 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/822134099",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/862918022"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#822134099",
+  "code": "6A01.20",
+  "source": "http://id.who.int/icd/entity/822134099",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Developmental language disorder with impairment of receptive and expressive language"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Developmental language disorder with impairment of receptive and expressive language is characterised by persistent difficulties in the acquisition, understanding, production, and use of language that arise during the developmental period, typically during early childhood, and cause significant limitations in the individual’s ability to communicate. The ability to understand spoken or signed language (i.e., receptive language) is markedly below the expected level given the individual’s age and level of intellectual functioning, and is accompanied by persistent impairment in the ability to produce and use spoken or signed language (i.e., expressive language)."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "developmental dysphasia or aphasia, receptive type"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acquired aphasia with epilepsy [Landau-Kleffner]"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/348544271",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/348544271"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Autism spectrum disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/437815624",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/437815624"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Selective mutism"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/167946871",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/167946871"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "dysphasia NOS"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1705858040",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1705858040"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the nervous system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1296093776",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1296093776"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Deafness not otherwise specified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/947280473",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/947280473"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental language disorder with impairment of receptive and expressive language"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "developmental receptive language disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "receptive language disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "developmental dysphasia or aphasia, receptive type"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "mixed receptive language disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "mixed receptive and expressive language disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Auditory discrimination aphasia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/374759255"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "aphememesthesia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/374759255"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "auditory aphasia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/374759255"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "developmental aphasia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/374759255"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental auditory agnosia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2051391451"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "developmental verbal agnosia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2051391451"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental Wernicke aphasia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1600985737"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "receptive aphasia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1600985737"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Receptive dysphasia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1614858721"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+Disorder Name: Intoxication due to multiple specified psychoactive substances
+Disorder Code: 1121505208
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Intoxication due to multiple specified psychoactive substances is a clinically significant transient condition that develops during or shortly after the consumption of multiple specified substances or medications that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of the multiple specified psychoactive substances and their intensity is closely related to the amount of the substances consumed. They are time-limited and abate as the multiple specified substances are cleared from the body.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Intoxication due to multiple specified psychoactive substances is a clinically significant transient condition that develops during or shortly after the consumption of multiple specified substances or medications that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of the multiple specified psychoactive substances and their intensity is closely related to the amount of the substances consumed. They are time-limited and abate as the multiple specified substances are cleared from the body.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

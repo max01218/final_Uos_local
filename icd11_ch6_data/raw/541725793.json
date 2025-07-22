@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/541725793",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/313374467"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#541725793",
+  "code": "6C01.1",
+  "source": "http://id.who.int/icd/entity/541725793",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Encopresis without constipation or overflow incontinence"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Encopresis is the repeated passage of faeces in inappropriate places occurring repeatedly (e.g., at least once per month over a period of several months) in an individual who has reached the developmental age when faecal continence is ordinarily expected (4 years). The faecal incontinence may have been present from birth (i.e., an atypical extension of normal infantile incontinence), or may have arisen following a period of acquired bowel control. Encopresis without constipation and overflow is not associated with retention and impaction of faeces, but rather reflects reluctance, resistance or failure to conform to social norms in defecating in acceptable places in the context of normal physiological control over defecation. Stools are typically of normal consistency and inappropriate defecation is likely to be intermittent."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Encopresis without constipation or overflow incontinence"
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/284410555",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/405565289"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1471861706",
+    "http://id.who.int/icd/release/11/2024-01/mms/679604439",
+    "http://id.who.int/icd/release/11/2024-01/mms/284410555/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/284410555/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#284410555",
+  "code": "6A23",
+  "source": "http://id.who.int/icd/entity/284410555",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/284410555/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Acute and transient psychotic disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Acute and transient psychotic disorder is characterised by acute onset of psychotic symptoms that emerge without a prodrome and reach their maximal severity within two weeks. Symptoms may include delusions, hallucinations, disorganisation of thought processes, perplexity or confusion, and disturbances of affect and mood. Catatonia-like psychomotor disturbances may be present. Symptoms typically change rapidly, both in nature and intensity, from day to day, or even within a single day. The duration of the episode does not exceed 3 months, and most commonly lasts from a few days to 1 month. The symptoms are not a manifestation of another medical condition (e.g. a brain tumour) and are not due to the effect of a substance or medication on the central nervous system (e.g. corticosteroids), including withdrawal (e.g. alcohol withdrawal)."
+  }
+}

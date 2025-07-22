@@ -1,0 +1,82 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/475820054",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/390325614"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#475820054",
+  "code": "6C44.0",
+  "source": "http://id.who.int/icd/entity/475820054",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/475820054/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1880792884",
+        "http://id.who.int/icd/release/11/2024-01/mms/881358505",
+        "http://id.who.int/icd/release/11/2024-01/mms/315390786"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/475820054/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1226243628",
+        "http://id.who.int/icd/release/11/2024-01/mms/744305598",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954860287"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/475820054/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1314209089",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Episode of harmful use of sedatives, hypnotics or anxiolytics"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "An episode of use of a sedative, hypnotic or anxiolytic that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour due to sedative, hypnotic or anxiolytic intoxication on the part of the person to whom the diagnosis of single episode of harmful use applies. This diagnosis should not be made if the harm is attributed to a known pattern of sedative, hypnotic or anxiolytic use."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sedative, hypnotic or anxiolytic dependence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1605607466",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1605607466"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of sedatives, hypnotics or anxiolytics"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/723448021",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/723448021"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of sedatives, hypnotics or anxiolytics"
+      }
+    }
+  ]
+}

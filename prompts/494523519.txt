@@ -1,0 +1,33 @@
+Disorder Name: Stimulant withdrawal including amphetamines, methamphetamine or methcathinone
+Disorder Code: 494523519
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Stimulant withdrawal including amphetamines, methamphetamine and methcathinone is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of stimulants in individuals who have developed Stimulant dependence or have used stimulants for a prolonged period or in large amounts. Stimulant withdrawal can also occur when prescribed stimulants have been used in standard therapeutic doses. Presenting features of stimulant withdrawal may include dysphoric mood, irritability, fatigue, insomnia or (more commonly) hypersomnia, vivid and unpleasant dreams, increased appetite, psychomotor agitation or retardation, and craving for amphetamine or related stimulants.
+
+Exclusions: Cocaine withdrawal; Caffeine withdrawal; Synthetic cathinone withdrawal
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Stimulant withdrawal including amphetamines, methamphetamine and methcathinone is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of stimulants in individuals who have developed Stimulant dependence or have used stimulants for a prolonged period or in large amounts. Stimulant withdrawal can also occur when prescribed stimulants have been used in standard therapeutic doses. Presenting features of stimulant withdrawal may include dysphoric mood, irritability, fatigue, insomnia or (more commonly) hypersomnia, vivid and unpleasant dreams, increased appetite, psychomotor agitation or retardation, and craving for amphetamine or related stimulants.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Cocaine withdrawal
+• Should be differentiated from: Caffeine withdrawal
+• Should be differentiated from: Synthetic cathinone withdrawal
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

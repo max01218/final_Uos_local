@@ -1,0 +1,32 @@
+Disorder Name: Disorders due to use of cannabis
+Disorder Code: 1913137404
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of cannabis are characterised by the pattern and consequences of cannabis use. Cannabis is the collective term for a range of psychoactive preparations of the cannabis plant, Cannabis sativa, and related species and hybrids. Cannabis contains cannabinoids, a class of diverse chemical compounds that act on endogenous cannabinoid receptors that modulate neurotransmitter release in the brain. The principal psychoactive cannabinoid is δ-9-tetrahydrocannabinol (THC). Cannabis is typically smoked in the form of the flowering heads or leaves of the marijuana plant; tobacco is often mixed with cannabis when smoked. There are also cannabis oils that are prepared from these same sources. These preparations vary considerably in their THC potency. Cannabis has predominantly central nervous system depressant effects and produces a characteristic euphoria that may be part of the presenting features of Cannabis Intoxication, which may also include impairment in cognitive and psychomotor functioning. Cannabis has dependence-producing properties resulting in Cannabis Dependence in some people and Cannabis Withdrawal when use is reduced or discontinued. Cannabis is associated with a range of Cannabis-Induced Mental Disorders.
+
+Exclusions: Disorders due to use of synthetic cannabinoids; Hazardous use of cannabis
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of cannabis are characterised by the pattern and consequences of cannabis use. Cannabis is the collective term for a range of psychoactive preparations of the cannabis plant, Cannabis sativa, and related species and hybrids. Cannabis contains cannabinoids, a class of diverse chemical compounds that act on endogenous cannabinoid receptors that modulate neurotransmitter release in the brain. The principal psychoactive cannabinoid is δ-9-tetrahydrocannabinol (THC). Cannabis is typically smoked in the form of the flowering heads or leaves of the marijuana plant; tobacco is often mixed with cannabis when smoked. There are also cannabis oils that are prepared from these same sources. These preparations vary considerably in their THC potency. Cannabis has predominantly central nervous system depressant effects and produces a characteristic euphoria that may be part of the presenting features of Cannabis Intoxication, which may also include impairment in cognitive and psychomotor functioning. Cannabis has dependence-producing properties resulting in Cannabis Dependence in some people and Cannabis Withdrawal when use is reduced or discontinued. Cannabis is associated with a range of Cannabis-Induced Mental Disorders.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Disorders due to use of synthetic cannabinoids
+• Should be differentiated from: Hazardous use of cannabis
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

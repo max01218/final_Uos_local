@@ -1,0 +1,68 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/567063364",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/496273089"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#567063364",
+  "code": "6A80.5",
+  "source": "http://id.who.int/icd/entity/567063364",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/567063364/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/374726152",
+        "http://id.who.int/icd/release/11/2024-01/mms/1660456695",
+        "http://id.who.int/icd/release/11/2024-01/mms/1931350942",
+        "http://id.who.int/icd/release/11/2024-01/mms/129188707",
+        "http://id.who.int/icd/release/11/2024-01/mms/306271588",
+        "http://id.who.int/icd/release/11/2024-01/mms/818054919",
+        "http://id.who.int/icd/release/11/2024-01/mms/1952305399",
+        "http://id.who.int/icd/release/11/2024-01/mms/286661987",
+        "http://id.who.int/icd/release/11/2024-01/mms/1061132490",
+        "http://id.who.int/icd/release/11/2024-01/mms/1706773916",
+        "http://id.who.int/icd/release/11/2024-01/mms/167688690",
+        "http://id.who.int/icd/release/11/2024-01/mms/575545179",
+        "http://id.who.int/icd/release/11/2024-01/mms/937141021",
+        "http://id.who.int/icd/release/11/2024-01/mms/139575301",
+        "http://id.who.int/icd/release/11/2024-01/mms/811854024",
+        "http://id.who.int/icd/release/11/2024-01/mms/15761418",
+        "http://id.who.int/icd/release/11/2024-01/mms/729639831",
+        "http://id.who.int/icd/release/11/2024-01/mms/485378793",
+        "http://id.who.int/icd/release/11/2024-01/mms/590587802",
+        "http://id.who.int/icd/release/11/2024-01/mms/678752877",
+        "http://id.who.int/icd/release/11/2024-01/mms/183967754",
+        "http://id.who.int/icd/release/11/2024-01/mms/349321697",
+        "http://id.who.int/icd/release/11/2024-01/mms/51767575",
+        "http://id.who.int/icd/release/11/2024-01/mms/520107262",
+        "http://id.who.int/icd/release/11/2024-01/mms/2003493658",
+        "http://id.who.int/icd/release/11/2024-01/mms/2021041320",
+        "http://id.who.int/icd/release/11/2024-01/mms/948425503"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Rapid cycling"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "In the context of bipolar type I or bipolar type II disorder, there has been a high frequency of mood episodes (at least four) over the past 12 months. There may be a switch from one polarity of mood to the other, or the mood episodes may be demarcated by a period of remission. In individuals with a high frequency of mood episodes, some may have a shorter duration than those usually observed in bipolar type I or bipolar type II disorder. In particular, depressive periods may only last several days. If depressive and manic symptoms alternate very rapidly (i.e., from day to day or within the same day), a mixed episode should be diagnosed rather than rapid cycling."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "These categories should never be used in primary coding. The codes are provided for use as supplementary or additional codes when it is desired to identify specific clinically important features of mood episodes in mood disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Rapid cycling"
+      }
+    }
+  ]
+}

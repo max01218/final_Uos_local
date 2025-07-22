@@ -1,0 +1,38 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1024740497",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/578635574"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1024740497",
+  "code": "6A70.7",
+  "source": "http://id.who.int/icd/entity/1024740497",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1024740497/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Single episode depressive disorder, currently in full remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Single episode depressive disorder, currently in full remission is diagnosed when the full definitional requirements for one depressive episode have been met in the past and there are no longer any significant mood symptoms. There is no history of depressive episodes preceding the episode under consideration."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, currently in full remission"
+      }
+    }
+  ]
+}

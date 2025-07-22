@@ -1,0 +1,31 @@
+Disorder Name: Dementia due to psychoactive substances including medications
+Disorder Code: 1710319105
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dementia due to psychoactive substances including medications includes forms of dementia that are judged to be a direct consequence of substance use and that persist beyond the usual duration of action or withdrawal syndrome associated with the substance. The amount and duration of substance use must be sufficient to produce the cognitive impairment. The cognitive impairment is not better accounted for by a disorder that is not induced by substances such as a dementia due to another medical condition.
+
+Exclusions: Dementia due to exposure to heavy metals and other toxins
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia due to psychoactive substances including medications includes forms of dementia that are judged to be a direct consequence of substance use and that persist beyond the usual duration of action or withdrawal syndrome associated with the substance. The amount and duration of substance use must be sufficient to produce the cognitive impairment. The cognitive impairment is not better accounted for by a disorder that is not induced by substances such as a dementia due to another medical condition.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Dementia due to exposure to heavy metals and other toxins
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

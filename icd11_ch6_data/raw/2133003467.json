@@ -1,0 +1,113 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2133003467",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/76398729"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2133003467",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/2133003467",
+  "classKind": "window",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol-induced mood disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/804785400",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/804785400"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cannabis-induced mood disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1141591590",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1141591590"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cannabinoid-induced mood disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/925940030",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/925940030"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid-induced mood disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/119512795",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/119512795"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sedative, hypnotic or anxiolytic-induced mood disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/890653406",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/890653406"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine-induced mood disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/480277067",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/480277067"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stimulant-induced mood disorder including amphetamines, methamphetamine or methcathinone"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/724783925",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/724783925"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone-induced mood disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/507076012",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/507076012"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hallucinogen-induced mood disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/162562386",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/162562386"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Volatile inhalant-induced mood disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/652700225",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/652700225"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "MDMA or related drug-induced mood disorder, including MDA"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/268614690",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/268614690"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative drug-induced mood disorder including Ketamine or PCP"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1866047295",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1866047295"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Substance-induced mood disorders"
+  }
+}

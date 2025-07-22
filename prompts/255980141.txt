@@ -1,0 +1,37 @@
+Disorder Name: Secondary neurodevelopmental syndrome
+Disorder Code: 255980141
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+A syndrome that involves significant neurodevelopmental features that do not fulfill the diagnostic requirements of any of the specific neurodevelopmental disorders that is judged to be a direct pathophysiological consequence of a health condition not classified under mental and behavioural disorders (e.g., autistic-like features in Rett syndrome; aggression and self-mutilation in Lesch-Nyhan syndrome, abnormalities in language development in Williams syndrome), based on evidence from the history, physical examination, or laboratory findings.
+
+This category should be used in addition to the diagnosis for the presumed underlying disorder or disease when the neurodevelopmental problems are sufficiently severe to warrant specific clinical attention.
+
+Exclusions: Autism spectrum disorder; Disorders of intellectual development; Stereotyped movement disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+A syndrome that involves significant neurodevelopmental features that do not fulfill the diagnostic requirements of any of the specific neurodevelopmental disorders that is judged to be a direct pathophysiological consequence of a health condition not classified under mental and behavioural disorders (e.g., autistic-like features in Rett syndrome; aggression and self-mutilation in Lesch-Nyhan syndrome, abnormalities in language development in Williams syndrome), based on evidence from the history, physical examination, or laboratory findings.
+
+This category should be used in addition to the diagnosis for the presumed underlying disorder or disease when the neurodevelopmental problems are sufficiently severe to warrant specific clinical attention.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Autism spectrum disorder
+• Should be differentiated from: Disorders of intellectual development
+• Should be differentiated from: Stereotyped movement disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,26 @@
+Disorder Name: Manic mood symptoms in primary psychotic disorders
+Disorder Code: 342760401
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Manic mood symptoms in primary psychotic disorders refer to elevated, euphoric, irritable, or expansive mood states, including rapid changes among different mood states (i.e., mood lability). It also includes increased subjective experience of energy, which may be accompanied by increased goal-directed activity. The severity of associated non-mood symptoms of a Manic or Hypomanic Episode (e.g., decreased need for sleep, distractibility) should not be considered in making a rating. Increased non-goal-directed psychomotor activity should be considered as part of the rating of the 'psychomotor symptoms in primary psychotic disorders' rather than here. This descriptor may be used whether or not the manic symptoms meet the diagnostic requirements of a separately diagnosed bipolar disorder. The rating should be made based on the severity of manic mood symptoms during the past week.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Manic mood symptoms in primary psychotic disorders refer to elevated, euphoric, irritable, or expansive mood states, including rapid changes among different mood states (i.e., mood lability). It also includes increased subjective experience of energy, which may be accompanied by increased goal-directed activity. The severity of associated non-mood symptoms of a Manic or Hypomanic Episode (e.g., decreased need for sleep, distractibility) should not be considered in making a rating. Increased non-goal-directed psychomotor activity should be considered as part of the rating of the 'psychomotor symptoms in primary psychotic disorders' rather than here. This descriptor may be used whether or not the manic symptoms meet the diagnostic requirements of a separately diagnosed bipolar disorder. The rating should be made based on the severity of manic mood symptoms during the past week.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

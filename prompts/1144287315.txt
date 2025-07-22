@@ -1,0 +1,34 @@
+Disorder Name: Developmental language disorder, with other specified language impairment
+Disorder Code: 1144287315
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Developmental language disorder with other specified language impairment is characterised by persistent difficulties in the acquisition, understanding, production or use of language (spoken or signed), that arise during the developmental period and cause significant limitations in the individual’s ability to communicate. The pattern of specific deficits in language abilities is not adequately captured by any of the other developmental language disorder categories.
+
+Exclusions: Autism spectrum disorder; Diseases of the nervous system; Disorders of intellectual development; Selective mutism
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Developmental language disorder with other specified language impairment is characterised by persistent difficulties in the acquisition, understanding, production or use of language (spoken or signed), that arise during the developmental period and cause significant limitations in the individual’s ability to communicate. The pattern of specific deficits in language abilities is not adequately captured by any of the other developmental language disorder categories.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Autism spectrum disorder
+• Should be differentiated from: Diseases of the nervous system
+• Should be differentiated from: Disorders of intellectual development
+• Should be differentiated from: Selective mutism
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

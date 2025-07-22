@@ -1,0 +1,51 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/386330688",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/213458094"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/862469859",
+    "http://id.who.int/icd/release/11/2024-01/mms/1246085612",
+    "http://id.who.int/icd/release/11/2024-01/mms/386330688/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/386330688/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#386330688",
+  "code": "6D72",
+  "source": "http://id.who.int/icd/entity/386330688",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Amnestic disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Amnestic disorder is characterised by prominent memory impairment relative to expectations for age and general premorbid level of cognitive functioning, which represents a decline from the individual’s previous level of functioning, in the absence of other significant cognitive impairment. It is manifested by a deficit in acquiring, learning, and/or retaining new information, and may include the inability to recall previously learned information, without disturbance of consciousness, altered mental status, or delirium. Recent memory is typically more disturbed than remote memory, and the ability to immediately recall a limited amount of information is usually relatively preserved. The memory impairment is severe enough to result in significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. It is presumed to be attributable to an underlying acquired disease of the nervous system, a trauma, an infection or other disease process affecting the brain, to use of specific substances or medications, nutritional deficiency or exposure to toxins, or the etiology may be undetermined. The impairment is not due to current substance intoxication or withdrawal."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/897917531",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/897917531"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/546689346",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/546689346"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mild neurocognitive disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/195531803",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/195531803"
+    }
+  ]
+}

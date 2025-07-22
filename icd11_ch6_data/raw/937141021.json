@@ -1,0 +1,39 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/937141021",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1456478153"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#937141021",
+  "code": "6A60.C",
+  "source": "http://id.who.int/icd/entity/937141021",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/937141021/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798",
+        "http://id.who.int/icd/release/11/2024-01/mms/567063364"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder, currently in partial remission, most recent episode depressive"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder, currently in partial remission, most recent episode depressive is diagnosed when the definitional requirements for Bipolar type I disorder have been met and the most recent episode was a depressive episode. The full definitional requirements for the episode are no longer met but some significant depressive symptoms remain."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, currently in partial remission, most recent episode depressive"
+      }
+    }
+  ]
+}

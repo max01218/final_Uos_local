@@ -1,0 +1,31 @@
+Disorder Name: Secondary neurocognitive syndrome
+Disorder Code: 235421675
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+A syndrome that involves significant cognitive features that do not fulfill the diagnostic requirements of any of the specific neurocognitive disorders and are judged to be a direct pathophysiological consequence of a health condition or injury not classified under mental and behavioural disorders (e.g., cognitive changes due to a brain tumour), based on evidence from the history, physical examination, or laboratory findings. This category should be used in addition to the diagnosis for the presumed underlying disorder or disease when the cognitive symptoms are sufficiently severe to warrant specific clinical attention.
+
+Exclusions: Disorders with neurocognitive impairment as a major feature
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+A syndrome that involves significant cognitive features that do not fulfill the diagnostic requirements of any of the specific neurocognitive disorders and are judged to be a direct pathophysiological consequence of a health condition or injury not classified under mental and behavioural disorders (e.g., cognitive changes due to a brain tumour), based on evidence from the history, physical examination, or laboratory findings. This category should be used in addition to the diagnosis for the presumed underlying disorder or disease when the cognitive symptoms are sufficiently severe to warrant specific clinical attention.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Disorders with neurocognitive impairment as a major feature
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

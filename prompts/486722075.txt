@@ -1,0 +1,31 @@
+Disorder Name: Catatonia
+Disorder Code: 486722075
+Code Range: 6A40-6A4Z
+Class Kind: block
+
+Standard Definition:
+Catatonia is a syndrome of primarily psychomotor disturbances, characterized by the co-occurrence of several symptoms of decreased, increased, or abnormal psychomotor activity. The assessment of catatonia is complex and requires observation, interview and physical exam. Catatonia can occur in the context of another mental disorder, such as Schizophrenia or Other Primary Psychotic Disorders, Mood Disorders, and Neurodevelopmental Disorders, especially Autism Spectrum Disorder. Catatonia can also develop during or soon after intoxication or withdrawal from certain psychoactive substances, including phencyclidine (PCP), cannabis, hallucinogens such as mescaline or LSD, cocaine and MDMA or related drugs, or during the use of certain psychoactive and non-psychoactive medications (e.g. antipsychotic medications, benzodiazepines, steroids, disulfiram, ciprofloxacin). Finally, Catatonia can occur as a direct pathophysiological consequence of a medical condition not classified under Mental, Behavioural or Neurodevelopmental Disorders. Examples of medical conditions that may be associated with Catatonia include diabetic ketoacidosis, hypercalcemia, hepatic encephalopathy, homocystinuria, neoplasms head trauma, cerebrovascular disease, and encephalitis.
+
+Exclusions: Harmful effects of drugs, medicaments or biological substances, not elsewhere classified
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Catatonia is a syndrome of primarily psychomotor disturbances, characterized by the co-occurrence of several symptoms of decreased, increased, or abnormal psychomotor activity. The assessment of catatonia is complex and requires observation, interview and physical exam. Catatonia can occur in the context of another mental disorder, such as Schizophrenia or Other Primary Psychotic Disorders, Mood Disorders, and Neurodevelopmental Disorders, especially Autism Spectrum Disorder. Catatonia can also develop during or soon after intoxication or withdrawal from certain psychoactive substances, including phencyclidine (PCP), cannabis, hallucinogens such as mescaline or LSD, cocaine and MDMA or related drugs, or during the use of certain psychoactive and non-psychoactive medications (e.g. antipsychotic medications, benzodiazepines, steroids, disulfiram, ciprofloxacin). Finally, Catatonia can occur as a direct pathophysiological consequence of a medical condition not classified under Mental, Behavioural or Neurodevelopmental Disorders. Examples of medical conditions that may be associated with Catatonia include diabetic ketoacidosis, hypercalcemia, hepatic encephalopathy, homocystinuria, neoplasms head trauma, cerebrovascular disease, and encephalitis.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Harmful effects of drugs, medicaments or biological substances, not elsewhere classified
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

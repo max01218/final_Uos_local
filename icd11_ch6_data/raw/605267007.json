@@ -1,0 +1,41 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/605267007",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1516623224"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1207960454",
+    "http://id.who.int/icd/release/11/2024-01/mms/759942676",
+    "http://id.who.int/icd/release/11/2024-01/mms/1508286189",
+    "http://id.who.int/icd/release/11/2024-01/mms/1017992057",
+    "http://id.who.int/icd/release/11/2024-01/mms/1074941350",
+    "http://id.who.int/icd/release/11/2024-01/mms/605267007/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#605267007",
+  "code": "6A00",
+  "source": "http://id.who.int/icd/entity/605267007",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Disorders of intellectual development"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorders of intellectual development are a group of etiologically diverse conditions originating during the developmental period characterised by significantly below average intellectual functioning and adaptive behaviour that are approximately two or more standard deviations below the mean (approximately less than the 2.3rd percentile), based on appropriately normed, individually administered standardized tests. Where appropriately normed and standardized tests are not available, diagnosis of disorders of intellectual development requires greater reliance on clinical judgment based on appropriate assessment of comparable behavioural indicators."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/546689346",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/546689346"
+    }
+  ],
+  "codingNote": {
+    "@language": "en",
+    "@value": "Use additional code, if desired, to identify any known aetiology."
+  }
+}

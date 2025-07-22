@@ -1,0 +1,33 @@
+Disorder Name: Separation anxiety disorder
+Disorder Code: 830200631
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Separation anxiety disorder is characterised by marked and excessive fear or anxiety about separation from specific attachment figures. In children and adolescents, separation anxiety typically focuses on caregivers, parents or other family members and the fear or anxiety is beyond what would be considered developmentally normative. In adults, the focus is typically a romantic partner or children. Manifestations of separation anxiety may include thoughts of harm or untoward events befalling the attachment figure, reluctance to go to school or work, recurrent excessive distress upon separation, reluctance or refusal to sleep away from the attachment figure, and recurrent nightmares about separation. The symptoms persist for at least several months and are sufficiently severe to result in significant distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning.
+
+Exclusions: mood [affective] disorders; Selective mutism; Social anxiety disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Separation anxiety disorder is characterised by marked and excessive fear or anxiety about separation from specific attachment figures. In children and adolescents, separation anxiety typically focuses on caregivers, parents or other family members and the fear or anxiety is beyond what would be considered developmentally normative. In adults, the focus is typically a romantic partner or children. Manifestations of separation anxiety may include thoughts of harm or untoward events befalling the attachment figure, reluctance to go to school or work, recurrent excessive distress upon separation, reluctance or refusal to sleep away from the attachment figure, and recurrent nightmares about separation. The symptoms persist for at least several months and are sufficiently severe to result in significant distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: mood [affective] disorders
+• Should be differentiated from: Selective mutism
+• Should be differentiated from: Social anxiety disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

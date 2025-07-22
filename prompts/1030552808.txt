@@ -1,0 +1,26 @@
+Disorder Name: Volatile inhalant-induced delirium
+Disorder Code: 1030552808
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Volatile inhalant-induced delirium is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or withdrawal or during the use of volatile inhalants. The amount and duration of volatile inhalant use must be capable of producing delirium. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from a different substance, or by another health condition that is not classified under Mental, behavioural and neurodevelopmental disorders.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Volatile inhalant-induced delirium is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or withdrawal or during the use of volatile inhalants. The amount and duration of volatile inhalant use must be capable of producing delirium. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from a different substance, or by another health condition that is not classified under Mental, behavioural and neurodevelopmental disorders.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

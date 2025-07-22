@@ -1,0 +1,93 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/203295904",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/473001402"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#203295904",
+  "code": "6C4C.21",
+  "source": "http://id.who.int/icd/entity/203295904",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/203295904/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1692885212",
+        "http://id.who.int/icd/release/11/2024-01/mms/342215505",
+        "http://id.who.int/icd/release/11/2024-01/mms/1327107148",
+        "http://id.who.int/icd/release/11/2024-01/mms/1153016464",
+        "http://id.who.int/icd/release/11/2024-01/mms/2102840295",
+        "http://id.who.int/icd/release/11/2024-01/mms/321833104",
+        "http://id.who.int/icd/release/11/2024-01/mms/171496389",
+        "http://id.who.int/icd/release/11/2024-01/mms/565097819",
+        "http://id.who.int/icd/release/11/2024-01/mms/1211762077",
+        "http://id.who.int/icd/release/11/2024-01/mms/1361845976",
+        "http://id.who.int/icd/release/11/2024-01/mms/868004030"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/203295904/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1828722493",
+        "http://id.who.int/icd/release/11/2024-01/mms/1589999330",
+        "http://id.who.int/icd/release/11/2024-01/mms/1157653052"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/203295904/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1574982062",
+        "http://id.who.int/icd/release/11/2024-01/mms/1791864244"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "MDMA or related drug dependence, including MDA, early full remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "After a diagnosis of MDMA or related drug dependence, including MDA, and often following a treatment episode or other intervention (including self-help intervention), the individual has been abstinent from MDMA or related drug dependence, including MDA, during a period lasting from between 1 and 12 months."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of MDMA or related drugs, including MDA"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1334295394",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1334295394"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of MDMA or related drugs, including MDA"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1662953838",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1662953838"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "MDMA or related drug dependence, including MDA, early full remission"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Ecstasy or related drug dependence, early full remission"
+      }
+    }
+  ]
+}

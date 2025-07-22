@@ -1,0 +1,33 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/988400777",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/108180424"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#988400777",
+  "code": "6B65",
+  "source": "http://id.who.int/icd/entity/988400777",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Partial dissociative identity disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Partial dissociative identity disorder is characterised by disruption of identity in which there are two or more distinct personality states (dissociative identities) associated with marked discontinuities in the sense of self and agency. Each personality state includes its own pattern of experiencing, perceiving, conceiving, and relating to self, the body, and the environment. One personality state is dominant and normally functions in daily life, but is intruded upon by one or more non-dominant personality states (dissociative intrusions). These intrusions may be cognitive, affective, perceptual, motor, or behavioural. They are experienced as interfering with the functioning of the dominant personality state and are typically aversive. The non-dominant personality states do not recurrently take executive control of the individual’s consciousness and functioning, but there may be occasional, limited and transient episodes in which a distinct personality state assumes executive control to engage in circumscribed behaviours, such as in response to extreme emotional states or during episodes of self-harm or the reenactment of traumatic memories. The symptoms are not better explained by another mental, behavioural or neurodevelopmental disorder and are not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, and are not due to a disease of the nervous system or a sleep-wake disorder. The symptoms result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Partial dissociative identity disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Chronic and recurrent syndromes of mixed dissociative symptoms"
+      }
+    }
+  ]
+}

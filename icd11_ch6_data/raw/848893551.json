@@ -1,0 +1,37 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/848893551",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2099676649"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#848893551",
+  "code": "6A03.3",
+  "source": "http://id.who.int/icd/entity/848893551",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Developmental learning disorder with other specified impairment of learning"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Developmental learning disorder with other specified impairment of learning is characterised by significant and persistent difficulties in learning academic skills other than reading, mathematics, and written expression. The individual’s performance in the relevant academic skill is markedly below what would be expected for chronological age and level of intellectual functioning and results in significant impairment in the individual’s academic or occupational functioning. Developmental learning disorder with other specified impairment of learning is not due to a disorder of intellectual development, sensory impairment (vision or hearing), neurological disorder, lack of availability of education, lack of proficiency in the language of academic instruction, or psychosocial adversity."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorders of intellectual development"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/605267007",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/605267007"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental learning disorder with other specified impairment of learning"
+      }
+    }
+  ]
+}

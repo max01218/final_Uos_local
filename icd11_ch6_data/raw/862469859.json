@@ -1,0 +1,134 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/862469859",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/386330688"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#862469859",
+  "code": "6D72.0",
+  "source": "http://id.who.int/icd/entity/862469859",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/862469859/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/274880002",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/868865918",
+        "http://id.who.int/icd/release/11/2024-01/mms/1218729044",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/197934298",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757",
+        "http://id.who.int/icd/release/11/2024-01/mms/577470983",
+        "http://id.who.int/icd/release/11/2024-01/mms/1306203631",
+        "http://id.who.int/icd/release/11/2024-01/mms/223744320",
+        "http://id.who.int/icd/release/11/2024-01/mms/435227771"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Amnestic disorder due to diseases classified elsewhere"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for amnestic disorder are met. The memory symptoms are judged to be the direct pathophysiological consequence of a medical condition not classified under mental, behavioural and neurodevelopmental disorders, based on evidence from the history, physical examination, or laboratory findings. The symptoms are not better explained by Delirium, Dementia, another mental disorder (e.g., Schizophrenia or Other Primary Psychotic Disorder, a Mood Disorder) or the effects of a medication or substance, including withdrawal effects. The symptoms are sufficiently severe to be a specific focus of clinical attention. The identified etiological medical condition should be classified separately."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "amnesia: retrograde"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1405777748",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1405777748"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Korsakoff syndrome, alcohol-induced or unspecified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1001737902",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1001737902"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative amnesia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/626975732",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/626975732"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anterograde amnesia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/661071789",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/661071789"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "amnesia NOS"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/67207871",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/67207871"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Amnestic disorder due to diseases classified elsewhere"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "amnesic syndrome"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "amnestic disorder in conditions classified elsewhere"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "amnestic syndrome"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Korsakoff psychosis or syndrome, nonalcoholic"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "nonalcoholic organic amnesic syndrome"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "organic amnesic syndrome"
+      }
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+Disorder Name: Conduct-dissocial disorder, adolescent onset with limited prosocial emotions
+Disorder Code: 395365489
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements for conduct-dissocial disorder, adolescent onset are met. In addition, the individual exhibits characteristics that are sometimes referred to as ‘callous and unemotional’. These characteristics include a lack of empathy or sensitivity to the feelings of others and a lack of concern for others’ distress; a lack of remorse, shame or guilt over their own behaviour (unless prompted by being apprehended), a relative indifference to the probability of punishment; a lack of concern over poor performance in school or work; and limited expression of emotions, particularly positive or loving feelings toward others, or only doing so in ways that seem shallow, insincere, or instrumental.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements for conduct-dissocial disorder, adolescent onset are met. In addition, the individual exhibits characteristics that are sometimes referred to as ‘callous and unemotional’. These characteristics include a lack of empathy or sensitivity to the feelings of others and a lack of concern for others’ distress; a lack of remorse, shame or guilt over their own behaviour (unless prompted by being apprehended), a relative indifference to the probability of punishment; a lack of concern over poor performance in school or work; and limited expression of emotions, particularly positive or loving feelings toward others, or only doing so in ways that seem shallow, insincere, or instrumental.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

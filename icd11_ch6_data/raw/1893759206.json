@@ -1,0 +1,60 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1893759206",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1893759206",
+  "code": "6A25.1",
+  "source": "http://id.who.int/icd/entity/1893759206",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1893759206/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/681697550",
+        "http://id.who.int/icd/release/11/2024-01/mms/761934509"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1893759206/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1683919430",
+        "http://id.who.int/icd/release/11/2024-01/mms/106339515",
+        "http://id.who.int/icd/release/11/2024-01/mms/18178000",
+        "http://id.who.int/icd/release/11/2024-01/mms/284410555",
+        "http://id.who.int/icd/release/11/2024-01/mms/1974996783"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Negative symptoms in primary psychotic disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Negative symptoms in primary psychotic disorders include constricted, blunted, or flat affect, alogia or paucity of speech, avolition (general lack of drive, or lack of motivation to pursue meaningful goals), asociality (reduced or absent engagement with others and interest in social interaction) and anhedonia (inability to experience pleasure from normally pleasurable activities). To be considered negative psychotic symptoms, relevant symptoms should not be entirely attributable to antipsychotic drug treatment, a depressive disorder, or an under-stimulating environment, and should not be a direct consequence of a positive symptom (e.g., persecutory delusions causing a person to become socially isolated due to fear of harm). The rating should be made based on the severity of negative symptoms during the past week."
+  },
+  "longDefinition": {
+    "@language": "en",
+    "@value": "This descriptor may be used together with a diagnosis from the grouping of Schizophrenia and other primary psychotic disorders to indicate that negative psychotic symptoms are a prominent part of the current clinical presentation. Negative symptoms include constricted, blunted, or flat affect, alogia or paucity of speech, avolition (general lack of drive, or lack of motivation to pursue meaningful goals), asociality (reduced or absent engagement with others and interest in social interaction) and anhedonia (inability to experience pleasure from normally pleasurable activities). To be considered negative psychotic symptoms, relevant symptoms should not be entirely attributable to antipsychotic drug treatment, depression, or an under-stimulating environment."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "These categories should never be used in primary coding. The codes are provided for use as supplementary or additional codes when it is desired to identify the presence of these symptoms in primary psychotic disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Negative symptoms in primary psychotic disorders"
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1604145596",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1069443471"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1604145596",
+  "code": "6B60.7",
+  "source": "http://id.who.int/icd/entity/1604145596",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with gait disturbance"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with gait disturbance is characterised by symptoms involving the individual’s ability or manner of walking, including ataxia and the inability to stand unaided, that are not consistent with a recognised disease of the nervous system, other mental, behavioural or neurodevelopmental disorder, or other medical condition and do not occur exclusively during another dissociative disorder."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative neurological symptom disorder, with gait disturbance"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional neurological symptom disorder, with symptoms of gait disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional gait disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional neurological symptom disorder, with gait disturbance"
+      }
+    }
+  ]
+}

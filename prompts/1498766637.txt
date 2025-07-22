@@ -1,0 +1,31 @@
+Disorder Name: Developmental learning disorder with impairment in written expression
+Disorder Code: 1498766637
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Developmental learning disorder with impairment in written expression is characterised by significant and persistent difficulties in learning academic skills related to writing, such as spelling accuracy, grammar and punctuation accuracy, and organisation and coherence of ideas in writing. The individual’s performance in written expression is markedly below what would be expected for chronological age and level of intellectual functioning and results in significant impairment in the individual’s academic or occupational functioning. Developmental learning disorder with impairment in written expression is not due to a disorder of intellectual development, sensory impairment (vision or hearing), a neurological or motor disorder, lack of availability of education, lack of proficiency in the language of academic instruction, or psychosocial adversity.
+
+Exclusions: Disorders of intellectual development
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Developmental learning disorder with impairment in written expression is characterised by significant and persistent difficulties in learning academic skills related to writing, such as spelling accuracy, grammar and punctuation accuracy, and organisation and coherence of ideas in writing. The individual’s performance in written expression is markedly below what would be expected for chronological age and level of intellectual functioning and results in significant impairment in the individual’s academic or occupational functioning. Developmental learning disorder with impairment in written expression is not due to a disorder of intellectual development, sensory impairment (vision or hearing), a neurological or motor disorder, lack of availability of education, lack of proficiency in the language of academic instruction, or psychosocial adversity.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Disorders of intellectual development
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

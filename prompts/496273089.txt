@@ -1,0 +1,26 @@
+Disorder Name: Symptomatic and course presentations for mood episodes in mood disorders
+Disorder Code: 496273089
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+These categories may be applied to describe the presentation and characteristics of mood episodes in the context of single episode depressive disorder, recurrent depressive disorder, bipolar type I disorder, or bipolar type II disorder. These categories indicate the presence of specific, important features of the clinical presentation or of the course, onset, and pattern of mood episodes. These categories are not mutually exclusive, and as many may be added as apply.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+These categories may be applied to describe the presentation and characteristics of mood episodes in the context of single episode depressive disorder, recurrent depressive disorder, bipolar type I disorder, or bipolar type II disorder. These categories indicate the presence of specific, important features of the clinical presentation or of the course, onset, and pattern of mood episodes. These categories are not mutually exclusive, and as many may be added as apply.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

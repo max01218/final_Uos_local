@@ -1,0 +1,32 @@
+Disorder Name: Hallucinogen intoxication
+Disorder Code: 1750279358
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Hallucinogen intoxication is a clinically significant transient condition that develops during or shortly after the consumption of hallucinogens that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of hallucinogens and their intensity is closely related to the amount of hallucinogen consumed. They are time-limited and abate as the hallucinogen is cleared from the body. Presenting features may include hallucinations, illusions, perceptual changes such as depersonalisation, derealization, or synesthesias (blending of senses, such as a visual stimulus evoking a smell), anxiety, depressed or dysphoric mood, ideas of reference, paranoid ideation, impaired judgment, palpitations, sweating, blurred vision, tremors and incoordination. Physical signs may include tachycardia, elevated blood pressure, and pupillary dilatation. In rare instances, hallucinogen intoxication may facilitate suicidal ideation and behaviour.
+
+Exclusions: hallucinogens poisoning; Possession trance disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Hallucinogen intoxication is a clinically significant transient condition that develops during or shortly after the consumption of hallucinogens that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of hallucinogens and their intensity is closely related to the amount of hallucinogen consumed. They are time-limited and abate as the hallucinogen is cleared from the body. Presenting features may include hallucinations, illusions, perceptual changes such as depersonalisation, derealization, or synesthesias (blending of senses, such as a visual stimulus evoking a smell), anxiety, depressed or dysphoric mood, ideas of reference, paranoid ideation, impaired judgment, palpitations, sweating, blurred vision, tremors and incoordination. Physical signs may include tachycardia, elevated blood pressure, and pupillary dilatation. In rare instances, hallucinogen intoxication may facilitate suicidal ideation and behaviour.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: hallucinogens poisoning
+• Should be differentiated from: Possession trance disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

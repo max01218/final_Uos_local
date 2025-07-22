@@ -1,0 +1,162 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/80203879",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/897917531"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#80203879",
+  "code": "6D70.1",
+  "source": "http://id.who.int/icd/entity/80203879",
+  "classKind": "category",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol-induced delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1217486356",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1217486356"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cannabis-induced delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1441674923",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1441674923"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cannabinoid-induced delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/138091123",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/138091123"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid-induced delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1416205973",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1416205973"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sedative, hypnotic or anxiolytic-induced delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1226243628",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1226243628"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine-induced delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1919913834",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1919913834"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stimulant-induced delirium including amphetamines, methamphetamine or methcathinone"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/951103658",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/951103658"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone-induced delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1526280683",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1526280683"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hallucinogen-induced delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1863378901",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1863378901"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Volatile inhalant-induced delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1030552808",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1030552808"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "MDMA or related drug-induced delirium, including MDA"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1828722493",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1828722493"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative drug-induced delirium including ketamine or PCP"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/216587818",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/216587818"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium induced by other specified psychoactive substance including medications"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/563360873",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/563360873"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium induced by multiple specified psychoactive substances including medications"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/768380303",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/768380303"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium induced by unknown or unspecified psychoactive substance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/131545543",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/131545543"
+    }
+  ],
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/80203879/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1450176443",
+        "http://id.who.int/icd/release/11/2024-01/mms/1676151582",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Delirium due to psychoactive substances including medications"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for delirium are met. There is evidence from history, physical examination, or laboratory findings that the delirium is caused by the direct physiological effects of a substance or medication (including withdrawal). If the specific substance inducing the delirium has been identified, it should be classified using the appropriate subcategory (e.g., alcohol-induced delirium)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium due to psychoactive substances including medications"
+      }
+    }
+  ]
+}

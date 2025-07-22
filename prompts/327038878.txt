@@ -1,0 +1,26 @@
+Disorder Name: Other specified psychoactive substance intoxication
+Disorder Code: 327038878
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Other specified psychoactive substance intoxication is a clinically significant transient condition that develops during or shortly after the consumption of a specified psychoactive substance or medication that is characterised by disturbances in level of consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of the specified psychoactive substance and their intensity is closely related to the amount of the specified psychoactive substance consumed. They are time-limited and abate as the specified substance is cleared from the body.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Other specified psychoactive substance intoxication is a clinically significant transient condition that develops during or shortly after the consumption of a specified psychoactive substance or medication that is characterised by disturbances in level of consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of the specified psychoactive substance and their intensity is closely related to the amount of the specified psychoactive substance consumed. They are time-limited and abate as the specified substance is cleared from the body.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

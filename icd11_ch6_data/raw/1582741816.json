@@ -1,0 +1,48 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1582741816",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1321276661"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1015764596",
+    "http://id.who.int/icd/release/11/2024-01/mms/1994177297",
+    "http://id.who.int/icd/release/11/2024-01/mms/1582741816/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1582741816",
+  "code": "6B20",
+  "source": "http://id.who.int/icd/entity/1582741816",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Obsessive-compulsive disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Obsessive-Compulsive Disorder is characterised by the presence of persistent obsessions or compulsions, or most commonly both. Obsessions are repetitive and persistent thoughts, images, or impulses/urges that are intrusive, unwanted, and are commonly associated with anxiety. The individual attempts to ignore or suppress obsessions or to neutralize them by performing compulsions. Compulsions are repetitive behaviours including repetitive mental acts that the individual feels driven to perform in response to an obsession, according to rigid rules, or to achieve a sense of ‘completeness’. In order for obsessive-compulsive disorder to be diagnosed, obsessions and compulsions must be time consuming (e.g. taking more than an hour per day) or result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "anankastic neurosis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "obsessive-compulsive neurosis"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "obsessive compulsive behaviour"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1682814866",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1682814866"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+Disorder Name: Bipolar type II disorder
+Disorder Code: 199053300
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Bipolar type II disorder is an episodic mood disorder defined by the occurrence of one or more hypomanic episodes and at least one depressive episode. A hypomanic episode is a persistent mood state lasting for at least several days characterised by persistent elevation of mood or increased irritability as well as increased activity or a subjective experience of increased energy, accompanied by other characteristic symptoms such as increased talkativeness, rapid or racing thoughts, increased self-esteem, decreased need for sleep, distractability, and impulsive or reckless behavior. The symptoms represent a change from the individual’s typical mood, energy level, and behavior but are not severe enough to cause marked impairment in functioning. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as changes in appetite or sleep, psychomotor agitation or retardation, fatigue, feelings of worthless or excessive or inappropriate guilt, feelings or hopelessness, difficulty concentrating, and suicidality. There is no history of manic or mixed episodes.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Bipolar type II disorder is an episodic mood disorder defined by the occurrence of one or more hypomanic episodes and at least one depressive episode. A hypomanic episode is a persistent mood state lasting for at least several days characterised by persistent elevation of mood or increased irritability as well as increased activity or a subjective experience of increased energy, accompanied by other characteristic symptoms such as increased talkativeness, rapid or racing thoughts, increased self-esteem, decreased need for sleep, distractability, and impulsive or reckless behavior. The symptoms represent a change from the individual’s typical mood, energy level, and behavior but are not severe enough to cause marked impairment in functioning. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as changes in appetite or sleep, psychomotor agitation or retardation, fatigue, feelings of worthless or excessive or inappropriate guilt, feelings or hopelessness, difficulty concentrating, and suicidality. There is no history of manic or mixed episodes.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,33 @@
+Disorder Name: Body dysmorphic disorder
+Disorder Code: 731724655
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Body Dysmorphic Disorder is characterised by persistent preoccupation with one or more perceived defects or flaws in appearance that are either unnoticeable or only slightly noticeable to others. Individuals experience excessive self-consciousness, often with ideas of reference (i.e., the conviction that people are taking notice, judging, or talking about the perceived defect or flaw). In response to their preoccupation, individuals engage in repetitive and excessive behaviours that include repeated examination of the appearance or severity of the perceived defect or flaw, excessive attempts to camouflage or alter the perceived defect, or marked avoidance of social situations or triggers that increase distress about the perceived defect or flaw. The symptoms are sufficiently severe to result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Exclusions: Anorexia Nervosa; Bodily distress disorder; Concern about body appearance
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Body Dysmorphic Disorder is characterised by persistent preoccupation with one or more perceived defects or flaws in appearance that are either unnoticeable or only slightly noticeable to others. Individuals experience excessive self-consciousness, often with ideas of reference (i.e., the conviction that people are taking notice, judging, or talking about the perceived defect or flaw). In response to their preoccupation, individuals engage in repetitive and excessive behaviours that include repeated examination of the appearance or severity of the perceived defect or flaw, excessive attempts to camouflage or alter the perceived defect, or marked avoidance of social situations or triggers that increase distress about the perceived defect or flaw. The symptoms are sufficiently severe to result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Anorexia Nervosa
+• Should be differentiated from: Bodily distress disorder
+• Should be differentiated from: Concern about body appearance
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

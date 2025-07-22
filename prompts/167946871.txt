@@ -1,0 +1,33 @@
+Disorder Name: Selective mutism
+Disorder Code: 167946871
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Selective mutism is characterised by consistent selectivity in speaking, such that a child demonstrates adequate language competence in specific social situations, typically at home, but consistently fails to speak in others, typically at school. The disturbance lasts for at least one month, is not limited to the first month of school, and is of sufficient severity to interfere with educational achievement or with social communication. Failure to speak is not due to a lack of knowledge of, or comfort with, the spoken language required in the social situation (e.g. a different language spoken at school than at home).
+
+Exclusions: Schizophrenia; transient mutism as part of separation anxiety in young children; Autism spectrum disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Selective mutism is characterised by consistent selectivity in speaking, such that a child demonstrates adequate language competence in specific social situations, typically at home, but consistently fails to speak in others, typically at school. The disturbance lasts for at least one month, is not limited to the first month of school, and is of sufficient severity to interfere with educational achievement or with social communication. Failure to speak is not due to a lack of knowledge of, or comfort with, the spoken language required in the social situation (e.g. a different language spoken at school than at home).
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Schizophrenia
+• Should be differentiated from: transient mutism as part of separation anxiety in young children
+• Should be differentiated from: Autism spectrum disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,26 @@
+Disorder Name: Anorexia Nervosa with dangerously low body weight
+Disorder Code: 647582417
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Anorexia Nervosa with dangerously low body weight meets all definitional requirements for Anorexia Nervosa, with BMI under 14.0 kg/m² in adults or under the 0.3rd percentile for BMI-for-age in children and adolescents. In the context of Anorexia Nervosa, severe underweight status is an important prognostic factor that is associated with high risk of physical complications and substantially increased mortality.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Anorexia Nervosa with dangerously low body weight meets all definitional requirements for Anorexia Nervosa, with BMI under 14.0 kg/m² in adults or under the 0.3rd percentile for BMI-for-age in children and adolescents. In the context of Anorexia Nervosa, severe underweight status is an important prognostic factor that is associated with high risk of physical complications and substantially increased mortality.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,26 @@
+Disorder Name: Amnestic disorder due to psychoactive substances including medications
+Disorder Code: 1246085612
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements for amnestic disorder are met. The memory symptoms are judged to be the direct consequence of psychoactive substance use. The intensity and duration of substance use must be known to be capable of producing memory impairment. The memory impairment may develop during or soon after substance intoxication or withdrawal, but its intensity and duration are substantially in excess of those normally associated with these conditions. The symptoms are not better accounted for by another disorder or medical condition, as might be the case if the amnestic symptoms preceded the onset of substance use.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements for amnestic disorder are met. The memory symptoms are judged to be the direct consequence of psychoactive substance use. The intensity and duration of substance use must be known to be capable of producing memory impairment. The memory impairment may develop during or soon after substance intoxication or withdrawal, but its intensity and duration are substantially in excess of those normally associated with these conditions. The symptoms are not better accounted for by another disorder or medical condition, as might be the case if the amnestic symptoms preceded the onset of substance use.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

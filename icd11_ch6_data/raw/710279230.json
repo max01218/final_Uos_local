@@ -1,0 +1,38 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/710279230",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/679604439"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#710279230",
+  "code": "6A23.12",
+  "source": "http://id.who.int/icd/entity/710279230",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/710279230/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Acute and transient psychotic disorder, multiple episodes, in full remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for Acute and transient psychotic disorder, multiple episodes in terms of symptoms and duration were previously met. Symptoms have ameliorated such that no significant symptoms remain. The remission may have occurred in response to medication or other treatment."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute and transient psychotic disorder, multiple episodes, in full remission"
+      }
+    }
+  ]
+}

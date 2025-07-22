@@ -1,0 +1,30 @@
+Disorder Name: Prominent anxiety symptoms in mood episodes
+Disorder Code: 1119039346
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+In the context of a current depressive, manic, mixed, or hypomanic episode, prominent and clinically significant anxiety symptoms (e.g., feeling nervous, anxious or on edge, not being able to control worrying thoughts, fear that something awful will happen, having trouble relaxing, motor tension, autonomic symptoms) have been present for most of the time during the episode. If there have been panic attacks during a current depressive or mixed episode, these should be recorded separately.
+
+When the diagnostic requirements for both a mood disorder and an anxiety or fear-related disorder are met, the anxiety or fear-related disorder should also be diagnosed.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+In the context of a current depressive, manic, mixed, or hypomanic episode, prominent and clinically significant anxiety symptoms (e.g., feeling nervous, anxious or on edge, not being able to control worrying thoughts, fear that something awful will happen, having trouble relaxing, motor tension, autonomic symptoms) have been present for most of the time during the episode. If there have been panic attacks during a current depressive or mixed episode, these should be recorded separately.
+
+When the diagnostic requirements for both a mood disorder and an anxiety or fear-related disorder are met, the anxiety or fear-related disorder should also be diagnosed.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

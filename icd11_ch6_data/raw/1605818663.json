@@ -1,0 +1,66 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1605818663",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/590211325"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1563509056",
+    "http://id.who.int/icd/release/11/2024-01/mms/2057206901",
+    "http://id.who.int/icd/release/11/2024-01/mms/2070676103",
+    "http://id.who.int/icd/release/11/2024-01/mms/1599283639",
+    "http://id.who.int/icd/release/11/2024-01/mms/1587633989",
+    "http://id.who.int/icd/release/11/2024-01/mms/1526280683",
+    "http://id.who.int/icd/release/11/2024-01/mms/1005846640",
+    "http://id.who.int/icd/release/11/2024-01/mms/1562167865",
+    "http://id.who.int/icd/release/11/2024-01/mms/1605818663/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1605818663/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1605818663",
+  "code": "6C47",
+  "source": "http://id.who.int/icd/entity/1605818663",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1605818663/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/334423054",
+        "http://id.who.int/icd/release/11/2024-01/mms/274880002",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/868865918",
+        "http://id.who.int/icd/release/11/2024-01/mms/1218729044",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/197934298",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757",
+        "http://id.who.int/icd/release/11/2024-01/mms/577470983",
+        "http://id.who.int/icd/release/11/2024-01/mms/714000734",
+        "http://id.who.int/icd/release/11/2024-01/mms/1306203631",
+        "http://id.who.int/icd/release/11/2024-01/mms/223744320",
+        "http://id.who.int/icd/release/11/2024-01/mms/1843895818",
+        "http://id.who.int/icd/release/11/2024-01/mms/435227771",
+        "http://id.who.int/icd/release/11/2024-01/mms/850137482",
+        "http://id.who.int/icd/release/11/2024-01/mms/1249056269",
+        "http://id.who.int/icd/release/11/2024-01/mms/1596590595"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Disorders due to use of synthetic cathinones"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorders due to use of synthetic cathinones are characterised by the pattern and consequences of synthetic cathinone use. Synthetic cathinones (also known as ‘bath salts’) are synthetic compounds with stimulant properties related to cathinone found in the khat plant, Catha edulis. The use of synthetic cathinones is common in young populations in many countries. They may produce a range of disorders including Synthetic Cathinone Intoxication, Synthetic Cathinone Dependence and Synthetic Cathinone Withdrawal. Several synthetic cathinone-induced mental disorders are recognised."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/232349777",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/998231424"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#232349777",
+  "code": "6C40.43",
+  "source": "http://id.who.int/icd/entity/232349777",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/232349777/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1580466198"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Alcohol withdrawal with perceptual disturbances and seizures"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All diagnostic requirements for Alcohol withdrawal are met and the withdrawal state is accompanied by both seizures (i.e., generalised tonic-clonic seizures) and perceptual disturbances (e.g., visual or tactile hallucinations or illusions) with intact reality testing. Diagnostic requirements for Delirium are not met."
+  },
+  "longDefinition": {
+    "@language": "en",
+    "@value": "The development of an alcohol withdrawal syndrome accompanied by both perceptual disturbances and seizures."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol withdrawal with perceptual disturbances and seizures"
+      }
+    }
+  ]
+}

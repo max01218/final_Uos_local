@@ -1,0 +1,255 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/40156192",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/941859884"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#40156192",
+  "code": "6D10.2",
+  "source": "http://id.who.int/icd/entity/40156192",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/40156192/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1128733473"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Severe personality disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All general diagnostic requirements for Personality Disorder are met. There are severe disturbances in functioning of the self (e.g., sense of self may be so unstable that individuals report not having a sense of who they are or so rigid that they refuse to participate in any but an extremely narrow range of situations; self view may be characterised by self-contempt or be grandiose or highly eccentric). Problems in interpersonal functioning seriously affect virtually all relationships and the ability and willingness to perform expected social and occupational roles is absent or severely compromised. Specific manifestations of personality disturbance are severe and affect most, if not all, areas of personality functioning. Severe Personality Disorder is often associated with harm to self or others, and is associated with severe impairment in all or nearly all areas of life, including personal, family, social, educational, occupational, and other important areas of functioning."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1653421392"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent dissocial features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2098978020"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of disinhibition"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2006350728"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1110839180"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/480350253"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity and prominent dissocial features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1934633606"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity and prominent features of disinhibition"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/163241717"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/661888411"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1118318638"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent dissocial features and prominent features of disinhibition"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/369456559"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent dissocial features and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/478728899"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent dissocial features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/52312951"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of disinhibition and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/160668699"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of disinhibition and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1010034719"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1974883297"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity, prominent dissocial features and prominent features of disinhibition"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/440920392"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity, prominent dissocial features and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1621957945"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity, prominent dissocial features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1678805767"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity, prominent features of disinhibition and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1855794283"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity, prominent features of disinhibition and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/364652860"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1609286751"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent dissocial features, prominent features of disinhibition and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/807042808"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent dissocial features, prominent features of disinhibition and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1257278087"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent dissocial features, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/268891226"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of disinhibition, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1977440751"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity, prominent dissocial features, prominent features of disinhibition and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1084407219"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity, prominent dissocial features, prominent features of disinhibition and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1244601055"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity, prominent dissocial features, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/344001198"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity, prominent features of disinhibition, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/504147394"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent dissocial features, prominent features of disinhibition, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1697491089"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe personality disorder with prominent features of negative affectivity, prominent dissocial features, prominent features of disinhibition, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/796542454"
+    }
+  ]
+}

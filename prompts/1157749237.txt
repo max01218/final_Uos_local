@@ -1,0 +1,42 @@
+Disorder Name: Enuresis
+Disorder Code: 1157749237
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Enuresis is the repeated voiding of urine into clothes or bed, which may occur during the day or at night, in an individual who has reached a developmental age when urinary continence is ordinarily expected (5 years). The urinary incontinence may have been present from birth (i.e., an atypical extension of normal infantile incontinence), or may have arisen following a period of acquired bladder control. In most cases, the behaviour is involuntary but in some cases it appears intentional. Enuresis should not be diagnosed if unintentional voiding of urine is due to a health condition that interferes with continence (e.g., diseases of the nervous system or musculoskeletal disorders) or by congenital or acquired abnormalities of the urinary tract.
+
+Inclusions: Functional enuresis; Psychogenic enuresis; Urinary incontinence of nonorganic origin
+Exclusions: Stress incontinence; Urge Incontinence; Functional urinary incontinence; Overflow Incontinence; Reflex incontinence; Extraurethral urinary incontinence
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Enuresis is the repeated voiding of urine into clothes or bed, which may occur during the day or at night, in an individual who has reached a developmental age when urinary continence is ordinarily expected (5 years). The urinary incontinence may have been present from birth (i.e., an atypical extension of normal infantile incontinence), or may have arisen following a period of acquired bladder control. In most cases, the behaviour is involuntary but in some cases it appears intentional. Enuresis should not be diagnosed if unintentional voiding of urine is due to a health condition that interferes with continence (e.g., diseases of the nervous system or musculoskeletal disorders) or by congenital or acquired abnormalities of the urinary tract.
+
+Included Manifestations:
+• Functional enuresis
+• Psychogenic enuresis
+• Urinary incontinence of nonorganic origin
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Stress incontinence
+• Should be differentiated from: Urge Incontinence
+• Should be differentiated from: Functional urinary incontinence
+• Should be differentiated from: Overflow Incontinence
+• Should be differentiated from: Reflex incontinence
+• Should be differentiated from: Extraurethral urinary incontinence
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

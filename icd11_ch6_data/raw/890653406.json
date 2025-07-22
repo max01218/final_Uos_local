@@ -1,0 +1,86 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/890653406",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1954860287"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#890653406",
+  "code": "6C44.70",
+  "source": "http://id.who.int/icd/entity/890653406",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/890653406/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1880792884",
+        "http://id.who.int/icd/release/11/2024-01/mms/881358505",
+        "http://id.who.int/icd/release/11/2024-01/mms/315390786"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/890653406/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1314209089",
+        "http://id.who.int/icd/release/11/2024-01/mms/989359552",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/890653406/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/475820054",
+        "http://id.who.int/icd/release/11/2024-01/mms/723448021",
+        "http://id.who.int/icd/release/11/2024-01/mms/1605607466"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Sedative, hypnotic or anxiolytic-induced mood disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Sedative, hypnotic or anxiolytic-induced mood disorder is characterised by mood symptoms (e.g., depressed or elevated mood, decreased engagement in pleasurable activities, increased or decreased energy levels) that develop during or soon after intoxication with or withdrawal from sedatives, hypnotics or anxiolytics. The intensity or duration of the symptoms is substantially in excess of mood disturbances that are characteristic of intoxication or withdrawal due to sedatives, hypnotics or anxiolytics. The amount and duration of sedative, hypnotic or anxiolytic use must be capable of producing mood symptoms. The symptoms are not better explained by a primary mental disorder (e.g., a Depressive disorder, a Bipolar disorder, Schizoaffective disorder), as might be the case if the mood symptoms preceded the onset of the sedative, hypnotic or anxiolytic use, if the symptoms persist for a substantial period of time after cessation of the sedative, hypnotic or anxiolytic use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with mood symptoms (e.g., a history of prior episodes not associated with sedative, hypnotic or anxiolytic use)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sedative, hypnotic or anxiolytic-induced mood disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sedative, hypnotic or anxiolytic-induced mood disorder with depressive symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/994618878"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sedative, hypnotic or anxiolytic-induced mood disorder with manic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1957010937"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sedative, hypnotic or anxiolytic-induced mood disorder with mixed depressive and manic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1845975987"
+    }
+  ]
+}

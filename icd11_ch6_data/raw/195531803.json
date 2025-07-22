@@ -1,0 +1,204 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/195531803",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/213458094"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#195531803",
+  "code": "6D71",
+  "source": "http://id.who.int/icd/entity/195531803",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/195531803/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1000704511",
+        "http://id.who.int/icd/release/11/2024-01/mms/590211325",
+        "http://id.who.int/icd/release/11/2024-01/mms/296066191",
+        "http://id.who.int/icd/release/11/2024-01/mms/2132180242",
+        "http://id.who.int/icd/release/11/2024-01/mms/1611724421",
+        "http://id.who.int/icd/release/11/2024-01/mms/2091156678",
+        "http://id.who.int/icd/release/11/2024-01/mms/2099230583",
+        "http://id.who.int/icd/release/11/2024-01/mms/1298865187",
+        "http://id.who.int/icd/release/11/2024-01/mms/843843448",
+        "http://id.who.int/icd/release/11/2024-01/mms/1507346489",
+        "http://id.who.int/icd/release/11/2024-01/mms/1965146397",
+        "http://id.who.int/icd/release/11/2024-01/mms/1624623908",
+        "http://id.who.int/icd/release/11/2024-01/mms/277610609",
+        "http://id.who.int/icd/release/11/2024-01/mms/1119330136"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Mild neurocognitive disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Mild neurocognitive disorder is characterized by mild impairment in one or more cognitive domains relative to that expected given the individual’s age and general premorbid level of cognitive functioning, which represents a decline from the individual’s previous level of functioning. Diagnosis is based on report from the patient, informant, or clinical observation, and is accompanied by objective evidence of impairment by quantified clinical assessment or standardized cognitive testing. Cognitive impairment is not severe enough to significantly interfere with an individual’s ability to perform activities related to personal, family, social, educational, and/or occupational functioning or other important functional areas. Cognitive impairment is not attributable to normal aging and may be static, progressive, or may resolve or improve depending on underlying cause or treatment. Cognitive impairment may be attributable to an underlying acquired disease of the nervous system, a trauma, an infection or other disease process affecting the brain, use of specific substances or medications, nutritional deficiency or exposure to toxins, or the etiology may be undetermined. The impairment is not due to current substance intoxication or withdrawal."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mild neurocognitive disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "minor neurocognitive disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Postconcussional syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "post-concussion syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "post-concussional syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "post-contusional encephalopathy"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "post-contusional syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "post-traumatic brain syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "postconcussion syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "postcontusional syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "postconcussional disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "concussion syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "nonpsychotic post-traumatic brain syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "post-traumatic organic brain syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "punch drunk"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "status postcommotio cerebri"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "post-traumatic dementia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1968656997"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Postcontusional encephalopathy"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/275207532"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mild cognitive impairment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/290908947"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mild lack of memory following organic brain damage"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/342017261"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mild memory disorder following organic brain damage"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1343608296"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mild memory disturbance following organic brain damage"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/782716729"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mild memory loss following organic brain damage"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1438909066"
+    }
+  ]
+}

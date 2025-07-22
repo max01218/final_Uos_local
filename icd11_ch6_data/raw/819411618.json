@@ -1,0 +1,68 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/819411618",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/686500513"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#819411618",
+  "code": "6C42.23",
+  "source": "http://id.who.int/icd/entity/819411618",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/819411618/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/138091123",
+        "http://id.who.int/icd/release/11/2024-01/mms/1995589534",
+        "http://id.who.int/icd/release/11/2024-01/mms/1995589534"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/819411618/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/508603587",
+        "http://id.who.int/icd/release/11/2024-01/mms/397276103"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Synthetic cannabinoid dependence, sustained full remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "After a diagnosis of synthetic cannabinoid dependence, and often following a treatment episode or other intervention (including self-intervention), the person has been abstinent from synthetic cannabinoid use for 12 months or longer."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of synthetic cannabinoids"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/912934263",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/912934263"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of synthetic cannabinoids"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1055626783",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1055626783"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cannabinoid dependence, sustained full remission"
+      }
+    }
+  ]
+}

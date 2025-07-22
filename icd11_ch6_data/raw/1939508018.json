@@ -1,0 +1,37 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1939508018",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1041487064"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1939508018",
+  "code": "6C50.1",
+  "source": "http://id.who.int/icd/entity/1939508018",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Gambling disorder, predominantly online"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "!markdown\nGambling disorder, predominantly online is characterised by a pattern of persistent or recurrent gambling behaviour that is primarily conducted over the internet and is manifested by: \n\n1. impaired control over gambling (e.g., onset, frequency, intensity, duration, termination, context); \n2. increasing priority given to gambling to the extent that gambling takes precedence over other life interests and daily activities; and \n3. continuation or escalation of gambling despite the occurrence of negative consequences. The behaviour pattern is of sufficient severity to result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning. \n\nThe pattern of gambling behaviour may be continuous or episodic and recurrent. The gambling behaviour and other features are normally evident over a period of at least 12 months in order for a diagnosis to be assigned, although the required duration may be shortened if all diagnostic requirements are met and symptoms are severe."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hazardous gambling or betting"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/233747706",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/233747706"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Gambling disorder, predominantly online"
+      }
+    }
+  ]
+}

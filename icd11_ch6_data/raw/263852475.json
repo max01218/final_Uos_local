@@ -1,0 +1,41 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/263852475",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1412387537"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/306103450",
+    "http://id.who.int/icd/release/11/2024-01/mms/647582417",
+    "http://id.who.int/icd/release/11/2024-01/mms/38433871",
+    "http://id.who.int/icd/release/11/2024-01/mms/263852475/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/263852475/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#263852475",
+  "code": "6B80",
+  "source": "http://id.who.int/icd/entity/263852475",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/263852475/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1381875066",
+        "http://id.who.int/icd/release/11/2024-01/mms/133673893",
+        "http://id.who.int/icd/release/11/2024-01/mms/480150735",
+        "http://id.who.int/icd/release/11/2024-01/mms/286779656",
+        "http://id.who.int/icd/release/11/2024-01/mms/1153296343"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Anorexia Nervosa"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Anorexia Nervosa is characterised by significantly low body weight for the individual’s height, age and developmental stage that is not due to another health condition or to the unavailability of food. A commonly used threshold is body mass index (BMI) less than 18.5 kg/m² in adults and BMI-for-age under 5th percentile in children and adolescents. Rapid weight loss (e.g. more than 20% of total body weight within 6 months) may replace the low body weight guideline as long as other diagnostic requirements are met. Children and adolescents may exhibit failure to gain weight as expected based on the individual developmental trajectory rather than weight loss. Low body weight is accompanied by a persistent pattern of behaviours to prevent restoration of normal weight, which may include behaviours aimed at reducing energy intake (restricted eating), purging behaviours (e.g. self-induced vomiting, misuse of laxatives), and behaviours aimed at increasing energy expenditure (e.g. excessive exercise), typically associated with a fear of weight gain. Low body weight or shape is central to the person's self-evaluation or is inaccurately perceived to be normal or even excessive."
+  }
+}

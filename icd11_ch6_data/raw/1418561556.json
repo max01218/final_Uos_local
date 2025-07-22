@@ -1,0 +1,64 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1418561556",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/470484338"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2059548662",
+    "http://id.who.int/icd/release/11/2024-01/mms/100209899",
+    "http://id.who.int/icd/release/11/2024-01/mms/1418561556/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1418561556",
+  "code": "6C4D.1",
+  "source": "http://id.who.int/icd/entity/1418561556",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1418561556/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/216587818",
+        "http://id.who.int/icd/release/11/2024-01/mms/666288373",
+        "http://id.who.int/icd/release/11/2024-01/mms/1379043297"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1418561556/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1192105868"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Harmful pattern of use of dissociative drugs, including ketamine or PCP"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A pattern of use of dissociative drugs, including ketamine and phencyclidine (PCP), that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. The pattern of dissociative drug use is evident over a period of at least 12 months if use is episodic or at least one month if use is continuous (i.e., daily or almost daily). Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour related to dissociative drug intoxication on the part of the person to whom the diagnosis of Harmful pattern of use of dissociative drugs, including ketamine and PCP applies."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative drug dependence including ketamine or PCP"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1177354811",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1177354811"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of dissociative drugs including ketamine or PCP"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/706633269",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/706633269"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+Disorder Name: Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone
+Disorder Code: 1016273204
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone are characterised by the pattern and consequences of use of these substances. There is a wide array of naturally occurring and synthetically produced psychostimulants other than cocaine. The most numerous of this group are the amphetamine-type substances, including methamphetamine. Prescribed stimulants including dexamphetamine are indicated for a limited number of conditions such as for Attention Deficit Hyperactivity Disorder. Methcathinone, known in many countries as ephedrone, is a synthetic potent stimulant that is a structural analogue of methamphetamine and is related to cathinone. All these drugs have primarily psychostimulant properties and are also vasoconstrictors to a varying degree. They induce euphoria and hyperactivity as may be seen in Stimulant Intoxication. They have potent dependence-producing properties, which may lead to the diagnosis of Stimulant Dependence and Stimulant Withdrawal following the cessation of use. Several Stimulant-Induced Mental Disorders are described.
+
+Exclusions: Disorders due to use of synthetic cathinones; Disorders due to use of caffeine; Disorders due to use of cocaine; Hazardous use of stimulants including amphetamines or methamphetamine
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone are characterised by the pattern and consequences of use of these substances. There is a wide array of naturally occurring and synthetically produced psychostimulants other than cocaine. The most numerous of this group are the amphetamine-type substances, including methamphetamine. Prescribed stimulants including dexamphetamine are indicated for a limited number of conditions such as for Attention Deficit Hyperactivity Disorder. Methcathinone, known in many countries as ephedrone, is a synthetic potent stimulant that is a structural analogue of methamphetamine and is related to cathinone. All these drugs have primarily psychostimulant properties and are also vasoconstrictors to a varying degree. They induce euphoria and hyperactivity as may be seen in Stimulant Intoxication. They have potent dependence-producing properties, which may lead to the diagnosis of Stimulant Dependence and Stimulant Withdrawal following the cessation of use. Several Stimulant-Induced Mental Disorders are described.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Disorders due to use of synthetic cathinones
+• Should be differentiated from: Disorders due to use of caffeine
+• Should be differentiated from: Disorders due to use of cocaine
+• Should be differentiated from: Hazardous use of stimulants including amphetamines or methamphetamine
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

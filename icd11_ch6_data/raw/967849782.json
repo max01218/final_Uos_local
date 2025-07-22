@@ -1,0 +1,36 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/967849782",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/106339515"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1034374160",
+    "http://id.who.int/icd/release/11/2024-01/mms/584318803",
+    "http://id.who.int/icd/release/11/2024-01/mms/5254456",
+    "http://id.who.int/icd/release/11/2024-01/mms/967849782/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#967849782",
+  "code": "6A21.0",
+  "source": "http://id.who.int/icd/entity/967849782",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/967849782/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Schizoaffective disorder, first episode"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Schizoaffective disorder, first episode should be used to identify individuals experiencing symptoms that meet the diagnostic requirements for Schizoaffective disorder (including duration) but who have never before experienced an episode during which diagnostic requirements for Schizoaffective disorder or Schizophrenia were met."
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/726494117",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1121465374"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#726494117",
+  "code": "6B25.1",
+  "source": "http://id.who.int/icd/entity/726494117",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Excoriation disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Excoriation disorder is characterised by recurrent picking of one’s own skin leading to skin lesions, accompanied by unsuccessful attempts to decrease or stop the behaviour. The most commonly picked sites are the face, arms and hands, but many individuals pick from multiple body sites. Skin picking may occur in brief episodes scattered throughout the day or in less frequent but more sustained periods. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "skin picking disorder"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stereotyped movement disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1111628448",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1111628448"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute excoriation of skin"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1764982361",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1764982361"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Chronic excoriation of skin"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2102474973",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2102474973"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Excoriation disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "skin picking disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "dermatillomania"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acne excoriee"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/314814146"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Excoriated acne"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/314814146"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Repetitive excoriation"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/944453215"
+    }
+  ]
+}

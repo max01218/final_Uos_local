@@ -1,0 +1,57 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/843505186",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/826065555"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#843505186",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/843505186",
+  "classKind": "window",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine-induced impulse control disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1995290731",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1995290731"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stimulant-induced impulse control disorder including amphetamines, methamphetamine or methcathinone"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/143679922",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/143679922"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Impulse control disorder induced by other specified psychoactive substance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/657890038",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/657890038"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Impulse control disorder induced by unknown or unspecified psychoactive substance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/396542224",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/396542224"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone-induced impulse control disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1259373199",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1259373199"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Substance-induced impulse control disorders"
+  }
+}

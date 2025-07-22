@@ -1,0 +1,31 @@
+Disorder Name: Disorders due to use of dissociative drugs including ketamine and phencyclidine [PCP]
+Disorder Code: 470484338
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of dissociative drugs including ketamine and phencyclidine [PCP] are characterised by the pattern and consequences of dissociative drug use. Dissociative drugs include ketamine and phencyclidine (PCP) and their (comparatively rare) chemical analogues. Ketamine is an intravenous anaesthetic widely used in low- and middle-income countries, particularly in Africa, and in emergency situations. Ketamine is also undergoing evaluation for treatment of some mental disorders (e.g., treatment resistant Depressive Disorders). It is also a widespread drug of nonmedical use in many countries and may be taken by the oral or nasal routes or injected. It produces a sense of euphoria but depending on the dose, emergent hallucinations and dissociation are recognised as unpleasant side effects. Phencyclidine has a more restricted worldwide distribution and also has euphoric and dissociative effects. Its use may result in bizarre behaviour uncharacteristic for the individual, including self-harm. Dissociative Drug Dependence is described but a withdrawal syndrome is not recognized by most authorities. Several Dissociative Drug-Induced Mental Disorders are recognised.
+
+Exclusions: Hazardous use of dissociative drugs including ketamine or PCP
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of dissociative drugs including ketamine and phencyclidine [PCP] are characterised by the pattern and consequences of dissociative drug use. Dissociative drugs include ketamine and phencyclidine (PCP) and their (comparatively rare) chemical analogues. Ketamine is an intravenous anaesthetic widely used in low- and middle-income countries, particularly in Africa, and in emergency situations. Ketamine is also undergoing evaluation for treatment of some mental disorders (e.g., treatment resistant Depressive Disorders). It is also a widespread drug of nonmedical use in many countries and may be taken by the oral or nasal routes or injected. It produces a sense of euphoria but depending on the dose, emergent hallucinations and dissociation are recognised as unpleasant side effects. Phencyclidine has a more restricted worldwide distribution and also has euphoric and dissociative effects. Its use may result in bizarre behaviour uncharacteristic for the individual, including self-harm. Dissociative Drug Dependence is described but a withdrawal syndrome is not recognized by most authorities. Several Dissociative Drug-Induced Mental Disorders are recognised.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Hazardous use of dissociative drugs including ketamine or PCP
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

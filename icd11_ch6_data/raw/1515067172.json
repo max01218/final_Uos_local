@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1515067172",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1991016628"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1515067172",
+  "code": "6B24.0",
+  "source": "http://id.who.int/icd/entity/1515067172",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Hoarding disorder with fair to good insight"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements of hoarding disorder are met. The individual recognizes that hoarding-related beliefs and behaviours (pertaining to excessive acquisition, difficulty discarding, or clutter) are problematic. This qualifier level may still be applied if, at circumscribed times (e.g., when being forced to discard items), the individual demonstrates no insight."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hoarding disorder with fair to good insight"
+      }
+    }
+  ]
+}

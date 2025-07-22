@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1526280683",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1605818663"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1526280683",
+  "code": "6C47.5",
+  "source": "http://id.who.int/icd/entity/1526280683",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1526280683/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1599283639",
+        "http://id.who.int/icd/release/11/2024-01/mms/1587633989"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1526280683/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1563509056",
+        "http://id.who.int/icd/release/11/2024-01/mms/2057206901",
+        "http://id.who.int/icd/release/11/2024-01/mms/2070676103"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Synthetic cathinone-induced delirium"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Synthetic cathinone-induced delirium is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or withdrawal or during the use of synthetic cathinones. The amount and duration of synthetic cathinone use must be capable of producing delirium. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from a different substance, or by another health condition that is not classified under Mental, behavioural and neurodevelopmental disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone-induced delirium"
+      }
+    }
+  ]
+}

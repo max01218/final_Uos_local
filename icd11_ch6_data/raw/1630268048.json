@@ -1,0 +1,37 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1630268048",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/826065555"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1630268048",
+  "code": "6C72",
+  "source": "http://id.who.int/icd/entity/1630268048",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Compulsive sexual behaviour disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Compulsive sexual behaviour disorder is characterised by a persistent pattern of failure to control intense, repetitive sexual impulses or urges resulting in repetitive sexual behaviour. Symptoms may include repetitive sexual activities becoming a central focus of the person’s life to the point of neglecting health and personal care or other interests, activities and responsibilities; numerous unsuccessful efforts to significantly reduce repetitive sexual behaviour; and continued repetitive sexual behaviour despite adverse consequences or deriving little or no satisfaction from it. The pattern of failure to control intense, sexual impulses or urges and resulting repetitive sexual behaviour is manifested over an extended period of time (e.g., 6 months or more), and causes marked distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. Distress that is entirely related to moral judgments and disapproval about sexual impulses, urges, or behaviours is not sufficient to meet this requirement."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Paraphilic disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2110604642",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2110604642"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Compulsive sexual behaviour disorder"
+      }
+    }
+  ]
+}

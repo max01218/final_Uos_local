@@ -1,0 +1,40 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1587633989",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1605818663"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1587633989",
+  "code": "6C47.4",
+  "source": "http://id.who.int/icd/entity/1587633989",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1587633989/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1563509056",
+        "http://id.who.int/icd/release/11/2024-01/mms/2057206901",
+        "http://id.who.int/icd/release/11/2024-01/mms/2070676103"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Synthetic cathinone withdrawal"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Synthetic cathinone withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of synthetic cathinones in individuals who have developed Synthetic cathinone dependence or have used synthetic cathinones for a prolonged period or in large amounts. Presenting features of Synthetic cathinone withdrawal may include dysphoric mood, irritability, fatigue, insomnia or (more commonly) hypersomnia, vivid and unpleasant dreams, increased appetite, psychomotor agitation or retardation, and craving for stimulants, including synthetic cathinones."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone withdrawal"
+      }
+    }
+  ]
+}

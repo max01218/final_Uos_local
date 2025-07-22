@@ -1,0 +1,57 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/496273089",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/76398729"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1119039346",
+    "http://id.who.int/icd/release/11/2024-01/mms/1383708356",
+    "http://id.who.int/icd/release/11/2024-01/mms/1906190365",
+    "http://id.who.int/icd/release/11/2024-01/mms/802537726",
+    "http://id.who.int/icd/release/11/2024-01/mms/822487798",
+    "http://id.who.int/icd/release/11/2024-01/mms/567063364"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#496273089",
+  "code": "6A80",
+  "source": "http://id.who.int/icd/entity/496273089",
+  "classKind": "category",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, without psychotic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1124422593",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1124422593"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, with psychotic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/380591392",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/380591392"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Symptomatic and course presentations for mood episodes in mood disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "These categories may be applied to describe the presentation and characteristics of mood episodes in the context of single episode depressive disorder, recurrent depressive disorder, bipolar type I disorder, or bipolar type II disorder. These categories indicate the presence of specific, important features of the clinical presentation or of the course, onset, and pattern of mood episodes. These categories are not mutually exclusive, and as many may be added as apply."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "These categories should never be used in primary coding. The codes are provided for use as supplementary or additional codes when it is desired to identify specific clinically important features of mood episodes in mood disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symptomatic and course presentations for mood episodes in mood disorders"
+      }
+    }
+  ]
+}

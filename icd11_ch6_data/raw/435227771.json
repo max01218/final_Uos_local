@@ -1,0 +1,91 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/435227771",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/452386362",
+    "http://id.who.int/icd/release/11/2024-01/mms/1842013215",
+    "http://id.who.int/icd/release/11/2024-01/mms/805284915",
+    "http://id.who.int/icd/release/11/2024-01/mms/1489212950",
+    "http://id.who.int/icd/release/11/2024-01/mms/1416283029",
+    "http://id.who.int/icd/release/11/2024-01/mms/592902578",
+    "http://id.who.int/icd/release/11/2024-01/mms/1633923486",
+    "http://id.who.int/icd/release/11/2024-01/mms/375360441",
+    "http://id.who.int/icd/release/11/2024-01/mms/2016483996",
+    "http://id.who.int/icd/release/11/2024-01/mms/252518591",
+    "http://id.who.int/icd/release/11/2024-01/mms/159081656",
+    "http://id.who.int/icd/release/11/2024-01/mms/1121827324",
+    "http://id.who.int/icd/release/11/2024-01/mms/1237810616",
+    "http://id.who.int/icd/release/11/2024-01/mms/163532889",
+    "http://id.who.int/icd/release/11/2024-01/mms/152692065",
+    "http://id.who.int/icd/release/11/2024-01/mms/1236563202",
+    "http://id.who.int/icd/release/11/2024-01/mms/383104340",
+    "http://id.who.int/icd/release/11/2024-01/mms/609351978",
+    "http://id.who.int/icd/release/11/2024-01/mms/435227771/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/435227771/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#435227771",
+  "code": "22",
+  "source": "http://id.who.int/icd/entity/435227771",
+  "classKind": "chapter",
+  "title": {
+    "@language": "en",
+    "@value": "Injury, poisoning or certain other consequences of external causes"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "!markdown\nIn the ICD, injury means physical or physiological bodily harm resulting from interaction of the body with energy (mechanical, thermal, electrical, chemical or radiant, or due to extreme pressure) in an amount, or at a rate of transfer, that exceeds physical or physiological tolerance. Injury can also result from lack of vital elements, such as oxygen. Poisoning by and toxic effects of substances are included, as is damage of or due to implanted devices.  \n\nInjury usually has rapid onset in response to a well-defined event (e.g. a car crash, striking the ground after falling, drinking a strongly alkaline liquid, an overdose of a medication, a burn sustained during a surgical procedure). These events are often referred to as external causes of injury. The injurious energy can, however, originate from the injured person and/or from his or her immediate environment (e.g. a person running on a hot day sustains heat exhaustion), and injury can be caused by the injured person (i.e. intentional self-harm).\n\nInjury includes manifestations that are evident immediately after onset, which may persist or not, and manifestations that first become evident at a later date."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stress fracture, not elsewhere classified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1439320197",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1439320197"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Pathological fracture"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/639949585",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/639949585"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain specified obstetric trauma"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1146004591",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1146004591"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Malunion of fracture"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/560404604",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/560404604"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Birth injury"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/624443803",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/624443803"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Nonunion of fracture"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1143789038",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1143789038"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+Disorder Name: Stimulant dependence including amphetamines, methamphetamine or methcathinone, current use
+Disorder Code: 651438062
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Stimulant dependence including amphetamines, methamphetamine and methcathinone but excluding caffeine, cocaine and synthetic cathinones refers to amphetamine or other stimulant use within the past month.
+
+Exclusions: Harmful pattern of use of stimulants including amphetamines, methamphetamine or methcathinone; Episode of harmful use of stimulants including amphetamines, methamphetamine or methcathinone
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Stimulant dependence including amphetamines, methamphetamine and methcathinone but excluding caffeine, cocaine and synthetic cathinones refers to amphetamine or other stimulant use within the past month.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Harmful pattern of use of stimulants including amphetamines, methamphetamine or methcathinone
+• Should be differentiated from: Episode of harmful use of stimulants including amphetamines, methamphetamine or methcathinone
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

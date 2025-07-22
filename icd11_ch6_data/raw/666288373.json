@@ -1,0 +1,80 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/666288373",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/470484338"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#666288373",
+  "code": "6C4D.5",
+  "source": "http://id.who.int/icd/entity/666288373",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/666288373/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/16341703",
+        "http://id.who.int/icd/release/11/2024-01/mms/373236638",
+        "http://id.who.int/icd/release/11/2024-01/mms/1756699061",
+        "http://id.who.int/icd/release/11/2024-01/mms/1891241424",
+        "http://id.who.int/icd/release/11/2024-01/mms/1193684303",
+        "http://id.who.int/icd/release/11/2024-01/mms/1853123588",
+        "http://id.who.int/icd/release/11/2024-01/mms/534456613",
+        "http://id.who.int/icd/release/11/2024-01/mms/428256012",
+        "http://id.who.int/icd/release/11/2024-01/mms/33615934",
+        "http://id.who.int/icd/release/11/2024-01/mms/648146092",
+        "http://id.who.int/icd/release/11/2024-01/mms/808405469",
+        "http://id.who.int/icd/release/11/2024-01/mms/1870704429",
+        "http://id.who.int/icd/release/11/2024-01/mms/1732158747",
+        "http://id.who.int/icd/release/11/2024-01/mms/1416993969",
+        "http://id.who.int/icd/release/11/2024-01/mms/2121804732",
+        "http://id.who.int/icd/release/11/2024-01/mms/2043582775",
+        "http://id.who.int/icd/release/11/2024-01/mms/1960627774",
+        "http://id.who.int/icd/release/11/2024-01/mms/1076458680",
+        "http://id.who.int/icd/release/11/2024-01/mms/448177412",
+        "http://id.who.int/icd/release/11/2024-01/mms/1864983449",
+        "http://id.who.int/icd/release/11/2024-01/mms/543245955",
+        "http://id.who.int/icd/release/11/2024-01/mms/2017927415",
+        "http://id.who.int/icd/release/11/2024-01/mms/511194385"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/666288373/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1192105868"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/666288373/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/706633269",
+        "http://id.who.int/icd/release/11/2024-01/mms/1418561556",
+        "http://id.who.int/icd/release/11/2024-01/mms/1177354811"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative drug-induced psychotic disorder including Ketamine or PCP"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative drug-induced psychotic disorder including Ketamine or PCP is characterised by psychotic symptoms (e.g., delusions, hallucinations, disorganised thinking, grossly disorganised behaviour) that develop during or soon after intoxication with dissociative drugs. The intensity or duration of the symptoms is substantially in excess of psychotic-like disturbances of perception, cognition, or behaviour that are characteristic of Dissociative drug intoxication. The amount and duration of Dissociative drug use must be capable of producing psychotic symptoms. The symptoms are not better explained by a primary mental disorder (e.g., Schizophrenia, a Mood disorder with psychotic symptoms), as might be the case if the psychotic symptoms preceded the onset of the dissociative drug use, if the symptoms persist for a substantial period of time after cessation of the dissociative drug use, or if there is other evidence of a pre-existing primary mental disorder with psychotic symptoms (e.g., a history of prior episodes not associated with dissociative drug use)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative drug-induced psychotic disorder including Ketamine or PCP"
+      }
+    }
+  ]
+}

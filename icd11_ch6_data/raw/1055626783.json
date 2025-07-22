@@ -1,0 +1,65 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1055626783",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/804833492"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/329717941",
+    "http://id.who.int/icd/release/11/2024-01/mms/1501431632",
+    "http://id.who.int/icd/release/11/2024-01/mms/1055626783/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1055626783/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1055626783",
+  "code": "6C42.1",
+  "source": "http://id.who.int/icd/entity/1055626783",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1055626783/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/138091123",
+        "http://id.who.int/icd/release/11/2024-01/mms/1995589534",
+        "http://id.who.int/icd/release/11/2024-01/mms/738827515"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1055626783/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/508603587"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Harmful pattern of use of synthetic cannabinoids"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A pattern of use of synthetic cannabinoids that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. The pattern of synthetic cannabinoid use is evident over a period of at least 12 months if substance use is episodic or at least one month if use is continuous (i.e., daily or almost daily). Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour related to synthetic cannabinoid intoxication on the part of the person to whom the diagnosis of Harmful pattern of use of synthetic cannabinoids applies."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of synthetic cannabinoids"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/912934263",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/912934263"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cannabinoid dependence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/686500513",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/686500513"
+    }
+  ]
+}

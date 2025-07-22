@@ -1,0 +1,31 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/37291724",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/941859884",
+    "http://id.who.int/icd/release/11/2024-01/mms/1128733473"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#37291724",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/37291724",
+  "classKind": "block",
+  "blockId": "BlockL1-6D1",
+  "codeRange": "6D10-6D11.5",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary personality change"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1324394161",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1324394161"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Personality disorders and related traits"
+  }
+}

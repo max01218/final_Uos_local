@@ -1,0 +1,26 @@
+Disorder Name: Negative symptoms in primary psychotic disorders
+Disorder Code: 1893759206
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Negative symptoms in primary psychotic disorders include constricted, blunted, or flat affect, alogia or paucity of speech, avolition (general lack of drive, or lack of motivation to pursue meaningful goals), asociality (reduced or absent engagement with others and interest in social interaction) and anhedonia (inability to experience pleasure from normally pleasurable activities). To be considered negative psychotic symptoms, relevant symptoms should not be entirely attributable to antipsychotic drug treatment, a depressive disorder, or an under-stimulating environment, and should not be a direct consequence of a positive symptom (e.g., persecutory delusions causing a person to become socially isolated due to fear of harm). The rating should be made based on the severity of negative symptoms during the past week.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Negative symptoms in primary psychotic disorders include constricted, blunted, or flat affect, alogia or paucity of speech, avolition (general lack of drive, or lack of motivation to pursue meaningful goals), asociality (reduced or absent engagement with others and interest in social interaction) and anhedonia (inability to experience pleasure from normally pleasurable activities). To be considered negative psychotic symptoms, relevant symptoms should not be entirely attributable to antipsychotic drug treatment, a depressive disorder, or an under-stimulating environment, and should not be a direct consequence of a positive symptom (e.g., persecutory delusions causing a person to become socially isolated due to fear of harm). The rating should be made based on the severity of negative symptoms during the past week.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,114 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2016549355",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1016273204"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/651438062",
+    "http://id.who.int/icd/release/11/2024-01/mms/113814852",
+    "http://id.who.int/icd/release/11/2024-01/mms/671215150",
+    "http://id.who.int/icd/release/11/2024-01/mms/912062138",
+    "http://id.who.int/icd/release/11/2024-01/mms/2016549355/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2016549355",
+  "code": "6C46.2",
+  "source": "http://id.who.int/icd/entity/2016549355",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2016549355/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/16341703",
+        "http://id.who.int/icd/release/11/2024-01/mms/373236638",
+        "http://id.who.int/icd/release/11/2024-01/mms/1756699061",
+        "http://id.who.int/icd/release/11/2024-01/mms/1891241424",
+        "http://id.who.int/icd/release/11/2024-01/mms/1193684303",
+        "http://id.who.int/icd/release/11/2024-01/mms/1853123588",
+        "http://id.who.int/icd/release/11/2024-01/mms/534456613",
+        "http://id.who.int/icd/release/11/2024-01/mms/428256012",
+        "http://id.who.int/icd/release/11/2024-01/mms/33615934",
+        "http://id.who.int/icd/release/11/2024-01/mms/648146092",
+        "http://id.who.int/icd/release/11/2024-01/mms/808405469",
+        "http://id.who.int/icd/release/11/2024-01/mms/1870704429",
+        "http://id.who.int/icd/release/11/2024-01/mms/1732158747",
+        "http://id.who.int/icd/release/11/2024-01/mms/1416993969",
+        "http://id.who.int/icd/release/11/2024-01/mms/2121804732",
+        "http://id.who.int/icd/release/11/2024-01/mms/2043582775",
+        "http://id.who.int/icd/release/11/2024-01/mms/1960627774",
+        "http://id.who.int/icd/release/11/2024-01/mms/1076458680",
+        "http://id.who.int/icd/release/11/2024-01/mms/448177412",
+        "http://id.who.int/icd/release/11/2024-01/mms/1864983449",
+        "http://id.who.int/icd/release/11/2024-01/mms/543245955",
+        "http://id.who.int/icd/release/11/2024-01/mms/2017927415",
+        "http://id.who.int/icd/release/11/2024-01/mms/511194385"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2016549355/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/951103658",
+        "http://id.who.int/icd/release/11/2024-01/mms/199002751",
+        "http://id.who.int/icd/release/11/2024-01/mms/2096250471"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2016549355/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1775535234",
+        "http://id.who.int/icd/release/11/2024-01/mms/494523519"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Stimulant dependence including amphetamines, methamphetamine or methcathinone"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Stimulant dependence including amphetamines, methamphetamine or methcathinone is a disorder of regulation of stimulant use arising from repeated or continuous use of stimulants. The characteristic feature is a strong internal drive to use stimulants, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use stimulants. Physiological features of dependence may also be present, including tolerance to the effects of stimulants, withdrawal symptoms following cessation or reduction in use of stimulants, or repeated use of stimulants or pharmacologically similar substances to prevent or alleviate withdrawal symptoms. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if stimulant use is continuous (daily or almost daily) for at least 3 months."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine dependence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1691013484",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1691013484"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone dependence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2070676103",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2070676103"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of stimulants including amphetamines, methamphetamine or methcathinone"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1772665991",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1772665991"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of stimulants including amphetamines, methamphetamine or methcathinone"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/211765524",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/211765524"
+    }
+  ]
+}

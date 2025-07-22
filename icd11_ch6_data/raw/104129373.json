@@ -1,0 +1,225 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/104129373",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/578635574"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#104129373",
+  "code": "6A70.4",
+  "source": "http://id.who.int/icd/entity/104129373",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/104129373/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1119039346",
+        "http://id.who.int/icd/release/11/2024-01/mms/1383708356",
+        "http://id.who.int/icd/release/11/2024-01/mms/1906190365",
+        "http://id.who.int/icd/release/11/2024-01/mms/802537726",
+        "http://id.who.int/icd/release/11/2024-01/mms/380591392"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Single episode depressive disorder, severe, with psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Single episode depressive disorder, severe, with psychotic symptoms is diagnosed when the definitional requirements for Single episode depressive disorder are met and the current episode is severe and there are delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a severe depressive episode, many or most symptoms of a Depressive Episode are present to a marked degree, or a smaller number of symptoms are present and manifest to an intense degree. The individual has serious difficulty continuing to function in most domains (personal, family, social, educational, occupational, or other important domains). In a severe depressive episode, many or most symptoms of a Depressive Episode are present to a marked degree, or a smaller number of symptoms are present and manifest to an intense degree. The individual has serious difficulty continuing to function in most domains (personal, family, social, educational, occupational, or other important domains)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "single episode depressive disorder, severe, with psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "depressive psychosis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "depressive type psychosis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "psychogenic depressive psychosis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "psychotic depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "psychotic depressive reaction"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "psychotic reactive depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "reactive depressive psychosis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "severe major depression with psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episodes of major depression with psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episodes of psychogenic depressive psychosis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episodes of psychotic depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episodes of reactive depressive psychosis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/992872236"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1662265958"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/56367199"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1551610348"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1399163152"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/167312861"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/433560827"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1505848462"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1838376570"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1228045032"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/695879891"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1754139498"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1389739806"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1474400484"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, severe, with psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/830693826"
+    }
+  ]
+}

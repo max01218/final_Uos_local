@@ -1,0 +1,26 @@
+Disorder Name: Hoarding disorder
+Disorder Code: 1991016628
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Hoarding disorder is characterised by accumulation of possessions that results in living spaces becoming cluttered to the point that their use or safety is compromised. Accumulation occurs due to both repetitive urges or behaviours related to amassing items and difficulty discarding possessions due to a perceived need to save items and distress associated with discarding them. If living areas are uncluttered this is only due to the intervention of third parties (e.g., family members, cleaners, authorities). Amassment may be passive (e.g. accumulation of incoming flyers or mail) or active (e.g. excessive acquisition of free, purchased, or stolen items). The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Hoarding disorder is characterised by accumulation of possessions that results in living spaces becoming cluttered to the point that their use or safety is compromised. Accumulation occurs due to both repetitive urges or behaviours related to amassing items and difficulty discarding possessions due to a perceived need to save items and distress associated with discarding them. If living areas are uncluttered this is only due to the intervention of third parties (e.g., family members, cleaners, authorities). Amassment may be passive (e.g. accumulation of incoming flyers or mail) or active (e.g. excessive acquisition of free, purchased, or stolen items). The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

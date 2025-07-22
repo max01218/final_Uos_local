@@ -1,0 +1,31 @@
+Disorder Name: Dissociative amnesia with dissociative fugue
+Disorder Code: 1075129954
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dissociative amnesia with dissociative fugue is characterised by all of the features of Dissociative Amnesia, accompanied by dissociative fugue, i.e., a loss of a sense of personal identity and sudden travel away from home, work, or significant others for an extended period of time (days or weeks). A new identity may be assumed.
+
+Exclusions: postictal fugue in epilepsy
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dissociative amnesia with dissociative fugue is characterised by all of the features of Dissociative Amnesia, accompanied by dissociative fugue, i.e., a loss of a sense of personal identity and sudden travel away from home, work, or significant others for an extended period of time (days or weeks). A new identity may be assumed.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: postictal fugue in epilepsy
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

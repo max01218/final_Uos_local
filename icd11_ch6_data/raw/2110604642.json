@@ -1,0 +1,39 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2110604642",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/141881468",
+    "http://id.who.int/icd/release/11/2024-01/mms/1832861162",
+    "http://id.who.int/icd/release/11/2024-01/mms/517058174",
+    "http://id.who.int/icd/release/11/2024-01/mms/1890228613",
+    "http://id.who.int/icd/release/11/2024-01/mms/1580013387",
+    "http://id.who.int/icd/release/11/2024-01/mms/1582257458",
+    "http://id.who.int/icd/release/11/2024-01/mms/2055403635",
+    "http://id.who.int/icd/release/11/2024-01/mms/2110604642/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2110604642",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/2110604642",
+  "classKind": "block",
+  "blockId": "BlockL1-6D3",
+  "codeRange": "6D30-6D3Z",
+  "title": {
+    "@language": "en",
+    "@value": "Paraphilic disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Paraphilic disorders are characterised by persistent and intense patterns of atypical sexual arousal, manifested by sexual thoughts, fantasies, urges, or behaviours, the focus of which involves others whose age or status renders them unwilling or unable to consent and on which the person has acted or by which he or she is markedly distressed. Paraphilic disorders may include arousal patterns involving solitary behaviours or consenting individuals only when these are associated with marked distress that is not simply a result of rejection or feared rejection of the arousal pattern by others or with significant risk of injury or death."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "paraphilias"
+      }
+    }
+  ]
+}

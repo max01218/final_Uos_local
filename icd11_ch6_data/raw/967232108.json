@@ -1,0 +1,33 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/967232108",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/536986325"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#967232108",
+  "code": "6B60.85",
+  "source": "http://id.who.int/icd/entity/967232108",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with Parkinsonism"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with Parkinsonism is characterised by a symptomatic presentation of a Parkinson-like syndrome in the absence of confirmed Parkinson disease that does not occur exclusively during another mental, behavioural or neurodevelopmental disorder, other medical condition, or another dissociative disorder. Dissociative neurological symptom disorder, with Parkinsonism can be distinguished from Parkinson disease by features such as abrupt onset, early disability, bilateral shaking and slowness, nondecremental slowness when performing repetitive movements, voluntary resistance against passive movement without cogwheel rigidity, distractability, ‘give-way’ weakness, stuttering speech, bizarre gait, and a variety of behavioural symptoms."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative neurological symptom disorder, with Parkinsonism"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional neurological symptom disorder, with Parkinsonism"
+      }
+    }
+  ]
+}

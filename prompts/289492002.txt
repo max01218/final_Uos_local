@@ -1,0 +1,32 @@
+Disorder Name: Catatonia induced by substances or medications
+Disorder Code: 289492002
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Catatonia induced by substances or medications is a syndrome of primarily psychomotor disturbances, characterized by the co-occurrence of several symptoms of decreased, increased, or abnormal psychomotor activity, which develops during or soon after intoxication or withdrawal from certain psychoactive substances, including phencyclidine (PCP), cannabis, hallucinogens such as mescaline or LSD, cocaine and MDMA or related drugs, or during the use of certain psychoactive and non-psychoactive medications (e.g. antipsychotic medications, benzodiazepines, steroids, disulfiram, ciprofloxacin).
+
+Exclusions: Neuroleptic malignant syndrome; Serotonin syndrome
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Catatonia induced by substances or medications is a syndrome of primarily psychomotor disturbances, characterized by the co-occurrence of several symptoms of decreased, increased, or abnormal psychomotor activity, which develops during or soon after intoxication or withdrawal from certain psychoactive substances, including phencyclidine (PCP), cannabis, hallucinogens such as mescaline or LSD, cocaine and MDMA or related drugs, or during the use of certain psychoactive and non-psychoactive medications (e.g. antipsychotic medications, benzodiazepines, steroids, disulfiram, ciprofloxacin).
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Neuroleptic malignant syndrome
+• Should be differentiated from: Serotonin syndrome
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

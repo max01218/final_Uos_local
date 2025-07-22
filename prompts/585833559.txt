@@ -1,0 +1,32 @@
+Disorder Name: Complex post traumatic stress disorder
+Disorder Code: 585833559
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Complex post traumatic stress disorder (Complex PTSD) is a disorder that may develop following exposure to an event or series of events of an extremely threatening or horrific nature, most commonly prolonged or repetitive events from which escape is difficult or impossible (e.g. torture, slavery, genocide campaigns, prolonged domestic violence, repeated childhood sexual or physical abuse). All diagnostic requirements for PTSD are met. In addition, Complex PTSD is characterised by severe and persistent 1) problems in affect regulation; 2) beliefs about oneself as diminished, defeated or worthless, accompanied by feelings of shame, guilt or failure related to the traumatic event; and 3) difficulties in sustaining relationships and in feeling close to others. These symptoms cause significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Exclusions: Post traumatic stress disorder; Personality disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Complex post traumatic stress disorder (Complex PTSD) is a disorder that may develop following exposure to an event or series of events of an extremely threatening or horrific nature, most commonly prolonged or repetitive events from which escape is difficult or impossible (e.g. torture, slavery, genocide campaigns, prolonged domestic violence, repeated childhood sexual or physical abuse). All diagnostic requirements for PTSD are met. In addition, Complex PTSD is characterised by severe and persistent 1) problems in affect regulation; 2) beliefs about oneself as diminished, defeated or worthless, accompanied by feelings of shame, guilt or failure related to the traumatic event; and 3) difficulties in sustaining relationships and in feeling close to others. These symptoms cause significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Post traumatic stress disorder
+• Should be differentiated from: Personality disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

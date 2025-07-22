@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/396542224",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/595694101"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#396542224",
+  "code": "6C4G.73",
+  "source": "http://id.who.int/icd/entity/396542224",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/396542224/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1870346724",
+        "http://id.who.int/icd/release/11/2024-01/mms/219731531"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/396542224/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/272358857",
+        "http://id.who.int/icd/release/11/2024-01/mms/341458101",
+        "http://id.who.int/icd/release/11/2024-01/mms/2143971168"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Impulse control disorder induced by unknown or unspecified psychoactive substance"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Impulse control disorder induced by unknown or unspecified psychoactive substance is characterised by persistently repeated behaviours in which there is recurrent failure to resist an impulse, drive, or urge to perform an act that is rewarding to the person, at least in the short-term, despite longer-term harm either to the individual or to others (e.g., fire setting or stealing without apparent motive, repetitive sexual behaviour, aggressive outbursts) that develop during or soon after intoxication with or withdrawal from an unknown or unspecified psychoactive substance. The symptoms are not better explained by a primary mental disorder (e.g., an Impulse control disorder, a Disorder due to addictive behaviours), as might be the case if the impulse control disturbances preceded the onset of the unknown or unspecified psychoactive substance use, if the symptoms persist for a substantial period of time after cessation of use or withdrawal of the unknown or unspecified psychoactive substance, or if there is other evidence of a pre-existing primary mental disorder with impulse control symptoms (e.g., a history of prior episodes not associated with the unknown or unspecified psychoactive substance use)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Impulse control disorder induced by unknown or unspecified psychoactive substance"
+      }
+    }
+  ]
+}

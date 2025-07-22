@@ -1,0 +1,66 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1177354811",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/470484338"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/916072624",
+    "http://id.who.int/icd/release/11/2024-01/mms/101610314",
+    "http://id.who.int/icd/release/11/2024-01/mms/2036226651",
+    "http://id.who.int/icd/release/11/2024-01/mms/380625140",
+    "http://id.who.int/icd/release/11/2024-01/mms/1177354811/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1177354811",
+  "code": "6C4D.2",
+  "source": "http://id.who.int/icd/entity/1177354811",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1177354811/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/216587818",
+        "http://id.who.int/icd/release/11/2024-01/mms/666288373",
+        "http://id.who.int/icd/release/11/2024-01/mms/1379043297"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1177354811/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1192105868"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative drug dependence including ketamine or PCP"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative drug dependence including ketamine or PCP is a disorder of regulation of dissociative drug use arising from repeated or continuous use of dissociative drugs. The characteristic feature is a strong internal drive to use dissociative drugs, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use dissociative drugs. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if dissociative drugs use is continuous (daily or almost daily) for at least 3 months."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of dissociative drugs including ketamine or PCP"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/706633269",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/706633269"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of dissociative drugs, including ketamine or PCP"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1418561556",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1418561556"
+    }
+  ]
+}

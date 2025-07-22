@@ -1,0 +1,26 @@
+Disorder Name: Oppositional defiant disorder without chronic irritability-anger
+Disorder Code: 736540987
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Meets all definitional requirements for oppositional defiant disorder. This form of oppositional defiant disorder is not characterised by prevailing, persistent, angry or irritable mood, but does feature headstrong, argumentative, and defiant behaviour.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Meets all definitional requirements for oppositional defiant disorder. This form of oppositional defiant disorder is not characterised by prevailing, persistent, angry or irritable mood, but does feature headstrong, argumentative, and defiant behaviour.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,36 @@
+Disorder Name: Post traumatic stress disorder
+Disorder Code: 2070699808
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Post traumatic stress disorder (PTSD) may develop following exposure to an extremely threatening or horrific event or series of events. It is characterised by all of the following: 1) re-experiencing the traumatic event or events in the present in the form of vivid intrusive memories, flashbacks, or nightmares. Re-experiencing may occur via one or multiple sensory modalities and is typically accompanied by strong or overwhelming emotions, particularly fear or horror, and strong physical sensations; 2) avoidance of thoughts and memories of the event or events, or avoidance of activities, situations, or people reminiscent of the event(s); and 3) persistent perceptions of heightened current threat, for example as indicated by hypervigilance or an enhanced startle reaction to stimuli such as unexpected noises. The symptoms persist for at least several weeks and cause significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Inclusions: Traumatic neurosis
+Exclusions: Acute stress reaction; Complex post traumatic stress disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Post traumatic stress disorder (PTSD) may develop following exposure to an extremely threatening or horrific event or series of events. It is characterised by all of the following: 1) re-experiencing the traumatic event or events in the present in the form of vivid intrusive memories, flashbacks, or nightmares. Re-experiencing may occur via one or multiple sensory modalities and is typically accompanied by strong or overwhelming emotions, particularly fear or horror, and strong physical sensations; 2) avoidance of thoughts and memories of the event or events, or avoidance of activities, situations, or people reminiscent of the event(s); and 3) persistent perceptions of heightened current threat, for example as indicated by hypervigilance or an enhanced startle reaction to stimuli such as unexpected noises. The symptoms persist for at least several weeks and cause significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Included Manifestations:
+• Traumatic neurosis
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Acute stress reaction
+• Should be differentiated from: Complex post traumatic stress disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

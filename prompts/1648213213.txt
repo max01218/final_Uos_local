@@ -1,0 +1,26 @@
+Disorder Name: Caffeine intoxication
+Disorder Code: 1648213213
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Caffeine intoxication is a clinically significant transient condition that develops during or shortly after the consumption of caffeine that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of caffeine and their intensity is closely related to the amount of caffeine consumed. They are time-limited and abate as caffeine is cleared from the body. Presenting features may include restlessness, anxiety, excitement, insomnia, flushed face, tachycardia, diuresis, gastrointestinal disturbances, muscle twitching, psychomotor agitation, perspiration or chills, and nausea or vomiting. Cardiac arrhythmias may occur. Disturbances typical of intoxication tend to occur at relatively higher doses (e.g., > 1 g per day). Very high doses of caffeine (e.g., > 5 g) can result in respiratory distress or seizures and can be fatal.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Caffeine intoxication is a clinically significant transient condition that develops during or shortly after the consumption of caffeine that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of caffeine and their intensity is closely related to the amount of caffeine consumed. They are time-limited and abate as caffeine is cleared from the body. Presenting features may include restlessness, anxiety, excitement, insomnia, flushed face, tachycardia, diuresis, gastrointestinal disturbances, muscle twitching, psychomotor agitation, perspiration or chills, and nausea or vomiting. Cardiac arrhythmias may occur. Disturbances typical of intoxication tend to occur at relatively higher doses (e.g., > 1 g per day). Very high doses of caffeine (e.g., > 5 g) can result in respiratory distress or seizures and can be fatal.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

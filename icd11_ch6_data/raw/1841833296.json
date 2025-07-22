@@ -1,0 +1,38 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1841833296",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/578635574"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1841833296",
+  "code": "6A70.6",
+  "source": "http://id.who.int/icd/entity/1841833296",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1841833296/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Single episode depressive disorder, currently in partial remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Single episode depressive disorder, currently in partial remission, is diagnosed when the full definitional requirements for a depressive episode have been met and there is no history of prior depressive episodes. The full definitional requirements for a depressive episode are no longer met but some significant mood symptoms remain."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, currently in partial remission"
+      }
+    }
+  ]
+}

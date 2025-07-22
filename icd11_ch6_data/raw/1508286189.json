@@ -1,0 +1,45 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1508286189",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/605267007"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1508286189",
+  "code": "6A00.2",
+  "source": "http://id.who.int/icd/entity/1508286189",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Disorder of intellectual development, severe"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A severe disorder of intellectual development is a condition originating during the developmental period characterised by significantly below average intellectual functioning and adaptive behaviour that are approximately four or more standard deviations below the mean (less than approximately the 0.003rd percentile), based on appropriately normed, individually administered standardized tests or by comparable behavioural indicators when standardized testing is unavailable. Affected persons exhibit very limited language and capacity for acquisition of academic skills. They may also have motor impairments and typically require daily support in a supervised environment for adequate care, but may acquire basic self-care skills with intensive training. Severe and profound disorders of intellectual development are differentiated exclusively on the basis of adaptive behaviour differences because existing standardized tests of intelligence cannot reliably or validly distinguish among individuals with intellectual functioning below the 0.003rd percentile."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorder of intellectual development, severe"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe mental retardation"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "severe mental handicap"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "behavioural disorder in severe mental retardation"
+      }
+    }
+  ]
+}

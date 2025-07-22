@@ -1,0 +1,22 @@
+Disorder Name: Certain specified caffeine-induced mental or behavioural disorders
+Disorder Code: 1710844294
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+No standard definition available
+
+Clinical Description and Diagnostic Guidelines:
+According to ICD-11 classification, Certain specified caffeine-induced mental or behavioural disorders is a recognized mental health condition.
+
+Clinical Features:
+• This condition belongs to the ICD-11 mental, behavioural and neurodevelopmental disorders classification system
+• Requires professional mental health assessment and diagnosis
+• Treatment approaches should be based on evidence-based practice and individualized needs
+
+Diagnostic Considerations:
+• Comprehensive evaluation by qualified mental health professionals is recommended
+• Diagnosis should consider symptom duration, severity, and functional impact
+• Other possible medical or psychological causes should be ruled out
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation and professional clinical manuals.

@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1416233126",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1835610951"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/652700225",
+    "http://id.who.int/icd/release/11/2024-01/mms/1918560936"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1416233126",
+  "code": "6C4B.7",
+  "source": "http://id.who.int/icd/entity/1416233126",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1416233126/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/976174979",
+        "http://id.who.int/icd/release/11/2024-01/mms/1317171068"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1416233126/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/893652479",
+        "http://id.who.int/icd/release/11/2024-01/mms/1600451095",
+        "http://id.who.int/icd/release/11/2024-01/mms/1600451095"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Certain specified volatile inhalants-induced mental or behavioural disorders"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain specified volatile inhalants-induced mental or behavioural disorders"
+      }
+    }
+  ]
+}

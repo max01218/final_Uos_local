@@ -1,0 +1,149 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/148247104",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1516623224"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#148247104",
+  "code": "6A04",
+  "source": "http://id.who.int/icd/entity/148247104",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Developmental motor coordination disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Developmental motor coordination disorder is characterised by a significant delay in the acquisition of gross and fine motor skills and impairment in the execution of coordinated motor skills that manifest in clumsiness, slowness, or inaccuracy of motor performance. Coordinated motor skills are markedly below that expected given the individual's chronological age and level of intellectual functioning. Onset of coordinated motor skills difficulties occurs during the developmental period and is typically apparent from early childhood. Coordinated motor skills difficulties cause significant and persistent limitations in functioning (e.g. in activities of daily living, school work, and vocational and leisure activities). Difficulties with coordinated motor skills are not solely attributable to a Disease of the Nervous System, Disease of the Musculoskeletal System or Connective Tissue, sensory impairment, and not better explained by a Disorder of Intellectual Development."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Orofacial motor coordination disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/795122932"
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Abnormalities of gait and mobility"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1543612222",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1543612222"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the musculoskeletal system or connective tissue"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1473673350",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1473673350"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the nervous system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1296093776",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1296093776"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental motor coordination disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental coordination disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Specific developmental disorder of motor function"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "'clumsy child' syndrome"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "developmental dyspraxia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Orofacial motor coordination disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/795122932"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "myofunctional disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/795122932"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hypofunctional motoric disorder of the orofacial muscles"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1805164559"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental gross motor coordination disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1056307245"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Specific developmental disorder of gross motor coordination"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1056307245"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental fine and graphological motor coordination disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1177986905"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Specific developmental disorder of fine and graphologic motor coordination"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1177986905"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental mouth motor coordination disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1677458075"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Specific developmental disorder of mouth motor coordination"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1677458075"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+Disorder Name: Dissociative neurological symptom disorder, with cognitive symptoms
+Disorder Code: 71229925
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dissociative neurological symptom disorder, with cognitive symptoms is characterised by impaired cognitive performance in memory, language or other cognitive domains that is internally inconsistent and not consistent with a recognised disease of the nervous system, a neurodevelopmental or neurocognitive disorder, other mental, behavioural or neurodevelopmental disorder, or another medical condition and does not occur exclusively during another dissociative disorder.
+
+Exclusions: Dissociative amnesia
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dissociative neurological symptom disorder, with cognitive symptoms is characterised by impaired cognitive performance in memory, language or other cognitive domains that is internally inconsistent and not consistent with a recognised disease of the nervous system, a neurodevelopmental or neurocognitive disorder, other mental, behavioural or neurodevelopmental disorder, or another medical condition and does not occur exclusively during another dissociative disorder.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Dissociative amnesia
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

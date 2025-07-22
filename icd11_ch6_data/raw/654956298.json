@@ -1,0 +1,176 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/654956298",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/33269655"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#654956298",
+  "code": "6A01.1",
+  "source": "http://id.who.int/icd/entity/654956298",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Developmental speech fluency disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Developmental speech fluency disorder is characterised by frequent or pervasive disruption of the normal rhythmic flow and rate of speech characterised by repetitions and prolongations in sounds, syllables, words, and phrases, as well as blocking and word avoidance or substitutions. The speech dysfluency is persistent over time. The onset of speech dysfluency occurs during the developmental period and speech fluency is markedly below what would be expected for age. Speech dysfluency results in significant impairment in social communication, personal, family, social, educational, occupational or other important areas of functioning. The speech dysfluency is not better accounted for by a Disorder of Intellectual Development, a Disease of the Nervous System, a sensory impairment, or a structural abnormality, or other speech or voice disorder."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Tic disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1894671574",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1894671574"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental speech fluency disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Speech fluency disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental neurogenic stuttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1224197673"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "childhood onset stuttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1224197673"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "developmental onset stuttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1224197673"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "stuttering during developmental period"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1224197673"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "childhood onset stammering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1224197673"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "developmental onset stammering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1224197673"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "stammering during developmental period"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1224197673"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental neurogenic non-syndromal stuttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/620587253"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "persistent developmental stuttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/620587253"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental neurogenic syndromal stuttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1529066364"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental neurogenic cluttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1725660631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "developmental onset cluttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1725660631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "cluttering during developmental period"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1725660631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "childhood onset cluttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1725660631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental neurogenic non-syndromal cluttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/616505365"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental neurogenic syndromal cluttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1809638030"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental neurogenic mixed stuttering and cluttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1191970395"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental neurogenic non-syndromal mixed stuttering and cluttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1173379440"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental neurogenic syndromal mixed stuttering and cluttering"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1680286462"
+    }
+  ]
+}

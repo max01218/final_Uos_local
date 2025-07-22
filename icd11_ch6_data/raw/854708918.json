@@ -1,0 +1,57 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/854708918",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/862918022"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#854708918",
+  "code": "6A01.22",
+  "source": "http://id.who.int/icd/entity/854708918",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Developmental language disorder with impairment of mainly pragmatic language"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Developmental language disorder with impairment of mainly pragmatic language is characterised by persistent and marked difficulties with the understanding and use of language in social contexts, for example making inferences, understanding verbal humour, and resolving ambiguous meaning. These difficulties arise during the developmental period, typically during early childhood, and cause significant limitations in the individual’s ability to communicate. Pragmatic language abilities are markedly below the expected level given the individual’s age and level of intellectual functioning, but the other components of receptive and expressive language are relatively intact. This qualifier should not be used if the pragmatic language impairment is better explained by Autism Spectrum Disorder or by impairments in other components of receptive or expressive language."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the nervous system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1296093776",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1296093776"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Selective mutism"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/167946871",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/167946871"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental language disorder with impairment of mainly pragmatic language"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Social pragmatic communication disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Social communication disorder"
+      }
+    }
+  ]
+}

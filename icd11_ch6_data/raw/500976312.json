@@ -1,0 +1,38 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/500976312",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/998231424"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#500976312",
+  "code": "6C40.40",
+  "source": "http://id.who.int/icd/entity/500976312",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/500976312/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1580466198"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Alcohol withdrawal, uncomplicated"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All diagnostic requirements for Alcohol Withdrawal are met and the withdrawal state is not accompanied by perceptual disturbances or seizures."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol withdrawal, uncomplicated"
+      }
+    }
+  ]
+}

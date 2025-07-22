@@ -1,0 +1,263 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/485378793",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/199053300"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#485378793",
+  "code": "6A61.1",
+  "source": "http://id.who.int/icd/entity/485378793",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/485378793/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/496273089",
+        "http://id.who.int/icd/release/11/2024-01/mms/1124422593"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder, current episode depressive, mild"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder, current episode depressive, mild is diagnosed when the definitional requirements for Bipolar type II disorder have been met and the current episode is depressive at a mild level of severity. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a mild depressive episode, the individual is usually distressed by the symptoms and has some difficulty in continuing to function in one or more domains (personal, family, social, educational, occupational, or other important domains). There are no delusions or hallucinations during the episode."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1974339883"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1417245351"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/265995002"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1870071891"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/261655064"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/285812978"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/804195002"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1325435121"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/115226047"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2030104112"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with melancholia and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/659228371"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1179006808"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/966323417"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/693269871"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/497537001"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1139549964"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptom, melancholia, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2097808708"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1564462336"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms and seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1307923638"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/841715513"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/53898499"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/247398596"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1902238539"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with melancholia and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/251480102"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with seasonal pattern and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1100909247"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1873948993"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1315261133"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms, melancholia, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/443690738"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2061493337"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/439379476"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/77710586"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, mild, additional symptoms unspecified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/977790642"
+    }
+  ]
+}

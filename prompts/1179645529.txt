@@ -1,0 +1,32 @@
+Disorder Name: Harmful pattern of use of cocaine, episodic
+Disorder Code: 1179645529
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+A pattern of episodic or intermittent cocaine use that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. The pattern of episodic cocaine use is evident over a period of at least 12 months. Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour related to cocaine intoxication on the part of the person to whom the diagnosis of Harmful pattern of use of cocaine applies.
+
+Exclusions: Episode of harmful use of cocaine; Cocaine dependence
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+A pattern of episodic or intermittent cocaine use that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. The pattern of episodic cocaine use is evident over a period of at least 12 months. Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour related to cocaine intoxication on the part of the person to whom the diagnosis of Harmful pattern of use of cocaine applies.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Episode of harmful use of cocaine
+• Should be differentiated from: Cocaine dependence
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,36 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2099676649",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1516623224"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1008636089",
+    "http://id.who.int/icd/release/11/2024-01/mms/1498766637",
+    "http://id.who.int/icd/release/11/2024-01/mms/771231188",
+    "http://id.who.int/icd/release/11/2024-01/mms/848893551",
+    "http://id.who.int/icd/release/11/2024-01/mms/2099676649/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2099676649",
+  "code": "6A03",
+  "source": "http://id.who.int/icd/entity/2099676649",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Developmental learning disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Developmental learning disorder is characterised by significant and persistent difficulties in learning academic skills, which may include reading, writing, or arithmetic. The individual’s performance in the affected academic skill(s) is markedly below what would be expected for chronological age and general level of intellectual functioning, and results in significant impairment in the individual’s academic or occupational functioning. Developmental learning disorder first manifests when academic skills are taught during the early school years. Developmental learning disorder is not due to a disorder of intellectual development, sensory impairment (vision or hearing), neurological or motor disorder, lack of availability of education, lack of proficiency in the language of academic instruction, or psychosocial adversity."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symbolic dysfunctions"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1875757565",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1875757565"
+    }
+  ]
+}

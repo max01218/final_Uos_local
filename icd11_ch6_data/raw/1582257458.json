@@ -1,0 +1,37 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1582257458",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2110604642"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1582257458",
+  "code": "6D35",
+  "source": "http://id.who.int/icd/entity/1582257458",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Other paraphilic disorder involving non-consenting individuals"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Other paraphilic disorder involving non-consenting individuals is characterised by a persistent and intense pattern of atypical sexual arousal — manifested by sexual thoughts, fantasies, urges, or behaviours — in which the focus of the arousal pattern involves others who are unwilling or unable to consent but that is not specifically described in any of the other named Paraphilic Disorders categories (e.g., arousal patterns involving corpses or animals). The individual must have acted on these thoughts, fantasies or urges or be markedly distressed by them. The disorder specifically excludes sexual behaviours that occur with the consent of the person or persons involved, provided that they are considered able to provide such consent."
+  },
+  "fullySpecifiedName": {
+    "@language": "en",
+    "@value": "Other specified paraphilic disorder involving non-consenting individuals"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Other paraphilic disorder involving non-consenting individuals"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Other specified paraphilic disorder involving non-consenting individuals"
+      }
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+Disorder Name: Episode of harmful use of synthetic cannabinoids
+Disorder Code: 912934263
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+An episode of use of a synthetic cannabinoid that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour due to synthetic cannabinoid intoxication on the part of the person to whom the diagnosis of single episode of harmful use applies. This diagnosis should not be made if the harm is attributed to a known pattern of synthetic cannabinoid use.
+
+Exclusions: Harmful pattern of use of synthetic cannabinoids; Synthetic cannabinoid dependence
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+An episode of use of a synthetic cannabinoid that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour due to synthetic cannabinoid intoxication on the part of the person to whom the diagnosis of single episode of harmful use applies. This diagnosis should not be made if the harm is attributed to a known pattern of synthetic cannabinoid use.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Harmful pattern of use of synthetic cannabinoids
+• Should be differentiated from: Synthetic cannabinoid dependence
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

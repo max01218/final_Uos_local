@@ -1,0 +1,26 @@
+Disorder Name: Impulse control disorder induced by unknown or unspecified psychoactive substance
+Disorder Code: 396542224
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Impulse control disorder induced by unknown or unspecified psychoactive substance is characterised by persistently repeated behaviours in which there is recurrent failure to resist an impulse, drive, or urge to perform an act that is rewarding to the person, at least in the short-term, despite longer-term harm either to the individual or to others (e.g., fire setting or stealing without apparent motive, repetitive sexual behaviour, aggressive outbursts) that develop during or soon after intoxication with or withdrawal from an unknown or unspecified psychoactive substance. The symptoms are not better explained by a primary mental disorder (e.g., an Impulse control disorder, a Disorder due to addictive behaviours), as might be the case if the impulse control disturbances preceded the onset of the unknown or unspecified psychoactive substance use, if the symptoms persist for a substantial period of time after cessation of use or withdrawal of the unknown or unspecified psychoactive substance, or if there is other evidence of a pre-existing primary mental disorder with impulse control symptoms (e.g., a history of prior episodes not associated with the unknown or unspecified psychoactive substance use).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Impulse control disorder induced by unknown or unspecified psychoactive substance is characterised by persistently repeated behaviours in which there is recurrent failure to resist an impulse, drive, or urge to perform an act that is rewarding to the person, at least in the short-term, despite longer-term harm either to the individual or to others (e.g., fire setting or stealing without apparent motive, repetitive sexual behaviour, aggressive outbursts) that develop during or soon after intoxication with or withdrawal from an unknown or unspecified psychoactive substance. The symptoms are not better explained by a primary mental disorder (e.g., an Impulse control disorder, a Disorder due to addictive behaviours), as might be the case if the impulse control disturbances preceded the onset of the unknown or unspecified psychoactive substance use, if the symptoms persist for a substantial period of time after cessation of use or withdrawal of the unknown or unspecified psychoactive substance, or if there is other evidence of a pre-existing primary mental disorder with impulse control symptoms (e.g., a history of prior episodes not associated with the unknown or unspecified psychoactive substance use).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

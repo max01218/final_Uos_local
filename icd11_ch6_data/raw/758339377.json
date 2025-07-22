@@ -1,0 +1,255 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/758339377",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/941859884"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#758339377",
+  "code": "6D10.1",
+  "source": "http://id.who.int/icd/entity/758339377",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/758339377/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1128733473"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Moderate personality disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All general diagnostic requirements for Personality Disorder are met. Disturbances affect multiple areas of personality functioning (e.g., identity or sense of self, ability to form intimate relationships, ability to control impulses and modulate behaviour). However, some areas of personality functioning may be relatively less affected. There are marked problems in most interpersonal relationships and the performance of most expected social and occupational roles is compromised to some degree. Relationships are likely to be characterised by conflict, avoidance, withdrawal, or extreme dependency (e.g., few friendships maintained, persistent conflict in work relationships and consequent occupational problems, romantic relationships characterised by serious disruption or inappropriate submissiveness). Specific manifestations of personality disturbance are generally of moderate severity. Moderate Personality Disorder is sometimes associated with harm to self or others, and is associated with marked impairment in personal, family, social, educational, occupational or other important areas of functioning, although functioning in circumscribed areas may be maintained."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/983442292"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent dissocial features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/806585376"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of disinhibition"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/817116270"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1070707260"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1697107175"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity and prominent dissocial features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/533543062"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity and prominent features of disinhibition"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1883013695"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/367472524"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/291158452"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent dissocial features and prominent features of disinhibition"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1527600337"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent dissocial features and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1333418841"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent dissocial features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/898674474"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of disinhibition and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1516311937"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of disinhibition and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1069201460"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/827784740"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity, prominent dissocial features and prominent features of disinhibition"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1004230984"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity, prominent dissocial features and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/609071356"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity, prominent dissocial features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/784340880"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity, prominent features of disinhibition and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1868520999"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity, prominent features of disinhibition and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/621327172"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/830454986"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent dissocial features, prominent features of disinhibition and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1268074683"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent dissocial features, prominent features of disinhibition and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/610595346"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent dissocial features, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1103060903"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of disinhibition, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1113392516"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity, prominent dissocial features, prominent features of disinhibition and prominent anankastic features"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1221632752"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity, prominent dissocial features, prominent features of disinhibition and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1464224604"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity, prominent dissocial features, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1573645368"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity, prominent features of disinhibition, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1500936712"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent dissocial features, prominent features of disinhibition, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1018025917"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate personality disorder with prominent features of negative affectivity, prominent dissocial features, prominent features of disinhibition, prominent anankastic features and prominent features of detachment"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1744867900"
+    }
+  ]
+}

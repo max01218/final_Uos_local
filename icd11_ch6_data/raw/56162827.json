@@ -1,0 +1,43 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/56162827",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1336943699"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#56162827",
+  "code": "6B01",
+  "source": "http://id.who.int/icd/entity/56162827",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Panic disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Panic disorder is characterised by recurrent unexpected panic attacks that are not restricted to particular stimuli or situations. Panic attacks are discrete episodes of intense fear or apprehension accompanied by the rapid and concurrent onset of several characteristic symptoms (e.g. palpitations or increased heart rate, sweating, trembling, shortness of breath, chest pain, dizziness or lightheadedness, chills, hot flushes, fear of imminent death). In addition, panic disorder is characterised by persistent concern about the recurrence or significance of panic attacks, or behaviours intended to avoid their recurrence, that results in significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. The symptoms are not a manifestation of another medical condition and are not due to the effects of a substance or medication on the central nervous system."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Panic attack"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1707067746",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1707067746"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Panic disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "episodic paroxysmal anxiety disorder"
+      }
+    }
+  ]
+}

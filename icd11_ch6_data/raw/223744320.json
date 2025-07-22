@@ -1,0 +1,37 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/223744320",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/258484393",
+    "http://id.who.int/icd/release/11/2024-01/mms/770439884",
+    "http://id.who.int/icd/release/11/2024-01/mms/939957586",
+    "http://id.who.int/icd/release/11/2024-01/mms/775270311",
+    "http://id.who.int/icd/release/11/2024-01/mms/223744320/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/223744320/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#223744320",
+  "code": "20",
+  "source": "http://id.who.int/icd/entity/223744320",
+  "classKind": "chapter",
+  "title": {
+    "@language": "en",
+    "@value": "Developmental anomalies"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "This chapter includes conditions caused by failure of a particular body site or body system to develop correctly during the antenatal period."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Inborn errors of metabolism"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/733825440",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/733825440"
+    }
+  ]
+}

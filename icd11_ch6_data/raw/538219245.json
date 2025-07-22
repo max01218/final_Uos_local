@@ -1,0 +1,56 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/538219245",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/601226803"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1733810838",
+    "http://id.who.int/icd/release/11/2024-01/mms/1198710764",
+    "http://id.who.int/icd/release/11/2024-01/mms/2039807396",
+    "http://id.who.int/icd/release/11/2024-01/mms/856664761"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#538219245",
+  "code": "6C4F.7",
+  "source": "http://id.who.int/icd/entity/538219245",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/538219245/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1121505208",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583329300",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/538219245/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1729466996",
+        "http://id.who.int/icd/release/11/2024-01/mms/1719901309",
+        "http://id.who.int/icd/release/11/2024-01/mms/853273682"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Certain multiple specified psychoactive substances-induced mental or behavioural disorders"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain multiple specified psychoactive substances-induced mental or behavioural disorders"
+      }
+    }
+  ]
+}

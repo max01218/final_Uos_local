@@ -1,0 +1,32 @@
+Disorder Name: Mental, behavioural or neurodevelopmental disorders
+Disorder Code: 334423054
+Code Range: Not specified
+Class Kind: chapter
+
+Standard Definition:
+Mental, behavioural and neurodevelopmental disorders are syndromes characterised by clinically significant disturbance in an individual's cognition, emotional regulation, or behaviour that reflects a dysfunction in the psychological, biological, or developmental processes that underlie mental and behavioural functioning. These disturbances are usually associated with distress or impairment in personal, family, social, educational, occupational, or other important areas of functioning.
+
+Exclusions: Acute stress reaction; Uncomplicated bereavement
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Mental, behavioural and neurodevelopmental disorders are syndromes characterised by clinically significant disturbance in an individual's cognition, emotional regulation, or behaviour that reflects a dysfunction in the psychological, biological, or developmental processes that underlie mental and behavioural functioning. These disturbances are usually associated with distress or impairment in personal, family, social, educational, occupational, or other important areas of functioning.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Acute stress reaction
+• Should be differentiated from: Uncomplicated bereavement
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

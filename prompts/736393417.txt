@@ -1,0 +1,26 @@
+Disorder Name: Psychomotor symptoms in primary psychotic disorders
+Disorder Code: 736393417
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Psychomotor symptoms in primary psychotic disorders include psychomotor agitation or excessive motor activity, usually manifested by purposeless behaviours such as fidgeting, shifting, fiddling, inability to sit or stand still, wringing of the hands, psychomotor retardation, or a visible generalised slowing of movements and speech, and catatonic symptoms such as excitement, posturing, waxy flexibility, negativism, mutism, or stupor. The rating should be made based on the severity of psychomotor symptoms during the past week.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Psychomotor symptoms in primary psychotic disorders include psychomotor agitation or excessive motor activity, usually manifested by purposeless behaviours such as fidgeting, shifting, fiddling, inability to sit or stand still, wringing of the hands, psychomotor retardation, or a visible generalised slowing of movements and speech, and catatonic symptoms such as excitement, posturing, waxy flexibility, negativism, mutism, or stupor. The rating should be made based on the severity of psychomotor symptoms during the past week.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

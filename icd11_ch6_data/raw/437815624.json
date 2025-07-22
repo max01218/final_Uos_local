@@ -1,0 +1,46 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/437815624",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1516623224"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/120443468",
+    "http://id.who.int/icd/release/11/2024-01/mms/767360910",
+    "http://id.who.int/icd/release/11/2024-01/mms/1283290231",
+    "http://id.who.int/icd/release/11/2024-01/mms/1477082111",
+    "http://id.who.int/icd/release/11/2024-01/mms/1686726595",
+    "http://id.who.int/icd/release/11/2024-01/mms/437815624/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/437815624/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#437815624",
+  "code": "6A02",
+  "source": "http://id.who.int/icd/entity/437815624",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Autism spectrum disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Autism spectrum disorder is characterised by persistent deficits in the ability to initiate and to sustain reciprocal social interaction and social communication, and by a range of restricted, repetitive, and inflexible patterns of behaviour, interests or activities that are clearly atypical or excessive for the individual’s age and sociocultural context. The onset of the disorder occurs during the developmental period, typically in early childhood, but symptoms may not become fully manifest until later, when social demands exceed limited capacities. Deficits are sufficiently severe to cause impairment in personal, family, social, educational, occupational or other important areas of functioning and are usually a pervasive feature of the individual’s functioning observable in all settings, although they may vary according to social, educational, or other context. Individuals along the spectrum exhibit a full range of intellectual functioning and language abilities."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Autistic disorder"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Rett syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/201200685",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/201200685"
+    }
+  ]
+}

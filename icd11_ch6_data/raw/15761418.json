@@ -1,0 +1,51 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/15761418",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1456478153"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#15761418",
+  "code": "6A60.F",
+  "source": "http://id.who.int/icd/entity/15761418",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/15761418/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798",
+        "http://id.who.int/icd/release/11/2024-01/mms/567063364"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder, currently in full remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder, currently in full remission is diagnosed when the full definitional requirements for Bipolar I disorder have been met in the past but there are no longer any significant mood symptoms."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, currently in full remission"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bipolar affective disorder, currently in remission"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "remission in bipolar affective disorder"
+      }
+    }
+  ]
+}

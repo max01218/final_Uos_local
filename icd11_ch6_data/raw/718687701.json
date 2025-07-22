@@ -1,0 +1,18 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/718687701",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/353229912"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#718687701",
+  "code": "26",
+  "source": "http://id.who.int/icd/entity/718687701",
+  "classKind": "chapter",
+  "title": {
+    "@language": "en",
+    "@value": "Supplementary Chapter Traditional Medicine Conditions"
+  }
+}

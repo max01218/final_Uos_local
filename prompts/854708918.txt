@@ -1,0 +1,32 @@
+Disorder Name: Developmental language disorder with impairment of mainly pragmatic language
+Disorder Code: 854708918
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Developmental language disorder with impairment of mainly pragmatic language is characterised by persistent and marked difficulties with the understanding and use of language in social contexts, for example making inferences, understanding verbal humour, and resolving ambiguous meaning. These difficulties arise during the developmental period, typically during early childhood, and cause significant limitations in the individual’s ability to communicate. Pragmatic language abilities are markedly below the expected level given the individual’s age and level of intellectual functioning, but the other components of receptive and expressive language are relatively intact. This qualifier should not be used if the pragmatic language impairment is better explained by Autism Spectrum Disorder or by impairments in other components of receptive or expressive language.
+
+Exclusions: Diseases of the nervous system; Selective mutism
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Developmental language disorder with impairment of mainly pragmatic language is characterised by persistent and marked difficulties with the understanding and use of language in social contexts, for example making inferences, understanding verbal humour, and resolving ambiguous meaning. These difficulties arise during the developmental period, typically during early childhood, and cause significant limitations in the individual’s ability to communicate. Pragmatic language abilities are markedly below the expected level given the individual’s age and level of intellectual functioning, but the other components of receptive and expressive language are relatively intact. This qualifier should not be used if the pragmatic language impairment is better explained by Autism Spectrum Disorder or by impairments in other components of receptive or expressive language.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Diseases of the nervous system
+• Should be differentiated from: Selective mutism
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

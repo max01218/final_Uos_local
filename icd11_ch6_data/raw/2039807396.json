@@ -1,0 +1,76 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2039807396",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/538219245"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2039807396",
+  "code": "6C4F.72",
+  "source": "http://id.who.int/icd/entity/2039807396",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2039807396/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1076458680",
+        "http://id.who.int/icd/release/11/2024-01/mms/448177412",
+        "http://id.who.int/icd/release/11/2024-01/mms/1864983449",
+        "http://id.who.int/icd/release/11/2024-01/mms/543245955"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2039807396/postcoordinationScale/chemicalAgent",
+      "axisName": "http://id.who.int/icd/schema/chemicalAgent",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1991751314",
+        "http://id.who.int/icd/release/11/2024-01/mms/36740588"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2039807396/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1121505208",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583329300",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2039807396/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1729466996",
+        "http://id.who.int/icd/release/11/2024-01/mms/1719901309",
+        "http://id.who.int/icd/release/11/2024-01/mms/853273682"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Obsessive-compulsive or related disorder induced by multiple specified psychoactive substances"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Obsessive-compulsive or related disorder induced by multiple specified psychoactive substances is characterised by either repetitive intrusive thoughts or preoccupations, normally associated with anxiety and typically accompanied by repetitive behaviours performed in response, or by recurrent and habitual actions directed at the integument (e.g., hair pulling, skin picking) that develop during or soon after intoxication with or withdrawal from multiple specified psychoactive substances. The intensity or duration of the symptoms is substantially in excess of analogous disturbances that are characteristic of intoxication with or withdrawal from the multiple specified psychoactive substances. The amount and duration of the multiple specified psychoactive substances use must be capable of producing obsessive-compulsive or related symptoms. The symptoms are not better explained by a primary mental disorder (in particular an Obsessive-compulsive or related disorder), as might be the case if the symptoms preceded the onset of the use of multiple specified psychoactive substances, if the symptoms persist for a substantial period of time after cessation of the multiple specified psychoactive substance use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with obsessive-compulsive or related symptoms (e.g., a history of prior episodes not associated with multiple specified psychoactive substances use)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Obsessive-compulsive or related disorder induced by multiple specified psychoactive substances"
+      }
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/310393530",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1487528823",
+    "http://id.who.int/icd/release/11/2024-01/mms/719572464",
+    "http://id.who.int/icd/release/11/2024-01/mms/310393530/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/310393530/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#310393530",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/310393530",
+  "classKind": "block",
+  "blockId": "BlockL1-6C9",
+  "codeRange": "6C90-6C9Z",
+  "title": {
+    "@language": "en",
+    "@value": "Disruptive behaviour or dissocial disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disruptive behaviour and dissocial disorders are characterised by persistent behaviour problems that range from markedly and persistently defiant, disobedient, provocative or spiteful (i.e., disruptive) behaviours to those that persistently violate the basic rights of others or major age-appropriate societal norms, rules, or laws (i.e., dissocial). Onset of Disruptive and dissocial disorders is commonly, though not always, during childhood."
+  }
+}

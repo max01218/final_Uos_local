@@ -1,0 +1,51 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1336943699",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1712535455",
+    "http://id.who.int/icd/release/11/2024-01/mms/56162827",
+    "http://id.who.int/icd/release/11/2024-01/mms/530592394",
+    "http://id.who.int/icd/release/11/2024-01/mms/239513569",
+    "http://id.who.int/icd/release/11/2024-01/mms/2062286624",
+    "http://id.who.int/icd/release/11/2024-01/mms/830200631",
+    "http://id.who.int/icd/release/11/2024-01/mms/167946871",
+    "http://id.who.int/icd/release/11/2024-01/mms/1372161015",
+    "http://id.who.int/icd/release/11/2024-01/mms/1336943699/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1336943699/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1336943699",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/1336943699",
+  "classKind": "block",
+  "blockId": "BlockL1-6B0",
+  "codeRange": "6B00-6B0Z",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hypochondriasis"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/675329566",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/675329566"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary anxiety syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2131412196",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2131412196"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Anxiety or fear-related disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Anxiety and fear-related disorders are characterised by excessive fear and anxiety and related behavioural disturbances, with symptoms that are severe enough to result in significant distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. Fear and anxiety are closely related phenomena; fear represents a reaction to perceived imminent threat in the present, whereas anxiety is more future-oriented, referring to perceived anticipated threat. A key differentiating feature among the Anxiety and fear-related disorders are disorder-specific foci of apprehension, that is, the stimulus or situation that triggers the fear or anxiety. The clinical presentation of Anxiety and fear-related disorders typically includes specific associated cognitions that can assist in differentiating among the disorders by clarifying the focus of apprehension."
+  }
+}

@@ -1,0 +1,26 @@
+Disorder Name: Bipolar type I disorder, current episode mixed, with psychotic symptoms
+Disorder Code: 167688690
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Bipolar type I disorder, current episode mixed, with psychotic symptoms is diagnosed when the definitional requirements for Bipolar type I disorder are met and the current episode is mixed and there are delusions or hallucinations present during the episode. A mixed episode is characterised by the presence of several prominent manic and several prominent depressive symptoms consistent with those observed in manic episodes and depressive episodes, which either occur simultaneously or alternate very rapidly (from day to day or within the same day). Symptoms must include an altered mood state consistent with a manic and/or depressive episode (i.e., depressed, dysphoric, euphoric or expansive mood), and be present most of the day, nearly every day, during a period of at least 2 weeks, unless shortened by a treatment intervention. If the individual has experienced Manic or Mixed Episodes in the past, a duration of 2 weeks is not required in order to diagnose a current episode if all other diagnostic requirements are met.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Bipolar type I disorder, current episode mixed, with psychotic symptoms is diagnosed when the definitional requirements for Bipolar type I disorder are met and the current episode is mixed and there are delusions or hallucinations present during the episode. A mixed episode is characterised by the presence of several prominent manic and several prominent depressive symptoms consistent with those observed in manic episodes and depressive episodes, which either occur simultaneously or alternate very rapidly (from day to day or within the same day). Symptoms must include an altered mood state consistent with a manic and/or depressive episode (i.e., depressed, dysphoric, euphoric or expansive mood), and be present most of the day, nearly every day, during a period of at least 2 weeks, unless shortened by a treatment intervention. If the individual has experienced Manic or Mixed Episodes in the past, a duration of 2 weeks is not required in order to diagnose a current episode if all other diagnostic requirements are met.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,65 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1194756772",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1563440232"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1851882275",
+    "http://id.who.int/icd/release/11/2024-01/mms/187348663",
+    "http://id.who.int/icd/release/11/2024-01/mms/419823765",
+    "http://id.who.int/icd/release/11/2024-01/mms/2139612744",
+    "http://id.who.int/icd/release/11/2024-01/mms/449588190",
+    "http://id.who.int/icd/release/11/2024-01/mms/1905765233",
+    "http://id.who.int/icd/release/11/2024-01/mms/1110405006",
+    "http://id.who.int/icd/release/11/2024-01/mms/1763883082",
+    "http://id.who.int/icd/release/11/2024-01/mms/1194756772/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1194756772/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1194756772",
+  "code": "6A71",
+  "source": "http://id.who.int/icd/entity/1194756772",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder is characterised by a history of at least two depressive episodes separated by at least several months without significant mood disturbance. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. There have never been any prior manic, hypomanic, or mixed episodes, which would indicate the presence of a Bipolar disorder."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "seasonal depressive disorder"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Adjustment disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/264310751",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/264310751"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar or related disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/613065957",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/613065957"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/578635574",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/578635574"
+    }
+  ]
+}

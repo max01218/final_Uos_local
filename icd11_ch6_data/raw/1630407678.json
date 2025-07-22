@@ -1,0 +1,29 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/879154182",
+    "http://id.who.int/icd/release/11/2024-01/mms/944754984",
+    "http://id.who.int/icd/release/11/2024-01/mms/2009008947",
+    "http://id.who.int/icd/release/11/2024-01/mms/531713107",
+    "http://id.who.int/icd/release/11/2024-01/mms/1167133946",
+    "http://id.who.int/icd/release/11/2024-01/mms/1158485193",
+    "http://id.who.int/icd/release/11/2024-01/mms/1844086508",
+    "http://id.who.int/icd/release/11/2024-01/mms/264268169"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1630407678",
+  "code": "02",
+  "source": "http://id.who.int/icd/entity/1630407678",
+  "classKind": "chapter",
+  "title": {
+    "@language": "en",
+    "@value": "Neoplasms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "An abnormal or uncontrolled cellular proliferation which is not coordinated with an organism's requirements for normal tissue growth, replacement or repair."
+  }
+}

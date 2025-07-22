@@ -1,0 +1,74 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/794423031",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#794423031",
+  "code": "6A25.5",
+  "source": "http://id.who.int/icd/entity/794423031",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/794423031/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/681697550",
+        "http://id.who.int/icd/release/11/2024-01/mms/761934509"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/794423031/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1683919430",
+        "http://id.who.int/icd/release/11/2024-01/mms/106339515",
+        "http://id.who.int/icd/release/11/2024-01/mms/18178000",
+        "http://id.who.int/icd/release/11/2024-01/mms/284410555",
+        "http://id.who.int/icd/release/11/2024-01/mms/1974996783"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Cognitive symptoms in primary psychotic disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Cognitive symptoms in primary psychotic disorders refer to cognitive impairment in any of the following domains: speed of processing, attention/concentration, orientation, judgment, abstraction, verbal or visual learning, and working memory. The cognitive impairment is not attributable to a neurodevelopmental disorder, a delirium or other neurocognitive disorder, or the direct effects of a substance or medication on the central nervous system, including withdrawal effects. Ideally, use of this category should be based on the results of locally validated, standardized neuropsychological assessments, although such measures may not be available in all settings. The rating should be made based on the severity of cognitive symptoms during the past week."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Neurocognitive disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/213458094",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/213458094"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Neurodevelopmental disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1516623224",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1516623224"
+    }
+  ],
+  "codingNote": {
+    "@language": "en",
+    "@value": "These categories should never be used in primary coding. The codes are provided for use as supplementary or additional codes when it is desired to identify the presence of these symptoms in primary psychotic disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cognitive symptoms in primary psychotic disorders"
+      }
+    }
+  ]
+}

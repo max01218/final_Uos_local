@@ -1,0 +1,44 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/441538",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/268445189"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#441538",
+  "code": "6C4A.4",
+  "source": "http://id.who.int/icd/entity/441538",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/441538/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1699574100"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Nicotine withdrawal"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Nicotine withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of nicotine (typically used as a constituent of tobacco) in individuals who have developed Nicotine dependence or have used nicotine for a prolonged period or in large amounts. Presenting features of Nicotine withdrawal may include dysphoric or depressed mood, insomnia, irritability, anger, anxiety, difficulty concentrating, restlessness, bradycardia, increased appetite, and craving for tobacco (or other nicotine-containing products). Other physical symptoms may include increased cough and mouth ulceration."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Nicotine withdrawal"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "tobacco withdrawal state"
+      }
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1252561403",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/31898480"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1935765699",
+    "http://id.who.int/icd/release/11/2024-01/mms/1290474459",
+    "http://id.who.int/icd/release/11/2024-01/mms/1252561403/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1252561403",
+  "code": "6C48.1",
+  "source": "http://id.who.int/icd/entity/1252561403",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1252561403/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1115271910"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1252561403/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1648213213",
+        "http://id.who.int/icd/release/11/2024-01/mms/1569910443"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Harmful pattern of use of caffeine"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A pattern of caffeine use that has caused clinically significant harm to a person’s physical or mental health or in which caffeine-induced behaviour has caused clinically significant harm to the health of other people. The pattern of caffeine use is evident over a period of at least 12 months if use is episodic and at least one month if use is continuous (i.e., daily or almost daily). Harm may be caused by the intoxicating effects of caffeine, the direct or secondary toxic effects on body organs and systems, or a harmful route of administration."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of caffeine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/207246302",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/207246302"
+    }
+  ]
+}

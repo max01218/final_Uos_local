@@ -1,0 +1,67 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2143971168",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1414319298"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2026388610",
+    "http://id.who.int/icd/release/11/2024-01/mms/1490335276",
+    "http://id.who.int/icd/release/11/2024-01/mms/1981674818",
+    "http://id.who.int/icd/release/11/2024-01/mms/1749085654",
+    "http://id.who.int/icd/release/11/2024-01/mms/2143971168/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2143971168",
+  "code": "6C4G.2",
+  "source": "http://id.who.int/icd/entity/2143971168",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2143971168/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/131545543",
+        "http://id.who.int/icd/release/11/2024-01/mms/1155529213",
+        "http://id.who.int/icd/release/11/2024-01/mms/595694101"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2143971168/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1870346724",
+        "http://id.who.int/icd/release/11/2024-01/mms/219731531"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Unknown or unspecified psychoactive substance dependence"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Unknown or unspecified psychoactive substance dependence is a disorder of regulation of use of an unknown or unspecified substance arising from repeated or continuous use of the substance. The characteristic feature is a strong internal drive to use the unknown or unspecified substance, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use the unknown or unspecified substance. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if use of the unknown or unspecified substance is continuous (daily or almost daily) for at least 3 months."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of unknown or unspecified psychoactive substances"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/272358857",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/272358857"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of unknown or unspecified psychoactive substance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/341458101",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/341458101"
+    }
+  ]
+}

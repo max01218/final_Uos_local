@@ -1,0 +1,45 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1608456538",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1069443471"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1608456538",
+  "code": "6B60.3",
+  "source": "http://id.who.int/icd/entity/1608456538",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with other sensory disturbance"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with other sensory disturbance is characterised by sensory symptoms not identified in other specific categories in this grouping such as numbness, tightness, tingling, burning, pain, or other symptoms related to touch, smell, taste, balance, proprioception, kinesthesia, or thermoception. The symptoms are not consistent with a recognised disease of the nervous system, other mental, behavioural or neurodevelopmental disorder, or other medical condition and do not occur exclusively during another dissociative disorder."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative neurological symptom disorder, with other sensory disturbance"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional neurological symptom disorder, with alteration of sensation"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional sensory disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional neurological symptom disorder, with other sensory disturbance"
+      }
+    }
+  ]
+}

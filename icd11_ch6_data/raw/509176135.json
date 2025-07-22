@@ -1,0 +1,139 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/509176135",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/487787932"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#509176135",
+  "code": "6C4E.71",
+  "source": "http://id.who.int/icd/entity/509176135",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/509176135/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/16341703",
+        "http://id.who.int/icd/release/11/2024-01/mms/373236638",
+        "http://id.who.int/icd/release/11/2024-01/mms/1756699061",
+        "http://id.who.int/icd/release/11/2024-01/mms/1891241424",
+        "http://id.who.int/icd/release/11/2024-01/mms/1193684303",
+        "http://id.who.int/icd/release/11/2024-01/mms/1853123588",
+        "http://id.who.int/icd/release/11/2024-01/mms/534456613",
+        "http://id.who.int/icd/release/11/2024-01/mms/428256012",
+        "http://id.who.int/icd/release/11/2024-01/mms/33615934",
+        "http://id.who.int/icd/release/11/2024-01/mms/648146092",
+        "http://id.who.int/icd/release/11/2024-01/mms/808405469",
+        "http://id.who.int/icd/release/11/2024-01/mms/1870704429",
+        "http://id.who.int/icd/release/11/2024-01/mms/1732158747",
+        "http://id.who.int/icd/release/11/2024-01/mms/1416993969",
+        "http://id.who.int/icd/release/11/2024-01/mms/2121804732",
+        "http://id.who.int/icd/release/11/2024-01/mms/2043582775",
+        "http://id.who.int/icd/release/11/2024-01/mms/1960627774",
+        "http://id.who.int/icd/release/11/2024-01/mms/1076458680",
+        "http://id.who.int/icd/release/11/2024-01/mms/448177412",
+        "http://id.who.int/icd/release/11/2024-01/mms/1864983449",
+        "http://id.who.int/icd/release/11/2024-01/mms/543245955",
+        "http://id.who.int/icd/release/11/2024-01/mms/2017927415",
+        "http://id.who.int/icd/release/11/2024-01/mms/511194385"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/509176135/postcoordinationScale/chemicalAgent",
+      "axisName": "http://id.who.int/icd/schema/chemicalAgent",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1195253264",
+        "http://id.who.int/icd/release/11/2024-01/mms/389939341",
+        "http://id.who.int/icd/release/11/2024-01/mms/1991751314",
+        "http://id.who.int/icd/release/11/2024-01/mms/1827287154",
+        "http://id.who.int/icd/release/11/2024-01/mms/1113109550",
+        "http://id.who.int/icd/release/11/2024-01/mms/1862208036",
+        "http://id.who.int/icd/release/11/2024-01/mms/1542540606",
+        "http://id.who.int/icd/release/11/2024-01/mms/296427981",
+        "http://id.who.int/icd/release/11/2024-01/mms/746007578",
+        "http://id.who.int/icd/release/11/2024-01/mms/664871802",
+        "http://id.who.int/icd/release/11/2024-01/mms/727830764",
+        "http://id.who.int/icd/release/11/2024-01/mms/976232433",
+        "http://id.who.int/icd/release/11/2024-01/mms/1921951542",
+        "http://id.who.int/icd/release/11/2024-01/mms/1805108872",
+        "http://id.who.int/icd/release/11/2024-01/mms/172311508",
+        "http://id.who.int/icd/release/11/2024-01/mms/571578988",
+        "http://id.who.int/icd/release/11/2024-01/mms/1756578469",
+        "http://id.who.int/icd/release/11/2024-01/mms/115547993",
+        "http://id.who.int/icd/release/11/2024-01/mms/698607095",
+        "http://id.who.int/icd/release/11/2024-01/mms/965319250",
+        "http://id.who.int/icd/release/11/2024-01/mms/1934990124",
+        "http://id.who.int/icd/release/11/2024-01/mms/1042761116",
+        "http://id.who.int/icd/release/11/2024-01/mms/96118239",
+        "http://id.who.int/icd/release/11/2024-01/mms/718197645",
+        "http://id.who.int/icd/release/11/2024-01/mms/745681561",
+        "http://id.who.int/icd/release/11/2024-01/mms/1448319348",
+        "http://id.who.int/icd/release/11/2024-01/mms/1454474246",
+        "http://id.who.int/icd/release/11/2024-01/mms/1408767977",
+        "http://id.who.int/icd/release/11/2024-01/mms/1977648359",
+        "http://id.who.int/icd/release/11/2024-01/mms/2098110584",
+        "http://id.who.int/icd/release/11/2024-01/mms/1470497382",
+        "http://id.who.int/icd/release/11/2024-01/mms/1649716320",
+        "http://id.who.int/icd/release/11/2024-01/mms/681386363",
+        "http://id.who.int/icd/release/11/2024-01/mms/496690447",
+        "http://id.who.int/icd/release/11/2024-01/mms/640888715",
+        "http://id.who.int/icd/release/11/2024-01/mms/1562625296",
+        "http://id.who.int/icd/release/11/2024-01/mms/236844788",
+        "http://id.who.int/icd/release/11/2024-01/mms/1743729319",
+        "http://id.who.int/icd/release/11/2024-01/mms/460173860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1114883330",
+        "http://id.who.int/icd/release/11/2024-01/mms/431574163",
+        "http://id.who.int/icd/release/11/2024-01/mms/1135266526",
+        "http://id.who.int/icd/release/11/2024-01/mms/1323532426",
+        "http://id.who.int/icd/release/11/2024-01/mms/1582263723",
+        "http://id.who.int/icd/release/11/2024-01/mms/167980365",
+        "http://id.who.int/icd/release/11/2024-01/mms/178447424",
+        "http://id.who.int/icd/release/11/2024-01/mms/717123218",
+        "http://id.who.int/icd/release/11/2024-01/mms/2038455670",
+        "http://id.who.int/icd/release/11/2024-01/mms/2108729162",
+        "http://id.who.int/icd/release/11/2024-01/mms/682932429"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/509176135/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/327038878",
+        "http://id.who.int/icd/release/11/2024-01/mms/2022008391"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/509176135/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1835736371",
+        "http://id.who.int/icd/release/11/2024-01/mms/754209924",
+        "http://id.who.int/icd/release/11/2024-01/mms/1934475925"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Anxiety disorder induced by other specified psychoactive substance"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Anxiety disorder induced by other specified psychoactive substance is characterised by anxiety symptoms (e.g., apprehension or worry, fear, physiological symptoms of excessive autonomic arousal, avoidance behaviour) that develop during or soon after intoxication with or withdrawal from a specified psychoactive substance. The intensity or duration of the symptoms is substantially in excess of anxiety symptoms that are characteristic of intoxication with or withdrawal from a specified psychoactive substance. The amount and duration of use of the specified psychoactive substance must be capable of producing anxiety symptoms. The symptoms are not better explained by a primary mental disorder (e.g., an Anxiety and fear-related disorder, a Depressive disorder with prominent anxiety symptoms), as might be the case if the anxiety symptoms preceded the onset of the use of the specified psychoactive substance, if the symptoms persist for a substantial period of time after cessation of the use of the specified psychoactive substance or withdrawal from the specified psychoactive substance, or if there is other evidence of a pre-existing primary mental disorder with anxiety symptoms (e.g., a history of prior episodes not associated with the use of the specified psychoactive substance)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anxiety disorder induced by other specified psychoactive substance"
+      }
+    }
+  ]
+}

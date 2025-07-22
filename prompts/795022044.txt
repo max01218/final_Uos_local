@@ -1,0 +1,26 @@
+Disorder Name: Dementia due to Alzheimer disease
+Disorder Code: 795022044
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dementia due to Alzheimer disease is the most common form of dementia. Onset is insidious with memory impairment typically reported as the initial presenting complaint. The characteristic course is a slow but steady decline from a previous level of cognitive functioning with impairment in additional cognitive domains (such as executive functions, attention, language, social cognition and judgment, psychomotor speed, visuoperceptual or visuospatial abilities) emerging with disease progression. Dementia due to Alzheimer disease may be accompanied by mental and behavioural symptoms such as depressed mood and apathy in the initial stages of the disease and may be accompanied by psychotic symptoms, irritability, aggression, confusion, abnormalities of gait and mobility, and seizures at later stages. Positive genetic testing, family history and gradual cognitive decline are suggestive of Dementia due to Alzheimer disease.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia due to Alzheimer disease is the most common form of dementia. Onset is insidious with memory impairment typically reported as the initial presenting complaint. The characteristic course is a slow but steady decline from a previous level of cognitive functioning with impairment in additional cognitive domains (such as executive functions, attention, language, social cognition and judgment, psychomotor speed, visuoperceptual or visuospatial abilities) emerging with disease progression. Dementia due to Alzheimer disease may be accompanied by mental and behavioural symptoms such as depressed mood and apathy in the initial stages of the disease and may be accompanied by psychotic symptoms, irritability, aggression, confusion, abnormalities of gait and mobility, and seizures at later stages. Positive genetic testing, family history and gradual cognitive decline are suggestive of Dementia due to Alzheimer disease.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

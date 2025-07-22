@@ -1,0 +1,36 @@
+Disorder Name: Secondary mood syndrome, with manic symptoms
+Disorder Code: 880462195
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+A syndrome characterised by the presence of prominent manic symptoms such as elevated, euphoric, irritable, or expansive mood states, rapid changes among different mood states (i.e., mood lability), or increased energy or activity that is judged to be a direct pathophysiological consequence of a health condition not classified under mental and behavioural disorders based on evidence from the history, physical examination, or laboratory findings.
+
+Inclusions: mood syndrome due to disorders or diseases not classified under Mental and behavioural disorders, with manic symptoms
+Exclusions: Adjustment disorder; Delirium
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+A syndrome characterised by the presence of prominent manic symptoms such as elevated, euphoric, irritable, or expansive mood states, rapid changes among different mood states (i.e., mood lability), or increased energy or activity that is judged to be a direct pathophysiological consequence of a health condition not classified under mental and behavioural disorders based on evidence from the history, physical examination, or laboratory findings.
+
+Included Manifestations:
+• mood syndrome due to disorders or diseases not classified under Mental and behavioural disorders, with manic symptoms
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Adjustment disorder
+• Should be differentiated from: Delirium
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

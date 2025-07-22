@@ -1,0 +1,72 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1954860287",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/390325614"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/890653406",
+    "http://id.who.int/icd/release/11/2024-01/mms/1506172532"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1954860287",
+  "code": "6C44.7",
+  "source": "http://id.who.int/icd/entity/1954860287",
+  "classKind": "category",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Amnestic disorder due to use of sedatives, hypnotics or anxiolytics"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/503912444",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/503912444"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia due to use of sedatives, hypnotics or anxiolytics"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1035710165",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1035710165"
+    }
+  ],
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1954860287/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1314209089",
+        "http://id.who.int/icd/release/11/2024-01/mms/989359552",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1954860287/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/475820054",
+        "http://id.who.int/icd/release/11/2024-01/mms/723448021",
+        "http://id.who.int/icd/release/11/2024-01/mms/1605607466"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Certain specified sedatives, hypnotics or anxiolytic-induced mental or behavioural disorders"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain specified sedatives, hypnotics or anxiolytic-induced mental or behavioural disorders"
+      }
+    }
+  ]
+}

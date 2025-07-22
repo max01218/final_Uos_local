@@ -1,0 +1,26 @@
+Disorder Name: Other paraphilic disorder involving non-consenting individuals
+Disorder Code: 1582257458
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Other paraphilic disorder involving non-consenting individuals is characterised by a persistent and intense pattern of atypical sexual arousal — manifested by sexual thoughts, fantasies, urges, or behaviours — in which the focus of the arousal pattern involves others who are unwilling or unable to consent but that is not specifically described in any of the other named Paraphilic Disorders categories (e.g., arousal patterns involving corpses or animals). The individual must have acted on these thoughts, fantasies or urges or be markedly distressed by them. The disorder specifically excludes sexual behaviours that occur with the consent of the person or persons involved, provided that they are considered able to provide such consent.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Other paraphilic disorder involving non-consenting individuals is characterised by a persistent and intense pattern of atypical sexual arousal — manifested by sexual thoughts, fantasies, urges, or behaviours — in which the focus of the arousal pattern involves others who are unwilling or unable to consent but that is not specifically described in any of the other named Paraphilic Disorders categories (e.g., arousal patterns involving corpses or animals). The individual must have acted on these thoughts, fantasies or urges or be markedly distressed by them. The disorder specifically excludes sexual behaviours that occur with the consent of the person or persons involved, provided that they are considered able to provide such consent.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

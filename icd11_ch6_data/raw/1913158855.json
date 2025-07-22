@@ -1,0 +1,43 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1913158855",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1128733473"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1913158855",
+  "code": "6D11.2",
+  "source": "http://id.who.int/icd/entity/1913158855",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1913158855/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/941859884",
+        "http://id.who.int/icd/release/11/2024-01/mms/853711607"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Dissociality in personality disorder or personality difficulty"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "The core feature of the Dissociality trait domain is disregard for the rights and feelings of others, encompassing both self-centeredness and lack of empathy. Common manifestations of Dissociality, not all of which may be present in a given individual at a given time, include: self-centeredness (e.g., sense of entitlement, expectation of others’ admiration, positive or negative attention-seeking behaviours, concern with one's own needs, desires and comfort and not those of others); and lack of empathy (i.e., indifference to whether one’s actions inconvenience or hurt others, which may include being deceptive, manipulative, and exploitative of others, being mean and physically aggressive, callousness in response to others' suffering, and ruthlessness in obtaining one’s goals)."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "This category should ONLY be used in combination with a Personality disorder category (Mild, Moderate, or Severe) or Personality difficulty."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociality in personality disorder or personality difficulty"
+      }
+    }
+  ]
+}

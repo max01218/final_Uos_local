@@ -1,0 +1,76 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1868008370",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/219736364"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1868008370",
+  "code": "6C49.11",
+  "source": "http://id.who.int/icd/entity/1868008370",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1868008370/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/661865379"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1868008370/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1863378901",
+        "http://id.who.int/icd/release/11/2024-01/mms/173746753",
+        "http://id.who.int/icd/release/11/2024-01/mms/1265787402"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1868008370/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1750279358"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Harmful pattern of use of hallucinogens, continuous"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A pattern of continuous (daily or almost daily) use of hallucinogens that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. The pattern of continuous hallucinogen use is evident over a period of at least one month. Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour related to hallucinogen intoxication on the part of the person to whom the diagnosis of Harmful use of hallucinogens applies."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of hallucinogens"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1995632461",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1995632461"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hallucinogen dependence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2041952725",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2041952725"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of hallucinogens, continuous"
+      }
+    }
+  ]
+}

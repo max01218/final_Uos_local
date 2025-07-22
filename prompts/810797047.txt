@@ -1,0 +1,35 @@
+Disorder Name: Dysthymic disorder
+Disorder Code: 810797047
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dysthymic disorder is characterised by a persistent depressive mood (i.e., lasting 2 years or more), for most of the day, for more days than not. In children and adolescents depressed mood can manifest as pervasive irritability. The depressed mood is accompanied by additional symptoms such as markedly diminished interest or pleasure in activities, reduced concentration and attention or indecisiveness, low self-worth or excessive or inappropriate guilt, hopelessness about the future, disturbed sleep or increased sleep, diminished or increased appetite, or low energy or fatigue. During the first 2 years of the disorder, there has never been a 2-week period during which the number and duration of symptoms were sufficient to meet the diagnostic requirements for a Depressive Episode. There is no history of Manic, Mixed, or Hypomanic Episodes.
+
+Inclusions: Dysthymia
+Exclusions: anxiety depression (mild or not persistent)
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dysthymic disorder is characterised by a persistent depressive mood (i.e., lasting 2 years or more), for most of the day, for more days than not. In children and adolescents depressed mood can manifest as pervasive irritability. The depressed mood is accompanied by additional symptoms such as markedly diminished interest or pleasure in activities, reduced concentration and attention or indecisiveness, low self-worth or excessive or inappropriate guilt, hopelessness about the future, disturbed sleep or increased sleep, diminished or increased appetite, or low energy or fatigue. During the first 2 years of the disorder, there has never been a 2-week period during which the number and duration of symptoms were sufficient to meet the diagnostic requirements for a Depressive Episode. There is no history of Manic, Mixed, or Hypomanic Episodes.
+
+Included Manifestations:
+• Dysthymia
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: anxiety depression (mild or not persistent)
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

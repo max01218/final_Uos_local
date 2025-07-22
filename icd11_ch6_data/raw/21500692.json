@@ -1,0 +1,61 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/461716838",
+    "http://id.who.int/icd/release/11/2024-01/mms/1671987290",
+    "http://id.who.int/icd/release/11/2024-01/mms/155258022",
+    "http://id.who.int/icd/release/11/2024-01/mms/1915134721"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#21500692",
+  "code": "05",
+  "source": "http://id.who.int/icd/entity/21500692",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symptoms, signs or clinical findings of endocrine, nutritional or metabolic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/922175770",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/922175770"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endocrine, nutritional or metabolic diseases complicating pregnancy, childbirth or the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1156263785",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1156263785"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Endocrine, nutritional or metabolic diseases"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "This chapter includes endocrine diseases, nutritional diseases as well as metabolic diseases."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Transitory endocrine or metabolic disorders specific to fetus or newborn"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1004987305",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1004987305"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Pregnancy, childbirth or the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/714000734",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/714000734"
+    }
+  ]
+}

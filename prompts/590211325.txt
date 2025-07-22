@@ -1,0 +1,26 @@
+Disorder Name: Disorders due to substance use
+Disorder Code: 590211325
+Code Range: 6C40-6C4Z
+Class Kind: block
+
+Standard Definition:
+Disorders due to substance use include disorders that result from a single occasion or repeated use of substances that have psychoactive properties, including certain medications. Disorders related to fourteen classes or groups of psychoactive substances are included. Typically, initial use of these substances produces pleasant or appealing psychoactive effects that are rewarding and reinforcing with repeated use. With continued use, many of the included substances have the capacity to produce dependence. They also have the potential to cause numerous forms of harm, both to mental and physical health. Disorders due to harmful non-medical use of non-psychoactive substances are also included in this grouping.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to substance use include disorders that result from a single occasion or repeated use of substances that have psychoactive properties, including certain medications. Disorders related to fourteen classes or groups of psychoactive substances are included. Typically, initial use of these substances produces pleasant or appealing psychoactive effects that are rewarding and reinforcing with repeated use. With continued use, many of the included substances have the capacity to produce dependence. They also have the potential to cause numerous forms of harm, both to mental and physical health. Disorders due to harmful non-medical use of non-psychoactive substances are also included in this grouping.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

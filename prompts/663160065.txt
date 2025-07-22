@@ -1,0 +1,26 @@
+Disorder Name: Opioid withdrawal
+Disorder Code: 663160065
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Opioid withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of opioids in individuals who have developed Opioid dependence or have used opioids for a prolonged period or in large amounts. Opioid withdrawal can also occur when prescribed opioids have been used in standard therapeutic doses. Presenting features of Opioid withdrawal may include dysphoric mood, craving for an opioid, anxiety, nausea or vomiting, abdominal cramps, muscle aches, yawning, perspiration, hot and cold flushes, lacrimation, rhinorrhea, hypersomnia (typically in the initial phase) or insomnia, diarrhea, piloerection, and pupillary dilatation.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Opioid withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of opioids in individuals who have developed Opioid dependence or have used opioids for a prolonged period or in large amounts. Opioid withdrawal can also occur when prescribed opioids have been used in standard therapeutic doses. Presenting features of Opioid withdrawal may include dysphoric mood, craving for an opioid, anxiety, nausea or vomiting, abdominal cramps, muscle aches, yawning, perspiration, hot and cold flushes, lacrimation, rhinorrhea, hypersomnia (typically in the initial phase) or insomnia, diarrhea, piloerection, and pupillary dilatation.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

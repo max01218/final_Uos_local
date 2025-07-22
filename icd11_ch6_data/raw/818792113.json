@@ -1,0 +1,24 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/818792113",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1487528823"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1545599508",
+    "http://id.who.int/icd/release/11/2024-01/mms/317107055",
+    "http://id.who.int/icd/release/11/2024-01/mms/818792113/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#818792113",
+  "code": "6C90.0",
+  "source": "http://id.who.int/icd/entity/818792113",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Oppositional defiant disorder with chronic irritability-anger"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for oppositional defiant disorder are met. This form of oppositional defiant disorder is characterised by prevailing, persistent angry or irritable mood that may be present independent of any apparent provocation. The negative mood is often accompanied by regularly occurring severe temper outbursts that are grossly out of proportion in intensity or duration to the provocation. Chronic irritability and anger are characteristic of the individual’s functioning nearly every day, are observable across multiple settings or domains of functioning (e.g., home, school, social relationships), and are not restricted to the individual’s relationship with his/her parents or guardians. The pattern of chronic irritability and anger is not limited to occasional episodes (e.g., developmentally typical irritability) or discrete periods (e.g., irritable mood in the context of manic or depressive episodes)."
+  }
+}

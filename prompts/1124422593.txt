@@ -1,0 +1,26 @@
+Disorder Name: Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, without psychotic symptoms
+Disorder Code: 1124422593
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+A syndrome associated with pregnancy or the puerperium (commencing within about 6 weeks after delivery) that involves significant mental and behavioural features, most commonly depressive symptoms. The syndrome does not include delusions, hallucinations, or other psychotic symptoms. If the symptoms meet the diagnostic requirements for a specific mental disorder, that diagnosis should also be assigned. This designation should not be used to describe mild and transient depressive symptoms that do not meet the diagnostic requirements for a depressive episode, which may occur soon after delivery (so-called postpartum blues).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+A syndrome associated with pregnancy or the puerperium (commencing within about 6 weeks after delivery) that involves significant mental and behavioural features, most commonly depressive symptoms. The syndrome does not include delusions, hallucinations, or other psychotic symptoms. If the symptoms meet the diagnostic requirements for a specific mental disorder, that diagnosis should also be assigned. This designation should not be used to describe mild and transient depressive symptoms that do not meet the diagnostic requirements for a depressive episode, which may occur soon after delivery (so-called postpartum blues).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

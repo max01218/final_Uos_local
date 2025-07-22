@@ -1,0 +1,88 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/566524918",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/696956921"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#566524918",
+  "code": "6E61.1",
+  "source": "http://id.who.int/icd/entity/566524918",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/566524918/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Secondary psychotic syndrome, with delusions"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A syndrome characterised by the presence of prominent delusions that is judged to be a direct pathophysiological consequence of a health condition not classified under mental and behavioural disorders, based on evidence from the history, physical examination, or laboratory findings. Hallucinations are not a prominent aspect of the clinical presentation. The symptoms are not accounted for by delirium or by another mental and behavioural disorder, and are not a psychologically mediated response to a severe medical condition (e.g., an acute stress reaction in response to a life-threatening diagnosis). This category should be used in addition to the diagnosis for the presumed underlying disorder or disease when the psychotic symptoms are sufficiently severe to warrant specific clinical attention."
+  },
+  "fullySpecifiedName": {
+    "@language": "en",
+    "@value": "Psychotic syndrome due to health condition not classified under mental and behavioural disorders, with delusions"
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/897917531",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/897917531"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/76398729",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/76398729"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary psychotic syndrome, with delusions"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Organic delusional disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Organic delusional schizophrenia-like disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Psychotic syndrome due to health condition not classified under mental and behavioural disorders, with delusions"
+      }
+    }
+  ]
+}

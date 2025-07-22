@@ -1,0 +1,26 @@
+Disorder Name: Impulse control disorders
+Disorder Code: 826065555
+Code Range: 6C70-6C7Z
+Class Kind: block
+
+Standard Definition:
+Impulse control disorders are characterised by the repeated failure to resist an impulse, drive, or urge to perform an act that is rewarding to the person, at least in the short-term, despite consequences such as longer-term harm either to the individual or to others, marked distress about the behaviour pattern, or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. Impulse Control Disorders involve a range of specific behaviours, including fire-setting, stealing, sexual behaviour, and explosive outbursts.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Impulse control disorders are characterised by the repeated failure to resist an impulse, drive, or urge to perform an act that is rewarding to the person, at least in the short-term, despite consequences such as longer-term harm either to the individual or to others, marked distress about the behaviour pattern, or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. Impulse Control Disorders involve a range of specific behaviours, including fire-setting, stealing, sexual behaviour, and explosive outbursts.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

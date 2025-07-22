@@ -1,0 +1,24 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/736540987",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1487528823"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/762103927",
+    "http://id.who.int/icd/release/11/2024-01/mms/855253443",
+    "http://id.who.int/icd/release/11/2024-01/mms/736540987/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#736540987",
+  "code": "6C90.1",
+  "source": "http://id.who.int/icd/entity/736540987",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Oppositional defiant disorder without chronic irritability-anger"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Meets all definitional requirements for oppositional defiant disorder. This form of oppositional defiant disorder is not characterised by prevailing, persistent, angry or irritable mood, but does feature headstrong, argumentative, and defiant behaviour."
+  }
+}

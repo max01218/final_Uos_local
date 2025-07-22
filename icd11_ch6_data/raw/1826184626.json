@@ -1,0 +1,38 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1826184626",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/219731531"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1826184626",
+  "code": "6C4G.40",
+  "source": "http://id.who.int/icd/entity/1826184626",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1826184626/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/2143971168"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Withdrawal due to unknown or unspecified psychoactive substance, uncomplicated"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All diagnostic requirements for Withdrawal due to unknown or unspecified psychoactive substance are met and the withdrawal state is not accompanied by perceptual disturbances or seizures."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Withdrawal due to unknown or unspecified psychoactive substance, uncomplicated"
+      }
+    }
+  ]
+}

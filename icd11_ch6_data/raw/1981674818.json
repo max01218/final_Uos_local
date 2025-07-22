@@ -1,0 +1,68 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1981674818",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2143971168"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1981674818",
+  "code": "6C4G.22",
+  "source": "http://id.who.int/icd/entity/1981674818",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1981674818/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/131545543",
+        "http://id.who.int/icd/release/11/2024-01/mms/1155529213",
+        "http://id.who.int/icd/release/11/2024-01/mms/595694101"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1981674818/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1870346724",
+        "http://id.who.int/icd/release/11/2024-01/mms/219731531"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Unknown or unspecified psychoactive substance dependence, sustained partial remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "After a diagnosis of Unknown or unspecified psychoactive substance dependence, and often following a treatment episode or other intervention (including self-help intervention), there is a significant reduction in consumption of the substance for more than 12 months, such that even though intermittent or continuing use of the substance has occurred during this period, the definitional requirements for dependence have not been met."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of unknown or unspecified psychoactive substances"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/272358857",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/272358857"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of unknown or unspecified psychoactive substance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/341458101",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/341458101"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Unknown or unspecified psychoactive substance dependence, sustained partial remission"
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1321276661",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1582741816",
+    "http://id.who.int/icd/release/11/2024-01/mms/731724655",
+    "http://id.who.int/icd/release/11/2024-01/mms/1119008568",
+    "http://id.who.int/icd/release/11/2024-01/mms/675329566",
+    "http://id.who.int/icd/release/11/2024-01/mms/1991016628",
+    "http://id.who.int/icd/release/11/2024-01/mms/1121465374",
+    "http://id.who.int/icd/release/11/2024-01/mms/254139238",
+    "http://id.who.int/icd/release/11/2024-01/mms/1321276661/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1321276661/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1321276661",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/1321276661",
+  "classKind": "block",
+  "blockId": "BlockL1-6B2",
+  "codeRange": "6B20-6B2Z",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary obsessive-compulsive or related syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1126473669",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1126473669"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Tourette syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/119340957",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/119340957"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Obsessive-compulsive or related disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Obsessive-compulsive and related disorders is a group of disorders characterised by repetitive thoughts and behaviours that are believed to share similarities in aetiology and key diagnostic validators. Cognitive phenomena such as obsessions, intrusive thoughts and preoccupations are central to a subset of these conditions (i.e., obsessive-compulsive disorder, body dysmorphic disorder, hypochondriasis, and olfactory reference disorder) and are accompanied by related repetitive behaviours. Hoarding Disorder is not associated with intrusive unwanted thoughts but rather is characterised by a compulsive need to accumulate possessions and distress related to discarding them. Also included in the grouping are body-focused repetitive behaviour disorders, which are primarily characterised by recurrent and habitual actions directed at the integument (e.g., hair-pulling, skin-picking) and lack a prominent cognitive aspect. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning."
+  }
+}

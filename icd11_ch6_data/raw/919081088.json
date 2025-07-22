@@ -1,0 +1,43 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/919081088",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1128733473"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#919081088",
+  "code": "6D11.1",
+  "source": "http://id.who.int/icd/entity/919081088",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/919081088/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/941859884",
+        "http://id.who.int/icd/release/11/2024-01/mms/853711607"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Detachment in personality disorder or personality difficulty"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "The core feature of the Detachment trait domain is the tendency to maintain interpersonal distance (social detachment) and emotional distance (emotional detachment). Common manifestations of Detachment, not all of which may be present in a given individual at a given time, include: social detachment (avoidance of social interactions, lack of friendships, and avoidance of intimacy); and emotional detachment (reserve, aloofness, and limited emotional expression and experience)."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "This category should ONLY be used in combination with a Personality disorder category (Mild, Moderate, or Severe) or Personality difficulty."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Detachment in personality disorder or personality difficulty"
+      }
+    }
+  ]
+}

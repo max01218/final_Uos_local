@@ -1,0 +1,26 @@
+Disorder Name: Mild personality disorder
+Disorder Code: 263226710
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All general diagnostic requirements for Personality Disorder are met. Disturbances affect some areas of personality functioning but not others (e.g., problems with self-direction in the absence of problems with stability and coherence of identity or self-worth), and may not be apparent in some contexts. There are problems in many interpersonal relationships and/or in performance of expected occupational and social roles, but some relationships are maintained and/or some roles carried out. Specific manifestations of personality disturbances are generally of mild severity. Mild Personality Disorder is typically not associated with substantial harm to self or others, but may be associated with substantial distress or with impairment in personal, family, social, educational, occupational or other important areas of functioning that is either limited to circumscribed areas (e.g., romantic relationships; employment) or present in more areas but milder.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All general diagnostic requirements for Personality Disorder are met. Disturbances affect some areas of personality functioning but not others (e.g., problems with self-direction in the absence of problems with stability and coherence of identity or self-worth), and may not be apparent in some contexts. There are problems in many interpersonal relationships and/or in performance of expected occupational and social roles, but some relationships are maintained and/or some roles carried out. Specific manifestations of personality disturbances are generally of mild severity. Mild Personality Disorder is typically not associated with substantial harm to self or others, but may be associated with substantial distress or with impairment in personal, family, social, educational, occupational or other important areas of functioning that is either limited to circumscribed areas (e.g., romantic relationships; employment) or present in more areas but milder.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

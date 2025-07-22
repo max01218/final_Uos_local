@@ -1,0 +1,35 @@
+Disorder Name: Psychological or behavioural factors affecting disorders or diseases classified elsewhere
+Disorder Code: 523677473
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Psychological and behavioural factors affecting disorders or diseases classified elsewhere are those that may adversely affect the manifestation, treatment, or course of a condition classified in another chapter of the ICD. These factors may adversely affect the manifestation, treatment, or course of the disorder or disease classified in another chapter by: interfering with the treatment of the disorder or disease by affecting treatment adherence or care seeking; constituting an additional health risk; or influencing the underlying pathophysiology to precipitate or exacerbate symptoms or otherwise necessitate medical attention. This diagnosis should be assigned only when the factors increase the risk of suffering, disability, or death and represent a focus of clinical attention, and should be assigned together with the diagnosis for the relevant other condition.
+
+Inclusions: Psychological factors affecting physical conditions
+Exclusions: Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Psychological and behavioural factors affecting disorders or diseases classified elsewhere are those that may adversely affect the manifestation, treatment, or course of a condition classified in another chapter of the ICD. These factors may adversely affect the manifestation, treatment, or course of the disorder or disease classified in another chapter by: interfering with the treatment of the disorder or disease by affecting treatment adherence or care seeking; constituting an additional health risk; or influencing the underlying pathophysiology to precipitate or exacerbate symptoms or otherwise necessitate medical attention. This diagnosis should be assigned only when the factors increase the risk of suffering, disability, or death and represent a focus of clinical attention, and should be assigned together with the diagnosis for the relevant other condition.
+
+Included Manifestations:
+• Psychological factors affecting physical conditions
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

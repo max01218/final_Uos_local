@@ -1,0 +1,268 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/349321697",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/199053300"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#349321697",
+  "code": "6A61.5",
+  "source": "http://id.who.int/icd/entity/349321697",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/349321697/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/496273089"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder, current episode depressive, severe, with psychotic symptoms is diagnosed when the definitional requirements for Bipolar type II disorder are met and the current episode is severe and there are delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a severe depressive episode, many or most symptoms of a Depressive Episode are present to a marked degree, or a smaller number of symptoms are present and manifest to an intense degree. The individual has serious difficulty continuing to function in most domains (personal, family, social, educational, occupational, or other important domains)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bipolar type II disorder, current episode depressive, severe with psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1176970107"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2000339265"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2036464157"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/113189266"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2032382717"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/578814626"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/212646236"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/763085522"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1645740107"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/45468386"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with melancholia and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1650084011"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2132393180"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1107271316"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/554704089"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1895878502"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/249435369"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptom, melancholia, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1352006666"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/734845299"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms and seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1410466558"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1155046220"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1693274888"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/984005611"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/71342499"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with melancholia and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/817177381"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with seasonal pattern and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/545241747"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1604411676"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1857848104"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms, melancholia, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1625798780"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/523854837"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1621487770"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/906517746"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, severe with psychotic symptoms, additional symptoms unspecified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/405071632"
+    }
+  ]
+}

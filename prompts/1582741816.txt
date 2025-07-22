@@ -1,0 +1,36 @@
+Disorder Name: Obsessive-compulsive disorder
+Disorder Code: 1582741816
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Obsessive-Compulsive Disorder is characterised by the presence of persistent obsessions or compulsions, or most commonly both. Obsessions are repetitive and persistent thoughts, images, or impulses/urges that are intrusive, unwanted, and are commonly associated with anxiety. The individual attempts to ignore or suppress obsessions or to neutralize them by performing compulsions. Compulsions are repetitive behaviours including repetitive mental acts that the individual feels driven to perform in response to an obsession, according to rigid rules, or to achieve a sense of ‘completeness’. In order for obsessive-compulsive disorder to be diagnosed, obsessions and compulsions must be time consuming (e.g. taking more than an hour per day) or result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Inclusions: anankastic neurosis; obsessive-compulsive neurosis
+Exclusions: obsessive compulsive behaviour
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Obsessive-Compulsive Disorder is characterised by the presence of persistent obsessions or compulsions, or most commonly both. Obsessions are repetitive and persistent thoughts, images, or impulses/urges that are intrusive, unwanted, and are commonly associated with anxiety. The individual attempts to ignore or suppress obsessions or to neutralize them by performing compulsions. Compulsions are repetitive behaviours including repetitive mental acts that the individual feels driven to perform in response to an obsession, according to rigid rules, or to achieve a sense of ‘completeness’. In order for obsessive-compulsive disorder to be diagnosed, obsessions and compulsions must be time consuming (e.g. taking more than an hour per day) or result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Included Manifestations:
+• anankastic neurosis
+• obsessive-compulsive neurosis
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: obsessive compulsive behaviour
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

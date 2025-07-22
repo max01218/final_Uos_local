@@ -1,0 +1,31 @@
+Disorder Name: Body integrity dysphoria
+Disorder Code: 256572629
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Body integrity dysphoria is characterised by an intense and persistent desire to become physically disabled in a significant way (e.g. major limb amputee, paraplegic, blind), with onset by early adolescence accompanied by persistent discomfort, or intense feelings of inappropriateness concerning current non-disabled body configuration. The desire to become physically disabled results in harmful consequences, as manifested by either the preoccupation with the desire (including time spent pretending to be disabled) significantly interfering with productivity, with leisure activities, or with social functioning (e.g. person is unwilling to have a close relationship because it would make it difficult to pretend) or by attempts to actually become disabled having resulted in the person putting his or her health or life in significant jeopardy. The disturbance is not better accounted for by another mental, behavioural or neurodevelopmental disorder, by a Disease of the Nervous System or by another medical condition, or by Malingering.
+
+Exclusions: Gender incongruence of adolescence or adulthood
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Body integrity dysphoria is characterised by an intense and persistent desire to become physically disabled in a significant way (e.g. major limb amputee, paraplegic, blind), with onset by early adolescence accompanied by persistent discomfort, or intense feelings of inappropriateness concerning current non-disabled body configuration. The desire to become physically disabled results in harmful consequences, as manifested by either the preoccupation with the desire (including time spent pretending to be disabled) significantly interfering with productivity, with leisure activities, or with social functioning (e.g. person is unwilling to have a close relationship because it would make it difficult to pretend) or by attempts to actually become disabled having resulted in the person putting his or her health or life in significant jeopardy. The disturbance is not better accounted for by another mental, behavioural or neurodevelopmental disorder, by a Disease of the Nervous System or by another medical condition, or by Malingering.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Gender incongruence of adolescence or adulthood
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

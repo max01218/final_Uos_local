@@ -1,0 +1,26 @@
+Disorder Name: Acute and transient psychotic disorder
+Disorder Code: 284410555
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Acute and transient psychotic disorder is characterised by acute onset of psychotic symptoms that emerge without a prodrome and reach their maximal severity within two weeks. Symptoms may include delusions, hallucinations, disorganisation of thought processes, perplexity or confusion, and disturbances of affect and mood. Catatonia-like psychomotor disturbances may be present. Symptoms typically change rapidly, both in nature and intensity, from day to day, or even within a single day. The duration of the episode does not exceed 3 months, and most commonly lasts from a few days to 1 month. The symptoms are not a manifestation of another medical condition (e.g. a brain tumour) and are not due to the effect of a substance or medication on the central nervous system (e.g. corticosteroids), including withdrawal (e.g. alcohol withdrawal).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Acute and transient psychotic disorder is characterised by acute onset of psychotic symptoms that emerge without a prodrome and reach their maximal severity within two weeks. Symptoms may include delusions, hallucinations, disorganisation of thought processes, perplexity or confusion, and disturbances of affect and mood. Catatonia-like psychomotor disturbances may be present. Symptoms typically change rapidly, both in nature and intensity, from day to day, or even within a single day. The duration of the episode does not exceed 3 months, and most commonly lasts from a few days to 1 month. The symptoms are not a manifestation of another medical condition (e.g. a brain tumour) and are not due to the effect of a substance or medication on the central nervous system (e.g. corticosteroids), including withdrawal (e.g. alcohol withdrawal).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

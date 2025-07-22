@@ -1,0 +1,26 @@
+Disorder Name: Depressive mood symptoms in primary psychotic disorders
+Disorder Code: 797284789
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Depressive mood symptoms in primary psychotic disorders refer to depressed mood as reported by the individual (feeling down, sad) or manifested as a sign (e.g. tearful, defeated appearance). If only non-mood symptoms of a depressive episode are present (e.g., anhedonia, psychomotor slowing), this descriptor should not be used. This descriptor may be used whether or not depressive symptoms meet the diagnostic requirements of a separately diagnosed Depressive disorder. The rating should be made based on the severity of depressive mood symptoms during the past week.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Depressive mood symptoms in primary psychotic disorders refer to depressed mood as reported by the individual (feeling down, sad) or manifested as a sign (e.g. tearful, defeated appearance). If only non-mood symptoms of a depressive episode are present (e.g., anhedonia, psychomotor slowing), this descriptor should not be used. This descriptor may be used whether or not depressive symptoms meet the diagnostic requirements of a separately diagnosed Depressive disorder. The rating should be made based on the severity of depressive mood symptoms during the past week.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

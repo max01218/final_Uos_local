@@ -1,0 +1,35 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1128733473",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/37291724"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/953246526",
+    "http://id.who.int/icd/release/11/2024-01/mms/919081088",
+    "http://id.who.int/icd/release/11/2024-01/mms/1913158855",
+    "http://id.who.int/icd/release/11/2024-01/mms/387934990",
+    "http://id.who.int/icd/release/11/2024-01/mms/848330288",
+    "http://id.who.int/icd/release/11/2024-01/mms/2006821354"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1128733473",
+  "code": "6D11",
+  "source": "http://id.who.int/icd/entity/1128733473",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Prominent personality traits or patterns"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Trait domain qualifiers may be applied to Personality Disorders or Personality Difficulty to describe the characteristics of the individual’s personality that are most prominent and that contribute to personality disturbance. Trait domains are continuous with normal personality characteristics in individuals who do not have Personality Disorder or Personality Difficulty. Trait domains are not diagnostic categories, but rather represent a set of dimensions that correspond to the underlying structure of personality. As many trait domain qualifiers may be applied as necessary to describe personality functioning. Individuals with more severe personality disturbance tend to have a greater number of prominent trait domains."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Prominent personality traits or patterns"
+      }
+    }
+  ]
+}

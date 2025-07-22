@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/597251719",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1913137404"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1141591590",
+    "http://id.who.int/icd/release/11/2024-01/mms/1978307484"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#597251719",
+  "code": "6C41.7",
+  "source": "http://id.who.int/icd/entity/597251719",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/597251719/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1387132352",
+        "http://id.who.int/icd/release/11/2024-01/mms/637576511"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/597251719/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/854520906",
+        "http://id.who.int/icd/release/11/2024-01/mms/937834582",
+        "http://id.who.int/icd/release/11/2024-01/mms/1129015467"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Certain specified cannabis-induced mental or behavioural disorders"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain specified cannabis-induced mental or behavioural disorders"
+      }
+    }
+  ]
+}

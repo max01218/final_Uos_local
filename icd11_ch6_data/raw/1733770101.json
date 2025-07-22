@@ -1,0 +1,33 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1733770101",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/536986325"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1733770101",
+  "code": "6B60.81",
+  "source": "http://id.who.int/icd/entity/1733770101",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with myoclonus"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with myoclonus is characterised by sudden rapid jerks that may be focal, multifocal or generalised that are not consistent with a recognised disease of the nervous system, other mental, behavioural or neurodevelopmental disorder, or other medical condition and do not occur exclusively during another dissociative disorder."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative neurological symptom disorder, with myoclonus"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional neurological symptom disorder, with myoclonus"
+      }
+    }
+  ]
+}

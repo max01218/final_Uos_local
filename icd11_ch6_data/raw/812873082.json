@@ -1,0 +1,48 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/812873082",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1150025154"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#812873082",
+  "code": "6A20.12",
+  "source": "http://id.who.int/icd/entity/812873082",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/812873082/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Schizophrenia, multiple episodes, in full remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for Schizophrenia, multiple episodes in terms of symptoms and duration were previously met. Symptoms have ameliorated such that no significant symptoms remain. The remission may have occurred in response to medication or other treatment."
+  },
+  "fullySpecifiedName": {
+    "@language": "en",
+    "@value": "Schizophrenia, Multiple episodes, currently in full remission"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Schizophrenia, multiple episodes, in full remission"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Schizophrenia, Multiple episodes, currently in full remission"
+      }
+    }
+  ]
+}

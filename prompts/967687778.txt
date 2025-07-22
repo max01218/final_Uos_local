@@ -1,0 +1,26 @@
+Disorder Name: Personality traits or coping style affecting disorders or diseases classified elsewhere
+Disorder Code: 967687778
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All diagnostic requirements for Psychological or behavioural factors affecting disorders or diseases classified elsewhere are met. The individual exhibits personality traits or coping styles that do not meet the diagnostic requirements for a mental, behavioural, or neurodevelopmental disorder that adversely affect the manifestation, treatment, or course of a disorder or disease classified in another chapter (e.g., pathological denial of the need for surgery in a patient with cancer; hostile, pressured behaviour contributing to heart disease).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All diagnostic requirements for Psychological or behavioural factors affecting disorders or diseases classified elsewhere are met. The individual exhibits personality traits or coping styles that do not meet the diagnostic requirements for a mental, behavioural, or neurodevelopmental disorder that adversely affect the manifestation, treatment, or course of a disorder or disease classified in another chapter (e.g., pathological denial of the need for surgery in a patient with cancer; hostile, pressured behaviour contributing to heart disease).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

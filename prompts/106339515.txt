@@ -1,0 +1,26 @@
+Disorder Name: Schizoaffective disorder
+Disorder Code: 106339515
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Schizoaffective disorder is an episodic disorder in which the diagnostic requirements of schizophrenia and a manic, mixed, or moderate or severe depressive episode are met within the same episode of illness, either simultaneously or within a few days of each other. Prominent symptoms of schizophrenia (e.g. delusions, hallucinations, disorganisation in the form of thought, experiences of influence, passivity and control) are accompanied by typical symptoms of a moderate or severe depressive episode (e.g. depressed mood, loss of interest, reduced energy), a manic episode (e.g. an extreme mood state characterised by euphoria, irritability, or expansiveness; increased activity or a subjective experience of increased energy) or a mixed episode. Psychomotor disturbances, including catatonia, may be present. Symptoms must have persisted for at least one month. The symptoms are not a manifestation of another medical condition (e.g. a brain tumor) and are not due to the effect of a substance or medication on the central nervous system (e.g. corticosteroids), including withdrawal (e.g. alcohol withdrawal).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Schizoaffective disorder is an episodic disorder in which the diagnostic requirements of schizophrenia and a manic, mixed, or moderate or severe depressive episode are met within the same episode of illness, either simultaneously or within a few days of each other. Prominent symptoms of schizophrenia (e.g. delusions, hallucinations, disorganisation in the form of thought, experiences of influence, passivity and control) are accompanied by typical symptoms of a moderate or severe depressive episode (e.g. depressed mood, loss of interest, reduced energy), a manic episode (e.g. an extreme mood state characterised by euphoria, irritability, or expansiveness; increased activity or a subjective experience of increased energy) or a mixed episode. Psychomotor disturbances, including catatonia, may be present. Symptoms must have persisted for at least one month. The symptoms are not a manifestation of another medical condition (e.g. a brain tumor) and are not due to the effect of a substance or medication on the central nervous system (e.g. corticosteroids), including withdrawal (e.g. alcohol withdrawal).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

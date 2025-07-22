@@ -1,0 +1,26 @@
+Disorder Name: Anorexia Nervosa with significantly low body weight, binge-purge pattern
+Disorder Code: 544507568
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Anorexia Nervosa with significantly low body weight, binge-purge pattern refers to individuals who meet the definitional requirements of Anorexia Nervosa with significantly low body weight and who present with episodes of binge eating or purging behaviours. These individuals induce weight loss and maintain low body weight through restricted food intake, commonly accompanied by significant purging behaviours aimed at getting rid of ingested food (e.g. self-induced vomiting, laxative abuse or enemas). This pattern also includes individuals who exhibit binge eating episodes but do not purge.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Anorexia Nervosa with significantly low body weight, binge-purge pattern refers to individuals who meet the definitional requirements of Anorexia Nervosa with significantly low body weight and who present with episodes of binge eating or purging behaviours. These individuals induce weight loss and maintain low body weight through restricted food intake, commonly accompanied by significant purging behaviours aimed at getting rid of ingested food (e.g. self-induced vomiting, laxative abuse or enemas). This pattern also includes individuals who exhibit binge eating episodes but do not purge.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

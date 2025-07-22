@@ -1,0 +1,84 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1580466198",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1676588433"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/582014993",
+    "http://id.who.int/icd/release/11/2024-01/mms/490388233",
+    "http://id.who.int/icd/release/11/2024-01/mms/1836362492",
+    "http://id.who.int/icd/release/11/2024-01/mms/931320871",
+    "http://id.who.int/icd/release/11/2024-01/mms/1447256030",
+    "http://id.who.int/icd/release/11/2024-01/mms/1580466198/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1580466198",
+  "code": "6C40.2",
+  "source": "http://id.who.int/icd/entity/1580466198",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1580466198/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1217486356",
+        "http://id.who.int/icd/release/11/2024-01/mms/769299330",
+        "http://id.who.int/icd/release/11/2024-01/mms/1012312104",
+        "http://id.who.int/icd/release/11/2024-01/mms/988431240",
+        "http://id.who.int/icd/release/11/2024-01/mms/1619582852"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1580466198/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1339202943",
+        "http://id.who.int/icd/release/11/2024-01/mms/998231424"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Alcohol dependence"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Alcohol dependence is a disorder of regulation of alcohol use arising from repeated or continuous use of alcohol. The characteristic feature is a strong internal drive to use alcohol, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use alcohol. Physiological features of dependence may also be present, including tolerance to the effects of alcohol, withdrawal symptoms following cessation or reduction in use of alcohol, or repeated use of alcohol or pharmacologically similar substances to prevent or alleviate withdrawal symptoms. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if alcohol use is continuous (daily or almost daily) for at least 3 months."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Chronic alcoholism"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dipsomania"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of alcohol"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/766814084",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/766814084"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of alcohol"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/714690795",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/714690795"
+    }
+  ]
+}

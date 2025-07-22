@@ -1,0 +1,94 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1192105868",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/470484338"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1192105868",
+  "code": "6C4D.3",
+  "source": "http://id.who.int/icd/entity/1192105868",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1192105868/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/16341703",
+        "http://id.who.int/icd/release/11/2024-01/mms/373236638",
+        "http://id.who.int/icd/release/11/2024-01/mms/1756699061",
+        "http://id.who.int/icd/release/11/2024-01/mms/1891241424",
+        "http://id.who.int/icd/release/11/2024-01/mms/1193684303",
+        "http://id.who.int/icd/release/11/2024-01/mms/1853123588",
+        "http://id.who.int/icd/release/11/2024-01/mms/534456613",
+        "http://id.who.int/icd/release/11/2024-01/mms/428256012",
+        "http://id.who.int/icd/release/11/2024-01/mms/33615934",
+        "http://id.who.int/icd/release/11/2024-01/mms/648146092",
+        "http://id.who.int/icd/release/11/2024-01/mms/808405469",
+        "http://id.who.int/icd/release/11/2024-01/mms/1870704429",
+        "http://id.who.int/icd/release/11/2024-01/mms/1732158747",
+        "http://id.who.int/icd/release/11/2024-01/mms/1416993969",
+        "http://id.who.int/icd/release/11/2024-01/mms/2121804732",
+        "http://id.who.int/icd/release/11/2024-01/mms/2043582775",
+        "http://id.who.int/icd/release/11/2024-01/mms/1960627774",
+        "http://id.who.int/icd/release/11/2024-01/mms/1076458680",
+        "http://id.who.int/icd/release/11/2024-01/mms/448177412",
+        "http://id.who.int/icd/release/11/2024-01/mms/1864983449",
+        "http://id.who.int/icd/release/11/2024-01/mms/543245955",
+        "http://id.who.int/icd/release/11/2024-01/mms/2017927415",
+        "http://id.who.int/icd/release/11/2024-01/mms/511194385"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1192105868/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1192105868/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/706633269",
+        "http://id.who.int/icd/release/11/2024-01/mms/1418561556",
+        "http://id.who.int/icd/release/11/2024-01/mms/1177354811"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative drug intoxication including Ketamine or PCP"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative drug intoxication including Ketamine and PCP is a clinically significant transient condition that develops during or shortly after the consumption of a dissociative drug that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of a dissociative drug and their intensity is closely related to the amount of the dissociative drug consumed. They are time-limited and abate as the dissociative drug is cleared from the body. Presenting features may include aggression, impulsiveness, unpredictability, anxiety, psychomotor agitation, impaired judgment, numbness or diminished responsiveness to pain, slurred speech, and dystonia. Physical signs include nystagmus (repetitive, uncontrolled eye movements), tachycardia, elevated blood pressure, numbness, ataxia, dysarthria, and muscle rigidity. In rare instances, use of dissociative drugs including Ketamine and PCP can result in seizures."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative drug intoxication including Ketamine or PCP"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "PCP intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "phencyclidine intoxication"
+      }
+    }
+  ]
+}

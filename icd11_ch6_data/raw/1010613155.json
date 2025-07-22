@@ -1,0 +1,71 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1010613155",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/595694101"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1010613155",
+  "code": "6C4G.70",
+  "source": "http://id.who.int/icd/entity/1010613155",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1010613155/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1870346724",
+        "http://id.who.int/icd/release/11/2024-01/mms/219731531"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1010613155/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/272358857",
+        "http://id.who.int/icd/release/11/2024-01/mms/341458101",
+        "http://id.who.int/icd/release/11/2024-01/mms/2143971168"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Mood disorder induced by unknown or unspecified psychoactive substance"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Mood disorder induced by unknown or unspecified psychoactive substance is characterised by mood symptoms (e.g., depressed or elevated mood, decreased engagement in pleasurable activities, increased or decreased energy levels) that develop during or soon after intoxication with or withdrawal from a specified psychoactive substance. The symptoms are not better explained by a primary mental disorder (e.g., a Depressive disorder, a Bipolar disorder, Schizoaffective disorder), as might be the case if the mood symptoms preceded the onset of the use of the unknown or unspecified psychoactive substance, if the symptoms persist for a substantial period of time after cessation of the use of the unknown or unspecified psychoactive substance or withdrawal from the unknown or unspecified psychoactive substance, or if there is other evidence of a pre-existing primary mental disorder with mood symptoms (e.g., a history of prior episodes not associated with the use of the unknown or unspecified psychoactive substance)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood disorder induced by unknown or unspecified psychoactive substance"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood disorder induced by unknown or unspecified psychoactive substance with depressive symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1170954610"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood disorder induced by unknown or unspecified psychoactive substance with manic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1251420532"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood disorder induced by unknown or unspecified psychoactive substance with mixed depressive and manic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1528345466"
+    }
+  ]
+}

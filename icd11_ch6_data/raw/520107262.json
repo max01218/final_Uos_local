@@ -1,0 +1,39 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/520107262",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/199053300"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#520107262",
+  "code": "6A61.7",
+  "source": "http://id.who.int/icd/entity/520107262",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/520107262/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798",
+        "http://id.who.int/icd/release/11/2024-01/mms/567063364"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder, currently in partial remission, most recent episode hypomanic"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder, currently in partial remission, most recent episode hypomanic is diagnosed when the definitional requirements for Bipolar type II disorder have been met and the most recent episode was a hypomanic episode. The full definitional requirements for a hypomanic episode are no longer met but some significant mood symptoms remain. In some cases, residual mood symptoms may be depressive rather than hypomanic, but do not satisfy the definitional requirements for a depressive episode."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, currently in partial remission, most recent episode hypomanic"
+      }
+    }
+  ]
+}

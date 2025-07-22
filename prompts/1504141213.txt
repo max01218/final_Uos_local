@@ -1,0 +1,26 @@
+Disorder Name: Dissociative neurological symptom disorder, with speech disturbance
+Disorder Code: 1504141213
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dissociative neurological symptom disorder, with speech disturbance is characterised by symptoms such as difficulty with speaking (dysphonia), loss of the ability to speak (aphonia) or difficult or unclear articulation of speech (dysarthria) that are not consistent with a recognised disease of the nervous system, a neurodevelopmental or neurocognitive disorder, other mental, behavioural or neurodevelopmental disorder, or other medical condition and do not occur exclusively during another dissociative disorder.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dissociative neurological symptom disorder, with speech disturbance is characterised by symptoms such as difficulty with speaking (dysphonia), loss of the ability to speak (aphonia) or difficult or unclear articulation of speech (dysarthria) that are not consistent with a recognised disease of the nervous system, a neurodevelopmental or neurocognitive disorder, other mental, behavioural or neurodevelopmental disorder, or other medical condition and do not occur exclusively during another dissociative disorder.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

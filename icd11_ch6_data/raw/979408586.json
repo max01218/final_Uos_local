@@ -1,0 +1,35 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/979408586",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/815889539",
+    "http://id.who.int/icd/release/11/2024-01/mms/614922797",
+    "http://id.who.int/icd/release/11/2024-01/mms/71556738",
+    "http://id.who.int/icd/release/11/2024-01/mms/1413523709",
+    "http://id.who.int/icd/release/11/2024-01/mms/1154280071",
+    "http://id.who.int/icd/release/11/2024-01/mms/411368752",
+    "http://id.who.int/icd/release/11/2024-01/mms/870996432",
+    "http://id.who.int/icd/release/11/2024-01/mms/1004338415",
+    "http://id.who.int/icd/release/11/2024-01/mms/69327534",
+    "http://id.who.int/icd/release/11/2024-01/mms/1321407960",
+    "http://id.who.int/icd/release/11/2024-01/mms/1897222875",
+    "http://id.who.int/icd/release/11/2024-01/mms/1693181075",
+    "http://id.who.int/icd/release/11/2024-01/mms/1597357976",
+    "http://id.who.int/icd/release/11/2024-01/mms/1948746454"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#979408586",
+  "code": "X",
+  "source": "http://id.who.int/icd/entity/979408586",
+  "classKind": "chapter",
+  "title": {
+    "@language": "en",
+    "@value": "Extension Codes"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "!markdown\nExtension codes should never be used in primary classification coding or tabulation. \n- They are provided for use as supplementary or additional codes when desired to identify more detail in statistical categories classified elsewhere. \n- Extension codes may be used alone in other contexts."
+  }
+}

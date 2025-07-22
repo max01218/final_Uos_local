@@ -1,0 +1,139 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/767044268",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/794195577"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1472866636",
+    "http://id.who.int/icd/release/11/2024-01/mms/1967782703",
+    "http://id.who.int/icd/release/11/2024-01/mms/1121638993",
+    "http://id.who.int/icd/release/11/2024-01/mms/767044268/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#767044268",
+  "code": "6C20",
+  "source": "http://id.who.int/icd/entity/767044268",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Bodily distress disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bodily distress disorder is characterised by the presence of bodily symptoms that are distressing to the individual and excessive attention directed toward the symptoms, which may be manifest by repeated contact with health care providers. If another health condition is causing or contributing to the symptoms, the degree of attention is clearly excessive in relation to its nature and progression. Excessive attention is not alleviated by appropriate clinical examination and investigations and appropriate reassurance. Bodily symptoms are persistent, being present on most days for at least several months. Typically, bodily distress disorder involves multiple bodily symptoms that may vary over time. Occasionally there is a single symptom—usually pain or fatigue—that is associated with the other features of the disorder. The symptoms and associated distress and preoccupation have at least some impact on the individual’s functioning (e.g. strain in relationships, less effective academic or occupational functioning, abandonment of specific leisure activities)."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Tourette syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/119340957",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/119340957"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hair pulling disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1253999657",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1253999657"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/108180424",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/108180424"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "hair-plucking"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1253999657",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1253999657"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hypochondriasis"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/675329566",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/675329566"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Body dysmorphic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/731724655",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/731724655"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Excoriation disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/726494117",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/726494117"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Gender incongruence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/411470068",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/411470068"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sexual dysfunctions"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/160690465",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/160690465"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Tic disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1894671574",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1894671574"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sexual pain-penetration disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1932194482",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1932194482"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Postviral fatigue syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/569175314",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/569175314"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Chronic fatigue syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/569175314",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/569175314"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Myalgic encephalomyelitis"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/569175314",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/569175314"
+    }
+  ]
+}

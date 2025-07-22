@@ -1,0 +1,36 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1150025154",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1683919430"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/777415827",
+    "http://id.who.int/icd/release/11/2024-01/mms/132142084",
+    "http://id.who.int/icd/release/11/2024-01/mms/812873082",
+    "http://id.who.int/icd/release/11/2024-01/mms/1150025154/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1150025154",
+  "code": "6A20.1",
+  "source": "http://id.who.int/icd/entity/1150025154",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1150025154/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Schizophrenia, multiple episodes"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Schizophrenia, multiple episodes should be used to identify individuals experiencing symptoms that meet the diagnostic requirements for Schizophrenia and who have also previously experienced episodes during which diagnostic requirements were met, with substantial remission of symptoms between episodes. Some attenuated symptoms may remain during periods of remission, and remissions may have occurred in response to medication or other treatment."
+  }
+}

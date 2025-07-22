@@ -1,0 +1,26 @@
+Disorder Name: Severe bodily distress disorder
+Disorder Code: 1121638993
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements of Bodily distress disorder are present. There is pervasive and persistent preoccupation with the symptoms and their consequences to the extent that these may become the focal point of the person’s life, typically resulting in extensive interactions with the health care system. The symptoms and associated distress and preoccupation cause serious impairment in personal, family, social, educational, occupational, or other important areas of functioning (e.g., unable to work, alienation of friends and family, abandonment of nearly all social and leisure activities). The person’s interests may become so narrow as to focus almost exclusively on his or her bodily symptoms and their negative consequences.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements of Bodily distress disorder are present. There is pervasive and persistent preoccupation with the symptoms and their consequences to the extent that these may become the focal point of the person’s life, typically resulting in extensive interactions with the health care system. The symptoms and associated distress and preoccupation cause serious impairment in personal, family, social, educational, occupational, or other important areas of functioning (e.g., unable to work, alienation of friends and family, abandonment of nearly all social and leisure activities). The person’s interests may become so narrow as to focus almost exclusively on his or her bodily symptoms and their negative consequences.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

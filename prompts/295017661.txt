@@ -1,0 +1,31 @@
+Disorder Name: Intermittent explosive disorder
+Disorder Code: 295017661
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Intermittent explosive disorder is characterised by repeated brief episodes of verbal or physical aggression or destruction of property that represent a failure to control aggressive impulses, with the intensity of the outburst or degree of aggressiveness being grossly out of proportion to the provocation or precipitating psychosocial stressors. The symptoms are not better explained by another mental, behavioural, or neurodevelopmental disorder and are not part of a pattern of chronic anger and irritability (e.g., in oppositional defiant disorder). The behaviour pattern is of sufficient severity to result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Exclusions: Oppositional defiant disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Intermittent explosive disorder is characterised by repeated brief episodes of verbal or physical aggression or destruction of property that represent a failure to control aggressive impulses, with the intensity of the outburst or degree of aggressiveness being grossly out of proportion to the provocation or precipitating psychosocial stressors. The symptoms are not better explained by another mental, behavioural, or neurodevelopmental disorder and are not part of a pattern of chronic anger and irritability (e.g., in oppositional defiant disorder). The behaviour pattern is of sufficient severity to result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Oppositional defiant disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

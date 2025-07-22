@@ -1,0 +1,26 @@
+Disorder Name: Disorder of intellectual development, provisional
+Disorder Code: 1074941350
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorder of intellectual development, provisional is assigned when there is evidence of a disorder of intellectual development but the individual is an infant or child under the age of four or it is not possible to conduct a valid assessment of intellectual functioning and adaptive behaviour because of sensory or physical impairments (e.g., blindness, pre-lingual deafness), motor or communication impairments, severe problem behaviours or co-occurring mental and behavioural disorders.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorder of intellectual development, provisional is assigned when there is evidence of a disorder of intellectual development but the individual is an infant or child under the age of four or it is not possible to conduct a valid assessment of intellectual functioning and adaptive behaviour because of sensory or physical impairments (e.g., blindness, pre-lingual deafness), motor or communication impairments, severe problem behaviours or co-occurring mental and behavioural disorders.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

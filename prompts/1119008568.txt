@@ -1,0 +1,26 @@
+Disorder Name: Olfactory reference disorder
+Disorder Code: 1119008568
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Olfactory Reference Disorder is characterised by persistent preoccupation with the belief that one is emitting a perceived foul or offensive body odour or breath that is either unnoticeable or only slightly noticeable to others. Individuals experience excessive self-consciousness about the perceived odour, often with ideas of reference (i.e., the conviction that people are taking notice, judging, or talking about the odour). In response to their preoccupation, individuals engage in repetitive and excessive behaviours such as repeatedly checking for body odour or checking the perceived source of the smell, or repeatedly seeking reassurance, excessive attempts to camouflage, alter, or prevent the perceived odour, or marked avoidance of social situations or triggers that increase distress about the perceived foul or offensive odour. The symptoms are sufficiently severe to result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Olfactory Reference Disorder is characterised by persistent preoccupation with the belief that one is emitting a perceived foul or offensive body odour or breath that is either unnoticeable or only slightly noticeable to others. Individuals experience excessive self-consciousness about the perceived odour, often with ideas of reference (i.e., the conviction that people are taking notice, judging, or talking about the odour). In response to their preoccupation, individuals engage in repetitive and excessive behaviours such as repeatedly checking for body odour or checking the perceived source of the smell, or repeatedly seeking reassurance, excessive attempts to camouflage, alter, or prevent the perceived odour, or marked avoidance of social situations or triggers that increase distress about the perceived foul or offensive odour. The symptoms are sufficiently severe to result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

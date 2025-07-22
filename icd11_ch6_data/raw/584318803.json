@@ -1,0 +1,38 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/584318803",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/967849782"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#584318803",
+  "code": "6A21.01",
+  "source": "http://id.who.int/icd/entity/584318803",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/584318803/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Schizoaffective disorder, first episode, in partial remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for Schizoaffective disorder, first episode in terms of symptoms and duration were previously met. Symptoms have ameliorated such that the diagnostic requirements for the disorder have not been met for at least one month, but some clinically significant symptoms remain, which may or may not be associated with functional impairment. The partial remission may have occurred in response to medication or other treatment."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Schizoaffective disorder, first episode, in partial remission"
+      }
+    }
+  ]
+}

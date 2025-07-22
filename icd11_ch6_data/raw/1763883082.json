@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1763883082",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1194756772"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1763883082",
+  "code": "6A71.7",
+  "source": "http://id.who.int/icd/entity/1763883082",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1763883082/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder, currently in full remission"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder, currently in full remission is diagnosed when the definitional requirements for recurrent depressive disorder have been met but currently there are no significant mood symptoms."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, currently in full remission"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "recurrent major depression in remission"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "remission in recurrent depressive disorder"
+      }
+    }
+  ]
+}

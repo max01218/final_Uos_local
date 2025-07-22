@@ -1,0 +1,38 @@
+Disorder Name: Hypochondriasis
+Disorder Code: 675329566
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Hypochondriasis is characterised by persistent preoccupation or fear about the possibility of having one or more serious, progressive or life-threatening illnesses. The preoccupation is accompanied by either: 1) repetitive and excessive health-related behaviours, such as repeatedly checking the body for evidence of illness, spending inordinate amounts of time searching for information about the feared illness, repeatedly seeking reassurance (e.g. arranging multiple medical consultations); or 2) maladaptive avoidance behaviour related to health (e.g. avoids medical appointments). The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Inclusions: Hypochondriacal neurosis; Illness anxiety disorder
+Exclusions: Body dysmorphic disorder; Bodily distress disorder; Fear of cancer
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Hypochondriasis is characterised by persistent preoccupation or fear about the possibility of having one or more serious, progressive or life-threatening illnesses. The preoccupation is accompanied by either: 1) repetitive and excessive health-related behaviours, such as repeatedly checking the body for evidence of illness, spending inordinate amounts of time searching for information about the feared illness, repeatedly seeking reassurance (e.g. arranging multiple medical consultations); or 2) maladaptive avoidance behaviour related to health (e.g. avoids medical appointments). The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Included Manifestations:
+• Hypochondriacal neurosis
+• Illness anxiety disorder
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Body dysmorphic disorder
+• Should be differentiated from: Bodily distress disorder
+• Should be differentiated from: Fear of cancer
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

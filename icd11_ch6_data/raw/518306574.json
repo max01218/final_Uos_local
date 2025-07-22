@@ -1,0 +1,66 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/518306574",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/302122526"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#518306574",
+  "code": "6E69",
+  "source": "http://id.who.int/icd/entity/518306574",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/518306574/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/523963970",
+        "http://id.who.int/icd/release/11/2024-01/mms/2054210520",
+        "http://id.who.int/icd/release/11/2024-01/mms/515681918",
+        "http://id.who.int/icd/release/11/2024-01/mms/2079810536",
+        "http://id.who.int/icd/release/11/2024-01/mms/915343154",
+        "http://id.who.int/icd/release/11/2024-01/mms/186500648"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/518306574/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Secondary catatonia syndrome"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Secondary catatonia syndrome is a syndrome of primarily psychomotor disturbances, characterized by the co-occurrence of several symptoms of decreased, increased, or abnormal psychomotor activity, which occurs as a direct pathophysiological consequence of a medical condition not classified under Mental, Behavioural or Neurodevelopmental Disorders. Examples of medical conditions that may be associated with Catatonia include diabetic ketoacidosis, hypercalcaemia, hepatic encephalopathy, homocystinuria, neoplasms head trauma, cerebrovascular disease, and encephalitis."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "Use additional code, if desired, for any underlying disorder if known."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary catatonia syndrome"
+      }
+    }
+  ]
+}

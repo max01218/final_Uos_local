@@ -1,0 +1,32 @@
+Disorder Name: Disorders due to use of cocaine
+Disorder Code: 1689089786
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of cocaine are characterised by the pattern and consequences of cocaine use. Cocaine is a compound found in the leaves of the coca plant, Erythroxylum coca, which is indigenous to countries in northern regions of South America. Cocaine has a limited place in medical treatment as an anaesthetic and vasoconstrictive agent. It is commonly used illicitly and widely available across the world, where it is found in two main forms: cocaine hydrochloride and cocaine freebase (also known as ‘crack’). Cocaine is a central nervous system stimulant, and Cocaine Intoxication typically includes a state of euphoria and hyperactivity. Cocaine has potent dependence-producing properties and Cocaine Dependence is a common cause of morbidity and of clinical presentations. Cocaine Withdrawal has a characteristic course that includes lethargy and depressed mood. A range of Cocaine-Induced Mental Disorders is described.
+
+Exclusions: Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone; Hazardous use of cocaine
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of cocaine are characterised by the pattern and consequences of cocaine use. Cocaine is a compound found in the leaves of the coca plant, Erythroxylum coca, which is indigenous to countries in northern regions of South America. Cocaine has a limited place in medical treatment as an anaesthetic and vasoconstrictive agent. It is commonly used illicitly and widely available across the world, where it is found in two main forms: cocaine hydrochloride and cocaine freebase (also known as ‘crack’). Cocaine is a central nervous system stimulant, and Cocaine Intoxication typically includes a state of euphoria and hyperactivity. Cocaine has potent dependence-producing properties and Cocaine Dependence is a common cause of morbidity and of clinical presentations. Cocaine Withdrawal has a characteristic course that includes lethargy and depressed mood. A range of Cocaine-Induced Mental Disorders is described.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone
+• Should be differentiated from: Hazardous use of cocaine
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

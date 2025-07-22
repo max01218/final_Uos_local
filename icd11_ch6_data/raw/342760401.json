@@ -1,0 +1,60 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/342760401",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#342760401",
+  "code": "6A25.3",
+  "source": "http://id.who.int/icd/entity/342760401",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/342760401/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/681697550",
+        "http://id.who.int/icd/release/11/2024-01/mms/761934509"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/342760401/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1683919430",
+        "http://id.who.int/icd/release/11/2024-01/mms/106339515",
+        "http://id.who.int/icd/release/11/2024-01/mms/18178000",
+        "http://id.who.int/icd/release/11/2024-01/mms/284410555",
+        "http://id.who.int/icd/release/11/2024-01/mms/1974996783"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Manic mood symptoms in primary psychotic disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Manic mood symptoms in primary psychotic disorders refer to elevated, euphoric, irritable, or expansive mood states, including rapid changes among different mood states (i.e., mood lability). It also includes increased subjective experience of energy, which may be accompanied by increased goal-directed activity. The severity of associated non-mood symptoms of a Manic or Hypomanic Episode (e.g., decreased need for sleep, distractibility) should not be considered in making a rating. Increased non-goal-directed psychomotor activity should be considered as part of the rating of the 'psychomotor symptoms in primary psychotic disorders' rather than here. This descriptor may be used whether or not the manic symptoms meet the diagnostic requirements of a separately diagnosed bipolar disorder. The rating should be made based on the severity of manic mood symptoms during the past week."
+  },
+  "longDefinition": {
+    "@language": "en",
+    "@value": "This descriptor may be used together with a diagnosis from the grouping of Schizophrenia and other primary psychotic disorders to indicate that manic symptoms are a prominent part of the clinical presentation. The descriptor refers to elevated, euphoric, irritable, or expansive mood states, including rapid changes among different mood states (i.e., mood lability) accompanied by increased energy or activity, when these represent a significant change from the individual’s typical mood and energy or activity level. This descriptor may be used whether or not the manic symptoms meet the diagnostic requirements of a separately diagnosed Bipolar disorder."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "These categories should never be used in primary coding. The codes are provided for use as supplementary or additional codes when it is desired to identify the presence of these symptoms in primary psychotic disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Manic mood symptoms in primary psychotic disorders"
+      }
+    }
+  ]
+}

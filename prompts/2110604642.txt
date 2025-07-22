@@ -1,0 +1,31 @@
+Disorder Name: Paraphilic disorders
+Disorder Code: 2110604642
+Code Range: 6D30-6D3Z
+Class Kind: block
+
+Standard Definition:
+Paraphilic disorders are characterised by persistent and intense patterns of atypical sexual arousal, manifested by sexual thoughts, fantasies, urges, or behaviours, the focus of which involves others whose age or status renders them unwilling or unable to consent and on which the person has acted or by which he or she is markedly distressed. Paraphilic disorders may include arousal patterns involving solitary behaviours or consenting individuals only when these are associated with marked distress that is not simply a result of rejection or feared rejection of the arousal pattern by others or with significant risk of injury or death.
+
+Inclusions: paraphilias
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Paraphilic disorders are characterised by persistent and intense patterns of atypical sexual arousal, manifested by sexual thoughts, fantasies, urges, or behaviours, the focus of which involves others whose age or status renders them unwilling or unable to consent and on which the person has acted or by which he or she is markedly distressed. Paraphilic disorders may include arousal patterns involving solitary behaviours or consenting individuals only when these are associated with marked distress that is not simply a result of rejection or feared rejection of the arousal pattern by others or with significant risk of injury or death.
+
+Included Manifestations:
+• paraphilias
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

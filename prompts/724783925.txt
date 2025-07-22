@@ -1,0 +1,33 @@
+Disorder Name: Stimulant-induced mood disorder including amphetamines, methamphetamine or methcathinone
+Disorder Code: 724783925
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Stimulant-induced mood disorder including amphetamines, methamphetamine and methcathinone is characterised by mood symptoms (e.g., depressed or elevated mood, decreased engagement in pleasurable activities, increased or decreased energy levels) that develop during or soon after intoxication or withdrawal due to stimulants. The intensity or duration of the symptoms is substantially in excess of mood disturbances that are characteristic of Stimulant intoxication or Stimulant withdrawal. The amount and duration of stimulant use must be capable of producing mood symptoms. The symptoms are not better explained by a primary mental disorder (e.g., a Depressive disorder, a Bipolar disorder, Schizoaffective disorder), as might be the case if the mood symptoms preceded the onset of the stimulant use, if the symptoms persist for a substantial period of time after cessation of the stimulant use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with mood symptoms (e.g., a history of prior episodes not associated with use of stimulants).
+
+Exclusions: Synthetic cathinone-induced mood disorder; Cocaine-induced mood disorder; Disorders due to use of caffeine
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Stimulant-induced mood disorder including amphetamines, methamphetamine and methcathinone is characterised by mood symptoms (e.g., depressed or elevated mood, decreased engagement in pleasurable activities, increased or decreased energy levels) that develop during or soon after intoxication or withdrawal due to stimulants. The intensity or duration of the symptoms is substantially in excess of mood disturbances that are characteristic of Stimulant intoxication or Stimulant withdrawal. The amount and duration of stimulant use must be capable of producing mood symptoms. The symptoms are not better explained by a primary mental disorder (e.g., a Depressive disorder, a Bipolar disorder, Schizoaffective disorder), as might be the case if the mood symptoms preceded the onset of the stimulant use, if the symptoms persist for a substantial period of time after cessation of the stimulant use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with mood symptoms (e.g., a history of prior episodes not associated with use of stimulants).
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Synthetic cathinone-induced mood disorder
+• Should be differentiated from: Cocaine-induced mood disorder
+• Should be differentiated from: Disorders due to use of caffeine
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

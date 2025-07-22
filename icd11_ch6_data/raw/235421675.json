@@ -1,0 +1,78 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/235421675",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/302122526"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#235421675",
+  "code": "6E67",
+  "source": "http://id.who.int/icd/entity/235421675",
+  "classKind": "category",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/897917531",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/897917531"
+    }
+  ],
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/235421675/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Secondary neurocognitive syndrome"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A syndrome that involves significant cognitive features that do not fulfill the diagnostic requirements of any of the specific neurocognitive disorders and are judged to be a direct pathophysiological consequence of a health condition or injury not classified under mental and behavioural disorders (e.g., cognitive changes due to a brain tumour), based on evidence from the history, physical examination, or laboratory findings. This category should be used in addition to the diagnosis for the presumed underlying disorder or disease when the cognitive symptoms are sufficiently severe to warrant specific clinical attention."
+  },
+  "fullySpecifiedName": {
+    "@language": "en",
+    "@value": "Neurocognitive syndrome due to health condition not classified under mental and behavioural disorders"
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorders with neurocognitive impairment as a major feature"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1719545571",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1719545571"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary neurocognitive syndrome"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Neurocognitive syndrome due to health condition not classified under mental and behavioural disorders"
+      }
+    }
+  ]
+}

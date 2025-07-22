@@ -1,0 +1,26 @@
+Disorder Name: Generalised anxiety disorder
+Disorder Code: 1712535455
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Generalised anxiety disorder is characterised by marked symptoms of anxiety that persist for at least several months, for more days than not, manifested by either general apprehension (i.e. ‘free-floating anxiety’) or excessive worry focused on multiple everyday events, most often concerning family, health, finances, and school or work, together with additional symptoms such as muscular tension or motor restlessness, sympathetic autonomic over-activity, subjective experience of nervousness, difficulty maintaining concentration, irritability, or sleep disturbance. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. The symptoms are not a manifestation of another health condition and are not due to the effects of a substance or medication on the central nervous system.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Generalised anxiety disorder is characterised by marked symptoms of anxiety that persist for at least several months, for more days than not, manifested by either general apprehension (i.e. ‘free-floating anxiety’) or excessive worry focused on multiple everyday events, most often concerning family, health, finances, and school or work, together with additional symptoms such as muscular tension or motor restlessness, sympathetic autonomic over-activity, subjective experience of nervousness, difficulty maintaining concentration, irritability, or sleep disturbance. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. The symptoms are not a manifestation of another health condition and are not due to the effects of a substance or medication on the central nervous system.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

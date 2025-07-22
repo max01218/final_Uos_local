@@ -1,0 +1,26 @@
+Disorder Name: Anorexia Nervosa in recovery with normal body weight
+Disorder Code: 38433871
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Among individuals who are recovering from Anorexia Nervosa and whose body weight is more than 18.5 kg/m2 for adults or over the fifth percentile for BMI-for-age for children and adolescents, the diagnosis should be retained until a full and lasting recovery is achieved, as indicated by the maintenance of a healthy weight and the cessation of behaviours aimed at reducing body weight independent of the provision of treatment (e.g., for at least 1 year after intensive treatment is withdrawn).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Among individuals who are recovering from Anorexia Nervosa and whose body weight is more than 18.5 kg/m2 for adults or over the fifth percentile for BMI-for-age for children and adolescents, the diagnosis should be retained until a full and lasting recovery is achieved, as indicated by the maintenance of a healthy weight and the cessation of behaviours aimed at reducing body weight independent of the provision of treatment (e.g., for at least 1 year after intensive treatment is withdrawn).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

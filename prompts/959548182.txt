@@ -1,0 +1,26 @@
+Disorder Name: Body dysmorphic disorder with poor to absent insight
+Disorder Code: 959548182
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements of body dysmorphic disorder are met. Most or all of the time, the individual is convinced that the disorder-specific beliefs are true and cannot accept an alternative explanation for their experience. The lack of insight exhibited by the individual does not vary markedly as a function of anxiety level.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements of body dysmorphic disorder are met. Most or all of the time, the individual is convinced that the disorder-specific beliefs are true and cannot accept an alternative explanation for their experience. The lack of insight exhibited by the individual does not vary markedly as a function of anxiety level.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

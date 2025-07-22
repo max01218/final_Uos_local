@@ -1,0 +1,33 @@
+Disorder Name: Amnestic disorder
+Disorder Code: 386330688
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Amnestic disorder is characterised by prominent memory impairment relative to expectations for age and general premorbid level of cognitive functioning, which represents a decline from the individual’s previous level of functioning, in the absence of other significant cognitive impairment. It is manifested by a deficit in acquiring, learning, and/or retaining new information, and may include the inability to recall previously learned information, without disturbance of consciousness, altered mental status, or delirium. Recent memory is typically more disturbed than remote memory, and the ability to immediately recall a limited amount of information is usually relatively preserved. The memory impairment is severe enough to result in significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. It is presumed to be attributable to an underlying acquired disease of the nervous system, a trauma, an infection or other disease process affecting the brain, to use of specific substances or medications, nutritional deficiency or exposure to toxins, or the etiology may be undetermined. The impairment is not due to current substance intoxication or withdrawal.
+
+Exclusions: Delirium; Dementia; Mild neurocognitive disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Amnestic disorder is characterised by prominent memory impairment relative to expectations for age and general premorbid level of cognitive functioning, which represents a decline from the individual’s previous level of functioning, in the absence of other significant cognitive impairment. It is manifested by a deficit in acquiring, learning, and/or retaining new information, and may include the inability to recall previously learned information, without disturbance of consciousness, altered mental status, or delirium. Recent memory is typically more disturbed than remote memory, and the ability to immediately recall a limited amount of information is usually relatively preserved. The memory impairment is severe enough to result in significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. It is presumed to be attributable to an underlying acquired disease of the nervous system, a trauma, an infection or other disease process affecting the brain, to use of specific substances or medications, nutritional deficiency or exposure to toxins, or the etiology may be undetermined. The impairment is not due to current substance intoxication or withdrawal.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Delirium
+• Should be differentiated from: Dementia
+• Should be differentiated from: Mild neurocognitive disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

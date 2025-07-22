@@ -1,0 +1,24 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1991016628",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1321276661"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1515067172",
+    "http://id.who.int/icd/release/11/2024-01/mms/1355001928",
+    "http://id.who.int/icd/release/11/2024-01/mms/1991016628/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1991016628",
+  "code": "6B24",
+  "source": "http://id.who.int/icd/entity/1991016628",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Hoarding disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Hoarding disorder is characterised by accumulation of possessions that results in living spaces becoming cluttered to the point that their use or safety is compromised. Accumulation occurs due to both repetitive urges or behaviours related to amassing items and difficulty discarding possessions due to a perceived need to save items and distress associated with discarding them. If living areas are uncluttered this is only due to the intervention of third parties (e.g., family members, cleaners, authorities). Amassment may be passive (e.g. accumulation of incoming flyers or mail) or active (e.g. excessive acquisition of free, purchased, or stolen items). The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  }
+}

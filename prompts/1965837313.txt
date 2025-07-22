@@ -1,0 +1,32 @@
+Disorder Name: Cocaine intoxication
+Disorder Code: 1965837313
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Cocaine intoxication is a clinically significant transient condition that develops during or shortly after the consumption of cocaine that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of cocaine and their intensity is closely related to the amount of cocaine consumed. They are time-limited and abate as cocaine is cleared from the body. Presenting features may include inappropriate euphoria, anxiety, anger, impaired attention, hypervigilance, psychomotor agitation, paranoid ideation (sometimes of delusional intensity), auditory hallucinations, confusion, and changes in sociability. Perspiration or chills, nausea or vomiting, and palpitations and chest pain may be experienced. Physical signs may include tachycardia, elevated blood pressure, and pupillary dilatation. In rare instances, usually in severe intoxication, cocaine use can result in seizures, muscle weakness, dyskinesia, or dystonia.
+
+Exclusions: cocaine poisoning; Possession trance disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Cocaine intoxication is a clinically significant transient condition that develops during or shortly after the consumption of cocaine that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of cocaine and their intensity is closely related to the amount of cocaine consumed. They are time-limited and abate as cocaine is cleared from the body. Presenting features may include inappropriate euphoria, anxiety, anger, impaired attention, hypervigilance, psychomotor agitation, paranoid ideation (sometimes of delusional intensity), auditory hallucinations, confusion, and changes in sociability. Perspiration or chills, nausea or vomiting, and palpitations and chest pain may be experienced. Physical signs may include tachycardia, elevated blood pressure, and pupillary dilatation. In rare instances, usually in severe intoxication, cocaine use can result in seizures, muscle weakness, dyskinesia, or dystonia.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: cocaine poisoning
+• Should be differentiated from: Possession trance disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

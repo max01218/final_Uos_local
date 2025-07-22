@@ -1,0 +1,26 @@
+Disorder Name: Dementia due to human immunodeficiency virus
+Disorder Code: 1173624218
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dementia due to human immunodeficiency virus develops during the course of confirmed HIV disease, in the absence of a concurrent illness or condition other than HIV infection that could explain the clinical features. Although a variety of patterns of cognitive deficit are possible depending on where the HIV pathogenic processes have occurred, typically deficits follow a subcortical pattern with impairments in executive function, processing speed, attention, and learning new information. The course of Dementia due to human immunodeficiency virus varies including resolution of symptoms, gradual decline in functioning, improvement, or fluctuation in symptoms. Rapid decline in cognitive functioning is rare with the advent of antiretroviral medications.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia due to human immunodeficiency virus develops during the course of confirmed HIV disease, in the absence of a concurrent illness or condition other than HIV infection that could explain the clinical features. Although a variety of patterns of cognitive deficit are possible depending on where the HIV pathogenic processes have occurred, typically deficits follow a subcortical pattern with impairments in executive function, processing speed, attention, and learning new information. The course of Dementia due to human immunodeficiency virus varies including resolution of symptoms, gradual decline in functioning, improvement, or fluctuation in symptoms. Rapid decline in cognitive functioning is rare with the advent of antiretroviral medications.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

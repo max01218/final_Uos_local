@@ -1,0 +1,98 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1124422593",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/882114523"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1124422593",
+  "code": "6E20",
+  "source": "http://id.who.int/icd/entity/1124422593",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1124422593/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/613065957",
+        "http://id.who.int/icd/release/11/2024-01/mms/1563440232",
+        "http://id.who.int/icd/release/11/2024-01/mms/2133003467",
+        "http://id.who.int/icd/release/11/2024-01/mms/1321276661",
+        "http://id.who.int/icd/release/11/2024-01/mms/264310751",
+        "http://id.who.int/icd/release/11/2024-01/mms/216291184"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, without psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A syndrome associated with pregnancy or the puerperium (commencing within about 6 weeks after delivery) that involves significant mental and behavioural features, most commonly depressive symptoms. The syndrome does not include delusions, hallucinations, or other psychotic symptoms. If the symptoms meet the diagnostic requirements for a specific mental disorder, that diagnosis should also be assigned. This designation should not be used to describe mild and transient depressive symptoms that do not meet the diagnostic requirements for a depressive episode, which may occur soon after delivery (so-called postpartum blues)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, without psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Postpartum depression NOS"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/169328648"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "postnatal depression NOS"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/169328648"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "puerperal depression NOS"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/169328648"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "baby blues"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/169328648"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "third day blues"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/169328648"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "maternity blues"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/169328648"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Postpartum depression without psychotic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1945586723"
+    }
+  ]
+}

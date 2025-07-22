@@ -1,0 +1,200 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1121505208",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/601226803"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1121505208",
+  "code": "6C4F.3",
+  "source": "http://id.who.int/icd/entity/1121505208",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1121505208/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1076458680",
+        "http://id.who.int/icd/release/11/2024-01/mms/448177412",
+        "http://id.who.int/icd/release/11/2024-01/mms/1864983449",
+        "http://id.who.int/icd/release/11/2024-01/mms/543245955"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1121505208/postcoordinationScale/chemicalAgent",
+      "axisName": "http://id.who.int/icd/schema/chemicalAgent",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1991751314",
+        "http://id.who.int/icd/release/11/2024-01/mms/36740588"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1121505208/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1121505208/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1729466996",
+        "http://id.who.int/icd/release/11/2024-01/mms/1719901309",
+        "http://id.who.int/icd/release/11/2024-01/mms/853273682"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Intoxication due to multiple specified psychoactive substances"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Intoxication due to multiple specified psychoactive substances is a clinically significant transient condition that develops during or shortly after the consumption of multiple specified substances or medications that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of the multiple specified psychoactive substances and their intensity is closely related to the amount of the substances consumed. They are time-limited and abate as the multiple specified substances are cleared from the body."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Intoxication due to multiple specified psychoactive substances"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "mixed drug intoxication NOS"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "combined drug intoxication NOS"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute mixed drug intoxication NOS"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute combined drug intoxication NOS"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute polydrug intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "multidrug intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "polysubstance intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Combined toxic effects of heroin and methamphetamine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/389186062"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "heroin and methamphetamine toxicity"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/389186062"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "heroin and methamphetamine intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/389186062"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute heroin and methamphetamine intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/389186062"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine and fentanyl intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/152136784"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute cocaine and fentanyl intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/152136784"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fentanyl and cocaine intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/152136784"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "drug intoxication (fentanyl, cocaine)"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/152136784"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Fentanyl and methamphetamine intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/272227512"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute fentanyl and methamphetamine intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/272227512"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Fentanyl and ethanol intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/349622108"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute fentanyl and ethanol intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/349622108"
+    }
+  ]
+}

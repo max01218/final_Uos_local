@@ -1,0 +1,58 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1935765699",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1252561403"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1935765699",
+  "code": "6C48.10",
+  "source": "http://id.who.int/icd/entity/1935765699",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1935765699/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1115271910"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1935765699/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1648213213",
+        "http://id.who.int/icd/release/11/2024-01/mms/1569910443"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Harmful pattern of use of caffeine, episodic"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A pattern of episodic or intermittent caffeine use that has caused damage to a person’s physical or mental health. The pattern of episodic caffeine use is evident over a period of at least 12 months. Harm to health of the individual occurs due to one or more of the following: (1) direct or secondary toxic effects on body organs and systems; or (2) a harmful route of administration."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of caffeine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/207246302",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/207246302"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of caffeine, episodic"
+      }
+    }
+  ]
+}

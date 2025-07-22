@@ -1,0 +1,37 @@
+Disorder Name: Recurrent depressive disorder
+Disorder Code: 1194756772
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Recurrent depressive disorder is characterised by a history of at least two depressive episodes separated by at least several months without significant mood disturbance. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. There have never been any prior manic, hypomanic, or mixed episodes, which would indicate the presence of a Bipolar disorder.
+
+Inclusions: seasonal depressive disorder
+Exclusions: Adjustment disorder; Bipolar or related disorders; Single episode depressive disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Recurrent depressive disorder is characterised by a history of at least two depressive episodes separated by at least several months without significant mood disturbance. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. There have never been any prior manic, hypomanic, or mixed episodes, which would indicate the presence of a Bipolar disorder.
+
+Included Manifestations:
+• seasonal depressive disorder
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Adjustment disorder
+• Should be differentiated from: Bipolar or related disorders
+• Should be differentiated from: Single episode depressive disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

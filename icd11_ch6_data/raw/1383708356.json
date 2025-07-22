@@ -1,0 +1,77 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1383708356",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/496273089"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1383708356",
+  "code": "6A80.1",
+  "source": "http://id.who.int/icd/entity/1383708356",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1383708356/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/129188707",
+        "http://id.who.int/icd/release/11/2024-01/mms/306271588",
+        "http://id.who.int/icd/release/11/2024-01/mms/818054919",
+        "http://id.who.int/icd/release/11/2024-01/mms/1952305399",
+        "http://id.who.int/icd/release/11/2024-01/mms/286661987",
+        "http://id.who.int/icd/release/11/2024-01/mms/1061132490",
+        "http://id.who.int/icd/release/11/2024-01/mms/1706773916",
+        "http://id.who.int/icd/release/11/2024-01/mms/167688690",
+        "http://id.who.int/icd/release/11/2024-01/mms/485378793",
+        "http://id.who.int/icd/release/11/2024-01/mms/590587802",
+        "http://id.who.int/icd/release/11/2024-01/mms/678752877",
+        "http://id.who.int/icd/release/11/2024-01/mms/183967754",
+        "http://id.who.int/icd/release/11/2024-01/mms/349321697",
+        "http://id.who.int/icd/release/11/2024-01/mms/51767575",
+        "http://id.who.int/icd/release/11/2024-01/mms/1922675618",
+        "http://id.who.int/icd/release/11/2024-01/mms/399670840",
+        "http://id.who.int/icd/release/11/2024-01/mms/651947494",
+        "http://id.who.int/icd/release/11/2024-01/mms/1669279433",
+        "http://id.who.int/icd/release/11/2024-01/mms/104129373",
+        "http://id.who.int/icd/release/11/2024-01/mms/554273362",
+        "http://id.who.int/icd/release/11/2024-01/mms/1851882275",
+        "http://id.who.int/icd/release/11/2024-01/mms/187348663",
+        "http://id.who.int/icd/release/11/2024-01/mms/419823765",
+        "http://id.who.int/icd/release/11/2024-01/mms/2139612744",
+        "http://id.who.int/icd/release/11/2024-01/mms/449588190",
+        "http://id.who.int/icd/release/11/2024-01/mms/1905765233"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Panic attacks in mood episodes"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "In the context of a current mood episode (manic, depressive, mixed, or hypomanic), there have been recurrent panic attacks (i.e., at least two) during the past month that occur specifically in response to anxiety-provoking cognitions that are features of the mood episode. If panic attacks occur exclusively in response to such thoughts, panic attacks should be recorded using this qualifier rather than assigning an additional co-occurring diagnosis of panic disorder.\n\nIf some panic attacks over the course of the depressive or mixed episode have been unexpected and not exclusively in response to depressive or anxiety-provoking thoughts, a separate diagnosis of panic disorder should be assigned."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Panic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/56162827",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/56162827"
+    }
+  ],
+  "codingNote": {
+    "@language": "en",
+    "@value": "These categories should never be used in primary coding. The codes are provided for use as supplementary or additional codes when it is desired to identify specific clinically important features of mood episodes in mood disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Panic attacks in mood episodes"
+      }
+    }
+  ]
+}

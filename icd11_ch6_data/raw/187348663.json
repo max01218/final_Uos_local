@@ -1,0 +1,178 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/187348663",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1194756772"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#187348663",
+  "code": "6A71.1",
+  "source": "http://id.who.int/icd/entity/187348663",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/187348663/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1119039346",
+        "http://id.who.int/icd/release/11/2024-01/mms/1383708356",
+        "http://id.who.int/icd/release/11/2024-01/mms/1906190365",
+        "http://id.who.int/icd/release/11/2024-01/mms/802537726",
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798",
+        "http://id.who.int/icd/release/11/2024-01/mms/1124422593"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms is diagnosed when the definitional requirements for recurrent depressive disorder have been met and there is currently a depressive episode of moderate severity, and there are no delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a moderate depressive episode, several symptoms of a depressive episode are present to a marked degree, or a large number of depressive symptoms of lesser severity are present overall. The individual typically has considerable difficulty functioning in multiple domains (personal, family, social, educational, occupational, or other important domains)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "major depressive disorder, recurrent episode, moderate degree"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "major depressive disorder, recurrent, moderate"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "moderate recurrent major depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "recurrent depressive disorder, current episode moderate"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "recurrent depressive disorder, current episode moderate, without psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/684837874"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/108233360"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1009268456"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1447695297"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1164103762"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/87451845"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/542934391"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1706221698"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1609127158"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/559664681"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1345002326"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1312049956"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/779909401"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/783336295"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode moderate, without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1324937566"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1890228613",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2110604642"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1890228613",
+  "code": "6D33",
+  "source": "http://id.who.int/icd/entity/1890228613",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Coercive sexual sadism disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Coercive sexual sadism disorder is characterised by a sustained, focused and intense pattern of sexual arousal—as manifested by persistent sexual thoughts, fantasies, urges or behaviours—that involves the infliction of physical or psychological suffering on a non-consenting person. In addition, in order for Coercive Sexual Sadism Disorder to be diagnosed, the individual must have acted on these thoughts, fantasies or urges or be markedly distressed by them. Coercive Sexual Sadism Disorder specifically excludes consensual sexual sadism and masochism."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Coercive sexual sadism disorder"
+      }
+    }
+  ]
+}

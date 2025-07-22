@@ -1,0 +1,48 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1034374160",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/967849782"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1034374160",
+  "code": "6A21.00",
+  "source": "http://id.who.int/icd/entity/1034374160",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1034374160/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Schizoaffective disorder, first episode, currently symptomatic"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for Schizoaffective disorder, first episode in terms of symptoms and duration are currently met, or have been met within the past one month."
+  },
+  "fullySpecifiedName": {
+    "@language": "en",
+    "@value": "Schizoaffective disorder, first episode, currently in acute episode, acute onset"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Schizoaffective disorder, first episode, currently symptomatic"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Schizoaffective disorder, first episode, currently in acute episode, acute onset"
+      }
+    }
+  ]
+}

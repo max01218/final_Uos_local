@@ -1,0 +1,26 @@
+Disorder Name: Schizoaffective disorder, continuous
+Disorder Code: 725134404
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Symptoms fulfilling all definitional requirements of Schizoaffective disorder have been present for almost all of the illness course over a period of at least one year, with periods of subthreshold symptoms being very brief relative to the overall course.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Symptoms fulfilling all definitional requirements of Schizoaffective disorder have been present for almost all of the illness course over a period of at least one year, with periods of subthreshold symptoms being very brief relative to the overall course.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

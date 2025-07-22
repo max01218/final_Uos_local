@@ -1,0 +1,26 @@
+Disorder Name: Synthetic cathinone-induced psychotic disorder
+Disorder Code: 1005846640
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Synthetic cathinone-induced psychotic disorder is characterised by psychotic symptoms (e.g., delusions, hallucinations, disorganised thinking, grossly disorganised behaviour) that develop during or soon after intoxication with or withdrawal from synthetic cathinones. The intensity or duration of the symptoms is substantially in excess of psychotic-like disturbances of perception, cognition, or behaviour that are characteristic of Synthetic cathinone intoxication or Synthetic cathinone withdrawal. The amount and duration of synthetic cathinone use must be capable of producing psychotic symptoms. The symptoms are not better explained by a primary mental disorder (e.g., Schizophrenia, a Mood disorder with psychotic symptoms), as might be the case if the psychotic symptoms preceded the onset of the synthetic cathinone use, if the symptoms persist for a substantial period of time after cessation of the synthetic cathinone use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with psychotic symptoms (e.g., a history of prior episodes not associated with synthetic cathinone use).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Synthetic cathinone-induced psychotic disorder is characterised by psychotic symptoms (e.g., delusions, hallucinations, disorganised thinking, grossly disorganised behaviour) that develop during or soon after intoxication with or withdrawal from synthetic cathinones. The intensity or duration of the symptoms is substantially in excess of psychotic-like disturbances of perception, cognition, or behaviour that are characteristic of Synthetic cathinone intoxication or Synthetic cathinone withdrawal. The amount and duration of synthetic cathinone use must be capable of producing psychotic symptoms. The symptoms are not better explained by a primary mental disorder (e.g., Schizophrenia, a Mood disorder with psychotic symptoms), as might be the case if the psychotic symptoms preceded the onset of the synthetic cathinone use, if the symptoms persist for a substantial period of time after cessation of the synthetic cathinone use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with psychotic symptoms (e.g., a history of prior episodes not associated with synthetic cathinone use).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

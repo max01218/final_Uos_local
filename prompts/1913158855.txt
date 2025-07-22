@@ -1,0 +1,26 @@
+Disorder Name: Dissociality in personality disorder or personality difficulty
+Disorder Code: 1913158855
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+The core feature of the Dissociality trait domain is disregard for the rights and feelings of others, encompassing both self-centeredness and lack of empathy. Common manifestations of Dissociality, not all of which may be present in a given individual at a given time, include: self-centeredness (e.g., sense of entitlement, expectation of others’ admiration, positive or negative attention-seeking behaviours, concern with one's own needs, desires and comfort and not those of others); and lack of empathy (i.e., indifference to whether one’s actions inconvenience or hurt others, which may include being deceptive, manipulative, and exploitative of others, being mean and physically aggressive, callousness in response to others' suffering, and ruthlessness in obtaining one’s goals).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+The core feature of the Dissociality trait domain is disregard for the rights and feelings of others, encompassing both self-centeredness and lack of empathy. Common manifestations of Dissociality, not all of which may be present in a given individual at a given time, include: self-centeredness (e.g., sense of entitlement, expectation of others’ admiration, positive or negative attention-seeking behaviours, concern with one's own needs, desires and comfort and not those of others); and lack of empathy (i.e., indifference to whether one’s actions inconvenience or hurt others, which may include being deceptive, manipulative, and exploitative of others, being mean and physically aggressive, callousness in response to others' suffering, and ruthlessness in obtaining one’s goals).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,32 @@
+Disorder Name: Disorders specifically associated with stress
+Disorder Code: 991786158
+Code Range: 6B40-6B4Z
+Class Kind: block
+
+Standard Definition:
+Disorders specifically associated with stress are directly related to exposure to a stressful or traumatic event, or a series of such events or adverse experiences. For each of the disorders in this grouping, an identifiable stressor is a necessary, though not sufficient, causal factor. Although not all individuals exposed to an identified stressor will develop a disorder, the disorders in this grouping would not have occurred without experiencing the stressor. Stressful events for some disorders in this grouping are within the normal range of life experiences (e.g., divorce, socio-economic problems, bereavement). Other disorders require the experience of a stressor of an extremely threatening or horrific nature (i.e., potentially traumatic events). With all disorders in this grouping, it is the nature, pattern, and duration of the symptoms that arise in response to the stressful events—together with associated functional impairment—that distinguishes the disorders.
+
+Exclusions: Burnout; Acute stress reaction
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders specifically associated with stress are directly related to exposure to a stressful or traumatic event, or a series of such events or adverse experiences. For each of the disorders in this grouping, an identifiable stressor is a necessary, though not sufficient, causal factor. Although not all individuals exposed to an identified stressor will develop a disorder, the disorders in this grouping would not have occurred without experiencing the stressor. Stressful events for some disorders in this grouping are within the normal range of life experiences (e.g., divorce, socio-economic problems, bereavement). Other disorders require the experience of a stressor of an extremely threatening or horrific nature (i.e., potentially traumatic events). With all disorders in this grouping, it is the nature, pattern, and duration of the symptoms that arise in response to the stressful events—together with associated functional impairment—that distinguishes the disorders.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Burnout
+• Should be differentiated from: Acute stress reaction
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

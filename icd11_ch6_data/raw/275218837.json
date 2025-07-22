@@ -1,0 +1,64 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/275218837",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1689089786"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1179645529",
+    "http://id.who.int/icd/release/11/2024-01/mms/378773400",
+    "http://id.who.int/icd/release/11/2024-01/mms/275218837/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#275218837",
+  "code": "6C45.1",
+  "source": "http://id.who.int/icd/entity/275218837",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/275218837/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1919913834",
+        "http://id.who.int/icd/release/11/2024-01/mms/388252416",
+        "http://id.who.int/icd/release/11/2024-01/mms/1081029366"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/275218837/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1965837313"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Harmful pattern of use of cocaine"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A pattern of use of cocaine that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. The pattern of cocaine use is evident over a period of at least 12 months if substance use is episodic or at least one month if use is continuous (i.e., daily or almost daily). Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour related to cocaine intoxication on the part of the person to whom the diagnosis of Harmful pattern of use of cocaine applies."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine dependence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1691013484",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1691013484"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of cocaine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/318767128",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/318767128"
+    }
+  ]
+}

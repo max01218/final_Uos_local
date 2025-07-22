@@ -1,0 +1,31 @@
+Disorder Name: Dementia due to cerebrovascular disease
+Disorder Code: 1365258270
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dementia due to brain parenchyma injury resulting from cerebrovascular disease (ischemic or haemorrhagic). The onset of the cognitive deficits is temporally related to one or more vascular events. Cognitive decline is typically most prominent in speed of information processing, complex attention, and frontal-executive functioning. There is evidence of the presence of cerebrovascular disease considered to be sufficient to account for the neurocognitive deficits from history, physical examination and neuroimaging.
+
+Exclusions: Alzheimer disease dementia, mixed type, with cerebrovascular disease
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia due to brain parenchyma injury resulting from cerebrovascular disease (ischemic or haemorrhagic). The onset of the cognitive deficits is temporally related to one or more vascular events. Cognitive decline is typically most prominent in speed of information processing, complex attention, and frontal-executive functioning. There is evidence of the presence of cerebrovascular disease considered to be sufficient to account for the neurocognitive deficits from history, physical examination and neuroimaging.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Alzheimer disease dementia, mixed type, with cerebrovascular disease
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

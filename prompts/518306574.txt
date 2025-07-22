@@ -1,0 +1,26 @@
+Disorder Name: Secondary catatonia syndrome
+Disorder Code: 518306574
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Secondary catatonia syndrome is a syndrome of primarily psychomotor disturbances, characterized by the co-occurrence of several symptoms of decreased, increased, or abnormal psychomotor activity, which occurs as a direct pathophysiological consequence of a medical condition not classified under Mental, Behavioural or Neurodevelopmental Disorders. Examples of medical conditions that may be associated with Catatonia include diabetic ketoacidosis, hypercalcaemia, hepatic encephalopathy, homocystinuria, neoplasms head trauma, cerebrovascular disease, and encephalitis.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Secondary catatonia syndrome is a syndrome of primarily psychomotor disturbances, characterized by the co-occurrence of several symptoms of decreased, increased, or abnormal psychomotor activity, which occurs as a direct pathophysiological consequence of a medical condition not classified under Mental, Behavioural or Neurodevelopmental Disorders. Examples of medical conditions that may be associated with Catatonia include diabetic ketoacidosis, hypercalcaemia, hepatic encephalopathy, homocystinuria, neoplasms head trauma, cerebrovascular disease, and encephalitis.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

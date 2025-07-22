@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1396644446",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/738827515"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1396644446",
+  "code": "6C42.71",
+  "source": "http://id.who.int/icd/entity/1396644446",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1396644446/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/508603587",
+        "http://id.who.int/icd/release/11/2024-01/mms/397276103"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1396644446/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/912934263",
+        "http://id.who.int/icd/release/11/2024-01/mms/1055626783",
+        "http://id.who.int/icd/release/11/2024-01/mms/686500513"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Synthetic cannabinoid-induced anxiety disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Synthetic cannabinoid-induced anxiety disorder is characterised by anxiety symptoms (e.g., apprehension or worry, fear, physiological symptoms of excessive autonomic arousal, avoidance behaviour) that develop during or soon after intoxication with or withdrawal from synthetic cannabinoids. The intensity or duration of the symptoms is substantially in excess of anxiety symptoms that are characteristic of Synthetic cannabinoid intoxication or Synthetic cannabinoid withdrawal. The amount and duration of synthetic cannabinoid use must be capable of producing anxiety symptoms. The symptoms are not better explained by a primary mental disorder (e.g., an Anxiety and Fear-Related Disorder, a Depressive Disorder with prominent anxiety symptoms), as might be the case if the anxiety symptoms preceded the onset of the synthetic cannabinoid use, if the symptoms persist for a substantial period of time after cessation of the synthetic cannabinoid use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with anxiety symptoms (e.g., a history of prior episodes not associated with synthetic cannabinoid use)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cannabinoid-induced anxiety disorder"
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1699574100",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/268445189"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/719650647",
+    "http://id.who.int/icd/release/11/2024-01/mms/88210793",
+    "http://id.who.int/icd/release/11/2024-01/mms/986422897",
+    "http://id.who.int/icd/release/11/2024-01/mms/980168193",
+    "http://id.who.int/icd/release/11/2024-01/mms/1699574100/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1699574100",
+  "code": "6C4A.2",
+  "source": "http://id.who.int/icd/entity/1699574100",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1699574100/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1957424191",
+        "http://id.who.int/icd/release/11/2024-01/mms/441538"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Nicotine dependence"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Nicotine dependence is a disorder of regulation of nicotine use arising from repeated or continuous use of nicotine. The characteristic feature is a strong internal drive to use nicotine, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use nicotine. Physiological features of dependence may also be present, including tolerance to the effects of nicotine, withdrawal symptoms following cessation or reduction in use of nicotine, or repeated use of nicotine or pharmacologically similar substances to prevent or alleviate withdrawal symptoms. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if nicotine use is continuous (daily or almost daily) for at least 3 months."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of nicotine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1356720300",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1356720300"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of nicotine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/299901355",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/299901355"
+    }
+  ]
+}

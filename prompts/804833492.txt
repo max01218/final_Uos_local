@@ -1,0 +1,31 @@
+Disorder Name: Disorders due to use of synthetic cannabinoids
+Disorder Code: 804833492
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of synthetic cannabinoids are characterised by the pattern and consequences of synthetic cannabinoid use. Synthetic cannabinoids are synthesized diverse chemical compounds that are potent agonists for endogenous cannabinoid receptors. There are several hundred such compounds. The synthetic compound is typically sprayed onto a vehicle such as cannabis or tea leaves and then smoked. The effect of these compounds is distinctly different from smoking naturally cultivated cannabis in that the euphoric effects are typically accompanied or dominated by psychotic-like symptoms (e.g., paranoia, hallucinations, and disorganized behavior). Synthetic Cannabinoid Intoxication may therefore present more frequently with psychotic symptoms in addition to the more typical effects of cannabis. Synthetic cannabinoids are also dependence-producing and Synthetic Cannabinoid Dependence and Synthetic Cannabinoid Withdrawal are recognized. Synthetic Cannabinoid-Induced Mental Disorders also occur; in particular Synthetic Cannabinoid-Induced Psychotic Disorder is recognized.
+
+Exclusions: Disorders due to use of cannabis
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of synthetic cannabinoids are characterised by the pattern and consequences of synthetic cannabinoid use. Synthetic cannabinoids are synthesized diverse chemical compounds that are potent agonists for endogenous cannabinoid receptors. There are several hundred such compounds. The synthetic compound is typically sprayed onto a vehicle such as cannabis or tea leaves and then smoked. The effect of these compounds is distinctly different from smoking naturally cultivated cannabis in that the euphoric effects are typically accompanied or dominated by psychotic-like symptoms (e.g., paranoia, hallucinations, and disorganized behavior). Synthetic Cannabinoid Intoxication may therefore present more frequently with psychotic symptoms in addition to the more typical effects of cannabis. Synthetic cannabinoids are also dependence-producing and Synthetic Cannabinoid Dependence and Synthetic Cannabinoid Withdrawal are recognized. Synthetic Cannabinoid-Induced Mental Disorders also occur; in particular Synthetic Cannabinoid-Induced Psychotic Disorder is recognized.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Disorders due to use of cannabis
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

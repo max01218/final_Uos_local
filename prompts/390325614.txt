@@ -1,0 +1,31 @@
+Disorder Name: Disorders due to use of sedatives, hypnotics or anxiolytics
+Disorder Code: 390325614
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of sedatives, hypnotics or anxiolytics are characterised by the pattern and consequences of use of these substances. Sedatives, hypnotics, and anxiolytics are typically prescribed for the short-term treatment of anxiety or insomnia and are also employed to provide sedation for medical procedures. They include the benzodiazepines and the non-benzodiazepine positive allosteric modulators of GABA receptors (i.e., ‘Z-drugs’) as well as many other compounds. Sedatives, hypnotics, and anxiolytics include barbiturates, which are available much less commonly now than in previous decades. Sedatives, hypnotics, and anxiolytics have dependence-inducing properties that are related to the dose and duration of their use. They may cause intoxication, dependence and withdrawal. Several other mental disorders induced by sedatives, hypnotics, or anxiolytics are recognized.
+
+Exclusions: Hazardous use of sedatives, hypnotics or anxiolytics
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of sedatives, hypnotics or anxiolytics are characterised by the pattern and consequences of use of these substances. Sedatives, hypnotics, and anxiolytics are typically prescribed for the short-term treatment of anxiety or insomnia and are also employed to provide sedation for medical procedures. They include the benzodiazepines and the non-benzodiazepine positive allosteric modulators of GABA receptors (i.e., ‘Z-drugs’) as well as many other compounds. Sedatives, hypnotics, and anxiolytics include barbiturates, which are available much less commonly now than in previous decades. Sedatives, hypnotics, and anxiolytics have dependence-inducing properties that are related to the dose and duration of their use. They may cause intoxication, dependence and withdrawal. Several other mental disorders induced by sedatives, hypnotics, or anxiolytics are recognized.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Hazardous use of sedatives, hypnotics or anxiolytics
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

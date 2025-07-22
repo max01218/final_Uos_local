@@ -1,0 +1,37 @@
+Disorder Name: Developmental motor coordination disorder
+Disorder Code: 148247104
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Developmental motor coordination disorder is characterised by a significant delay in the acquisition of gross and fine motor skills and impairment in the execution of coordinated motor skills that manifest in clumsiness, slowness, or inaccuracy of motor performance. Coordinated motor skills are markedly below that expected given the individual's chronological age and level of intellectual functioning. Onset of coordinated motor skills difficulties occurs during the developmental period and is typically apparent from early childhood. Coordinated motor skills difficulties cause significant and persistent limitations in functioning (e.g. in activities of daily living, school work, and vocational and leisure activities). Difficulties with coordinated motor skills are not solely attributable to a Disease of the Nervous System, Disease of the Musculoskeletal System or Connective Tissue, sensory impairment, and not better explained by a Disorder of Intellectual Development.
+
+Inclusions: Orofacial motor coordination disorder
+Exclusions: Abnormalities of gait and mobility; Diseases of the musculoskeletal system or connective tissue; Diseases of the nervous system
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Developmental motor coordination disorder is characterised by a significant delay in the acquisition of gross and fine motor skills and impairment in the execution of coordinated motor skills that manifest in clumsiness, slowness, or inaccuracy of motor performance. Coordinated motor skills are markedly below that expected given the individual's chronological age and level of intellectual functioning. Onset of coordinated motor skills difficulties occurs during the developmental period and is typically apparent from early childhood. Coordinated motor skills difficulties cause significant and persistent limitations in functioning (e.g. in activities of daily living, school work, and vocational and leisure activities). Difficulties with coordinated motor skills are not solely attributable to a Disease of the Nervous System, Disease of the Musculoskeletal System or Connective Tissue, sensory impairment, and not better explained by a Disorder of Intellectual Development.
+
+Included Manifestations:
+• Orofacial motor coordination disorder
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Abnormalities of gait and mobility
+• Should be differentiated from: Diseases of the musculoskeletal system or connective tissue
+• Should be differentiated from: Diseases of the nervous system
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

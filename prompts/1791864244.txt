@@ -1,0 +1,26 @@
+Disorder Name: MDMA or related drug withdrawal, including MDA
+Disorder Code: 1791864244
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+MDMA or related drug withdrawal, including MDA is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of MDMA or related drugs in individuals who have developed MDMA or related drug dependence or have used MDMA or related drugs for a prolonged period or in large amounts. Presenting features of MDMA or related drug withdrawal may include fatigue, lethargy, hypersomnia or insomnia, depressed mood, anxiety, irritability, craving, difficulty in concentrating, and appetite disturbance.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+MDMA or related drug withdrawal, including MDA is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of MDMA or related drugs in individuals who have developed MDMA or related drug dependence or have used MDMA or related drugs for a prolonged period or in large amounts. Presenting features of MDMA or related drug withdrawal may include fatigue, lethargy, hypersomnia or insomnia, depressed mood, anxiety, irritability, craving, difficulty in concentrating, and appetite disturbance.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

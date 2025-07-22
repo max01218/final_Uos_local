@@ -1,0 +1,56 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/816184127",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1913137404"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#816184127",
+  "code": "6C41.6",
+  "source": "http://id.who.int/icd/entity/816184127",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/816184127/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1387132352",
+        "http://id.who.int/icd/release/11/2024-01/mms/637576511"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/816184127/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/854520906",
+        "http://id.who.int/icd/release/11/2024-01/mms/937834582",
+        "http://id.who.int/icd/release/11/2024-01/mms/1129015467"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Cannabis-induced psychotic disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Cannabis-induced psychotic disorder is characterised by psychotic symptoms (e.g. delusions, hallucinations, disorganised thinking, grossly disorganised behaviour) that develop during or soon after intoxication with or withdrawal from cannabis. The intensity or duration of the symptoms is substantially in excess of psychotic-like disturbances of perception, cognition, or behaviour that are characteristic of Cannabis intoxication or Cannabis withdrawal. The amount and duration of cannabis use must be capable of producing psychotic symptoms. The symptoms are not better explained by a primary mental disorder (e.g. Schizophrenia, a Mood disorder with psychotic symptoms), as might be the case if the psychotic symptoms preceded the onset of the cannabis use, if the symptoms persist for a substantial period of time after cessation of the cannabis use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with psychotic symptoms (e.g. a history of prior episodes not associated with cannabis use)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cannabis-induced psychotic disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "cannabis psychotic disorder"
+      }
+    }
+  ]
+}

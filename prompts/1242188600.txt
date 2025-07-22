@@ -1,0 +1,33 @@
+Disorder Name: Avoidant-restrictive food intake disorder
+Disorder Code: 1242188600
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Avoidant-restrictive food intake disorder (ARFID) is characterised by avoidance or restriction of food intake that results in: 1) the intake of an insufficient quantity or variety of food to meet adequate energy or nutritional requirements that has resulted in significant weight loss, clinically significant nutritional deficiencies, dependence on oral nutritional supplements or tube feeding, or has otherwise negatively affected the physical health of the individual; or 2) significant impairment in personal, family, social, educational, occupational or other important areas of functioning (e.g., due to avoidance or distress related to participating in social experiences involving eating). The pattern of eating behaviour is not motivated by preoccupation with body weight or shape. Restricted food intake and its effects on weight, other aspects of health, or functioning are not due to unavailability of food, not a manifestation of another medical condition (e.g. food allergies, hyperthyroidism) or mental disorder, and are not due to the effect of a substance or medication on the central nervous system including withdrawal effects.
+
+Exclusions: Anorexia Nervosa; Feeding problem of infant; Feeding problems of newborn
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Avoidant-restrictive food intake disorder (ARFID) is characterised by avoidance or restriction of food intake that results in: 1) the intake of an insufficient quantity or variety of food to meet adequate energy or nutritional requirements that has resulted in significant weight loss, clinically significant nutritional deficiencies, dependence on oral nutritional supplements or tube feeding, or has otherwise negatively affected the physical health of the individual; or 2) significant impairment in personal, family, social, educational, occupational or other important areas of functioning (e.g., due to avoidance or distress related to participating in social experiences involving eating). The pattern of eating behaviour is not motivated by preoccupation with body weight or shape. Restricted food intake and its effects on weight, other aspects of health, or functioning are not due to unavailability of food, not a manifestation of another medical condition (e.g. food allergies, hyperthyroidism) or mental disorder, and are not due to the effect of a substance or medication on the central nervous system including withdrawal effects.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Anorexia Nervosa
+• Should be differentiated from: Feeding problem of infant
+• Should be differentiated from: Feeding problems of newborn
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

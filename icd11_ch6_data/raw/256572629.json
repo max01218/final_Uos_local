@@ -1,0 +1,67 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/256572629",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/794195577"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#256572629",
+  "code": "6C21",
+  "source": "http://id.who.int/icd/entity/256572629",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Body integrity dysphoria"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Body integrity dysphoria is characterised by an intense and persistent desire to become physically disabled in a significant way (e.g. major limb amputee, paraplegic, blind), with onset by early adolescence accompanied by persistent discomfort, or intense feelings of inappropriateness concerning current non-disabled body configuration. The desire to become physically disabled results in harmful consequences, as manifested by either the preoccupation with the desire (including time spent pretending to be disabled) significantly interfering with productivity, with leisure activities, or with social functioning (e.g. person is unwilling to have a close relationship because it would make it difficult to pretend) or by attempts to actually become disabled having resulted in the person putting his or her health or life in significant jeopardy. The disturbance is not better accounted for by another mental, behavioural or neurodevelopmental disorder, by a Disease of the Nervous System or by another medical condition, or by Malingering."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Gender incongruence of adolescence or adulthood"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/90875286",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/90875286"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Body integrity dysphoria"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "xenomelia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "body integrity identity disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "apotemnophilia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "amputee identity disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "BIID - [body integrity identity disorder]"
+      }
+    }
+  ]
+}

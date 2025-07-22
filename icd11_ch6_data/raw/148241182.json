@@ -1,0 +1,60 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/148241182",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/546689346"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/688029844",
+    "http://id.who.int/icd/release/11/2024-01/mms/1447134117",
+    "http://id.who.int/icd/release/11/2024-01/mms/479763552",
+    "http://id.who.int/icd/release/11/2024-01/mms/961921436",
+    "http://id.who.int/icd/release/11/2024-01/mms/1659288831",
+    "http://id.who.int/icd/release/11/2024-01/mms/1543544503",
+    "http://id.who.int/icd/release/11/2024-01/mms/2043528053",
+    "http://id.who.int/icd/release/11/2024-01/mms/148241182/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/148241182/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#148241182",
+  "code": "6D86",
+  "source": "http://id.who.int/icd/entity/148241182",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/148241182/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/795022044",
+        "http://id.who.int/icd/release/11/2024-01/mms/1365258270",
+        "http://id.who.int/icd/release/11/2024-01/mms/1777436789",
+        "http://id.who.int/icd/release/11/2024-01/mms/831337417",
+        "http://id.who.int/icd/release/11/2024-01/mms/1710319105",
+        "http://id.who.int/icd/release/11/2024-01/mms/1468768235"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Behavioural or psychological disturbances in dementia"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "In addition to the cognitive disturbances characteristic of dementia, the current clinical picture includes clinically significant behavioural or psychological disturbances."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/302122526",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/302122526"
+    }
+  ],
+  "codingNote": {
+    "@language": "en",
+    "@value": "These categories should never be used in primary tabulation. The codes are provided for use as supplementary or additional codes when it is desired to identify the presence of behavioural or psychological disturbance in dementia.\n\nCode all that apply."
+  }
+}

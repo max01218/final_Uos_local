@@ -1,0 +1,26 @@
+Disorder Name: Disinhibition in dementia
+Disorder Code: 1543544503
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+In addition to the cognitive disturbances characteristic of dementia, the current clinical picture includes clinically significant lack of restraint manifested in disregard for social conventions, impulsivity, and poor risk assessment.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+In addition to the cognitive disturbances characteristic of dementia, the current clinical picture includes clinically significant lack of restraint manifested in disregard for social conventions, impulsivity, and poor risk assessment.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

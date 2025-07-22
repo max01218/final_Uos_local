@@ -1,0 +1,202 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1395283456",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/111507461"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1395283456",
+  "code": "6C43.3",
+  "source": "http://id.who.int/icd/entity/1395283456",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1395283456/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/2143992001"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1395283456/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1395283456/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1395283456/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/398872858",
+        "http://id.who.int/icd/release/11/2024-01/mms/912365674",
+        "http://id.who.int/icd/release/11/2024-01/mms/1120716949"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Opioid intoxication"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Opioid intoxication is a clinically significant transient condition that develops during or shortly after the consumption of opioids that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of opioids and their intensity is closely related to the amount of opioids consumed. They are time-limited and abate as opioids are cleared from the body. Presenting features may include somnolence, stupor, mood changes (e.g. euphoria followed by apathy and dysphoria), psychomotor retardation, impaired judgment, respiratory depression, slurred speech, and impairment of memory and attention. In severe intoxication coma may ensue. A characteristic physical sign is pupillary constriction but this sign may be absent when intoxication is due to synthetic opioids. Severe opioid intoxication can lead to death due to respiratory depression."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "opioid poisoning"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1573091976",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1868408442"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Possession trance disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1374925579",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1374925579"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fentanyl poisoning"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1573091976",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1868408442"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "oxycodone poisoning"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1573091976",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1868408442"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "heroin intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bad trip due to opioids"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute intoxication due to fentanyl"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1459534679"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute fentanyl toxicity"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1459534679"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Fentanyl and despropionyl fentanyl intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/273389798"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Fentanyl and acetyl fentanyl intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/710042736"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute intoxication by the combined effects of fentanyl and heroin"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1491484121"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute fentanyl and heroin intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1491484121"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fentanyl and heroin intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1491484121"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Morphine intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/406939138"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "morphine toxicity"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/406939138"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute methadone intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/399617150"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Methadone intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/243729592"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Oxycodone intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/462077786"
+    }
+  ]
+}

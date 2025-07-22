@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1648213213",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/31898480"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1648213213",
+  "code": "6C48.2",
+  "source": "http://id.who.int/icd/entity/1648213213",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1648213213/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1648213213/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/207246302",
+        "http://id.who.int/icd/release/11/2024-01/mms/1252561403"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Caffeine intoxication"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Caffeine intoxication is a clinically significant transient condition that develops during or shortly after the consumption of caffeine that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of caffeine and their intensity is closely related to the amount of caffeine consumed. They are time-limited and abate as caffeine is cleared from the body. Presenting features may include restlessness, anxiety, excitement, insomnia, flushed face, tachycardia, diuresis, gastrointestinal disturbances, muscle twitching, psychomotor agitation, perspiration or chills, and nausea or vomiting. Cardiac arrhythmias may occur. Disturbances typical of intoxication tend to occur at relatively higher doses (e.g., > 1 g per day). Very high doses of caffeine (e.g., > 5 g) can result in respiratory distress or seizures and can be fatal."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Caffeine intoxication"
+      }
+    }
+  ]
+}

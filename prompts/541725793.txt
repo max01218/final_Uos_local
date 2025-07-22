@@ -1,0 +1,26 @@
+Disorder Name: Encopresis without constipation or overflow incontinence
+Disorder Code: 541725793
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Encopresis is the repeated passage of faeces in inappropriate places occurring repeatedly (e.g., at least once per month over a period of several months) in an individual who has reached the developmental age when faecal continence is ordinarily expected (4 years). The faecal incontinence may have been present from birth (i.e., an atypical extension of normal infantile incontinence), or may have arisen following a period of acquired bowel control. Encopresis without constipation and overflow is not associated with retention and impaction of faeces, but rather reflects reluctance, resistance or failure to conform to social norms in defecating in acceptable places in the context of normal physiological control over defecation. Stools are typically of normal consistency and inappropriate defecation is likely to be intermittent.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Encopresis is the repeated passage of faeces in inappropriate places occurring repeatedly (e.g., at least once per month over a period of several months) in an individual who has reached the developmental age when faecal continence is ordinarily expected (4 years). The faecal incontinence may have been present from birth (i.e., an atypical extension of normal infantile incontinence), or may have arisen following a period of acquired bowel control. Encopresis without constipation and overflow is not associated with retention and impaction of faeces, but rather reflects reluctance, resistance or failure to conform to social norms in defecating in acceptable places in the context of normal physiological control over defecation. Stools are typically of normal consistency and inappropriate defecation is likely to be intermittent.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

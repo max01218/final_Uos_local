@@ -1,0 +1,75 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/302122526",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/255980141",
+    "http://id.who.int/icd/release/11/2024-01/mms/696956921",
+    "http://id.who.int/icd/release/11/2024-01/mms/216291184",
+    "http://id.who.int/icd/release/11/2024-01/mms/2131412196",
+    "http://id.who.int/icd/release/11/2024-01/mms/1126473669",
+    "http://id.who.int/icd/release/11/2024-01/mms/440469874",
+    "http://id.who.int/icd/release/11/2024-01/mms/1638354338",
+    "http://id.who.int/icd/release/11/2024-01/mms/235421675",
+    "http://id.who.int/icd/release/11/2024-01/mms/1324394161",
+    "http://id.who.int/icd/release/11/2024-01/mms/518306574",
+    "http://id.who.int/icd/release/11/2024-01/mms/302122526/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/302122526/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#302122526",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/302122526",
+  "classKind": "block",
+  "blockId": "BlockL1-6E6",
+  "codeRange": "6E60-6E6Z",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium due to disease classified elsewhere"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1015017717",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1015017717"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Secondary mental or behavioural syndromes associated with disorders or diseases classified elsewhere"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "This grouping includes syndromes characterised by the presence of prominent psychological or behavioural symptoms judged to be direct pathophysiological consequences of a medical condition not classified under mental and behavioural disorders, based on evidence from the history, physical examination, or laboratory findings. The symptoms are not accounted for by delirium or by another mental and behavioural disorder, and are not a psychologically mediated response to a severe medical condition (e.g., adjustment disorder or anxiety symptoms in response to being diagnosed with a life-threatening illness). These categories should be used in addition to the diagnosis for the presumed underlying disorder or disease when the psychological and behavioural symptoms are sufficiently severe to warrant specific clinical attention."
+  },
+  "fullySpecifiedName": {
+    "@language": "en",
+    "@value": "Mental or behavioural syndromes due to health conditions not classified under mental or behavioural disorders"
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute pain"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1404135736",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1404135736"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bodily distress disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/767044268",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/767044268"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Chronic pain"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1581976053",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1581976053"
+    }
+  ]
+}

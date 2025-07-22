@@ -1,0 +1,36 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1471861706",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/284410555"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1182509390",
+    "http://id.who.int/icd/release/11/2024-01/mms/987681130",
+    "http://id.who.int/icd/release/11/2024-01/mms/1429171137",
+    "http://id.who.int/icd/release/11/2024-01/mms/1471861706/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1471861706",
+  "code": "6A23.0",
+  "source": "http://id.who.int/icd/entity/1471861706",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1471861706/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Acute and transient psychotic disorder, first episode"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Acute and transient psychotic disorder, first episode should be used to identify individuals experiencing symptoms that meet the diagnostic requirements for acute and transient psychotic disorder but who have never before experienced a similar episode."
+  }
+}

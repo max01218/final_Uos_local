@@ -1,0 +1,36 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/679604439",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/284410555"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/448945092",
+    "http://id.who.int/icd/release/11/2024-01/mms/873142442",
+    "http://id.who.int/icd/release/11/2024-01/mms/710279230",
+    "http://id.who.int/icd/release/11/2024-01/mms/679604439/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#679604439",
+  "code": "6A23.1",
+  "source": "http://id.who.int/icd/entity/679604439",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/679604439/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Acute and transient psychotic disorder, multiple episodes"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Acute and transient psychotic disorder, multiple episodes should be used to identify individuals experiencing symptoms that meet the diagnostic requirements for acute and transient psychotic disorder and who have experienced similar episodes in the past."
+  }
+}

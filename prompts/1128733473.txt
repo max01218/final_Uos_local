@@ -1,0 +1,26 @@
+Disorder Name: Prominent personality traits or patterns
+Disorder Code: 1128733473
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Trait domain qualifiers may be applied to Personality Disorders or Personality Difficulty to describe the characteristics of the individual’s personality that are most prominent and that contribute to personality disturbance. Trait domains are continuous with normal personality characteristics in individuals who do not have Personality Disorder or Personality Difficulty. Trait domains are not diagnostic categories, but rather represent a set of dimensions that correspond to the underlying structure of personality. As many trait domain qualifiers may be applied as necessary to describe personality functioning. Individuals with more severe personality disturbance tend to have a greater number of prominent trait domains.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Trait domain qualifiers may be applied to Personality Disorders or Personality Difficulty to describe the characteristics of the individual’s personality that are most prominent and that contribute to personality disturbance. Trait domains are continuous with normal personality characteristics in individuals who do not have Personality Disorder or Personality Difficulty. Trait domains are not diagnostic categories, but rather represent a set of dimensions that correspond to the underlying structure of personality. As many trait domain qualifiers may be applied as necessary to describe personality functioning. Individuals with more severe personality disturbance tend to have a greater number of prominent trait domains.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,94 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/546689346",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/213458094"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/795022044",
+    "http://id.who.int/icd/release/11/2024-01/mms/1365258270",
+    "http://id.who.int/icd/release/11/2024-01/mms/1777436789",
+    "http://id.who.int/icd/release/11/2024-01/mms/831337417",
+    "http://id.who.int/icd/release/11/2024-01/mms/1710319105",
+    "http://id.who.int/icd/release/11/2024-01/mms/1468768235",
+    "http://id.who.int/icd/release/11/2024-01/mms/148241182",
+    "http://id.who.int/icd/release/11/2024-01/mms/546689346/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/546689346/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#546689346",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/546689346",
+  "classKind": "block",
+  "blockId": "BlockL2-6D8",
+  "codeRange": "6D80-6D8Z",
+  "title": {
+    "@language": "en",
+    "@value": "Dementia"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dementia is characterized by the presence of marked impairment in two or more cognitive domains relative to that expected given the individual’s age and general premorbid level of cognitive functioning, which represents a decline from the individual’s previous level of functioning. Memory impairment is present in most forms of dementia, but cognitive impairment is not restricted to memory (i.e., there is impairment in other areas such as executive functions, attention, language, social cognition and judgment, psychomotor speed, visuoperceptual or visuospatial abilities). Neurobehavioural changes may also be present and, in some forms of dementia, may be the presenting symptom. Cognitive impairment is not attributable to normal aging and is severe enough to significantly interfere with independence in an individual’s performance of activities of daily living. The cognitive impairment is presumed to be attributable to an underlying acquired disease of the nervous system, a trauma, an infection or other disease process affecting the brain, or to use of specific substances or medications, nutritional deficiency or exposure to toxins, or the etiology may be undetermined. The impairment is not due to current substance intoxication or withdrawal."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia NOS"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Coma"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1328725971",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1328725971"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/897917531",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/897917531"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorders of intellectual development"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/605267007",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/605267007"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Neurodevelopmental disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1516623224",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1516623224"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stupor"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1000337196",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1000337196"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Ageing associated decline in intrinsic capacity"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/835503193",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/835503193"
+    }
+  ],
+  "codingNote": {
+    "@language": "en",
+    "@value": "This category should only be used for primary tabulation, if the aetiology of the dementia is unknown. If the aetiology of the dementia is known code to the aetiology of the dementia for primary tabulation. \n\nWhen dementia is due to multiple aetiologies, code all that apply."
+  }
+}

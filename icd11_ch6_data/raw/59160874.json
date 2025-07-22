@@ -1,0 +1,33 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/59160874",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/536986325"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#59160874",
+  "code": "6B60.82",
+  "source": "http://id.who.int/icd/entity/59160874",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with tremor"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with tremor is characterised by involuntary oscillation of a body part that is not consistent with a recognised disease of the nervous system, other mental, behavioural or neurodevelopmental disorder, or other medical condition and does not occur exclusively during another dissociative disorder."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative neurological symptom disorder, with tremor"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional neurological symptom disorder, with tremor"
+      }
+    }
+  ]
+}

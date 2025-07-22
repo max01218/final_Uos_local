@@ -1,0 +1,159 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1922675618",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/578635574"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1922675618",
+  "code": "6A70.0",
+  "source": "http://id.who.int/icd/entity/1922675618",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1922675618/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1119039346",
+        "http://id.who.int/icd/release/11/2024-01/mms/1383708356",
+        "http://id.who.int/icd/release/11/2024-01/mms/1906190365",
+        "http://id.who.int/icd/release/11/2024-01/mms/802537726",
+        "http://id.who.int/icd/release/11/2024-01/mms/1124422593"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Single episode depressive disorder, mild"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Single episode depressive disorder, mild, is diagnosed when the definitional requirements of a Depressive episode are met and the episode is of mild severity. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a mild depressive episode, the individual is usually distressed by the symptoms and has some difficulty in continuing to function in one or more domains (personal, family, social, educational, occupational, or other important domains). There are no delusions or hallucinations during the episode."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "major depressive disorder, single episode, mild degree"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "mild major depression disorder, single episode"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/833411765"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/800295617"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1341896954"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1542942786"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1002390139"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1369386942"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1585518430"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/823896057"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/557106911"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/446989193"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/971287842"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/670825812"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/43061478"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1199535377"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder, mild, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2099560807"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2070676103",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1605818663"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1771470438",
+    "http://id.who.int/icd/release/11/2024-01/mms/1643918100",
+    "http://id.who.int/icd/release/11/2024-01/mms/873755949",
+    "http://id.who.int/icd/release/11/2024-01/mms/1359176422",
+    "http://id.who.int/icd/release/11/2024-01/mms/2070676103/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/2070676103/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2070676103",
+  "code": "6C47.2",
+  "source": "http://id.who.int/icd/entity/2070676103",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2070676103/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1526280683",
+        "http://id.who.int/icd/release/11/2024-01/mms/1005846640",
+        "http://id.who.int/icd/release/11/2024-01/mms/1562167865"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2070676103/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1599283639",
+        "http://id.who.int/icd/release/11/2024-01/mms/1587633989"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Synthetic cathinone dependence"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Synthetic cathinone dependence is a disorder of regulation of synthetic cathinone use arising from repeated or continuous use of synthetic cathinones. The characteristic feature is a strong internal drive to use synthetic cathinones, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use synthetic cathinones. Physiological features of dependence may also be present, including tolerance to the effects of synthetic cathinones, withdrawal symptoms following cessation or reduction in use of synthetic cathinones, or repeated use of synthetic cathinones or pharmacologically similar substances to prevent or alleviate withdrawal symptoms. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if synthetic cathinone use is continuous (daily or almost daily) for at least 3 months."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of synthetic cathinones"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2057206901",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2057206901"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of synthetic cathinones"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1563509056",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1563509056"
+    }
+  ]
+}

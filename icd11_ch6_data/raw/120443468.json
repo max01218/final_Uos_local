@@ -1,0 +1,58 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/120443468",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/437815624"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#120443468",
+  "code": "6A02.0",
+  "source": "http://id.who.int/icd/entity/120443468",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Autism spectrum disorder without disorder of intellectual development and with mild or no impairment of functional language"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for autism spectrum disorder are met, intellectual functioning and adaptive behaviour are found to be at least within the average range (approximately greater than the 2.3rd percentile), and there is only mild or no impairment in the individual's capacity to use functional language (spoken or signed) for instrumental purposes, such as to express personal needs and desires."
+  },
+  "fullySpecifiedName": {
+    "@language": "en",
+    "@value": "Autism spectrum disorder without disorder of intellectual development and without impairment of functional language"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Autism spectrum disorder without disorder of intellectual development and with mild or no impairment of functional language"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Autism spectrum disorder without disorder of intellectual development and without impairment of functional language"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Asperger syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/366940030"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Asperger disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/366940030"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Asperger"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/366940030"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+Disorder Name: Reactive attachment disorder
+Disorder Code: 1867081699
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Reactive attachment disorder is characterised by grossly abnormal attachment behaviours in early childhood, occurring in the context of a history of grossly inadequate child care (e.g., severe neglect, maltreatment, institutional deprivation). Even when an adequate primary caregiver is newly available, the child does not turn to the primary caregiver for comfort, support and nurture, rarely displays security-seeking behaviours towards any adult, and does not respond when comfort is offered. Reactive attachment disorder can only be diagnosed in children, and features of the disorder develop within the first 5 years of life. However, the disorder cannot be diagnosed before the age of 1 year (or a developmental age of less than 9 months), when the capacity for selective attachments may not be fully developed, or in the context of Autism spectrum disorder.
+
+Exclusions: Asperger syndrome; disinhibited attachment disorder of childhood
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Reactive attachment disorder is characterised by grossly abnormal attachment behaviours in early childhood, occurring in the context of a history of grossly inadequate child care (e.g., severe neglect, maltreatment, institutional deprivation). Even when an adequate primary caregiver is newly available, the child does not turn to the primary caregiver for comfort, support and nurture, rarely displays security-seeking behaviours towards any adult, and does not respond when comfort is offered. Reactive attachment disorder can only be diagnosed in children, and features of the disorder develop within the first 5 years of life. However, the disorder cannot be diagnosed before the age of 1 year (or a developmental age of less than 9 months), when the capacity for selective attachments may not be fully developed, or in the context of Autism spectrum disorder.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Asperger syndrome
+• Should be differentiated from: disinhibited attachment disorder of childhood
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

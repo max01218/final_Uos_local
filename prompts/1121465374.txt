@@ -1,0 +1,26 @@
+Disorder Name: Body-focused repetitive behaviour disorders
+Disorder Code: 1121465374
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Body focused repetitive behaviour disorders are characterised by recurrent and habitual actions directed at the integument (e.g. hair-pulling, skin-picking, lip-biting), typically accompanied by unsuccessful attempts to decrease or stop the behaviour involved, and which lead to dermatological sequelae (e.g., hair loss, skin lesions, lip abrasions). The behaviour may occur in brief episodes scattered throughout the day or in less frequent but more sustained periods. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Body focused repetitive behaviour disorders are characterised by recurrent and habitual actions directed at the integument (e.g. hair-pulling, skin-picking, lip-biting), typically accompanied by unsuccessful attempts to decrease or stop the behaviour involved, and which lead to dermatological sequelae (e.g., hair loss, skin lesions, lip abrasions). The behaviour may occur in brief episodes scattered throughout the day or in less frequent but more sustained periods. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

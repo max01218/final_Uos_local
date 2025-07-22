@@ -1,0 +1,24 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/192666265",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/719572464"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/683482905",
+    "http://id.who.int/icd/release/11/2024-01/mms/1196205490",
+    "http://id.who.int/icd/release/11/2024-01/mms/192666265/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#192666265",
+  "code": "6C91.0",
+  "source": "http://id.who.int/icd/entity/192666265",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Conduct-dissocial disorder, childhood onset"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Conduct-dissocial disorder, childhood onset is characterised by a repetitive and persistent pattern of behaviour in which the basic rights of others or major age-appropriate societal norms, rules, or laws are violated such as aggression towards people or animals; destruction of property; deceitfulness or theft; and serious violations of rules. To be diagnosed, features of the disorder must be present during childhood prior to adolescence (e.g., before 10 years of age) and the behaviour pattern must be enduring over a significant period of time (e.g., 12 months or more). Isolated dissocial or criminal acts are thus not in themselves grounds for the diagnosis."
+  }
+}

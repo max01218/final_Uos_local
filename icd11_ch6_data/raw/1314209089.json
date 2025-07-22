@@ -1,0 +1,127 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1314209089",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/390325614"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1314209089",
+  "code": "6C44.3",
+  "source": "http://id.who.int/icd/entity/1314209089",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1314209089/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1880792884",
+        "http://id.who.int/icd/release/11/2024-01/mms/881358505",
+        "http://id.who.int/icd/release/11/2024-01/mms/315390786"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1314209089/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1314209089/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1314209089/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/475820054",
+        "http://id.who.int/icd/release/11/2024-01/mms/723448021",
+        "http://id.who.int/icd/release/11/2024-01/mms/1605607466"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Sedative, hypnotic or anxiolytic intoxication"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Sedative, hypnotic or anxiolytic intoxication is a clinically significant transient condition that develops during or shortly after the consumption of sedatives, hypnotics or anxiolytics that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of sedatives, hypnotics or anxiolytics and their intensity is closely related to the amount of sedatives, hypnotics or anxiolytics consumed. They are time-limited and abate as sedatives, hypnotics or anxiolytics are cleared from the body. Presenting features may include somnolence, impaired judgment, inappropriate behavior (including sexual behavior or aggression), slurred speech, impaired motor coordination, unsteady gait, mood changes, as well as impaired memory, attention and concentration. Nystagmus (repetitive, uncontrolled eye movements) is a common physical sign. In severe cases stupor or coma may occur."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "\"Bad trips\" due to sedatives, hypnotics or anxiolytics"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "sedative, hypnotic drugs and other CNS depressants poisoning"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/305023629",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1868408442"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Possession trance disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1374925579",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1374925579"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sedative, hypnotic or anxiolytic intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "\"Bad trips\" due to sedatives, hypnotics or anxiolytics"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anxiolytic intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/199223489"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "sedative intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/199223489"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hypnotic intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1429450836"
+    }
+  ]
+}

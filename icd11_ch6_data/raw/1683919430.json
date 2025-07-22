@@ -1,0 +1,63 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1683919430",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/405565289"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/625636921",
+    "http://id.who.int/icd/release/11/2024-01/mms/1150025154",
+    "http://id.who.int/icd/release/11/2024-01/mms/317761311",
+    "http://id.who.int/icd/release/11/2024-01/mms/1683919430/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1683919430/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1683919430",
+  "code": "6A20",
+  "source": "http://id.who.int/icd/entity/1683919430",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1683919430/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Schizophrenia"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Schizophrenia is characterised by disturbances in multiple mental modalities, including thinking (e.g., delusions, disorganisation in the form of thought), perception (e.g., hallucinations), self-experience (e.g., the experience that one's feelings, impulses, thoughts, or behaviour are under the control of an external force), cognition (e.g., impaired attention, verbal memory, and social cognition), volition (e.g., loss of motivation), affect (e.g., blunted emotional expression), and behaviour (e.g., behaviour that appears bizarre or purposeless, unpredictable or inappropriate emotional responses that interfere with the organisation of behaviour). Psychomotor disturbances, including catatonia, may be present. Persistent delusions, persistent hallucinations, thought disorder, and experiences of influence, passivity, or control are considered core symptoms. Symptoms must have persisted for at least one month in order for a diagnosis of schizophrenia to be assigned. The symptoms are not a manifestation of another health condition (e.g., a brain tumour) and are not due to the effect of a substance or medication on the central nervous system (e.g., corticosteroids), including withdrawal (e.g., alcohol withdrawal)."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Schizotypal disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/18178000",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/18178000"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "schizophrenic reaction"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/18178000",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/18178000"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute and transient psychotic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/284410555",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/284410555"
+    }
+  ]
+}

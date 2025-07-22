@@ -1,0 +1,60 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/521257551",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#521257551",
+  "code": "6A25.0",
+  "source": "http://id.who.int/icd/entity/521257551",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/521257551/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/681697550",
+        "http://id.who.int/icd/release/11/2024-01/mms/761934509"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/521257551/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1683919430",
+        "http://id.who.int/icd/release/11/2024-01/mms/106339515",
+        "http://id.who.int/icd/release/11/2024-01/mms/18178000",
+        "http://id.who.int/icd/release/11/2024-01/mms/284410555",
+        "http://id.who.int/icd/release/11/2024-01/mms/1974996783"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Positive symptoms in primary psychotic disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Positive symptoms in primary psychotic disorders include persistent delusions, persistent hallucinations (most commonly verbal auditory hallucinations), disorganised thinking (formal thought disorder such as loose associations, thought derailment, or incoherence), grossly disorganised behaviour (behaviour that appears bizarre, purposeless and not goal-directed) and experiences of passivity and control (the experience that one's feelings, impulses, or thoughts are under the control of an external force). The rating should be made based on the severity of positive symptoms during the past week."
+  },
+  "longDefinition": {
+    "@language": "en",
+    "@value": "This descriptor may be used together with a diagnosis from the grouping of Schizophrenia and other primary psychotic disorders to indicate that positive psychotic symptoms are a prominent part of the current clinical presentation. Positive symptoms include persistent delusions, persistent hallucinations (most commonly verbal auditory hallucinations), disorganized thinking (formal thought disorder such as loose associations, thought derailment, or incoherence), grossly disorganized behavior (behaviour that appears bizarre, purposeless and not goal-directed) and experiences of passivity and control (the experience that one's feelings, impulses, or thoughts are under the control of an external force)."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "These categories should never be used in primary coding. The codes are provided for use as supplementary or additional codes when it is desired to identify the presence of these symptoms in primary psychotic disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Positive symptoms in primary psychotic disorders"
+      }
+    }
+  ]
+}

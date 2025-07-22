@@ -1,0 +1,89 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1957424191",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/268445189"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1957424191",
+  "code": "6C4A.3",
+  "source": "http://id.who.int/icd/entity/1957424191",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1957424191/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1957424191/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1356720300",
+        "http://id.who.int/icd/release/11/2024-01/mms/299901355",
+        "http://id.who.int/icd/release/11/2024-01/mms/1699574100"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Nicotine intoxication"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Nicotine intoxication is a clinically significant transient condition that develops during or shortly after the consumption of nicotine that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of nicotine and their intensity is closely related to the amount of nicotine consumed. They are time-limited and abate as nicotine is cleared from the body. Presenting features may include restlessness, psychomotor agitation, anxiety, cold sweats, headache, insomnia, palpitations, paresthesias, nausea or vomiting, abdominal cramps, confusion, bizarre dreams, burning sensations in the mouth, and salivation. In rare instances, paranoid ideation, perceptual disturbances, convulsions or coma may occur. Nicotine intoxication occurs more commonly in naïve (non-tolerant) users or among those taking higher than accustomed doses."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "\"Bad trips\" due to nicotine"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "intoxication meaning poisoning"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1217040033",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1119330136"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Possession trance disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1374925579",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1374925579"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Nicotine intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "tobacco intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "\"Bad trips\" due to nicotine"
+      }
+    }
+  ]
+}

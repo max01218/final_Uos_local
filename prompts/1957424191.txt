@@ -1,0 +1,36 @@
+Disorder Name: Nicotine intoxication
+Disorder Code: 1957424191
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Nicotine intoxication is a clinically significant transient condition that develops during or shortly after the consumption of nicotine that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of nicotine and their intensity is closely related to the amount of nicotine consumed. They are time-limited and abate as nicotine is cleared from the body. Presenting features may include restlessness, psychomotor agitation, anxiety, cold sweats, headache, insomnia, palpitations, paresthesias, nausea or vomiting, abdominal cramps, confusion, bizarre dreams, burning sensations in the mouth, and salivation. In rare instances, paranoid ideation, perceptual disturbances, convulsions or coma may occur. Nicotine intoxication occurs more commonly in naïve (non-tolerant) users or among those taking higher than accustomed doses.
+
+Inclusions: "Bad trips" due to nicotine
+Exclusions: intoxication meaning poisoning; Possession trance disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Nicotine intoxication is a clinically significant transient condition that develops during or shortly after the consumption of nicotine that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of nicotine and their intensity is closely related to the amount of nicotine consumed. They are time-limited and abate as nicotine is cleared from the body. Presenting features may include restlessness, psychomotor agitation, anxiety, cold sweats, headache, insomnia, palpitations, paresthesias, nausea or vomiting, abdominal cramps, confusion, bizarre dreams, burning sensations in the mouth, and salivation. In rare instances, paranoid ideation, perceptual disturbances, convulsions or coma may occur. Nicotine intoxication occurs more commonly in naïve (non-tolerant) users or among those taking higher than accustomed doses.
+
+Included Manifestations:
+• "Bad trips" due to nicotine
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: intoxication meaning poisoning
+• Should be differentiated from: Possession trance disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,102 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1750279358",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1967909777"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1750279358",
+  "code": "6C49.3",
+  "source": "http://id.who.int/icd/entity/1750279358",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1750279358/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/661865379"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1750279358/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1750279358/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1995632461",
+        "http://id.who.int/icd/release/11/2024-01/mms/219736364",
+        "http://id.who.int/icd/release/11/2024-01/mms/2041952725"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Hallucinogen intoxication"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Hallucinogen intoxication is a clinically significant transient condition that develops during or shortly after the consumption of hallucinogens that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of hallucinogens and their intensity is closely related to the amount of hallucinogen consumed. They are time-limited and abate as the hallucinogen is cleared from the body. Presenting features may include hallucinations, illusions, perceptual changes such as depersonalisation, derealization, or synesthesias (blending of senses, such as a visual stimulus evoking a smell), anxiety, depressed or dysphoric mood, ideas of reference, paranoid ideation, impaired judgment, palpitations, sweating, blurred vision, tremors and incoordination. Physical signs may include tachycardia, elevated blood pressure, and pupillary dilatation. In rare instances, hallucinogen intoxication may facilitate suicidal ideation and behaviour."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "hallucinogens poisoning"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/582619511",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1868408442"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Possession trance disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1374925579",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1374925579"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hallucinogen intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute hallucinogen intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute intoxication from hallucinogens"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bad trip due to hallucinogens"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "LSD reaction"
+      }
+    }
+  ]
+}

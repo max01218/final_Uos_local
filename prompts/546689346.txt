@@ -1,0 +1,40 @@
+Disorder Name: Dementia
+Disorder Code: 546689346
+Code Range: 6D80-6D8Z
+Class Kind: block
+
+Standard Definition:
+Dementia is characterized by the presence of marked impairment in two or more cognitive domains relative to that expected given the individual’s age and general premorbid level of cognitive functioning, which represents a decline from the individual’s previous level of functioning. Memory impairment is present in most forms of dementia, but cognitive impairment is not restricted to memory (i.e., there is impairment in other areas such as executive functions, attention, language, social cognition and judgment, psychomotor speed, visuoperceptual or visuospatial abilities). Neurobehavioural changes may also be present and, in some forms of dementia, may be the presenting symptom. Cognitive impairment is not attributable to normal aging and is severe enough to significantly interfere with independence in an individual’s performance of activities of daily living. The cognitive impairment is presumed to be attributable to an underlying acquired disease of the nervous system, a trauma, an infection or other disease process affecting the brain, or to use of specific substances or medications, nutritional deficiency or exposure to toxins, or the etiology may be undetermined. The impairment is not due to current substance intoxication or withdrawal.
+
+Inclusions: Dementia NOS
+Exclusions: Coma; Delirium; Disorders of intellectual development; Neurodevelopmental disorders; Stupor; Ageing associated decline in intrinsic capacity
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia is characterized by the presence of marked impairment in two or more cognitive domains relative to that expected given the individual’s age and general premorbid level of cognitive functioning, which represents a decline from the individual’s previous level of functioning. Memory impairment is present in most forms of dementia, but cognitive impairment is not restricted to memory (i.e., there is impairment in other areas such as executive functions, attention, language, social cognition and judgment, psychomotor speed, visuoperceptual or visuospatial abilities). Neurobehavioural changes may also be present and, in some forms of dementia, may be the presenting symptom. Cognitive impairment is not attributable to normal aging and is severe enough to significantly interfere with independence in an individual’s performance of activities of daily living. The cognitive impairment is presumed to be attributable to an underlying acquired disease of the nervous system, a trauma, an infection or other disease process affecting the brain, or to use of specific substances or medications, nutritional deficiency or exposure to toxins, or the etiology may be undetermined. The impairment is not due to current substance intoxication or withdrawal.
+
+Included Manifestations:
+• Dementia NOS
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Coma
+• Should be differentiated from: Delirium
+• Should be differentiated from: Disorders of intellectual development
+• Should be differentiated from: Neurodevelopmental disorders
+• Should be differentiated from: Stupor
+• Should be differentiated from: Ageing associated decline in intrinsic capacity
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

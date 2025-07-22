@@ -1,0 +1,32 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1021901799",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/719572464"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/395365489",
+    "http://id.who.int/icd/release/11/2024-01/mms/2038678808",
+    "http://id.who.int/icd/release/11/2024-01/mms/1021901799/other"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1021901799",
+  "code": "6C91.1",
+  "source": "http://id.who.int/icd/entity/1021901799",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Conduct-dissocial disorder, adolescent onset"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Conduct-dissocial disorder, adolescent onset is characterised by a repetitive and persistent pattern of behaviour in which the basic rights of others or major age-appropriate societal norms, rules, or laws are violated such as aggression towards people or animals; destruction of property; deceitfulness or theft; and serious violations of rules. No features of the disorder are present during childhood prior to adolescence (e.g., before 10 years of age). To be diagnosed, the behaviour pattern must be enduring over a significant period of time (e.g., 12 months or more). Isolated dissocial or criminal acts are thus not in themselves grounds for the diagnosis."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Conduct-dissocial disorder, adolescent onset"
+      }
+    }
+  ]
+}

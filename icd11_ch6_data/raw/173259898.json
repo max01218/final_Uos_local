@@ -1,0 +1,129 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/173259898",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/405565289"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#173259898",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/173259898",
+  "classKind": "window",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol-induced psychotic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/769299330",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/769299330"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cannabis-induced psychotic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/816184127",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/816184127"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cannabinoid-induced psychotic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1995589534",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1995589534"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid-induced psychotic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/824335105",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/824335105"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sedative, hypnotic or anxiolytic-induced psychotic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/744305598",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/744305598"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine-induced psychotic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/388252416",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/388252416"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stimulant-induced psychotic disorder including amphetamines, methamphetamine or methcathinone"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/199002751",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/199002751"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone-induced psychotic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1005846640",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1005846640"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hallucinogen-induced psychotic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/173746753",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/173746753"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Volatile inhalant-induced psychotic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1478963582",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1478963582"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "MDMA or related drug-induced psychotic disorder, including MDA"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1589999330",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1589999330"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative drug-induced psychotic disorder including Ketamine or PCP"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/666288373",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/666288373"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Psychotic disorder induced by other specified psychoactive substance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1044767723",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1044767723"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Psychotic disorder induced by unknown or unspecified psychoactive substance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1155529213",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1155529213"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Substance-induced psychotic disorders"
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1167594753",
+    "http://id.who.int/icd/release/11/2024-01/mms/1594312948",
+    "http://id.who.int/icd/release/11/2024-01/mms/914520008",
+    "http://id.who.int/icd/release/11/2024-01/mms/2086488820",
+    "http://id.who.int/icd/release/11/2024-01/mms/1980672892",
+    "http://id.who.int/icd/release/11/2024-01/mms/1644587915",
+    "http://id.who.int/icd/release/11/2024-01/mms/1305923085",
+    "http://id.who.int/icd/release/11/2024-01/mms/1784240230",
+    "http://id.who.int/icd/release/11/2024-01/mms/587365414",
+    "http://id.who.int/icd/release/11/2024-01/mms/1726554290",
+    "http://id.who.int/icd/release/11/2024-01/mms/851941810",
+    "http://id.who.int/icd/release/11/2024-01/mms/1265113635",
+    "http://id.who.int/icd/release/11/2024-01/mms/696703416",
+    "http://id.who.int/icd/release/11/2024-01/mms/1294458332",
+    "http://id.who.int/icd/release/11/2024-01/mms/598093212",
+    "http://id.who.int/icd/release/11/2024-01/mms/132592466",
+    "http://id.who.int/icd/release/11/2024-01/mms/2031646451",
+    "http://id.who.int/icd/release/11/2024-01/mms/1256772020/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1256772020/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1256772020",
+  "code": "13",
+  "source": "http://id.who.int/icd/entity/1256772020",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Digestive system disorders of fetus or newborn"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/494951911",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/494951911"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symptoms, signs or clinical findings of the digestive system or abdomen"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/14576949",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/14576949"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Structural developmental anomalies of the digestive tract"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1057832531",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1057832531"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the digestive system complicating pregnancy, childbirth or the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1135143938",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1135143938"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Diseases of the digestive system"
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endocrine, nutritional or metabolic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/21500692",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/21500692"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Injury, poisoning or certain other consequences of external causes"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/435227771",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/435227771"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Neoplasms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1630407678",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1630407678"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain infectious or parasitic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1435254666",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1435254666"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Complications of pregnancy, childbirth and the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/714000734",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/714000734"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mental, behavioural or neurodevelopmental disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/334423054",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+    }
+  ],
+  "relatedEntitiesInPerinatalChapter": [
+    "http://id.who.int/icd/entity/494951911"
+  ]
+}

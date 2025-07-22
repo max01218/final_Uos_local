@@ -1,0 +1,26 @@
+Disorder Name: Synthetic cannabinoid withdrawal
+Disorder Code: 397276103
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Synthetic cannabinoid withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of synthetic cannabinoids in individuals who have developed Synthetic cannabinoid dependence or have used synthetic cannabinoids for a prolonged period or in large amounts. Presenting features of Synthetic cannabinoid withdrawal may include irritability, anger, aggression, shakiness, insomnia and disturbing dreams, restlessness, anxiety, depressed mood and appetite disturbance. In the early phase, Synthetic cannabinoid withdrawal may be accompanied by residual features of intoxication from the drug, such as paranoid ideation and auditory and visual hallucinations.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Synthetic cannabinoid withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of synthetic cannabinoids in individuals who have developed Synthetic cannabinoid dependence or have used synthetic cannabinoids for a prolonged period or in large amounts. Presenting features of Synthetic cannabinoid withdrawal may include irritability, anger, aggression, shakiness, insomnia and disturbing dreams, restlessness, anxiety, depressed mood and appetite disturbance. In the early phase, Synthetic cannabinoid withdrawal may be accompanied by residual features of intoxication from the drug, such as paranoid ideation and auditory and visual hallucinations.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

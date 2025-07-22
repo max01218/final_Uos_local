@@ -1,0 +1,45 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1447134117",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/148241182"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1447134117",
+  "code": "6D86.1",
+  "source": "http://id.who.int/icd/entity/1447134117",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Mood symptoms in dementia"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "In addition to the cognitive disturbances characteristic of dementia, the current clinical picture includes clinically significant mood symptoms such as depressed mood, elevated mood, or irritable mood."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/76398729",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/76398729"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary mood syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/216291184",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/216291184"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood symptoms in dementia"
+      }
+    }
+  ]
+}

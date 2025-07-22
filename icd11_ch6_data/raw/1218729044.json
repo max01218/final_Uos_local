@@ -1,0 +1,97 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1218729044",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1046187143",
+    "http://id.who.int/icd/release/11/2024-01/mms/902999289",
+    "http://id.who.int/icd/release/11/2024-01/mms/1111681557",
+    "http://id.who.int/icd/release/11/2024-01/mms/601591344",
+    "http://id.who.int/icd/release/11/2024-01/mms/1769556904",
+    "http://id.who.int/icd/release/11/2024-01/mms/2145129894",
+    "http://id.who.int/icd/release/11/2024-01/mms/1218729044/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1218729044/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1218729044",
+  "code": "10",
+  "source": "http://id.who.int/icd/entity/1218729044",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Structural developmental anomalies of the ear"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/108076065",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/108076065"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symptoms, signs or clinical findings of ear or mastoid process"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1564218495",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1564218495"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Diseases of the ear or mastoid process"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "This chapter contains diseases of the ear and diseases of the mastoid process."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Complications of pregnancy, childbirth and the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/714000734",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/714000734"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain infectious or parasitic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1435254666",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1435254666"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain conditions originating in the perinatal period"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1306203631",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1306203631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Injury, poisoning or certain other consequences of external causes"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/435227771",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/435227771"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Neoplasms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1630407678",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1630407678"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endocrine, nutritional or metabolic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/21500692",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/21500692"
+    }
+  ]
+}

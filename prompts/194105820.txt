@@ -1,0 +1,26 @@
+Disorder Name: Dementia due to Down syndrome
+Disorder Code: 194105820
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dementia due to Down syndrome is a neurodegenerative disorder related to the impact of abnormal increased production and accumulation of amyloid precursor protein (APP) leading to formation of beta-amyloid plaques and tau tangles. APP gene expression is increased due to its location on chromosome 21, which is abnormally triplicated in Down syndrome. Cognitive deficits and neuropathological features are similar to those observed in Alzheimer disease. Onset is typically after the fourth decade of life with a gradual decline in functioning, and may impact 50% or more of individuals with Down syndrome.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia due to Down syndrome is a neurodegenerative disorder related to the impact of abnormal increased production and accumulation of amyloid precursor protein (APP) leading to formation of beta-amyloid plaques and tau tangles. APP gene expression is increased due to its location on chromosome 21, which is abnormally triplicated in Down syndrome. Cognitive deficits and neuropathological features are similar to those observed in Alzheimer disease. Onset is typically after the fourth decade of life with a gradual decline in functioning, and may impact 50% or more of individuals with Down syndrome.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

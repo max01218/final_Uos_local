@@ -1,0 +1,49 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/991786158",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2070699808",
+    "http://id.who.int/icd/release/11/2024-01/mms/585833559",
+    "http://id.who.int/icd/release/11/2024-01/mms/1183832314",
+    "http://id.who.int/icd/release/11/2024-01/mms/264310751",
+    "http://id.who.int/icd/release/11/2024-01/mms/1867081699",
+    "http://id.who.int/icd/release/11/2024-01/mms/467941148",
+    "http://id.who.int/icd/release/11/2024-01/mms/991786158/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/991786158/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#991786158",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/991786158",
+  "classKind": "block",
+  "blockId": "BlockL1-6B4",
+  "codeRange": "6B40-6B4Z",
+  "title": {
+    "@language": "en",
+    "@value": "Disorders specifically associated with stress"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorders specifically associated with stress are directly related to exposure to a stressful or traumatic event, or a series of such events or adverse experiences. For each of the disorders in this grouping, an identifiable stressor is a necessary, though not sufficient, causal factor. Although not all individuals exposed to an identified stressor will develop a disorder, the disorders in this grouping would not have occurred without experiencing the stressor. Stressful events for some disorders in this grouping are within the normal range of life experiences (e.g., divorce, socio-economic problems, bereavement). Other disorders require the experience of a stressor of an extremely threatening or horrific nature (i.e., potentially traumatic events). With all disorders in this grouping, it is the nature, pattern, and duration of the symptoms that arise in response to the stressful events—together with associated functional impairment—that distinguishes the disorders."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Burnout"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/129180281",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/129180281"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute stress reaction"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/505909942",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/505909942"
+    }
+  ]
+}

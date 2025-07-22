@@ -1,0 +1,491 @@
+2025-07-10 17:33:06,181 - INFO - Starting OPRO Scheduler...
+2025-07-10 17:33:06,181 - INFO - Check interval: 24 hours
+2025-07-10 17:33:06,181 - INFO - Min new interactions: 10
+2025-07-10 17:33:06,181 - INFO - Current interactions: 1, Last processed: 0, New: 1
+2025-07-10 17:33:06,181 - INFO - No optimization needed
+2025-07-10 17:33:06,181 - INFO - Sleeping for 24 hours...
+2025-07-10 17:49:59,240 - INFO - Scheduler stopped by user
+2025-07-10 17:50:11,398 - INFO - Starting OPRO Scheduler...
+2025-07-10 17:50:11,398 - INFO - Check interval: 24 hours
+2025-07-10 17:50:11,398 - INFO - Min new interactions: 10
+2025-07-10 17:50:11,398 - INFO - Current interactions: 1, Last processed: 0, New: 1
+2025-07-10 17:50:11,398 - INFO - No optimization needed
+2025-07-10 17:50:11,398 - INFO - Sleeping for 24 hours...
+2025-07-10 17:59:06,607 - INFO - Scheduler stopped by user
+2025-07-10 17:59:37,717 - INFO - Starting OPRO Scheduler...
+2025-07-10 17:59:37,717 - INFO - Check interval: 24 hours
+2025-07-10 17:59:37,717 - INFO - Min new interactions: 10
+2025-07-10 17:59:37,717 - INFO - Current interactions: 1, Last processed: 0, New: 1
+2025-07-10 17:59:37,717 - INFO - No optimization needed
+2025-07-10 17:59:37,717 - INFO - Sleeping for 24 hours...
+2025-07-10 18:03:35,541 - INFO - Scheduler stopped by user
+2025-07-10 18:03:54,185 - INFO - Starting OPRO Scheduler...
+2025-07-10 18:03:54,185 - INFO - Check interval: 24 hours
+2025-07-10 18:03:54,185 - INFO - Min new interactions: 10
+2025-07-10 18:03:54,185 - INFO - Current interactions: 2, Last processed: 0, New: 2
+2025-07-10 18:03:54,186 - INFO - No optimization needed
+2025-07-10 18:03:54,186 - INFO - Sleeping for 24 hours...
+2025-07-10 20:26:35,098 - INFO - Scheduler stopped by user
+2025-07-10 20:27:20,408 - INFO - Starting OPRO Scheduler...
+2025-07-10 20:27:20,408 - INFO - Check interval: 24 hours
+2025-07-10 20:27:20,409 - INFO - Min new interactions: 10
+2025-07-10 20:27:20,410 - INFO - Current interactions: 4, Last processed: 0, New: 4
+2025-07-10 20:27:20,410 - INFO - No optimization needed
+2025-07-10 20:27:20,411 - INFO - Sleeping for 24 hours...
+2025-07-10 21:36:10,876 - INFO - Scheduler stopped by user
+2025-07-10 21:36:30,748 - INFO - Starting OPRO Scheduler...
+2025-07-10 21:36:30,749 - INFO - Check interval: 24 hours
+2025-07-10 21:36:30,749 - INFO - Min new interactions: 10
+2025-07-10 21:36:30,749 - INFO - Current interactions: 5, Last processed: 0, New: 5
+2025-07-10 21:36:30,749 - INFO - No optimization needed
+2025-07-10 21:36:30,749 - INFO - Sleeping for 24 hours...
+2025-07-10 21:43:45,177 - INFO - Scheduler stopped by user
+2025-07-10 21:44:05,398 - INFO - Starting OPRO Scheduler...
+2025-07-10 21:44:05,398 - INFO - Check interval: 24 hours
+2025-07-10 21:44:05,399 - INFO - Min new interactions: 10
+2025-07-10 21:44:05,399 - INFO - Current interactions: 7, Last processed: 0, New: 7
+2025-07-10 21:44:05,399 - INFO - No optimization needed
+2025-07-10 21:44:05,400 - INFO - Sleeping for 24 hours...
+2025-07-10 21:57:17,462 - INFO - Scheduler stopped by user
+2025-07-10 21:57:41,132 - INFO - Starting OPRO Scheduler...
+2025-07-10 21:57:41,133 - INFO - Check interval: 24 hours
+2025-07-10 21:57:41,133 - INFO - Min new interactions: 10
+2025-07-10 21:57:41,133 - INFO - Current interactions: 9, Last processed: 0, New: 9
+2025-07-10 21:57:41,133 - INFO - No optimization needed
+2025-07-10 21:57:41,133 - INFO - Sleeping for 24 hours...
+2025-07-10 22:00:04,017 - INFO - Scheduler stopped by user
+2025-07-10 22:00:23,889 - INFO - Starting OPRO Scheduler...
+2025-07-10 22:00:23,889 - INFO - Check interval: 24 hours
+2025-07-10 22:00:23,889 - INFO - Min new interactions: 10
+2025-07-10 22:00:23,891 - ERROR - Error reading interactions: 'gbk' codec can't decode byte 0x88 in position 6362: illegal multibyte sequence
+2025-07-10 22:00:23,891 - INFO - Current interactions: 0, Last processed: 0, New: 0
+2025-07-10 22:00:23,891 - INFO - No optimization needed
+2025-07-10 22:00:23,891 - INFO - Sleeping for 24 hours...
+2025-07-10 22:13:48,916 - INFO - Scheduler stopped by user
+2025-07-10 22:14:08,018 - INFO - Starting OPRO Scheduler...
+2025-07-10 22:14:08,018 - INFO - Check interval: 24 hours
+2025-07-10 22:14:08,018 - INFO - Min new interactions: 10
+2025-07-10 22:14:08,018 - ERROR - Error reading interactions: 'gbk' codec can't decode byte 0x88 in position 6362: illegal multibyte sequence
+2025-07-10 22:14:08,018 - INFO - Current interactions: 0, Last processed: 0, New: 0
+2025-07-10 22:14:08,018 - INFO - No optimization needed
+2025-07-10 22:14:08,018 - INFO - Sleeping for 24 hours...
+2025-07-10 22:22:14,107 - INFO - Scheduler stopped by user
+2025-07-10 22:22:32,833 - INFO - Starting OPRO Scheduler...
+2025-07-10 22:22:32,834 - INFO - Check interval: 24 hours
+2025-07-10 22:22:32,834 - INFO - Min new interactions: 10
+2025-07-10 22:22:32,834 - ERROR - Error reading interactions: 'gbk' codec can't decode byte 0x88 in position 6362: illegal multibyte sequence
+2025-07-10 22:22:32,834 - INFO - Current interactions: 0, Last processed: 0, New: 0
+2025-07-10 22:22:32,834 - INFO - No optimization needed
+2025-07-10 22:22:32,834 - INFO - Sleeping for 24 hours...
+2025-07-10 22:47:58,911 - INFO - Scheduler stopped by user
+2025-07-10 22:48:18,206 - INFO - Starting OPRO Scheduler...
+2025-07-10 22:48:18,206 - INFO - Check interval: 24 hours
+2025-07-10 22:48:18,206 - INFO - Min new interactions: 10
+2025-07-10 22:48:18,207 - ERROR - Error reading interactions: 'gbk' codec can't decode byte 0x88 in position 6362: illegal multibyte sequence
+2025-07-10 22:48:18,207 - INFO - Current interactions: 0, Last processed: 0, New: 0
+2025-07-10 22:48:18,207 - INFO - No optimization needed
+2025-07-10 22:48:18,207 - INFO - Sleeping for 24 hours...
+2025-07-10 23:33:12,497 - INFO - Scheduler stopped by user
+2025-07-11 14:31:40,541 - INFO - Starting OPRO Scheduler...
+2025-07-11 14:31:40,541 - INFO - Check interval: 24 hours
+2025-07-11 14:31:40,541 - INFO - Min new interactions: 10
+2025-07-11 14:31:40,543 - ERROR - Error reading interactions: 'gbk' codec can't decode byte 0x88 in position 6362: illegal multibyte sequence
+2025-07-11 14:31:40,543 - INFO - Current interactions: 0, Last processed: 0, New: 0
+2025-07-11 14:31:40,543 - INFO - No optimization needed
+2025-07-11 14:31:40,543 - INFO - Sleeping for 24 hours...
+2025-07-11 14:35:35,448 - INFO - Current interactions: 20, Last processed: 0, New: 20
+2025-07-11 14:35:35,450 - INFO - Running optimization once...
+2025-07-11 14:35:35,450 - INFO - Starting optimization cycle...
+2025-07-11 14:35:35,450 - INFO - Running testcase conversion...
+2025-07-11 14:35:35,502 - INFO - Testcase conversion completed successfully
+2025-07-11 14:35:35,503 - INFO - Converting feedback data to OPRO test cases...
+Loaded 20 interactions
+Found 1 quality interactions
+Saved 1 test cases to ICD11_OPRO/tests/feedback_testcases_20250711_143535.json
+
+Summary:
+- Total interactions: 20
+- Quality interactions: 1
+- Test cases created: 1
+- Output file: ICD11_OPRO/tests/feedback_testcases_20250711_143535.json
+
+Example test case:
+Question: I feel sad...
+Tone: empathetic_professional
+Overall Score: 4.25
+
+2025-07-11 14:35:35,503 - INFO - Running OPRO optimization...
+2025-07-11 14:35:35,529 - ERROR - OPRO optimization failed: python: can't open file 'D:\\Southampton_final\\dataset\\ICD-11\\ICD11_OPRO\\ICD11_OPRO\\run_opro.py': [Errno 2] No such file or directory
+
+2025-07-11 14:35:35,529 - ERROR - OPRO optimization failed
+2025-07-11 14:36:42,777 - INFO - Current interactions: 20, Last processed: 0, New: 20
+2025-07-11 14:36:42,778 - INFO - Running optimization once...
+2025-07-11 14:36:42,778 - INFO - Starting optimization cycle...
+2025-07-11 14:36:42,778 - INFO - Running testcase conversion...
+2025-07-11 14:36:42,825 - INFO - Testcase conversion completed successfully
+2025-07-11 14:36:42,826 - INFO - Converting feedback data to OPRO test cases...
+Loaded 20 interactions
+Found 1 quality interactions
+Saved 1 test cases to ICD11_OPRO/tests/feedback_testcases_20250711_143642.json
+
+Summary:
+- Total interactions: 20
+- Quality interactions: 1
+- Test cases created: 1
+- Output file: ICD11_OPRO/tests/feedback_testcases_20250711_143642.json
+
+Example test case:
+Question: I feel sad...
+Tone: empathetic_professional
+Overall Score: 4.25
+
+2025-07-11 14:36:42,826 - INFO - Running OPRO optimization...
+2025-07-11 14:36:49,167 - ERROR - OPRO optimization failed: Traceback (most recent call last):
+  File "D:\Southampton_final\dataset\ICD-11\ICD11_OPRO\run_opro.py", line 20, in <module>
+    from evaluate_prompt import PromptEvaluator, EvaluationResult, evaluate_prompt_file
+  File "D:\Southampton_final\dataset\ICD-11\ICD11_OPRO\evaluate_prompt.py", line 16, in <module>
+    from textblob import TextBlob
+ModuleNotFoundError: No module named 'textblob'
+
+2025-07-11 14:36:49,167 - ERROR - OPRO optimization failed
+2025-07-11 14:38:14,895 - INFO - Current interactions: 20, Last processed: 0, New: 20
+2025-07-11 14:38:14,895 - INFO - Running optimization once...
+2025-07-11 14:38:14,895 - INFO - Starting optimization cycle...
+2025-07-11 14:38:14,895 - INFO - Running testcase conversion...
+2025-07-11 14:38:14,947 - INFO - Testcase conversion completed successfully
+2025-07-11 14:38:14,947 - INFO - Converting feedback data to OPRO test cases...
+Loaded 20 interactions
+Found 1 quality interactions
+Saved 1 test cases to ICD11_OPRO/tests/feedback_testcases_20250711_143814.json
+
+Summary:
+- Total interactions: 20
+- Quality interactions: 1
+- Test cases created: 1
+- Output file: ICD11_OPRO/tests/feedback_testcases_20250711_143814.json
+
+Example test case:
+Question: I feel sad...
+Tone: empathetic_professional
+Overall Score: 4.25
+
+2025-07-11 14:38:14,947 - INFO - Running OPRO optimization...
+2025-07-11 14:38:22,794 - ERROR - OPRO optimization failed: Traceback (most recent call last):
+  File "D:\Southampton_final\dataset\ICD-11\ICD11_OPRO\run_opro.py", line 693, in <module>
+    main() 
+  File "D:\Southampton_final\dataset\ICD-11\ICD11_OPRO\run_opro.py", line 690, in main
+    interface.run()
+  File "D:\Southampton_final\dataset\ICD-11\ICD11_OPRO\run_opro.py", line 630, in run
+    self.display_welcome()
+  File "D:\Southampton_final\dataset\ICD-11\ICD11_OPRO\run_opro.py", line 54, in display_welcome
+    print("\U0001f9e0 ICD-11 OPRO Prompt Optimization System")
+UnicodeEncodeError: 'gbk' codec can't encode character '\U0001f9e0' in position 0: illegal multibyte sequence
+
+2025-07-11 14:38:22,794 - ERROR - OPRO optimization failed
+2025-07-11 14:40:29,398 - INFO - Current interactions: 20, Last processed: 0, New: 20
+2025-07-11 14:40:29,398 - INFO - Running optimization once...
+2025-07-11 14:40:29,399 - INFO - Starting optimization cycle...
+2025-07-11 14:40:29,399 - INFO - Running testcase conversion...
+2025-07-11 14:40:29,460 - INFO - Testcase conversion completed successfully
+2025-07-11 14:40:29,461 - INFO - Converting feedback data to OPRO test cases...
+Loaded 20 interactions
+Found 1 quality interactions
+Saved 1 test cases to ICD11_OPRO/tests/feedback_testcases_20250711_144029.json
+
+Summary:
+- Total interactions: 20
+- Quality interactions: 1
+- Test cases created: 1
+- Output file: ICD11_OPRO/tests/feedback_testcases_20250711_144029.json
+
+Example test case:
+Question: I feel sad...
+Tone: empathetic_professional
+Overall Score: 4.25
+
+2025-07-11 14:40:29,461 - INFO - Running OPRO optimization...
+2025-07-11 15:18:08,057 - INFO - Current interactions: 20, Last processed: 0, New: 20
+2025-07-11 15:18:08,058 - INFO - Running optimization once...
+2025-07-11 15:18:08,058 - INFO - Starting optimization cycle...
+2025-07-11 15:18:08,058 - INFO - Running testcase conversion...
+2025-07-11 15:18:08,117 - INFO - Testcase conversion completed successfully
+2025-07-11 15:18:08,117 - INFO - Converting feedback data to OPRO test cases...
+Loaded 20 interactions
+Found 1 quality interactions
+Saved 1 test cases to ICD11_OPRO/tests/feedback_testcases_20250711_151808.json
+
+Summary:
+- Total interactions: 20
+- Quality interactions: 1
+- Test cases created: 1
+- Output file: ICD11_OPRO/tests/feedback_testcases_20250711_151808.json
+
+Example test case:
+Question: I feel sad...
+Tone: empathetic_professional
+Overall Score: 4.25
+
+2025-07-11 15:18:08,118 - INFO - Running OPRO optimization...
+2025-07-11 15:18:20,366 - ERROR - OPRO optimization failed: D:\anaconda\envs\final\lib\site-packages\torchvision\io\image.py:13: UserWarning: Failed to load image Python extension: '[WinError 127] 找不到指定的程序。'If you don't plan on using image functionality from `torchvision.io`, you can ignore this warning. Otherwise, there might be something wrong with your environment. Did you have `libjpeg` or `libpng` installed before building `torchvision` from source?
+  warn(
+INFO:opro.optimize_icd11_prompt:Loaded seed prompt: seed_crisis.txt
+INFO:opro.optimize_icd11_prompt:Loaded seed prompt: seed_empathetic.txt
+INFO:opro.optimize_icd11_prompt:Loaded seed prompt: seed_professional.txt
+INFO:opro.optimize_icd11_prompt:\U0001f680 Starting OPRO optimization process...
+INFO:opro.optimize_icd11_prompt:\U0001f331 Evaluating seed prompts...
+INFO:opro.optimize_icd11_prompt:Evaluating prompt candidate (method: seed_1)
+INFO:opro.optimize_icd11_prompt:Evaluation complete. Score: 6.775 (R:8.0 E:7.0 A:5.5 S:6.5)
+INFO:opro.optimize_icd11_prompt:Seed 1 score: 6.775
+INFO:opro.optimize_icd11_prompt:Evaluating prompt candidate (method: seed_2)
+INFO:opro.optimize_icd11_prompt:Evaluation complete. Score: 7.175 (R:8.0 E:7.5 A:6.5 S:6.5)
+INFO:opro.optimize_icd11_prompt:Seed 2 score: 7.175
+INFO:opro.optimize_icd11_prompt:Evaluating prompt candidate (method: seed_3)
+INFO:opro.optimize_icd11_prompt:Evaluation complete. Score: 6.350 (R:8.0 E:5.0 A:7.0 S:5.5)
+INFO:opro.optimize_icd11_prompt:Seed 3 score: 6.350
+INFO:opro.optimize_icd11_prompt:\U0001f4ca Running iteration 1/5
+INFO:opro.optimize_icd11_prompt:\U0001f504 Generating prompt variants...
+INFO:opro.optimize_icd11_prompt:\U0001f4f4 Using offline prompt generation
+INFO:opro.optimize_icd11_prompt:\u2705 Generated 3 offline variants
+INFO:opro.optimize_icd11_prompt:Evaluating prompt candidate (method: offline_empathy_enhancement)
+INFO:opro.optimize_icd11_prompt:Evaluation complete. Score: 7.175 (R:8.0 E:7.5 A:6.5 S:6.5)
+INFO:opro.optimize_icd11_prompt:Evaluating prompt candidate (method: offline_safety_enhancement)
+INFO:opro.optimize_icd11_prompt:Evaluation complete. Score: 7.175 (R:8.0 E:7.5 A:6.5 S:6.5)
+INFO:opro.optimize_icd11_prompt:Evaluating prompt candidate (method: offline_professional_enhancement)
+INFO:opro.optimize_icd11_prompt:Evaluation complete. Score: 7.175 (R:8.0 E:7.5 A:6.5 S:6.5)
+INFO:opro.optimize_icd11_prompt:\U0001f6d1 Early stopping criteria met
+INFO:opro.optimize_icd11_prompt:\U0001f4be Saving optimization results...
+INFO:opro.optimize_icd11_prompt:\u2705 Results saved successfully!
+INFO:opro.optimize_icd11_prompt:\U0001f389 Optimization completed! Best score: 7.175
+ERROR:__main__:Headless optimization failed: 'PromptCandidate' object has no attribute 'text'
+
+2025-07-11 15:18:20,367 - ERROR - OPRO optimization failed
+2025-07-11 15:19:23,879 - INFO - Current interactions: 20, Last processed: 0, New: 20
+2025-07-11 15:19:23,881 - INFO - Running optimization once...
+2025-07-11 15:19:23,881 - INFO - Starting optimization cycle...
+2025-07-11 15:19:23,881 - INFO - Running testcase conversion...
+2025-07-11 15:19:23,940 - INFO - Testcase conversion completed successfully
+2025-07-11 15:19:23,941 - INFO - Converting feedback data to OPRO test cases...
+Loaded 20 interactions
+Found 1 quality interactions
+Saved 1 test cases to ICD11_OPRO/tests/feedback_testcases_20250711_151923.json
+
+Summary:
+- Total interactions: 20
+- Quality interactions: 1
+- Test cases created: 1
+- Output file: ICD11_OPRO/tests/feedback_testcases_20250711_151923.json
+
+Example test case:
+Question: I feel sad...
+Tone: empathetic_professional
+Overall Score: 4.25
+
+2025-07-11 15:19:23,941 - INFO - Running OPRO optimization...
+2025-07-11 15:19:32,958 - INFO - OPRO optimization completed successfully
+2025-07-11 15:19:32,958 - INFO - Starting headless OPRO optimization...
+Using test file: tests\feedback_testcases_20250711_151923.json
+Running OPRO optimization...
+[SUCCESS] Optimized prompt saved to: prompts/optimized_prompt.txt
+Final score: 7.175
+Improvement: 0.825
+
+2025-07-11 15:19:32,960 - ERROR - Optimized prompt not found: ICD11_OPRO\optimized_prompt.txt
+2025-07-11 15:19:32,960 - ERROR - Prompt deployment failed
+2025-07-11 15:20:25,739 - INFO - Current interactions: 20, Last processed: 0, New: 20
+2025-07-11 15:20:25,739 - INFO - Running optimization once...
+2025-07-11 15:20:25,739 - INFO - Starting optimization cycle...
+2025-07-11 15:20:25,739 - INFO - Running testcase conversion...
+2025-07-11 15:20:25,807 - INFO - Testcase conversion completed successfully
+2025-07-11 15:20:25,807 - INFO - Converting feedback data to OPRO test cases...
+Loaded 20 interactions
+Found 1 quality interactions
+Saved 1 test cases to ICD11_OPRO/tests/feedback_testcases_20250711_152025.json
+
+Summary:
+- Total interactions: 20
+- Quality interactions: 1
+- Test cases created: 1
+- Output file: ICD11_OPRO/tests/feedback_testcases_20250711_152025.json
+
+Example test case:
+Question: I feel sad...
+Tone: empathetic_professional
+Overall Score: 4.25
+
+2025-07-11 15:20:25,807 - INFO - Running OPRO optimization...
+2025-07-11 15:20:34,299 - INFO - OPRO optimization completed successfully
+2025-07-11 15:20:34,299 - INFO - Starting headless OPRO optimization...
+Using test file: tests\feedback_testcases_20250711_152025.json
+Running OPRO optimization...
+[SUCCESS] Optimized prompt saved to: prompts/optimized_prompt.txt
+Final score: 7.175
+Improvement: 0.825
+
+2025-07-11 15:20:34,303 - INFO - Deployed new prompt: ICD11_OPRO\prompts\current_prompt.txt
+2025-07-11 15:20:34,305 - INFO - Optimization cycle completed successfully
+2025-07-11 15:22:32,026 - INFO - Loaded state: last_processed_count = 20
+2025-07-11 15:22:32,026 - INFO - Current interactions: 20, Last processed: 20, New: 0
+2025-07-11 15:22:32,027 - INFO - No optimization needed
+2025-07-11 15:23:24,805 - INFO - Loaded state: last_processed_count = 0
+2025-07-11 15:23:24,805 - INFO - Current interactions: 20, Last processed: 0, New: 20
+2025-07-11 15:23:24,806 - INFO - Running optimization once...
+2025-07-11 15:23:24,806 - INFO - Starting optimization cycle...
+2025-07-11 15:23:24,806 - INFO - Running testcase conversion...
+2025-07-11 15:23:24,868 - INFO - Testcase conversion completed successfully
+2025-07-11 15:23:24,869 - INFO - Converting feedback data to OPRO test cases...
+Loaded 20 interactions
+Found 1 quality interactions
+Saved 1 test cases to ICD11_OPRO/tests/feedback_testcases_20250711_152324.json
+
+Summary:
+- Total interactions: 20
+- Quality interactions: 1
+- Test cases created: 1
+- Output file: ICD11_OPRO/tests/feedback_testcases_20250711_152324.json
+
+Example test case:
+Question: I feel sad...
+Tone: empathetic_professional
+Overall Score: 4.25
+
+2025-07-11 15:23:24,869 - INFO - Running OPRO optimization...
+2025-07-11 15:23:33,338 - INFO - OPRO optimization completed successfully
+2025-07-11 15:23:33,338 - INFO - Starting headless OPRO optimization...
+Using test file: tests\feedback_testcases_20250711_152324.json
+Running OPRO optimization...
+[SUCCESS] Optimized prompt saved to: prompts/optimized_prompt.txt
+Final score: 7.175
+Improvement: 0.825
+
+2025-07-11 15:23:33,340 - INFO - Created backup: prompt_backups\prompt_backup_20250711_152333.txt
+2025-07-11 15:23:33,342 - INFO - Deployed new prompt: ICD11_OPRO\prompts\current_prompt.txt
+2025-07-11 15:23:33,343 - INFO - Optimization cycle completed successfully
+2025-07-11 15:24:36,812 - INFO - Loaded state: last_processed_count = 10
+2025-07-11 15:24:36,813 - INFO - Current interactions: 20, Last processed: 10, New: 10
+2025-07-11 15:24:36,813 - INFO - Running optimization once...
+2025-07-11 15:24:36,813 - INFO - Starting optimization cycle...
+2025-07-11 15:24:36,813 - INFO - Running testcase conversion...
+2025-07-11 15:24:36,866 - INFO - Testcase conversion completed successfully
+2025-07-11 15:24:36,866 - INFO - Converting feedback data to OPRO test cases...
+Loaded 20 interactions
+Found 1 quality interactions
+Saved 1 test cases to ICD11_OPRO/tests/feedback_testcases_20250711_152436.json
+
+Summary:
+- Total interactions: 20
+- Quality interactions: 1
+- Test cases created: 1
+- Output file: ICD11_OPRO/tests/feedback_testcases_20250711_152436.json
+
+Example test case:
+Question: I feel sad...
+Tone: empathetic_professional
+Overall Score: 4.25
+
+2025-07-11 15:24:36,866 - INFO - Running OPRO optimization...
+2025-07-11 16:46:55,593 - INFO - Scheduler stopped by user
+2025-07-11 16:47:37,982 - INFO - Loaded state: last_processed_count = 10
+2025-07-11 16:47:37,982 - INFO - Starting OPRO Scheduler...
+2025-07-11 16:47:37,982 - INFO - Check interval: 24 hours
+2025-07-11 16:47:37,982 - INFO - Min new interactions: 10
+2025-07-11 16:47:37,982 - INFO - Current interactions: 20, Last processed: 10, New: 10
+2025-07-11 16:47:37,983 - INFO - Triggering optimization cycle...
+2025-07-11 16:47:37,983 - INFO - Starting optimization cycle...
+2025-07-11 16:47:37,983 - INFO - Running testcase conversion...
+2025-07-11 16:47:38,034 - INFO - Testcase conversion completed successfully
+2025-07-11 16:47:38,034 - INFO - Converting feedback data to OPRO test cases...
+Loaded 20 interactions
+Found 1 quality interactions
+Saved 1 test cases to ICD11_OPRO/tests/feedback_testcases_20250711_164738.json
+
+Summary:
+- Total interactions: 20
+- Quality interactions: 1
+- Test cases created: 1
+- Output file: ICD11_OPRO/tests/feedback_testcases_20250711_164738.json
+
+Example test case:
+Question: I feel sad...
+Tone: empathetic_professional
+Overall Score: 4.25
+
+2025-07-11 16:47:38,034 - INFO - Running OPRO optimization...
+2025-07-11 17:07:09,810 - INFO - Loaded state: last_processed_count = 10
+2025-07-11 17:07:09,810 - INFO - Starting OPRO Scheduler...
+2025-07-11 17:07:09,811 - INFO - Check interval: 24 hours
+2025-07-11 17:07:09,811 - INFO - Min new interactions: 10
+2025-07-11 17:07:09,811 - INFO - Current interactions: 24, Last processed: 10, New: 14
+2025-07-11 17:07:09,811 - INFO - Triggering optimization cycle...
+2025-07-11 17:07:09,811 - INFO - Starting optimization cycle...
+2025-07-11 17:07:09,811 - INFO - Running testcase conversion...
+2025-07-11 17:07:09,864 - INFO - Testcase conversion completed successfully
+2025-07-11 17:07:09,864 - INFO - Converting feedback data to OPRO test cases...
+Loaded 24 interactions
+Found 1 quality interactions
+Saved 1 test cases to ICD11_OPRO/tests/feedback_testcases_20250711_170709.json
+
+Summary:
+- Total interactions: 24
+- Quality interactions: 1
+- Test cases created: 1
+- Output file: ICD11_OPRO/tests/feedback_testcases_20250711_170709.json
+
+Example test case:
+Question: I feel sad...
+Tone: empathetic_professional
+Overall Score: 4.25
+
+2025-07-11 17:07:09,864 - INFO - Running OPRO optimization...
+2025-07-14 01:04:53,099 - INFO - Loaded state: last_processed_count = 10
+2025-07-14 01:04:53,100 - INFO - Starting OPRO Scheduler...
+2025-07-14 01:04:53,100 - INFO - Check interval: 24 hours
+2025-07-14 01:04:53,100 - INFO - Min new interactions: 10
+2025-07-14 01:04:53,100 - INFO - Current interactions: 29, Last processed: 10, New: 19
+2025-07-14 01:04:53,101 - INFO - Triggering optimization cycle...
+2025-07-14 01:04:53,101 - INFO - Starting optimization cycle...
+2025-07-14 01:04:53,101 - INFO - Running testcase conversion...
+2025-07-14 01:04:53,160 - INFO - Testcase conversion completed successfully
+2025-07-14 01:04:53,160 - INFO - Converting feedback data to OPRO test cases...
+Loaded 29 interactions
+Found 1 quality interactions
+Saved 1 test cases to ICD11_OPRO/tests/feedback_testcases_20250714_010453.json
+
+Summary:
+- Total interactions: 29
+- Quality interactions: 1
+- Test cases created: 1
+- Output file: ICD11_OPRO/tests/feedback_testcases_20250714_010453.json
+
+Example test case:
+Question: I feel sad...
+Tone: empathetic_professional
+Overall Score: 4.25
+
+2025-07-14 01:04:53,160 - INFO - Running OPRO optimization...
+2025-07-14 02:44:43,302 - INFO - Loaded state: last_processed_count = 10
+2025-07-14 02:44:43,302 - INFO - Starting OPRO Scheduler...
+2025-07-14 02:44:43,303 - INFO - Check interval: 24 hours
+2025-07-14 02:44:43,303 - INFO - Min new interactions: 10
+2025-07-14 02:44:43,303 - INFO - Current interactions: 35, Last processed: 10, New: 25
+2025-07-14 02:44:43,304 - INFO - Triggering optimization cycle...
+2025-07-14 02:44:43,304 - INFO - Starting optimization cycle...
+2025-07-14 02:44:43,304 - INFO - Running testcase conversion...
+2025-07-14 02:44:43,366 - INFO - Testcase conversion completed successfully
+2025-07-14 02:44:43,366 - INFO - Converting feedback data to OPRO test cases...
+Loaded 35 interactions
+Found 1 quality interactions
+Saved 1 test cases to ICD11_OPRO/tests/feedback_testcases_20250714_024443.json
+
+Summary:
+- Total interactions: 35
+- Quality interactions: 1
+- Test cases created: 1
+- Output file: ICD11_OPRO/tests/feedback_testcases_20250714_024443.json
+
+Example test case:
+Question: I feel sad...
+Tone: empathetic_professional
+Overall Score: 4.25
+
+2025-07-14 02:44:43,366 - INFO - Running OPRO optimization...
+2025-07-14 12:57:08,257 - INFO - Scheduler stopped by user

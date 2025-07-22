@@ -1,0 +1,26 @@
+Disorder Name: Dissociative identity disorder
+Disorder Code: 1829103493
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dissociative identity disorder is characterised by disruption of identity in which there are two or more distinct personality states (dissociative identities) associated with marked discontinuities in the sense of self and agency. Each personality state includes its own pattern of experiencing, perceiving, conceiving, and relating to self, the body, and the environment. At least two distinct personality states recurrently take executive control of the individual’s consciousness and functioning in interacting with others or with the environment, such as in the performance of specific aspects of daily life such as parenting, or work, or in response to specific situations (e.g., those that are perceived as threatening). Changes in personality state are accompanied by related alterations in sensation, perception, affect, cognition, memory, motor control, and behaviour. There are typically episodes of amnesia, which may be severe. The symptoms are not better explained by another mental, behavioural or neurodevelopmental disorder and are not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, and are not due to a disease of the nervous system or a sleep-wake disorder. The symptoms result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dissociative identity disorder is characterised by disruption of identity in which there are two or more distinct personality states (dissociative identities) associated with marked discontinuities in the sense of self and agency. Each personality state includes its own pattern of experiencing, perceiving, conceiving, and relating to self, the body, and the environment. At least two distinct personality states recurrently take executive control of the individual’s consciousness and functioning in interacting with others or with the environment, such as in the performance of specific aspects of daily life such as parenting, or work, or in response to specific situations (e.g., those that are perceived as threatening). Changes in personality state are accompanied by related alterations in sensation, perception, affect, cognition, memory, motor control, and behaviour. There are typically episodes of amnesia, which may be severe. The symptoms are not better explained by another mental, behavioural or neurodevelopmental disorder and are not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, and are not due to a disease of the nervous system or a sleep-wake disorder. The symptoms result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

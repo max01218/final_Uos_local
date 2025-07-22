@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/131545543",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1414319298"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#131545543",
+  "code": "6C4G.5",
+  "source": "http://id.who.int/icd/entity/131545543",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/131545543/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1870346724",
+        "http://id.who.int/icd/release/11/2024-01/mms/219731531"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/131545543/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/272358857",
+        "http://id.who.int/icd/release/11/2024-01/mms/341458101",
+        "http://id.who.int/icd/release/11/2024-01/mms/2143971168"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Delirium induced by unknown or unspecified psychoactive substance"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Delirium induced by unknown or unspecified psychoactive substance is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or withdrawal or during the use of an unknown or unspecified substance. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from another substance, or by another health condition that is not classified under Mental, behavioural and neurodevelopmental disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium induced by unknown or unspecified psychoactive substance"
+      }
+    }
+  ]
+}

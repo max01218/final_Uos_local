@@ -1,0 +1,52 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/487787932",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/136511187"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1906889712",
+    "http://id.who.int/icd/release/11/2024-01/mms/509176135",
+    "http://id.who.int/icd/release/11/2024-01/mms/69097373",
+    "http://id.who.int/icd/release/11/2024-01/mms/657890038"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#487787932",
+  "code": "6C4E.7",
+  "source": "http://id.who.int/icd/entity/487787932",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/487787932/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/327038878",
+        "http://id.who.int/icd/release/11/2024-01/mms/2022008391"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/487787932/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1835736371",
+        "http://id.who.int/icd/release/11/2024-01/mms/754209924",
+        "http://id.who.int/icd/release/11/2024-01/mms/1934475925"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Certain other specified psychoactive substance-induced mental or behavioural disorders"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain other specified psychoactive substance-induced mental or behavioural disorders"
+      }
+    }
+  ]
+}

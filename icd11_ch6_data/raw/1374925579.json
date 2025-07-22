@@ -1,0 +1,61 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1374925579",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/108180424"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1374925579",
+  "code": "6B63",
+  "source": "http://id.who.int/icd/entity/1374925579",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Possession trance disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Possession trance disorder is characterised by trance states in which there is a marked alteration in the individual’s state of consciousness and the individual’s customary sense of personal identity is replaced by an external ‘possessing’ identity and in which the individual’s behaviours or movements are experienced as being controlled by the possessing agent. Possession trance episodes are recurrent or, if the diagnosis is based on a single episode, the episode has lasted for at least several days. The possession trance state is involuntary and unwanted and is not accepted as a part of a collective cultural or religious practice. The symptoms do not occur exclusively during another dissociative disorder and are not better explained by another mental, behavioural or neurodevelopmental disorder. The symptoms are not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, exhaustion, or to hypnagogic or hypnopompic states, and are not due to a disease of the nervous system or a sleep-wake disorder. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Schizophrenia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1683919430",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1683919430"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorders due to use of other specified psychoactive substances, including medications"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/136511187",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/136511187"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute and transient psychotic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/284410555",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/284410555"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary personality change"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1324394161",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1324394161"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Possession trance disorder"
+      }
+    }
+  ]
+}

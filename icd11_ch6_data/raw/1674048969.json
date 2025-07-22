@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1674048969",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/731724655"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1674048969",
+  "code": "6B21.0",
+  "source": "http://id.who.int/icd/entity/1674048969",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Body dysmorphic disorder with fair to good insight"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements of body dysmorphic disorder are met. Much of the time, the individual is able to entertain the possibility that his or her disorder-specific beliefs may not be true and is willing to accept an alternative explanation for his or her experience. At circumscribed times (e.g., when highly anxious), the individual may demonstrate no insight."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Body dysmorphic disorder with fair to good insight"
+      }
+    }
+  ]
+}

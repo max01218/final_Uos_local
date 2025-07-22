@@ -1,0 +1,81 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1965837313",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1689089786"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1965837313",
+  "code": "6C45.3",
+  "source": "http://id.who.int/icd/entity/1965837313",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1965837313/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1965837313/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/318767128",
+        "http://id.who.int/icd/release/11/2024-01/mms/275218837",
+        "http://id.who.int/icd/release/11/2024-01/mms/1691013484"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Cocaine intoxication"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Cocaine intoxication is a clinically significant transient condition that develops during or shortly after the consumption of cocaine that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of cocaine and their intensity is closely related to the amount of cocaine consumed. They are time-limited and abate as cocaine is cleared from the body. Presenting features may include inappropriate euphoria, anxiety, anger, impaired attention, hypervigilance, psychomotor agitation, paranoid ideation (sometimes of delusional intensity), auditory hallucinations, confusion, and changes in sociability. Perspiration or chills, nausea or vomiting, and palpitations and chest pain may be experienced. Physical signs may include tachycardia, elevated blood pressure, and pupillary dilatation. In rare instances, usually in severe intoxication, cocaine use can result in seizures, muscle weakness, dyskinesia, or dystonia."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "cocaine poisoning"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1087341350",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1868408442"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Possession trance disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1374925579",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1374925579"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bad trip due to cocaine"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute cocaine intoxication"
+      }
+    }
+  ]
+}

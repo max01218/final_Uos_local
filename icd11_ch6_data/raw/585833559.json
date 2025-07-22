@@ -1,0 +1,91 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/585833559",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/991786158"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#585833559",
+  "code": "6B41",
+  "source": "http://id.who.int/icd/entity/585833559",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Complex post traumatic stress disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Complex post traumatic stress disorder (Complex PTSD) is a disorder that may develop following exposure to an event or series of events of an extremely threatening or horrific nature, most commonly prolonged or repetitive events from which escape is difficult or impossible (e.g. torture, slavery, genocide campaigns, prolonged domestic violence, repeated childhood sexual or physical abuse). All diagnostic requirements for PTSD are met. In addition, Complex PTSD is characterised by severe and persistent 1) problems in affect regulation; 2) beliefs about oneself as diminished, defeated or worthless, accompanied by feelings of shame, guilt or failure related to the traumatic event; and 3) difficulties in sustaining relationships and in feeling close to others. These symptoms cause significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Post traumatic stress disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2070699808",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2070699808"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Personality disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/941859884",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/941859884"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Complex post traumatic stress disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "enduring personality change after catastrophic experience"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "complex PTSD"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "personality change after disasters"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Personality change after concentration camp experiences"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/327325370"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Personality change after prolonged captivity with an imminent possibility of being killed"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/325545514"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Personality change after prolonged exposure to life-threatening situations such as being a victim of terrorism"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1399955037"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Personality change after torture"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1378111711"
+    }
+  ]
+}

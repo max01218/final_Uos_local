@@ -1,0 +1,32 @@
+Disorder Name: Bipolar type I disorder
+Disorder Code: 1456478153
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Bipolar type I disorder is an episodic mood disorder defined by the occurrence of one or more manic or mixed episodes. A manic episode is an extreme mood state lasting at least one week unless shortened by a treatment intervention characterised by euphoria, irritability, or expansiveness, and by increased activity or a subjective experience of increased energy, accompanied by other characteristic symptoms such as rapid or pressured speech, flight of ideas, increased self-esteem or grandiosity, decreased need for sleep, distractibility, impulsive or reckless behaviour, and rapid changes among different mood states (i.e., mood lability). A mixed episode is characterised by the presence of several prominent manic and several prominent depressive symptoms consistent with those observed in manic episodes and depressive episodes, which either occur simultaneously or alternate very rapidly (from day to day or within the same day). Symptoms must include an altered mood state consistent with a manic and/or depressive episode (i.e., depressed, dysphoric, euphoric or expansive mood), and be present most of the day, nearly every day, during a period of at least 2 weeks, unless shortened by a treatment intervention. Although the diagnosis can be made based on evidence of a single manic or mixed episode, typically manic or mixed episodes alternate with depressive episodes over the course of the disorder.
+
+Exclusions: Cyclothymia; Bipolar type II disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Bipolar type I disorder is an episodic mood disorder defined by the occurrence of one or more manic or mixed episodes. A manic episode is an extreme mood state lasting at least one week unless shortened by a treatment intervention characterised by euphoria, irritability, or expansiveness, and by increased activity or a subjective experience of increased energy, accompanied by other characteristic symptoms such as rapid or pressured speech, flight of ideas, increased self-esteem or grandiosity, decreased need for sleep, distractibility, impulsive or reckless behaviour, and rapid changes among different mood states (i.e., mood lability). A mixed episode is characterised by the presence of several prominent manic and several prominent depressive symptoms consistent with those observed in manic episodes and depressive episodes, which either occur simultaneously or alternate very rapidly (from day to day or within the same day). Symptoms must include an altered mood state consistent with a manic and/or depressive episode (i.e., depressed, dysphoric, euphoric or expansive mood), and be present most of the day, nearly every day, during a period of at least 2 weeks, unless shortened by a treatment intervention. Although the diagnosis can be made based on evidence of a single manic or mixed episode, typically manic or mixed episodes alternate with depressive episodes over the course of the disorder.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Cyclothymia
+• Should be differentiated from: Bipolar type II disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

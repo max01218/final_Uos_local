@@ -1,0 +1,34 @@
+Disorder Name: Opioid intoxication
+Disorder Code: 1395283456
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Opioid intoxication is a clinically significant transient condition that develops during or shortly after the consumption of opioids that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of opioids and their intensity is closely related to the amount of opioids consumed. They are time-limited and abate as opioids are cleared from the body. Presenting features may include somnolence, stupor, mood changes (e.g. euphoria followed by apathy and dysphoria), psychomotor retardation, impaired judgment, respiratory depression, slurred speech, and impairment of memory and attention. In severe intoxication coma may ensue. A characteristic physical sign is pupillary constriction but this sign may be absent when intoxication is due to synthetic opioids. Severe opioid intoxication can lead to death due to respiratory depression.
+
+Exclusions: opioid poisoning; Possession trance disorder; fentanyl poisoning; oxycodone poisoning
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Opioid intoxication is a clinically significant transient condition that develops during or shortly after the consumption of opioids that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of opioids and their intensity is closely related to the amount of opioids consumed. They are time-limited and abate as opioids are cleared from the body. Presenting features may include somnolence, stupor, mood changes (e.g. euphoria followed by apathy and dysphoria), psychomotor retardation, impaired judgment, respiratory depression, slurred speech, and impairment of memory and attention. In severe intoxication coma may ensue. A characteristic physical sign is pupillary constriction but this sign may be absent when intoxication is due to synthetic opioids. Severe opioid intoxication can lead to death due to respiratory depression.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: opioid poisoning
+• Should be differentiated from: Possession trance disorder
+• Should be differentiated from: fentanyl poisoning
+• Should be differentiated from: oxycodone poisoning
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,25 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1249056269",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1206995198",
+    "http://id.who.int/icd/release/11/2024-01/mms/57624301",
+    "http://id.who.int/icd/release/11/2024-01/mms/1249056269/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1249056269/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1249056269",
+  "code": "24",
+  "source": "http://id.who.int/icd/entity/1249056269",
+  "classKind": "chapter",
+  "title": {
+    "@language": "en",
+    "@value": "Factors influencing health status or contact with health services"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "!markdown\nCategories in this chapter are provided for occasions when circumstances other than a disease, injury or external cause classifiable elsewhere are recorded as \"diagnoses\" or \"problems\". This can arise in two main ways: \n\n1.\tWhen a person who may or may not be sick encounters the health services for some specific purpose, such as to receive limited care or service for a current condition, to donate an organ or tissue, to receive prophylactic vaccination or to discuss a problem which is in itself not a disease or injury. \n\n2.\tWhen some circumstance or problem is present which influences the person's health status but is not in itself a current illness or injury. Such circumstance or problem may be elicited during population surveys, when the person may or may not be currently sick, or be recorded as additional information to be borne in mind when the person is receiving care for some illness or injury."
+  }
+}

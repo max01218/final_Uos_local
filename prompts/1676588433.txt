@@ -1,0 +1,31 @@
+Disorder Name: Disorders due to use of alcohol
+Disorder Code: 1676588433
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of alcohol are characterised by the pattern and consequences of alcohol use. Alcohol—more specifically termed ethyl alcohol or ethanol—is an intoxicating compound produced by fermentation of sugars usually in agricultural products such as fruits, cereals, and vegetables with or without subsequent distillation. There are a wide variety of alcoholic drinks, with alcohol concentrations typically ranging from 1.5% to 60%. Alcohol is predominantly a central nervous system depressant. In addition to ability to produce Alcohol Intoxication, alcohol has dependence-producing properties, resulting in Alcohol Dependence in some people and Alcohol Withdrawal when alcohol use is reduced or discontinued. Unlike most other substances, elimination of alcohol from the body occurs at a constant rate, such that its clearance follows a linear rather than a logarithmic course. Alcohol is implicated in a wide range of harms affecting most organs and systems of the body (e.g., cirrhosis of the liver, gastrointestinal cancers, pancreatitis). Harm to others resulting from behaviour during Alcohol Intoxication is well recognized and is included in the definitions of harmful use of alcohol (i.e., Episode of Harmful Use of Alcohol and Harmful Pattern of Use of Alcohol). Several alcohol-induced mental disorders (e.g., Alcohol-Induced Psychotic Disorder) and alcohol-related forms of neurocognitive impairment (e.g., Dementia Due to Use of Alcohol) are recognized.
+
+Exclusions: Hazardous alcohol use
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of alcohol are characterised by the pattern and consequences of alcohol use. Alcohol—more specifically termed ethyl alcohol or ethanol—is an intoxicating compound produced by fermentation of sugars usually in agricultural products such as fruits, cereals, and vegetables with or without subsequent distillation. There are a wide variety of alcoholic drinks, with alcohol concentrations typically ranging from 1.5% to 60%. Alcohol is predominantly a central nervous system depressant. In addition to ability to produce Alcohol Intoxication, alcohol has dependence-producing properties, resulting in Alcohol Dependence in some people and Alcohol Withdrawal when alcohol use is reduced or discontinued. Unlike most other substances, elimination of alcohol from the body occurs at a constant rate, such that its clearance follows a linear rather than a logarithmic course. Alcohol is implicated in a wide range of harms affecting most organs and systems of the body (e.g., cirrhosis of the liver, gastrointestinal cancers, pancreatitis). Harm to others resulting from behaviour during Alcohol Intoxication is well recognized and is included in the definitions of harmful use of alcohol (i.e., Episode of Harmful Use of Alcohol and Harmful Pattern of Use of Alcohol). Several alcohol-induced mental disorders (e.g., Alcohol-Induced Psychotic Disorder) and alcohol-related forms of neurocognitive impairment (e.g., Dementia Due to Use of Alcohol) are recognized.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Hazardous alcohol use
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

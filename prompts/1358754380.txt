@@ -1,0 +1,26 @@
+Disorder Name: Symptomatic manifestations of primary psychotic disorders
+Disorder Code: 1358754380
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+These categories may be used to characterize the current clinical presentation in individuals diagnosed with Schizophrenia or another primary psychotic disorder, and should not be used in individuals without such a diagnosis. Multiple categories may be applied. Symptoms attributable to the direct pathophysiological consequences of a health condition or injury not classified under Mental, behavioural or neurodevelopmental disorders (e.g., a brain tumour or traumatic brain injury), or to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, should not be considered as examples of the respective types of symptoms.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+These categories may be used to characterize the current clinical presentation in individuals diagnosed with Schizophrenia or another primary psychotic disorder, and should not be used in individuals without such a diagnosis. Multiple categories may be applied. Symptoms attributable to the direct pathophysiological consequences of a health condition or injury not classified under Mental, behavioural or neurodevelopmental disorders (e.g., a brain tumour or traumatic brain injury), or to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, should not be considered as examples of the respective types of symptoms.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

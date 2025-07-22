@@ -1,0 +1,32 @@
+Disorder Name: Harmful pattern of use of other specified psychoactive substance
+Disorder Code: 754209924
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+A pattern of use of a specified psychoactive substance or medication that is not included in the other substance classes specifically identified under Disorders Due to Substance Use that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. The pattern of substance use is evident over a period of at least 12 months if use is episodic or at least one month if use is continuous (i.e., daily or almost daily). Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour related to intoxication due to the specified substance or medication on the part of the person to whom the diagnosis of Harmful pattern of use of other specified psychoactive substance applies.
+
+Exclusions: Other specified psychoactive substance dependence; Episode of harmful use of other specified psychoactive substance
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+A pattern of use of a specified psychoactive substance or medication that is not included in the other substance classes specifically identified under Disorders Due to Substance Use that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. The pattern of substance use is evident over a period of at least 12 months if use is episodic or at least one month if use is continuous (i.e., daily or almost daily). Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour related to intoxication due to the specified substance or medication on the part of the person to whom the diagnosis of Harmful pattern of use of other specified psychoactive substance applies.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Other specified psychoactive substance dependence
+• Should be differentiated from: Episode of harmful use of other specified psychoactive substance
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

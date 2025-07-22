@@ -1,0 +1,65 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/802537726",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/496273089"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#802537726",
+  "code": "6A80.3",
+  "source": "http://id.who.int/icd/entity/802537726",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/802537726/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/129188707",
+        "http://id.who.int/icd/release/11/2024-01/mms/306271588",
+        "http://id.who.int/icd/release/11/2024-01/mms/818054919",
+        "http://id.who.int/icd/release/11/2024-01/mms/1952305399",
+        "http://id.who.int/icd/release/11/2024-01/mms/286661987",
+        "http://id.who.int/icd/release/11/2024-01/mms/1061132490",
+        "http://id.who.int/icd/release/11/2024-01/mms/485378793",
+        "http://id.who.int/icd/release/11/2024-01/mms/590587802",
+        "http://id.who.int/icd/release/11/2024-01/mms/678752877",
+        "http://id.who.int/icd/release/11/2024-01/mms/183967754",
+        "http://id.who.int/icd/release/11/2024-01/mms/349321697",
+        "http://id.who.int/icd/release/11/2024-01/mms/51767575",
+        "http://id.who.int/icd/release/11/2024-01/mms/1922675618",
+        "http://id.who.int/icd/release/11/2024-01/mms/399670840",
+        "http://id.who.int/icd/release/11/2024-01/mms/651947494",
+        "http://id.who.int/icd/release/11/2024-01/mms/1669279433",
+        "http://id.who.int/icd/release/11/2024-01/mms/104129373",
+        "http://id.who.int/icd/release/11/2024-01/mms/554273362",
+        "http://id.who.int/icd/release/11/2024-01/mms/1851882275",
+        "http://id.who.int/icd/release/11/2024-01/mms/187348663",
+        "http://id.who.int/icd/release/11/2024-01/mms/419823765",
+        "http://id.who.int/icd/release/11/2024-01/mms/2139612744",
+        "http://id.who.int/icd/release/11/2024-01/mms/449588190",
+        "http://id.who.int/icd/release/11/2024-01/mms/1905765233"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Current depressive episode with melancholia"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "In the context of a current Depressive Episode, several of the following symptoms have been present during the worst period of the current episode: loss of interest or pleasure in most activities that are normally enjoyable to the individual (i.e., pervasive anhedonia); lack of emotional reactivity to normally pleasurable stimuli or circumstances (i.e., mood does not lift even transiently with exposure); terminal insomnia (i.e., waking in the morning two hours or more before the usual time); depressive symptoms are worse in the morning; marked psychomotor retardation or agitation; marked loss of appetite or loss of weight."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "These categories should never be used in primary coding. The codes are provided for use as supplementary or additional codes when it is desired to identify specific clinically important features of mood episodes in mood disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Current depressive episode with melancholia"
+      }
+    }
+  ]
+}

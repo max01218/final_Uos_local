@@ -1,0 +1,34 @@
+Disorder Name: Developmental language disorder
+Disorder Code: 862918022
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Developmental language disorder is characterised by persistent deficits in the acquisition, understanding, production or use of language (spoken or signed), that arise during the developmental period, typically during early childhood, and cause significant limitations in the individual’s ability to communicate. The individual’s ability to understand, produce or use language is markedly below what would be expected given the individual’s age. The language deficits are not explained by another neurodevelopmental disorder or a sensory impairment or neurological condition, including the effects of brain injury or infection.
+
+Exclusions: Autism spectrum disorder; Diseases of the nervous system; Deafness not otherwise specified; Selective mutism
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Developmental language disorder is characterised by persistent deficits in the acquisition, understanding, production or use of language (spoken or signed), that arise during the developmental period, typically during early childhood, and cause significant limitations in the individual’s ability to communicate. The individual’s ability to understand, produce or use language is markedly below what would be expected given the individual’s age. The language deficits are not explained by another neurodevelopmental disorder or a sensory impairment or neurological condition, including the effects of brain injury or infection.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Autism spectrum disorder
+• Should be differentiated from: Diseases of the nervous system
+• Should be differentiated from: Deafness not otherwise specified
+• Should be differentiated from: Selective mutism
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

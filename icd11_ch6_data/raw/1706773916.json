@@ -1,0 +1,302 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1706773916",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1456478153"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1706773916",
+  "code": "6A60.9",
+  "source": "http://id.who.int/icd/entity/1706773916",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1706773916/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1119039346",
+        "http://id.who.int/icd/release/11/2024-01/mms/1383708356",
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798",
+        "http://id.who.int/icd/release/11/2024-01/mms/567063364",
+        "http://id.who.int/icd/release/11/2024-01/mms/1124422593"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms is diagnosed when the definitional requirements for Bipolar type I disorder are met and the current episode is mixed and there are no delusions or hallucinations present during the episode. A mixed episode is characterised by the presence of several prominent manic and several prominent depressive symptoms consistent with those observed in manic episodes and depressive episodes, which either occur simultaneously or alternate very rapidly (from day to day or within the same day). Symptoms must include an altered mood state consistent with a manic and/or depressive episode (i.e., depressed, dysphoric, euphoric or expansive mood), and be present most of the day, nearly every day, during a period of at least 2 weeks, unless shortened by a treatment intervention. If the individual has experienced Manic or Mixed Episodes in the past, a duration of 2 weeks is not required in order to diagnose a current episode if all other diagnostic requirements are met."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bipolar affective disorder, current episode mixed"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bipolar affective disorder, mixed, unspecified degree"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "mixed bipolar affective disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bipolar type 1 disorder, most recent episode mixed"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "mixed bipolar type 1 disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bipolar affective disorder, current episode mixed, without psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/650542602"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1442355091"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1160908325"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/988599724"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/200357776"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/95030476"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2054477635"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/99107886"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1582036083"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1885818765"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with melancholia and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1370502145"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/517207708"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2122202161"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/512867962"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/432960097"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/656953385"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptom, melancholia, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1204277858"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/399966685"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1745476178"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/910308017"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1133474288"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1011985023"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/748368841"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with melancholia and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/212794251"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with seasonal pattern and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1390744426"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1812148514"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1340387321"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms, melancholia, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1596864079"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/552660418"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/300748794"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/532034726"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder, current episode mixed, without psychotic symptoms, additional symptoms unspecified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1617489705"
+    }
+  ]
+}

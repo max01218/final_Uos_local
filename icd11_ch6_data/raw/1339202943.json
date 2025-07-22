@@ -1,0 +1,198 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1339202943",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1676588433"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1339202943",
+  "code": "6C40.3",
+  "source": "http://id.who.int/icd/entity/1339202943",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1339202943/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1339202943/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/766814084",
+        "http://id.who.int/icd/release/11/2024-01/mms/714690795",
+        "http://id.who.int/icd/release/11/2024-01/mms/1580466198"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Alcohol intoxication"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Alcohol intoxication is a clinically significant transient condition that develops during or shortly after the consumption of alcohol that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of alcohol and their intensity is closely related to the amount of alcohol consumed. They are time-limited and abate as alcohol is cleared from the body. Presenting features may include impaired attention, inappropriate or aggressive behaviour, lability of mood and emotions, impaired judgment, poor coordination, unsteady gait, fine nystagmus and slurred speech. At more severe levels of intoxication, stupor or coma may occur. Alcohol intoxication may facilitate suicidal ideation or behaviour."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "alcohol poisoning"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1950708583",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1119330136"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Possession trance disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1374925579",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1374925579"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "drunk"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "ethanol intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute alcohol intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute drunkenness"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute drunkenness in alcoholism"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute ethanol intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "alcoholic intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "drunkenness"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Drunkenness, NOS"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "extreme sensitivity to alcohol syndrome"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "idiosyncratic alcohol intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "idiosyncratic intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "inebriety"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "inebriety nos"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "pathologic drunkenness"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "pathological alcohol intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "inebriated"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mental dis alcohol intoxication"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mild alcohol intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1443836552"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Moderate alcohol intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/860159762"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe alcohol intoxication"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1206497261"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/18178000",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/405565289"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#18178000",
+  "code": "6A22",
+  "source": "http://id.who.int/icd/entity/18178000",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/18178000/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Schizotypal disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Schizotypal disorder is characterised by an enduring pattern (i.e. characteristic of the person’s functioning over a period of at least several years) of eccentricities in behaviour, appearance and speech, accompanied by cognitive and perceptual distortions, unusual beliefs, and discomfort with— and often reduced capacity for— interpersonal relationships. Symptoms may include constricted or inappropriate affect and anhedonia. Paranoid ideas, ideas of reference, or other psychotic symptoms, including hallucinations in any modality, may occur, but are not of sufficient intensity or duration to meet the diagnostic requirements of schizophrenia, schizoaffective disorder, or delusional disorder. The symptoms cause distress or impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Schizotypal personality disorder"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Autism spectrum disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/437815624",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/437815624"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Personality disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/941859884",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/941859884"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Schizotypal disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Schizotypal personality disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "borderline schizophrenia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "latent schizophrenia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "latent schizophrenia, unspecified state"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "prepsychotic schizophrenia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "prodromal schizophrenia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "pseudopsychopathic schizophrenia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "pseudoneurotic schizophrenia"
+      }
+    }
+  ]
+}

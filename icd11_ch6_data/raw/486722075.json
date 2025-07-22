@@ -1,0 +1,46 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/486722075",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/556568822",
+    "http://id.who.int/icd/release/11/2024-01/mms/289492002",
+    "http://id.who.int/icd/release/11/2024-01/mms/486722075/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#486722075",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/486722075",
+  "classKind": "block",
+  "blockId": "BlockL1-6A4",
+  "codeRange": "6A40-6A4Z",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary catatonia syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/518306574",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/518306574"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Catatonia"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Catatonia is a syndrome of primarily psychomotor disturbances, characterized by the co-occurrence of several symptoms of decreased, increased, or abnormal psychomotor activity. The assessment of catatonia is complex and requires observation, interview and physical exam. Catatonia can occur in the context of another mental disorder, such as Schizophrenia or Other Primary Psychotic Disorders, Mood Disorders, and Neurodevelopmental Disorders, especially Autism Spectrum Disorder. Catatonia can also develop during or soon after intoxication or withdrawal from certain psychoactive substances, including phencyclidine (PCP), cannabis, hallucinogens such as mescaline or LSD, cocaine and MDMA or related drugs, or during the use of certain psychoactive and non-psychoactive medications (e.g. antipsychotic medications, benzodiazepines, steroids, disulfiram, ciprofloxacin). Finally, Catatonia can occur as a direct pathophysiological consequence of a medical condition not classified under Mental, Behavioural or Neurodevelopmental Disorders. Examples of medical conditions that may be associated with Catatonia include diabetic ketoacidosis, hypercalcemia, hepatic encephalopathy, homocystinuria, neoplasms head trauma, cerebrovascular disease, and encephalitis."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful effects of drugs, medicaments or biological substances, not elsewhere classified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1868408442",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1868408442"
+    }
+  ]
+}

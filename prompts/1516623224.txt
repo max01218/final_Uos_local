@@ -1,0 +1,26 @@
+Disorder Name: Neurodevelopmental disorders
+Disorder Code: 1516623224
+Code Range: 6A00-6A0Z
+Class Kind: block
+
+Standard Definition:
+Neurodevelopmental disorders are behavioural and cognitive disorders that arise during the developmental period that involve significant difficulties in the acquisition and execution of specific intellectual, motor, language, or social functions. Although behavioural and cognitive deficits are present in many mental and behavioural disorders that can arise during the developmental period (e.g., Schizophrenia, Bipolar disorder), only disorders whose core features are neurodevelopmental are included in this grouping. The presumptive etiology for neurodevelopmental disorders is complex, and in many individual cases is unknown.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Neurodevelopmental disorders are behavioural and cognitive disorders that arise during the developmental period that involve significant difficulties in the acquisition and execution of specific intellectual, motor, language, or social functions. Although behavioural and cognitive deficits are present in many mental and behavioural disorders that can arise during the developmental period (e.g., Schizophrenia, Bipolar disorder), only disorders whose core features are neurodevelopmental are included in this grouping. The presumptive etiology for neurodevelopmental disorders is complex, and in many individual cases is unknown.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

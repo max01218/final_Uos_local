@@ -1,0 +1,54 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1603403079",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/696956921"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1603403079",
+  "code": "6E61.3",
+  "source": "http://id.who.int/icd/entity/1603403079",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1603403079/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Secondary psychotic syndrome, with unspecified symptoms"
+  },
+  "fullySpecifiedName": {
+    "@language": "en",
+    "@value": "Psychotic syndrome due to health condition not classified under mental and behavioural disorders, with unspecified symptoms"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary psychotic syndrome, with unspecified symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Psychotic syndrome due to health condition not classified under mental and behavioural disorders, with unspecified symptoms"
+      }
+    }
+  ]
+}

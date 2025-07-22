@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/738827515",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/804833492"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/925940030",
+    "http://id.who.int/icd/release/11/2024-01/mms/1396644446"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#738827515",
+  "code": "6C42.7",
+  "source": "http://id.who.int/icd/entity/738827515",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/738827515/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/508603587",
+        "http://id.who.int/icd/release/11/2024-01/mms/397276103"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/738827515/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/912934263",
+        "http://id.who.int/icd/release/11/2024-01/mms/1055626783",
+        "http://id.who.int/icd/release/11/2024-01/mms/686500513"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Certain specified synthetic cannabinoids-induced mental or behavioural disorders"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain specified synthetic cannabinoids-induced mental or behavioural disorders"
+      }
+    }
+  ]
+}

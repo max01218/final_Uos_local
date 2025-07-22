@@ -1,0 +1,38 @@
+Disorder Name: Developmental speech sound disorder
+Disorder Code: 551966778
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Developmental speech sound disorder is characterised by difficulties in the acquisition, production and perception of speech that result in errors of pronunciation, either in number or types of speech errors made or the overall quality of speech production, that are outside the limits of normal variation expected for age and level of intellectual functioning and result in reduced intelligibility and significantly affect communication. The errors in pronunciation arise during the early developmental period and cannot be explained by social, cultural, and other environmental variations (e.g., regional dialects). The speech errors are not fully explained by a hearing impairment or a structural or neurological abnormality.
+
+Inclusions: Functional speech articulation disorder
+Exclusions: Deafness not otherwise specified; Diseases of the nervous system; Dysarthria; Verbal apraxia
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Developmental speech sound disorder is characterised by difficulties in the acquisition, production and perception of speech that result in errors of pronunciation, either in number or types of speech errors made or the overall quality of speech production, that are outside the limits of normal variation expected for age and level of intellectual functioning and result in reduced intelligibility and significantly affect communication. The errors in pronunciation arise during the early developmental period and cannot be explained by social, cultural, and other environmental variations (e.g., regional dialects). The speech errors are not fully explained by a hearing impairment or a structural or neurological abnormality.
+
+Included Manifestations:
+• Functional speech articulation disorder
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Deafness not otherwise specified
+• Should be differentiated from: Diseases of the nervous system
+• Should be differentiated from: Dysarthria
+• Should be differentiated from: Verbal apraxia
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

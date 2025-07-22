@@ -1,0 +1,31 @@
+Disorder Name: Compulsive sexual behaviour disorder
+Disorder Code: 1630268048
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Compulsive sexual behaviour disorder is characterised by a persistent pattern of failure to control intense, repetitive sexual impulses or urges resulting in repetitive sexual behaviour. Symptoms may include repetitive sexual activities becoming a central focus of the person’s life to the point of neglecting health and personal care or other interests, activities and responsibilities; numerous unsuccessful efforts to significantly reduce repetitive sexual behaviour; and continued repetitive sexual behaviour despite adverse consequences or deriving little or no satisfaction from it. The pattern of failure to control intense, sexual impulses or urges and resulting repetitive sexual behaviour is manifested over an extended period of time (e.g., 6 months or more), and causes marked distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. Distress that is entirely related to moral judgments and disapproval about sexual impulses, urges, or behaviours is not sufficient to meet this requirement.
+
+Exclusions: Paraphilic disorders
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Compulsive sexual behaviour disorder is characterised by a persistent pattern of failure to control intense, repetitive sexual impulses or urges resulting in repetitive sexual behaviour. Symptoms may include repetitive sexual activities becoming a central focus of the person’s life to the point of neglecting health and personal care or other interests, activities and responsibilities; numerous unsuccessful efforts to significantly reduce repetitive sexual behaviour; and continued repetitive sexual behaviour despite adverse consequences or deriving little or no satisfaction from it. The pattern of failure to control intense, sexual impulses or urges and resulting repetitive sexual behaviour is manifested over an extended period of time (e.g., 6 months or more), and causes marked distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. Distress that is entirely related to moral judgments and disapproval about sexual impulses, urges, or behaviours is not sufficient to meet this requirement.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Paraphilic disorders
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,49 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1115271910",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1710844294"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1115271910",
+  "code": "6C48.40",
+  "source": "http://id.who.int/icd/entity/1115271910",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1115271910/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1648213213",
+        "http://id.who.int/icd/release/11/2024-01/mms/1569910443"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1115271910/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/207246302",
+        "http://id.who.int/icd/release/11/2024-01/mms/1252561403"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Caffeine-induced anxiety disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Caffeine-induced anxiety disorder is characterised by anxiety symptoms (e.g., apprehension or worry, fear, physiological symptoms of excessive autonomic arousal, avoidance behaviour) that develop during or soon after intoxication with or withdrawal from caffeine. The intensity or duration of the symptoms is substantially in excess of anxiety symptoms that are characteristic of Caffeine intoxication or Caffeine withdrawal. The amount and duration of caffeine use must be capable of producing anxiety symptoms. The symptoms are not better explained by a primary mental disorder (e.g., an Anxiety and fear-related disorder, a Depressive disorder with prominent anxiety symptoms), as might be the case if the anxiety symptoms preceded the onset of the caffeine use, if the symptoms persist for a substantial period of time after cessation of the caffeine use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with anxiety symptoms (e.g., a history of prior episodes not associated with caffeine use)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Caffeine-induced anxiety disorder"
+      }
+    }
+  ]
+}

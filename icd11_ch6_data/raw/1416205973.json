@@ -1,0 +1,82 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1416205973",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/111507461"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1416205973",
+  "code": "6C43.5",
+  "source": "http://id.who.int/icd/entity/1416205973",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1416205973/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1395283456",
+        "http://id.who.int/icd/release/11/2024-01/mms/663160065",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1416205973/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/398872858",
+        "http://id.who.int/icd/release/11/2024-01/mms/912365674",
+        "http://id.who.int/icd/release/11/2024-01/mms/1120716949"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Opioid-induced delirium"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Opioid-induced delirium is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or withdrawal or during the use of opioids. The amount and duration of opioid use must be capable of producing delirium. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from a different substance, or by another health condition that is not classified under Mental, Behavioural, and Neurodevelopmental Disorders."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium induced by opioid withdrawal"
+      }
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid-induced delirium"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium induced by opioid withdrawal"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium induced by opioid withdrawal, with seizures"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2016323043"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium induced by opioid withdrawal, without seizures"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1416998187"
+    }
+  ]
+}

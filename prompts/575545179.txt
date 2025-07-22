@@ -1,0 +1,26 @@
+Disorder Name: Bipolar type I disorder, currently in partial remission, most recent episode manic or hypomanic
+Disorder Code: 575545179
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Bipolar type I disorder, currently in partial remission, most recent episode manic or hypomanic is diagnosed when the definitional requirements for Bipolar type I disorder have been met and the most recent episode was a manic or hypomanic episode. The full definitional requirements for a manic or hypomanic episode are no longer met but some significant mood symptoms remain. In some cases, residual mood symptoms may be depressive rather than manic or hypomanic, but do not satisfy the definitional requirements for a depressive episode.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Bipolar type I disorder, currently in partial remission, most recent episode manic or hypomanic is diagnosed when the definitional requirements for Bipolar type I disorder have been met and the most recent episode was a manic or hypomanic episode. The full definitional requirements for a manic or hypomanic episode are no longer met but some significant mood symptoms remain. In some cases, residual mood symptoms may be depressive rather than manic or hypomanic, but do not satisfy the definitional requirements for a depressive episode.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,26 @@
+Disorder Name: Positive symptoms in primary psychotic disorders
+Disorder Code: 521257551
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Positive symptoms in primary psychotic disorders include persistent delusions, persistent hallucinations (most commonly verbal auditory hallucinations), disorganised thinking (formal thought disorder such as loose associations, thought derailment, or incoherence), grossly disorganised behaviour (behaviour that appears bizarre, purposeless and not goal-directed) and experiences of passivity and control (the experience that one's feelings, impulses, or thoughts are under the control of an external force). The rating should be made based on the severity of positive symptoms during the past week.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Positive symptoms in primary psychotic disorders include persistent delusions, persistent hallucinations (most commonly verbal auditory hallucinations), disorganised thinking (formal thought disorder such as loose associations, thought derailment, or incoherence), grossly disorganised behaviour (behaviour that appears bizarre, purposeless and not goal-directed) and experiences of passivity and control (the experience that one's feelings, impulses, or thoughts are under the control of an external force). The rating should be made based on the severity of positive symptoms during the past week.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

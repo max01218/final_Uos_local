@@ -1,0 +1,36 @@
+Disorder Name: Sedative, hypnotic or anxiolytic intoxication
+Disorder Code: 1314209089
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Sedative, hypnotic or anxiolytic intoxication is a clinically significant transient condition that develops during or shortly after the consumption of sedatives, hypnotics or anxiolytics that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of sedatives, hypnotics or anxiolytics and their intensity is closely related to the amount of sedatives, hypnotics or anxiolytics consumed. They are time-limited and abate as sedatives, hypnotics or anxiolytics are cleared from the body. Presenting features may include somnolence, impaired judgment, inappropriate behavior (including sexual behavior or aggression), slurred speech, impaired motor coordination, unsteady gait, mood changes, as well as impaired memory, attention and concentration. Nystagmus (repetitive, uncontrolled eye movements) is a common physical sign. In severe cases stupor or coma may occur.
+
+Inclusions: "Bad trips" due to sedatives, hypnotics or anxiolytics
+Exclusions: sedative, hypnotic drugs and other CNS depressants poisoning; Possession trance disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Sedative, hypnotic or anxiolytic intoxication is a clinically significant transient condition that develops during or shortly after the consumption of sedatives, hypnotics or anxiolytics that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of sedatives, hypnotics or anxiolytics and their intensity is closely related to the amount of sedatives, hypnotics or anxiolytics consumed. They are time-limited and abate as sedatives, hypnotics or anxiolytics are cleared from the body. Presenting features may include somnolence, impaired judgment, inappropriate behavior (including sexual behavior or aggression), slurred speech, impaired motor coordination, unsteady gait, mood changes, as well as impaired memory, attention and concentration. Nystagmus (repetitive, uncontrolled eye movements) is a common physical sign. In severe cases stupor or coma may occur.
+
+Included Manifestations:
+• "Bad trips" due to sedatives, hypnotics or anxiolytics
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: sedative, hypnotic drugs and other CNS depressants poisoning
+• Should be differentiated from: Possession trance disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

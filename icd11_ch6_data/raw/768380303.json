@@ -1,0 +1,76 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/768380303",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/601226803"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#768380303",
+  "code": "6C4F.5",
+  "source": "http://id.who.int/icd/entity/768380303",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/768380303/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1076458680",
+        "http://id.who.int/icd/release/11/2024-01/mms/448177412",
+        "http://id.who.int/icd/release/11/2024-01/mms/1864983449",
+        "http://id.who.int/icd/release/11/2024-01/mms/543245955"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/768380303/postcoordinationScale/chemicalAgent",
+      "axisName": "http://id.who.int/icd/schema/chemicalAgent",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1991751314",
+        "http://id.who.int/icd/release/11/2024-01/mms/36740588"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/768380303/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1121505208",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583329300",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/768380303/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1729466996",
+        "http://id.who.int/icd/release/11/2024-01/mms/1719901309",
+        "http://id.who.int/icd/release/11/2024-01/mms/853273682"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Delirium induced by multiple specified psychoactive substances including medications"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Delirium induced by multiple specified psychoactive substances is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or withdrawal or during the use of multiple specified substances. The amount and duration of use of the multiple specified substances must be capable of producing delirium. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from a substance other than those specified, or by another health condition that is not classified under Mental, behavioural and neurodevelopmental disorders. Note that this diagnosis applies only to those situations in which delirium is present but it cannot be determined which of multiple psychoactive substances is the cause of the delirium. In cases of multiple psychoactive substance use in which more than one specific substance can be identified as a cause of the delirium, the corresponding specific substance-induced delirium diagnoses should be given instead."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium induced by multiple specified psychoactive substances including medications"
+      }
+    }
+  ]
+}

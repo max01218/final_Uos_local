@@ -1,0 +1,26 @@
+Disorder Name: Catatonia associated with another mental disorder
+Disorder Code: 556568822
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Catatonia associated with another mental disorder is a syndrome of primarily psychomotor disturbances, characterized by the co-occurrence of several symptoms of decreased, increased, or abnormal psychomotor activity, which occurs in the context of another mental disorder, such as Schizophrenia or Other Primary Psychotic Disorders, Mood Disorders, and Neurodevelopmental Disorders, especially Autism Spectrum Disorder.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Catatonia associated with another mental disorder is a syndrome of primarily psychomotor disturbances, characterized by the co-occurrence of several symptoms of decreased, increased, or abnormal psychomotor activity, which occurs in the context of another mental disorder, such as Schizophrenia or Other Primary Psychotic Disorders, Mood Disorders, and Neurodevelopmental Disorders, especially Autism Spectrum Disorder.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

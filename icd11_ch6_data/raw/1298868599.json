@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1298868599",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/989359552"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1298868599",
+  "code": "6C44.42",
+  "source": "http://id.who.int/icd/entity/1298868599",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1298868599/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1298868599/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1605607466"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Sedative, hypnotic or anxiolytic withdrawal, with seizures"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All diagnostic requirements for Sedative, hypnotic or anxiolytic withdrawal are met and the withdrawal state is accompanied by seizures (i.e., generalised tonic-clonic seizures) but not by perceptual disturbances."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sedative, hypnotic or anxiolytic withdrawal, with seizures"
+      }
+    }
+  ]
+}

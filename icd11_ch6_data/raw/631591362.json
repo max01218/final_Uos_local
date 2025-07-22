@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/631591362",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/647582417"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#631591362",
+  "code": "6B80.10",
+  "source": "http://id.who.int/icd/entity/631591362",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Anorexia Nervosa with dangerously low body weight, restricting pattern"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Anorexia Nervosa with dangerously low body weight, restricting pattern refers to individuals who meet the definitional requirements of Anorexia Nervosa with dangerously low body weight and who induce weight loss and maintain low body weight through restricted food intake or fasting alone or in combination with increased energy expenditure (such as through excessive exercise) but who do not engage in binge eating or purging behaviours."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anorexia Nervosa with dangerously low body weight, restricting pattern"
+      }
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/626975732",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/108180424"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1075129954",
+    "http://id.who.int/icd/release/11/2024-01/mms/312804864",
+    "http://id.who.int/icd/release/11/2024-01/mms/626975732/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#626975732",
+  "code": "6B61",
+  "source": "http://id.who.int/icd/entity/626975732",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative amnesia"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative amnesia is characterised by an inability to recall important autobiographical memories, typically of recent traumatic or stressful events, that is inconsistent with ordinary forgetting. The amnesia does not occur exclusively during another dissociative disorder and is not better explained by another mental, behavioural or neurodevelopmental disorder. The amnesia is not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, and is not due to a disease of the nervous system or to head trauma. The amnesia results in significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "amnesia NOS"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/67207871",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/67207871"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Amnestic disorder due to use of alcohol"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/988431240",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/988431240"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anterograde amnesia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/661071789",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/661071789"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Retrograde amnesia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1405777748",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1405777748"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "nonalcoholic organic amnesic syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/862469859",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/862469859"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "postictal amnesia in epilepsy"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1397288146",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1397288146"
+    }
+  ]
+}

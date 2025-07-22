@@ -1,0 +1,26 @@
+Disorder Name: Disruptive behaviour or dissocial disorders
+Disorder Code: 310393530
+Code Range: 6C90-6C9Z
+Class Kind: block
+
+Standard Definition:
+Disruptive behaviour and dissocial disorders are characterised by persistent behaviour problems that range from markedly and persistently defiant, disobedient, provocative or spiteful (i.e., disruptive) behaviours to those that persistently violate the basic rights of others or major age-appropriate societal norms, rules, or laws (i.e., dissocial). Onset of Disruptive and dissocial disorders is commonly, though not always, during childhood.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disruptive behaviour and dissocial disorders are characterised by persistent behaviour problems that range from markedly and persistently defiant, disobedient, provocative or spiteful (i.e., disruptive) behaviours to those that persistently violate the basic rights of others or major age-appropriate societal norms, rules, or laws (i.e., dissocial). Onset of Disruptive and dissocial disorders is commonly, though not always, during childhood.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

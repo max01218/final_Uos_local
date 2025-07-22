@@ -1,0 +1,73 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/255980141",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/302122526"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/858129053",
+    "http://id.who.int/icd/release/11/2024-01/mms/255980141/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/255980141/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#255980141",
+  "code": "6E60",
+  "source": "http://id.who.int/icd/entity/255980141",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/255980141/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/605267007",
+        "http://id.who.int/icd/release/11/2024-01/mms/33269655",
+        "http://id.who.int/icd/release/11/2024-01/mms/437815624",
+        "http://id.who.int/icd/release/11/2024-01/mms/2099676649",
+        "http://id.who.int/icd/release/11/2024-01/mms/148247104",
+        "http://id.who.int/icd/release/11/2024-01/mms/821852937",
+        "http://id.who.int/icd/release/11/2024-01/mms/1111628448",
+        "http://id.who.int/icd/release/11/2024-01/mms/1516623224/other",
+        "http://id.who.int/icd/release/11/2024-01/mms/1516623224/unspecified"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Secondary neurodevelopmental syndrome"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A syndrome that involves significant neurodevelopmental features that do not fulfill the diagnostic requirements of any of the specific neurodevelopmental disorders that is judged to be a direct pathophysiological consequence of a health condition not classified under mental and behavioural disorders (e.g., autistic-like features in Rett syndrome; aggression and self-mutilation in Lesch-Nyhan syndrome, abnormalities in language development in Williams syndrome), based on evidence from the history, physical examination, or laboratory findings.\n\nThis category should be used in addition to the diagnosis for the presumed underlying disorder or disease when the neurodevelopmental problems are sufficiently severe to warrant specific clinical attention."
+  },
+  "fullySpecifiedName": {
+    "@language": "en",
+    "@value": "Neurodevelopmental syndrome due to health condition not classified under mental and behavioural disorders"
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Autism spectrum disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/437815624",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/437815624"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorders of intellectual development"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/605267007",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/605267007"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stereotyped movement disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1111628448",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1111628448"
+    }
+  ]
+}

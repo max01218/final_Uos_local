@@ -1,0 +1,32 @@
+Disorder Name: Harmful pattern of use of sedatives, hypnotics or anxiolytics
+Disorder Code: 723448021
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+A pattern of sedative, hypnotic, or anxiolytic use that has caused clinically significant harm to a person’s physical or mental health or in which behaviour induced by sedatives, hypnotics or anxiolytics has caused clinically significant harm to the health of other people. The pattern of sedative, hypnotic, or anxiolytic use is evident over a period of at least 12 months if use is episodic and at least one month if use is continuous (i.e., daily or almost daily). Harm may be caused by the intoxicating effects of sedatives, hypnotics or anxiolytics, the direct or secondary toxic effects on body organs and systems, or a harmful route of administration.
+
+Exclusions: Sedative, hypnotic or anxiolytic dependence; Episode of harmful use of sedatives, hypnotics or anxiolytics
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+A pattern of sedative, hypnotic, or anxiolytic use that has caused clinically significant harm to a person’s physical or mental health or in which behaviour induced by sedatives, hypnotics or anxiolytics has caused clinically significant harm to the health of other people. The pattern of sedative, hypnotic, or anxiolytic use is evident over a period of at least 12 months if use is episodic and at least one month if use is continuous (i.e., daily or almost daily). Harm may be caused by the intoxicating effects of sedatives, hypnotics or anxiolytics, the direct or secondary toxic effects on body organs and systems, or a harmful route of administration.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Sedative, hypnotic or anxiolytic dependence
+• Should be differentiated from: Episode of harmful use of sedatives, hypnotics or anxiolytics
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

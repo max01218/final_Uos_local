@@ -1,0 +1,26 @@
+Disorder Name: Hoarding disorder with fair to good insight
+Disorder Code: 1515067172
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements of hoarding disorder are met. The individual recognizes that hoarding-related beliefs and behaviours (pertaining to excessive acquisition, difficulty discarding, or clutter) are problematic. This qualifier level may still be applied if, at circumscribed times (e.g., when being forced to discard items), the individual demonstrates no insight.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements of hoarding disorder are met. The individual recognizes that hoarding-related beliefs and behaviours (pertaining to excessive acquisition, difficulty discarding, or clutter) are problematic. This qualifier level may still be applied if, at circumscribed times (e.g., when being forced to discard items), the individual demonstrates no insight.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

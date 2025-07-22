@@ -1,0 +1,26 @@
+Disorder Name: Disorders due to use of nicotine
+Disorder Code: 268445189
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of nicotine are characterised by the pattern and consequences of nicotine use. Nicotine is the active dependence-producing constituent of the tobacco plant, Nicotiana tabacum. Nicotine is used overwhelmingly through smoking cigarettes. Increasingly, it is also used in electronic cigarettes that vaporize nicotine dissolved in a carrier solvent for inhalation (i.e., “vaping”). Pipe smoking, chewing tobacco and inhaling snuff are minor forms of use. Nicotine is a highly potent addictive compound and is the third most common psychoactive substance used worldwide after caffeine and alcohol. Nicotine Dependence and Nicotine Withdrawal are well described and Nicotine-Induced Mental Disorders are recognized.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of nicotine are characterised by the pattern and consequences of nicotine use. Nicotine is the active dependence-producing constituent of the tobacco plant, Nicotiana tabacum. Nicotine is used overwhelmingly through smoking cigarettes. Increasingly, it is also used in electronic cigarettes that vaporize nicotine dissolved in a carrier solvent for inhalation (i.e., “vaping”). Pipe smoking, chewing tobacco and inhaling snuff are minor forms of use. Nicotine is a highly potent addictive compound and is the third most common psychoactive substance used worldwide after caffeine and alcohol. Nicotine Dependence and Nicotine Withdrawal are well described and Nicotine-Induced Mental Disorders are recognized.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

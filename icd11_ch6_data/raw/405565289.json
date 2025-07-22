@@ -1,0 +1,42 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/405565289",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1683919430",
+    "http://id.who.int/icd/release/11/2024-01/mms/106339515",
+    "http://id.who.int/icd/release/11/2024-01/mms/18178000",
+    "http://id.who.int/icd/release/11/2024-01/mms/284410555",
+    "http://id.who.int/icd/release/11/2024-01/mms/1974996783",
+    "http://id.who.int/icd/release/11/2024-01/mms/1358754380",
+    "http://id.who.int/icd/release/11/2024-01/mms/173259898",
+    "http://id.who.int/icd/release/11/2024-01/mms/405565289/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/405565289/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#405565289",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/405565289",
+  "classKind": "block",
+  "blockId": "BlockL1-6A2",
+  "codeRange": "6A20-6A2Z",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary psychotic syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/696956921",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/696956921"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Schizophrenia or other primary psychotic disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Schizophrenia and other primary psychotic disorders are characterised by significant impairments in reality testing and alterations in behaviour manifest in positive symptoms such as persistent delusions, persistent hallucinations, disorganised thinking (typically manifest as disorganised speech), grossly disorganised behaviour, and experiences of passivity and control, negative symptoms such as blunted or flat affect and avolition, and psychomotor disturbances. The symptoms occur with sufficient frequency and intensity to deviate from expected cultural or subcultural norms. These symptoms do not arise as a feature of another mental and behavioural disorder (e.g., a mood disorder, delirium, or a disorder due to substance use). The categories in this grouping should not be used to classify the expression of ideas, beliefs, or behaviours that are culturally sanctioned."
+  }
+}

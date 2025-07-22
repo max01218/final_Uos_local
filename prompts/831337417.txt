@@ -1,0 +1,26 @@
+Disorder Name: Frontotemporal dementia
+Disorder Code: 831337417
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Frontotemporal dementia (FTD) is a group of primary neurodegenerative disorders primarily affecting the frontal and temporal lobes. Onset is typically insidious with a gradual and worsening course. Several syndromic variants (some with an identified genetic basis or familiality) are described that include presentations with predominantly marked personality and behavioral changes (such as executive dysfunction, apathy, deterioration of social cognition, repetitive behaviours, and dietary changes), predominantly language deficits (that include semantic, agrammatic/nonfluent, and logopenic forms), predominantly movement-related deficits (progressive supranuclear palsy, corticobasal degeneration, multiple systems atrophy, or amyotrophic lateral sclerosis), or a combination of these deficits. Memory function often remains relatively intact, particularly during the early stages of the disorder.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Frontotemporal dementia (FTD) is a group of primary neurodegenerative disorders primarily affecting the frontal and temporal lobes. Onset is typically insidious with a gradual and worsening course. Several syndromic variants (some with an identified genetic basis or familiality) are described that include presentations with predominantly marked personality and behavioral changes (such as executive dysfunction, apathy, deterioration of social cognition, repetitive behaviours, and dietary changes), predominantly language deficits (that include semantic, agrammatic/nonfluent, and logopenic forms), predominantly movement-related deficits (progressive supranuclear palsy, corticobasal degeneration, multiple systems atrophy, or amyotrophic lateral sclerosis), or a combination of these deficits. Memory function often remains relatively intact, particularly during the early stages of the disorder.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

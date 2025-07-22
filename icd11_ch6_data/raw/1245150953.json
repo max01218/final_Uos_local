@@ -1,0 +1,58 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1245150953",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1265787402"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1245150953",
+  "code": "6C49.61",
+  "source": "http://id.who.int/icd/entity/1245150953",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1245150953/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/661865379"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1245150953/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1750279358"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1245150953/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1995632461",
+        "http://id.who.int/icd/release/11/2024-01/mms/219736364",
+        "http://id.who.int/icd/release/11/2024-01/mms/2041952725"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Hallucinogen-induced anxiety disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Hallucinogen-induced anxiety disorder is characterised by anxiety symptoms (e.g., apprehension or worry, fear, physiological symptoms of excessive autonomic arousal, avoidance behaviour) that develop during or soon after intoxication with hallucinogens. The intensity or duration of the symptoms is substantially in excess of anxiety symptoms that are characteristic of hallucinogen intoxication. The amount and duration of hallucinogen use must be capable of producing anxiety symptoms. The symptoms are not better explained by a primary mental disorder (e.g., an Anxiety and Fear-Related Disorder, a Depressive Disorder with prominent anxiety symptoms), as might be the case if the anxiety symptoms preceded the onset of the hallucinogen use, if the symptoms persist for a substantial period of time after cessation of the hallucinogen use, or if there is other evidence of a pre-existing primary mental disorder with anxiety symptoms (e.g., a history of prior episodes not associated with hallucinogen use)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hallucinogen-induced anxiety disorder"
+      }
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+Disorder Name: Binge eating disorder
+Disorder Code: 1673294767
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Binge eating disorder is characterised by frequent, recurrent episodes of binge eating (e.g. once a week or more over a period of several months). A binge eating episode is a distinct period of time during which the individual experiences a subjective loss of control over eating, eating notably more or differently than usual, and feels unable to stop eating or limit the type or amount of food eaten. Binge eating is experienced as very distressing, and is often accompanied by negative emotions such as guilt or disgust. However, unlike in Bulimia Nervosa, binge eating episodes are not regularly followed by inappropriate compensatory behaviours aimed at preventing weight gain (e.g. self-induced vomiting, misuse of laxatives or enemas, strenuous exercise). There is marked distress about the pattern of binge eating or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Exclusions: Bulimia Nervosa
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Binge eating disorder is characterised by frequent, recurrent episodes of binge eating (e.g. once a week or more over a period of several months). A binge eating episode is a distinct period of time during which the individual experiences a subjective loss of control over eating, eating notably more or differently than usual, and feels unable to stop eating or limit the type or amount of food eaten. Binge eating is experienced as very distressing, and is often accompanied by negative emotions such as guilt or disgust. However, unlike in Bulimia Nervosa, binge eating episodes are not regularly followed by inappropriate compensatory behaviours aimed at preventing weight gain (e.g. self-induced vomiting, misuse of laxatives or enemas, strenuous exercise). There is marked distress about the pattern of binge eating or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Bulimia Nervosa
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

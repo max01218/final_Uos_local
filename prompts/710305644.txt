@@ -1,0 +1,31 @@
+Disorder Name: Dementia due to exposure to heavy metals and other toxins
+Disorder Code: 710305644
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dementia due to exposure to heavy metals and other toxins caused by toxic exposure to specific heavy metals such as aluminium from dialysis water, lead, mercury or manganese. The characteristic cognitive impairments in Dementia due to exposure to heavy metals and other toxins depend on the specific heavy metal or toxin that the individual has been exposed to but can affect any cognitive domain. Onset of symptoms is related to exposure and progression can be rapid especially with acute exposure. In many cases, symptoms are reversible when exposure is identified and ceases. Investigations such as brain imaging or neurophysiological testing may be abnormal. Lead poisoning is associated with abnormalities on brain imaging including widespread calcification and increased signal on MRI T2-weighted images of periventricular white matter, basal ganglia hypothalamus and pons. Dementia due to aluminium toxicity may demonstrate characteristic paroxysmal high-voltage delta EEG changes. Examination may make evident other features such as peripheral neuropathy in the case of lead, arsenic, or mercury.
+
+Exclusions: Dementia due to psychoactive substances including medications
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia due to exposure to heavy metals and other toxins caused by toxic exposure to specific heavy metals such as aluminium from dialysis water, lead, mercury or manganese. The characteristic cognitive impairments in Dementia due to exposure to heavy metals and other toxins depend on the specific heavy metal or toxin that the individual has been exposed to but can affect any cognitive domain. Onset of symptoms is related to exposure and progression can be rapid especially with acute exposure. In many cases, symptoms are reversible when exposure is identified and ceases. Investigations such as brain imaging or neurophysiological testing may be abnormal. Lead poisoning is associated with abnormalities on brain imaging including widespread calcification and increased signal on MRI T2-weighted images of periventricular white matter, basal ganglia hypothalamus and pons. Dementia due to aluminium toxicity may demonstrate characteristic paroxysmal high-voltage delta EEG changes. Examination may make evident other features such as peripheral neuropathy in the case of lead, arsenic, or mercury.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Dementia due to psychoactive substances including medications
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

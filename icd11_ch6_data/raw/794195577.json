@@ -1,0 +1,45 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/794195577",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/767044268",
+    "http://id.who.int/icd/release/11/2024-01/mms/256572629",
+    "http://id.who.int/icd/release/11/2024-01/mms/794195577/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/794195577/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#794195577",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/794195577",
+  "classKind": "block",
+  "blockId": "BlockL1-6C2",
+  "codeRange": "6C20-6C2Z",
+  "title": {
+    "@language": "en",
+    "@value": "Disorders of bodily distress or bodily experience"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorders of bodily distress and bodily experience are characterised by disturbances in the person’s experience of his or her body. Bodily distress disorder involves bodily symptoms that the individual finds distressing and to which excessive attention is directed. Body integrity dysphoria involves a disturbance in the person’s experience of the body manifested by the persistent desire to have a specific physical disability accompanied by persistent discomfort, or intense feelings of inappropriateness concerning current non-disabled body configuration."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative neurological symptom disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1069443471",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1069443471"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Concern about body appearance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1100199287",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1100199287"
+    }
+  ]
+}

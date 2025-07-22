@@ -1,0 +1,33 @@
+Disorder Name: Stimulant-induced psychotic disorder including amphetamines, methamphetamine or methcathinone
+Disorder Code: 199002751
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Stimulant-induced psychotic disorder including amphetamines, methamphetamine and methcathinone is characterised by psychotic symptoms (e.g., delusions, hallucinations, disorganised thinking, grossly disorganised behaviour) that develop during or soon after intoxication or withdrawal due to stimulants. The intensity or duration of the symptoms is substantially in excess of psychotic-like disturbances of perception, cognition, or behaviour that are characteristic of Stimulant intoxication or Stimulant withdrawal. The amount and duration of stimulant use must be capable of producing psychotic symptoms. The symptoms are not better explained by a primary mental disorder (e.g., Schizophrenia, a Mood disorder with psychotic symptoms), as might be the case if the psychotic symptoms preceded the onset of the stimulant use, if the symptoms persist for a substantial period of time after cessation of the stimulant use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with psychotic symptoms (e.g., a history of prior episodes not associated with use of stimulants).
+
+Exclusions: Cocaine-induced psychotic disorder; Synthetic cathinone-induced psychotic disorder; Disorders due to use of caffeine
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Stimulant-induced psychotic disorder including amphetamines, methamphetamine and methcathinone is characterised by psychotic symptoms (e.g., delusions, hallucinations, disorganised thinking, grossly disorganised behaviour) that develop during or soon after intoxication or withdrawal due to stimulants. The intensity or duration of the symptoms is substantially in excess of psychotic-like disturbances of perception, cognition, or behaviour that are characteristic of Stimulant intoxication or Stimulant withdrawal. The amount and duration of stimulant use must be capable of producing psychotic symptoms. The symptoms are not better explained by a primary mental disorder (e.g., Schizophrenia, a Mood disorder with psychotic symptoms), as might be the case if the psychotic symptoms preceded the onset of the stimulant use, if the symptoms persist for a substantial period of time after cessation of the stimulant use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with psychotic symptoms (e.g., a history of prior episodes not associated with use of stimulants).
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Cocaine-induced psychotic disorder
+• Should be differentiated from: Synthetic cathinone-induced psychotic disorder
+• Should be differentiated from: Disorders due to use of caffeine
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

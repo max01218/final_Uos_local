@@ -1,0 +1,33 @@
+Disorder Name: Stimulant-induced obsessive-compulsive or related disorder including amphetamines, methamphetamine or methcathinone
+Disorder Code: 1830469239
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Stimulant-induced obsessive-compulsive or related disorder including amphetamines, methamphetamine and methcathinone is characterised by either repetitive intrusive thoughts or preoccupations, normally associated with anxiety and typically accompanied by repetitive behaviours performed in response, or by recurrent and habitual actions directed at the integument (e.g., hair pulling, skin picking) that develop during or soon after intoxication with or withdrawal from stimulants. The intensity or duration of the symptoms is substantially in excess of analogous disturbances that are characteristic of Stimulant intoxication or Stimulant withdrawal. The amount and duration of stimulant use must be capable of producing obsessive-compulsive or related symptoms. The symptoms are not better explained by a primary mental disorder (in particular an Obsessive-compulsive or related disorder), as might be the case if the symptoms preceded the onset of the stimulant use, if the symptoms persist for a substantial period of time after cessation of the stimulant use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with obsessive-compulsive or related symptoms (e.g., a history of prior episodes not associated with stimulant use).
+
+Exclusions: Cocaine-induced obsessive-compulsive or related disorder; Synthetic cathinone-induced obsessive-compulsive or related syndrome; Disorders due to use of caffeine
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Stimulant-induced obsessive-compulsive or related disorder including amphetamines, methamphetamine and methcathinone is characterised by either repetitive intrusive thoughts or preoccupations, normally associated with anxiety and typically accompanied by repetitive behaviours performed in response, or by recurrent and habitual actions directed at the integument (e.g., hair pulling, skin picking) that develop during or soon after intoxication with or withdrawal from stimulants. The intensity or duration of the symptoms is substantially in excess of analogous disturbances that are characteristic of Stimulant intoxication or Stimulant withdrawal. The amount and duration of stimulant use must be capable of producing obsessive-compulsive or related symptoms. The symptoms are not better explained by a primary mental disorder (in particular an Obsessive-compulsive or related disorder), as might be the case if the symptoms preceded the onset of the stimulant use, if the symptoms persist for a substantial period of time after cessation of the stimulant use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with obsessive-compulsive or related symptoms (e.g., a history of prior episodes not associated with stimulant use).
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Cocaine-induced obsessive-compulsive or related disorder
+• Should be differentiated from: Synthetic cathinone-induced obsessive-compulsive or related syndrome
+• Should be differentiated from: Disorders due to use of caffeine
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,40 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/821852937",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1516623224"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/294762853",
+    "http://id.who.int/icd/release/11/2024-01/mms/209556851",
+    "http://id.who.int/icd/release/11/2024-01/mms/542202013",
+    "http://id.who.int/icd/release/11/2024-01/mms/821852937/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/821852937/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#821852937",
+  "code": "6A05",
+  "source": "http://id.who.int/icd/entity/821852937",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Attention deficit hyperactivity disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Attention deficit hyperactivity disorder is characterised by a persistent pattern (at least 6 months) of inattention and/or hyperactivity-impulsivity that has a direct negative impact on academic, occupational, or social functioning. There is evidence of significant inattention and/or hyperactivity-impulsivity symptoms prior to age 12, typically by early to mid-childhood, though some individuals may first come to clinical attention later. The degree of inattention and hyperactivity-impulsivity is outside the limits of normal variation expected for age and level of intellectual functioning. Inattention refers to significant difficulty in sustaining attention to tasks that do not provide a high level of stimulation or frequent rewards, distractibility and problems with organisation. Hyperactivity refers to excessive motor activity and difficulties with remaining still, most evident in structured situations that require behavioural self-control. Impulsivity is a tendency to act in response to immediate stimuli, without deliberation or consideration of the risks and consequences. The relative balance and the specific manifestations of inattentive and hyperactive-impulsive characteristics varies across individuals and may change over the course of development. In order for a diagnosis to be made, manifestations of inattention and/or hyperactivity-impulsivity must be evident across multiple situations or settings (e.g., home, school, work, with friends or relatives), but are likely to vary according to the structure and demands of the setting. Symptoms are not better accounted for by another mental, behavioural, or neurodevelopmental disorder and are not due to the effect of a substance or medication."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "attention deficit disorder with hyperactivity"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "attention deficit syndrome with hyperactivity"
+      }
+    }
+  ]
+}

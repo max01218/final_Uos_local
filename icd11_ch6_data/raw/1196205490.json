@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1196205490",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/192666265"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1196205490",
+  "code": "6C91.01",
+  "source": "http://id.who.int/icd/entity/1196205490",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Conduct-dissocial disorder, childhood onset with typical prosocial emotions"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for conduct-dissocial disorder, childhood onset are met. The individual does not exhibit characteristics referred to as ‘callous and unemotional’, such as lack of empathy or sensitivity to the feelings of others and a lack of concern for others’ distress."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Conduct-dissocial disorder, childhood onset with typical prosocial emotions"
+      }
+    }
+  ]
+}

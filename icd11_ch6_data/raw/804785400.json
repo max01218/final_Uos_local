@@ -1,0 +1,71 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/804785400",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1012312104"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#804785400",
+  "code": "6C40.70",
+  "source": "http://id.who.int/icd/entity/804785400",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/804785400/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1339202943",
+        "http://id.who.int/icd/release/11/2024-01/mms/998231424"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/804785400/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/766814084",
+        "http://id.who.int/icd/release/11/2024-01/mms/714690795",
+        "http://id.who.int/icd/release/11/2024-01/mms/1580466198"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Alcohol-induced mood disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Alcohol-induced mood disorder is characterised by mood symptoms (e.g., depressed or elevated mood, decreased engagement in pleasurable activities, increased or decreased energy levels) that develop during or soon after intoxication with or withdrawal from alcohol. The intensity or duration of the symptoms is substantially in excess of mood disturbances that are characteristic of Alcohol intoxication or Alcohol withdrawal. The amount and duration of alcohol use must be capable of producing mood symptoms. The symptoms are not better explained by a primary mental disorder (e.g., a Depressive disorder, a Bipolar disorder, Schizoaffective disorder), as might be the case if the mood symptoms preceded the onset of the alcohol use, if the symptoms persist for a substantial period of time after cessation of the alcohol use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with mood symptoms (e.g., a history of prior episodes not associated with alcohol use)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol-induced mood disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol-induced mood disorder with depressive symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/241576806"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol-induced mood disorder with manic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/837568640"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol-induced mood disorder with mixed depressive and manic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1901922425"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1372161015",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1336943699"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1372161015",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/1372161015",
+  "classKind": "window",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol-induced anxiety disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2068155409",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2068155409"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cannabis-induced anxiety disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1978307484",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1978307484"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cannabinoid-induced anxiety disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1396644446",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1396644446"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid-induced anxiety disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/963759045",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/963759045"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sedative, hypnotic or anxiolytic-induced anxiety disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1506172532",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1506172532"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine-induced anxiety disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1176625878",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1176625878"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stimulant-induced anxiety disorder including amphetamines, methamphetamine or methcathinone"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1627021441",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1627021441"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone-induced anxiety disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1423983191",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1423983191"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Caffeine-induced anxiety disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1115271910",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1115271910"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hallucinogen-induced anxiety disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1245150953",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1245150953"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Volatile inhalant-induced anxiety disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1918560936",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1918560936"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "MDMA or related drug-induced anxiety disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/325981339",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/325981339"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative drug-induced anxiety disorder including Ketamine or PCP"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1552098464",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1552098464"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anxiety disorder induced by other specified psychoactive substance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/509176135",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/509176135"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anxiety disorder induced by unknown or unspecified psychoactive substance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/62314683",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/62314683"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Substance-induced anxiety disorders"
+  }
+}

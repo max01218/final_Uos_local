@@ -1,0 +1,55 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/380591392",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/882114523"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#380591392",
+  "code": "6E21",
+  "source": "http://id.who.int/icd/entity/380591392",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/380591392/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/405565289",
+        "http://id.who.int/icd/release/11/2024-01/mms/613065957",
+        "http://id.who.int/icd/release/11/2024-01/mms/1563440232",
+        "http://id.who.int/icd/release/11/2024-01/mms/2133003467",
+        "http://id.who.int/icd/release/11/2024-01/mms/216291184"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, with psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A syndrome associated with pregnancy or the puerperium (commencing within about 6 weeks after delivery) that involves significant mental and behavioural features, including delusions, hallucinations, or other psychotic symptoms. Mood symptoms (depressive and/or manic) are also typically present. If the symptoms meet the diagnostic requirements for a specific mental disorder, that diagnosis should also be assigned."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, with psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "mental or behavioural disorders associated with pregnancy, childbirth or the puerperium, with psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Postpartum depression with psychotic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2099414497"
+    }
+  ]
+}

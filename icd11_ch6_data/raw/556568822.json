@@ -1,0 +1,78 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/556568822",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/486722075"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#556568822",
+  "code": "6A40",
+  "source": "http://id.who.int/icd/entity/556568822",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/556568822/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/523963970",
+        "http://id.who.int/icd/release/11/2024-01/mms/2054210520",
+        "http://id.who.int/icd/release/11/2024-01/mms/515681918",
+        "http://id.who.int/icd/release/11/2024-01/mms/2079810536",
+        "http://id.who.int/icd/release/11/2024-01/mms/915343154",
+        "http://id.who.int/icd/release/11/2024-01/mms/186500648"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/556568822/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1516623224",
+        "http://id.who.int/icd/release/11/2024-01/mms/437815624",
+        "http://id.who.int/icd/release/11/2024-01/mms/1683919430",
+        "http://id.who.int/icd/release/11/2024-01/mms/106339515",
+        "http://id.who.int/icd/release/11/2024-01/mms/284410555",
+        "http://id.who.int/icd/release/11/2024-01/mms/76398729",
+        "http://id.who.int/icd/release/11/2024-01/mms/1456478153",
+        "http://id.who.int/icd/release/11/2024-01/mms/199053300",
+        "http://id.who.int/icd/release/11/2024-01/mms/578635574",
+        "http://id.who.int/icd/release/11/2024-01/mms/1194756772",
+        "http://id.who.int/icd/release/11/2024-01/mms/1336943699",
+        "http://id.who.int/icd/release/11/2024-01/mms/1321276661",
+        "http://id.who.int/icd/release/11/2024-01/mms/991786158",
+        "http://id.who.int/icd/release/11/2024-01/mms/108180424",
+        "http://id.who.int/icd/release/11/2024-01/mms/1412387537",
+        "http://id.who.int/icd/release/11/2024-01/mms/1884115764",
+        "http://id.who.int/icd/release/11/2024-01/mms/794195577",
+        "http://id.who.int/icd/release/11/2024-01/mms/1602669465",
+        "http://id.who.int/icd/release/11/2024-01/mms/826065555",
+        "http://id.who.int/icd/release/11/2024-01/mms/310393530",
+        "http://id.who.int/icd/release/11/2024-01/mms/37291724",
+        "http://id.who.int/icd/release/11/2024-01/mms/2110604642",
+        "http://id.who.int/icd/release/11/2024-01/mms/430567349",
+        "http://id.who.int/icd/release/11/2024-01/mms/213458094",
+        "http://id.who.int/icd/release/11/2024-01/mms/882114523",
+        "http://id.who.int/icd/release/11/2024-01/mms/523677473",
+        "http://id.who.int/icd/release/11/2024-01/mms/302122526"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Catatonia associated with another mental disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Catatonia associated with another mental disorder is a syndrome of primarily psychomotor disturbances, characterized by the co-occurrence of several symptoms of decreased, increased, or abnormal psychomotor activity, which occurs in the context of another mental disorder, such as Schizophrenia or Other Primary Psychotic Disorders, Mood Disorders, and Neurodevelopmental Disorders, especially Autism Spectrum Disorder."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Catatonia associated with another mental disorder"
+      }
+    }
+  ]
+}

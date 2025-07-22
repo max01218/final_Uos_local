@@ -1,0 +1,288 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/831337417",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/546689346"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#831337417",
+  "code": "6D83",
+  "source": "http://id.who.int/icd/entity/831337417",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/831337417/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/148241182"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/831337417/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/831337417/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/2099230583"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Frontotemporal dementia"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Frontotemporal dementia (FTD) is a group of primary neurodegenerative disorders primarily affecting the frontal and temporal lobes. Onset is typically insidious with a gradual and worsening course. Several syndromic variants (some with an identified genetic basis or familiality) are described that include presentations with predominantly marked personality and behavioral changes (such as executive dysfunction, apathy, deterioration of social cognition, repetitive behaviours, and dietary changes), predominantly language deficits (that include semantic, agrammatic/nonfluent, and logopenic forms), predominantly movement-related deficits (progressive supranuclear palsy, corticobasal degeneration, multiple systems atrophy, or amyotrophic lateral sclerosis), or a combination of these deficits. Memory function often remains relatively intact, particularly during the early stages of the disorder."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "This category should never be used in primary tabulation. The codes are provided for use as supplementary or additional codes when it is desired to identify the presence of dementia in diseases classified elsewhere.\n\nWhen dementia is due to multiple aetiologies, code all that apply."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "frontotemporal lobe dementia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "dementia in fronto-temporal lobar degeneration"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "FTD - [frontotemporal dementia]"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "temple dementia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "frontal lobe dementia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia, behavioural variant"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1119344369"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia in Pick disease"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1119344369"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Pick disease"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1119344369"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Pick disease of brain"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1119344369"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia, language variant"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1693157226"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Primary progressive aphasia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1693157226"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Progressive aphasia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1693157226"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia, non-fluent or agrammatic variant"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2073597518"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "progressive non-fluent aphasia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2073597518"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "PPA - [primary progressive aphasia] agrammatic"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2073597518"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia, semantic variant"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/983592843"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Semantic dementia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/983592843"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "PPA - [primary progressive aphasia] semantic"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/983592843"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia, logopenic variant"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/456482023"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Logopenic progressive aphasia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/456482023"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Logopenic primary progressive aphasia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/456482023"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia with motor neuron disease"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1171850356"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia with familial inclusion body myopathy with Paget’s disease of bone"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1623731956"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia due to genetic mutation"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1658154282"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia due to C9orf72 mutation"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/214328399"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia due to MAPT mutation"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/105628451"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia due to VCP mutation"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1650171830"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia due to GRN mutation"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1758869722"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia due to CHMP2B mutation"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1752271020"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia due to UBS mutation"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1752271020"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia due to FUS mutation"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1005062974"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia due to TARDBP mutation"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1629386211"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Frontotemporal dementia due to other or new mutations"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/904320597"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+Disorder Name: Secondary anxiety syndrome
+Disorder Code: 2131412196
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+A syndrome characterised by the presence of prominent anxiety symptoms judged to be a direct pathophysiological consequence of a health condition not classified under mental and behavioural disorders, based on evidence from the history, physical examination, or laboratory findings. The symptoms are not accounted for by delirium or by another mental and behavioural disorder, and are not a psychologically mediated response to a severe medical condition (e.g., anxiety symptoms or panic attacks in response to a life-threatening diagnosis). This category should be used in addition to the diagnosis for the presumed underlying disorder or disease when the anxiety symptoms are sufficiently severe to warrant specific clinical attention.
+
+Exclusions: Adjustment disorder; Delirium
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+A syndrome characterised by the presence of prominent anxiety symptoms judged to be a direct pathophysiological consequence of a health condition not classified under mental and behavioural disorders, based on evidence from the history, physical examination, or laboratory findings. The symptoms are not accounted for by delirium or by another mental and behavioural disorder, and are not a psychologically mediated response to a severe medical condition (e.g., anxiety symptoms or panic attacks in response to a life-threatening diagnosis). This category should be used in addition to the diagnosis for the presumed underlying disorder or disease when the anxiety symptoms are sufficiently severe to warrant specific clinical attention.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Adjustment disorder
+• Should be differentiated from: Delirium
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

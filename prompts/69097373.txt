@@ -1,0 +1,26 @@
+Disorder Name: Obsessive-compulsive or related disorder induced by other specified psychoactive substance
+Disorder Code: 69097373
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Obsessive-compulsive or related disorder induced by other specified psychoactive substance is characterised by either repetitive intrusive thoughts or preoccupations, normally associated with anxiety and typically accompanied by repetitive behaviours performed in response, or by recurrent and habitual actions directed at the integument (e.g., hair pulling, skin picking) that develop during or soon after intoxication with or withdrawal from a specified psychoactive substance. The intensity or duration of the symptoms is substantially in excess of analogous disturbances that are characteristic of intoxication with or withdrawal from the specified psychoactive substance. The amount and duration of the specified psychoactive substance use must be capable of producing obsessive-compulsive or related symptoms. The symptoms are not better explained by a primary mental disorder (in particular an Obsessive-compulsive or related disorder), as might be the case if the symptoms preceded the onset of the specified psychoactive substance use, if the symptoms persist for a substantial period of time after cessation of use or withdrawal of the specified psychoactive substance, or if there is other evidence of a pre-existing primary mental disorder with obsessive-compulsive or related symptoms (e.g., a history of prior episodes not associated with specified psychoactive substance use).
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Obsessive-compulsive or related disorder induced by other specified psychoactive substance is characterised by either repetitive intrusive thoughts or preoccupations, normally associated with anxiety and typically accompanied by repetitive behaviours performed in response, or by recurrent and habitual actions directed at the integument (e.g., hair pulling, skin picking) that develop during or soon after intoxication with or withdrawal from a specified psychoactive substance. The intensity or duration of the symptoms is substantially in excess of analogous disturbances that are characteristic of intoxication with or withdrawal from the specified psychoactive substance. The amount and duration of the specified psychoactive substance use must be capable of producing obsessive-compulsive or related symptoms. The symptoms are not better explained by a primary mental disorder (in particular an Obsessive-compulsive or related disorder), as might be the case if the symptoms preceded the onset of the specified psychoactive substance use, if the symptoms persist for a substantial period of time after cessation of use or withdrawal of the specified psychoactive substance, or if there is other evidence of a pre-existing primary mental disorder with obsessive-compulsive or related symptoms (e.g., a history of prior episodes not associated with specified psychoactive substance use).
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

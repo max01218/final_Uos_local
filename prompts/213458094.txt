@@ -1,0 +1,31 @@
+Disorder Name: Neurocognitive disorders
+Disorder Code: 213458094
+Code Range: 6D70-6E0Z
+Class Kind: block
+
+Standard Definition:
+Neurocognitive disorders are characterised by primary clinical deficits in cognitive functioning that are acquired rather than developmental. That is, neurocognitive disorders do not include disorders characterised by deficits in cognitive function that are present from birth or that typically arise during the developmental period, which are classified in the grouping neurodevelopmental disorders. Rather, neurocognitive disorders represent a decline from a previously attained level of functioning. Although cognitive deficits are present in many mental disorders (e.g., schizophrenia, bipolar disorders), only disorders whose core features are cognitive are included in the neurocognitive disorders grouping. In cases where the underlying pathology and aetiology for neurocognitive disorders can be determined, the identified etiology should be classified separately.
+
+Exclusions: Neurodevelopmental disorders
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Neurocognitive disorders are characterised by primary clinical deficits in cognitive functioning that are acquired rather than developmental. That is, neurocognitive disorders do not include disorders characterised by deficits in cognitive function that are present from birth or that typically arise during the developmental period, which are classified in the grouping neurodevelopmental disorders. Rather, neurocognitive disorders represent a decline from a previously attained level of functioning. Although cognitive deficits are present in many mental disorders (e.g., schizophrenia, bipolar disorders), only disorders whose core features are cognitive are included in the neurocognitive disorders grouping. In cases where the underlying pathology and aetiology for neurocognitive disorders can be determined, the identified etiology should be classified separately.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Neurodevelopmental disorders
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

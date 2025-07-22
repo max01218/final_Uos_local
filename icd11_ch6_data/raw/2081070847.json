@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2081070847",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1246085612"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2081070847",
+  "code": "6D72.13",
+  "source": "http://id.who.int/icd/entity/2081070847",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Amnestic disorder due to use of volatile inhalants"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for amnestic disorder are met. The memory symptoms are judged to be the direct consequence of use of volatile inhalants. The intensity and duration of use of volatile inhalants must be known to be capable of producing memory impairment. The memory impairment may develop during or soon after volatile inhalant intoxication or withdrawal, but its intensity and duration are substantially in excess of those normally associated with these conditions. The symptoms are not better accounted for by another disorder or medical condition, as might be the case if the amnestic symptoms preceded the onset of use of volatile inhalants."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Amnestic disorder due to use of volatile inhalants"
+      }
+    }
+  ]
+}

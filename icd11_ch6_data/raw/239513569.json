@@ -1,0 +1,258 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/239513569",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1336943699"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#239513569",
+  "code": "6B03",
+  "source": "http://id.who.int/icd/entity/239513569",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/239513569/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1707067746"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Specific phobia"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Specific phobia is characterised by a marked and excessive fear or anxiety that consistently occurs upon exposure or anticipation of exposure to one or more specific objects or situations (e.g., proximity to certain animals, flying, heights, closed spaces, sight of blood or injury) that is out of proportion to actual danger. The phobic objects or situations are avoided or else endured with intense fear or anxiety. Symptoms persist for at least several months and are sufficiently severe to result in significant distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Simple phobia"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Body dysmorphic disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/731724655",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/731724655"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hypochondriasis"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/675329566",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/675329566"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Specific phobia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Simple phobia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "isolated phobia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acarophobia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/975969467"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acrophobia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2146122658"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fear of heights"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2146122658"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fear of high places"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2146122658"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Arachnophobia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1070048029"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fear of spiders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1070048029"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bathophobia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1076902524"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fear of depths"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1076902524"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bromidrosiphobia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/898022927"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fear of body smells"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/898022927"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Claustrophobia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1419955558"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fear of confined spaces"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1419955558"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fear of enclosed spaces"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1419955558"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Entomophobia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/611509045"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fear of insects"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/611509045"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Erythrophobia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/881932397"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fear of blushing"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/881932397"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Examination phobia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/262589771"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fear of exams"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/262589771"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Gephyrophobia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1413280456"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fear of crossing bridges"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1413280456"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mysophobia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/74344857"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fear of dirt or contamination"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/74344857"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Zoophobia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1441255130"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "animal phobia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1441255130"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fear of animals"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1441255130"
+    }
+  ]
+}

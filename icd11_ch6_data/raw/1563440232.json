@@ -1,0 +1,39 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1563440232",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/76398729"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/578635574",
+    "http://id.who.int/icd/release/11/2024-01/mms/1194756772",
+    "http://id.who.int/icd/release/11/2024-01/mms/810797047",
+    "http://id.who.int/icd/release/11/2024-01/mms/314468192",
+    "http://id.who.int/icd/release/11/2024-01/mms/1563440232/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1563440232/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1563440232",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/1563440232",
+  "classKind": "block",
+  "blockId": "BlockL2-6A7",
+  "codeRange": "6A70-6A7Z",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Premenstrual dysphoric disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1526774088",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1526774088"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Depressive disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Depressive disorders are characterised by depressive mood (e.g., sad, irritable, empty) or loss of pleasure accompanied by other cognitive, behavioural, or neurovegetative symptoms that significantly affect the individual’s ability to function. A depressive disorder should not be diagnosed in individuals who have ever experienced a manic, mixed or hypomanic episode, which would indicate the presence of a bipolar disorder."
+  }
+}

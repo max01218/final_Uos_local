@@ -1,0 +1,41 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/833390860",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1412387537"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#833390860",
+  "code": "6B84",
+  "source": "http://id.who.int/icd/entity/833390860",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Pica"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Pica is characterised by the regular consumption of non-nutritive substances, such as non-food objects and materials (e.g., clay, soil, chalk, plaster, plastic, metal and paper) or raw food ingredients (e.g., large quantities of salt or corn flour) that is persistent or severe enough to require clinical attention in an individual who has reached a developmental age at which they would be expected to distinguish between edible and non-edible substances (approximately 2 years). That is, the behaviour causes damage to health, impairment in functioning, or significant risk due to the frequency, amount or nature of the substances or objects ingested."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Pica"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Trichophagia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1491459357"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Pica of infancy and childhood"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/399127848"
+    }
+  ]
+}

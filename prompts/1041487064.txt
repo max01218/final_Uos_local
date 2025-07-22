@@ -1,0 +1,53 @@
+Disorder Name: Gambling disorder
+Disorder Code: 1041487064
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Gambling disorder is characterised by a pattern of persistent or recurrent gambling behaviour, which may be online (i.e., over the internet) or offline, manifested by:
+
+1. impaired control over gambling (e.g., onset, frequency, intensity, duration, termination, context);
+
+2. increasing priority given to gambling to the extent that gambling takes precedence over other life interests and daily activities; and
+
+3. continuation or escalation of gambling despite the occurrence of negative consequences.
+
+The pattern of gambling behaviour may be continuous or episodic and recurrent. The pattern of gambling behaviour results in significant distress or in significant impairment in personal, family, social, educational, occupational or other important areas of functioning. The gambling behaviour and other features are normally evident over a period of at least 12 months in order for a diagnosis to be assigned, although the required duration may be shortened if all diagnostic requirements are met and symptoms are severe.
+
+Inclusions: Compulsive gambling
+Exclusions: Bipolar type I disorder; Bipolar type II disorder; Hazardous gambling or betting
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Gambling disorder is characterised by a pattern of persistent or recurrent gambling behaviour, which may be online (i.e., over the internet) or offline, manifested by:
+
+1. impaired control over gambling (e.g., onset, frequency, intensity, duration, termination, context);
+
+2. increasing priority given to gambling to the extent that gambling takes precedence over other life interests and daily activities; and
+
+3. continuation or escalation of gambling despite the occurrence of negative consequences.
+
+The pattern of gambling behaviour may be continuous or episodic and recurrent. The pattern of gambling behaviour results in significant distress or in significant impairment in personal, family, social, educational, occupational or other important areas of functioning. The gambling behaviour and other features are normally evident over a period of at least 12 months in order for a diagnosis to be assigned, although the required duration may be shortened if all diagnostic requirements are met and symptoms are severe.
+
+Included Manifestations:
+• Compulsive gambling
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Bipolar type I disorder
+• Should be differentiated from: Bipolar type II disorder
+• Should be differentiated from: Hazardous gambling or betting
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

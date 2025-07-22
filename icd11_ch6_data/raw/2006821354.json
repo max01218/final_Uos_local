@@ -1,0 +1,42 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2006821354",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1128733473"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2006821354",
+  "code": "6D11.5",
+  "source": "http://id.who.int/icd/entity/2006821354",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2006821354/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/941859884"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Borderline pattern"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "The Borderline pattern specifier may be applied to individuals whose pattern of personality disturbance is characterised by a pervasive pattern of instability of interpersonal relationships, self-image, and affects, and marked impulsivity, as indicated by many of the following: Frantic efforts to avoid real or imagined abandonment; A pattern of unstable and intense interpersonal relationships; Identity disturbance, manifested in markedly and persistently unstable self-image or sense of self; A tendency to act rashly in states of high negative affect, leading to potentially self-damaging behaviours; Recurrent episodes of self-harm; Emotional instability due to marked reactivity of mood; Chronic feelings of emptiness; Inappropriate intense anger or difficulty controlling anger; Transient dissociative symptoms or psychotic-like features in situations of high affective arousal."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "This category should ONLY be used in combination with a Personality disorder category (Mild, Moderate, or Severe) or Personality difficulty."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Borderline pattern"
+      }
+    }
+  ]
+}

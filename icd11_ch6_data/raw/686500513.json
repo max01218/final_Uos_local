@@ -1,0 +1,68 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/686500513",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/804833492"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/333795413",
+    "http://id.who.int/icd/release/11/2024-01/mms/2648920",
+    "http://id.who.int/icd/release/11/2024-01/mms/1253260365",
+    "http://id.who.int/icd/release/11/2024-01/mms/819411618",
+    "http://id.who.int/icd/release/11/2024-01/mms/686500513/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/686500513/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#686500513",
+  "code": "6C42.2",
+  "source": "http://id.who.int/icd/entity/686500513",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/686500513/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/138091123",
+        "http://id.who.int/icd/release/11/2024-01/mms/1995589534",
+        "http://id.who.int/icd/release/11/2024-01/mms/738827515"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/686500513/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/508603587",
+        "http://id.who.int/icd/release/11/2024-01/mms/397276103"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Synthetic cannabinoid dependence"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Synthetic cannabinoid dependence is a disorder of regulation of synthetic cannabinoid use arising from repeated or continuous use of synthetic cannabinoids. The characteristic feature is a strong internal drive to use synthetic cannabinoids, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use synthetic cannabinoids. Physiological features of dependence may also be present, including tolerance to the effects of synthetic cannabinoids, withdrawal symptoms following cessation or reduction in use of synthetic cannabinoids, or repeated use of synthetic cannabinoids or pharmacologically similar substances to prevent or alleviate withdrawal symptoms. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if synthetic cannabinoid use is continuous (daily or almost daily) for at least 3 months."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of synthetic cannabinoids"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/912934263",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/912934263"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of synthetic cannabinoids"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1055626783",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1055626783"
+    }
+  ]
+}

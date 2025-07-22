@@ -1,0 +1,32 @@
+Disorder Name: Alcohol intoxication
+Disorder Code: 1339202943
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Alcohol intoxication is a clinically significant transient condition that develops during or shortly after the consumption of alcohol that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of alcohol and their intensity is closely related to the amount of alcohol consumed. They are time-limited and abate as alcohol is cleared from the body. Presenting features may include impaired attention, inappropriate or aggressive behaviour, lability of mood and emotions, impaired judgment, poor coordination, unsteady gait, fine nystagmus and slurred speech. At more severe levels of intoxication, stupor or coma may occur. Alcohol intoxication may facilitate suicidal ideation or behaviour.
+
+Exclusions: alcohol poisoning; Possession trance disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Alcohol intoxication is a clinically significant transient condition that develops during or shortly after the consumption of alcohol that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of alcohol and their intensity is closely related to the amount of alcohol consumed. They are time-limited and abate as alcohol is cleared from the body. Presenting features may include impaired attention, inappropriate or aggressive behaviour, lability of mood and emotions, impaired judgment, poor coordination, unsteady gait, fine nystagmus and slurred speech. At more severe levels of intoxication, stupor or coma may occur. Alcohol intoxication may facilitate suicidal ideation or behaviour.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: alcohol poisoning
+• Should be differentiated from: Possession trance disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

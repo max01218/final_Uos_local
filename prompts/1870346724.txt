@@ -1,0 +1,26 @@
+Disorder Name: Intoxication due to unknown or unspecified psychoactive substance
+Disorder Code: 1870346724
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Intoxication due to unknown or unspecified psychoactive substance is a transient condition that develops during or shortly after the administration of an unknown or unspecified psychoactive substance that is characterised by disturbances in level of consciousness, cognition, perception, affect or behaviour, or other psychophysiological functions and responses. This diagnosis should be made only when there is strong evidence that an unidentified substance has been taken and the features cannot be accounted for by another disorder or disease.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Intoxication due to unknown or unspecified psychoactive substance is a transient condition that develops during or shortly after the administration of an unknown or unspecified psychoactive substance that is characterised by disturbances in level of consciousness, cognition, perception, affect or behaviour, or other psychophysiological functions and responses. This diagnosis should be made only when there is strong evidence that an unidentified substance has been taken and the features cannot be accounted for by another disorder or disease.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

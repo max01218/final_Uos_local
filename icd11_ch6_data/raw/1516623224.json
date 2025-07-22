@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1516623224",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/605267007",
+    "http://id.who.int/icd/release/11/2024-01/mms/33269655",
+    "http://id.who.int/icd/release/11/2024-01/mms/437815624",
+    "http://id.who.int/icd/release/11/2024-01/mms/2099676649",
+    "http://id.who.int/icd/release/11/2024-01/mms/148247104",
+    "http://id.who.int/icd/release/11/2024-01/mms/821852937",
+    "http://id.who.int/icd/release/11/2024-01/mms/1111628448",
+    "http://id.who.int/icd/release/11/2024-01/mms/1516623224/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1516623224/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1516623224",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/1516623224",
+  "classKind": "block",
+  "blockId": "BlockL1-6A0",
+  "codeRange": "6A00-6A0Z",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Primary tics or tic disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/765464219",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/765464219"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary neurodevelopmental syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/255980141",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/255980141"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Neurodevelopmental disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Neurodevelopmental disorders are behavioural and cognitive disorders that arise during the developmental period that involve significant difficulties in the acquisition and execution of specific intellectual, motor, language, or social functions. Although behavioural and cognitive deficits are present in many mental and behavioural disorders that can arise during the developmental period (e.g., Schizophrenia, Bipolar disorder), only disorders whose core features are neurodevelopmental are included in this grouping. The presumptive etiology for neurodevelopmental disorders is complex, and in many individual cases is unknown."
+  }
+}

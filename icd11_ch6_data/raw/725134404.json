@@ -1,0 +1,36 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/725134404",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/106339515"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2124501487",
+    "http://id.who.int/icd/release/11/2024-01/mms/566538430",
+    "http://id.who.int/icd/release/11/2024-01/mms/439300824",
+    "http://id.who.int/icd/release/11/2024-01/mms/725134404/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#725134404",
+  "code": "6A21.2",
+  "source": "http://id.who.int/icd/entity/725134404",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/725134404/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Schizoaffective disorder, continuous"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Symptoms fulfilling all definitional requirements of Schizoaffective disorder have been present for almost all of the illness course over a period of at least one year, with periods of subthreshold symptoms being very brief relative to the overall course."
+  }
+}

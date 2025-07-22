@@ -1,0 +1,154 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1306203631",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/927970860",
+    "http://id.who.int/icd/release/11/2024-01/mms/287901798",
+    "http://id.who.int/icd/release/11/2024-01/mms/624443803",
+    "http://id.who.int/icd/release/11/2024-01/mms/911707612",
+    "http://id.who.int/icd/release/11/2024-01/mms/1800910986",
+    "http://id.who.int/icd/release/11/2024-01/mms/426167863",
+    "http://id.who.int/icd/release/11/2024-01/mms/1858685964",
+    "http://id.who.int/icd/release/11/2024-01/mms/1008196289",
+    "http://id.who.int/icd/release/11/2024-01/mms/1004987305",
+    "http://id.who.int/icd/release/11/2024-01/mms/494951911",
+    "http://id.who.int/icd/release/11/2024-01/mms/1024145243",
+    "http://id.who.int/icd/release/11/2024-01/mms/680361950",
+    "http://id.who.int/icd/release/11/2024-01/mms/1319339568",
+    "http://id.who.int/icd/release/11/2024-01/mms/861066692",
+    "http://id.who.int/icd/release/11/2024-01/mms/1306203631/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1306203631",
+  "code": "19",
+  "source": "http://id.who.int/icd/entity/1306203631",
+  "classKind": "chapter",
+  "title": {
+    "@language": "en",
+    "@value": "Certain conditions originating in the perinatal period"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "This chapter includes conditions that have their origin in the perinatal period even though death or morbidity occurs later."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endocrine, nutritional or metabolic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/21500692",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/21500692"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Congenital malformations, deformations and chromosomal abnormalities"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/223744320",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/223744320"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Neoplasms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1630407678",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1630407678"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Injury, poisoning or certain other consequences of external causes"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/435227771",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/435227771"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Congenital gonococcal infection"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/609214049",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/609214049"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain infectious or parasitic diseases - acquired after birth"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1435254666",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1435254666"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Gastroenteritis or colitis of infectious origin"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/588616678",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/588616678"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hereditary haemolytic anaemia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1909380523",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1909380523"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Transient hypogammaglobulinaemia of infancy"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1686370790",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1686370790"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain congenital diseases of the nervous system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1296093776",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1296093776"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "congenital cardiomyopathy"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/282225286",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/282225286"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Paralytic ileus"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1868011045",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1868011045"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Pemphigus neonatorum"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1631069488",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/918813679"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cradle cap"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1315633810",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1315633810"
+    }
+  ],
+  "codingNote": {
+    "@language": "en",
+    "@value": "Conditions arising in the perinatal period, even though death or morbidity occurs later, should, as far as possible, be coded to chapter 19, which takes precedence over chapters containing codes for diseases by their anatomical site.\n\nFor children less than 28 days old, assume that a reported condition developed in the perinatal period, unless the duration is stated and the onset was after the first completed week of life."
+  }
+}

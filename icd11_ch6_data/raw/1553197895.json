@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1553197895",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/523677473"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1553197895",
+  "code": "6E40.0",
+  "source": "http://id.who.int/icd/entity/1553197895",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Mental disorder affecting disorders or diseases classified elsewhere"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All diagnostic requirements for Psychological or behavioural factors affecting disorders or diseases classified elsewhere are met. The individual is diagnosed with a mental, behavioural, or neurodevelopmental disorder that adversely affects the manifestation, treatment, or course of a disorder or disease classified in another chapter (e.g., a woman with Bulimia Nervosa and Type 1 diabetes mellitus who skips insulin doses as a way to avoid weight gain that would otherwise be caused by her binge eating)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mental disorder affecting disorders or diseases classified elsewhere"
+      }
+    }
+  ]
+}

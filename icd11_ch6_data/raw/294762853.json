@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/294762853",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/821852937"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#294762853",
+  "code": "6A05.0",
+  "source": "http://id.who.int/icd/entity/294762853",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Attention deficit hyperactivity disorder, predominantly inattentive presentation"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for attention deficit hyperactivity disorder are met and inattentive symptoms are predominant in the clinical presentation. Inattention refers to significant difficulty in sustaining attention to tasks that do not provide a high level of stimulation or frequent rewards, distractibility and problems with organisation. Some hyperactive-impulsive symptoms may also be present, but these are not clinically significant in relation to the inattentive symptoms."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Attention deficit hyperactivity disorder, predominantly inattentive presentation"
+      }
+    }
+  ]
+}

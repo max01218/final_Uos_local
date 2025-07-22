@@ -1,0 +1,26 @@
+Disorder Name: Bipolar type II disorder, current episode depressive, unspecified severity
+Disorder Code: 51767575
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Bipolar type II disorder, current episode depressive, unspecified severity is diagnosed when the definitional requirements for Bipolar type II disorder have been met and the current episode is depressive, but there is insufficient information to determine the severity of the current depressive episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. The symptoms are associated with at least some difficulty in continuing with ordinary work, social, or domestic activities.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Bipolar type II disorder, current episode depressive, unspecified severity is diagnosed when the definitional requirements for Bipolar type II disorder have been met and the current episode is depressive, but there is insufficient information to determine the severity of the current depressive episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. The symptoms are associated with at least some difficulty in continuing with ordinary work, social, or domestic activities.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

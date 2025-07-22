@@ -1,0 +1,45 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/499894965",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1602669465"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1041487064",
+    "http://id.who.int/icd/release/11/2024-01/mms/1448597234",
+    "http://id.who.int/icd/release/11/2024-01/mms/499894965/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/499894965/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#499894965",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/499894965",
+  "classKind": "block",
+  "blockId": "BlockL2-6C5",
+  "codeRange": "6C50-6C5Z",
+  "title": {
+    "@language": "en",
+    "@value": "Disorders due to addictive behaviours"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorders due to addictive behaviours are recognizable and clinically significant syndromes associated with distress or interference with personal functions that develop as a result of repetitive rewarding behaviours other than the use of dependence-producing substances. Disorders due to addictive behaviours include gambling disorder and gaming disorder, which may involve both online and offline behaviour."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Compulsive sexual behaviour disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1630268048",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1630268048"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Paraphilic disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2110604642",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2110604642"
+    }
+  ]
+}

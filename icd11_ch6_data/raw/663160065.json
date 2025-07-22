@@ -1,0 +1,78 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/663160065",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/111507461"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#663160065",
+  "code": "6C43.4",
+  "source": "http://id.who.int/icd/entity/663160065",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/663160065/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/663160065/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1120716949"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Opioid withdrawal"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Opioid withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of opioids in individuals who have developed Opioid dependence or have used opioids for a prolonged period or in large amounts. Opioid withdrawal can also occur when prescribed opioids have been used in standard therapeutic doses. Presenting features of Opioid withdrawal may include dysphoric mood, craving for an opioid, anxiety, nausea or vomiting, abdominal cramps, muscle aches, yawning, perspiration, hot and cold flushes, lacrimation, rhinorrhea, hypersomnia (typically in the initial phase) or insomnia, diarrhea, piloerection, and pupillary dilatation."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid withdrawal"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid withdrawal, uncomplicated"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/407885112"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Opioid withdrawal, with seizures"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1735718441"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Codeine withdrawal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1533578000"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Heroin withdrawal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/775682029"
+    }
+  ]
+}

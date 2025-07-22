@@ -1,0 +1,110 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/224336967",
+    "http://id.who.int/icd/release/11/2024-01/mms/1762461746",
+    "http://id.who.int/icd/release/11/2024-01/mms/567425990",
+    "http://id.who.int/icd/release/11/2024-01/mms/1766440644/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1766440644/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1766440644",
+  "code": "03",
+  "source": "http://id.who.int/icd/entity/1766440644",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Neoplasms of haematopoietic or lymphoid tissues"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/944754984",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/944754984"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symptoms, signs or clinical findings of blood, blood-forming organs, or the immune system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1994504557",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1994504557"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Diseases of the blood or blood-forming organs"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "This chapter includes diseases of the blood as well as diseases of blood forming organs."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Complications of pregnancy, childbirth or the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/714000734",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/714000734"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the immune system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1954798891",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1954798891"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain conditions originating in the perinatal period"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1306203631",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1306203631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Injury, poisoning or certain other consequences of external causes"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/435227771",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/435227771"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Human immunodeficiency virus disease"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1000704511",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1000704511"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endocrine, nutritional or metabolic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/21500692",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/21500692"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Congenital malformations, deformations or chromosomal abnormalities"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/223744320",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/223744320"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Other diseases of the blood or blood-forming organs or certain disorders involving the immune mechanism complicating pregnancy, childbirth or the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/809926550",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/809926550"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+Disorder Name: Excoriation disorder
+Disorder Code: 726494117
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Excoriation disorder is characterised by recurrent picking of one’s own skin leading to skin lesions, accompanied by unsuccessful attempts to decrease or stop the behaviour. The most commonly picked sites are the face, arms and hands, but many individuals pick from multiple body sites. Skin picking may occur in brief episodes scattered throughout the day or in less frequent but more sustained periods. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Inclusions: skin picking disorder
+Exclusions: Stereotyped movement disorder; Acute excoriation of skin; Chronic excoriation of skin
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Excoriation disorder is characterised by recurrent picking of one’s own skin leading to skin lesions, accompanied by unsuccessful attempts to decrease or stop the behaviour. The most commonly picked sites are the face, arms and hands, but many individuals pick from multiple body sites. Skin picking may occur in brief episodes scattered throughout the day or in less frequent but more sustained periods. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Included Manifestations:
+• skin picking disorder
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Stereotyped movement disorder
+• Should be differentiated from: Acute excoriation of skin
+• Should be differentiated from: Chronic excoriation of skin
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

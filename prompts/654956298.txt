@@ -1,0 +1,31 @@
+Disorder Name: Developmental speech fluency disorder
+Disorder Code: 654956298
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Developmental speech fluency disorder is characterised by frequent or pervasive disruption of the normal rhythmic flow and rate of speech characterised by repetitions and prolongations in sounds, syllables, words, and phrases, as well as blocking and word avoidance or substitutions. The speech dysfluency is persistent over time. The onset of speech dysfluency occurs during the developmental period and speech fluency is markedly below what would be expected for age. Speech dysfluency results in significant impairment in social communication, personal, family, social, educational, occupational or other important areas of functioning. The speech dysfluency is not better accounted for by a Disorder of Intellectual Development, a Disease of the Nervous System, a sensory impairment, or a structural abnormality, or other speech or voice disorder.
+
+Exclusions: Tic disorders
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Developmental speech fluency disorder is characterised by frequent or pervasive disruption of the normal rhythmic flow and rate of speech characterised by repetitions and prolongations in sounds, syllables, words, and phrases, as well as blocking and word avoidance or substitutions. The speech dysfluency is persistent over time. The onset of speech dysfluency occurs during the developmental period and speech fluency is markedly below what would be expected for age. Speech dysfluency results in significant impairment in social communication, personal, family, social, educational, occupational or other important areas of functioning. The speech dysfluency is not better accounted for by a Disorder of Intellectual Development, a Disease of the Nervous System, a sensory impairment, or a structural abnormality, or other speech or voice disorder.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Tic disorders
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,31 @@
+Disorder Name: Harmful pattern of use of caffeine
+Disorder Code: 1252561403
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+A pattern of caffeine use that has caused clinically significant harm to a person’s physical or mental health or in which caffeine-induced behaviour has caused clinically significant harm to the health of other people. The pattern of caffeine use is evident over a period of at least 12 months if use is episodic and at least one month if use is continuous (i.e., daily or almost daily). Harm may be caused by the intoxicating effects of caffeine, the direct or secondary toxic effects on body organs and systems, or a harmful route of administration.
+
+Exclusions: Episode of harmful use of caffeine
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+A pattern of caffeine use that has caused clinically significant harm to a person’s physical or mental health or in which caffeine-induced behaviour has caused clinically significant harm to the health of other people. The pattern of caffeine use is evident over a period of at least 12 months if use is episodic and at least one month if use is continuous (i.e., daily or almost daily). Harm may be caused by the intoxicating effects of caffeine, the direct or secondary toxic effects on body organs and systems, or a harmful route of administration.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Episode of harmful use of caffeine
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

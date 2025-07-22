@@ -1,0 +1,26 @@
+Disorder Name: Disorders due to use of synthetic cathinones
+Disorder Code: 1605818663
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of synthetic cathinones are characterised by the pattern and consequences of synthetic cathinone use. Synthetic cathinones (also known as ‘bath salts’) are synthetic compounds with stimulant properties related to cathinone found in the khat plant, Catha edulis. The use of synthetic cathinones is common in young populations in many countries. They may produce a range of disorders including Synthetic Cathinone Intoxication, Synthetic Cathinone Dependence and Synthetic Cathinone Withdrawal. Several synthetic cathinone-induced mental disorders are recognised.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of synthetic cathinones are characterised by the pattern and consequences of synthetic cathinone use. Synthetic cathinones (also known as ‘bath salts’) are synthetic compounds with stimulant properties related to cathinone found in the khat plant, Catha edulis. The use of synthetic cathinones is common in young populations in many countries. They may produce a range of disorders including Synthetic Cathinone Intoxication, Synthetic Cathinone Dependence and Synthetic Cathinone Withdrawal. Several synthetic cathinone-induced mental disorders are recognised.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

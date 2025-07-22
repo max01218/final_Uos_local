@@ -1,0 +1,26 @@
+Disorder Name: Conduct-dissocial disorder, adolescent onset with typical prosocial emotions
+Disorder Code: 2038678808
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements for conduct-dissocial disorder, adolescent onset are met. The individual does not exhibit characteristics referred to as ‘callous and unemotional’, such as lack of empathy or sensitivity to the feelings of others and a lack of concern for others’ distress.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements for conduct-dissocial disorder, adolescent onset are met. The individual does not exhibit characteristics referred to as ‘callous and unemotional’, such as lack of empathy or sensitivity to the feelings of others and a lack of concern for others’ distress.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

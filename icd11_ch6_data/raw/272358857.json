@@ -1,0 +1,71 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/272358857",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1414319298"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#272358857",
+  "code": "6C4G.0",
+  "source": "http://id.who.int/icd/entity/272358857",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/272358857/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/131545543",
+        "http://id.who.int/icd/release/11/2024-01/mms/1155529213",
+        "http://id.who.int/icd/release/11/2024-01/mms/595694101"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/272358857/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1870346724",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Episode of harmful use of unknown or unspecified psychoactive substances"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "An episode of use of an unknown or unspecified psychoactive substance that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication or withdrawal; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour due to substance intoxication or withdrawal on the part of the person to whom the diagnosis of single episode of harmful use applies. This diagnosis should not be made if the harm is attributed to a known pattern of use of the unknown or unspecified psychoactive substance."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of unknown or unspecified psychoactive substance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/341458101",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/341458101"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Unknown or unspecified psychoactive substance dependence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2143971168",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2143971168"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of unknown or unspecified psychoactive substances"
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1427638883",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/613065957"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1427638883",
+  "code": "6A62",
+  "source": "http://id.who.int/icd/entity/1427638883",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Cyclothymic disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Cyclothymic disorder is characterised by a persistent instability of mood over a period of at least 2 years, involving numerous periods of hypomanic (e.g., euphoria, irritability, or expansiveness, psychomotor activation) and depressive (e.g., feeling down, diminished interest in activities, fatigue) symptoms that are present during more of the time than not. The hypomanic symptomatology may or may not be sufficiently severe or prolonged to meet the full definitional requirements of a hypomanic episode (see Bipolar type II disorder), but there is no history of manic or mixed episodes (see Bipolar type I disorder). The depressive symptomatology has never been sufficiently severe or prolonged to meet the diagnostic requirements for a depressive episode (see Bipolar type II disorder). The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cycloid personality"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cyclothymic personality"
+      }
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cyclothymic disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cycloid personality"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cyclothymic personality"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "cyclothymic personality disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "cycloid personality disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "cyclothymia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hyperthymic personality disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2010914592"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "hyperthymic personality"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2010914592"
+    }
+  ]
+}

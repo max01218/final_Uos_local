@@ -1,0 +1,26 @@
+Disorder Name: Alcohol withdrawal
+Disorder Code: 998231424
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Alcohol withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of alcohol in individuals who have developed Alcohol dependence or have used alcohol for a prolonged period or in large amounts. Presenting features of Alcohol withdrawal may include autonomic hyperactivity (e.g. tachycardia, hypertension, perspiration), increased hand tremor, nausea, retching or vomiting, insomnia, anxiety, psychomotor agitation, depressed or dysphoric mood, transient visual, tactile or auditory illusions or hallucinations, and distractability. Less commonly, the withdrawal state is complicated by generalised tonic-clonic seizures. The withdrawal state may progress to a very severe form of delirium characterised by confusion and disorientation, delusions, and prolonged visual, tactile or auditory hallucinations. In such cases, a separate diagnosis of Alcohol-induced delirium should also be assigned.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Alcohol withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of alcohol in individuals who have developed Alcohol dependence or have used alcohol for a prolonged period or in large amounts. Presenting features of Alcohol withdrawal may include autonomic hyperactivity (e.g. tachycardia, hypertension, perspiration), increased hand tremor, nausea, retching or vomiting, insomnia, anxiety, psychomotor agitation, depressed or dysphoric mood, transient visual, tactile or auditory illusions or hallucinations, and distractability. Less commonly, the withdrawal state is complicated by generalised tonic-clonic seizures. The withdrawal state may progress to a very severe form of delirium characterised by confusion and disorientation, delusions, and prolonged visual, tactile or auditory hallucinations. In such cases, a separate diagnosis of Alcohol-induced delirium should also be assigned.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

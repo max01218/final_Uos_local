@@ -1,0 +1,26 @@
+Disorder Name: Mild bodily distress disorder
+Disorder Code: 1472866636
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements of bodily distress disorder are present. There is excessive attention to distressing symptoms and their consequences, which may result in frequent medical visits, but the person is not preoccupied with the symptoms (e.g., the individual spends less than an hour per day focusing on them). Although the individual expresses distress about the symptoms and they may have some impact on his or her life (e.g., strain in relationships, less effective academic or occupational functioning, abandonment of specific leisure activities), there is no substantial impairment in the person’s personal, family, social, educational, occupational, or other important areas of functioning.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements of bodily distress disorder are present. There is excessive attention to distressing symptoms and their consequences, which may result in frequent medical visits, but the person is not preoccupied with the symptoms (e.g., the individual spends less than an hour per day focusing on them). Although the individual expresses distress about the symptoms and they may have some impact on his or her life (e.g., strain in relationships, less effective academic or occupational functioning, abandonment of specific leisure activities), there is no substantial impairment in the person’s personal, family, social, educational, occupational, or other important areas of functioning.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

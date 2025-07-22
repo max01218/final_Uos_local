@@ -1,0 +1,26 @@
+Disorder Name: Dissociative drug intoxication including Ketamine or PCP
+Disorder Code: 1192105868
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dissociative drug intoxication including Ketamine and PCP is a clinically significant transient condition that develops during or shortly after the consumption of a dissociative drug that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of a dissociative drug and their intensity is closely related to the amount of the dissociative drug consumed. They are time-limited and abate as the dissociative drug is cleared from the body. Presenting features may include aggression, impulsiveness, unpredictability, anxiety, psychomotor agitation, impaired judgment, numbness or diminished responsiveness to pain, slurred speech, and dystonia. Physical signs include nystagmus (repetitive, uncontrolled eye movements), tachycardia, elevated blood pressure, numbness, ataxia, dysarthria, and muscle rigidity. In rare instances, use of dissociative drugs including Ketamine and PCP can result in seizures.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dissociative drug intoxication including Ketamine and PCP is a clinically significant transient condition that develops during or shortly after the consumption of a dissociative drug that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of a dissociative drug and their intensity is closely related to the amount of the dissociative drug consumed. They are time-limited and abate as the dissociative drug is cleared from the body. Presenting features may include aggression, impulsiveness, unpredictability, anxiety, psychomotor agitation, impaired judgment, numbness or diminished responsiveness to pain, slurred speech, and dystonia. Physical signs include nystagmus (repetitive, uncontrolled eye movements), tachycardia, elevated blood pressure, numbness, ataxia, dysarthria, and muscle rigidity. In rare instances, use of dissociative drugs including Ketamine and PCP can result in seizures.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

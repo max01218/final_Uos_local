@@ -1,0 +1,133 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1016273204",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/590211325"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1772665991",
+    "http://id.who.int/icd/release/11/2024-01/mms/211765524",
+    "http://id.who.int/icd/release/11/2024-01/mms/2016549355",
+    "http://id.who.int/icd/release/11/2024-01/mms/1775535234",
+    "http://id.who.int/icd/release/11/2024-01/mms/494523519",
+    "http://id.who.int/icd/release/11/2024-01/mms/951103658",
+    "http://id.who.int/icd/release/11/2024-01/mms/199002751",
+    "http://id.who.int/icd/release/11/2024-01/mms/2096250471",
+    "http://id.who.int/icd/release/11/2024-01/mms/1016273204/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1016273204/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1016273204",
+  "code": "6C46",
+  "source": "http://id.who.int/icd/entity/1016273204",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1016273204/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/334423054",
+        "http://id.who.int/icd/release/11/2024-01/mms/274880002",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/868865918",
+        "http://id.who.int/icd/release/11/2024-01/mms/1218729044",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/197934298",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757",
+        "http://id.who.int/icd/release/11/2024-01/mms/577470983",
+        "http://id.who.int/icd/release/11/2024-01/mms/714000734",
+        "http://id.who.int/icd/release/11/2024-01/mms/1306203631",
+        "http://id.who.int/icd/release/11/2024-01/mms/223744320",
+        "http://id.who.int/icd/release/11/2024-01/mms/1843895818",
+        "http://id.who.int/icd/release/11/2024-01/mms/435227771",
+        "http://id.who.int/icd/release/11/2024-01/mms/850137482",
+        "http://id.who.int/icd/release/11/2024-01/mms/1249056269",
+        "http://id.who.int/icd/release/11/2024-01/mms/1596590595"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1016273204/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/334423054",
+        "http://id.who.int/icd/release/11/2024-01/mms/274880002",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/868865918",
+        "http://id.who.int/icd/release/11/2024-01/mms/1218729044",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/197934298",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757",
+        "http://id.who.int/icd/release/11/2024-01/mms/577470983",
+        "http://id.who.int/icd/release/11/2024-01/mms/714000734",
+        "http://id.who.int/icd/release/11/2024-01/mms/1306203631",
+        "http://id.who.int/icd/release/11/2024-01/mms/223744320",
+        "http://id.who.int/icd/release/11/2024-01/mms/1843895818",
+        "http://id.who.int/icd/release/11/2024-01/mms/435227771",
+        "http://id.who.int/icd/release/11/2024-01/mms/850137482",
+        "http://id.who.int/icd/release/11/2024-01/mms/1249056269",
+        "http://id.who.int/icd/release/11/2024-01/mms/1596590595"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone are characterised by the pattern and consequences of use of these substances. There is a wide array of naturally occurring and synthetically produced psychostimulants other than cocaine. The most numerous of this group are the amphetamine-type substances, including methamphetamine. Prescribed stimulants including dexamphetamine are indicated for a limited number of conditions such as for Attention Deficit Hyperactivity Disorder. Methcathinone, known in many countries as ephedrone, is a synthetic potent stimulant that is a structural analogue of methamphetamine and is related to cathinone. All these drugs have primarily psychostimulant properties and are also vasoconstrictors to a varying degree. They induce euphoria and hyperactivity as may be seen in Stimulant Intoxication. They have potent dependence-producing properties, which may lead to the diagnosis of Stimulant Dependence and Stimulant Withdrawal following the cessation of use. Several Stimulant-Induced Mental Disorders are described."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorders due to use of synthetic cathinones"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1605818663",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1605818663"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorders due to use of caffeine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/31898480",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/31898480"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorders due to use of cocaine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1689089786",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1689089786"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hazardous use of stimulants including amphetamines or methamphetamine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/154205648",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/154205648"
+    }
+  ]
+}

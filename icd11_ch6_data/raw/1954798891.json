@@ -1,0 +1,64 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/587326822",
+    "http://id.who.int/icd/release/11/2024-01/mms/609223181",
+    "http://id.who.int/icd/release/11/2024-01/mms/1008515027",
+    "http://id.who.int/icd/release/11/2024-01/mms/2115467890",
+    "http://id.who.int/icd/release/11/2024-01/mms/642618805",
+    "http://id.who.int/icd/release/11/2024-01/mms/966435382",
+    "http://id.who.int/icd/release/11/2024-01/mms/1860070272",
+    "http://id.who.int/icd/release/11/2024-01/mms/603645706",
+    "http://id.who.int/icd/release/11/2024-01/mms/183978472",
+    "http://id.who.int/icd/release/11/2024-01/mms/1954798891/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1954798891/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1954798891",
+  "code": "04",
+  "source": "http://id.who.int/icd/entity/1954798891",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symptoms, signs or clinical findings of blood, blood-forming organs, or the immune system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1994504557",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1994504557"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Diseases of the immune system"
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Complications of pregnancy, childbirth and the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/714000734",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/714000734"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Neoplasms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1630407678",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1630407678"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental anomalies"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/223744320",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/223744320"
+    }
+  ]
+}

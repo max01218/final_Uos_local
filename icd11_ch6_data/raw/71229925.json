@@ -1,0 +1,43 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/71229925",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1069443471"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#71229925",
+  "code": "6B60.9",
+  "source": "http://id.who.int/icd/entity/71229925",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with cognitive symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with cognitive symptoms is characterised by impaired cognitive performance in memory, language or other cognitive domains that is internally inconsistent and not consistent with a recognised disease of the nervous system, a neurodevelopmental or neurocognitive disorder, other mental, behavioural or neurodevelopmental disorder, or another medical condition and does not occur exclusively during another dissociative disorder."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative amnesia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/626975732",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/626975732"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative neurological symptom disorder, with cognitive symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional neurological symptom disorder, with cognitive symptoms"
+      }
+    }
+  ]
+}

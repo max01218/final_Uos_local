@@ -1,0 +1,26 @@
+Disorder Name: Stereotyped movement disorder with self-injury
+Disorder Code: 140042400
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+This category should be applied to forms of Stereotyped movement disorder in which stereotyped behaviours result in self-inflicted bodily injury that is significant enough to require medical treatment, or would result in such injury if protective measures (e.g., helmet to prevent head injury) were not employed. Stereotyped movement disorder with self-injury is characterised by voluntary, repetitive, stereotyped, apparently purposeless (and often rhythmic) movements that arise during the early developmental period, are not caused by the direct physiological effects of a substance or medication (including withdrawal). Stereotyped movements that are self-injurious can include head banging, face slapping, eye poking, and biting of the hands, lips, or other body parts.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+This category should be applied to forms of Stereotyped movement disorder in which stereotyped behaviours result in self-inflicted bodily injury that is significant enough to require medical treatment, or would result in such injury if protective measures (e.g., helmet to prevent head injury) were not employed. Stereotyped movement disorder with self-injury is characterised by voluntary, repetitive, stereotyped, apparently purposeless (and often rhythmic) movements that arise during the early developmental period, are not caused by the direct physiological effects of a substance or medication (including withdrawal). Stereotyped movements that are self-injurious can include head banging, face slapping, eye poking, and biting of the hands, lips, or other body parts.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

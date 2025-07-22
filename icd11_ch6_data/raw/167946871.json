@@ -1,0 +1,71 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/167946871",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1336943699"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#167946871",
+  "code": "6B06",
+  "source": "http://id.who.int/icd/entity/167946871",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Selective mutism"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Selective mutism is characterised by consistent selectivity in speaking, such that a child demonstrates adequate language competence in specific social situations, typically at home, but consistently fails to speak in others, typically at school. The disturbance lasts for at least one month, is not limited to the first month of school, and is of sufficient severity to interfere with educational achievement or with social communication. Failure to speak is not due to a lack of knowledge of, or comfort with, the spoken language required in the social situation (e.g. a different language spoken at school than at home)."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Schizophrenia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1683919430",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1683919430"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "transient mutism as part of separation anxiety in young children"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/830200631",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/830200631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Autism spectrum disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/437815624",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/437815624"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Selective mutism"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "elective mutism"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "adjustment reaction, elective mutism"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "adjustment disorder, elective mutism"
+      }
+    }
+  ]
+}

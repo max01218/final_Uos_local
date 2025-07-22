@@ -1,0 +1,71 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1729466996",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/601226803"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1729466996",
+  "code": "6C4F.0",
+  "source": "http://id.who.int/icd/entity/1729466996",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1729466996/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/768380303",
+        "http://id.who.int/icd/release/11/2024-01/mms/1183869990",
+        "http://id.who.int/icd/release/11/2024-01/mms/538219245"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1729466996/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1121505208",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Episode of harmful use of multiple specified psychoactive substances"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "An episode of use of multiple specified psychoactive substances or medications that are not included in the other substance classes specifically identified under Disorder Due to Substance Use that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to multiple substance intoxication or psychoactive medication use; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour due to multiple substance intoxication or psychoactive medication use on the part of the person to whom the diagnosis of single episode of harmful use of multiple specified psychoactive substances applies. This diagnosis should not be made if the harm is attributed to a known pattern of use of the multiple psychoactive substances."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of multiple specified psychoactive substances"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1719901309",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1719901309"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Multiple specified psychoactive substances dependence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/853273682",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/853273682"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of multiple specified psychoactive substances"
+      }
+    }
+  ]
+}

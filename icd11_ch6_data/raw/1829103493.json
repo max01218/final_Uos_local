@@ -1,0 +1,39 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1829103493",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/108180424"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1829103493",
+  "code": "6B64",
+  "source": "http://id.who.int/icd/entity/1829103493",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative identity disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative identity disorder is characterised by disruption of identity in which there are two or more distinct personality states (dissociative identities) associated with marked discontinuities in the sense of self and agency. Each personality state includes its own pattern of experiencing, perceiving, conceiving, and relating to self, the body, and the environment. At least two distinct personality states recurrently take executive control of the individual’s consciousness and functioning in interacting with others or with the environment, such as in the performance of specific aspects of daily life such as parenting, or work, or in response to specific situations (e.g., those that are perceived as threatening). Changes in personality state are accompanied by related alterations in sensation, perception, affect, cognition, memory, motor control, and behaviour. There are typically episodes of amnesia, which may be severe. The symptoms are not better explained by another mental, behavioural or neurodevelopmental disorder and are not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, and are not due to a disease of the nervous system or a sleep-wake disorder. The symptoms result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative identity disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Multiple personality"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Multiple personality disorder"
+      }
+    }
+  ]
+}

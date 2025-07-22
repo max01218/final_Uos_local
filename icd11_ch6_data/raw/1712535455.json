@@ -1,0 +1,68 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1712535455",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1336943699"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1712535455",
+  "code": "6B00",
+  "source": "http://id.who.int/icd/entity/1712535455",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1712535455/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1707067746"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Generalised anxiety disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Generalised anxiety disorder is characterised by marked symptoms of anxiety that persist for at least several months, for more days than not, manifested by either general apprehension (i.e. ‘free-floating anxiety’) or excessive worry focused on multiple everyday events, most often concerning family, health, finances, and school or work, together with additional symptoms such as muscular tension or motor restlessness, sympathetic autonomic over-activity, subjective experience of nervousness, difficulty maintaining concentration, irritability, or sleep disturbance. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. The symptoms are not a manifestation of another health condition and are not due to the effects of a substance or medication on the central nervous system."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Generalised anxiety disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "GAD - [generalised anxiety disorder]"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "anxiety generalised"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anxiety neurosis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "neurotic anxiety"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "psychoneurotic anxiety"
+      }
+    }
+  ]
+}

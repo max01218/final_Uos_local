@@ -1,0 +1,26 @@
+Disorder Name: Disorder of intellectual development, mild
+Disorder Code: 1207960454
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+A mild disorder of intellectual development is a condition originating during the developmental period characterised by significantly below average intellectual functioning and adaptive behaviour that are approximately two to three standard deviations below the mean (approximately 0.1 – 2.3 percentile), based on appropriately normed, individually administered standardized tests or by comparable behavioural indicators when standardized testing is unavailable. Affected persons often exhibit difficulties in the acquisition and comprehension of complex language concepts and academic skills. Most master basic self-care, domestic, and practical activities. Persons affected by a mild disorder of intellectual development can generally achieve relatively independent living and employment as adults but may require appropriate support.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+A mild disorder of intellectual development is a condition originating during the developmental period characterised by significantly below average intellectual functioning and adaptive behaviour that are approximately two to three standard deviations below the mean (approximately 0.1 – 2.3 percentile), based on appropriately normed, individually administered standardized tests or by comparable behavioural indicators when standardized testing is unavailable. Affected persons often exhibit difficulties in the acquisition and comprehension of complex language concepts and academic skills. Most master basic self-care, domestic, and practical activities. Persons affected by a mild disorder of intellectual development can generally achieve relatively independent living and employment as adults but may require appropriate support.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

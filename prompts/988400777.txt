@@ -1,0 +1,26 @@
+Disorder Name: Partial dissociative identity disorder
+Disorder Code: 988400777
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Partial dissociative identity disorder is characterised by disruption of identity in which there are two or more distinct personality states (dissociative identities) associated with marked discontinuities in the sense of self and agency. Each personality state includes its own pattern of experiencing, perceiving, conceiving, and relating to self, the body, and the environment. One personality state is dominant and normally functions in daily life, but is intruded upon by one or more non-dominant personality states (dissociative intrusions). These intrusions may be cognitive, affective, perceptual, motor, or behavioural. They are experienced as interfering with the functioning of the dominant personality state and are typically aversive. The non-dominant personality states do not recurrently take executive control of the individual’s consciousness and functioning, but there may be occasional, limited and transient episodes in which a distinct personality state assumes executive control to engage in circumscribed behaviours, such as in response to extreme emotional states or during episodes of self-harm or the reenactment of traumatic memories. The symptoms are not better explained by another mental, behavioural or neurodevelopmental disorder and are not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, and are not due to a disease of the nervous system or a sleep-wake disorder. The symptoms result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Partial dissociative identity disorder is characterised by disruption of identity in which there are two or more distinct personality states (dissociative identities) associated with marked discontinuities in the sense of self and agency. Each personality state includes its own pattern of experiencing, perceiving, conceiving, and relating to self, the body, and the environment. One personality state is dominant and normally functions in daily life, but is intruded upon by one or more non-dominant personality states (dissociative intrusions). These intrusions may be cognitive, affective, perceptual, motor, or behavioural. They are experienced as interfering with the functioning of the dominant personality state and are typically aversive. The non-dominant personality states do not recurrently take executive control of the individual’s consciousness and functioning, but there may be occasional, limited and transient episodes in which a distinct personality state assumes executive control to engage in circumscribed behaviours, such as in response to extreme emotional states or during episodes of self-harm or the reenactment of traumatic memories. The symptoms are not better explained by another mental, behavioural or neurodevelopmental disorder and are not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, and are not due to a disease of the nervous system or a sleep-wake disorder. The symptoms result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

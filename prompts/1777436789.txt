@@ -1,0 +1,26 @@
+Disorder Name: Dementia due to Lewy body disease
+Disorder Code: 1777436789
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dementia preceding or occurring within one year after the onset of motor parkinsonian signs in the setting of Lewy body disease. Characterized by presence of Lewy bodies, which are intraneuronal inclusions containing α-synuclein and ubiquitin in the brain stem, limbic area, forebrain, and neocortex. Onset is insidious with attentional and executive functioning deficits often present. These cognitive deficits are often accompanied by visual hallucinations and symptoms of REM sleep behaviour disorder. Hallucinations in other sensory modalities, depressive symptoms, and delusions may also be present. The symptom presentation usually varies significantly over the course of days necessitating longitudinal assessment and differentiation from delirium. Spontaneous onset of Parkinsonism within approximately 1 year of the onset of cognitive symptoms is common.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia preceding or occurring within one year after the onset of motor parkinsonian signs in the setting of Lewy body disease. Characterized by presence of Lewy bodies, which are intraneuronal inclusions containing α-synuclein and ubiquitin in the brain stem, limbic area, forebrain, and neocortex. Onset is insidious with attentional and executive functioning deficits often present. These cognitive deficits are often accompanied by visual hallucinations and symptoms of REM sleep behaviour disorder. Hallucinations in other sensory modalities, depressive symptoms, and delusions may also be present. The symptom presentation usually varies significantly over the course of days necessitating longitudinal assessment and differentiation from delirium. Spontaneous onset of Parkinsonism within approximately 1 year of the onset of cognitive symptoms is common.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

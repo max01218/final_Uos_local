@@ -1,0 +1,52 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1015017717",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/897917531"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1015017717",
+  "code": "6D70.0",
+  "source": "http://id.who.int/icd/entity/1015017717",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1015017717/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Delirium due to disease classified elsewhere"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for delirium are met. There is evidence from history, physical examination, or laboratory findings that Delirium is caused by the direct physiological consequences of a disorder or disease classified elsewhere."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "Identified etiology should be classified separately."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium due to disease classified elsewhere"
+      }
+    }
+  ]
+}

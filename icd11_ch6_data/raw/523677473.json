@@ -1,0 +1,46 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/523677473",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1553197895",
+    "http://id.who.int/icd/release/11/2024-01/mms/700487590",
+    "http://id.who.int/icd/release/11/2024-01/mms/967687778",
+    "http://id.who.int/icd/release/11/2024-01/mms/130379446",
+    "http://id.who.int/icd/release/11/2024-01/mms/2091262725",
+    "http://id.who.int/icd/release/11/2024-01/mms/523677473/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/523677473/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#523677473",
+  "code": "6E40",
+  "source": "http://id.who.int/icd/entity/523677473",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Psychological or behavioural factors affecting disorders or diseases classified elsewhere"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Psychological and behavioural factors affecting disorders or diseases classified elsewhere are those that may adversely affect the manifestation, treatment, or course of a condition classified in another chapter of the ICD. These factors may adversely affect the manifestation, treatment, or course of the disorder or disease classified in another chapter by: interfering with the treatment of the disorder or disease by affecting treatment adherence or care seeking; constituting an additional health risk; or influencing the underlying pathophysiology to precipitate or exacerbate symptoms or otherwise necessitate medical attention. This diagnosis should be assigned only when the factors increase the risk of suffering, disability, or death and represent a focus of clinical attention, and should be assigned together with the diagnosis for the relevant other condition."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Psychological factors affecting physical conditions"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mental or behavioural disorders associated with pregnancy, childbirth or the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/882114523",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/882114523"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/858129053",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/255980141"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#858129053",
+  "code": "6E60.0",
+  "source": "http://id.who.int/icd/entity/858129053",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/858129053/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/605267007",
+        "http://id.who.int/icd/release/11/2024-01/mms/33269655",
+        "http://id.who.int/icd/release/11/2024-01/mms/437815624",
+        "http://id.who.int/icd/release/11/2024-01/mms/2099676649",
+        "http://id.who.int/icd/release/11/2024-01/mms/148247104",
+        "http://id.who.int/icd/release/11/2024-01/mms/821852937",
+        "http://id.who.int/icd/release/11/2024-01/mms/1111628448",
+        "http://id.who.int/icd/release/11/2024-01/mms/1516623224/other",
+        "http://id.who.int/icd/release/11/2024-01/mms/1516623224/unspecified"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Secondary speech or language syndrome"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A syndrome that involves significant features related to speech or language development that do not fulfill the diagnostic requirements of any of the specific developmental speech or language disorders that is judged to be a direct pathophysiological consequence of a health condition not classified under mental and behavioural disorders, based on evidence from the history, physical examination, or laboratory findings. Possible etiologies include a disease of the nervous system, sensory impairment, brain injury or infection."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "This diagnosis should be assigned in addition to the diagnosis for the presumed underlying disorder or disease when the neurodevelopmental problems are sufficiently severe to warrant specific clinical attention."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary speech or language syndrome"
+      }
+    }
+  ]
+}

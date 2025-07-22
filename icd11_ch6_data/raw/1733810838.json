@@ -1,0 +1,97 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1733810838",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/538219245"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1733810838",
+  "code": "6C4F.70",
+  "source": "http://id.who.int/icd/entity/1733810838",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1733810838/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1076458680",
+        "http://id.who.int/icd/release/11/2024-01/mms/448177412",
+        "http://id.who.int/icd/release/11/2024-01/mms/1864983449",
+        "http://id.who.int/icd/release/11/2024-01/mms/543245955"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1733810838/postcoordinationScale/chemicalAgent",
+      "axisName": "http://id.who.int/icd/schema/chemicalAgent",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1991751314",
+        "http://id.who.int/icd/release/11/2024-01/mms/36740588"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1733810838/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1121505208",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583329300",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1733810838/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1729466996",
+        "http://id.who.int/icd/release/11/2024-01/mms/1719901309",
+        "http://id.who.int/icd/release/11/2024-01/mms/853273682"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Mood disorder induced by multiple specified psychoactive substances"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Mood disorder induced by multiple specified psychoactive substances is characterised by mood symptoms (e.g., depressed or elevated mood, decreased engagement in pleasurable activities, increased or decreased energy levels) that develop during or soon after intoxication with or withdrawal from multiple specified psychoactive substances. The intensity or duration of the symptoms is substantially in excess of mood disturbances that are characteristic of intoxication with or withdrawal from multiple specified psychoactive substances. The amount and duration of use of the multiple specified psychoactive substances must be capable of producing mood symptoms. The symptoms are not better explained by a primary mental disorder (e.g., a Depressive disorder, a Bipolar disorder, Schizoaffective disorder), as might be the case if the mood symptoms preceded the onset of the use of the multiple specified psychoactive substances, if the symptoms persist for a substantial period of time after cessation of the use of the multiple specified psychoactive substances or withdrawal from the multiple specified psychoactive substances, or if there is other evidence of a pre-existing primary mental disorder with mood symptoms (e.g., a history of prior episodes not associated with the use of the multiple specified psychoactive substances)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood disorder induced by multiple specified psychoactive substances"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood disorder induced by multiple specified psychoactive substances with depressive symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/974072757"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood disorder induced by multiple specified psychoactive substance with manic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1322643094"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood disorder induced by multiple specified psychoactive substance with mixed depressive and manic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/96927821"
+    }
+  ]
+}

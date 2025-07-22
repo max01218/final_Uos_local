@@ -1,0 +1,246 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2139612744",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1194756772"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2139612744",
+  "code": "6A71.3",
+  "source": "http://id.who.int/icd/entity/2139612744",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2139612744/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1119039346",
+        "http://id.who.int/icd/release/11/2024-01/mms/1383708356",
+        "http://id.who.int/icd/release/11/2024-01/mms/1906190365",
+        "http://id.who.int/icd/release/11/2024-01/mms/802537726",
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798",
+        "http://id.who.int/icd/release/11/2024-01/mms/1124422593"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms is diagnosed when the definitional requirements for Recurrent depressive disorder are met and the current episode is severe and there are no delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a severe depressive episode, many or most symptoms of a Depressive Episode are present to a marked degree, or a smaller number of symptoms are present and manifest to an intense degree. The individual has serious difficulty continuing to function in most domains (personal, family, social, educational, occupational, or other important domains)."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endogenous depression without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Major depression, recurrent without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Manic-depressive psychosis, depressed type without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Vital depression, recurrent without psychotic symptoms"
+      }
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "major depressive disorder, recurrent, severe"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "recurrent depressive disorder, current episode severe, without psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bipolar affective disorder, depressed, unspecified degree"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bipolar type 1 disorder, most recent episode depressed"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "depressed bipolar type 1 disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "endogenous depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endogenous depression without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Major depression, recurrent without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "manic-depressive psychosis, depressed type"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Manic-depressive psychosis, depressed type without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "vital depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Vital depression, recurrent without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1044827008"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/542743542"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/793223958"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1088230321"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1358066327"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/635651732"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/482299991"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1134098916"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/600886239"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1486537858"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/953349819"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/651011791"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1472033714"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1384733776"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder, current episode severe, without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1758652472"
+    }
+  ]
+}

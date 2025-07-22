@@ -1,0 +1,26 @@
+Disorder Name: Withdrawal due to unknown or unspecified psychoactive substance, uncomplicated
+Disorder Code: 1826184626
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All diagnostic requirements for Withdrawal due to unknown or unspecified psychoactive substance are met and the withdrawal state is not accompanied by perceptual disturbances or seizures.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All diagnostic requirements for Withdrawal due to unknown or unspecified psychoactive substance are met and the withdrawal state is not accompanied by perceptual disturbances or seizures.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

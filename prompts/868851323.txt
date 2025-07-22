@@ -1,0 +1,26 @@
+Disorder Name: Dementia due to pellagra
+Disorder Code: 868851323
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dementia due to pellagra is caused by persistent lack of vitamin B3 (niacin) or tryptophan either in the diet or due to poor absorption in the gastrointestinal tract due to disease (e.g., Crohn disease) or due to the effects of some medications (e.g., isoniazid). Core signs of pellagra include dermatological changes (sensitivity to sunlight, lesions, alopecia, and oedema) and diarrhoea. With prolonged nutritional deficiency cognitive symptoms that include aggressivity, motor disturbances (ataxia and restlessness), confusion, and weakness are observed. Treatment with nutritional supplementation (e.g., niacin) typically results in reversal of symptoms.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia due to pellagra is caused by persistent lack of vitamin B3 (niacin) or tryptophan either in the diet or due to poor absorption in the gastrointestinal tract due to disease (e.g., Crohn disease) or due to the effects of some medications (e.g., isoniazid). Core signs of pellagra include dermatological changes (sensitivity to sunlight, lesions, alopecia, and oedema) and diarrhoea. With prolonged nutritional deficiency cognitive symptoms that include aggressivity, motor disturbances (ataxia and restlessness), confusion, and weakness are observed. Treatment with nutritional supplementation (e.g., niacin) typically results in reversal of symptoms.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

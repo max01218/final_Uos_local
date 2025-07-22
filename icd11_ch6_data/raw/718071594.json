@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/718071594",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1448597234"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#718071594",
+  "code": "6C51.1",
+  "source": "http://id.who.int/icd/entity/718071594",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Gaming disorder, predominantly offline"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "!markdown\nGaming disorder, predominantly offline is characterised by a pattern of persistent or recurrent gaming behaviour (‘digital gaming’ or ‘video-gaming’) that is not primarily conducted over the internet and is manifested by: \n\n1. impaired control over gaming (e.g., onset, frequency, intensity, duration, termination, context); \n2. increasing priority given to gaming to the extent that gaming takes precedence over other life interests and daily activities; and \n3. continuation or escalation of gaming despite the occurrence of negative consequences. The behaviour pattern is of sufficient severity to result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning. \n\nThe pattern of gaming behaviour may be continuous or episodic and recurrent. The gaming behaviour and other features are normally evident over a period of at least 12 months in order for a diagnosis to be assigned, although the required duration may be shortened if all diagnostic requirements are met and symptoms are severe."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Gaming disorder, predominantly offline"
+      }
+    }
+  ]
+}

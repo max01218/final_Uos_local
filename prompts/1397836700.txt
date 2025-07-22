@@ -1,0 +1,31 @@
+Disorder Name: Dementia due to Huntington disease
+Disorder Code: 1397836700
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dementia due to Huntington disease occurs as part of a widespread degeneration of the brain due to a trinucleotide repeat expansion in the HTT gene, which is transmitted through autosomal dominance. Onset of symptoms is insidious typically in the third and fourth decade of life with gradual and slow progression. Initial symptoms typically include impairments in executive functions with relative sparing of memory, prior to the onset of motor deficits (bradykinesia and chorea) characteristic of Huntington disease.
+
+Inclusions: Dementia in Huntington chorea
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia due to Huntington disease occurs as part of a widespread degeneration of the brain due to a trinucleotide repeat expansion in the HTT gene, which is transmitted through autosomal dominance. Onset of symptoms is insidious typically in the third and fourth decade of life with gradual and slow progression. Initial symptoms typically include impairments in executive functions with relative sparing of memory, prior to the onset of motor deficits (bradykinesia and chorea) characteristic of Huntington disease.
+
+Included Manifestations:
+• Dementia in Huntington chorea
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,32 @@
+Disorder Name: Disorders due to use of caffeine
+Disorder Code: 31898480
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of caffeine are characterised by the pattern and consequences of caffeine use. Caffeine is a mild psychostimulant and diuretic that is found in the beans of the coffee plant (Coffea species) and is a constituent of coffee, cola drinks, chocolate, a range of proprietary 'energy drinks' and weight-loss aids. It is the most commonly used psychoactive substance worldwide and several clinical conditions related to its use are described, although severe disorders are comparatively rare considering its ubiquity. Caffeine Intoxication related to consumption of relatively higher doses (i.e., > 1 g per day) is described. Caffeine Withdrawal is common upon cessation of use among individuals who have used caffeine for a prolonged period or in large amounts. Caffeine-Induced Anxiety Disorder has been described, often following intoxication or heavy use.
+
+Exclusions: Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone; Hazardous use of caffeine
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of caffeine are characterised by the pattern and consequences of caffeine use. Caffeine is a mild psychostimulant and diuretic that is found in the beans of the coffee plant (Coffea species) and is a constituent of coffee, cola drinks, chocolate, a range of proprietary 'energy drinks' and weight-loss aids. It is the most commonly used psychoactive substance worldwide and several clinical conditions related to its use are described, although severe disorders are comparatively rare considering its ubiquity. Caffeine Intoxication related to consumption of relatively higher doses (i.e., > 1 g per day) is described. Caffeine Withdrawal is common upon cessation of use among individuals who have used caffeine for a prolonged period or in large amounts. Caffeine-Induced Anxiety Disorder has been described, often following intoxication or heavy use.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone
+• Should be differentiated from: Hazardous use of caffeine
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

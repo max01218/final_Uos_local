@@ -1,0 +1,44 @@
+Disorder Name: Bodily distress disorder
+Disorder Code: 767044268
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Bodily distress disorder is characterised by the presence of bodily symptoms that are distressing to the individual and excessive attention directed toward the symptoms, which may be manifest by repeated contact with health care providers. If another health condition is causing or contributing to the symptoms, the degree of attention is clearly excessive in relation to its nature and progression. Excessive attention is not alleviated by appropriate clinical examination and investigations and appropriate reassurance. Bodily symptoms are persistent, being present on most days for at least several months. Typically, bodily distress disorder involves multiple bodily symptoms that may vary over time. Occasionally there is a single symptom—usually pain or fatigue—that is associated with the other features of the disorder. The symptoms and associated distress and preoccupation have at least some impact on the individual’s functioning (e.g. strain in relationships, less effective academic or occupational functioning, abandonment of specific leisure activities).
+
+Exclusions: Tourette syndrome; Hair pulling disorder; Dissociative disorders; hair-plucking; Hypochondriasis; Body dysmorphic disorder; Excoriation disorder; Gender incongruence; Sexual dysfunctions; Tic disorders; Sexual pain-penetration disorder; Postviral fatigue syndrome; Chronic fatigue syndrome; Myalgic encephalomyelitis
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Bodily distress disorder is characterised by the presence of bodily symptoms that are distressing to the individual and excessive attention directed toward the symptoms, which may be manifest by repeated contact with health care providers. If another health condition is causing or contributing to the symptoms, the degree of attention is clearly excessive in relation to its nature and progression. Excessive attention is not alleviated by appropriate clinical examination and investigations and appropriate reassurance. Bodily symptoms are persistent, being present on most days for at least several months. Typically, bodily distress disorder involves multiple bodily symptoms that may vary over time. Occasionally there is a single symptom—usually pain or fatigue—that is associated with the other features of the disorder. The symptoms and associated distress and preoccupation have at least some impact on the individual’s functioning (e.g. strain in relationships, less effective academic or occupational functioning, abandonment of specific leisure activities).
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Tourette syndrome
+• Should be differentiated from: Hair pulling disorder
+• Should be differentiated from: Dissociative disorders
+• Should be differentiated from: hair-plucking
+• Should be differentiated from: Hypochondriasis
+• Should be differentiated from: Body dysmorphic disorder
+• Should be differentiated from: Excoriation disorder
+• Should be differentiated from: Gender incongruence
+• Should be differentiated from: Sexual dysfunctions
+• Should be differentiated from: Tic disorders
+• Should be differentiated from: Sexual pain-penetration disorder
+• Should be differentiated from: Postviral fatigue syndrome
+• Should be differentiated from: Chronic fatigue syndrome
+• Should be differentiated from: Myalgic encephalomyelitis
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,60 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1367613958",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1069443471"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1367613958",
+  "code": "6B60.6",
+  "source": "http://id.who.int/icd/entity/1367613958",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with paresis or weakness"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative neurological symptom disorder, with paresis or weakness is characterised by a difficulty or inability to intentionally move parts of the body or to coordinate movements that is not consistent with a recognised disease of the nervous system, other mental, behavioural or neurodevelopmental disorder, or other medical condition and does not occur exclusively during another dissociative disorder."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative neurological symptom disorder, with paresis or weakness"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional neurological symptom disorder, with weakness or paralysis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional neurological symptom disorder, with paresis or weakness"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Monoparesis"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/522948628"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Paraparesis"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/235125356"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hemiparesis"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/292596552"
+    }
+  ]
+}

@@ -1,0 +1,269 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/590587802",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/199053300"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#590587802",
+  "code": "6A61.2",
+  "source": "http://id.who.int/icd/entity/590587802",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/590587802/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/496273089",
+        "http://id.who.int/icd/release/11/2024-01/mms/1124422593"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder, current episode depressive, moderate, without psychotic symptoms is diagnosed when the definitional requirements for Bipolar type II disorder have been met and the current episode is depressive at a moderate level of severity and there are no delusions or hallucinations during the episode. A depressive episode is characterised by a period of depressed mood or diminished interest in activities occurring most of the day, nearly every day during a period lasting at least two weeks accompanied by other symptoms such as difficulty concentrating, feelings of worthlessness or excessive or inappropriate guilt, hopelessness, recurrent thoughts of death or suicide, changes in appetite or sleep, psychomotor agitation or retardation, and reduced energy or fatigue. In a moderate depressive episode, several symptoms of a depressive episode are present to a marked degree, or a large number of depressive symptoms of lesser severity are present overall. The individual typically has considerable difficulty functioning in multiple domains (personal, family, social, educational, occupational, or other important domains)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bipolar type II disorder, current episode depressive, moderate without psychotic features"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/707448694"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1543350905"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1604699351"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2121449307"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/459647122"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1371322219"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1953622697"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/906819899"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/149609331"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/757565105"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with melancholia and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/940935815"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/500750149"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/427866603"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1817049772"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1233168232"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/56211603"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptom, melancholia, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1237512074"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2099746866"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1136769658"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/156953953"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1894563093"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/625390540"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1043301538"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with melancholia and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/812957694"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with seasonal pattern and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1709093155"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/808908572"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/103465230"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, melancholia, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/41070498"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/598070316"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1186120679"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/208395292"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode depressive, moderate without psychotic symptoms, additional symptoms unspecified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/698778080"
+    }
+  ]
+}

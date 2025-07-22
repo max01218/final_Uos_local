@@ -1,0 +1,26 @@
+Disorder Name: Dementia due to prion disease
+Disorder Code: 1206955889
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dementia due to prion disease is a primary neurodegenerative disease caused by a group of spongiform encephalopathies resulting from abnormal prion protein accumulation in the brain. These can be sporadic, genetic (caused by mutations in the prion-protein gene), or transmissible (acquired from an infected individual). Onset is insidious and there is a rapid progression of symptoms and impairment characterised by cognitive deficits, ataxia, and motor symptoms (myoclonus, chorea, or dystonia). Diagnosis is typically made on the basis of brain imaging studies, presence of characteristic proteins in spinal fluid, EEG, or genetic testing.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia due to prion disease is a primary neurodegenerative disease caused by a group of spongiform encephalopathies resulting from abnormal prion protein accumulation in the brain. These can be sporadic, genetic (caused by mutations in the prion-protein gene), or transmissible (acquired from an infected individual). Onset is insidious and there is a rapid progression of symptoms and impairment characterised by cognitive deficits, ataxia, and motor symptoms (myoclonus, chorea, or dystonia). Diagnosis is typically made on the basis of brain imaging studies, presence of characteristic proteins in spinal fluid, EEG, or genetic testing.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

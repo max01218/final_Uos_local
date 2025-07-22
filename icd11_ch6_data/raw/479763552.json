@@ -1,0 +1,45 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/479763552",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/148241182"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#479763552",
+  "code": "6D86.2",
+  "source": "http://id.who.int/icd/entity/479763552",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Anxiety symptoms in dementia"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "In addition to the cognitive disturbances characteristic of dementia, the current clinical picture includes clinically significant symptoms of anxiety or worry."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anxiety or fear-related disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1336943699",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1336943699"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary anxiety syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2131412196",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2131412196"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anxiety symptoms in dementia"
+      }
+    }
+  ]
+}

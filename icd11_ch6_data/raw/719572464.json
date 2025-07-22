@@ -1,0 +1,24 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/719572464",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/310393530"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/192666265",
+    "http://id.who.int/icd/release/11/2024-01/mms/1021901799",
+    "http://id.who.int/icd/release/11/2024-01/mms/719572464/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#719572464",
+  "code": "6C91",
+  "source": "http://id.who.int/icd/entity/719572464",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Conduct-dissocial disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Conduct-dissocial disorder is characterised by a repetitive and persistent pattern of behaviour in which the basic rights of others or major age-appropriate societal norms, rules, or laws are violated such as aggression towards people or animals; destruction of property; deceitfulness or theft; and serious violations of rules. The behaviour pattern is of sufficient severity to result in significant impairment in personal, family, social, educational, occupational or other important areas of functioning. To be diagnosed, the behaviour pattern must be enduring over a significant period of time (e.g., 12 months or more). Isolated dissocial or criminal acts are thus not in themselves grounds for the diagnosis."
+  }
+}

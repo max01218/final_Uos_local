@@ -1,0 +1,26 @@
+Disorder Name: Dementia due to injury to the head
+Disorder Code: 1922851083
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dementia due to injury to the head is caused by damage inflicted on the tissues of the brain as the direct or indirect result of an external force. Trauma to the brain is known to have resulted in loss of consciousness, amnesia, disorientation and confusion, or neurological signs. The symptoms characteristic of Dementia due to injury to the head must arise immediately following the trauma or after the individual gains consciousness and must persist beyond the acute post-injury period. Cognitive deficits vary depending on the specific brain areas affected and the severity of the injury but can include impairments in attention, memory, executive functioning, personality, processing speed, social cognition, and language abilities.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dementia due to injury to the head is caused by damage inflicted on the tissues of the brain as the direct or indirect result of an external force. Trauma to the brain is known to have resulted in loss of consciousness, amnesia, disorientation and confusion, or neurological signs. The symptoms characteristic of Dementia due to injury to the head must arise immediately following the trauma or after the individual gains consciousness and must persist beyond the acute post-injury period. Cognitive deficits vary depending on the specific brain areas affected and the severity of the injury but can include impairments in attention, memory, executive functioning, personality, processing speed, social cognition, and language abilities.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

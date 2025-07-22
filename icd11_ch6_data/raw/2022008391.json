@@ -1,0 +1,39 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2022008391",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/136511187"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2084106361",
+    "http://id.who.int/icd/release/11/2024-01/mms/221504052",
+    "http://id.who.int/icd/release/11/2024-01/mms/949196336",
+    "http://id.who.int/icd/release/11/2024-01/mms/707980387",
+    "http://id.who.int/icd/release/11/2024-01/mms/2022008391/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2022008391",
+  "code": "6C4E.4",
+  "source": "http://id.who.int/icd/entity/2022008391",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2022008391/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1835736371",
+        "http://id.who.int/icd/release/11/2024-01/mms/754209924",
+        "http://id.who.int/icd/release/11/2024-01/mms/1934475925"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Other specified psychoactive substance withdrawal"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Other specified psychoactive substance withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of the specified substance in individuals who have developed dependence or have used the specified substance for a prolonged period or in large amounts. Other specified psychoactive substance withdrawal can also occur when prescribed psychoactive medications have been used in standard therapeutic doses. The specific features of the withdrawal state depend on the pharmacological properties of the specified substance."
+  }
+}

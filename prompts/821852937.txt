@@ -1,0 +1,32 @@
+Disorder Name: Attention deficit hyperactivity disorder
+Disorder Code: 821852937
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Attention deficit hyperactivity disorder is characterised by a persistent pattern (at least 6 months) of inattention and/or hyperactivity-impulsivity that has a direct negative impact on academic, occupational, or social functioning. There is evidence of significant inattention and/or hyperactivity-impulsivity symptoms prior to age 12, typically by early to mid-childhood, though some individuals may first come to clinical attention later. The degree of inattention and hyperactivity-impulsivity is outside the limits of normal variation expected for age and level of intellectual functioning. Inattention refers to significant difficulty in sustaining attention to tasks that do not provide a high level of stimulation or frequent rewards, distractibility and problems with organisation. Hyperactivity refers to excessive motor activity and difficulties with remaining still, most evident in structured situations that require behavioural self-control. Impulsivity is a tendency to act in response to immediate stimuli, without deliberation or consideration of the risks and consequences. The relative balance and the specific manifestations of inattentive and hyperactive-impulsive characteristics varies across individuals and may change over the course of development. In order for a diagnosis to be made, manifestations of inattention and/or hyperactivity-impulsivity must be evident across multiple situations or settings (e.g., home, school, work, with friends or relatives), but are likely to vary according to the structure and demands of the setting. Symptoms are not better accounted for by another mental, behavioural, or neurodevelopmental disorder and are not due to the effect of a substance or medication.
+
+Inclusions: attention deficit disorder with hyperactivity; attention deficit syndrome with hyperactivity
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Attention deficit hyperactivity disorder is characterised by a persistent pattern (at least 6 months) of inattention and/or hyperactivity-impulsivity that has a direct negative impact on academic, occupational, or social functioning. There is evidence of significant inattention and/or hyperactivity-impulsivity symptoms prior to age 12, typically by early to mid-childhood, though some individuals may first come to clinical attention later. The degree of inattention and hyperactivity-impulsivity is outside the limits of normal variation expected for age and level of intellectual functioning. Inattention refers to significant difficulty in sustaining attention to tasks that do not provide a high level of stimulation or frequent rewards, distractibility and problems with organisation. Hyperactivity refers to excessive motor activity and difficulties with remaining still, most evident in structured situations that require behavioural self-control. Impulsivity is a tendency to act in response to immediate stimuli, without deliberation or consideration of the risks and consequences. The relative balance and the specific manifestations of inattentive and hyperactive-impulsive characteristics varies across individuals and may change over the course of development. In order for a diagnosis to be made, manifestations of inattention and/or hyperactivity-impulsivity must be evident across multiple situations or settings (e.g., home, school, work, with friends or relatives), but are likely to vary according to the structure and demands of the setting. Symptoms are not better accounted for by another mental, behavioural, or neurodevelopmental disorder and are not due to the effect of a substance or medication.
+
+Included Manifestations:
+• attention deficit disorder with hyperactivity
+• attention deficit syndrome with hyperactivity
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,67 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/473001402",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1218193465"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/599461536",
+    "http://id.who.int/icd/release/11/2024-01/mms/203295904",
+    "http://id.who.int/icd/release/11/2024-01/mms/213499118",
+    "http://id.who.int/icd/release/11/2024-01/mms/1774027011",
+    "http://id.who.int/icd/release/11/2024-01/mms/473001402/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#473001402",
+  "code": "6C4C.2",
+  "source": "http://id.who.int/icd/entity/473001402",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/473001402/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1828722493",
+        "http://id.who.int/icd/release/11/2024-01/mms/1589999330",
+        "http://id.who.int/icd/release/11/2024-01/mms/1157653052"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/473001402/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1574982062",
+        "http://id.who.int/icd/release/11/2024-01/mms/1791864244"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "MDMA or related drug dependence, including MDA"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "MDMA or related drug dependence, including MDA is a disorder of regulation of MDMA or related drug use arising from repeated or continuous use of MDMA or related drugs. The characteristic feature is a strong internal drive to use MDMA or related drugs, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use MDMA or related drugs. Physiological features of dependence may also be present, including tolerance to the effects of MDMA or related drugs, withdrawal symptoms following cessation or reduction in use of MDMA or related drugs, or repeated use of MDMA or pharmacologically similar substances to prevent or alleviate withdrawal symptoms. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if MDMA or related drug use is continuous (daily or almost daily) for at least 3 months."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of MDMA or related drugs, including MDA"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1334295394",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1334295394"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of MDMA or related drugs, including MDA"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1662953838",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1662953838"
+    }
+  ]
+}

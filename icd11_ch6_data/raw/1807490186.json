@@ -1,0 +1,33 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1807490186",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/108180424"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1807490186",
+  "code": "6B62",
+  "source": "http://id.who.int/icd/entity/1807490186",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Trance disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Trance disorder is characterised by trance states in which there is a marked alteration in the individual’s state of consciousness or a loss of the individual’s customary sense of personal identity in which the individual experiences a narrowing of awareness of immediate surroundings or unusually narrow and selective focusing on environmental stimuli and restriction of movements, postures, and speech to repetition of a small repertoire that is experienced as being outside of one’s control. The trance state is not characterised by the experience of being replaced by an alternate identity. Trance episodes are recurrent or, if the diagnosis is based on a single episode, the episode has lasted for at least several days. The trance state is involuntary and unwanted and is not accepted as a part of a collective cultural or religious practice. The symptoms do not occur exclusively during another dissociative disorder and are not better explained by another mental, behavioural or neurodevelopmental disorder. The symptoms are not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, exhaustion, or to hypnagogic or hypnopompic states, and are not due to a disease of the nervous system, head trauma, or a sleep-wake disorder. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Trance disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative trance"
+      }
+    }
+  ]
+}

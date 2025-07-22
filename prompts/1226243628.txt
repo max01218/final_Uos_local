@@ -1,0 +1,31 @@
+Disorder Name: Sedative, hypnotic or anxiolytic-induced delirium
+Disorder Code: 1226243628
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Sedative, hypnotic or anxiolytic-induced delirium is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or withdrawal or during the use of sedatives, hypnotics, or anxiolytics. Specific features of Sedative, hypnotic or anxiolytic-induced delirium may include confusion and disorientation, paranoid delusions, and recurrent visual, tactile or auditory hallucinations. The amount and duration of sedative, hypnotic, or anxiolytic use must be capable of producing delirium. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from a different substance, or by another health condition that is not classified under Mental, behavioural and neurodevelopmental disorders.
+
+Inclusions: Delirium induced by sedative, hypnotic or anxiolytic withdrawal
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Sedative, hypnotic or anxiolytic-induced delirium is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or withdrawal or during the use of sedatives, hypnotics, or anxiolytics. Specific features of Sedative, hypnotic or anxiolytic-induced delirium may include confusion and disorientation, paranoid delusions, and recurrent visual, tactile or auditory hallucinations. The amount and duration of sedative, hypnotic, or anxiolytic use must be capable of producing delirium. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from a different substance, or by another health condition that is not classified under Mental, behavioural and neurodevelopmental disorders.
+
+Included Manifestations:
+• Delirium induced by sedative, hypnotic or anxiolytic withdrawal
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

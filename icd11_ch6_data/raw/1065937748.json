@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1065937748",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/989359552"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1065937748",
+  "code": "6C44.41",
+  "source": "http://id.who.int/icd/entity/1065937748",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1065937748/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1065937748/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1605607466"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Sedative, hypnotic or anxiolytic withdrawal, with perceptual disturbances"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All diagnostic requirements for Sedative, hypnotic or anxiolytic withdrawal are met and the withdrawal state is accompanied by perceptual disturbances (e.g., visual or tactile hallucinations or illusions) with intact reality testing. There is no evidence of confusion and other diagnostic requirements for Delirium are not met. The withdrawal state is not accompanied by seizures."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Sedative, hypnotic or anxiolytic withdrawal, with perceptual disturbances"
+      }
+    }
+  ]
+}

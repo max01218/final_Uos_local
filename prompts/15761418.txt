@@ -1,0 +1,26 @@
+Disorder Name: Bipolar type I disorder, currently in full remission
+Disorder Code: 15761418
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Bipolar type I disorder, currently in full remission is diagnosed when the full definitional requirements for Bipolar I disorder have been met in the past but there are no longer any significant mood symptoms.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Bipolar type I disorder, currently in full remission is diagnosed when the full definitional requirements for Bipolar I disorder have been met in the past but there are no longer any significant mood symptoms.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,63 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/314468192",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1563440232"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#314468192",
+  "code": "6A73",
+  "source": "http://id.who.int/icd/entity/314468192",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Mixed depressive and anxiety disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Mixed depressive and anxiety disorder is characterised by symptoms of both anxiety and depression more days than not for a period of two weeks or more. Depressive symptoms include depressed mood or markedly diminished interest or pleasure in activities. There are multiple anxiety symptoms, which may include feeling nervous, anxious, or on edge, not being able to control worrying thoughts, fear that something awful will happen, having trouble relaxing, muscle tension, or sympathetic autonomic symptoms. Neither set of symptoms, considered separately, is sufficiently severe, numerous, or persistent to justify a diagnosis of another depressive disorder or an anxiety or fear-related disorder. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning. There is no history of manic or mixed episodes, which would indicate the presence of a bipolar disorder."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mixed depressive and anxiety disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "anxious depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "depression with anxiety"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "anxiety disorder mixed with depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "anxiety disorder mixed with mild depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anxiety depression"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anxiety depression, mild or not persistent"
+      }
+    }
+  ]
+}

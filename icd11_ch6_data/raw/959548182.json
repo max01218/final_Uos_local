@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/959548182",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/731724655"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#959548182",
+  "code": "6B21.1",
+  "source": "http://id.who.int/icd/entity/959548182",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Body dysmorphic disorder with poor to absent insight"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements of body dysmorphic disorder are met. Most or all of the time, the individual is convinced that the disorder-specific beliefs are true and cannot accept an alternative explanation for their experience. The lack of insight exhibited by the individual does not vary markedly as a function of anxiety level."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Body dysmorphic disorder with poor to absent insight"
+      }
+    }
+  ]
+}

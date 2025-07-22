@@ -1,0 +1,31 @@
+Disorder Name: Episode of harmful use of non-psychoactive substances
+Disorder Code: 1852395328
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+An episode of use of a non-psychoactive substance that has caused damage to a person’s physical or mental health. Harm to health of the individual occurs due to direct or secondary toxic effects on body organs and systems or a harmful route of administration. This diagnosis should not be made if the harm is attributed to a known pattern of non-psychoactive substance use.
+
+Exclusions: Harmful pattern of use of non-psychoactive substances
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+An episode of use of a non-psychoactive substance that has caused damage to a person’s physical or mental health. Harm to health of the individual occurs due to direct or secondary toxic effects on body organs and systems or a harmful route of administration. This diagnosis should not be made if the harm is attributed to a known pattern of non-psychoactive substance use.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Harmful pattern of use of non-psychoactive substances
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

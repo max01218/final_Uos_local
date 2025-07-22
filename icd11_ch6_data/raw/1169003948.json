@@ -1,0 +1,119 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1169003948",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/862918022"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1169003948",
+  "code": "6A01.21",
+  "source": "http://id.who.int/icd/entity/1169003948",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Developmental language disorder with impairment of mainly expressive language"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Developmental language disorder with impairment of mainly expressive language is characterised by persistent difficulties in the acquisition, production, and use of language that arise during the developmental period, typically during early childhood, and cause significant limitations in the individual’s ability to communicate. The ability to produce and use spoken or signed language (i.e., expressive language) is markedly below the expected level given the individual’s age and level of intellectual functioning, but the ability to understand spoken or signed language (i.e., receptive language) is relatively intact."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental dysphasia or aphasia, expressive type"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acquired aphasia with epilepsy [Landau-Kleffner]"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/348544271",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/348544271"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Selective mutism"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/167946871",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/167946871"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "dysphasia and aphasia: developmental, receptive type"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/822134099",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/822134099"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "dysphasia NOS"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1705858040",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1705858040"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "aphasia NOS"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1167055901",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1167055901"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the nervous system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1296093776",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1296093776"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Deafness not otherwise specified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/947280473",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/947280473"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental language disorder with impairment of mainly expressive language"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "developmental expressive language disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental dysphasia or aphasia, expressive type"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental expressive dysphasia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1604428023"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental expressive type aphasia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/720559126"
+    }
+  ]
+}

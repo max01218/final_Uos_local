@@ -1,0 +1,61 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/795022044",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/546689346"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/199015879",
+    "http://id.who.int/icd/release/11/2024-01/mms/1855418451",
+    "http://id.who.int/icd/release/11/2024-01/mms/1543494610",
+    "http://id.who.int/icd/release/11/2024-01/mms/1072662343",
+    "http://id.who.int/icd/release/11/2024-01/mms/795022044/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#795022044",
+  "code": "6D80",
+  "source": "http://id.who.int/icd/entity/795022044",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/795022044/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/148241182"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/795022044/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/795022044/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1611724421"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Dementia due to Alzheimer disease"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dementia due to Alzheimer disease is the most common form of dementia. Onset is insidious with memory impairment typically reported as the initial presenting complaint. The characteristic course is a slow but steady decline from a previous level of cognitive functioning with impairment in additional cognitive domains (such as executive functions, attention, language, social cognition and judgment, psychomotor speed, visuoperceptual or visuospatial abilities) emerging with disease progression. Dementia due to Alzheimer disease may be accompanied by mental and behavioural symptoms such as depressed mood and apathy in the initial stages of the disease and may be accompanied by psychotic symptoms, irritability, aggression, confusion, abnormalities of gait and mobility, and seizures at later stages. Positive genetic testing, family history and gradual cognitive decline are suggestive of Dementia due to Alzheimer disease."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "This category should never be used in primary tabulation. The codes are provided for use as supplementary or additional codes when it is desired to identify the presence of dementia in diseases classified elsewhere."
+  }
+}

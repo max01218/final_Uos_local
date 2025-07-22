@@ -1,0 +1,26 @@
+Disorder Name: Disorders due to use of other specified psychoactive substances, including medications
+Disorder Code: 136511187
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of other specified psychoactive substances, including medications are characterised by the pattern and consequences of psychoactive substances that are not included among the major substance classes specifically identified. Examples include khat, antidepressants, medications with anticholinergic properties (e.g., benztropine), and some antihistamines.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of other specified psychoactive substances, including medications are characterised by the pattern and consequences of psychoactive substances that are not included among the major substance classes specifically identified. Examples include khat, antidepressants, medications with anticholinergic properties (e.g., benztropine), and some antihistamines.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

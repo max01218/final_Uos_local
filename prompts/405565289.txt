@@ -1,0 +1,26 @@
+Disorder Name: Schizophrenia or other primary psychotic disorders
+Disorder Code: 405565289
+Code Range: 6A20-6A2Z
+Class Kind: block
+
+Standard Definition:
+Schizophrenia and other primary psychotic disorders are characterised by significant impairments in reality testing and alterations in behaviour manifest in positive symptoms such as persistent delusions, persistent hallucinations, disorganised thinking (typically manifest as disorganised speech), grossly disorganised behaviour, and experiences of passivity and control, negative symptoms such as blunted or flat affect and avolition, and psychomotor disturbances. The symptoms occur with sufficient frequency and intensity to deviate from expected cultural or subcultural norms. These symptoms do not arise as a feature of another mental and behavioural disorder (e.g., a mood disorder, delirium, or a disorder due to substance use). The categories in this grouping should not be used to classify the expression of ideas, beliefs, or behaviours that are culturally sanctioned.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Schizophrenia and other primary psychotic disorders are characterised by significant impairments in reality testing and alterations in behaviour manifest in positive symptoms such as persistent delusions, persistent hallucinations, disorganised thinking (typically manifest as disorganised speech), grossly disorganised behaviour, and experiences of passivity and control, negative symptoms such as blunted or flat affect and avolition, and psychomotor disturbances. The symptoms occur with sufficient frequency and intensity to deviate from expected cultural or subcultural norms. These symptoms do not arise as a feature of another mental and behavioural disorder (e.g., a mood disorder, delirium, or a disorder due to substance use). The categories in this grouping should not be used to classify the expression of ideas, beliefs, or behaviours that are culturally sanctioned.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

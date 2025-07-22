@@ -1,0 +1,81 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/31898480",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/590211325"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/207246302",
+    "http://id.who.int/icd/release/11/2024-01/mms/1252561403",
+    "http://id.who.int/icd/release/11/2024-01/mms/1648213213",
+    "http://id.who.int/icd/release/11/2024-01/mms/1569910443",
+    "http://id.who.int/icd/release/11/2024-01/mms/1710844294",
+    "http://id.who.int/icd/release/11/2024-01/mms/31898480/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/31898480/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#31898480",
+  "code": "6C48",
+  "source": "http://id.who.int/icd/entity/31898480",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/31898480/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/334423054",
+        "http://id.who.int/icd/release/11/2024-01/mms/274880002",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/868865918",
+        "http://id.who.int/icd/release/11/2024-01/mms/1218729044",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/197934298",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757",
+        "http://id.who.int/icd/release/11/2024-01/mms/577470983",
+        "http://id.who.int/icd/release/11/2024-01/mms/714000734",
+        "http://id.who.int/icd/release/11/2024-01/mms/1306203631",
+        "http://id.who.int/icd/release/11/2024-01/mms/223744320",
+        "http://id.who.int/icd/release/11/2024-01/mms/1843895818",
+        "http://id.who.int/icd/release/11/2024-01/mms/435227771",
+        "http://id.who.int/icd/release/11/2024-01/mms/850137482",
+        "http://id.who.int/icd/release/11/2024-01/mms/1249056269",
+        "http://id.who.int/icd/release/11/2024-01/mms/1596590595"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Disorders due to use of caffeine"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorders due to use of caffeine are characterised by the pattern and consequences of caffeine use. Caffeine is a mild psychostimulant and diuretic that is found in the beans of the coffee plant (Coffea species) and is a constituent of coffee, cola drinks, chocolate, a range of proprietary 'energy drinks' and weight-loss aids. It is the most commonly used psychoactive substance worldwide and several clinical conditions related to its use are described, although severe disorders are comparatively rare considering its ubiquity. Caffeine Intoxication related to consumption of relatively higher doses (i.e., > 1 g per day) is described. Caffeine Withdrawal is common upon cessation of use among individuals who have used caffeine for a prolonged period or in large amounts. Caffeine-Induced Anxiety Disorder has been described, often following intoxication or heavy use."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disorders due to use of stimulants including amphetamines, methamphetamine or methcathinone"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1016273204",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1016273204"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hazardous use of caffeine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/656164398",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/656164398"
+    }
+  ]
+}

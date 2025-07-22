@@ -1,0 +1,67 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1771470438",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2070676103"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1771470438",
+  "code": "6C47.20",
+  "source": "http://id.who.int/icd/entity/1771470438",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1771470438/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1526280683",
+        "http://id.who.int/icd/release/11/2024-01/mms/1005846640",
+        "http://id.who.int/icd/release/11/2024-01/mms/1562167865"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1771470438/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1599283639"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Synthetic cathinone dependence, current use"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Current synthetic cathinone dependence with use of synthetic cathinones within the past month."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of synthetic cathinones"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1563509056",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1563509056"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of synthetic cathinones"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2057206901",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2057206901"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cathinone dependence, current use"
+      }
+    }
+  ]
+}

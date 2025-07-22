@@ -1,0 +1,34 @@
+Disorder Name: Stimulant dependence including amphetamines, methamphetamine or methcathinone
+Disorder Code: 2016549355
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Stimulant dependence including amphetamines, methamphetamine or methcathinone is a disorder of regulation of stimulant use arising from repeated or continuous use of stimulants. The characteristic feature is a strong internal drive to use stimulants, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use stimulants. Physiological features of dependence may also be present, including tolerance to the effects of stimulants, withdrawal symptoms following cessation or reduction in use of stimulants, or repeated use of stimulants or pharmacologically similar substances to prevent or alleviate withdrawal symptoms. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if stimulant use is continuous (daily or almost daily) for at least 3 months.
+
+Exclusions: Cocaine dependence; Synthetic cathinone dependence; Episode of harmful use of stimulants including amphetamines, methamphetamine or methcathinone; Harmful pattern of use of stimulants including amphetamines, methamphetamine or methcathinone
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Stimulant dependence including amphetamines, methamphetamine or methcathinone is a disorder of regulation of stimulant use arising from repeated or continuous use of stimulants. The characteristic feature is a strong internal drive to use stimulants, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use stimulants. Physiological features of dependence may also be present, including tolerance to the effects of stimulants, withdrawal symptoms following cessation or reduction in use of stimulants, or repeated use of stimulants or pharmacologically similar substances to prevent or alleviate withdrawal symptoms. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if stimulant use is continuous (daily or almost daily) for at least 3 months.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Cocaine dependence
+• Should be differentiated from: Synthetic cathinone dependence
+• Should be differentiated from: Episode of harmful use of stimulants including amphetamines, methamphetamine or methcathinone
+• Should be differentiated from: Harmful pattern of use of stimulants including amphetamines, methamphetamine or methcathinone
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

@@ -1,0 +1,31 @@
+Disorder Name: Disorders due to use of opioids
+Disorder Code: 111507461
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of opioids are characterised by the pattern and consequences of opioid use. Opioids is a generic term that encompasses the constituents or derivatives of the opium poppy Papaver somniferum as well as a range of synthetic and semisynthetic compounds, some related to morphine and others chemically distinct but all having their primary actions on the µ opioid receptor. Examples of opioids include morphine, diacetylmorphine (heroin), fentanyl, pethidine, oxycodone, hydromorphone, methadone, buprenorphine, codeine and d-propoxyphene. The opioids all have analgesic properties of different potencies and are primarily central nervous system depressants. They suppress respiration as well as other vital functions and are a common cause of overdose and related deaths. Certain opioids are used or administered parenterally, including heroin, a common and potent opioid that is primarily used non-medically. Therapeutic opioids are prescribed for a range of indications worldwide, and are essential for pain management in cancer pain and palliative care, although they are also used for non-therapeutic reasons. In some countries morbidity and mortality related to therapeutic opioids is greater than that related to heroin. All opioids may result in Opioid Intoxication, Opioid Dependence and Opioid Withdrawal. A range of Opioid-Induced Disorders occur, some of which occur following Opioid Withdrawal.
+
+Exclusions: Hazardous use of opioids
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of opioids are characterised by the pattern and consequences of opioid use. Opioids is a generic term that encompasses the constituents or derivatives of the opium poppy Papaver somniferum as well as a range of synthetic and semisynthetic compounds, some related to morphine and others chemically distinct but all having their primary actions on the µ opioid receptor. Examples of opioids include morphine, diacetylmorphine (heroin), fentanyl, pethidine, oxycodone, hydromorphone, methadone, buprenorphine, codeine and d-propoxyphene. The opioids all have analgesic properties of different potencies and are primarily central nervous system depressants. They suppress respiration as well as other vital functions and are a common cause of overdose and related deaths. Certain opioids are used or administered parenterally, including heroin, a common and potent opioid that is primarily used non-medically. Therapeutic opioids are prescribed for a range of indications worldwide, and are essential for pain management in cancer pain and palliative care, although they are also used for non-therapeutic reasons. In some countries morbidity and mortality related to therapeutic opioids is greater than that related to heroin. All opioids may result in Opioid Intoxication, Opioid Dependence and Opioid Withdrawal. A range of Opioid-Induced Disorders occur, some of which occur following Opioid Withdrawal.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Hazardous use of opioids
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

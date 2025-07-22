@@ -1,0 +1,68 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/226414625",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/769299330"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#226414625",
+  "code": "6C40.60",
+  "source": "http://id.who.int/icd/entity/226414625",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/226414625/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1339202943",
+        "http://id.who.int/icd/release/11/2024-01/mms/998231424"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/226414625/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/766814084",
+        "http://id.who.int/icd/release/11/2024-01/mms/714690795",
+        "http://id.who.int/icd/release/11/2024-01/mms/1580466198"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Alcohol-induced psychotic disorder with hallucinations"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Alcohol-induced psychotic disorder with hallucinations is characterised by the presence of hallucinations that are judged to be the direct consequence of alcohol use. Neither delusions nor other psychotic symptoms are present. The symptoms do not occur exclusively during hypnogogic or hypnopompic states, are not better accounted for by another mental and behavioural disorder (e.g., schizophrenia), and are not due to another disorder or disease classified elsewhere (e.g., epilepsies with visual symptoms)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Alcohol-induced psychotic disorder with hallucinations"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "acute alcoholic hallucinosis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "alcohol hallucinosis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "alcoholic psychosis with hallucinosis"
+      }
+    }
+  ]
+}

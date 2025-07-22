@@ -1,0 +1,66 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1835610951",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/590211325"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/893652479",
+    "http://id.who.int/icd/release/11/2024-01/mms/1600451095",
+    "http://id.who.int/icd/release/11/2024-01/mms/734634730",
+    "http://id.who.int/icd/release/11/2024-01/mms/976174979",
+    "http://id.who.int/icd/release/11/2024-01/mms/1317171068",
+    "http://id.who.int/icd/release/11/2024-01/mms/1030552808",
+    "http://id.who.int/icd/release/11/2024-01/mms/1478963582",
+    "http://id.who.int/icd/release/11/2024-01/mms/1416233126",
+    "http://id.who.int/icd/release/11/2024-01/mms/1835610951/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1835610951/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1835610951",
+  "code": "6C4B",
+  "source": "http://id.who.int/icd/entity/1835610951",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1835610951/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/334423054",
+        "http://id.who.int/icd/release/11/2024-01/mms/274880002",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/868865918",
+        "http://id.who.int/icd/release/11/2024-01/mms/1218729044",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/197934298",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757",
+        "http://id.who.int/icd/release/11/2024-01/mms/577470983",
+        "http://id.who.int/icd/release/11/2024-01/mms/714000734",
+        "http://id.who.int/icd/release/11/2024-01/mms/1306203631",
+        "http://id.who.int/icd/release/11/2024-01/mms/223744320",
+        "http://id.who.int/icd/release/11/2024-01/mms/1843895818",
+        "http://id.who.int/icd/release/11/2024-01/mms/435227771",
+        "http://id.who.int/icd/release/11/2024-01/mms/850137482",
+        "http://id.who.int/icd/release/11/2024-01/mms/1249056269",
+        "http://id.who.int/icd/release/11/2024-01/mms/1596590595"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Disorders due to use of volatile inhalants"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorders due to use of volatile inhalants are characterised by the pattern and consequences of volatile inhalant use. Volatile inhalants include a range of compounds that are in the gaseous or vapour phase at ambient temperatures and include various organic solvents, glues, gasoline (petrol), nitrites and gases such as nitrous oxide, trichloroethane, butane, toluene, fluorocarbons, ether and halothane. They have a range of pharmacological properties but are predominantly central nervous system depressants, with many also having vasoactive effects. They tend to be used by younger persons and may be used when access to alternative psychoactive substances is difficult or impossible. Volatile Inhalant Intoxication is well recognized. Volatile inhalants have dependence-producing properties and Volatile Inhalant Dependence and Volatile Inhalant Withdrawal is recognized although comparatively uncommon worldwide. Volatile Inhalant-Induced Mental Disorders are described. They may also cause neurocognitive impairment, including Dementia."
+  }
+}

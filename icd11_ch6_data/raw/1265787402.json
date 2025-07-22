@@ -1,0 +1,58 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1265787402",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1967909777"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/162562386",
+    "http://id.who.int/icd/release/11/2024-01/mms/1245150953"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1265787402",
+  "code": "6C49.6",
+  "source": "http://id.who.int/icd/entity/1265787402",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1265787402/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/661865379"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1265787402/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1750279358"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1265787402/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1995632461",
+        "http://id.who.int/icd/release/11/2024-01/mms/219736364",
+        "http://id.who.int/icd/release/11/2024-01/mms/2041952725"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Certain specified hallucinogen-induced mental or behavioural disorders"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain specified hallucinogen-induced mental or behavioural disorders"
+      }
+    }
+  ]
+}

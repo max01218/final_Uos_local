@@ -1,0 +1,31 @@
+Disorder Name: Developmental learning disorder
+Disorder Code: 2099676649
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Developmental learning disorder is characterised by significant and persistent difficulties in learning academic skills, which may include reading, writing, or arithmetic. The individual’s performance in the affected academic skill(s) is markedly below what would be expected for chronological age and general level of intellectual functioning, and results in significant impairment in the individual’s academic or occupational functioning. Developmental learning disorder first manifests when academic skills are taught during the early school years. Developmental learning disorder is not due to a disorder of intellectual development, sensory impairment (vision or hearing), neurological or motor disorder, lack of availability of education, lack of proficiency in the language of academic instruction, or psychosocial adversity.
+
+Exclusions: Symbolic dysfunctions
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Developmental learning disorder is characterised by significant and persistent difficulties in learning academic skills, which may include reading, writing, or arithmetic. The individual’s performance in the affected academic skill(s) is markedly below what would be expected for chronological age and general level of intellectual functioning, and results in significant impairment in the individual’s academic or occupational functioning. Developmental learning disorder first manifests when academic skills are taught during the early school years. Developmental learning disorder is not due to a disorder of intellectual development, sensory impairment (vision or hearing), neurological or motor disorder, lack of availability of education, lack of proficiency in the language of academic instruction, or psychosocial adversity.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Symbolic dysfunctions
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

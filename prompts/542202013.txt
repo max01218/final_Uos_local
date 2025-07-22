@@ -1,0 +1,26 @@
+Disorder Name: Attention deficit hyperactivity disorder, combined presentation
+Disorder Code: 542202013
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements for attention deficit hyperactivity disorder are met. Both inattentive and hyperactive-impulsive symptoms are clinically significant, with neither predominating in the clinical presentation. Inattention refers to significant difficulty in sustaining attention to tasks that do not provide a high level of stimulation or frequent rewards, distractibility and problems with organisation. Hyperactivity refers to excessive motor activity and difficulties with remaining still, most evident in structured situations that require behavioural self-control. Impulsivity is a tendency to act in response to immediate stimuli, without deliberation or consideration of the risks and consequences.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements for attention deficit hyperactivity disorder are met. Both inattentive and hyperactive-impulsive symptoms are clinically significant, with neither predominating in the clinical presentation. Inattention refers to significant difficulty in sustaining attention to tasks that do not provide a high level of stimulation or frequent rewards, distractibility and problems with organisation. Hyperactivity refers to excessive motor activity and difficulties with remaining still, most evident in structured situations that require behavioural self-control. Impulsivity is a tendency to act in response to immediate stimuli, without deliberation or consideration of the risks and consequences.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

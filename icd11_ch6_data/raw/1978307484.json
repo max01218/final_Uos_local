@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1978307484",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/597251719"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1978307484",
+  "code": "6C41.71",
+  "source": "http://id.who.int/icd/entity/1978307484",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1978307484/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1387132352",
+        "http://id.who.int/icd/release/11/2024-01/mms/637576511"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1978307484/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/854520906",
+        "http://id.who.int/icd/release/11/2024-01/mms/937834582",
+        "http://id.who.int/icd/release/11/2024-01/mms/1129015467"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Cannabis-induced anxiety disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Cannabis-induced anxiety disorder is characterised by anxiety symptoms (e.g., apprehension or worry, fear, physiological symptoms of excessive autonomic arousal, avoidance behaviour) that develop during or soon after intoxication with or withdrawal from cannabis. The intensity or duration of the symptoms is substantially in excess of anxiety symptoms that are characteristic of Cannabis intoxication or Cannabis withdrawal. The amount and duration of cannabis use must be capable of producing anxiety symptoms. The symptoms are not better explained by a primary mental disorder (e.g., an Anxiety and Fear-Related Disorder, a Depressive Disorder with prominent anxiety symptoms), as might be the case if the anxiety symptoms preceded the onset of the cannabis use, if the symptoms persist for a substantial period of time after cessation of the cannabis use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with anxiety symptoms (e.g., a history of prior episodes not associated with cannabis use)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cannabis-induced anxiety disorder"
+      }
+    }
+  ]
+}

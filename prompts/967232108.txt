@@ -1,0 +1,26 @@
+Disorder Name: Dissociative neurological symptom disorder, with Parkinsonism
+Disorder Code: 967232108
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dissociative neurological symptom disorder, with Parkinsonism is characterised by a symptomatic presentation of a Parkinson-like syndrome in the absence of confirmed Parkinson disease that does not occur exclusively during another mental, behavioural or neurodevelopmental disorder, other medical condition, or another dissociative disorder. Dissociative neurological symptom disorder, with Parkinsonism can be distinguished from Parkinson disease by features such as abrupt onset, early disability, bilateral shaking and slowness, nondecremental slowness when performing repetitive movements, voluntary resistance against passive movement without cogwheel rigidity, distractability, ‘give-way’ weakness, stuttering speech, bizarre gait, and a variety of behavioural symptoms.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dissociative neurological symptom disorder, with Parkinsonism is characterised by a symptomatic presentation of a Parkinson-like syndrome in the absence of confirmed Parkinson disease that does not occur exclusively during another mental, behavioural or neurodevelopmental disorder, other medical condition, or another dissociative disorder. Dissociative neurological symptom disorder, with Parkinsonism can be distinguished from Parkinson disease by features such as abrupt onset, early disability, bilateral shaking and slowness, nondecremental slowness when performing repetitive movements, voluntary resistance against passive movement without cogwheel rigidity, distractability, ‘give-way’ weakness, stuttering speech, bizarre gait, and a variety of behavioural symptoms.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

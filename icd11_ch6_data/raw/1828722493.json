@@ -1,0 +1,75 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1828722493",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1218193465"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1828722493",
+  "code": "6C4C.5",
+  "source": "http://id.who.int/icd/entity/1828722493",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1828722493/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1692885212",
+        "http://id.who.int/icd/release/11/2024-01/mms/342215505",
+        "http://id.who.int/icd/release/11/2024-01/mms/1327107148",
+        "http://id.who.int/icd/release/11/2024-01/mms/1153016464",
+        "http://id.who.int/icd/release/11/2024-01/mms/2102840295",
+        "http://id.who.int/icd/release/11/2024-01/mms/321833104",
+        "http://id.who.int/icd/release/11/2024-01/mms/171496389",
+        "http://id.who.int/icd/release/11/2024-01/mms/565097819",
+        "http://id.who.int/icd/release/11/2024-01/mms/1211762077",
+        "http://id.who.int/icd/release/11/2024-01/mms/1361845976",
+        "http://id.who.int/icd/release/11/2024-01/mms/868004030"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1828722493/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1574982062",
+        "http://id.who.int/icd/release/11/2024-01/mms/1791864244"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1828722493/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1334295394",
+        "http://id.who.int/icd/release/11/2024-01/mms/1334295394",
+        "http://id.who.int/icd/release/11/2024-01/mms/473001402"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "MDMA or related drug-induced delirium, including MDA"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "MDMA or related drug-induced delirium, including MDA is characterised by an acute state of disturbed attention and awareness with specific features of delirium that develops during or soon after substance intoxication or during the use of MDMA or related drugs. The amount and duration of MDMA or related drug use must be capable of producing delirium. The symptoms are not better explained by a primary mental disorder, by use of or withdrawal from a different substance, or by another health condition that is not classified under Mental, behavioural and neurodevelopmental disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "MDMA or related drug-induced delirium, including MDA"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Ecstasy or related drug-induced delirium agree"
+      }
+    }
+  ]
+}

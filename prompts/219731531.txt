@@ -1,0 +1,26 @@
+Disorder Name: Withdrawal due to unknown or unspecified psychoactive substance
+Disorder Code: 219731531
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Withdrawal due to unknown or unspecified psychoactive substance is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of an unknown or unspecified substance in individuals who have developed dependence or have used the unknown or unspecified substance for a prolonged period or in large amounts. Withdrawal due to unknown or unspecified psychoactive substance can also occur when prescribed psychoactive medications have been used in standard therapeutic doses. The specific features of the withdrawal state depend on the pharmacological properties of the unknown or unspecified substance.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Withdrawal due to unknown or unspecified psychoactive substance is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of an unknown or unspecified substance in individuals who have developed dependence or have used the unknown or unspecified substance for a prolonged period or in large amounts. Withdrawal due to unknown or unspecified psychoactive substance can also occur when prescribed psychoactive medications have been used in standard therapeutic doses. The specific features of the withdrawal state depend on the pharmacological properties of the unknown or unspecified substance.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

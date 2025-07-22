@@ -1,0 +1,50 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/731724655",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1321276661"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1674048969",
+    "http://id.who.int/icd/release/11/2024-01/mms/959548182",
+    "http://id.who.int/icd/release/11/2024-01/mms/731724655/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#731724655",
+  "code": "6B21",
+  "source": "http://id.who.int/icd/entity/731724655",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Body dysmorphic disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Body Dysmorphic Disorder is characterised by persistent preoccupation with one or more perceived defects or flaws in appearance that are either unnoticeable or only slightly noticeable to others. Individuals experience excessive self-consciousness, often with ideas of reference (i.e., the conviction that people are taking notice, judging, or talking about the perceived defect or flaw). In response to their preoccupation, individuals engage in repetitive and excessive behaviours that include repeated examination of the appearance or severity of the perceived defect or flaw, excessive attempts to camouflage or alter the perceived defect, or marked avoidance of social situations or triggers that increase distress about the perceived defect or flaw. The symptoms are sufficiently severe to result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anorexia Nervosa"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/263852475",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/263852475"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bodily distress disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/767044268",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/767044268"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Concern about body appearance"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1100199287",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1100199287"
+    }
+  ]
+}

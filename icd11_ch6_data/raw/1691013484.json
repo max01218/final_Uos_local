@@ -1,0 +1,67 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1691013484",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1689089786"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1870512253",
+    "http://id.who.int/icd/release/11/2024-01/mms/1347425045",
+    "http://id.who.int/icd/release/11/2024-01/mms/1424852267",
+    "http://id.who.int/icd/release/11/2024-01/mms/909638838",
+    "http://id.who.int/icd/release/11/2024-01/mms/1691013484/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1691013484",
+  "code": "6C45.2",
+  "source": "http://id.who.int/icd/entity/1691013484",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1691013484/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1919913834",
+        "http://id.who.int/icd/release/11/2024-01/mms/388252416",
+        "http://id.who.int/icd/release/11/2024-01/mms/1081029366"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1691013484/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1965837313",
+        "http://id.who.int/icd/release/11/2024-01/mms/25238782"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Cocaine dependence"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Cocaine dependence is a disorder of regulation of cocaine use arising from repeated or continuous use of cocaine. The characteristic feature is a strong internal drive to use cocaine, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use cocaine. Physiological features of dependence may also be present, including tolerance to the effects of cocaine, withdrawal symptoms following cessation or reduction in use of cocaine, or repeated use of cocaine or pharmacologically similar substances to prevent or alleviate withdrawal symptoms. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if cocaine use is continuous (daily or almost daily) for at least 3 months."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of cocaine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/318767128",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/318767128"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of cocaine"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/275218837",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/275218837"
+    }
+  ]
+}

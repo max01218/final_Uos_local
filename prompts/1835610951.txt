@@ -1,0 +1,26 @@
+Disorder Name: Disorders due to use of volatile inhalants
+Disorder Code: 1835610951
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Disorders due to use of volatile inhalants are characterised by the pattern and consequences of volatile inhalant use. Volatile inhalants include a range of compounds that are in the gaseous or vapour phase at ambient temperatures and include various organic solvents, glues, gasoline (petrol), nitrites and gases such as nitrous oxide, trichloroethane, butane, toluene, fluorocarbons, ether and halothane. They have a range of pharmacological properties but are predominantly central nervous system depressants, with many also having vasoactive effects. They tend to be used by younger persons and may be used when access to alternative psychoactive substances is difficult or impossible. Volatile Inhalant Intoxication is well recognized. Volatile inhalants have dependence-producing properties and Volatile Inhalant Dependence and Volatile Inhalant Withdrawal is recognized although comparatively uncommon worldwide. Volatile Inhalant-Induced Mental Disorders are described. They may also cause neurocognitive impairment, including Dementia.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to use of volatile inhalants are characterised by the pattern and consequences of volatile inhalant use. Volatile inhalants include a range of compounds that are in the gaseous or vapour phase at ambient temperatures and include various organic solvents, glues, gasoline (petrol), nitrites and gases such as nitrous oxide, trichloroethane, butane, toluene, fluorocarbons, ether and halothane. They have a range of pharmacological properties but are predominantly central nervous system depressants, with many also having vasoactive effects. They tend to be used by younger persons and may be used when access to alternative psychoactive substances is difficult or impossible. Volatile Inhalant Intoxication is well recognized. Volatile inhalants have dependence-producing properties and Volatile Inhalant Dependence and Volatile Inhalant Withdrawal is recognized although comparatively uncommon worldwide. Volatile Inhalant-Induced Mental Disorders are described. They may also cause neurocognitive impairment, including Dementia.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

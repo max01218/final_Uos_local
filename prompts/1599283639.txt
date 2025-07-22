@@ -1,0 +1,26 @@
+Disorder Name: Synthetic cathinone intoxication
+Disorder Code: 1599283639
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Synthetic cathinone intoxication is a clinically significant transient condition that develops during or shortly after the consumption of synthetic cathinones that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of synthetic cathinones and their intensity is closely related to the amount of synthetic cathinones consumed. They are time-limited and abate as the synthetic cathinone is cleared from the body. Presenting features may include anxiety, anger, impaired attention, hypervigilance, psychomotor agitation, paranoid ideation (possibly of delusional intensity), transient auditory hallucinations, transitory confusion, and changes in sociability. Perspiration or chills, nausea or vomiting, and palpitations may be experienced. Physical signs may include tachycardia, elevated blood pressure, pupillary dilatation, dyskinesias and dystonias, and skin sores. In rare instances, usually in severe intoxication, use of synthetic cathinones can result in seizures.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Synthetic cathinone intoxication is a clinically significant transient condition that develops during or shortly after the consumption of synthetic cathinones that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of synthetic cathinones and their intensity is closely related to the amount of synthetic cathinones consumed. They are time-limited and abate as the synthetic cathinone is cleared from the body. Presenting features may include anxiety, anger, impaired attention, hypervigilance, psychomotor agitation, paranoid ideation (possibly of delusional intensity), transient auditory hallucinations, transitory confusion, and changes in sociability. Perspiration or chills, nausea or vomiting, and palpitations may be experienced. Physical signs may include tachycardia, elevated blood pressure, pupillary dilatation, dyskinesias and dystonias, and skin sores. In rare instances, usually in severe intoxication, use of synthetic cathinones can result in seizures.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

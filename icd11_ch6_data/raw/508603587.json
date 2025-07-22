@@ -1,0 +1,51 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/508603587",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/804833492"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#508603587",
+  "code": "6C42.3",
+  "source": "http://id.who.int/icd/entity/508603587",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/508603587/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/508603587/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/912934263",
+        "http://id.who.int/icd/release/11/2024-01/mms/1055626783",
+        "http://id.who.int/icd/release/11/2024-01/mms/686500513"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Synthetic cannabinoid intoxication"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Synthetic cannabinoid intoxication is a clinically significant transient condition that develops during or shortly after the consumption of synthetic cannabinoids that is characterised by disturbances in consciousness, cognition, perception, affect, behaviour, or coordination. These disturbances are caused by the known pharmacological effects of synthetic cannabinoids and their intensity is closely related to the amount of synthetic cannabinoid consumed. They are time-limited and abate as synthetic cannabinoid is cleared from the body. Presenting features may include inappropriate euphoria, impaired attention, impaired judgment, perceptual alterations (such as the sensation of floating, altered perception of time), changes in sociability, increased appetite, anxiety, intensification of ordinary experiences, impaired short-term memory, and sluggishness. Physical signs include conjunctival injection (red or bloodshot eyes) and tachycardia. Intoxication with synthetic cannabinoids may also cause delirium or acute psychosis."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Synthetic cannabinoid intoxication"
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+Disorder Name: Panic attacks in mood episodes
+Disorder Code: 1383708356
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+In the context of a current mood episode (manic, depressive, mixed, or hypomanic), there have been recurrent panic attacks (i.e., at least two) during the past month that occur specifically in response to anxiety-provoking cognitions that are features of the mood episode. If panic attacks occur exclusively in response to such thoughts, panic attacks should be recorded using this qualifier rather than assigning an additional co-occurring diagnosis of panic disorder.
+
+If some panic attacks over the course of the depressive or mixed episode have been unexpected and not exclusively in response to depressive or anxiety-provoking thoughts, a separate diagnosis of panic disorder should be assigned.
+
+Exclusions: Panic disorder
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+In the context of a current mood episode (manic, depressive, mixed, or hypomanic), there have been recurrent panic attacks (i.e., at least two) during the past month that occur specifically in response to anxiety-provoking cognitions that are features of the mood episode. If panic attacks occur exclusively in response to such thoughts, panic attacks should be recorded using this qualifier rather than assigning an additional co-occurring diagnosis of panic disorder.
+
+If some panic attacks over the course of the depressive or mixed episode have been unexpected and not exclusively in response to depressive or anxiety-provoking thoughts, a separate diagnosis of panic disorder should be assigned.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Panic disorder
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

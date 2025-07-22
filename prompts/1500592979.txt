@@ -1,0 +1,33 @@
+Disorder Name: Stimulant-induced psychotic disorder including amphetamines, methamphetamine or methcathinone with hallucinations
+Disorder Code: 1500592979
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Stimulant-induced psychotic disorder with hallucinations is characterised by the presence of hallucinations that are judged to be the direct consequence of stimulant use. Neither delusions nor other psychotic symptoms are present. The symptoms do not occur exclusively during hypnogogic or hypnopompic states, are not better accounted for by another mental and behavioural disorder (e.g., schizophrenia), and are not due to another disorder or disease classified elsewhere (e.g., epilepsies with visual symptoms).
+
+Exclusions: Cocaine-induced psychotic disorder with hallucinations; Disorders due to use of caffeine; Synthetic cathinone-induced psychotic disorder with hallucinations
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Stimulant-induced psychotic disorder with hallucinations is characterised by the presence of hallucinations that are judged to be the direct consequence of stimulant use. Neither delusions nor other psychotic symptoms are present. The symptoms do not occur exclusively during hypnogogic or hypnopompic states, are not better accounted for by another mental and behavioural disorder (e.g., schizophrenia), and are not due to another disorder or disease classified elsewhere (e.g., epilepsies with visual symptoms).
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Cocaine-induced psychotic disorder with hallucinations
+• Should be differentiated from: Disorders due to use of caffeine
+• Should be differentiated from: Synthetic cathinone-induced psychotic disorder with hallucinations
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

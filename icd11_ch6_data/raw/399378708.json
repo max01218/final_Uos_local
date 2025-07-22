@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/399378708",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1111628448"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#399378708",
+  "code": "6A06.0",
+  "source": "http://id.who.int/icd/entity/399378708",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Stereotyped movement disorder without self-injury"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "This category should be applied to forms of Stereotyped movement disorder in which stereotyped behaviours markedly interfere with normal activities, but do not result in self-inflicted bodily injury. Stereotyped movement disorder without self-injury is characterised by voluntary, repetitive, stereotyped, apparently purposeless (and often rhythmic) movements that arise during the early developmental period, are not caused by the direct physiological effects of a substance or medication (including withdrawal), and markedly interfere with normal activities. Stereotyped movements that are non-injurious can include body rocking, head rocking, finger-flicking mannerisms, and hand flapping."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Stereotyped movement disorder without self-injury"
+      }
+    }
+  ]
+}

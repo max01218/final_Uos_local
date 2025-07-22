@@ -1,0 +1,265 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/729639831",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/199053300"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#729639831",
+  "code": "6A61.0",
+  "source": "http://id.who.int/icd/entity/729639831",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/729639831/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1119039346",
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798",
+        "http://id.who.int/icd/release/11/2024-01/mms/567063364",
+        "http://id.who.int/icd/release/11/2024-01/mms/1124422593"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder, current episode hypomanic"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder, current episode hypomanic is diagnosed when the definitional requirements for Bipolar type II disorder have been met and the current episode is hypomanic. A hypomanic episode is a persistent mood state lasting at least several days characterised by mild elevation of mood or increased irritability and increased activity or a subjective experience of increased energy, accompanied by other characteristic symptoms such as rapid speech, rapid or racing thoughts, increased self-esteem, an increase in sexual drive or sociability, decreased need for sleep, distractibility, or impulsive or reckless behaviour. The symptoms are not severe enough to cause marked impairment in occupational functioning or in usual social activities or relationships with others, does not necessitate hospitalization, and there are no accompanying delusions or hallucinations."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/489432052"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1660090491"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1408178753"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1232360409"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/917145686"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms and melancholia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1228282681"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/106289572"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/679043678"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/162404816"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with melancholia and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1594078652"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with melancholia and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1068400401"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1598160218"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1104175024"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2134277624"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/534380467"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms, melancholia, and seasonal pattern"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1527340744"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptom, melancholia, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/618104135"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms and melancholia, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2057072036"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms and seasonal pattern and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/462511137"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1682933680"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1954881050"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1466073281"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with melancholia and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/153708580"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with melancholia and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/936331884"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with seasonal pattern and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/402293288"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/120593310"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2028912657"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms, melancholia, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1240670763"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms, melancholia, and seasonal pattern, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/346241198"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1803412257"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, with prominent anxiety symptoms, melancholia, seasonal pattern, and rapid cycling, current episode perinatal"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/350318672"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, current episode hypomanic, additional symptoms unspecified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1535292117"
+    }
+  ]
+}

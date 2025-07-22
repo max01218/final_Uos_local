@@ -1,0 +1,67 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/74269862",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/341458101"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#74269862",
+  "code": "6C4G.10",
+  "source": "http://id.who.int/icd/entity/74269862",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/74269862/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/131545543",
+        "http://id.who.int/icd/release/11/2024-01/mms/1155529213",
+        "http://id.who.int/icd/release/11/2024-01/mms/595694101"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/74269862/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1870346724"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Harmful pattern of use of unknown or unspecified psychoactive substance, episodic"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A pattern of episodic or intermittent use of an unknown or unspecified psychoactive substance that has caused damage to a person’s physical or mental health or has resulted in behaviour leading to harm to the health of others. The pattern of episodic substance use is evident over a period of at least 12 months. Harm to health of the individual occurs due to one or more of the following: (1) behaviour related to intoxication; (2) direct or secondary toxic effects on body organs and systems; or (3) a harmful route of administration. Harm to health of others includes any form of physical harm, including trauma, or mental disorder that is directly attributable to behaviour related to substance intoxication on the part of the person to whom the diagnosis of Harmful pattern of use of unknown or unspecified psychoactive substance applies."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of unknown or unspecified psychoactive substances"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/272358857",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/272358857"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Unknown or unspecified psychoactive substance dependence"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2143971168",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2143971168"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of unknown or unspecified psychoactive substance, episodic"
+      }
+    }
+  ]
+}

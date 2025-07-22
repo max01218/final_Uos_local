@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/528060023",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/313374467"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#528060023",
+  "code": "6C01.0",
+  "source": "http://id.who.int/icd/entity/528060023",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Encopresis with constipation or overflow incontinence"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Encopresis is the repeated passage of faeces in inappropriate places occurring repeatedly (e.g., at least once per month over a period of several months) in an individual who has reached the developmental age when faecal continence is ordinarily expected (4 years). The faecal incontinence may have been present from birth (i.e., an atypical extension of normal infantile incontinence), or may have arisen following a period of acquired bowel control. Encopresis with constipation and overflow incontinence is the most common form of faecal soiling, and involves retention and impaction of faeces. Stools are typically — but not always — poorly formed (loose or liquid) and leakage may range from occasional to continuous. There is often a history of toilet avoidance leading to constipation."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Encopresis with constipation or overflow incontinence"
+      }
+    }
+  ]
+}

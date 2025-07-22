@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1121638993",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/767044268"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1121638993",
+  "code": "6C20.2",
+  "source": "http://id.who.int/icd/entity/1121638993",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Severe bodily distress disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements of Bodily distress disorder are present. There is pervasive and persistent preoccupation with the symptoms and their consequences to the extent that these may become the focal point of the person’s life, typically resulting in extensive interactions with the health care system. The symptoms and associated distress and preoccupation cause serious impairment in personal, family, social, educational, occupational, or other important areas of functioning (e.g., unable to work, alienation of friends and family, abandonment of nearly all social and leisure activities). The person’s interests may become so narrow as to focus almost exclusively on his or her bodily symptoms and their negative consequences."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Severe bodily distress disorder"
+      }
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/989359552",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/390325614"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/405069624",
+    "http://id.who.int/icd/release/11/2024-01/mms/1065937748",
+    "http://id.who.int/icd/release/11/2024-01/mms/1298868599",
+    "http://id.who.int/icd/release/11/2024-01/mms/1087947331",
+    "http://id.who.int/icd/release/11/2024-01/mms/989359552/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#989359552",
+  "code": "6C44.4",
+  "source": "http://id.who.int/icd/entity/989359552",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/989359552/postcoordinationScale/medication",
+      "axisName": "http://id.who.int/icd/schema/medication",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1880792884",
+        "http://id.who.int/icd/release/11/2024-01/mms/881358505",
+        "http://id.who.int/icd/release/11/2024-01/mms/315390786"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/989359552/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/989359552/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1605607466"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Sedative, hypnotic or anxiolytic withdrawal"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Sedative, hypnotic or anxiolytic withdrawal is a clinically significant cluster of symptoms, behaviours and/or physiological features, varying in degree of severity and duration, that occurs upon cessation or reduction of use of sedatives, hypnotics or anxiolytics in individuals who have developed dependence or have used sedatives, hypnotics or anxiolytics for a prolonged period or in large amounts. Sedative, hypnotic or anxiolytic withdrawal can also occur when prescribed sedatives, hypnotics or anxiolytics have been used in standard therapeutic doses. Presenting features of Sedative, hypnotic or anxiolytic withdrawal may include anxiety, psychomotor agitation, insomnia, increased hand tremor, nausea or vomiting, and transient visual, tactile or auditory illusions or hallucinations. There may be signs of autonomic hyperactivity (e.g., tachycardia, hypertension, sweating), or postural hypotension. The withdrawal state may be complicated by seizures. Less commonly, there may be progression to a more severe withdrawal state characterised by confusion and disorientation, delusions, and more prolonged visual, tactile or auditory hallucinations. In such cases, a separate diagnosis of Sedative, hypnotic, or anxiolytic-induced delirium should be assigned."
+  }
+}

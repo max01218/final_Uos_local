@@ -1,0 +1,66 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2041952725",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1967909777"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/847208228",
+    "http://id.who.int/icd/release/11/2024-01/mms/585026718",
+    "http://id.who.int/icd/release/11/2024-01/mms/644045474",
+    "http://id.who.int/icd/release/11/2024-01/mms/655301620",
+    "http://id.who.int/icd/release/11/2024-01/mms/2041952725/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2041952725",
+  "code": "6C49.2",
+  "source": "http://id.who.int/icd/entity/2041952725",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2041952725/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1863378901",
+        "http://id.who.int/icd/release/11/2024-01/mms/173746753",
+        "http://id.who.int/icd/release/11/2024-01/mms/1265787402"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2041952725/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1750279358"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Hallucinogen dependence"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Hallucinogen dependence is a disorder of regulation of hallucinogen use arising from repeated or continuous use of hallucinogens. The characteristic feature is a strong internal drive to use hallucinogens, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use hallucinogens. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if hallucinogens use is continuous (daily or almost daily) for at least 3 months."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of hallucinogens"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1995632461",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1995632461"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of hallucinogens"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/219736364",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/219736364"
+    }
+  ]
+}

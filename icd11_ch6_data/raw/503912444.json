@@ -1,0 +1,49 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/503912444",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1246085612"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#503912444",
+  "code": "6D72.11",
+  "source": "http://id.who.int/icd/entity/503912444",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/503912444/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/503912444/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/723448021",
+        "http://id.who.int/icd/release/11/2024-01/mms/1605607466"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Amnestic disorder due to use of sedatives, hypnotics or anxiolytics"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for amnestic disorder are met. The memory symptoms are judged to be the direct consequence of use of sedatives, hypnotics or anxiolytics. The intensity and duration of use of sedatives, hypnotics or anxiolytics must be known to be capable of producing memory impairment. The memory impairment may develop during or soon after sedative, hypnotic or anxiolytic intoxication or withdrawal, but its intensity and duration are substantially in excess of those normally associated with these conditions. The symptoms are not better accounted for by another disorder or medical condition, as might be the case if the amnestic symptoms preceded the onset of use of sedatives, hypnotics or anxiolytics."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Amnestic disorder due to use of sedatives, hypnotics or anxiolytics"
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+Disorder Name: Dissociative amnesia
+Disorder Code: 626975732
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dissociative amnesia is characterised by an inability to recall important autobiographical memories, typically of recent traumatic or stressful events, that is inconsistent with ordinary forgetting. The amnesia does not occur exclusively during another dissociative disorder and is not better explained by another mental, behavioural or neurodevelopmental disorder. The amnesia is not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, and is not due to a disease of the nervous system or to head trauma. The amnesia results in significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Exclusions: amnesia NOS; Amnestic disorder due to use of alcohol; Anterograde amnesia; Retrograde amnesia; nonalcoholic organic amnesic syndrome; postictal amnesia in epilepsy
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dissociative amnesia is characterised by an inability to recall important autobiographical memories, typically of recent traumatic or stressful events, that is inconsistent with ordinary forgetting. The amnesia does not occur exclusively during another dissociative disorder and is not better explained by another mental, behavioural or neurodevelopmental disorder. The amnesia is not due to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, and is not due to a disease of the nervous system or to head trauma. The amnesia results in significant impairment in personal, family, social, educational, occupational or other important areas of functioning.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: amnesia NOS
+• Should be differentiated from: Amnestic disorder due to use of alcohol
+• Should be differentiated from: Anterograde amnesia
+• Should be differentiated from: Retrograde amnesia
+• Should be differentiated from: nonalcoholic organic amnesic syndrome
+• Should be differentiated from: postictal amnesia in epilepsy
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

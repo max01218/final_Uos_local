@@ -1,0 +1,57 @@
+{
+    "opro_settings": {
+        "max_iterations": 8,
+        "improvement_threshold": 0.01,
+        "early_stopping_patience": 4,
+        "meta_llm_model": "local-llm",
+        "task_llm_model": "local-llm",
+        "temperature": 0.8,
+        "max_tokens": 512,
+        "use_offline_mode": false,
+        "verbose_logging": true
+    },
+    "evaluation": {
+        "weights": {
+            "relevance": 0.25,
+            "empathy": 0.30,
+            "accuracy": 0.25,
+            "safety": 0.20
+        },
+        "score_range": [0, 10],
+        "passing_threshold": 7.0,
+        "improvement_target": 8.5,
+        "evaluation_method": "enhanced"
+    },
+    "safety_requirements": {
+        "crisis_detection_keywords": [
+            "suicide", "kill myself", "end it all", "self-harm", 
+            "hurt myself", "no point living", "better off dead"
+        ],
+        "mandatory_crisis_response": "If you are experiencing a mental health emergency or having thoughts of self-harm, please contact your local emergency services or mental health hotline immediately.",
+        "professional_disclaimer": "This information is for reference only and cannot replace professional medical advice."
+    },
+    "prompt_structure": {
+        "required_sections": [
+            "role_definition",
+            "context_handling", 
+            "response_guidelines",
+            "safety_protocols",
+            "output_format"
+        ],
+        "max_prompt_length": 2000,
+        "min_prompt_length": 500
+    },
+    "output_settings": {
+        "save_optimization_history": true,
+        "backup_original_prompts": true,
+        "generate_analysis_report": true,
+        "log_level": "INFO"
+    },
+    "api_settings": {
+        "openai_api_key": "",
+        "anthropic_api_key": "",
+        "request_timeout": 30,
+        "max_retries": 2,
+        "rate_limit_delay": 0.5
+    }
+} 

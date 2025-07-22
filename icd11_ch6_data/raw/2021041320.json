@@ -1,0 +1,39 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2021041320",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/199053300"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2021041320",
+  "code": "6A61.9",
+  "source": "http://id.who.int/icd/entity/2021041320",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/2021041320/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/822487798",
+        "http://id.who.int/icd/release/11/2024-01/mms/567063364"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder, currently in partial remission, most recent episode unspecified"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bipolar type II disorder, currently in partial remission, most recent episode unspecified is diagnosed when the definitional requirements for Bipolar type II disorder have been met but there is insufficient information to determine the nature of the most recent mood episode. The full definitional requirements for a mood episode are no longer met but some significant mood symptoms remain."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder, currently in partial remission, most recent episode unspecified"
+      }
+    }
+  ]
+}

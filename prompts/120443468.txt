@@ -1,0 +1,26 @@
+Disorder Name: Autism spectrum disorder without disorder of intellectual development and with mild or no impairment of functional language
+Disorder Code: 120443468
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements for autism spectrum disorder are met, intellectual functioning and adaptive behaviour are found to be at least within the average range (approximately greater than the 2.3rd percentile), and there is only mild or no impairment in the individual's capacity to use functional language (spoken or signed) for instrumental purposes, such as to express personal needs and desires.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements for autism spectrum disorder are met, intellectual functioning and adaptive behaviour are found to be at least within the average range (approximately greater than the 2.3rd percentile), and there is only mild or no impairment in the individual's capacity to use functional language (spoken or signed) for instrumental purposes, such as to express personal needs and desires.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

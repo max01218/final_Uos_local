@@ -1,0 +1,65 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1358754380",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/405565289"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/521257551",
+    "http://id.who.int/icd/release/11/2024-01/mms/1893759206",
+    "http://id.who.int/icd/release/11/2024-01/mms/797284789",
+    "http://id.who.int/icd/release/11/2024-01/mms/342760401",
+    "http://id.who.int/icd/release/11/2024-01/mms/736393417",
+    "http://id.who.int/icd/release/11/2024-01/mms/794423031"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1358754380",
+  "code": "6A25",
+  "source": "http://id.who.int/icd/entity/1358754380",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1358754380/postcoordinationScale/hasSeverity",
+      "axisName": "http://id.who.int/icd/schema/hasSeverity",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "NotAllowed",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/562478860",
+        "http://id.who.int/icd/release/11/2024-01/mms/1663264387",
+        "http://id.who.int/icd/release/11/2024-01/mms/1201187093"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1358754380/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1683919430",
+        "http://id.who.int/icd/release/11/2024-01/mms/106339515",
+        "http://id.who.int/icd/release/11/2024-01/mms/18178000",
+        "http://id.who.int/icd/release/11/2024-01/mms/284410555",
+        "http://id.who.int/icd/release/11/2024-01/mms/1974996783"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Symptomatic manifestations of primary psychotic disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "These categories may be used to characterize the current clinical presentation in individuals diagnosed with Schizophrenia or another primary psychotic disorder, and should not be used in individuals without such a diagnosis. Multiple categories may be applied. Symptoms attributable to the direct pathophysiological consequences of a health condition or injury not classified under Mental, behavioural or neurodevelopmental disorders (e.g., a brain tumour or traumatic brain injury), or to the direct effects of a substance or medication on the central nervous system, including withdrawal effects, should not be considered as examples of the respective types of symptoms."
+  },
+  "codingNote": {
+    "@language": "en",
+    "@value": "These categories should never be used in primary coding. The codes are provided for use as supplementary or additional codes when it is desired to identify the presence of these symptoms in primary psychotic disorders."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symptomatic manifestations of primary psychotic disorders"
+      }
+    }
+  ]
+}

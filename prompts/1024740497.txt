@@ -1,0 +1,26 @@
+Disorder Name: Single episode depressive disorder, currently in full remission
+Disorder Code: 1024740497
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Single episode depressive disorder, currently in full remission is diagnosed when the full definitional requirements for one depressive episode have been met in the past and there are no longer any significant mood symptoms. There is no history of depressive episodes preceding the episode under consideration.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Single episode depressive disorder, currently in full remission is diagnosed when the full definitional requirements for one depressive episode have been met in the past and there are no longer any significant mood symptoms. There is no history of depressive episodes preceding the episode under consideration.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

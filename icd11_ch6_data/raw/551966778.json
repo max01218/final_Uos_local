@@ -1,0 +1,136 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/551966778",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/33269655"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#551966778",
+  "code": "6A01.0",
+  "source": "http://id.who.int/icd/entity/551966778",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Developmental speech sound disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Developmental speech sound disorder is characterised by difficulties in the acquisition, production and perception of speech that result in errors of pronunciation, either in number or types of speech errors made or the overall quality of speech production, that are outside the limits of normal variation expected for age and level of intellectual functioning and result in reduced intelligibility and significantly affect communication. The errors in pronunciation arise during the early developmental period and cannot be explained by social, cultural, and other environmental variations (e.g., regional dialects). The speech errors are not fully explained by a hearing impairment or a structural or neurological abnormality."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional speech articulation disorder"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Deafness not otherwise specified"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/947280473",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/947280473"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Diseases of the nervous system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1296093776",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1296093776"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dysarthria"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/15113838",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/15113838"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Verbal apraxia"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1703207856",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/986651951"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Developmental speech sound disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "specific speech articulation disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "articulation disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "developmental phonological disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "developmental speech articulation disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Functional speech articulation disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "phonology disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "inconsistent speech disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Speech sound disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "verbal dyspraxia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "developmental articulation disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Childhood apraxia of speech"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1590154825"
+    }
+  ]
+}

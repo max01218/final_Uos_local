@@ -1,0 +1,61 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/509381842",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1412387537"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#509381842",
+  "code": "6B81",
+  "source": "http://id.who.int/icd/entity/509381842",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Bulimia Nervosa"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Bulimia Nervosa is characterised by frequent, recurrent episodes of binge eating (e.g. once a week or more over a period of at least one month). A binge eating episode is a distinct period of time during which the individual experiences a subjective loss of control over eating, eating notably more or differently than usual, and feels unable to stop eating or limit the type or amount of food eaten. Binge eating is accompanied by repeated inappropriate compensatory behaviours aimed at preventing weight gain (e.g. self-induced vomiting, misuse of laxatives or enemas, strenuous exercise). The individual is preoccupied with body shape or weight, which strongly influences self-evaluation. There is marked distress about the pattern of binge eating and inappropriate compensatory behaviour or significant impairment in personal, family, social, educational, occupational or other important areas of functioning. The individual does not meet the diagnostic requirements of Anorexia Nervosa."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Binge eating disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1673294767",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1673294767"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bulimia Nervosa"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "BN - [bulimia nervosa]"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bulimia"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bulimia NOS"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "bulimic"
+      }
+    }
+  ]
+}

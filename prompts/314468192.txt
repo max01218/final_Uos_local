@@ -1,0 +1,26 @@
+Disorder Name: Mixed depressive and anxiety disorder
+Disorder Code: 314468192
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Mixed depressive and anxiety disorder is characterised by symptoms of both anxiety and depression more days than not for a period of two weeks or more. Depressive symptoms include depressed mood or markedly diminished interest or pleasure in activities. There are multiple anxiety symptoms, which may include feeling nervous, anxious, or on edge, not being able to control worrying thoughts, fear that something awful will happen, having trouble relaxing, muscle tension, or sympathetic autonomic symptoms. Neither set of symptoms, considered separately, is sufficiently severe, numerous, or persistent to justify a diagnosis of another depressive disorder or an anxiety or fear-related disorder. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning. There is no history of manic or mixed episodes, which would indicate the presence of a bipolar disorder.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Mixed depressive and anxiety disorder is characterised by symptoms of both anxiety and depression more days than not for a period of two weeks or more. Depressive symptoms include depressed mood or markedly diminished interest or pleasure in activities. There are multiple anxiety symptoms, which may include feeling nervous, anxious, or on edge, not being able to control worrying thoughts, fear that something awful will happen, having trouble relaxing, muscle tension, or sympathetic autonomic symptoms. Neither set of symptoms, considered separately, is sufficiently severe, numerous, or persistent to justify a diagnosis of another depressive disorder or an anxiety or fear-related disorder. The symptoms result in significant distress or significant impairment in personal, family, social, educational, occupational or other important areas of functioning. There is no history of manic or mixed episodes, which would indicate the presence of a bipolar disorder.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

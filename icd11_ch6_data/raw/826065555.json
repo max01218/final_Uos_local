@@ -1,0 +1,64 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/826065555",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1532500290",
+    "http://id.who.int/icd/release/11/2024-01/mms/804604349",
+    "http://id.who.int/icd/release/11/2024-01/mms/1630268048",
+    "http://id.who.int/icd/release/11/2024-01/mms/295017661",
+    "http://id.who.int/icd/release/11/2024-01/mms/843505186",
+    "http://id.who.int/icd/release/11/2024-01/mms/826065555/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/826065555/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#826065555",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/826065555",
+  "classKind": "block",
+  "blockId": "BlockL1-6C7",
+  "codeRange": "6C70-6C7Z",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Gambling disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1041487064",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1041487064"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Gaming disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1448597234",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1448597234"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary impulse control syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1638354338",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1638354338"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Body-focused repetitive behaviour disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1121465374",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1121465374"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Impulse control disorders"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Impulse control disorders are characterised by the repeated failure to resist an impulse, drive, or urge to perform an act that is rewarding to the person, at least in the short-term, despite consequences such as longer-term harm either to the individual or to others, marked distress about the behaviour pattern, or significant impairment in personal, family, social, educational, occupational, or other important areas of functioning. Impulse Control Disorders involve a range of specific behaviours, including fire-setting, stealing, sexual behaviour, and explosive outbursts."
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1218193465",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/590211325"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1334295394",
+    "http://id.who.int/icd/release/11/2024-01/mms/1662953838",
+    "http://id.who.int/icd/release/11/2024-01/mms/473001402",
+    "http://id.who.int/icd/release/11/2024-01/mms/1574982062",
+    "http://id.who.int/icd/release/11/2024-01/mms/1791864244",
+    "http://id.who.int/icd/release/11/2024-01/mms/1828722493",
+    "http://id.who.int/icd/release/11/2024-01/mms/1589999330",
+    "http://id.who.int/icd/release/11/2024-01/mms/1157653052",
+    "http://id.who.int/icd/release/11/2024-01/mms/1218193465/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1218193465/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1218193465",
+  "code": "6C4C",
+  "source": "http://id.who.int/icd/entity/1218193465",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1218193465/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/334423054",
+        "http://id.who.int/icd/release/11/2024-01/mms/274880002",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/868865918",
+        "http://id.who.int/icd/release/11/2024-01/mms/1218729044",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/197934298",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757",
+        "http://id.who.int/icd/release/11/2024-01/mms/577470983",
+        "http://id.who.int/icd/release/11/2024-01/mms/714000734",
+        "http://id.who.int/icd/release/11/2024-01/mms/1306203631",
+        "http://id.who.int/icd/release/11/2024-01/mms/223744320",
+        "http://id.who.int/icd/release/11/2024-01/mms/1843895818",
+        "http://id.who.int/icd/release/11/2024-01/mms/435227771",
+        "http://id.who.int/icd/release/11/2024-01/mms/850137482",
+        "http://id.who.int/icd/release/11/2024-01/mms/1249056269",
+        "http://id.who.int/icd/release/11/2024-01/mms/1596590595"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Disorders due to use of MDMA or related drugs, including MDA"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorders due to use of MDMA or related drugs, including MDA are characterised by the pattern and consequences of MDMA or related drug use. MDMA is methylene-dioxymethamphetamine and is a common drug of abuse in many countries especially among young people. It is predominantly available in tablet form known as ‘ecstasy’. Pharmacologically, MDMA has stimulant and empathogenic properties and these encourage its use among young people for social and other interactions. Considering its wide prevalence in many countries and among many sub-groups of young people, MDMA and Related Drug Dependence and MDMA and Related Drug Withdrawal are comparatively uncommon. Substance-Induced Mental Disorders may arise from its use. Several analogues of MDMA exist, including MDA (methylene-dioxyamphetamine)."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hazardous use of MDMA or related drugs"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/113982884",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/113982884"
+    }
+  ]
+}

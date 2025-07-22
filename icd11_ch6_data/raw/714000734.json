@@ -1,0 +1,71 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/714000734",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/877352786",
+    "http://id.who.int/icd/release/11/2024-01/mms/1042184245",
+    "http://id.who.int/icd/release/11/2024-01/mms/903303141",
+    "http://id.who.int/icd/release/11/2024-01/mms/21112155",
+    "http://id.who.int/icd/release/11/2024-01/mms/1864248550",
+    "http://id.who.int/icd/release/11/2024-01/mms/299840850",
+    "http://id.who.int/icd/release/11/2024-01/mms/973282267",
+    "http://id.who.int/icd/release/11/2024-01/mms/1421997617",
+    "http://id.who.int/icd/release/11/2024-01/mms/1781019902",
+    "http://id.who.int/icd/release/11/2024-01/mms/207290928"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#714000734",
+  "code": "18",
+  "source": "http://id.who.int/icd/entity/714000734",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Contact with health services for reasons associated with reproduction"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1144140024",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1144140024"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Pregnancy, childbirth or the puerperium"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A group of conditions characterised as occurring during the period of time from conception to delivery (pregnancy), during labour and delivery (childbirth) or during the approximately six weeks after delivery during which the uterus returns to the original size (puerperium)."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Postpartum necrosis of pituitary gland"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/768216194",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/768216194"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Obstetrical tetanus"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/262236278",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/262236278"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Injury, poisoning or certain other consequences of external causes"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/435227771",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/435227771"
+    }
+  ],
+  "codingNote": {
+    "@language": "en",
+    "@value": "The codes included in this chapter are to be used for conditions related to or aggravated by the pregnancy, childbirth or by the puerperium (maternal causes or obstetric causes)"
+  }
+}

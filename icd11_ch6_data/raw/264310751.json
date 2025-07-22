@@ -1,0 +1,159 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/264310751",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/991786158"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#264310751",
+  "code": "6B43",
+  "source": "http://id.who.int/icd/entity/264310751",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Adjustment disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Adjustment disorder is a maladaptive reaction to an identifiable psychosocial stressor or multiple stressors (e.g. divorce, illness or disability, socio-economic problems, conflicts at home or work) that usually emerges within a month of the stressor. The disorder is characterised by preoccupation with the stressor or its consequences, including excessive worry, recurrent and distressing thoughts about the stressor, or constant rumination about its implications, as well as by failure to adapt to the stressor that causes significant impairment in personal, family, social, educational, occupational or other important areas of functioning. The symptoms are not better explained by another mental disorder (e.g., Mood Disorder, another Disorder Specifically Associated with Stress) and typically resolve within 6 months, unless the stressor persists for a longer duration."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "separation anxiety disorder of childhood"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/830200631",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/830200631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Recurrent depressive disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1194756772",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1194756772"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Single episode depressive disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/578635574",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/578635574"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Prolonged grief disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1183832314",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1183832314"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Uncomplicated bereavement"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2009949293",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2009949293"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Burnout"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/129180281",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/129180281"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Acute stress reaction"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/505909942",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/505909942"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Adjustment disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "brief situational non-psychotic disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "adaptation reaction NOS"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "adjustment reaction"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "emotional crisis"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "situational disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "situational disturbance"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "situational maladjustment"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "situational reaction"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "situational reaction with maladjustment"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "transient situational disturbance"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Adjustment reaction with destructiveness"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1988447309"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Embitterment reaction"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/316102712"
+    }
+  ]
+}

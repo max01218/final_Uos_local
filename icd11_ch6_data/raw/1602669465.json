@@ -1,0 +1,25 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1602669465",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/334423054"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/590211325",
+    "http://id.who.int/icd/release/11/2024-01/mms/499894965"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1602669465",
+  "code": "",
+  "source": "http://id.who.int/icd/entity/1602669465",
+  "classKind": "block",
+  "blockId": "BlockL1-6C4",
+  "codeRange": "6C40-6C5Z",
+  "title": {
+    "@language": "en",
+    "@value": "Disorders due to substance use or addictive behaviours"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Disorders due to substance use and addictive behaviours are mental and behavioural disorders that develop as a result of the use of predominantly psychoactive substances, including medications, or specific repetitive rewarding and reinforcing behaviours."
+  }
+}

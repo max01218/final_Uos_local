@@ -1,0 +1,31 @@
+Disorder Name: Factitious disorder imposed on another
+Disorder Code: 775605963
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Factitious disorder imposed on another is characterised by feigning, falsifying, or inducing medical, psychological, or behavioural signs and symptoms or injury in another person, most commonly a child dependent, associated with identified deception. If a pre-existing disorder or disease is present in the other person, the individual intentionally aggravates existing symptoms or falsifies or induces additional symptoms. The individual seeks treatment for the other person or otherwise presents him or her as ill, injured, or impaired based on the feigned, falsified, or induced signs, symptoms, or injuries. The deceptive behaviour is not solely motivated by obvious external rewards or incentives (e.g., obtaining disability payments or avoiding criminal prosecution for child or elder abuse).
+
+Exclusions: Malingering
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Factitious disorder imposed on another is characterised by feigning, falsifying, or inducing medical, psychological, or behavioural signs and symptoms or injury in another person, most commonly a child dependent, associated with identified deception. If a pre-existing disorder or disease is present in the other person, the individual intentionally aggravates existing symptoms or falsifies or induces additional symptoms. The individual seeks treatment for the other person or otherwise presents him or her as ill, injured, or impaired based on the feigned, falsified, or induced signs, symptoms, or injuries. The deceptive behaviour is not solely motivated by obvious external rewards or incentives (e.g., obtaining disability payments or avoiding criminal prosecution for child or elder abuse).
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Malingering
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

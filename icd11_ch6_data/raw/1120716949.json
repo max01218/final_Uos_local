@@ -1,0 +1,71 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1120716949",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/111507461"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1229687244",
+    "http://id.who.int/icd/release/11/2024-01/mms/1023217081",
+    "http://id.who.int/icd/release/11/2024-01/mms/157120957",
+    "http://id.who.int/icd/release/11/2024-01/mms/36859167",
+    "http://id.who.int/icd/release/11/2024-01/mms/1120716949/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1120716949",
+  "code": "6C43.2",
+  "source": "http://id.who.int/icd/entity/1120716949",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1120716949/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1416205973",
+        "http://id.who.int/icd/release/11/2024-01/mms/824335105",
+        "http://id.who.int/icd/release/11/2024-01/mms/1014265857"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1120716949/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1395283456",
+        "http://id.who.int/icd/release/11/2024-01/mms/663160065",
+        "http://id.who.int/icd/release/11/2024-01/mms/746448055",
+        "http://id.who.int/icd/release/11/2024-01/mms/248569732",
+        "http://id.who.int/icd/release/11/2024-01/mms/817370856",
+        "http://id.who.int/icd/release/11/2024-01/mms/1583926619"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Opioid dependence"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Opioid dependence is a disorder of regulation of opioid use arising from repeated or continuous use of opioids. The characteristic feature is a strong internal drive to use opioids, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use opioids. Physiological features of dependence may also be present, including tolerance to the effects of opioids, withdrawal symptoms following cessation or reduction in use of opioids, or repeated use of opioids or pharmacologically similar substances to prevent or alleviate withdrawal symptoms. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if opioid use is continuous (daily or almost daily) for at least 3 months."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Episode of harmful use of opioids"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/398872858",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/398872858"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Harmful pattern of use of opioids"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/912365674",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/912365674"
+    }
+  ]
+}

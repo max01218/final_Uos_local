@@ -1,0 +1,53 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1242188600",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1412387537"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1242188600",
+  "code": "6B83",
+  "source": "http://id.who.int/icd/entity/1242188600",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Avoidant-restrictive food intake disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Avoidant-restrictive food intake disorder (ARFID) is characterised by avoidance or restriction of food intake that results in: 1) the intake of an insufficient quantity or variety of food to meet adequate energy or nutritional requirements that has resulted in significant weight loss, clinically significant nutritional deficiencies, dependence on oral nutritional supplements or tube feeding, or has otherwise negatively affected the physical health of the individual; or 2) significant impairment in personal, family, social, educational, occupational or other important areas of functioning (e.g., due to avoidance or distress related to participating in social experiences involving eating). The pattern of eating behaviour is not motivated by preoccupation with body weight or shape. Restricted food intake and its effects on weight, other aspects of health, or functioning are not due to unavailability of food, not a manifestation of another medical condition (e.g. food allergies, hyperthyroidism) or mental disorder, and are not due to the effect of a substance or medication on the central nervous system including withdrawal effects."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Anorexia Nervosa"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/263852475",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/263852475"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Feeding problem of infant"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/2010788903",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/2010788903"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Feeding problems of newborn"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1842061002",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1842061002"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Avoidant-restrictive food intake disorder"
+      }
+    }
+  ]
+}

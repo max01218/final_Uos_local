@@ -1,0 +1,36 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/317761311",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1683919430"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1254806731",
+    "http://id.who.int/icd/release/11/2024-01/mms/1589500739",
+    "http://id.who.int/icd/release/11/2024-01/mms/290515784",
+    "http://id.who.int/icd/release/11/2024-01/mms/317761311/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#317761311",
+  "code": "6A20.2",
+  "source": "http://id.who.int/icd/entity/317761311",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/317761311/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Schizophrenia, continuous"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Symptoms fulfilling all definitional requirements of Schizophrenia have been present for almost all of the illness course over a period of at least one year, with periods of subthreshold symptoms being very brief relative to the overall course."
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/480277067",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1081029366"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#480277067",
+  "code": "6C45.70",
+  "source": "http://id.who.int/icd/entity/480277067",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/480277067/postcoordinationScale/associatedWith",
+      "axisName": "http://id.who.int/icd/schema/associatedWith",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1965837313",
+        "http://id.who.int/icd/release/11/2024-01/mms/25238782"
+      ]
+    },
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/480277067/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/318767128",
+        "http://id.who.int/icd/release/11/2024-01/mms/275218837",
+        "http://id.who.int/icd/release/11/2024-01/mms/1691013484"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Cocaine-induced mood disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Cocaine-induced mood disorder is characterised by mood symptoms (e.g., depressed or elevated mood, decreased engagement in pleasurable activities, increased or decreased energy levels) that develop during or soon after intoxication with or withdrawal from cocaine. The intensity or duration of the symptoms is substantially in excess of mood disturbances that are characteristic of Cocaine intoxication or Cocaine withdrawal. The amount and duration of cocaine use must be capable of producing mood symptoms. The symptoms are not better explained by a primary mental disorder (e.g., a Depressive disorder, a Bipolar disorder, Schizoaffective disorder), as might be the case if the mood symptoms preceded the onset of the cocaine use, if the symptoms persist for a substantial period of time after cessation of the cocaine use or withdrawal, or if there is other evidence of a pre-existing primary mental disorder with mood symptoms (e.g., a history of prior episodes not associated with cocaine use)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine-induced mood disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine-induced mood disorder with depressive symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1105203565"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine-induced mood disorder with manic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1054552690"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Cocaine-induced mood disorder with mixed depressive and manic symptoms"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/712002232"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+Disorder Name: Hallucinogen dependence
+Disorder Code: 2041952725
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Hallucinogen dependence is a disorder of regulation of hallucinogen use arising from repeated or continuous use of hallucinogens. The characteristic feature is a strong internal drive to use hallucinogens, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use hallucinogens. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if hallucinogens use is continuous (daily or almost daily) for at least 3 months.
+
+Exclusions: Episode of harmful use of hallucinogens; Harmful pattern of use of hallucinogens
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Hallucinogen dependence is a disorder of regulation of hallucinogen use arising from repeated or continuous use of hallucinogens. The characteristic feature is a strong internal drive to use hallucinogens, which is manifested by impaired ability to control use, increasing priority given to use over other activities and persistence of use despite harm or negative consequences. These experiences are often accompanied by a subjective sensation of urge or craving to use hallucinogens. The features of dependence are usually evident over a period of at least 12 months but the diagnosis may be made if hallucinogens use is continuous (daily or almost daily) for at least 3 months.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Episode of harmful use of hallucinogens
+• Should be differentiated from: Harmful pattern of use of hallucinogens
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

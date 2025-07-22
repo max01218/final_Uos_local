@@ -1,0 +1,56 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1843895818",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/739755954",
+    "http://id.who.int/icd/release/11/2024-01/mms/1994504557",
+    "http://id.who.int/icd/release/11/2024-01/mms/922175770",
+    "http://id.who.int/icd/release/11/2024-01/mms/181201280",
+    "http://id.who.int/icd/release/11/2024-01/mms/1597934337",
+    "http://id.who.int/icd/release/11/2024-01/mms/1088544686",
+    "http://id.who.int/icd/release/11/2024-01/mms/2138796426",
+    "http://id.who.int/icd/release/11/2024-01/mms/1564218495",
+    "http://id.who.int/icd/release/11/2024-01/mms/796618507",
+    "http://id.who.int/icd/release/11/2024-01/mms/346645181",
+    "http://id.who.int/icd/release/11/2024-01/mms/14576949",
+    "http://id.who.int/icd/release/11/2024-01/mms/1342309622",
+    "http://id.who.int/icd/release/11/2024-01/mms/1810466448",
+    "http://id.who.int/icd/release/11/2024-01/mms/1907275850",
+    "http://id.who.int/icd/release/11/2024-01/mms/509543139",
+    "http://id.who.int/icd/release/11/2024-01/mms/1452443292",
+    "http://id.who.int/icd/release/11/2024-01/mms/1843895818/other"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1843895818",
+  "code": "21",
+  "source": "http://id.who.int/icd/entity/1843895818",
+  "classKind": "chapter",
+  "title": {
+    "@language": "en",
+    "@value": "Symptoms, signs or clinical findings, not elsewhere classified"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "!markdown\nClinical findings include those found using physical, laboratory and imaging techniques. \n\nDiseases can manifest in many ways and in different body systems. Such specific manifestations may be a reason for treatment or encounter, with or without identifying or addressing the underlying condition.  \nCategories in this chapter include the less well-defined conditions and symptoms that, without the necessary study of the case to establish a final diagnosis, could be designated 'not otherwise specified', 'unknown aetiology' or 'transient'.\n\nThe conditions and signs or symptoms included in this chapter consist of:\n\n  - cases for which no more specific diagnosis can be made even after all the facts bearing on the case have been investigated\n  - signs or symptoms existing at the time of initial encounter that proved to be transient and whose causes could not be determined;\n  - provisional diagnoses in a patient who failed to return for further investigation or care;\n  - cases referred elsewhere for investigation or treatment before the diagnosis was made;\n  - cases in which a more precise diagnosis was not available for any other reason; \n  - certain symptoms, for which supplementary information is provided, that represent important problems in medical care in their own right.\n\nThese categories should be used in conjunction with a code from another chapter that identifies the underlying condition."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain conditions originating in the perinatal period"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1306203631",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1306203631"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Clinical findings on antenatal screening of mother"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/64782063",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/64782063"
+    }
+  ]
+}

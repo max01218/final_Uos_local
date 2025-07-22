@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/312804864",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/626975732"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#312804864",
+  "code": "6B61.1",
+  "source": "http://id.who.int/icd/entity/312804864",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Dissociative amnesia without dissociative fugue"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Dissociative amnesia without dissociative fugue is characterised by all of the features of dissociative amnesia occurring in the absence of symptoms of dissociative fugue."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dissociative amnesia without dissociative fugue"
+      }
+    }
+  ]
+}

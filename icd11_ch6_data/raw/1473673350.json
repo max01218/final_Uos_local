@@ -1,0 +1,130 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/1525792972",
+    "http://id.who.int/icd/release/11/2024-01/mms/1989556002",
+    "http://id.who.int/icd/release/11/2024-01/mms/789630210",
+    "http://id.who.int/icd/release/11/2024-01/mms/1523445293",
+    "http://id.who.int/icd/release/11/2024-01/mms/1507462233",
+    "http://id.who.int/icd/release/11/2024-01/mms/762797224",
+    "http://id.who.int/icd/release/11/2024-01/mms/252326937",
+    "http://id.who.int/icd/release/11/2024-01/mms/1473673350/other",
+    "http://id.who.int/icd/release/11/2024-01/mms/1473673350/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1473673350",
+  "code": "15",
+  "source": "http://id.who.int/icd/entity/1473673350",
+  "classKind": "chapter",
+  "foundationChildElsewhere": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Monogenic autoinflammatory syndromes"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1576710885",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1576710885"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Nonorgan specific systemic autoimmune disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1008515027",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1008515027"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Symptoms, signs or clinical findings of the musculoskeletal system"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1810466448",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1810466448"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Structural developmental anomalies of the skeleton"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/894625870",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/894625870"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Syndromes with connective tissue involvement as a major feature"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1178222588",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1178222588"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Syndromes with skeletal anomalies as a major feature"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1496140949",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1496140949"
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Diseases of the musculoskeletal system or connective tissue"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "This chapter contains diseases of musculoskeletal system and diseases of connective tissue."
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Injury, poisoning or certain other consequences of external causes"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/435227771",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/435227771"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Endocrine, nutritional or metabolic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/21500692",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/21500692"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Complications of pregnancy, childbirth and the puerperium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/714000734",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/714000734"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain infectious or parasitic diseases"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1435254666",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1435254666"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Temporomandibular joint disorders"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/897101649",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/897101649"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Certain conditions originating in the perinatal period"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1306203631",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1306203631"
+    }
+  ]
+}

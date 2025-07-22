@@ -1,0 +1,26 @@
+Disorder Name: Bipolar type I disorder, current episode manic, without psychotic symptoms
+Disorder Code: 374726152
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Bipolar type I disorder, current episode manic, without psychotic symptoms is diagnosed when the definitional requirements for Bipolar type I disorder are met, the current episode is manic, and there are no delusions or hallucinations present during the episode. A manic episode is an extreme mood state lasting at least one week unless shortened by a treatment intervention characterised by euphoria, irritability, or expansiveness, and by increased activity or a subjective experience of increased energy, accompanied by other characteristic symptoms such as rapid or pressured speech, flight of ideas, increased self-esteem or grandiosity, decreased need for sleep, distractibility, impulsive or reckless behaviour, and rapid changes among different mood states (i.e., mood lability). If the individual has experienced Manic or Mixed Episodes in the past, a duration of one week is not required in order to diagnose a current episode if all other diagnostic requirements are met.
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Bipolar type I disorder, current episode manic, without psychotic symptoms is diagnosed when the definitional requirements for Bipolar type I disorder are met, the current episode is manic, and there are no delusions or hallucinations present during the episode. A manic episode is an extreme mood state lasting at least one week unless shortened by a treatment intervention characterised by euphoria, irritability, or expansiveness, and by increased activity or a subjective experience of increased energy, accompanied by other characteristic symptoms such as rapid or pressured speech, flight of ideas, increased self-esteem or grandiosity, decreased need for sleep, distractibility, impulsive or reckless behaviour, and rapid changes among different mood states (i.e., mood lability). If the individual has experienced Manic or Mixed Episodes in the past, a duration of one week is not required in order to diagnose a current episode if all other diagnostic requirements are met.
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

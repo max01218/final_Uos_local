@@ -1,0 +1,32 @@
+Disorder Name: Disorders due to addictive behaviours
+Disorder Code: 499894965
+Code Range: 6C50-6C5Z
+Class Kind: block
+
+Standard Definition:
+Disorders due to addictive behaviours are recognizable and clinically significant syndromes associated with distress or interference with personal functions that develop as a result of repetitive rewarding behaviours other than the use of dependence-producing substances. Disorders due to addictive behaviours include gambling disorder and gaming disorder, which may involve both online and offline behaviour.
+
+Exclusions: Compulsive sexual behaviour disorder; Paraphilic disorders
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Disorders due to addictive behaviours are recognizable and clinically significant syndromes associated with distress or interference with personal functions that develop as a result of repetitive rewarding behaviours other than the use of dependence-producing substances. Disorders due to addictive behaviours include gambling disorder and gaming disorder, which may involve both online and offline behaviour.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Compulsive sexual behaviour disorder
+• Should be differentiated from: Paraphilic disorders
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

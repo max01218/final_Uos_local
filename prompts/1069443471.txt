@@ -1,0 +1,31 @@
+Disorder Name: Dissociative neurological symptom disorder
+Disorder Code: 1069443471
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Dissociative neurological symptom disorder is characterised by the presentation of motor, sensory, or cognitive symptoms that imply an involuntary discontinuity in the normal integration of motor, sensory, or cognitive functions and are not consistent with a recognised disease of the nervous system, other mental or behavioural disorder, or other medical condition. The symptoms do not occur exclusively during another dissociative disorder and are not due to the effects of a substance or medication on the central nervous system, including withdrawal effects, or a Sleep-Wake disorder.
+
+Exclusions: Factitious disorders
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Dissociative neurological symptom disorder is characterised by the presentation of motor, sensory, or cognitive symptoms that imply an involuntary discontinuity in the normal integration of motor, sensory, or cognitive functions and are not consistent with a recognised disease of the nervous system, other mental or behavioural disorder, or other medical condition. The symptoms do not occur exclusively during another dissociative disorder and are not due to the effects of a substance or medication on the central nervous system, including withdrawal effects, or a Sleep-Wake disorder.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Factitious disorders
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

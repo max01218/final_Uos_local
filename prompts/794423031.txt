@@ -1,0 +1,32 @@
+Disorder Name: Cognitive symptoms in primary psychotic disorders
+Disorder Code: 794423031
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+Cognitive symptoms in primary psychotic disorders refer to cognitive impairment in any of the following domains: speed of processing, attention/concentration, orientation, judgment, abstraction, verbal or visual learning, and working memory. The cognitive impairment is not attributable to a neurodevelopmental disorder, a delirium or other neurocognitive disorder, or the direct effects of a substance or medication on the central nervous system, including withdrawal effects. Ideally, use of this category should be based on the results of locally validated, standardized neuropsychological assessments, although such measures may not be available in all settings. The rating should be made based on the severity of cognitive symptoms during the past week.
+
+Exclusions: Neurocognitive disorders; Neurodevelopmental disorders
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+Cognitive symptoms in primary psychotic disorders refer to cognitive impairment in any of the following domains: speed of processing, attention/concentration, orientation, judgment, abstraction, verbal or visual learning, and working memory. The cognitive impairment is not attributable to a neurodevelopmental disorder, a delirium or other neurocognitive disorder, or the direct effects of a substance or medication on the central nervous system, including withdrawal effects. Ideally, use of this category should be based on the results of locally validated, standardized neuropsychological assessments, although such measures may not be available in all settings. The rating should be made based on the severity of cognitive symptoms during the past week.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: Neurocognitive disorders
+• Should be differentiated from: Neurodevelopmental disorders
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

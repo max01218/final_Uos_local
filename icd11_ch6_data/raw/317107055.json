@@ -1,0 +1,27 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/317107055",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/818792113"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#317107055",
+  "code": "6C90.01",
+  "source": "http://id.who.int/icd/entity/317107055",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Oppositional defiant disorder with chronic irritability-anger with typical prosocial emotions"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for oppositional defiant disorder with chronic irritability-anger are met. The individual does not exhibit characteristics referred to as ‘callous and unemotional’, such as lack of empathy or sensitivity to the feelings of others and a lack of concern for others’ distress."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Oppositional defiant disorder with chronic irritability-anger with typical prosocial emotions"
+      }
+    }
+  ]
+}

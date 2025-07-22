@@ -1,0 +1,35 @@
+Disorder Name: Amnestic disorder due to diseases classified elsewhere
+Disorder Code: 862469859
+Code Range: Not specified
+Class Kind: category
+
+Standard Definition:
+All definitional requirements for amnestic disorder are met. The memory symptoms are judged to be the direct pathophysiological consequence of a medical condition not classified under mental, behavioural and neurodevelopmental disorders, based on evidence from the history, physical examination, or laboratory findings. The symptoms are not better explained by Delirium, Dementia, another mental disorder (e.g., Schizophrenia or Other Primary Psychotic Disorder, a Mood Disorder) or the effects of a medication or substance, including withdrawal effects. The symptoms are sufficiently severe to be a specific focus of clinical attention. The identified etiological medical condition should be classified separately.
+
+Exclusions: amnesia: retrograde; Korsakoff syndrome, alcohol-induced or unspecified; Dissociative amnesia; Anterograde amnesia; amnesia NOS
+
+Clinical Description and Diagnostic Guidelines:
+Clinical Description:
+All definitional requirements for amnestic disorder are met. The memory symptoms are judged to be the direct pathophysiological consequence of a medical condition not classified under mental, behavioural and neurodevelopmental disorders, based on evidence from the history, physical examination, or laboratory findings. The symptoms are not better explained by Delirium, Dementia, another mental disorder (e.g., Schizophrenia or Other Primary Psychotic Disorder, a Mood Disorder) or the effects of a medication or substance, including withdrawal effects. The symptoms are sufficiently severe to be a specific focus of clinical attention. The identified etiological medical condition should be classified separately.
+
+Diagnostic Exclusion Criteria:
+• Should be differentiated from: amnesia: retrograde
+• Should be differentiated from: Korsakoff syndrome, alcohol-induced or unspecified
+• Should be differentiated from: Dissociative amnesia
+• Should be differentiated from: Anterograde amnesia
+• Should be differentiated from: amnesia NOS
+
+Diagnostic Guidelines:
+• Symptom assessment should be conducted within appropriate time frames
+• Consider impact of symptoms on personal, family, social, and occupational functioning
+• Evaluate symptom severity and duration
+• Rule out symptoms due to substance use, medical conditions, or other psychological disorders
+• Recommend use of standardized assessment tools and diagnostic criteria
+
+Treatment Considerations:
+• Develop individualized treatment plans
+• Consider evidence-based treatment approaches
+• Refer to specialist treatment when necessary
+• Regular monitoring of treatment progress and plan adjustments
+
+For more detailed clinical guidelines, please refer to official ICD-11 documentation.

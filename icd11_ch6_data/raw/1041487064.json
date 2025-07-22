@@ -1,0 +1,58 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1041487064",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/499894965"
+  ],
+  "child": [
+    "http://id.who.int/icd/release/11/2024-01/mms/960730313",
+    "http://id.who.int/icd/release/11/2024-01/mms/1939508018",
+    "http://id.who.int/icd/release/11/2024-01/mms/1041487064/unspecified"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1041487064",
+  "code": "6C50",
+  "source": "http://id.who.int/icd/entity/1041487064",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Gambling disorder"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Gambling disorder is characterised by a pattern of persistent or recurrent gambling behaviour, which may be online (i.e., over the internet) or offline, manifested by:\n\n1. impaired control over gambling (e.g., onset, frequency, intensity, duration, termination, context);\n\n2. increasing priority given to gambling to the extent that gambling takes precedence over other life interests and daily activities; and\n\n3. continuation or escalation of gambling despite the occurrence of negative consequences.\n\nThe pattern of gambling behaviour may be continuous or episodic and recurrent. The pattern of gambling behaviour results in significant distress or in significant impairment in personal, family, social, educational, occupational or other important areas of functioning. The gambling behaviour and other features are normally evident over a period of at least 12 months in order for a diagnosis to be assigned, although the required duration may be shortened if all diagnostic requirements are met and symptoms are severe."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Compulsive gambling"
+      }
+    }
+  ],
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type I disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1456478153",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/1456478153"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Bipolar type II disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/199053300",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/199053300"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Hazardous gambling or betting"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/233747706",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/233747706"
+    }
+  ]
+}

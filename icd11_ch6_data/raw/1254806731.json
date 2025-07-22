@@ -1,0 +1,48 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1254806731",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/317761311"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1254806731",
+  "code": "6A20.20",
+  "source": "http://id.who.int/icd/entity/1254806731",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/1254806731/postcoordinationScale/hasManifestation",
+      "axisName": "http://id.who.int/icd/schema/hasManifestation",
+      "requiredPostcoordination": "false",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1358754380"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Schizophrenia, continuous, currently symptomatic"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for Schizophrenia, continuous in terms of symptoms and duration are currently met, or have been met within the past one month."
+  },
+  "fullySpecifiedName": {
+    "@language": "en",
+    "@value": "Schizophrenia, continuous, currently in acute episode"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Schizophrenia, continuous, currently symptomatic"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Schizophrenia, continuous, currently in acute episode"
+      }
+    }
+  ]
+}

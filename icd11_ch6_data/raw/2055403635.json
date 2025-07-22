@@ -1,0 +1,48 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/2055403635",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/2110604642"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#2055403635",
+  "code": "6D36",
+  "source": "http://id.who.int/icd/entity/2055403635",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Paraphilic disorder involving solitary behaviour or consenting individuals"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "Paraphilic disorder involving solitary behaviour or consenting individuals is characterised by a persistent and intense pattern of atypical sexual arousal — manifested by sexual thoughts, fantasies, urges, or behaviours — that involves consenting adults or solitary behaviours. One of the following two elements must be present: 1) the person is markedly distressed by the nature of the arousal pattern and the distress is not simply a consequence of rejection or feared rejection of the arousal pattern by others; or 2) the nature of the paraphilic behaviour involves significant risk of injury or death either to the individual or to the partner (e.g., asphyxophilia)."
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Paraphilic disorder involving solitary behaviour or consenting individuals"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "sadomasochism (deprecated)"
+      },
+      "deprecated": true
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fetishism (deprecated)"
+      },
+      "deprecated": true
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "fetishistic transvestism (deprecated)"
+      },
+      "deprecated": true
+    }
+  ]
+}

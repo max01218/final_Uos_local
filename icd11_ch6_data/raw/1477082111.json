@@ -1,0 +1,73 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/1477082111",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/437815624"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#1477082111",
+  "code": "6A02.3",
+  "source": "http://id.who.int/icd/entity/1477082111",
+  "classKind": "category",
+  "title": {
+    "@language": "en",
+    "@value": "Autism spectrum disorder with disorder of intellectual development and with impaired functional language"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "All definitional requirements for both autism spectrum disorder and disorder of intellectual development are met and there is marked impairment in functional language (spoken or signed) relative to the individual’s age, with the individual not able to use more than single words or simple phrases for instrumental purposes, such as to express personal needs and desires."
+  },
+  "longDefinition": {
+    "@language": "en",
+    "@value": "All definitional requirements for both autism spectrum disorder and disorder of intellectual development are met and there is marked impairment in or complete absence of ability relative to the individual’s age to use functional language for instrumental purposes (e.g., to express personal needs and desires). The co-occurring Disorder of intellectual development should be classified separately, using the appropriate category to designate severity (i.e., mild, moderate, severe, profound, provisional). Because autism spectrum disorder inherently involves social deficits, assessment of a co-occurring Disorder of intellectual development should place greater emphasis on intellectual, conceptual, and practical domains than on social adaptation"
+  },
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Autism spectrum disorder with disorder of intellectual development and with impaired functional language"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Autism spectrum disorder with disorder of intellectual development and with impaired functional language with loss of previously acquired skills"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/703270278"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Childhood disintegrative disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1460615954"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Heller syndrome"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1460615954"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Disintegrative psychosis"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1460615954"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Dementia infantilis"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1460615954"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Autism spectrum disorder with disorder of intellectual development and impaired functional language without loss of previously acquired skills"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/1774171411"
+    }
+  ]
+}

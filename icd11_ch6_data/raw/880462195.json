@@ -1,0 +1,118 @@
+{
+  "@context": "http://id.who.int/icd/contexts/contextForLinearizationEntity.json",
+  "@id": "http://id.who.int/icd/release/11/2024-01/mms/880462195",
+  "parent": [
+    "http://id.who.int/icd/release/11/2024-01/mms/216291184"
+  ],
+  "browserUrl": "https://icd.who.int/browse/2024-01/mms/en#880462195",
+  "code": "6E62.1",
+  "source": "http://id.who.int/icd/entity/880462195",
+  "classKind": "category",
+  "postcoordinationScale": [
+    {
+      "@id": "http://id.who.int/icd/release/11/2024-01/mms/880462195/postcoordinationScale/hasCausingCondition",
+      "axisName": "http://id.who.int/icd/schema/hasCausingCondition",
+      "requiredPostcoordination": "true",
+      "allowMultipleValues": "AllowAlways",
+      "scaleEntity": [
+        "http://id.who.int/icd/release/11/2024-01/mms/1435254666",
+        "http://id.who.int/icd/release/11/2024-01/mms/1630407678",
+        "http://id.who.int/icd/release/11/2024-01/mms/1766440644",
+        "http://id.who.int/icd/release/11/2024-01/mms/1954798891",
+        "http://id.who.int/icd/release/11/2024-01/mms/21500692",
+        "http://id.who.int/icd/release/11/2024-01/mms/1296093776",
+        "http://id.who.int/icd/release/11/2024-01/mms/426429380",
+        "http://id.who.int/icd/release/11/2024-01/mms/1256772020",
+        "http://id.who.int/icd/release/11/2024-01/mms/1639304259",
+        "http://id.who.int/icd/release/11/2024-01/mms/1473673350",
+        "http://id.who.int/icd/release/11/2024-01/mms/30659757"
+      ]
+    }
+  ],
+  "title": {
+    "@language": "en",
+    "@value": "Secondary mood syndrome, with manic symptoms"
+  },
+  "definition": {
+    "@language": "en",
+    "@value": "A syndrome characterised by the presence of prominent manic symptoms such as elevated, euphoric, irritable, or expansive mood states, rapid changes among different mood states (i.e., mood lability), or increased energy or activity that is judged to be a direct pathophysiological consequence of a health condition not classified under mental and behavioural disorders based on evidence from the history, physical examination, or laboratory findings."
+  },
+  "longDefinition": {
+    "@language": "en",
+    "@value": "A syndrome characterized by the presence of prominent manic symptoms such as elevated, euphoric, irritable, or expansive mood states, rapid changes among different mood states (i.e., mood lability), or increased energy or activity that is judged to be a direct pathophysiological consequence of a health condition not classified under mental and behavioural disorders based on evidence from the history, physical examination, or laboratory findings. The symptoms are not accounted for by delirium or by another mental and behavioural disorder, and are not a psychologically mediated response to a severe medical condition (e.g., depressive symptoms in response to a life-threatening diagnosis). This category should be used in addition to the diagnosis for the presumed underlying disorder or disease when the mood symptoms are sufficiently severe to warrant specific clinical attention."
+  },
+  "inclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "mood syndrome due to disorders or diseases not classified under Mental and behavioural disorders, with manic symptoms"
+      }
+    }
+  ],
+  "fullySpecifiedName": {
+    "@language": "en",
+    "@value": "Mood syndrome due to health condition not classified under mental and behavioural disorders, with manic symptoms"
+  },
+  "exclusion": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Adjustment disorder"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/264310751",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/264310751"
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Delirium"
+      },
+      "foundationReference": "http://id.who.int/icd/entity/897917531",
+      "linearizationReference": "http://id.who.int/icd/release/11/2024-01/mms/897917531"
+    }
+  ],
+  "indexTerm": [
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Secondary mood syndrome, with manic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Organic manic disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Manic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "organic mood disorder of manic type"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "organic mood disorder"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "mood syndrome due to disorders or diseases not classified under Mental and behavioural disorders, with manic symptoms"
+      }
+    },
+    {
+      "label": {
+        "@language": "en",
+        "@value": "Mood syndrome due to health condition not classified under mental and behavioural disorders, with manic symptoms"
+      }
+    }
+  ]
+}
