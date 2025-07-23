@@ -138,3 +138,6 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 node_modules/
+
+# Add this line to your .gitignore file
+/ICD11_OPRO/config.json

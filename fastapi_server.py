@@ -30,6 +30,16 @@ from langchain.chains import RetrievalQA
 from langchain.memory import ConversationBufferMemory
 from transformers import pipeline
 
+# CBT Integration
+try:
+    from CBT_System.integration import CBTIntegration
+    CBT_AVAILABLE = True
+    print("CBT integration module loaded successfully")
+except ImportError as e:
+    print(f"CBT integration not available: {e}")
+    CBT_AVAILABLE = False
+    CBTIntegration = None
+
 # Set environment variables to avoid tokenizer warnings
 os.environ['TOKENIZERS_PARALLELISM'] = 'false'
 os.environ['TRANSFORMERS_OFFLINE'] = '0'
@@ -58,12 +68,23 @@ app.add_middleware(
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
+# Enable debug logging for CBT integration
+cbt_logger = logging.getLogger("cbt_integration")
+cbt_logger.setLevel(logging.DEBUG)
+# Add console handler for CBT debug messages
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.DEBUG)
+formatter = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
+console_handler.setFormatter(formatter)
+cbt_logger.addHandler(console_handler)
+
 # Global variables
 psychologist_llm = None
 store = None
 embedder = None
 emotion_classifier = None
 memory = ConversationBufferMemory(return_messages=True)
+cbt_integration = None
 
 # OPRO Integration
 OPRO_PROMPT_PATH = "OPRO_Streamlined/prompts/optimized_prompt.txt"  
@@ -225,6 +246,9 @@ class HealthResponse(BaseModel):
     gpu_memory: Optional[str] = None
     opro_prompt_loaded: bool
     interactions_count: int
+    cbt_available: bool
+    cbt_techniques: Optional[int] = None
+    cbt_content: Optional[int] = None
 
 # Load components
 def load_embeddings():
@@ -264,6 +288,30 @@ def load_emotion_classifier():
         return classifier
     except Exception as e:
         logger.error(f"Error loading emotion classifier: {e}")
+        return None
+
+def load_cbt_integration():
+    """Load CBT integration system"""
+    try:
+        if CBT_AVAILABLE:
+            logger.info("Initializing CBT integration...")
+            cbt = CBTIntegration(base_dir="CBT_System/cbt_data")
+            status = cbt.get_cbt_status()
+            
+            if status['available']:
+                logger.info(f"CBT integration loaded successfully")
+                logger.info(f"CBT Techniques: {status['total_techniques']}")
+                logger.info(f"CBT Content: {status['total_content']}")
+                logger.info(f"CBT Categories: {status['categories']}")
+                return cbt
+            else:
+                logger.warning("CBT knowledge base not available")
+                return None
+        else:
+            logger.warning("CBT integration module not available")
+            return None
+    except Exception as e:
+        logger.error(f"Error loading CBT integration: {e}")
         return None
 
 def load_psychologist_llm():
@@ -306,7 +354,7 @@ def load_psychologist_llm():
         return None
 
 def initialize_rag_system():
-    global psychologist_llm, store, embedder, emotion_classifier
+    global psychologist_llm, store, embedder, emotion_classifier, cbt_integration
     logger.info(f"Initializing RAG system on {DEVICE}...")
     embedder = load_embeddings()
     if embedder is None:
@@ -320,6 +368,12 @@ def initialize_rag_system():
     emotion_classifier = load_emotion_classifier()
     if emotion_classifier is None:
         logger.warning("Emotion classifier not loaded, continuing without emotion analysis")
+    
+    # Initialize CBT integration
+    cbt_integration = load_cbt_integration()
+    if cbt_integration is None:
+        logger.warning("CBT integration not loaded, continuing without CBT enhancement")
+    
     logger.info(f"RAG system initialized successfully on {DEVICE}")
     return True
 
@@ -351,6 +405,19 @@ async def health_check():
         except:
             pass
     
+    # Get CBT status
+    cbt_available = False
+    cbt_techniques = None
+    cbt_content = None
+    if cbt_integration is not None:
+        try:
+            cbt_status = cbt_integration.get_cbt_status()
+            cbt_available = cbt_status['available']
+            cbt_techniques = cbt_status['total_techniques']
+            cbt_content = cbt_status['total_content']
+        except:
+            pass
+    
     return HealthResponse(
         status="healthy",
         psychologist_llm_loaded=psychologist_llm is not None,
@@ -358,7 +425,10 @@ async def health_check():
         device=DEVICE,
         gpu_memory=gpu_memory,
         opro_prompt_loaded=opro_prompt_loaded,
-        interactions_count=interactions_count
+        interactions_count=interactions_count,
+        cbt_available=cbt_available,
+        cbt_techniques=cbt_techniques,
+        cbt_content=cbt_content
     )
 
 def analyze_emotion(text):
@@ -605,9 +675,44 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
             # Post-process: automatically trim overly long answers to ensure conciseness
             answer = post_process_response(answer)
             
+            # Enhance response with CBT techniques if available
+            if cbt_integration is not None:
+                try:
+                    # Check if CBT enhancement should be applied
+                    should_enhance = cbt_integration.should_include_cbt(processed_question)
+                    logger.info(f"CBT relevance check for '{processed_question}': {should_enhance}")
+                    
+                    if should_enhance:
+                        enhanced_answer = cbt_integration.enhance_response_with_cbt(
+                            user_query=processed_question,
+                            context=context,
+                            base_response=answer
+                        )
+                        if enhanced_answer != answer:
+                            answer = enhanced_answer
+                            logger.info("Response enhanced with CBT techniques")
+                            
+                            # Debug info for CBT enhancement
+                            if SHOW_PROMPT_DEBUG:
+                                print("CBT ENHANCEMENT APPLIED:")
+                                print("-" * 60)
+                                original_part = answer.split('\n\n')[0]
+                                print(f"Original length: {len(original_part)} chars")
+                                print(f"Enhanced length: {len(answer)} chars")
+                                print("-" * 60)
+                        else:
+                            logger.info("CBT enhancement returned same response")
+                    else:
+                        logger.info("CBT enhancement not relevant for this query")
+                        
+                except Exception as e:
+                    logger.warning(f"CBT enhancement failed: {e}")
+                    import traceback
+                    logger.debug(f"CBT enhancement error details: {traceback.format_exc()}")
+            
             # Display processed answer for debugging
             if SHOW_PROMPT_DEBUG:
-                print("PROCESSED ANSWER:")
+                print("PROCESSED ANSWER (WITH CBT):")
                 print("-" * 60)
                 print(answer)
                 print("-" * 60)
@@ -699,17 +804,133 @@ async def collect_feedback(feedback_data: FeedbackRequest):
         logger.error(f"Error collecting feedback: {e}")
         raise HTTPException(status_code=500, detail=str(e))
 
+# CBT-specific endpoints
+class CBTRequest(BaseModel):
+    query: str
+    context: Optional[str] = ""
+
+class CBTResponse(BaseModel):
+    query: str
+    cbt_relevant: bool
+    recommended_techniques: List[dict]
+    supporting_content: List[dict]
+    formatted_response: str
+    status: str
+
+@app.get("/api/cbt/status")
+async def get_cbt_status():
+    """Get CBT integration status"""
+    if cbt_integration is not None:
+        try:
+            status = cbt_integration.get_cbt_status()
+            return {
+                "cbt_available": True,
+                "status": status
+            }
+        except Exception as e:
+            logger.error(f"Error getting CBT status: {e}")
+            return {
+                "cbt_available": False,
+                "error": str(e)
+            }
+    else:
+        return {
+            "cbt_available": False,
+            "message": "CBT integration not available"
+        }
+
+@app.post("/api/cbt/recommend", response_model=CBTResponse)
+async def get_cbt_recommendations(request: CBTRequest):
+    """Get CBT technique recommendations"""
+    if cbt_integration is None:
+        raise HTTPException(
+            status_code=503, 
+            detail="CBT integration not available. Please ensure CBT system is properly set up."
+        )
+        
+    try:
+        # Check if query is CBT relevant
+        is_relevant = cbt_integration.should_include_cbt(request.query)
+        
+        if is_relevant:
+            # Get CBT recommendations
+            recommendations = cbt_integration.cbt_kb.get_cbt_recommendation(
+                request.query, 
+                request.context
+            )
+            
+            # Format response
+            formatted_response = cbt_integration.cbt_kb.format_cbt_response(
+                recommendations, 
+                request.query
+            )
+            
+            return CBTResponse(
+                query=request.query,
+                cbt_relevant=True,
+                recommended_techniques=recommendations['recommended_techniques'],
+                supporting_content=recommendations['supporting_content'],
+                formatted_response=formatted_response,
+                status="success"
+            )
+        else:
+            return CBTResponse(
+                query=request.query,
+                cbt_relevant=False,
+                recommended_techniques=[],
+                supporting_content=[],
+                formatted_response="This query does not appear to be related to CBT techniques. Please ask about anxiety, depression, stress management, or specific therapeutic techniques.",
+                status="not_relevant"
+            )
+            
+    except Exception as e:
+        logger.error(f"CBT recommendation error: {e}")
+        raise HTTPException(status_code=500, detail=f"CBT recommendation failed: {e}")
+
+@app.post("/api/cbt/search")
+async def search_cbt_techniques(request: CBTRequest):
+    """Search for specific CBT techniques"""
+    if cbt_integration is None:
+        raise HTTPException(
+            status_code=503, 
+            detail="CBT integration not available"
+        )
+        
+    try:
+        # Search CBT techniques
+        results = cbt_integration.cbt_kb.search_cbt_techniques(
+            request.query, 
+            top_k=5
+        )
+        
+        return {
+            "query": request.query,
+            "results": results,
+            "total_found": len(results),
+            "status": "success"
+        }
+        
+    except Exception as e:
+        logger.error(f"CBT search error: {e}")
+        raise HTTPException(status_code=500, detail=f"CBT search failed: {e}")
+
 @app.get("/")
 async def root():
+    cbt_status = "available" if cbt_integration is not None else "not_available"
+    
     return {
-        "message": "ICD-11 Enhanced RAG API",
-        "version": "3.0.0",
-        "description": "Enhanced API with emotion analysis, conversation memory, and improved dialogue",
+        "message": "ICD-11 Enhanced RAG API with CBT Integration",
+        "version": "3.1.0",
+        "description": "Enhanced API with emotion analysis, conversation memory, OPRO optimization, and CBT techniques integration",
+        "cbt_integration": cbt_status,
         "endpoints": {
             "health": "/health",
             "empathetic_professional": "/api/empathetic_professional",
             "reset_conversation": "/api/reset_conversation",
-            "feedback": "/api/feedback"
+            "feedback": "/api/feedback",
+            "cbt_status": "/api/cbt/status",
+            "cbt_recommend": "/api/cbt/recommend",
+            "cbt_search": "/api/cbt/search"
         }
     }
 

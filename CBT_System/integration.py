@@ -7,6 +7,7 @@ Integrates CBT functionality with existing systems
 import json
 import os
 import pickle
+import re
 from pathlib import Path
 from typing import List, Dict, Any, Optional
 import logging
@@ -126,8 +127,13 @@ class CBTKnowledgeBase:
         query_analysis = self.analyze_user_query(user_query)
         
         # Search for relevant CBT techniques
-        search_query = f"{user_query} {' '.join(query_analysis['indicators'])}"
-        search_results = self.search_cbt_techniques(search_query, top_k=3)
+        indicators = query_analysis['indicators']
+        if indicators:
+            search_query = f"{user_query} {' '.join(indicators)}"
+        else:
+            # If no specific indicators, add generic anxiety/mental health terms
+            search_query = f"{user_query} anxiety stress coping mental health"
+        search_results = self.search_cbt_techniques(search_query, top_k=8)
         
         # Filter by technique type
         technique_results = [r for r in search_results if r.get('type') == 'cbt_technique']
@@ -147,7 +153,7 @@ class CBTKnowledgeBase:
         # CBT condition indicators
         condition_indicators = {
             'depression': ['sad', 'depressed', 'hopeless', 'worthless', 'empty', 'down'],
-            'anxiety': ['anxious', 'worried', 'nervous', 'panic', 'fear', 'stress'],
+            'anxiety': ['anxious', 'anxiety', 'worried', 'nervous', 'panic', 'fear', 'stress', 'struggling'],
             'trauma': ['trauma', 'ptsd', 'flashback', 'nightmare', 'abuse'],
             'ocd': ['obsessive', 'compulsive', 'ritual', 'checking', 'washing'],
             'phobia': ['phobia', 'afraid', 'scared', 'avoidance'],
@@ -156,11 +162,12 @@ class CBTKnowledgeBase:
         
         # CBT technique indicators
         technique_indicators = {
-            'cognitive_restructuring': ['thoughts', 'thinking', 'believe', 'assume'],
+            'cognitive_restructuring': ['thoughts', 'thinking', 'believe', 'assume', 'negative thinking'],
             'behavioral_activation': ['activity', 'behavior', 'action', 'doing'],
             'exposure': ['avoid', 'escape', 'fear', 'exposure'],
-            'relaxation': ['tense', 'relaxation', 'calm', 'breathe'],
-            'problem_solving': ['problem', 'solution', 'decision', 'choice']
+            'relaxation': ['tense', 'relaxation', 'calm', 'breathe', 'breathing'],
+            'problem_solving': ['problem', 'solution', 'decision', 'choice'],
+            'coping_strategies': ['coping', 'cope', 'help', 'struggling', 'struggle', 'need help', 'strategies']
         }
         
         detected_conditions = []
@@ -240,16 +247,20 @@ class CBTKnowledgeBase:
         # Remove "CBT Technique:" prefix if present
         text = text.replace('CBT Technique:', '').strip()
         
+        # Clean up any formatting issues
+        text = re.sub(r'\s+', ' ', text)  # Multiple spaces to single space
+        text = re.sub(r'([a-zA-Z])([A-Z])', r'\1 \2', text)  # Fix concatenated words
+        
         # Split into sentences
-        sentences = [s.strip() for s in text.split('.') if s.strip()]
+        sentences = [s.strip() for s in re.split(r'[.!?]+', text) if s.strip()]
         
         # Find most informative sentences (containing action words)
-        action_words = ['practice', 'try', 'identify', 'challenge', 'focus', 'write', 'schedule', 'engage']
+        action_words = ['practice', 'try', 'identify', 'challenge', 'focus', 'write', 'schedule', 'engage', 'use', 'apply', 'learn', 'develop']
         
         key_sentences = []
         for sentence in sentences:
             sentence_lower = sentence.lower()
-            if any(word in sentence_lower for word in action_words):
+            if any(word in sentence_lower for word in action_words) and len(sentence) > 10:
                 key_sentences.append(sentence)
                 
         # If no action sentences, take first meaningful sentences
@@ -257,8 +268,15 @@ class CBTKnowledgeBase:
             key_sentences = [s for s in sentences if len(s) > 20][:2]
             
         # Combine and truncate
-        result = '. '.join(key_sentences[:2])
+        if key_sentences:
+            result = '. '.join(key_sentences[:2])
+            if not result.endswith('.'):
+                result += '.'
+        else:
+            result = text[:max_length] if len(text) > max_length else text
+            
         if len(result) > max_length:
+            # Cut at word boundary
             result = result[:max_length].rsplit(' ', 1)[0] + '...'
             
         return result
@@ -276,22 +294,34 @@ class CBTIntegration:
         """Enhance a response with CBT techniques if relevant"""
         
         if not self.cbt_kb.is_available():
+            self.logger.debug("CBT knowledge base not available")
             return base_response
             
         # Check if query would benefit from CBT techniques
-        if self.should_include_cbt(user_query):
+        should_enhance = self.should_include_cbt(user_query)
+        self.logger.debug(f"CBT relevance for '{user_query}': {should_enhance}")
+        
+        if should_enhance:
             try:
                 recommendations = self.cbt_kb.get_cbt_recommendation(user_query, context)
+                self.logger.debug(f"CBT recommendations found: {len(recommendations.get('recommended_techniques', []))} techniques")
                 
-                if recommendations['recommended_techniques']:
+                if recommendations.get('recommended_techniques'):
                     cbt_response = self.cbt_kb.format_cbt_response(recommendations, user_query)
                     
                     # Combine base response with CBT recommendations
                     enhanced_response = f"{base_response}\n\n{cbt_response}"
+                    self.logger.debug(f"CBT enhancement applied, response length: {len(enhanced_response)}")
                     return enhanced_response
+                else:
+                    self.logger.debug("No CBT techniques found for this query")
                     
             except Exception as e:
                 self.logger.error(f"CBT enhancement failed: {e}")
+                import traceback
+                self.logger.debug(f"CBT enhancement error details: {traceback.format_exc()}")
+        else:
+            self.logger.debug("Query not suitable for CBT enhancement")
                 
         return base_response
         
@@ -303,19 +333,43 @@ class CBTIntegration:
         cbt_indicators = [
             'how can i', 'what should i do', 'help me', 'strategies',
             'cope', 'coping', 'deal with', 'manage', 'overcome',
-            'techniques', 'methods', 'ways to', 'exercises'
+            'techniques', 'methods', 'ways to', 'exercises', 'need',
+            'struggling', 'struggle', 'i need help', 'help with'
         ]
         
         # Mental health conditions that commonly use CBT
         condition_keywords = [
-            'anxiety', 'depression', 'stress', 'worry', 'panic',
-            'thoughts', 'thinking', 'behavior', 'mood', 'fear'
+            'anxiety', 'anxious', 'depression', 'depressed', 'stress', 'stressed',
+            'worry', 'worried', 'panic', 'fear', 'afraid', 'nervous',
+            'thoughts', 'thinking', 'behavior', 'mood', 'overwhelmed',
+            'sad', 'down', 'upset', 'tense', 'relaxation', 'relax'
+        ]
+        
+        # Direct CBT technique requests
+        direct_cbt_requests = [
+            'cbt', 'cognitive behavioral', 'cognitive behaviour',
+            'thought challenging', 'breathing exercises', 'relaxation techniques',
+            'mindfulness', 'meditation', 'behavioral activation'
         ]
         
         has_cbt_indicator = any(indicator in query_lower for indicator in cbt_indicators)
         has_condition_keyword = any(keyword in query_lower for keyword in condition_keywords)
+        has_direct_request = any(request in query_lower for request in direct_cbt_requests)
         
-        return has_cbt_indicator and has_condition_keyword
+        # More flexible logic: CBT relevant if any of these conditions are met:
+        # 1. Has both CBT indicator and condition keyword (original logic)
+        # 2. Has direct CBT technique request
+        # 3. Has strong emotional/mental health indicators (even without explicit help request)
+        strong_indicators = [
+            'feel anxious', 'feeling anxious', 'feel depressed', 'feeling depressed',
+            'feel overwhelmed', 'feeling overwhelmed', 'panic attacks', 'anxiety attacks',
+            'negative thoughts', 'negative thinking', 'cant sleep', "can't sleep",
+            'feel stressed', 'feeling stressed'
+        ]
+        
+        has_strong_indicator = any(indicator in query_lower for indicator in strong_indicators)
+        
+        return (has_cbt_indicator and has_condition_keyword) or has_direct_request or has_strong_indicator
         
     def get_cbt_status(self) -> Dict:
         """Get CBT integration status"""

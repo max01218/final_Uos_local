@@ -1,10 +1,10 @@
-# 重新執行 FAISS index 建立流程，這次在 prompts 資料夾中建立向量庫
+# Re-execute FAISS index creation process, building vector database in prompts folder
 from langchain.docstore.document import Document
 from langchain_community.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores.faiss import FAISS
 from pathlib import Path
-# 只選取 prompts 資料夾下的 .txt 檔案
-prompts_dir = Path("prompts")  # ✅ 把字串轉成 Path 物件
+# Select only .txt files under prompts folder
+prompts_dir = Path("prompts")  # Convert string to Path object
 text_files = list(prompts_dir.rglob("*.txt"))
 documents = []
 
@@ -14,22 +14,22 @@ for file in text_files:
         if content:
             documents.append(Document(page_content=content))
     except Exception:
-        continue  # 忽略讀取錯誤的檔案
+        continue  # Skip files with read errors
 
-# 初始化句向量嵌入模型
+# Initialize sentence embedding model
 embedding_model = HuggingFaceEmbeddings(
     model_name="sentence-transformers/all-MiniLM-L6-v2",
     model_kwargs={"device": "cpu"},
     encode_kwargs={"normalize_embeddings": True}
 )
 
-# 建立 FAISS 向量庫
+# Create FAISS vector database
 vectorstore = FAISS.from_documents(documents, embedding_model)
 
-# 儲存為 FastAPI 可用的 embeddings 索引資料夾
+# Save as embeddings index folder for FastAPI usage
 output_path = Path("embeddings")
 vectorstore.save_local(str(output_path))
 
-# 顯示儲存結果
+# Display save results
 print(list(output_path.iterdir()))
 

@@ -1,0 +1,39 @@
+2025-07-22 22:15:54,988 - INFO - Use pytorch device_name: cuda:0
+2025-07-22 22:15:54,988 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-22 22:15:57,463 - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-07-22 22:15:57,467 - INFO - Use pytorch device_name: cuda:0
+2025-07-22 22:15:57,467 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-22 22:15:58,744 - INFO - Loaded CBT embedding model: all-MiniLM-L6-v2
+2025-07-22 22:15:58,744 - INFO - Loaded CBT FAISS index with 38 vectors
+2025-07-22 22:15:58,745 - INFO - Loaded CBT metadata: 38 items
+2025-07-22 22:16:35,553 - INFO - Use pytorch device_name: cuda:0
+2025-07-22 22:16:35,553 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-22 22:16:36,846 - INFO - Loaded CBT embedding model: all-MiniLM-L6-v2
+2025-07-22 22:16:36,847 - INFO - Loaded CBT FAISS index with 38 vectors
+2025-07-22 22:16:36,847 - INFO - Loaded CBT metadata: 38 items
+2025-07-22 23:46:19,426 - INFO - Use pytorch device_name: cuda:0
+2025-07-22 23:46:19,427 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-22 23:46:21,786 - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-07-22 23:46:21,799 - INFO - Use pytorch device_name: cuda:0
+2025-07-22 23:46:21,799 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-22 23:46:23,043 - INFO - Loaded CBT embedding model: all-MiniLM-L6-v2
+2025-07-22 23:46:23,044 - INFO - Loaded CBT FAISS index with 38 vectors
+2025-07-22 23:46:23,045 - INFO - Loaded CBT metadata: 38 items
+2025-07-22 23:46:25,286 - INFO - Use pytorch device_name: cuda:0
+2025-07-22 23:46:25,286 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-22 23:46:26,583 - INFO - Loaded CBT embedding model: all-MiniLM-L6-v2
+2025-07-22 23:46:26,585 - INFO - Loaded CBT FAISS index with 38 vectors
+2025-07-22 23:46:26,585 - INFO - Loaded CBT metadata: 38 items
+2025-07-22 23:50:00,602 - INFO - Use pytorch device_name: cuda:0
+2025-07-22 23:50:00,603 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-22 23:50:02,932 - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-07-22 23:50:02,936 - INFO - Use pytorch device_name: cuda:0
+2025-07-22 23:50:02,936 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-22 23:50:04,493 - INFO - Loaded CBT embedding model: all-MiniLM-L6-v2
+2025-07-22 23:50:04,494 - INFO - Loaded CBT FAISS index with 38 vectors
+2025-07-22 23:50:04,495 - INFO - Loaded CBT metadata: 38 items
+2025-07-22 23:50:37,835 - INFO - Use pytorch device_name: cuda:0
+2025-07-22 23:50:37,835 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-22 23:50:39,280 - INFO - Loaded CBT embedding model: all-MiniLM-L6-v2
+2025-07-22 23:50:39,281 - INFO - Loaded CBT FAISS index with 38 vectors
+2025-07-22 23:50:39,281 - INFO - Loaded CBT metadata: 38 items

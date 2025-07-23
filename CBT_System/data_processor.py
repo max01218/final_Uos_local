@@ -102,14 +102,18 @@ class CBTDataProcessor:
         if not text:
             return ""
             
-        # Remove extra whitespace
+        # Remove extra whitespace but preserve single spaces between words
         text = re.sub(r'\s+', ' ', text)
         
-        # Remove special characters but keep basic punctuation
+        # Remove special characters but keep basic punctuation and ensure spaces around words
         text = re.sub(r'[^\w\s\.\,\?\!\:\;\-\(\)]', ' ', text)
         
-        # Remove repetitive patterns
-        text = re.sub(r'(\w+)\s+\1(\s+\1)*', r'\1', text)
+        # Fix cases where punctuation is directly attached to words without space
+        text = re.sub(r'([a-zA-Z])([.!?:;,])', r'\1 \2', text)
+        text = re.sub(r'([.!?:;,])([a-zA-Z])', r'\1 \2', text)
+        
+        # Remove repetitive patterns but be more careful
+        text = re.sub(r'\b(\w+)(\s+\1\b)+', r'\1', text)
         
         # Clean up common web artifacts
         web_artifacts = [
@@ -126,7 +130,9 @@ class CBTDataProcessor:
         
         for artifact in web_artifacts:
             text = re.sub(artifact, '', text, flags=re.IGNORECASE)
-            
+        
+        # Final cleanup: remove multiple spaces and trim
+        text = re.sub(r'\s+', ' ', text)
         return text.strip()
         
     def extract_techniques(self, content: str) -> List[Dict]:
@@ -164,13 +170,29 @@ class CBTDataProcessor:
         
         context = content[start:end]
         
-        # Clean context
+        # Clean context with improved text processing
         context = self.clean_text(context)
+        
+        # Additional cleaning for context extraction
+        # Fix common OCR/extraction errors
+        context = re.sub(r'([a-z])([A-Z])', r'\1 \2', context)  # Fix camelCase
+        context = re.sub(r'([a-zA-Z])(\d)', r'\1 \2', context)  # Fix letter-number joins
+        context = re.sub(r'(\d)([a-zA-Z])', r'\1 \2', context)  # Fix number-letter joins
+        
+        # Fix common word concatenations
+        context = re.sub(r'([a-z])(that|with|and|the|for|to|of|in|on|at)', r'\1 \2', context)
+        context = re.sub(r'(that|with|and|the|for|to|of|in|on|at)([A-Z][a-z])', r'\1 \2', context)
+        
+        # Clean up multiple spaces again
+        context = re.sub(r'\s+', ' ', context)
         
         # Try to start and end at sentence boundaries
         sentences = re.split(r'[.!?]', context)
         if len(sentences) > 2:
-            context = '. '.join(sentences[1:-1]) + '.'
+            # Take the middle sentences to avoid partial sentences at start/end
+            middle_sentences = [s.strip() for s in sentences[1:-1] if s.strip()]
+            if middle_sentences:
+                context = '. '.join(middle_sentences) + '.'
             
         return context.strip()
         

@@ -168,7 +168,7 @@ class OPROOptimizer:
         # Run optimization iterations
         for iteration in range(self.config["opro_settings"]["max_iterations"]):
             self.iteration_count = iteration + 1
-            logger.info(f"📊 Running iteration {self.iteration_count}/{self.config['opro_settings']['max_iterations']}")
+            logger.info(f"Running iteration {self.iteration_count}/{self.config['opro_settings']['max_iterations']}")
             
             # Generate new prompt candidates
             new_candidates = self._generate_prompt_variants()
@@ -209,7 +209,7 @@ class OPROOptimizer:
         
         self._save_optimization_results(result)
         
-        logger.info(f"🎉 Optimization completed! Best score: {result.final_score:.3f}")
+        logger.info(f"Optimization completed! Best score: {result.final_score:.3f}")
         return result
     
     def _initialize_with_seeds(self):
@@ -454,7 +454,7 @@ OPTIMIZATION RATIONALE:
                 generation_method="offline_professional_enhancement"
             ))
         
-        logger.info(f"✅ Generated {len(variants)} offline variants")
+        logger.info(f"Generated {len(variants)} offline variants")
         return variants
     
     def _generate_default_variants(self) -> List[PromptCandidate]:
@@ -560,48 +560,48 @@ OPTIMIZATION RATIONALE:
         return enhanced_prompt
     
     def _create_safety_enhanced_variant(self, base_prompt: str) -> str:
-        """創建安全性增強的變體"""
+        """Create safety-enhanced variant"""
         safety_addition = """
 
-強化安全協議：
-⚠️ 危機警示：如果用戶表達自殺或自傷意圖：
-1. 立即表達關切和支持
-2. 提供緊急聯繫資源
-3. 鼓勵立即尋求專業幫助
-4. 持續監控對話中的風險信號
+Enhanced Safety Protocol:
+WARNING - Crisis Alert: If user expresses suicidal or self-harm intentions:
+1. Express immediate concern and support
+2. Provide emergency contact resources
+3. Encourage seeking immediate professional help
+4. Continuously monitor dialogue for risk signals
 
-🆘 緊急資源：
-- 自殺防治熱線：1925
-- 緊急醫療服務：119
-- 心理諮詢熱線：1980
+EMERGENCY RESOURCES:
+- Crisis Hotline: Available 24/7 in your region
+- Emergency Medical Services: Call local emergency number
+- Mental Health Support: Contact local mental health services
 
-專業免責聲明：此AI助手無法替代專業醫療診斷或治療。所有嚴重心理健康問題都應諮詢合格的專業人員。"""
+Professional Disclaimer: This AI assistant cannot replace professional medical diagnosis or treatment. All serious mental health issues should consult qualified professionals."""
         
         return base_prompt + safety_addition
     
     def _create_professional_enhanced_variant(self, base_prompt: str) -> str:
-        """創建專業性增強的變體"""
+        """Create professional-enhanced variant"""
         professional_addition = """
 
-ICD-11合規要求：
-- 使用標準化的心理健康術語
-- 遵循循證實踐原則
-- 提供準確的診斷參考信息
-- 維持專業界限和倫理標準
+ICD-11 Compliance Requirements:
+- Use standardized mental health terminology
+- Follow evidence-based practice principles
+- Provide accurate diagnostic reference information
+- Maintain professional boundaries and ethical standards
 
-質量保證：
-✓ 所有信息均基於最新的ICD-11分類
-✓ 建議符合國際最佳實踐指導原則
-✓ 定期更新以反映最新的研究證據
-✓ 嚴格遵守隱私和保密要求
+Quality Assurance:
+- All information based on latest ICD-11 classification
+- Recommendations comply with international best practice guidelines
+- Regular updates to reflect latest research evidence
+- Strict adherence to privacy and confidentiality requirements
 
-專業發展：持續學習和改進，確保提供最高質量的心理健康支持服務。"""
+Professional Development: Continuous learning and improvement to ensure highest quality mental health support services."""
         
         return base_prompt + professional_addition
     
     def _generate_fallback_variants(self) -> List[PromptCandidate]:
         """Generate fallback variants using simple mutations"""
-        logger.info("🔧 Generating fallback variants...")
+        logger.info("Generating fallback variants...")
         
         if not self.current_best:
             return []
@@ -772,7 +772,7 @@ ICD-11合規要求：
         with open("prompts/optimization_history.json", "w", encoding="utf-8") as f:
             json.dump(history_data, f, indent=2, ensure_ascii=False)
         
-        logger.info("✅ Results saved successfully!")
+        logger.info("Results saved successfully!")
     
     def load_optimization_history(self) -> List[PromptCandidate]:
         """Load previous optimization history"""

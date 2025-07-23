@@ -36,7 +36,7 @@ def validate_data(csv_path: str) -> pd.DataFrame:
     print(f"Row count check: {actual_rows} rows (expected: {expected_rows})")
     
     if actual_rows != expected_rows:
-        print(f"⚠️  Warning: Row count mismatch! Expected {expected_rows}, got {actual_rows}")
+        print(f"WARNING: Row count mismatch! Expected {expected_rows}, got {actual_rows}")
     
     # Check missing fields
     missing_percentages = df.isna().mean() * 100
@@ -47,7 +47,7 @@ def validate_data(csv_path: str) -> pd.DataFrame:
     # Check for high missing rates
     high_missing = missing_percentages[missing_percentages > 5]
     if len(high_missing) > 0:
-        print(f"⚠️  Warning: High missing rates in: {list(high_missing.index)}")
+        print(f"WARNING: High missing rates in: {list(high_missing.index)}")
     
     # Remove duplicates
     initial_count = len(df)

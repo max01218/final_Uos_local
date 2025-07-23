@@ -114,7 +114,7 @@ class PromptEvaluator:
     
     def _comprehensive_evaluation(self, prompt: str) -> EvaluationResult:
         """Perform comprehensive evaluation including test cases"""
-        logger.info("📊 Running comprehensive evaluation...")
+        logger.info("Running comprehensive evaluation...")
         
         # Initialize scoring
         dimension_scores = {}
