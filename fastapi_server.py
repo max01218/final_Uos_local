@@ -444,18 +444,75 @@ def analyze_emotion(text):
         return "neutral"
 
 def get_conversation_history():
-    """Get conversation history for context"""
+    """Get conversation history with enhanced context understanding"""
     try:
         messages = memory.chat_memory.messages
+        if not messages:
+            return ""
+            
         if len(messages) > 6:  # Keep last 3 exchanges
             messages = messages[-6:]
         
-        history = ""
-        for msg in messages:
-            role = "User" if msg.type == "human" else "Assistant"
-            history += f"{role}: {msg.content}\n"
+        # Analyze conversation for key context
+        user_emotions = []
+        user_goals = []
+        topics_discussed = []
         
-        return history.strip()
+        history_parts = []
+        for i, msg in enumerate(messages):
+            content = msg.content
+            
+            if msg.type == "human":
+                # Extract user emotional state and goals
+                content_lower = content.lower()
+                
+                # Detect emotional keywords
+                emotion_words = ['anxious', 'stressed', 'worried', 'calm', 'better', 'worse', 'overwhelmed', 'peaceful']
+                found_emotions = [word for word in emotion_words if word in content_lower]
+                user_emotions.extend(found_emotions)
+                
+                # Detect goal keywords  
+                goal_words = ['want to', 'need to', 'help with', 'stop', 'feel calmer', 'think clearly', 'be better']
+                found_goals = [goal for goal in goal_words if goal in content_lower]
+                user_goals.extend(found_goals)
+                
+                history_parts.append(f"User: {content}")
+            else:
+                # Summarize assistant responses
+                if len(content) > 100:
+                    # Extract the key question or guidance from assistant response
+                    if '?' in content:
+                        questions = [q.strip() + '?' for q in content.split('?') if q.strip()]
+                        if questions:
+                            summary = f"Assistant asked: {questions[-1]}"
+                        else:
+                            summary = f"Assistant: {content[:80]}..."
+                    else:
+                        summary = f"Assistant: {content[:80]}..."
+                else:
+                    summary = f"Assistant: {content}"
+                    
+                history_parts.append(summary)
+        
+        # Build enhanced context
+        context_parts = []
+        
+        if history_parts:
+            context_parts.append("Recent conversation:")
+            context_parts.extend(history_parts)
+        
+        # Add emotional context if available
+        if user_emotions:
+            recent_emotions = list(set(user_emotions[-3:]))  # Last 3 unique emotions
+            context_parts.append(f"User's recent emotional state: {', '.join(recent_emotions)}")
+        
+        # Add goal context if available
+        if user_goals:
+            recent_goals = list(set(user_goals[-2:]))  # Last 2 unique goals
+            context_parts.append(f"User's expressed goals: {', '.join(recent_goals)}")
+        
+        return '\n'.join(context_parts)
+        
     except Exception as e:
         logger.error(f"Error getting conversation history: {e}")
         return ""
@@ -475,8 +532,26 @@ def post_process_response(answer: str) -> str:
     if not answer:
         return answer
     
+    # Remove template formatting and debug information
+    template_patterns = [
+        r'USER SITUATION:.*?(?=\n|$)',  # Remove USER SITUATION: lines
+        r'MEDICAL CONTEXT:.*?(?=\n|$)',  # Remove MEDICAL CONTEXT: lines
+        r'CONVERSATION HISTORY:.*?(?=\n|$)',  # Remove CONVERSATION HISTORY: lines
+        r'CRISIS RESPONSE PROTOCOL:.*?(?=\n|$)',  # Remove protocol headers
+        r'SAFETY NOTICE:.*?(?=\n|$)',  # Remove safety notice headers
+        r'CRISIS\s*-\s*.*?(?=I understand|Let\'s|What|How|\.|$)',  # Remove crisis protocol text
+        r'Assess immediate safety.*?accessible\.',  # Remove specific crisis protocol
+        r'{context}|{history}|{question}',  # Remove unreplaced variables
+    ]
+    
+    for pattern in template_patterns:
+        answer = re.sub(pattern, '', answer, flags=re.IGNORECASE | re.MULTILINE)
+    
     # Remove labels like Empathy:, Citation:, Follow-up question: etc
     answer = re.sub(r'(Empathy:|Citation:|Follow-up question:)', '', answer, flags=re.IGNORECASE)
+    
+    # Remove any non-ASCII characters that might have crept in
+    answer = re.sub(r'[^\x00-\x7F]+', '', answer)
     
     # Remove extra newlines and spaces but preserve paragraph structure
     answer = re.sub(r'\n+', ' ', answer)
@@ -571,10 +646,33 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                 print("No conversation history")
             print("="*80)
         
-        # Step 4: RAG search (optimized for diversity)
+        # Step 4: RAG search (optimized for mental health relevance)
         retriever = store.as_retriever(search_kwargs={"k": 5})
         docs = retriever.invoke(processed_question)
-        context = "\n\n".join([doc.page_content for doc in docs])
+        
+        # Filter out irrelevant medical conditions for general mental health queries
+        relevant_docs = []
+        irrelevant_keywords = [
+            'parkinson', 'tremor', 'dementia', 'alzheimer', 'dystonia', 
+            'myoclonus', 'chorea', 'movement disorder', 'neurological'
+        ]
+        
+        general_mh_query = any(term in processed_question.lower() for term in [
+            'mental problem', 'mental health', 'feeling', 'sad', 'anxious', 
+            'depressed', 'stressed', 'worried'
+        ])
+        
+        for doc in docs:
+            # For general mental health queries, filter out neurological conditions
+            if general_mh_query:
+                if not any(keyword in doc.page_content.lower() for keyword in irrelevant_keywords):
+                    relevant_docs.append(doc)
+            else:
+                relevant_docs.append(doc)
+        
+        # Use filtered docs, fallback to original if none remain
+        final_docs = relevant_docs if relevant_docs else docs[:2]  # Limit to 2 if fallback
+        context = "\n\n".join([doc.page_content for doc in final_docs])
         
         # Display retrieved context for debugging
         if SHOW_PROMPT_DEBUG:
@@ -610,10 +708,14 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
         
         # Step 1: Always replace variables in OPRO prompt first
         try:
+            # Limit context and history to prevent template overflow
+            limited_context = context[:1000] + "..." if len(context) > 1000 else context
+            limited_history = history[:500] + "..." if len(history) > 500 else history
+            
             formatted_opro = opro_prompt.format(
-                context=context,
+                context=limited_context,
                 question=processed_question,
-                history=history
+                history=limited_history
             )
             logger.info("Variables successfully replaced in OPRO prompt")
         except KeyError as e:
@@ -654,11 +756,11 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
         # Step 7: LLM generation
         try:
             logger.info("Starting LLM inference...")
-            # Reset LLM generation parameters - optimize for crisis intervention responses
+            # Reset LLM generation parameters - optimize for concise, helpful responses
             pipe = psychologist_llm.pipeline
-            pipe.model.config.max_new_tokens = 250  # Increased for detailed crisis responses
-            pipe.model.config.temperature = 0.7     # More consistent for professional responses
-            pipe.model.config.top_p = 0.9
+            pipe.model.config.max_new_tokens = 150  # Shorter to prevent template leakage
+            pipe.model.config.temperature = 0.6     # More consistent responses
+            pipe.model.config.top_p = 0.8
             result = psychologist_llm.invoke(formatted_prompt)
             answer = result if isinstance(result, str) else str(result)
             
@@ -672,6 +774,43 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
             # Extract only content after <|assistant|> to avoid instruction leakage
             if "<|assistant|>" in answer:
                 answer = answer.split("<|assistant|>")[-1].strip()
+            
+            # Clean up any other ChatML or template remnants
+            chatml_patterns = [
+                r'<\|.*?\|>',  # Remove any ChatML tags
+                r'<\|im_start\|>.*?<\|im_end\|>',  # Remove Qwen ChatML blocks
+                r'<\|system\|>.*?(?=<\||$)',  # Remove system messages
+                r'<\|user\|>.*?(?=<\||$)',  # Remove user messages
+            ]
+            
+            for pattern in chatml_patterns:
+                answer = re.sub(pattern, '', answer, flags=re.DOTALL | re.IGNORECASE)
+            
+            # Enhanced filtering for problematic content
+            problematic_patterns = [
+                r'I understand you\'re experiencing ".*?" and I want to acknowledge',  # Template repetition
+                r'Be mindful of the user\'s emotions.*?support\.',  # Instruction leakage
+                r'Example Input \d+:.*?Response:',  # Example content
+                r'RESPONSE GUIDELINES:.*?RESPONSE:',  # Template content
+                r'USER MESSAGE:.*?RESPONSE:',  # Template variables
+                r'emergency involved, and I would appreciate your assistance',  # Specific weird content
+            ]
+            
+            for pattern in problematic_patterns:
+                answer = re.sub(pattern, '', answer, flags=re.DOTALL | re.IGNORECASE)
+            
+            # Remove any content that looks like template variables, instructions, or irrelevant medical terms
+            problematic_phrases = [
+                "be mindful of", "example input", "response guidelines", 
+                "user message:", "context:", "conversation history:",
+                "parkinson", "tremor", "dementia", "neurological", "rigidity",
+                "sudden onset", "early disability", "cognitive function related to mathematics"
+            ]
+            
+            if any(phrase in answer.lower() for phrase in problematic_phrases):
+                logger.warning("Detected problematic content in response, using fallback")
+                answer = create_fallback_response(processed_question, context, "empathetic_professional")
+            
             # Post-process: automatically trim overly long answers to ensure conciseness
             answer = post_process_response(answer)
             
@@ -772,16 +911,25 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 def create_fallback_response(question: str, context: str, tone: str) -> str:
-    """Creating concise fallback responses with better structure"""
+    """Create appropriate fallback responses without repeating user input"""
     
-    if tone == "caring":
-        return f"I hear that you're dealing with '{question}' and your feelings are completely valid. Would you like to tell me more about what you're going through?"
-
-    elif tone == "professional":
-        return f"Thank you for sharing your concern about '{question}'. This is a recognized area where professional guidance can be helpful. Would you like to discuss this further?"
-
-    else:  # empathetic_professional
-        return f"I understand you're experiencing '{question}' and want to acknowledge how difficult that must be. Would you like to share more about your experience?"
+    question_lower = question.lower() if question else ""
+    
+    # Detect emotion/topic and respond appropriately
+    if any(word in question_lower for word in ['sad', 'sadness', 'down', 'depressed']):
+        return "I understand you're feeling sad. That's difficult. Would you like to talk about what's weighing on you?"
+    elif any(word in question_lower for word in ['anxious', 'anxiety', 'worried', 'stressed']):
+        return "I hear that anxiety is affecting you. What's been causing you the most worry?"
+    elif any(word in question_lower for word in ['angry', 'mad', 'frustrated']):
+        return "It sounds like you're feeling frustrated. What's been bothering you?"
+    elif any(word in question_lower for word in ['lonely', 'alone', 'isolated']):
+        return "Feeling lonely can be painful. I'm here to listen. What's making you feel this way?"
+    elif any(word in question_lower for word in ['help', 'support', 'advice']):
+        return "I'm here to support you. Can you tell me more about what you need help with?"
+    elif any(word in question_lower for word in ['thank', 'thanks', 'hello', 'hi']):
+        return "You're welcome. Is there anything else I can help you with?"
+    else:
+        return "I'm here to listen and support you. Can you tell me more about what's been on your mind?"
 
 @app.post("/api/reset_conversation")
 async def reset_conversation():
@@ -862,7 +1010,8 @@ async def get_cbt_recommendations(request: CBTRequest):
             # Format response
             formatted_response = cbt_integration.cbt_kb.format_cbt_response(
                 recommendations, 
-                request.query
+                request.query,
+                request.context
             )
             
             return CBTResponse(

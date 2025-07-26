@@ -74,3 +74,82 @@ ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
 2025-07-22 22:14:53,052 - INFO - Categories: ['exposure_therapy', 'psychoeducation', 'cognitive_restructuring', 'problem_solving', 'relaxation_techniques']
 2025-07-22 22:14:53,052 - INFO - Created requirements file: requirements.txt
 2025-07-22 22:14:53,053 - INFO - Created usage guide: USAGE_GUIDE.md
+2025-07-24 22:07:26,052 - INFO - Found package: requests
+2025-07-24 22:07:26,125 - INFO - Found package: beautifulsoup4
+2025-07-24 22:07:31,320 - INFO - PyTorch version 2.5.1+cu121 available.
+2025-07-24 22:07:31,921 - INFO - Found package: sentence-transformers
+2025-07-24 22:07:32,067 - INFO - Loading faiss with AVX2 support.
+2025-07-24 22:07:32,068 - INFO - Could not load library with AVX2 support due to:
+ModuleNotFoundError("No module named 'faiss.swigfaiss_avx2'")
+2025-07-24 22:07:32,068 - INFO - Loading faiss.
+2025-07-24 22:07:32,082 - INFO - Successfully loaded faiss.
+2025-07-24 22:07:32,087 - INFO - Found package: faiss-cpu
+2025-07-24 22:07:32,087 - INFO - Found package: numpy
+2025-07-24 22:07:32,087 - INFO - Starting CBT data collection
+2025-07-24 22:07:32,090 - INFO - Starting collection for nhs_cbt
+2025-07-24 22:07:32,090 - INFO - Starting collection from nhs_cbt: https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/cognitive-behavioural-therapy-cbt/
+2025-07-24 22:07:34,179 - INFO - Collected page 2: https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/cognitive-behavioural-therapy-cbt/#maincontent
+2025-07-24 22:07:36,197 - INFO - Collected page 3: https://www.nhs.uk/nhs-services/mental-health-services/where-to-get-urgent-help-for-mental-health/
+2025-07-24 22:07:38,222 - INFO - Collected page 4: https://www.nhs.uk/nhs-services/mental-health-services/find-nhs-talking-therapies-for-anxiety-and-depression/
+2025-07-24 22:07:40,243 - INFO - Collected page 5: https://www.nhs.uk/mental-health/children-and-young-adults/mental-health-support/how-to-get-support/
+2025-07-24 22:07:40,244 - INFO - Saved 5 items to cbt_data\raw_data\government\nhs_cbt_1753391260.json
+2025-07-24 22:07:45,252 - INFO - Starting collection for cci_australia
+2025-07-24 22:07:45,252 - INFO - Starting collection from cci_australia: https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself
+2025-07-24 22:07:52,924 - INFO - Collected page 2: https://www.cci.health.wa.gov.au/Treatment/Overview
+2025-07-24 22:07:56,110 - INFO - Collected page 3: https://www.cci.health.wa.gov.au/Treatment/Mood-Management-Course
+2025-07-24 22:07:59,012 - INFO - Collected page 4: https://www.cci.health.wa.gov.au/Treatment/Bipolar-Course
+2025-07-24 22:08:01,917 - INFO - Collected page 5: https://www.cci.health.wa.gov.au/Treatment/Social-Anxiety-Course
+2025-07-24 22:08:01,918 - INFO - Saved 5 items to cbt_data\raw_data\government\cci_australia_1753391281.json
+2025-07-24 22:08:06,920 - INFO - Starting collection for nimh_psychotherapy
+2025-07-24 22:08:06,920 - INFO - Starting collection from nimh_psychotherapy: https://www.nimh.nih.gov/health/topics/psychotherapies
+2025-07-24 22:08:09,727 - INFO - Collected page 2: https://www.nimh.nih.gov/health/topics/mental-health-medications
+2025-07-24 22:08:12,020 - INFO - Collected page 3: https://www.nimh.nih.gov/health/topics/anxiety-disorders#part_2225
+2025-07-24 22:08:14,238 - INFO - Collected page 4: https://www.nimh.nih.gov/health/topics/anxiety-disorders
+2025-07-24 22:08:16,544 - INFO - Collected page 5: https://www.nimh.nih.gov/health/topics/technology-and-the-future-of-mental-health-treatment
+2025-07-24 22:08:16,545 - INFO - Saved 5 items to cbt_data\raw_data\government\nimh_psychotherapy_1753391296.json
+2025-07-24 22:08:21,547 - INFO - Data collection successful: 15 items
+2025-07-24 22:08:21,547 - INFO - Starting CBT data processing
+2025-07-24 22:08:21,548 - INFO - Starting CBT data processing
+2025-07-24 22:08:21,556 - INFO - Loaded data from cbt_data\raw_data\government\cci_australia_1753218868.json
+2025-07-24 22:08:21,562 - INFO - Loaded data from cbt_data\raw_data\government\cci_australia_1753391281.json
+2025-07-24 22:08:21,569 - INFO - Loaded data from cbt_data\raw_data\government\nhs_cbt_1753218848.json
+2025-07-24 22:08:21,569 - INFO - Loaded data from cbt_data\raw_data\government\nhs_cbt_1753391260.json
+2025-07-24 22:08:21,575 - INFO - Loaded data from cbt_data\raw_data\government\nimh_psychotherapy_1753218883.json
+2025-07-24 22:08:21,582 - INFO - Loaded data from cbt_data\raw_data\government\nimh_psychotherapy_1753391296.json
+2025-07-24 22:08:21,582 - INFO - Loaded 30 raw items
+2025-07-24 22:08:21,665 - INFO - Deduplicated 28 -> 12 items
+2025-07-24 22:08:21,670 - INFO - Saved processed data: 12 total items
+2025-07-24 22:08:21,670 - INFO - Categories: ['psychoeducation', 'cognitive_restructuring', 'relaxation_techniques']
+2025-07-24 22:08:21,670 - INFO - Processing completed: 12 unique items
+2025-07-24 22:08:21,670 - INFO - Data processing successful: cbt_data\raw_data\processed\cbt_processed_20250724_220821.json
+2025-07-24 22:08:21,670 - INFO - Starting CBT data vectorization
+2025-07-24 22:08:21,685 - INFO - Use pytorch device_name: cuda:0
+2025-07-24 22:08:21,685 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-24 22:08:24,102 - INFO - Loaded embedding model: all-MiniLM-L6-v2
+2025-07-24 22:08:24,102 - INFO - Starting CBT data vectorization
+2025-07-24 22:08:24,112 - INFO - Loaded 12 processed items from cbt_data\raw_data\processed\cbt_processed_20250724_220821.json
+2025-07-24 22:08:24,112 - INFO - Prepared 38 text chunks for embedding
+2025-07-24 22:08:24,112 - INFO - Creating embeddings for 38 chunks
+2025-07-24 22:08:24,287 - INFO - Processed batch 1/2
+2025-07-24 22:08:24,307 - INFO - Processed batch 2/2
+2025-07-24 22:08:24,308 - INFO - Created embeddings shape: (38, 384)
+2025-07-24 22:08:24,311 - INFO - Created FAISS index with 38 vectors
+2025-07-24 22:08:24,333 - INFO - Saved index and metadata to cbt_data\embeddings
+2025-07-24 22:08:24,333 - INFO - Testing search functionality
+2025-07-24 22:08:24,349 - INFO - Query: 'cognitive behavioral therapy for depression' -> 3 results
+2025-07-24 22:08:24,359 - INFO - Query: 'anxiety coping strategies' -> 3 results
+2025-07-24 22:08:24,369 - INFO - Query: 'thought challenging techniques' -> 3 results
+2025-07-24 22:08:24,369 - INFO - Vectorization completed successfully
+2025-07-24 22:08:24,369 - INFO - Vectorization successful
+2025-07-24 22:08:24,369 - INFO - Testing CBT integration
+2025-07-24 22:08:24,380 - INFO - Use pytorch device_name: cuda:0
+2025-07-24 22:08:24,380 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-07-24 22:08:25,633 - INFO - Loaded CBT embedding model: all-MiniLM-L6-v2
+2025-07-24 22:08:25,639 - INFO - Loaded CBT FAISS index with 38 vectors
+2025-07-24 22:08:25,645 - INFO - Loaded CBT metadata: 38 items
+2025-07-24 22:08:25,645 - INFO - CBT integration test successful
+2025-07-24 22:08:25,645 - INFO - Techniques: 26
+2025-07-24 22:08:25,645 - INFO - Content: 12
+2025-07-24 22:08:25,645 - INFO - Categories: ['problem_solving', 'cognitive_restructuring', 'exposure_therapy', 'psychoeducation', 'relaxation_techniques']
+2025-07-24 22:08:25,645 - INFO - Created requirements file: requirements.txt
+2025-07-24 22:08:25,646 - INFO - Created usage guide: USAGE_GUIDE.md
