@@ -1,0 +1,280 @@
+{
+  "system_info": {
+    "name": "Enhanced CBT Data System",
+    "version": "2.0.0",
+    "description": "Advanced CBT data collection, processing, and vectorization system",
+    "creation_date": "2024-01-01"
+  },
+  
+  "data_collection": {
+    "enabled": true,
+    "priority_filter": null,
+    "rate_limiting": {
+      "delay_between_sources": 5,
+      "delay_between_requests": 2,
+      "max_retries": 3,
+      "timeout": 30
+    },
+    "source_configuration": {
+      "government_sources": {
+        "enabled": true,
+        "priority": 1,
+        "max_pages_per_source": 10
+      },
+      "professional_orgs": {
+        "enabled": true,
+        "priority": 2,
+        "max_pages_per_source": 8
+      },
+      "international_orgs": {
+        "enabled": true,
+        "priority": 1,
+        "max_pages_per_source": 10
+      },
+      "clinical_guidelines": {
+        "enabled": true,
+        "priority": 1,
+        "max_pages_per_source": 12
+      },
+      "academic_sources": {
+        "enabled": false,
+        "priority": 3,
+        "max_pages_per_source": 5
+      },
+      "nonprofit_sources": {
+        "enabled": true,
+        "priority": 2,
+        "max_pages_per_source": 6
+      }
+    },
+    "quality_criteria": {
+      "min_content_length": 150,
+      "max_content_length": 8000,
+      "required_keywords": ["cbt", "cognitive", "behavioral", "therapy", "technique", "mental", "health", "treatment", "counselling", "psychological"],
+      "exclude_keywords": ["advertisement", "commercial", "purchase", "buy", "subscribe"],
+      "professional_terms_threshold": 2,
+      "minimum_quality_score": 40
+    }
+  },
+  
+  "data_processing": {
+    "enabled": true,
+    "deduplication": {
+      "exact_hash_deduplication": true,
+      "semantic_similarity_threshold": 0.85,
+      "similarity_method": "tfidf_cosine"
+    },
+    "quality_assessment": {
+      "enhanced_scoring": true,
+      "minimum_enhanced_score": 45,
+      "quality_indicators": {
+        "structure_weight": 0.2,
+        "content_length_weight": 0.15,
+        "readability_weight": 0.15,
+        "professional_terms_weight": 0.15,
+        "source_credibility_weight": 0.2,
+        "classification_confidence_weight": 0.15
+      }
+    },
+    "classification": {
+      "enabled": true,
+      "technique_categories": [
+        "cognitive_restructuring",
+        "behavioral_activation", 
+        "exposure_therapy",
+        "problem_solving",
+        "relaxation_techniques",
+        "psychoeducation"
+      ],
+      "content_types": [
+        "technique_description",
+        "step_by_step_guide",
+        "assessment_tool",
+        "worksheet",
+        "case_study"
+      ],
+      "minimum_category_confidence": 2
+    },
+    "structure_extraction": {
+      "enabled": true,
+      "extract_steps": true,
+      "extract_key_points": true,
+      "extract_examples": true,
+      "max_items_per_type": 10
+    }
+  },
+  
+  "vectorization": {
+    "enabled": true,
+    "models": {
+      "primary": {
+        "name": "all-MiniLM-L6-v2",
+        "description": "Fast, good for general content",
+        "use_cases": ["content_based", "general_search"]
+      },
+      "clinical": {
+        "name": "sentence-transformers/all-mpnet-base-v2", 
+        "description": "Better for clinical text",
+        "use_cases": ["technique_focused", "clinical_content"]
+      },
+      "domain_specific": {
+        "name": "sentence-transformers/all-roberta-large-v1",
+        "description": "Best quality, slower",
+        "use_cases": ["high_precision", "research"]
+      }
+    },
+    "strategies": {
+      "content_based": {
+        "description": "Use full content for embedding",
+        "text_preprocessing": "minimal",
+        "max_length": 512
+      },
+      "technique_focused": {
+        "description": "Focus on CBT technique content",
+        "extract_keywords": true,
+        "include_category_info": true,
+        "max_length": 384
+      },
+      "structured_steps": {
+        "description": "Focus on step-by-step content",
+        "prioritize_numbered_steps": true,
+        "include_instructions": true,
+        "max_length": 256
+      },
+      "key_concepts": {
+        "description": "Focus on key concepts and points",
+        "extract_key_points": true,
+        "include_examples": true,
+        "max_length": 320
+      }
+    },
+    "indexing": {
+      "create_hierarchical_indices": true,
+      "quality_tiers": {
+        "premium": 85,
+        "standard": 70,
+        "basic": 60
+      },
+      "category_specific_indices": true,
+      "performance_optimization": {
+        "enabled": true,
+        "small_dataset_threshold": 100,
+        "medium_dataset_threshold": 1000,
+        "use_ivf_for_medium": true,
+        "use_pq_for_large": true
+      }
+    },
+    "batch_processing": {
+      "batch_size": 32,
+      "show_progress": true,
+      "normalize_embeddings": true
+    }
+  },
+  
+  "system_integration": {
+    "backward_compatibility": true,
+    "main_index_creation": true,
+    "integration_testing": {
+      "enabled": true,
+      "test_queries": [
+        "cognitive behavioral therapy for depression",
+        "anxiety coping strategies",
+        "thought challenging techniques", 
+        "mindfulness meditation exercises",
+        "problem solving therapy steps"
+      ],
+      "minimum_results_per_query": 1
+    }
+  },
+  
+  "logging": {
+    "level": "INFO",
+    "file_logging": true,
+    "console_logging": true,
+    "log_rotation": {
+      "enabled": true,
+      "max_size_mb": 50,
+      "backup_count": 5
+    },
+    "detailed_modules": [
+      "enhanced_data_collector",
+      "enhanced_data_processor", 
+      "enhanced_vectorizer"
+    ]
+  },
+  
+  "output_settings": {
+    "save_intermediate_results": true,
+    "create_backup_files": true,
+    "generate_reports": true,
+    "compression": {
+      "enabled": false,
+      "compression_level": 6
+    },
+    "file_naming": {
+      "include_timestamp": true,
+      "include_version": true,
+      "use_descriptive_names": true
+    }
+  },
+  
+  "performance": {
+    "memory_management": {
+      "batch_processing": true,
+      "clear_cache_between_steps": true,
+      "max_memory_usage_gb": 8
+    },
+    "parallel_processing": {
+      "enabled": false,
+      "max_workers": 4,
+      "chunk_size": 100
+    },
+    "optimization": {
+      "precompute_similarities": false,
+      "cache_embeddings": true,
+      "use_gpu_if_available": true
+    }
+  },
+  
+  "validation": {
+    "data_validation": {
+      "enabled": true,
+      "check_content_quality": true,
+      "validate_urls": false,
+      "check_duplicates": true
+    },
+    "processing_validation": {
+      "enabled": true,
+      "verify_classifications": true,
+      "check_structure_extraction": true,
+      "validate_quality_scores": true
+    },
+    "vectorization_validation": {
+      "enabled": true,
+      "test_search_functionality": true,
+      "verify_index_integrity": true,
+      "check_embedding_dimensions": true
+    }
+  },
+  
+  "maintenance": {
+    "automatic_cleanup": {
+      "enabled": true,
+      "remove_old_logs": true,
+      "cleanup_temp_files": true,
+      "days_to_keep_logs": 30
+    },
+    "update_schedule": {
+      "enabled": false,
+      "frequency": "weekly",
+      "preferred_time": "02:00",
+      "update_priority_sources_only": true
+    },
+    "monitoring": {
+      "enabled": true,
+      "track_file_sizes": true,
+      "monitor_processing_times": true,
+      "alert_on_failures": false
+    }
+  }
+} 

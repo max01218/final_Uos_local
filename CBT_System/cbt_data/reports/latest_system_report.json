@@ -1,0 +1,86 @@
+{
+  "generation_timestamp": "2025-07-27T14:57:05.616172",
+  "system_status": "fully_operational",
+  "data_collection": {
+    "status": "completed",
+    "details": {
+      "total_files": 18
+    }
+  },
+  "data_processing": {
+    "status": "completed",
+    "details": {
+      "processed_files": 2
+    }
+  },
+  "vectorization": {
+    "status": "completed",
+    "details": {
+      "faiss_indices": 13,
+      "latest_summary": {
+        "creation_timestamp": "2025-07-27T14:38:14.658060",
+        "embedding_model": "sentence-transformers/all-mpnet-base-v2",
+        "vectorization_strategy": "technique_focused",
+        "device_used": "cuda",
+        "processing_metadata": {
+          "processing_timestamp": "2025-07-27T14:26:18.161129",
+          "total_raw_items": 145,
+          "deduplicated_items": 44,
+          "final_items": 27,
+          "average_quality_score": 68.25925925925925,
+          "category_distribution": {
+            "psychoeducation": 20,
+            "relaxation_techniques": 2,
+            "problem_solving": 1,
+            "exposure_therapy": 1
+          },
+          "content_type_distribution": {
+            "assessment_tool": 9,
+            "worksheet": 7,
+            "case_study": 1,
+            "step_by_step_guide": 5
+          }
+        },
+        "indices_summary": {
+          "premium": {
+            "index_file": "cbt_index_premium_20250727_143814.faiss",
+            "metadata_file": "cbt_metadata_premium_20250727_143814.pkl",
+            "embedding_count": 1,
+            "index_type": "IndexFlatIP",
+            "dimension": 768
+          },
+          "standard": {
+            "index_file": "cbt_index_standard_20250727_143814.faiss",
+            "metadata_file": "cbt_metadata_standard_20250727_143814.pkl",
+            "embedding_count": 12,
+            "index_type": "IndexFlatIP",
+            "dimension": 768
+          },
+          "basic": {
+            "index_file": "cbt_index_basic_20250727_143814.faiss",
+            "metadata_file": "cbt_metadata_basic_20250727_143814.pkl",
+            "embedding_count": 21,
+            "index_type": "IndexFlatIP",
+            "dimension": 768
+          },
+          "category_psychoeducation": {
+            "index_file": "cbt_index_category_psychoeducation_20250727_143814.faiss",
+            "metadata_file": "cbt_metadata_category_psychoeducation_20250727_143814.pkl",
+            "embedding_count": 20,
+            "index_type": "IndexFlatIP",
+            "dimension": 768
+          }
+        }
+      }
+    }
+  },
+  "file_inventory": {
+    "raw_data/government": 13,
+    "raw_data/professional_orgs": 0,
+    "raw_data/international_orgs": 3,
+    "raw_data/clinical_guidelines": 2,
+    "raw_data/academic": 0,
+    "raw_data/nonprofit": 0
+  },
+  "recommendations": []
+}

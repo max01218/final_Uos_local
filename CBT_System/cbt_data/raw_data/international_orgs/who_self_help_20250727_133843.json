@@ -1,0 +1,44 @@
+{
+  "metadata": {
+    "collection_timestamp": "2025-07-27T13:38:43.709578",
+    "source_name": "who_self_help",
+    "source_type": "international_org",
+    "total_items": 1,
+    "quality_scores": [
+      60
+    ],
+    "average_quality": 60.0
+  },
+  "data": [
+    {
+      "url": "https://www.who.int/publications/i/item/9789240003927",
+      "source": "who_self_help",
+      "source_type": "international_org",
+      "license": "creative_commons",
+      "priority": 1,
+      "content": "Download (3.2 MB) Overview Doing What Matters in Times of Stress: An Illustrated Guide is a stress management guide for coping with adversity. The guide aims to equip people with practical skills to help cope with stress. A few minutes each day are enough to practice the self-help techniques. The guide can be used alone or with the accompanying audio exercises. Informed by evidence and extensive field testing, the guide is for anyone who experiences stress, wherever they live and whatever their circumstances. Language Audio exercises (please refer to the Guide for information on how to use these) Arabic https://who.canto.global/b/KCTU3 Arabic - Juba Armenian https://who.canto.global/b/VH6TI Bengali Burmese Catalan https://who.canto.global/b/OVE24 Chinese https://who.canto.global/b/UQ8KS Chinese - Traditional https://who.canto.global/b/HR4QL English https://who.canto.global/b/UCG20 English (adapted for the Caribbean) English (with images adapted for South Sudan) Dari Estonian Farsi https://who.canto.global/b/Q3UT3 Finnish French https://who.canto.global/b/QKVJ5 German https://who.canto.global/b/LDH6A Georgian Greek Hindi Hungarian https://who.canto.global/b/N32NB Indonesian Italian https://who.canto.global/b/JCOO2 Khmer Korean https://who.canto.global/b/H2AH3 Japanese Lithuanian https://who.canto.global/b/SDSQ5 Malay https://who.canto.global/b/RLIRC Mongolian Nepali Polish https://who.canto.global/b/N6AQH Portuguese Portuguese (adapted for Brazil) https://who.canto.global/b/GGGJ3 Romanian https://who.canto.global/b/PD0KD Russian https://who.canto.global/b/LKMT4 Spanish https://who.canto.global/b/GU95V Slovak Swahili Swedish Tigrinya Tongan Turkish https://who.canto.global/b/S7VEH Ukrainian https://who.canto.global/b/L3M72 Urdu Vietnamese WHO Team Mental Health, Brain Health and Substance Use (MSD) Editors World Health Organization Number of pages 132 Reference numbers ISBN: 9789240003927 Copyright",
+      "content_hash": "30a4deafc23ef2ab43bf2626b05639fc",
+      "structured_content": {
+        "techniques": [
+          "3.2 MB) Overview Doing What Matters in Times of Stress: An Illustrated Guide is a stress management guide for coping with adversity. The guide aims to equip people with practical skills to help cope with stress. A few minutes each day are enough to practice the self-help techniques. The guide can be used alone or with the accompanying audio exercises. Informed by evidence and extensive field testing, the guide is for anyone who experiences stress, wherever they live and whatever their circumstances. Language Audio exercises (please refer to the Guide for information on how to use these) Arabic https://who.canto.global/b/KCTU3 Arabic - Juba Armenian https://who.canto.global/b/VH6TI Bengali Burmese Catalan https://who.canto.global/b/OVE24 Chinese https://who.canto.global/b/UQ8KS Chinese - Traditional https://who.canto.global/b/HR4QL English https://who.canto.global/b/UCG20 English (adapted for the Caribbean) English (with images adapted for South Sudan) Dari Estonian Farsi https://who.canto.global/b/Q3UT3 Finnish French https://who.canto.global/b/QKVJ5 German https://who.canto.global/b/LDH6A Georgian Greek Hindi Hungarian https://who.canto.global/b/N32NB Indonesian Italian https://who.canto.global/b/JCOO2 Khmer Korean https://who.canto.global/b/H2AH3 Japanese Lithuanian https://who.canto.global/b/SDSQ5 Malay https://who.canto.global/b/RLIRC Mongolian Nepali Polish https://who.canto.global/b/N6AQH Portuguese Portuguese (adapted for Brazil) https://who.canto.global/b/GGGJ3 Romanian https://who.canto.global/b/PD0KD Russian https://who.canto.global/b/LKMT4 Spanish https://who.canto.global/b/GU95V Slovak Swahili Swedish Tigrinya Tongan Turkish https://who.canto.global/b/S7VEH Ukrainian https://who.canto.global/b/L3M72 Urdu Vietnamese WHO Team Mental Health, Brain Health and Substance Use (MSD) Editors World Health Organization Number of pages 132 Reference numbers ISBN: 9789240003927 Copyright"
+        ],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 60,
+        "length_ok": true,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 0,
+        "readability_score": 0,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:38:43.704082",
+      "content_length": 1929,
+      "title": "\r\n\tDoing What Matters in Times of Stress\r\n"
+    }
+  ]
+}

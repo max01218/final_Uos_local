@@ -1,0 +1,214 @@
+{
+  "test_timestamp": "2025-07-27T15:05:23.367620",
+  "summary": {
+    "total_categories": 4,
+    "successful_categories": 4,
+    "success_rate": 100.0
+  },
+  "detailed_results": {
+    "original_cbt_integration": {
+      "success": true,
+      "results": {
+        "status_check": {
+          "success": true,
+          "available": true,
+          "technique_count": 0,
+          "content_count": 0
+        },
+        "relevance_detection": [
+          {
+            "query": "I feel very anxious and need coping strategies",
+            "relevant": false,
+            "success": true
+          },
+          {
+            "query": "How to challenge negative thoughts",
+            "relevant": true,
+            "success": true
+          },
+          {
+            "query": "What are some relaxation techniques",
+            "relevant": true,
+            "success": true
+          },
+          {
+            "query": "Hello how are you today",
+            "relevant": false,
+            "success": true
+          }
+        ],
+        "search_functionality": [
+          {
+            "query": "anxiety coping strategies",
+            "results_count": 3,
+            "success": true,
+            "sample_result": {
+              "index": 2,
+              "source": "cci_australia",
+              "source_type": "government",
+              "quality_score": 89.0,
+              "primary_category": "psychoeducation",
+              "content_type": "worksheet",
+              "url": "https://www.cci.health.wa.gov.au/Treatment/Mood-Management-Course",
+              "title": "Depression & Anxiety Treatment | Perth",
+              "content_length": 5125,
+              "processing_timestamp": "2025-07-27T14:26:18.037626",
+              "vectorization_strategy": "technique_focused",
+              "text_used_for_embedding": "Skip to main content Site map Accessibility Contact Us Toggle navigation Home About Us {13C84218-8872-401E-9A13-665E425F6639} Overview {7EF6D75B-FB24-4CFB-83F9-FFED6BBFB1C7} History {416A02EE-C352-4E6...",
+              "relevance_score": 0.44418469071388245
+            }
+          },
+          {
+            "query": "cognitive restructuring techniques",
+            "results_count": 3,
+            "success": true,
+            "sample_result": {
+              "index": 2,
+              "source": "cci_australia",
+              "source_type": "government",
+              "quality_score": 89.0,
+              "primary_category": "psychoeducation",
+              "content_type": "worksheet",
+              "url": "https://www.cci.health.wa.gov.au/Treatment/Mood-Management-Course",
+              "title": "Depression & Anxiety Treatment | Perth",
+              "content_length": 5125,
+              "processing_timestamp": "2025-07-27T14:26:18.037626",
+              "vectorization_strategy": "technique_focused",
+              "text_used_for_embedding": "Skip to main content Site map Accessibility Contact Us Toggle navigation Home About Us {13C84218-8872-401E-9A13-665E425F6639} Overview {7EF6D75B-FB24-4CFB-83F9-FFED6BBFB1C7} History {416A02EE-C352-4E6...",
+              "relevance_score": 0.30577486753463745
+            }
+          },
+          {
+            "query": "relaxation exercises",
+            "results_count": 3,
+            "success": true,
+            "sample_result": {
+              "index": 2,
+              "source": "cci_australia",
+              "source_type": "government",
+              "quality_score": 89.0,
+              "primary_category": "psychoeducation",
+              "content_type": "worksheet",
+              "url": "https://www.cci.health.wa.gov.au/Treatment/Mood-Management-Course",
+              "title": "Depression & Anxiety Treatment | Perth",
+              "content_length": 5125,
+              "processing_timestamp": "2025-07-27T14:26:18.037626",
+              "vectorization_strategy": "technique_focused",
+              "text_used_for_embedding": "Skip to main content Site map Accessibility Contact Us Toggle navigation Home About Us {13C84218-8872-401E-9A13-665E425F6639} Overview {7EF6D75B-FB24-4CFB-83F9-FFED6BBFB1C7} History {416A02EE-C352-4E6...",
+              "relevance_score": 0.33664464950561523
+            }
+          },
+          {
+            "query": "mindfulness meditation",
+            "results_count": 3,
+            "success": true,
+            "sample_result": {
+              "index": 2,
+              "source": "cci_australia",
+              "source_type": "government",
+              "quality_score": 89.0,
+              "primary_category": "psychoeducation",
+              "content_type": "worksheet",
+              "url": "https://www.cci.health.wa.gov.au/Treatment/Mood-Management-Course",
+              "title": "Depression & Anxiety Treatment | Perth",
+              "content_length": 5125,
+              "processing_timestamp": "2025-07-27T14:26:18.037626",
+              "vectorization_strategy": "technique_focused",
+              "text_used_for_embedding": "Skip to main content Site map Accessibility Contact Us Toggle navigation Home About Us {13C84218-8872-401E-9A13-665E425F6639} Overview {7EF6D75B-FB24-4CFB-83F9-FFED6BBFB1C7} History {416A02EE-C352-4E6...",
+              "relevance_score": 0.3719688653945923
+            }
+          }
+        ],
+        "response_generation": [
+          {
+            "query": "I'm feeling overwhelmed with anxiety",
+            "response_generated": false,
+            "success": false,
+            "error": "enhance_response method not available"
+          },
+          {
+            "query": "I have negative thoughts about myself",
+            "response_generated": false,
+            "success": false,
+            "error": "enhance_response method not available"
+          },
+          {
+            "query": "I need help with stress management",
+            "response_generated": false,
+            "success": false,
+            "error": "enhance_response method not available"
+          }
+        ]
+      }
+    },
+    "enhanced_data_compatibility": {
+      "success": true,
+      "metadata": {
+        "processing_timestamp": "2025-07-27T14:26:18.161129",
+        "total_raw_items": 145,
+        "deduplicated_items": 44,
+        "final_items": 27,
+        "average_quality_score": 68.25925925925925,
+        "category_distribution": {
+          "psychoeducation": 20,
+          "relaxation_techniques": 2,
+          "problem_solving": 1,
+          "exposure_therapy": 1
+        },
+        "content_type_distribution": {
+          "assessment_tool": 9,
+          "worksheet": 7,
+          "case_study": 1,
+          "step_by_step_guide": 5
+        }
+      },
+      "compatibility": {
+        "has_items": true,
+        "items_have_content": true,
+        "items_have_classification": true,
+        "items_have_quality_scores": true
+      }
+    },
+    "fastapi_integration": {
+      "success": true,
+      "results": {
+        "fastapi_import": true,
+        "cbt_initialization": true,
+        "cbt_available": false,
+        "technique_count": 0
+      }
+    },
+    "vector_search_performance": {
+      "success": true,
+      "results": [
+        {
+          "index_file": "cbt_index.faiss",
+          "dimension": 768,
+          "total_vectors": 1,
+          "load_time_ms": 0.0,
+          "search_time_ms": 0.0,
+          "metadata_count": 1,
+          "success": true
+        },
+        {
+          "index_file": "cbt_index_20250722_221451.faiss",
+          "dimension": 384,
+          "total_vectors": 38,
+          "load_time_ms": 0.0,
+          "search_time_ms": 0.0,
+          "metadata_count": 38,
+          "success": true
+        },
+        {
+          "index_file": "cbt_index_20250722_234934.faiss",
+          "dimension": 384,
+          "total_vectors": 38,
+          "load_time_ms": 0.0,
+          "search_time_ms": 0.0,
+          "metadata_count": 38,
+          "success": true
+        }
+      ]
+    }
+  }
+}

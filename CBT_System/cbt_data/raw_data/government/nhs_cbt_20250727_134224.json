@@ -1,0 +1,274 @@
+{
+  "metadata": {
+    "collection_timestamp": "2025-07-27T13:42:24.105540",
+    "source_name": "nhs_cbt",
+    "source_type": "government",
+    "total_items": 9,
+    "quality_scores": [
+      90,
+      60,
+      60,
+      60,
+      50,
+      60,
+      60,
+      60,
+      90
+    ],
+    "average_quality": 65.55555555555556
+  },
+  "data": [
+    {
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/cognitive-behavioural-therapy-cbt/",
+      "source": "nhs_cbt",
+      "source_type": "government",
+      "license": "open_government_license",
+      "priority": 1,
+      "content": "Important: Get urgent help Support is available if you or someone you know is having a mental health crisis or emergency, no matter what you're going through. Find out where to get urgent help for mental health What CBT is for Cognitive behavioural therapy (CBT) is a recommended treatment for many mental health problems, such as: depression, including postnatal depression anxiety, including social anxiety, phobias and obsessive compulsive disorder (OCD) post-traumatic stress disorder (PTSD) eating disorders, including anorexia and bulimia bipolar disorder personality disorders CBT can also help with other conditions including: sleep problems, such as insomnia problems with alcohol and drugs long-term pain irritable bowel syndrome (IBS) chronic fatigue syndrome (CFS) How to get CBT You can get cognitive behavioural therapy (CBT) for free on the NHS for many mental health problems – you do not need to have a diagnosed mental health condition. There are many ways to get CBT. Waiting times vary depending on where you live. Refer yourself to NHS talking therapies For many mental health problems, such as anxiety and depression, you can refer yourself to NHS talking therapies without speaking to a GP. You must be aged 18 or over (or 16 or over in some areas) to self-refer to NHS talking therapies. Refer yourself to NHS talking therapies Speak to a GP For some conditions, including eating disorders, bipolar disorder, personality disorders or psychosis, you’ll need a GP to refer you for treatment. Other ways to get CBT You may choose to pay for CBT privately, rather than having it on the NHS. You can find an accredited CBT therapist near you on the UK CBT register . You may also be able to get CBT for free through your employer, university or local charities. Information: If you’re under 18 Getting CBT on the NHS is different if you’re under 18 (or under 16 in some areas). Find out more about getting mental health support for children and young people Before you have CBT Once you’ve been referred for cognitive behavioural therapy (CBT), you’ll have an assessment with a therapist to decide what the best treatment is for you. This may be done in person, online or on the phone. The therapist will ask about your symptoms and what you hope to get from treatment. They’ll then recommend a type of therapy, which may be CBT or another type of therapy, depending on what you need it for. They’ll usually also tell you how long you may need to wait until you get treatment. Information: While you’re waiting for CBT While you’re waiting for treatment, you might want to try self-help for mental health or self-help CBT techniques on the Every Mind Matters website . What happens in CBT There are many different types of cognitive behavioural therapy (CBT). The type you have will depend on why you’re having it and your symptoms. You can have CBT in different ways including: guided self-help – going through a workbook or an online course with the help of a therapist 1-to-1 sessions with a therapist as part of a group – with a therapist and other people who are dealing with a similar issue CBT can be done in person, online, or on the phone. You’ll usually have between 5 and 15 sessions of CBT, depending on what you’re having it for. What CBT sessions involve In CBT, the main aim is making changes to solve your problems. In a typical CBT session, you’ll talk about situations you find difficult, and discuss how they make you think, feel and act. You’ll work with your therapist to work out different ways of approaching these situations. This could include: questioning unhelpful thoughts and beliefs, and considering other ways of looking at things noticing your emotions and physical feelings without reacting to them changing what you do, for example, doing activities you’ve been avoiding Your therapist will help you find approaches that work for you and the problems you’re having. You’ll usually be asked to practise what you’ve learned between sessions – it’s important to do this for CBT to work. You may also be asked to record your progress in a worksheet or diary. After you have CBT After your course of CBT has finished, it’s important to keep using the skills you’ve learned. Your therapist will usually help you plan how you’ll do this. If your symptoms do not improve after your first course of CBT, you may be given more sessions. Speak to a GP if you’re still having problems after your CBT has finished. They might suggest having more CBT or a different type of treatment. Information: Find out more What is CBT? (British Association for Behavioural and Cognitive Psychotherapies) Cognitive behavioural therapy (Mind) Self-help CBT techniques (Every Mind Matters)",
+      "content_hash": "5b980f437c434e322f7e0b7dc35a8d87",
+      "structured_content": {
+        "techniques": [],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 90,
+        "length_ok": true,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 1,
+        "readability_score": 15,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:41:33.550969",
+      "content_length": 4714,
+      "title": "Cognitive behavioural therapy (CBT) - NHS"
+    },
+    {
+      "url": "https://www.nhs.uk/health-a-to-z/",
+      "source": "nhs_cbt",
+      "source_type": "government",
+      "license": "open_government_license",
+      "priority": 1,
+      "content": "Conditions A to Z Find health conditions, including the symptoms and how they're treated Symptoms A to Z Find symptoms such as types of pain, stomach problems or skin symptoms, and what to do Tests and treatments A to Z Find out about surgery and procedures, tests, screening and other treatments Medicines A to Z Find out how your medicine works, how to take it and possible side effects Baby Find out about caring for a baby Contraception Find out about types of contraception, and where to get them Mental health Find information and support for your mental health Pregnancy Find out about trying for a baby, pregnancy, labour and birth Vaccinations Find out about vaccinations for babies, children and adults",
+      "content_hash": "cab340a4a949d43a577e722552e71b2d",
+      "structured_content": {
+        "techniques": [],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 60,
+        "length_ok": true,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 0,
+        "readability_score": 0,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:41:35.600929",
+      "content_length": 712,
+      "title": "Health A to Z - NHS"
+    },
+    {
+      "url": "https://www.nhs.uk/health-a-to-z/",
+      "source": "nhs_cbt",
+      "source_type": "government",
+      "license": "open_government_license",
+      "priority": 1,
+      "content": "Conditions A to Z Find health conditions, including the symptoms and how they're treated Symptoms A to Z Find symptoms such as types of pain, stomach problems or skin symptoms, and what to do Tests and treatments A to Z Find out about surgery and procedures, tests, screening and other treatments Medicines A to Z Find out how your medicine works, how to take it and possible side effects Baby Find out about caring for a baby Contraception Find out about types of contraception, and where to get them Mental health Find information and support for your mental health Pregnancy Find out about trying for a baby, pregnancy, labour and birth Vaccinations Find out about vaccinations for babies, children and adults",
+      "content_hash": "cab340a4a949d43a577e722552e71b2d",
+      "structured_content": {
+        "techniques": [],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 60,
+        "length_ok": true,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 0,
+        "readability_score": 0,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:41:37.648164",
+      "content_length": 712,
+      "title": "Health A to Z - NHS"
+    },
+    {
+      "url": "https://www.nhs.uk/mental-health/",
+      "source": "nhs_cbt",
+      "source_type": "government",
+      "license": "open_government_license",
+      "priority": 1,
+      "content": "Top tasks in Mental health Get urgent help now for mental health Find an NHS talking therapies service Feelings, symptoms and behaviours Read about common feelings and symptoms such as stress, anxiety or a low mood Mental health conditions Read about specific mental health conditions, such as depression, bipolar disorder or OCD Advice for life situations and events Advice for you and people you support about mental health in life situations and events, such as pregnancy and bullying at work Self-help Read about different types of self-help, such as 5 steps to mental wellbeing and breathing exercises Mental health services Find out how to access NHS mental health services and where to get urgent help Mental health for children, teenagers and young adults Find advice and support about mental health for children, teenagers, students and parents Talking therapies, medicine and psychiatry Read about the different types of talking therapy and other treatments, such as medicine for mental health problems Social care, mental health and your rights Find information and support about being a carer, receiving social care, accessing mental health services and your mental health rights Related information Every Mind Matters Autism Insomnia Dementia guide Addiction support",
+      "content_hash": "8d25709b40d0de246a3600f6ca67e6bd",
+      "structured_content": {
+        "techniques": [],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 60,
+        "length_ok": true,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 0,
+        "readability_score": 0,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:41:45.700070",
+      "content_length": 1279,
+      "title": "Mental health - NHS"
+    },
+    {
+      "url": "https://www.nhs.uk/health-a-to-z/conditions/",
+      "source": "nhs_cbt",
+      "source_type": "government",
+      "license": "open_government_license",
+      "priority": 1,
+      "content": "Find a health condition from our A to Z list of common topics. A Acute pancreatitis Addison's disease ADHD in children and young people Anaemia (iron deficiency) Anaemia (vitamin B12 or folate deficiency) Angina Appendicitis Asthma Atrial fibrillation Autism View all A topics Back to top B Bipolar disorder Blepharitis Blood pressure (high) Blood pressure (low) Borderline personality disorder Bowel cancer Broken or bruised ribs Bronchiectasis Burns and scalds Bursitis View all B topics Back to top C Chest infection Chickenpox Chlamydia Cholesterol (high) Chronic kidney disease Chronic obstructive pulmonary disease (COPD) Coeliac disease Constipation COVID-19 Crohn's disease View all C topics Back to top D Dehydration Dental abscess Depression in adults Developmental co-ordination disorder (dyspraxia) in children Diabetes (type 1) Diabetes (type 2) Diverticular disease and diverticulitis DVT (deep vein thrombosis) Dyslexia Dyspraxia (developmental co-ordination disorder) in adults View all D topics Back to top E Ear infections Earwax build-up Eating disorders Ectopic pregnancy Eczema (atopic) Ehlers-Danlos syndromes Encephalitis Endometriosis Epilepsy Excessive sweating (hyperhidrosis) View all E topics Back to top F Febrile seizures Fibroids Fibromyalgia Flu Food allergy Food intolerance Food poisoning Frontotemporal dementia Frozen shoulder Fungal nail infection View all F topics Back to top G Gallstones Gastritis Generalised anxiety disorder (GAD) Genital herpes Gestational diabetes Giardiasis Glandular fever Gonorrhoea Gout Guillain-Barré syndrome View all G topics Back to top H Haemorrhoids (piles) Hand, foot and mouth disease Hay fever Head injury and concussion Heart attack Heart failure Heartburn and acid reflux Heat exhaustion and heatstroke Heat rash (prickly heat) Hives View all H topics Back to top I Impetigo Indigestion Infertility Inflammatory bowel disease Ingrown toenail Insect bites and stings Insomnia Intracranial hypertension Iron deficiency anaemia Irritable bowel syndrome (IBS) View all I topics Back to top J Japanese encephalitis Jaundice Jaundice (newborn) Jellyfish and other sea creature stings Jet lag Joint hypermobility syndrome Back to top K Kawasaki disease Keloid scars Keratosis pilaris Kidney cancer Kidney infection Kidney stones Klinefelter syndrome Knock knees Knocked-out tooth Kyphosis View all K topics Back to top L Labyrinthitis and vestibular neuritis Lactose intolerance Laryngitis Leg cramps Liver disease Low blood pressure (hypotension) Low blood sugar (hypoglycaemia) Lung cancer Lupus Lyme disease View all L topics Back to top M Measles Melanoma skin cancer Meningitis Menopause Migraine Miscarriage Mouth ulcers Mpox Multiple sclerosis Myalgic encephalomyelitis or chronic fatigue syndrome (ME/CFS) View all M topics Back to top N Nappy rash Narcolepsy Nasal polyps Neurofibromatosis type 1 (NF1) Non-alcoholic fatty liver disease (NAFLD) Non-allergic rhinitis Non-Hodgkin lymphoma Non-melanoma skin cancer Norovirus (vomiting bug) Nosebleed View all N topics Back to top O Obesity Obsessive compulsive disorder (OCD) Oesophageal cancer Oral thrush (mouth thrush) Osteoarthritis Osteomyelitis Osteoporosis Ovarian cancer Ovarian cyst Overactive thyroid (hyperthyroidism) View all O topics Back to top P Parkinson's disease Peripheral neuropathy Piles (haemorrhoids) Plantar fasciitis Pneumonia Polycystic ovary syndrome Postural tachycardia syndrome (PoTS) Pre-eclampsia Prostate cancer Psoriasis View all P topics Back to top Q Q fever Back to top R Raynaud's Reflux in babies Respiratory syncytial virus (RSV) Respiratory tract infections (RTIs) Restless legs syndrome Retinal migraine Rheumatoid arthritis Ringworm Rosacea Roseola View all R topics Back to top S Scabies Scarlet fever Sciatica Sepsis Shingles Sinusitis (sinus infection) Slapped cheek syndrome Stomach ulcer Stye Swollen ankles, feet and legs (oedema) View all S topics Back to top T Temporomandibular disorder (TMD) Tendonitis Tennis elbow Threadworms Thrush in men and women Tinnitus Tonsillitis Transient ischaemic attack (TIA) Trigeminal neuralgia Type 2 diabetes View all T topics Back to top U Ulcerative colitis Underactive thyroid (hypothyroidism) Undescended testicles Urethritis Urinary incontinence Urinary tract infections (UTIs) Uveitis Back to top V Vaginitis Varicose eczema Varicose veins Vascular dementia Vasculitis Venous leg ulcer Vitamin B12 or folate deficiency anaemia Vitiligo Vulval cancer Vulvodynia (vulval pain) View all V topics Back to top W Warts and verrucas Whiplash Whooping cough Wolff-Parkinson-White syndrome Womb (uterus) cancer Worms in humans Back to top X There are currently no topics listed Back to top Y Yellow fever Back to top Z Zika virus Back to top",
+      "content_hash": "2037940857a6df288201108eb834df3c",
+      "structured_content": {
+        "techniques": [],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 50,
+        "length_ok": true,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 0,
+        "readability_score": 0,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:41:53.789351",
+      "content_length": 4751,
+      "title": "Conditions A to Z: common topics - NHS"
+    },
+    {
+      "url": "https://www.nhs.uk/mental-health/",
+      "source": "nhs_cbt",
+      "source_type": "government",
+      "license": "open_government_license",
+      "priority": 1,
+      "content": "Top tasks in Mental health Get urgent help now for mental health Find an NHS talking therapies service Feelings, symptoms and behaviours Read about common feelings and symptoms such as stress, anxiety or a low mood Mental health conditions Read about specific mental health conditions, such as depression, bipolar disorder or OCD Advice for life situations and events Advice for you and people you support about mental health in life situations and events, such as pregnancy and bullying at work Self-help Read about different types of self-help, such as 5 steps to mental wellbeing and breathing exercises Mental health services Find out how to access NHS mental health services and where to get urgent help Mental health for children, teenagers and young adults Find advice and support about mental health for children, teenagers, students and parents Talking therapies, medicine and psychiatry Read about the different types of talking therapy and other treatments, such as medicine for mental health problems Social care, mental health and your rights Find information and support about being a carer, receiving social care, accessing mental health services and your mental health rights Related information Every Mind Matters Autism Insomnia Dementia guide Addiction support",
+      "content_hash": "8d25709b40d0de246a3600f6ca67e6bd",
+      "structured_content": {
+        "techniques": [],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 60,
+        "length_ok": true,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 0,
+        "readability_score": 0,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:41:59.864151",
+      "content_length": 1279,
+      "title": "Mental health - NHS"
+    },
+    {
+      "url": "https://www.nhs.uk/health-a-to-z/",
+      "source": "nhs_cbt",
+      "source_type": "government",
+      "license": "open_government_license",
+      "priority": 1,
+      "content": "Conditions A to Z Find health conditions, including the symptoms and how they're treated Symptoms A to Z Find symptoms such as types of pain, stomach problems or skin symptoms, and what to do Tests and treatments A to Z Find out about surgery and procedures, tests, screening and other treatments Medicines A to Z Find out how your medicine works, how to take it and possible side effects Baby Find out about caring for a baby Contraception Find out about types of contraception, and where to get them Mental health Find information and support for your mental health Pregnancy Find out about trying for a baby, pregnancy, labour and birth Vaccinations Find out about vaccinations for babies, children and adults",
+      "content_hash": "cab340a4a949d43a577e722552e71b2d",
+      "structured_content": {
+        "techniques": [],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 60,
+        "length_ok": true,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 0,
+        "readability_score": 0,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:42:01.908984",
+      "content_length": 712,
+      "title": "Health A to Z - NHS"
+    },
+    {
+      "url": "https://www.nhs.uk/mental-health/",
+      "source": "nhs_cbt",
+      "source_type": "government",
+      "license": "open_government_license",
+      "priority": 1,
+      "content": "Top tasks in Mental health Get urgent help now for mental health Find an NHS talking therapies service Feelings, symptoms and behaviours Read about common feelings and symptoms such as stress, anxiety or a low mood Mental health conditions Read about specific mental health conditions, such as depression, bipolar disorder or OCD Advice for life situations and events Advice for you and people you support about mental health in life situations and events, such as pregnancy and bullying at work Self-help Read about different types of self-help, such as 5 steps to mental wellbeing and breathing exercises Mental health services Find out how to access NHS mental health services and where to get urgent help Mental health for children, teenagers and young adults Find advice and support about mental health for children, teenagers, students and parents Talking therapies, medicine and psychiatry Read about the different types of talking therapy and other treatments, such as medicine for mental health problems Social care, mental health and your rights Find information and support about being a carer, receiving social care, accessing mental health services and your mental health rights Related information Every Mind Matters Autism Insomnia Dementia guide Addiction support",
+      "content_hash": "8d25709b40d0de246a3600f6ca67e6bd",
+      "structured_content": {
+        "techniques": [],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 60,
+        "length_ok": true,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 0,
+        "readability_score": 0,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:42:09.990810",
+      "content_length": 1279,
+      "title": "Mental health - NHS"
+    },
+    {
+      "url": "https://www.nhs.uk/nhs-services/mental-health-services/get-urgent-help-for-mental-health/",
+      "source": "nhs_cbt",
+      "source_type": "government",
+      "license": "open_government_license",
+      "priority": 1,
+      "content": "If you need help for a mental health crisis or emergency, you should get immediate expert advice and assessment. It's important to know that support services are available for you to access, whatever you’re going through. Urgent advice: Get advice from 111 or ask for an urgent GP appointment if: you need urgent help for your mental health Get help from 111 online or call 111 and select the mental health option. 111 will tell you the right place to get help. You may be able to speak to a trained mental health professional over the phone. A GP can advise you about helpful treatments and also help you access mental health services . You may be able to refer yourself to some services. Other ways to get help with your mental health Free listening services These services offer confidential support from trained volunteers. You can talk about anything that's troubling you, no matter how difficult: Call 116 123 to talk to Samaritans , or email: jo@samaritans.org for a reply within 24 hours Text \"SHOUT\" to 85258 to contact the Shout Crisis Text Line , or text \"YM\" if you're under 19 If you're under 19, you can also call 0800 1111 to talk to Childline . The number will not appear on your phone bill. These services will only share your information if they are very worried about you or think you are in immediate danger. Information: Coping during a crisis The mental health charity Mind has information on ways to help yourself cope during a crisis . This includes calming exercises and a tool to get you through the next few hours. Immediate action required: Call 999 or go to A&E now if: someone's life is at risk – for example, they have seriously injured themselves or taken an overdose you do not feel you can keep yourself or someone else safe A mental health emergency should be taken as seriously as a physical one. You will not be wasting anyone's time. Call: 999 How a mental health emergency is treated in A&E If you go to A&E, the staff should treat you with respect and look after any immediate physical and mental health needs. They should also refer you to a liaison psychiatry service or local crisis resolution and home treatment team (CRHT). Find out about: liaison psychiatry services on the Royal College of Psychiatrists website crisis resolution and home treatment teams (CRHTs) on the Mind website The team in charge of your care will assess you and decide on the best course of care. This usually involves supporting you with your mental health at home. They may also refer you to other services to support your needs. Information: Making a safety plan If you struggle with suicidal thoughts or are supporting someone else, it may help to make a safety plan to use if you need it: the Staying Safe website provides information on how to make a safety plan , including video tutorials and online templates to guide you through the process the mental health charity Mind also provides information on planning for a mental health crisis",
+      "content_hash": "1cc57cbaf640fd58ce0545bf38508727",
+      "structured_content": {
+        "techniques": [],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 90,
+        "length_ok": true,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 1,
+        "readability_score": 15,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:42:18.099627",
+      "content_length": 2966,
+      "title": "Where to get urgent help for mental health - NHS"
+    }
+  ]
+}

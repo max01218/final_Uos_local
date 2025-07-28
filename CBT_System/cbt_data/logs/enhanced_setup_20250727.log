@@ -1,0 +1,64 @@
+2025-07-27 11:52:10,485 - EnhancedCBTSetup - DEBUG - Package requests is available
+2025-07-27 11:52:10,486 - EnhancedCBTSetup - DEBUG - Package sentence-transformers is available
+2025-07-27 11:52:10,486 - EnhancedCBTSetup - DEBUG - Package numpy is available
+2025-07-27 11:52:10,487 - EnhancedCBTSetup - DEBUG - Package nltk is available
+2025-07-27 11:52:10,487 - EnhancedCBTSetup - DEBUG - Package torch is available
+2025-07-27 11:52:10,487 - EnhancedCBTSetup - ERROR - Missing required packages: ['beautifulsoup4', 'faiss-cpu', 'scikit-learn']
+2025-07-27 12:10:17,821 - EnhancedCBTSetup - DEBUG - Package requests is available
+2025-07-27 12:10:17,821 - EnhancedCBTSetup - DEBUG - Package sentence-transformers is available
+2025-07-27 12:10:17,822 - EnhancedCBTSetup - DEBUG - Package numpy is available
+2025-07-27 12:10:17,823 - EnhancedCBTSetup - DEBUG - Package nltk is available
+2025-07-27 12:10:17,823 - EnhancedCBTSetup - DEBUG - Package torch is available
+2025-07-27 12:10:17,823 - EnhancedCBTSetup - ERROR - Missing required packages: ['beautifulsoup4', 'faiss-cpu', 'scikit-learn']
+2025-07-27 12:11:25,145 - EnhancedCBTSetup - DEBUG - Package requests is available
+2025-07-27 12:11:25,145 - EnhancedCBTSetup - DEBUG - Package sentence-transformers is available
+2025-07-27 12:11:25,145 - EnhancedCBTSetup - DEBUG - Package numpy is available
+2025-07-27 12:11:25,146 - EnhancedCBTSetup - DEBUG - Package nltk is available
+2025-07-27 12:11:25,146 - EnhancedCBTSetup - DEBUG - Package torch is available
+2025-07-27 12:11:25,146 - EnhancedCBTSetup - ERROR - Missing required packages: ['beautifulsoup4', 'faiss-cpu', 'scikit-learn']
+2025-07-27 12:13:56,322 - EnhancedCBTSetup - DEBUG - Package requests is available
+2025-07-27 12:13:56,322 - EnhancedCBTSetup - DEBUG - Package beautifulsoup4 is available
+2025-07-27 12:13:56,322 - EnhancedCBTSetup - DEBUG - Package sentence-transformers is available
+2025-07-27 12:13:56,322 - EnhancedCBTSetup - DEBUG - Package faiss-cpu is available
+2025-07-27 12:13:56,322 - EnhancedCBTSetup - DEBUG - Package numpy is available
+2025-07-27 12:13:56,322 - EnhancedCBTSetup - DEBUG - Package scikit-learn is available
+2025-07-27 12:13:56,322 - EnhancedCBTSetup - DEBUG - Package nltk is available
+2025-07-27 12:13:56,322 - EnhancedCBTSetup - DEBUG - Package torch is available
+2025-07-27 12:14:26,352 - EnhancedCBTSetup - INFO - Starting enhanced data collection
+2025-07-27 12:16:46,114 - EnhancedCBTSetup - INFO - Starting enhanced data collection
+2025-07-27 13:32:08,803 - EnhancedCBTSetup - INFO - Starting enhanced data collection
+2025-07-27 13:35:09,344 - EnhancedCBTSetup - INFO - Starting enhanced data collection
+2025-07-27 13:41:33,496 - EnhancedCBTSetup - INFO - Starting quick update process
+2025-07-27 13:41:33,496 - EnhancedCBTSetup - INFO - Starting enhanced CBT system full pipeline
+2025-07-27 13:41:33,497 - EnhancedCBTSetup - INFO - Step 1: Checking dependencies
+2025-07-27 13:41:33,497 - EnhancedCBTSetup - DEBUG - Package requests is available
+2025-07-27 13:41:33,497 - EnhancedCBTSetup - DEBUG - Package beautifulsoup4 is available
+2025-07-27 13:41:33,497 - EnhancedCBTSetup - DEBUG - Package sentence-transformers is available
+2025-07-27 13:41:33,497 - EnhancedCBTSetup - DEBUG - Package faiss-cpu is available
+2025-07-27 13:41:33,497 - EnhancedCBTSetup - DEBUG - Package numpy is available
+2025-07-27 13:41:33,497 - EnhancedCBTSetup - DEBUG - Package scikit-learn is available
+2025-07-27 13:41:33,497 - EnhancedCBTSetup - DEBUG - Package nltk is available
+2025-07-27 13:41:33,497 - EnhancedCBTSetup - DEBUG - Package torch is available
+2025-07-27 13:41:33,497 - EnhancedCBTSetup - INFO - Step 2: Enhanced data collection
+2025-07-27 13:41:33,497 - EnhancedCBTSetup - INFO - Starting enhanced data collection
+2025-07-27 13:51:18,209 - EnhancedCBTSetup - INFO - Enhanced collection successful: 80 items from 7 sources
+2025-07-27 13:51:20,212 - EnhancedCBTSetup - INFO - Step 3: Enhanced data processing
+2025-07-27 13:51:20,213 - EnhancedCBTSetup - INFO - Starting enhanced data processing
+2025-07-27 13:51:26,100 - EnhancedCBTSetup - INFO - Enhanced processing successful: cbt_data\raw_data\processed\cbt_enhanced_processed_20250727_135126.json
+2025-07-27 13:51:28,102 - EnhancedCBTSetup - INFO - Step 4: Enhanced vectorization
+2025-07-27 13:51:28,102 - EnhancedCBTSetup - INFO - Starting enhanced vectorization
+2025-07-27 13:51:28,190 - EnhancedCBTSetup - INFO - Vectorizing with model: primary, strategy: content_based
+2025-07-27 13:51:33,085 - EnhancedCBTSetup - WARNING - Vectorization failed for primary/content_based
+2025-07-27 13:51:33,085 - EnhancedCBTSetup - INFO - Vectorizing with model: clinical, strategy: technique_focused
+2025-07-27 13:51:42,332 - EnhancedCBTSetup - WARNING - Vectorization failed for clinical/technique_focused
+2025-07-27 13:51:42,332 - EnhancedCBTSetup - INFO - Step 5: Generating system report
+2025-07-27 13:51:42,352 - EnhancedCBTSetup - WARNING - Enhanced CBT system pipeline completed with some failures
+2025-07-27 13:51:42,355 - EnhancedCBTSetup - INFO - Pipeline results: {'dependencies': True, 'collection': True, 'processing': True, 'vectorization': False, 'report': 'cbt_data\\reports\\system_report_20250727_135142.json'}
+2025-07-27 13:51:42,355 - EnhancedCBTSetup - INFO - System report saved: cbt_data\reports\system_report_20250727_135142.json
+2025-07-27 14:26:15,362 - EnhancedCBTSetup - INFO - Starting enhanced data processing
+2025-07-27 14:26:18,168 - EnhancedCBTSetup - INFO - Enhanced processing successful: cbt_data\raw_data\processed\cbt_enhanced_processed_20250727_142618.json
+2025-07-27 14:38:09,470 - EnhancedCBTSetup - INFO - Starting enhanced vectorization
+2025-07-27 14:38:09,482 - EnhancedCBTSetup - INFO - Vectorizing with model: primary, strategy: content_based
+2025-07-27 14:38:12,353 - EnhancedCBTSetup - INFO - Vectorization successful: cbt_data\embeddings\cbt_index_summary_20250727_143812.json
+2025-07-27 14:38:12,353 - EnhancedCBTSetup - INFO - Vectorizing with model: clinical, strategy: technique_focused
+2025-07-27 14:38:14,662 - EnhancedCBTSetup - INFO - Vectorization successful: cbt_data\embeddings\cbt_index_summary_20250727_143814.json

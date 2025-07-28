@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-FastAPI Server for ICD-11 RAG System - OPRO Integrated Version
-Integrated with OPRO optimization system for dynamic prompt management
+FastAPI Server for ICD-11 RAG System - Enhanced Version
+Integrated with Enhanced RAG and Intelligent Fusion Systems
 """
-
+global enhanced_rag_retriever, intelligent_fusion_system
 import os
 import sys
 import json
@@ -22,7 +22,19 @@ import re
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
 from langchain.llms.huggingface_pipeline import HuggingFacePipeline
 
-# LangChain RAG components (vector store + embeddings + chains)
+# Enhanced RAG and Fusion Systems
+try:
+    from enhanced_rag_retriever import EnhancedRAGRetriever, QueryIntent, RetrievalContext, RetrievalResult, RetrievalStrategy
+    from intelligent_fusion_system import IntelligentFusionSystem, ProblemType, FusionContext, FusedResponse, FusionStrategy
+    ENHANCED_SYSTEMS_AVAILABLE = True
+    print("Enhanced RAG and Fusion systems loaded successfully")
+except ImportError as e:
+    print(f"Enhanced systems not available: {e}")
+    ENHANCED_SYSTEMS_AVAILABLE = False
+    EnhancedRAGRetriever = None
+    IntelligentFusionSystem = None
+
+# Fallback to basic LangChain RAG components
 from langchain_community.vectorstores.faiss import FAISS
 from langchain_community.embeddings.huggingface import HuggingFaceEmbeddings
 from langchain.prompts import PromptTemplate
@@ -50,9 +62,9 @@ DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
 # Initialize FastAPI
 app = FastAPI(
-    title="ICD-11 Empathetic Professional RAG API - OPRO Integrated",
-    description="Unified API with OPRO optimization integration for empathetic and professional mental health assistance",
-    version="3.0.0"
+    title="ICD-11 Enhanced RAG API - Intelligent Fusion",
+    description="Enhanced API with Intelligent RAG and Fusion systems for comprehensive mental health assistance",
+    version="4.0.0"
 )
 
 # Enable CORS
@@ -68,15 +80,14 @@ app.add_middleware(
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-# Enable debug logging for CBT integration
-cbt_logger = logging.getLogger("cbt_integration")
-cbt_logger.setLevel(logging.DEBUG)
-# Add console handler for CBT debug messages
+# Enable debug logging for enhanced systems
+enhanced_logger = logging.getLogger("enhanced_systems")
+enhanced_logger.setLevel(logging.DEBUG)
 console_handler = logging.StreamHandler()
 console_handler.setLevel(logging.DEBUG)
 formatter = logging.Formatter('%(name)s - %(levelname)s - %(message)s')
 console_handler.setFormatter(formatter)
-cbt_logger.addHandler(console_handler)
+enhanced_logger.addHandler(console_handler)
 
 # Global variables
 psychologist_llm = None
@@ -86,13 +97,21 @@ emotion_classifier = None
 memory = ConversationBufferMemory(return_messages=True)
 cbt_integration = None
 
+# Enhanced Systems
+enhanced_rag_retriever = None
+intelligent_fusion_system = None
+
 # OPRO Integration
 OPRO_PROMPT_PATH = "OPRO_Streamlined/prompts/optimized_prompt.txt"  
 OPRO_FALLBACK_PATH = "ICD11_OPRO/prompts/optimized_prompt.txt"  
 INTERACTIONS_FILE = "interactions.json"
 
+# Enhanced System Configuration
+ENHANCED_CONFIG_PATH = "intelligent_fusion_config.json"
+
 # Debug settings
 SHOW_PROMPT_DEBUG = os.getenv("SHOW_PROMPT_DEBUG", "true").lower() == "true"
+SHOW_ENHANCED_DEBUG = os.getenv("SHOW_ENHANCED_DEBUG", "true").lower() == "true"
 
 # Fallback prompts (used when OPRO prompt is not available)
 FALLBACK_PROMPTS = {
@@ -231,6 +250,11 @@ class RAGResponse(BaseModel):
     status: str
     context_used: Optional[str] = None
     prompt_source: str = "fallback"  # "opro" or "fallback"
+    confidence: Optional[float] = None
+    fusion_strategy: Optional[str] = None
+    source_breakdown: Optional[dict[str, float]] = None
+    follow_up_suggestions: Optional[List[str]] = None
+    safety_notes: Optional[List[str]] = None
 
 class FeedbackRequest(BaseModel):
     question: str
@@ -249,6 +273,9 @@ class HealthResponse(BaseModel):
     cbt_available: bool
     cbt_techniques: Optional[int] = None
     cbt_content: Optional[int] = None
+    enhanced_systems_available: bool
+    enhanced_rag_loaded: bool
+    intelligent_fusion_loaded: bool
 
 # Load components
 def load_embeddings():
@@ -314,6 +341,72 @@ def load_cbt_integration():
         logger.error(f"Error loading CBT integration: {e}")
         return None
 
+def load_enhanced_systems():
+    """Load enhanced RAG and fusion systems"""
+    global enhanced_rag_retriever, intelligent_fusion_system
+    
+    if not ENHANCED_SYSTEMS_AVAILABLE:
+        logger.warning("Enhanced systems not available, using fallback")
+        return False
+    
+    try:
+        # Load configuration
+        config_path = Path(ENHANCED_CONFIG_PATH)
+        if config_path.exists():
+            with open(config_path, 'r', encoding='utf-8') as f:
+                config = json.load(f)
+        else:
+            logger.warning(f"Enhanced config not found at {config_path}, using defaults")
+            config = {}
+        
+        # Initialize Enhanced RAG Retriever with flattened config
+        enhanced_rag_config = config.get("enhanced_rag_config", {})
+        # Flatten the config structure to match what EnhancedRAGRetriever expects
+        flattened_config = {
+            "semantic_weight": enhanced_rag_config.get("retrieval_weights", {}).get("semantic_weight", 0.5),
+            "keyword_weight": enhanced_rag_config.get("retrieval_weights", {}).get("keyword_weight", 0.3),
+            "context_weight": enhanced_rag_config.get("retrieval_weights", {}).get("context_weight", 0.2),
+            "intent_boost": enhanced_rag_config.get("retrieval_weights", {}).get("intent_boost", 0.15),
+            "urgency_boost": enhanced_rag_config.get("retrieval_weights", {}).get("urgency_boost", 0.1),
+            "min_relevance_threshold": enhanced_rag_config.get("filtering", {}).get("min_relevance_threshold", 0.3),
+            "max_results": enhanced_rag_config.get("filtering", {}).get("max_results", 5),
+            "enable_query_expansion": enhanced_rag_config.get("features", {}).get("enable_query_expansion", True),
+            "enable_intent_filtering": enhanced_rag_config.get("features", {}).get("enable_intent_filtering", True),
+            "enable_context_awareness": enhanced_rag_config.get("features", {}).get("enable_context_awareness", True)
+        }
+        
+        # Debug: print the flattened config
+        logger.info(f"Enhanced RAG config: {flattened_config}")
+        
+        enhanced_rag_retriever = EnhancedRAGRetriever(flattened_config)
+        
+        # Load knowledge bases with correct file paths
+        # Use the standard CBT index which has more data (12 items vs 1 item)
+        cbt_index_path = "CBT_System/cbt_data/embeddings/cbt_index_standard_20250727_143814.faiss"
+        icd11_index_path = "embeddings/index.faiss"
+        
+        enhanced_rag_retriever.load_knowledge_bases(cbt_index_path, icd11_index_path)
+        logger.info("Enhanced RAG Retriever loaded successfully")
+        
+        # Initialize Intelligent Fusion System
+        intelligent_fusion_system = IntelligentFusionSystem(config.get("fusion_system_config", {}))
+        # Use the same enhanced retriever instance
+        intelligent_fusion_system.enhanced_retriever = enhanced_rag_retriever
+        intelligent_fusion_system.initialize_knowledge_bases(cbt_index_path, icd11_index_path)
+        logger.info("Intelligent Fusion System loaded successfully")
+        
+        # Set global variables explicitly
+        globals()['enhanced_rag_retriever'] = enhanced_rag_retriever
+        globals()['intelligent_fusion_system'] = intelligent_fusion_system
+        
+        return True
+        
+    except Exception as e:
+        logger.error(f"Failed to load enhanced systems: {e}")
+        import traceback
+        logger.error(f"Enhanced systems error details: {traceback.format_exc()}")
+        return False
+
 def load_psychologist_llm():
     """Load the psychologist LLM for empathetic professional responses"""
     logger.info(f"Loading Psychologist LLM on {DEVICE}...")
@@ -354,8 +447,10 @@ def load_psychologist_llm():
         return None
 
 def initialize_rag_system():
-    global psychologist_llm, store, embedder, emotion_classifier, cbt_integration
-    logger.info(f"Initializing RAG system on {DEVICE}...")
+    global psychologist_llm, store, embedder, emotion_classifier, cbt_integration, enhanced_rag_retriever, intelligent_fusion_system
+    logger.info(f"Initializing Enhanced RAG system on {DEVICE}...")
+    
+    # Load basic components
     embedder = load_embeddings()
     if embedder is None:
         return False
@@ -369,12 +464,19 @@ def initialize_rag_system():
     if emotion_classifier is None:
         logger.warning("Emotion classifier not loaded, continuing without emotion analysis")
     
-    # Initialize CBT integration
+    # Load CBT integration
     cbt_integration = load_cbt_integration()
     if cbt_integration is None:
-        logger.warning("CBT integration not loaded, continuing without CBT enhancement")
+        logger.warning("CBT integration not loaded, continuing without CBT features")
     
-    logger.info(f"RAG system initialized successfully on {DEVICE}")
+    # Load enhanced systems
+    enhanced_systems_loaded = load_enhanced_systems()
+    if enhanced_systems_loaded:
+        logger.info("Enhanced RAG and Fusion systems loaded successfully")
+    else:
+        logger.warning("Enhanced systems not loaded, using fallback RAG system")
+    
+    logger.info("Enhanced RAG system initialization completed")
     return True
 
 @app.on_event("startup")
@@ -418,6 +520,11 @@ async def health_check():
         except:
             pass
     
+        # Check enhanced systems status
+    enhanced_systems_available = ENHANCED_SYSTEMS_AVAILABLE
+    enhanced_rag_loaded = globals().get('enhanced_rag_retriever') is not None
+    intelligent_fusion_loaded = globals().get('intelligent_fusion_system') is not None
+    
     return HealthResponse(
         status="healthy",
         psychologist_llm_loaded=psychologist_llm is not None,
@@ -428,7 +535,10 @@ async def health_check():
         interactions_count=interactions_count,
         cbt_available=cbt_available,
         cbt_techniques=cbt_techniques,
-        cbt_content=cbt_content
+        cbt_content=cbt_content,
+        enhanced_systems_available=enhanced_systems_available,
+        enhanced_rag_loaded=enhanced_rag_loaded,
+        intelligent_fusion_loaded=intelligent_fusion_loaded
     )
 
 def analyze_emotion(text):
@@ -528,7 +638,107 @@ def validate_user_input(question):
     
     return True, question
 
-def post_process_response(answer: str) -> str:
+def analyze_conversation_context(question: str, history: List[Message]) -> dict:
+    """
+    Analyze conversation context to determine appropriate response strategy
+    """
+    analysis = {
+        "information_level": "basic",  # basic, detailed, comprehensive
+        "response_strategy": "ask_clarification",  # ask_clarification, provide_advice, give_specific_help
+        "already_discussed": [],
+        "key_topics": [],
+        "emotional_state": "neutral"
+    }
+    
+    # Analyze information level
+    question_lower = question.lower()
+    
+    # Check for detailed information patterns
+    detailed_patterns = [
+        r"because\s+\w+",  # "because my mind..."
+        r"since\s+\w+",    # "since I started..."
+        r"for\s+\d+",      # "for 3 months..."
+        r"every\s+\w+",    # "every night..."
+        r"always\s+\w+",   # "always thinking..."
+        r"constantly\s+\w+", # "constantly anxious..."
+        r"trouble\s+\w+",  # "trouble sleeping..."
+        r"can't\s+\w+",    # "can't stop..."
+        r"won't\s+\w+",    # "won't stop..."
+        r"almost\s+\w+",   # "almost every night..."
+    ]
+    
+    detailed_count = 0
+    for pattern in detailed_patterns:
+        if re.search(pattern, question_lower):
+            detailed_count += 1
+    
+    # Check for comprehensive information patterns
+    comprehensive_patterns = [
+        r"and\s+\w+.*and\s+\w+",  # Multiple "and" clauses
+        r"not\s+only.*but\s+also", # "not only... but also"
+        r"both\s+\w+.*and\s+\w+", # "both... and..."
+        r"either\s+\w+.*or\s+\w+", # "either... or..."
+    ]
+    
+    comprehensive_count = 0
+    for pattern in comprehensive_patterns:
+        if re.search(pattern, question_lower):
+            comprehensive_count += 1
+    
+    # Determine information level
+    if comprehensive_count >= 1 or detailed_count >= 3:
+        analysis["information_level"] = "comprehensive"
+        analysis["response_strategy"] = "provide_advice"
+    elif detailed_count >= 1:
+        analysis["information_level"] = "detailed"
+        analysis["response_strategy"] = "provide_advice"
+    else:
+        analysis["information_level"] = "basic"
+        analysis["response_strategy"] = "ask_clarification"
+    
+    # Analyze emotional state
+    emotional_keywords = {
+        "anxiety": ["anxious", "anxiety", "worried", "worry", "fear", "afraid", "scared"],
+        "depression": ["sad", "depressed", "hopeless", "worthless", "empty", "numb"],
+        "stress": ["stressed", "overwhelmed", "pressure", "tension", "burnout"],
+        "anger": ["angry", "frustrated", "irritated", "mad", "upset"],
+        "fear": ["terrified", "panic", "panic attack", "frightened"]
+    }
+    
+    for emotion, keywords in emotional_keywords.items():
+        if any(keyword in question_lower for keyword in keywords):
+            analysis["emotional_state"] = emotion
+            break
+    
+    # Extract key topics
+    topic_keywords = {
+        "work": ["work", "job", "career", "office", "boss", "colleague", "deadline"],
+        "sleep": ["sleep", "insomnia", "tired", "exhausted", "rest", "bed"],
+        "relationships": ["relationship", "partner", "family", "friend", "marriage"],
+        "health": ["health", "medical", "doctor", "symptoms", "pain", "illness"],
+        "finances": ["money", "financial", "bills", "debt", "expenses", "salary"]
+    }
+    
+    for topic, keywords in topic_keywords.items():
+        if any(keyword in question_lower for keyword in keywords):
+            analysis["key_topics"].append(topic)
+    
+    # Check for already discussed topics in history
+    if history:
+        recent_history = history[-3:]  # Last 3 messages
+        for msg in recent_history:
+            if msg.role == "user":
+                for topic in analysis["key_topics"]:
+                    if topic in msg.content.lower():
+                        analysis["already_discussed"].append(topic)
+    
+    # Adjust response strategy based on already discussed topics
+    if analysis["already_discussed"] and analysis["information_level"] in ["detailed", "comprehensive"]:
+        analysis["response_strategy"] = "give_specific_help"
+    
+    return analysis
+
+def post_process_response(answer: str, question: str = "") -> str:
     if not answer:
         return answer
     
@@ -542,13 +752,35 @@ def post_process_response(answer: str) -> str:
         r'CRISIS\s*-\s*.*?(?=I understand|Let\'s|What|How|\.|$)',  # Remove crisis protocol text
         r'Assess immediate safety.*?accessible\.',  # Remove specific crisis protocol
         r'{context}|{history}|{question}',  # Remove unreplaced variables
+        r'User:.*?(?=\n|$)',  # Remove debug user messages
+        r'Assistant asked:.*?(?=\n|$)',  # Remove debug assistant questions
+        r'Assistant:.*?(?=\n|$)',  # Remove debug assistant prefixes
+        r'Context:.*?(?=\n|$)',  # Remove context debug info
+        r'History:.*?(?=\n|$)',  # Remove history debug info
     ]
     
     for pattern in template_patterns:
         answer = re.sub(pattern, '', answer, flags=re.IGNORECASE | re.MULTILINE)
     
     # Remove labels like Empathy:, Citation:, Follow-up question: etc
-    answer = re.sub(r'(Empathy:|Citation:|Follow-up question:)', '', answer, flags=re.IGNORECASE)
+    answer = re.sub(r'(Empathy:|Citation:|Follow-up question:|User:|Assistant:|Context:|History:)', '', answer, flags=re.IGNORECASE)
+    
+    # Remove any remaining format tags that might have leaked
+    answer = re.sub(r'<\|assistant\|\|?\s*', '', answer, flags=re.IGNORECASE)
+    answer = re.sub(r'<\|.*?\|>', '', answer, flags=re.IGNORECASE)
+    
+    # Remove AI self-questioning patterns (AI asking itself questions)
+    self_question_patterns = [
+        r'\s*How do I cope with\s+[^?]*\?',  # "How do I cope with anxiety?"
+        r'\s*What should I do about\s+[^?]*\?',  # "What should I do about this?"
+        r'\s*How can I help with\s+[^?]*\?',  # "How can I help with this?"
+        r'\s*What steps can I take for\s+[^?]*\?',  # "What steps can I take for anxiety?"
+        r'\s*How do I manage\s+[^?]*\?',  # "How do I manage anxiety?"
+        r'\s*What techniques can I use for\s+[^?]*\?',  # "What techniques can I use for anxiety?"
+    ]
+    
+    for pattern in self_question_patterns:
+        answer = re.sub(pattern, '', answer, flags=re.IGNORECASE)
     
     # Remove any non-ASCII characters that might have crept in
     answer = re.sub(r'[^\x00-\x7F]+', '', answer)
@@ -557,36 +789,62 @@ def post_process_response(answer: str) -> str:
     answer = re.sub(r'\n+', ' ', answer)
     answer = re.sub(r'\s+', ' ', answer).strip()
     
-    # For crisis intervention responses, keep more content (up to 6-7 sentences)
-    # Don't truncate professional safety assessments
+    # Remove repetitive phrases that appear in the conversation
+    repetitive_patterns = [
+        r'Please consider taking breaks throughout the day\. It doesn\'t have to be an hour.*?',
+        r'It doesn\'t have to be a big deal.*?',
+        r'just a little bit of extra time will go a long way.*?',
+        r'Remember to take breaks and rest when you need to.*?',
+        r'It\'s important to prioritize your safety and well-being.*?',
+    ]
+    
+    for pattern in repetitive_patterns:
+        answer = re.sub(pattern, '', answer, flags=re.IGNORECASE | re.DOTALL)
+    
+    # Limit response length, but be more lenient for "how to" questions
     sentences = re.split(r'(?<=[.!?]) +', answer)
-    if len(sentences) > 7:
-        # Keep safety-related content by checking for crisis keywords
-        crisis_keywords = ['safety', 'crisis', 'emergency', 'self-harm', 'suicide', 'help', 'support']
-        important_sentences = []
+    
+    # Check if this is a "how to" question
+    is_how_to_question = any(phrase in question.lower() for phrase in 
+                            ['how to', 'how do', 'what steps', 'what should', 'can you show'])
+    
+    if len(sentences) > 6 and not is_how_to_question:
+        # For regular questions, keep it concise (3-4 sentences max)
+        important_keywords = ['understand', 'feel', 'support', 'help', 'care', 'important', 'okay']
+        important_sentences = sentences[:2]  # Always keep first 2 sentences
         
-        for i, sentence in enumerate(sentences[:7]):
-            # Always keep first few sentences and those with crisis keywords
-            if i < 3 or any(keyword in sentence.lower() for keyword in crisis_keywords):
+        for sentence in sentences[2:4]:  # Check next 2 sentences
+            if any(keyword in sentence.lower() for keyword in important_keywords):
                 important_sentences.append(sentence)
         
-        # If we have important crisis content, use that; otherwise use first 6 sentences
-        if len(important_sentences) >= 3:
-            answer = ' '.join(important_sentences)
-        else:
-            answer = ' '.join(sentences[:6])
+        answer = ' '.join(important_sentences)
+    elif len(sentences) > 10:
+        # For "how to" questions, allow more sentences but still limit
+        answer = ' '.join(sentences[:8])
     
-    # DO NOT remove professional psychological phrases - they're important for crisis intervention
-    # Only remove truly generic customer service phrases
+    # Remove generic customer service phrases
     generic_phrases = [
         "is there anything else i can help you with",
         "feel free to reach out",
-        "don't hesitate to contact"
+        "don't hesitate to contact",
+        "please let me know if you need anything else"
     ]
     for phrase in generic_phrases:
         if phrase in answer.lower():
             answer = re.sub(re.escape(phrase), '', answer, flags=re.IGNORECASE)
             answer = re.sub(r'\s+', ' ', answer).strip()
+    
+    # Remove conversational flow issues (AI asking questions to itself)
+    conversational_issues = [
+        r'\s*Would you like to know\s+[^?]*\?',  # "Would you like to know more about..."
+        r'\s*Do you want to learn\s+[^?]*\?',  # "Do you want to learn about..."
+        r'\s*Should I explain\s+[^?]*\?',  # "Should I explain..."
+        r'\s*Can I help you with\s+[^?]*\?',  # "Can I help you with..."
+        r'\s*Would you like me to\s+[^?]*\?',  # "Would you like me to..."
+    ]
+    
+    for pattern in conversational_issues:
+        answer = re.sub(pattern, '', answer, flags=re.IGNORECASE)
     
     # Ensure answer ends with proper punctuation
     if answer and not answer[-1] in '.!?':
@@ -646,33 +904,127 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                 print("No conversation history")
             print("="*80)
         
-        # Step 4: RAG search (optimized for mental health relevance)
-        retriever = store.as_retriever(search_kwargs={"k": 5})
-        docs = retriever.invoke(processed_question)
+        # Step 3.5: Analyze conversation context for response strategy
+        conversation_analysis = analyze_conversation_context(processed_question, request_data.history)
+        response_strategy = conversation_analysis["response_strategy"]
         
-        # Filter out irrelevant medical conditions for general mental health queries
-        relevant_docs = []
-        irrelevant_keywords = [
-            'parkinson', 'tremor', 'dementia', 'alzheimer', 'dystonia', 
-            'myoclonus', 'chorea', 'movement disorder', 'neurological'
-        ]
+        logger.info(f"Conversation analysis: {conversation_analysis}")
         
-        general_mh_query = any(term in processed_question.lower() for term in [
-            'mental problem', 'mental health', 'feeling', 'sad', 'anxious', 
-            'depressed', 'stressed', 'worried'
-        ])
+        # Display conversation analysis for debugging
+        if SHOW_PROMPT_DEBUG:
+            print("CONVERSATION ANALYSIS:")
+            print("="*80)
+            print(f"Information level: {conversation_analysis['information_level']}")
+            print(f"Response strategy: {conversation_analysis['response_strategy']}")
+            print(f"Emotional state: {conversation_analysis['emotional_state']}")
+            print(f"Key topics: {conversation_analysis['key_topics']}")
+            print(f"Already discussed: {conversation_analysis['already_discussed']}")
+            print("="*80)
         
-        for doc in docs:
-            # For general mental health queries, filter out neurological conditions
-            if general_mh_query:
-                if not any(keyword in doc.page_content.lower() for keyword in irrelevant_keywords):
+        # Step 4: Enhanced RAG search with intelligent fusion (CORRECTED LOGIC)
+        context = None
+        enhanced_metadata = {}
+        docs = []  # Initialize docs for later use in debug printing
+
+        current_enhanced_rag_retriever = globals().get('enhanced_rag_retriever')
+        current_intelligent_fusion_system = globals().get('intelligent_fusion_system')
+        
+        if current_enhanced_rag_retriever and current_intelligent_fusion_system:
+            try:
+                if SHOW_ENHANCED_DEBUG:
+                    print("\n" + "="*80)
+                    print("ATTEMPTING ENHANCED RAG AND FUSION SYSTEMS")
+                    print("="*80)
+                
+                # Debug: check enhanced_rag_retriever before calling retrieve
+                logger.info(f"Enhanced RAG retriever type: {type(current_enhanced_rag_retriever)}")
+                logger.info(f"Enhanced RAG retriever config type: {type(current_enhanced_rag_retriever.config)}")
+                logger.info(f"Enhanced RAG retriever config: {current_enhanced_rag_retriever.config}")
+                
+                # Create retrieval context
+                retrieval_context = RetrievalContext(
+                    conversation_history=request_data.history,
+                    emotional_state=emotion,
+                    urgency_level=1
+                )
+                
+                # Create fusion context
+                fusion_context = FusionContext(
+                    urgency_level=1,
+                    user_history=request_data.history,
+                    session_stage="ongoing"
+                )
+                
+                # Perform intelligent fusion which internally handles retrieval
+                fused_response = current_intelligent_fusion_system.fuse_response(
+                    query=processed_question,
+                    context=fusion_context
+                )
+                
+                # If successful, populate context and metadata
+                context = fused_response.primary_content + "\n\n" + fused_response.supporting_content
+                enhanced_metadata = {
+                    "confidence": fused_response.confidence,
+                    "fusion_strategy": fused_response.fusion_strategy.value,
+                    "source_breakdown": fused_response.source_breakdown,
+                    "follow_up_suggestions": fused_response.follow_up_suggestions,
+                    "safety_notes": fused_response.safety_notes
+                }
+                
+                if SHOW_ENHANCED_DEBUG:
+                    print(f"Enhanced retrieval successful")
+                    print(f"Fusion strategy: {fused_response.fusion_strategy.value}")
+                    print(f"Confidence: {fused_response.confidence:.2f}")
+                    print(f"Source breakdown: {fused_response.source_breakdown}")
+                    print("="*80)
+
+            except Exception as e:
+                logger.error(f"Enhanced systems failed: {e}. Falling back to basic RAG.", exc_info=True)
+                # Ensure context remains None to trigger the fallback logic
+                context = None
+        
+        # If context is still None, it means enhanced systems were unavailable or failed. Use fallback.
+        if context is None:
+            if SHOW_ENHANCED_DEBUG:
+                print("\n" + "="*80)
+                print("USING FALLBACK RAG SYSTEM")
+                print("="*80)
+            
+            retriever = store.as_retriever(search_kwargs={"k": 5})
+            docs = retriever.invoke(processed_question)
+            
+            # Filter out irrelevant medical conditions for general mental health queries
+            relevant_docs = []
+            irrelevant_keywords = [
+                'parkinson', 'tremor', 'dementia', 'alzheimer', 'dystonia', 
+                'myoclonus', 'chorea', 'movement disorder', 'neurological'
+            ]
+            
+            general_mh_query = any(term in processed_question.lower() for term in [
+                'mental problem', 'mental health', 'feeling', 'sad', 'anxious', 
+                'depressed', 'stressed', 'worried'
+            ])
+            
+            for doc in docs:
+                # For general mental health queries, filter out neurological conditions
+                if general_mh_query:
+                    if not any(keyword in doc.page_content.lower() for keyword in irrelevant_keywords):
+                        relevant_docs.append(doc)
+                else:
                     relevant_docs.append(doc)
-            else:
-                relevant_docs.append(doc)
-        
-        # Use filtered docs, fallback to original if none remain
-        final_docs = relevant_docs if relevant_docs else docs[:2]  # Limit to 2 if fallback
-        context = "\n\n".join([doc.page_content for doc in final_docs])
+            
+            # Use filtered docs, fallback to original if none remain
+            final_docs = relevant_docs if relevant_docs else docs[:2]  # Limit to 2 if fallback
+            context = "\n\n".join([doc.page_content for doc in final_docs])
+            
+            # Basic metadata for fallback
+            enhanced_metadata = {
+                "confidence": 0.7,
+                "fusion_strategy": "fallback_basic_rag",
+                "source_breakdown": {"icd11": 1.0},
+                "follow_up_suggestions": [],
+                "safety_notes": []
+            }
         
         # Display retrieved context for debugging
         if SHOW_PROMPT_DEBUG:
@@ -691,56 +1043,59 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
         
         logger.info(f"Retrieved context length: {len(context)} characters")
 
-        # Step 5: Dynamically load OPRO optimized prompt, check latest version each time
-        opro_prompt = load_opro_prompt()
+        # Step 5: Dynamically load prompt based on tone selection
+        prompt = get_dynamic_prompt(request_data.type)
         
-        # Display OPRO prompt source for debugging
+        # Display prompt source for debugging
         if SHOW_PROMPT_DEBUG:
-            print("OPRO PROMPT SOURCE:")
+            print("PROMPT SOURCE:")
             print("="*80)
-            opro_exists = os.path.exists(OPRO_PROMPT_PATH)
-            print(f"OPRO file exists: {opro_exists}")
-            if opro_exists:
-                print(f"Using OPRO optimized prompt from: {OPRO_PROMPT_PATH}")
+            print(f"Selected tone: {request_data.type}")
+            if request_data.type == "empathetic_professional":
+                opro_exists = os.path.exists(OPRO_PROMPT_PATH)
+                print(f"OPRO file exists: {opro_exists}")
+                if opro_exists:
+                    print(f"Using OPRO optimized prompt from: {OPRO_PROMPT_PATH}")
+                else:
+                    print("Using fallback prompt (OPRO not available)")
             else:
-                print("Using fallback prompt (OPRO not available)")
+                print(f"Using {request_data.type} tone prompt")
             print("="*80)
         
-        # Step 1: Always replace variables in OPRO prompt first
+        # Step 1: Always replace variables in prompt first
         try:
             # Limit context and history to prevent template overflow
             limited_context = context[:1000] + "..." if len(context) > 1000 else context
             limited_history = history[:500] + "..." if len(history) > 500 else history
             
-            formatted_opro = opro_prompt.format(
+            formatted_prompt = prompt.format(
                 context=limited_context,
                 question=processed_question,
-                history=limited_history
+                history=limited_history,
+                response_strategy=response_strategy
             )
-            logger.info("Variables successfully replaced in OPRO prompt")
+            logger.info("Variables successfully replaced in prompt")
         except KeyError as e:
             logger.warning(f"Variable replacement failed: {e}, using original prompt")
-            formatted_opro = opro_prompt
+            formatted_prompt = prompt
         
         # Step 2: Handle different ChatML formats
-        if "<|im_start|>" in formatted_opro:
+        if "<|im_start|>" in formatted_prompt:
             # Already in Qwen ChatML format
-            formatted_prompt = formatted_opro
-            logger.info("Using OPRO prompt in Qwen ChatML format")
-        elif "<|system|>" in formatted_opro:
+            logger.info("Using prompt in Qwen ChatML format")
+        elif "<|system|>" in formatted_prompt:
             # Already in standard ChatML format
-            formatted_prompt = formatted_opro
-            logger.info("Using OPRO prompt in standard ChatML format")
+            logger.info("Using prompt in standard ChatML format")
         else:
-            # Wrap OPRO prompt in ChatML format
+            # Wrap prompt in ChatML format
             formatted_prompt = f"""
 <|system|>
-{formatted_opro}
+{formatted_prompt}
 <|user|>
 {processed_question}
 <|assistant|>
 """
-            logger.info("OPRO prompt wrapped in ChatML format")
+            logger.info("Prompt wrapped in ChatML format")
         
         logger.info(f"Formatted prompt length: {len(formatted_prompt)} characters")
         
@@ -786,7 +1141,7 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
             for pattern in chatml_patterns:
                 answer = re.sub(pattern, '', answer, flags=re.DOTALL | re.IGNORECASE)
             
-            # Enhanced filtering for problematic content
+            # Enhanced filtering for problematic content and debug information
             problematic_patterns = [
                 r'I understand you\'re experiencing ".*?" and I want to acknowledge',  # Template repetition
                 r'Be mindful of the user\'s emotions.*?support\.',  # Instruction leakage
@@ -794,6 +1149,12 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                 r'RESPONSE GUIDELINES:.*?RESPONSE:',  # Template content
                 r'USER MESSAGE:.*?RESPONSE:',  # Template variables
                 r'emergency involved, and I would appreciate your assistance',  # Specific weird content
+                r'User:.*?(?=\n|$)',  # Remove debug user messages
+                r'Assistant asked:.*?(?=\n|$)',  # Remove debug assistant questions
+                r'Assistant:.*?(?=\n|$)',  # Remove debug assistant prefixes
+                r'Context:.*?(?=\n|$)',  # Remove context debug info
+                r'History:.*?(?=\n|$)',  # Remove history debug info
+                r'<\|.*?\|>.*?(?=\n|$)',  # Remove any remaining ChatML tags with content
             ]
             
             for pattern in problematic_patterns:
@@ -804,7 +1165,8 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                 "be mindful of", "example input", "response guidelines", 
                 "user message:", "context:", "conversation history:",
                 "parkinson", "tremor", "dementia", "neurological", "rigidity",
-                "sudden onset", "early disability", "cognitive function related to mathematics"
+                "sudden onset", "early disability", "cognitive function related to mathematics",
+                "user:", "assistant:", "assistant asked:", "context:", "history:"
             ]
             
             if any(phrase in answer.lower() for phrase in problematic_phrases):
@@ -812,7 +1174,7 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                 answer = create_fallback_response(processed_question, context, "empathetic_professional")
             
             # Post-process: automatically trim overly long answers to ensure conciseness
-            answer = post_process_response(answer)
+            answer = post_process_response(answer, processed_question)
             
             # Enhance response with CBT techniques if available
             if cbt_integration is not None:
@@ -877,15 +1239,23 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
             logger.info(f"Response generated in {response_time:.2f} seconds")
             
             # Determine prompt source
-            prompt_source = "opro" if os.path.exists(OPRO_PROMPT_PATH) else "fallback"
+            if request_data.type == "empathetic_professional":
+                prompt_source = "opro" if os.path.exists(OPRO_PROMPT_PATH) else "fallback"
+            else:
+                prompt_source = request_data.type
             
             return RAGResponse(
                 answer=answer.strip(),
                 question=processed_question,
-                tone="empathetic_professional",
+                tone=request_data.type,
                 status="success",
                 context_used=context[:500] + "..." if len(context) > 500 else context,
-                prompt_source=prompt_source
+                prompt_source=prompt_source,
+                confidence=enhanced_metadata.get("confidence"),
+                fusion_strategy=enhanced_metadata.get("fusion_strategy"),
+                source_breakdown=enhanced_metadata.get("source_breakdown"),
+                follow_up_suggestions=enhanced_metadata.get("follow_up_suggestions"),
+                safety_notes=enhanced_metadata.get("safety_notes")
             )
             
         except Exception as e:
@@ -895,15 +1265,23 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
             logger.info(f"Fallback response generated in {response_time:.2f} seconds")
             
             # Determine prompt source
-            prompt_source = "opro" if os.path.exists(OPRO_PROMPT_PATH) else "fallback"
+            if request_data.type == "empathetic_professional":
+                prompt_source = "opro" if os.path.exists(OPRO_PROMPT_PATH) else "fallback"
+            else:
+                prompt_source = request_data.type
             
             return RAGResponse(
                 answer=fallback,
                 question=processed_question,
-                tone="empathetic_professional",
+                tone=request_data.type,
                 status="fallback_used",
                 context_used=context[:500] + "..." if len(context) > 500 else context,
-                prompt_source=prompt_source
+                prompt_source=prompt_source,
+                confidence=enhanced_metadata.get("confidence"),
+                fusion_strategy=enhanced_metadata.get("fusion_strategy"),
+                source_breakdown=enhanced_metadata.get("source_breakdown"),
+                follow_up_suggestions=enhanced_metadata.get("follow_up_suggestions"),
+                safety_notes=enhanced_metadata.get("safety_notes")
             )
             
     except Exception as e:

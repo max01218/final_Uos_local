@@ -1,0 +1,62 @@
+{
+  "collection_timestamp": "2025-07-27T13:51:18.207496",
+  "total_sources": 7,
+  "successful_sources": 7,
+  "total_items": 80,
+  "source_breakdown": {
+    "nhs_cbt": {
+      "items_collected": 9,
+      "average_quality": 65.55555555555556,
+      "content_types": [
+        "government"
+      ]
+    },
+    "cci_australia": {
+      "items_collected": 13,
+      "average_quality": 85.0,
+      "content_types": [
+        "government"
+      ]
+    },
+    "nimh_psychotherapy": {
+      "items_collected": 13,
+      "average_quality": 80.0,
+      "content_types": [
+        "government"
+      ]
+    },
+    "who_mental_health": {
+      "items_collected": 12,
+      "average_quality": 59.583333333333336,
+      "content_types": [
+        "international_org"
+      ]
+    },
+    "who_self_help": {
+      "items_collected": 11,
+      "average_quality": 57.27272727272727,
+      "content_types": [
+        "international_org"
+      ]
+    },
+    "nice_depression": {
+      "items_collected": 11,
+      "average_quality": 85.9090909090909,
+      "content_types": [
+        "clinical_guidelines"
+      ]
+    },
+    "nice_anxiety": {
+      "items_collected": 11,
+      "average_quality": 77.72727272727273,
+      "content_types": [
+        "clinical_guidelines"
+      ]
+    }
+  },
+  "quality_summary": {
+    "high_quality": 38,
+    "medium_quality": 20,
+    "low_quality": 22
+  }
+}

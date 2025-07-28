@@ -1,0 +1,129 @@
+{
+  "metadata": {
+    "collection_timestamp": "2025-07-27T13:32:45.261296",
+    "source_name": "nhs_cbt",
+    "source_type": "government",
+    "total_items": 4,
+    "quality_scores": [
+      90,
+      80,
+      60,
+      60
+    ],
+    "average_quality": 72.5
+  },
+  "data": [
+    {
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/cognitive-behavioural-therapy-cbt/",
+      "source": "nhs_cbt",
+      "source_type": "government",
+      "license": "open_government_license",
+      "priority": 1,
+      "content": "Important: Get urgent help Support is available if you or someone you know is having a mental health crisis or emergency, no matter what you're going through. Find out where to get urgent help for mental health What CBT is for Cognitive behavioural therapy (CBT) is a recommended treatment for many mental health problems, such as: depression, including postnatal depression anxiety, including social anxiety, phobias and obsessive compulsive disorder (OCD) post-traumatic stress disorder (PTSD) eating disorders, including anorexia and bulimia bipolar disorder personality disorders CBT can also help with other conditions including: sleep problems, such as insomnia problems with alcohol and drugs long-term pain irritable bowel syndrome (IBS) chronic fatigue syndrome (CFS) How to get CBT You can get cognitive behavioural therapy (CBT) for free on the NHS for many mental health problems – you do not need to have a diagnosed mental health condition. There are many ways to get CBT. Waiting times vary depending on where you live. Refer yourself to NHS talking therapies For many mental health problems, such as anxiety and depression, you can refer yourself to NHS talking therapies without speaking to a GP. You must be aged 18 or over (or 16 or over in some areas) to self-refer to NHS talking therapies. Refer yourself to NHS talking therapies Speak to a GP For some conditions, including eating disorders, bipolar disorder, personality disorders or psychosis, you’ll need a GP to refer you for treatment. Other ways to get CBT You may choose to pay for CBT privately, rather than having it on the NHS. You can find an accredited CBT therapist near you on the UK CBT register . You may also be able to get CBT for free through your employer, university or local charities. Information: If you’re under 18 Getting CBT on the NHS is different if you’re under 18 (or under 16 in some areas). Find out more about getting mental health support for children and young people Before you have CBT Once you’ve been referred for cognitive behavioural therapy (CBT), you’ll have an assessment with a therapist to decide what the best treatment is for you. This may be done in person, online or on the phone. The therapist will ask about your symptoms and what you hope to get from treatment. They’ll then recommend a type of therapy, which may be CBT or another type of therapy, depending on what you need it for. They’ll usually also tell you how long you may need to wait until you get treatment. Information: While you’re waiting for CBT While you’re waiting for treatment, you might want to try self-help for mental health or self-help CBT techniques on the Every Mind Matters website . What happens in CBT There are many different types of cognitive behavioural therapy (CBT). The type you have will depend on why you’re having it and your symptoms. You can have CBT in different ways including: guided self-help – going through a workbook or an online course with the help of a therapist 1-to-1 sessions with a therapist as part of a group – with a therapist and other people who are dealing with a similar issue CBT can be done in person, online, or on the phone. You’ll usually have between 5 and 15 sessions of CBT, depending on what you’re having it for. What CBT sessions involve In CBT, the main aim is making changes to solve your problems. In a typical CBT session, you’ll talk about situations you find difficult, and discuss how they make you think, feel and act. You’ll work with your therapist to work out different ways of approaching these situations. This could include: questioning unhelpful thoughts and beliefs, and considering other ways of looking at things noticing your emotions and physical feelings without reacting to them changing what you do, for example, doing activities you’ve been avoiding Your therapist will help you find approaches that work for you and the problems you’re having. You’ll usually be asked to practise what you’ve learned between sessions – it’s important to do this for CBT to work. You may also be asked to record your progress in a worksheet or diary. After you have CBT After your course of CBT has finished, it’s important to keep using the skills you’ve learned. Your therapist will usually help you plan how you’ll do this. If your symptoms do not improve after your first course of CBT, you may be given more sessions. Speak to a GP if you’re still having problems after your CBT has finished. They might suggest having more CBT or a different type of treatment. Information: Find out more What is CBT? (British Association for Behavioural and Cognitive Psychotherapies) Cognitive behavioural therapy (Mind) Self-help CBT techniques (Every Mind Matters)",
+      "content_hash": "5b980f437c434e322f7e0b7dc35a8d87",
+      "structured_content": {
+        "techniques": [],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 90,
+        "length_ok": true,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 1,
+        "readability_score": 15,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:32:08.849226",
+      "content_length": 4714,
+      "title": "Cognitive behavioural therapy (CBT) - NHS"
+    },
+    {
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/nhs-talking-therapies/",
+      "source": "nhs_cbt",
+      "source_type": "government",
+      "license": "open_government_license",
+      "priority": 1,
+      "content": "Talking therapies, or psychological therapies, are effective and confidential treatments delivered by fully trained and accredited NHS practitioners. They can help if you're struggling with things like feelings of depression, excessive worry, social anxiety or post-traumatic stress disorder (PTSD). You can access talking therapies for free on the NHS. You can refer yourself directly to an NHS talking therapies service without a referral from a GP, or a GP can refer you. Help is available in person, by video, over the phone or as an online course. Find NHS talking therapies for anxiety and depression Information: There are also simple steps you can take to look after your mental health. The Every Mind Matters website offers expert advice to help improve your wellbeing, as well as practical tips on sleep, coping with money worries and self-care. Important: Urgent help in a crisis Find out where to get urgent help for mental health If someone's life is at risk or they cannot be kept safe, call 999 or go to A&E. What can talking therapies help with? You do not need to have a diagnosed mental health problem to refer yourself to an NHS talking therapies service. Getting support as soon as you start having difficulties can help to reduce their impact. You may be: feeling anxious feeling low and hopeless having panic attacks finding it hard to cope with work, life or relationships struggling with flashbacks and nightmares about things from your past feeling stressed Other things that talking therapies can help with include: worrying a lot obsessive thoughts or behaviours fear social situations being afraid of things, such as spiders, flying or heights (phobias) Talking therapies can also help if you have mental health problems resulting from other conditions, such as diabetes, cancer, long-term pain or irritable bowel syndrome (IBS). If you've already been diagnosed with a mental health condition you can still refer yourself to an NHS talking therapies service, or a GP can refer you. Types of talking therapies There are a range of evidence-based talking therapies. Which therapy you are offered depends on which one has been shown to be most helpful for your symptoms. Examples of talking therapies include: guided self-help – where a therapist coaches you as you work through a self-help course in your own time, either using a workbook or an online course cognitive behavioural therapy (CBT) – based on the idea that thoughts, feelings, what we do, and how our bodies feel physically, are all connected. CBT helps you notice and challenge thoughts or behaviours to help you feel better. There are different types of CBT, for example CBT for social anxiety is different to CBT for post-traumatic stress disorder (PTSD) counselling for depression – a type of counselling developed for people with depression interpersonal therapy (IPT) or dynamic interpersonal therapy (DIT) – therapies that look at the link between your depression and your relationships Talking therapies are offered in different ways, including: using a self-help workbook with the support of a therapist as an online course one-to-one sessions either in person, over the phone or as a video consultation in a group See more about types of talking therapy What happens when you refer yourself Contact your local NHS talking therapies service. Someone from the service will get in touch, usually within a few weeks. They'll ask for more details about the problems you're having. This is known as an assessment. If the service thinks they can help you, they'll recommend a therapy for you. This is based on your symptoms and how severe they are. Waiting times for the first session vary. The service will tell you what to expect. Information: While you wait for your assessment or therapy to start, you can access expert advice and practical tips on the Every Mind Matters website . Who can have talking therapies on the NHS? Anyone who is registered with a GP can get talking therapies on the NHS, but you do not need a referral from a GP. You can refer yourself directly to an NHS talking therapies service online . If your first language is not English, talking therapies can be delivered in your chosen language through multi-lingual therapists or confidential translators. Talking therapies are also available in British Sign Language (BSL) through SignHealth Psychological Therapy Service . Young people Some services offer treatment for young people aged from 16 and 17, but you need to check this with individual services. Children and young people who are not able to access adult talking therapies can get support with mental and emotional problems from their local children and young people's mental health service . Pregnancy and new parents If you’re feeling anxious or depressed during pregnancy or after becoming a parent you can also access NHS talking therapies services. Talk to your midwife, healthcare worker or GP about your mental health, or you can refer yourself to an NHS talking therapies service online. Older people Talking therapies have been shown to be very successful and beneficial for older people. Find out more about how talking helps on the Age UK website Does my GP need to know? Talking therapies services normally let your GP know that you are getting support. Your talking therapy team will explain what information will be shared confidentially with your GP and why this is important. If there is anyone else you would like your information to be shared with, or if you have any concerns about what will be shared, talk to your therapy team. Other places that offer free help Some employers provide free counselling for their employees. Ask your HR department. Most colleges and universities offer free counselling to students who need it. Read a blog about what to do if you're a student and it's all getting too much from Professor Prathiba Chitsabesan, National Clinical Director for Children and Young People’s Mental Health. Some charities offer helplines, cheap or free talking therapies or group support. Video: Talking therapies for anxiety and depression Animated video explaining self-referral to talking therapies services for anxiety or depression. Includes British Sign Language (BSL) translation. Media last reviewed: 14 March 2022 Media review due: 14 March 2025",
+      "content_hash": "d0e3f394d8168179f85ba42cc51c0307",
+      "structured_content": {
+        "techniques": [],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 80,
+        "length_ok": false,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 3,
+        "readability_score": 15,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:32:12.929537",
+      "content_length": 6315,
+      "title": "NHS talking therapies for anxiety and depression - NHS"
+    },
+    {
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/",
+      "source": "nhs_cbt",
+      "source_type": "government",
+      "license": "open_government_license",
+      "priority": 1,
+      "content": "Get urgent help now for mental health Benefits of talking therapies Types of talking therapy Self-help therapies NHS talking therapies for anxiety and depression Counselling Cognitive behavioural therapy (CBT) More information on types of therapy and counselling Counselling for student mental health problems Hypnotherapy",
+      "content_hash": "00986f5676c61e4236a34d61e1828632",
+      "structured_content": {
+        "techniques": [],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 60,
+        "length_ok": true,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 0,
+        "readability_score": 0,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:32:18.980704",
+      "content_length": 322,
+      "title": "Talking therapies and counselling - NHS"
+    },
+    {
+      "url": "https://www.nhs.uk/mental-health/talking-therapies-medicine-treatments/talking-therapies-and-counselling/",
+      "source": "nhs_cbt",
+      "source_type": "government",
+      "license": "open_government_license",
+      "priority": 1,
+      "content": "Get urgent help now for mental health Benefits of talking therapies Types of talking therapy Self-help therapies NHS talking therapies for anxiety and depression Counselling Cognitive behavioural therapy (CBT) More information on types of therapy and counselling Counselling for student mental health problems Hypnotherapy",
+      "content_hash": "00986f5676c61e4236a34d61e1828632",
+      "structured_content": {
+        "techniques": [],
+        "assessments": [],
+        "worksheets": [],
+        "key_concepts": [],
+        "step_by_step_guides": []
+      },
+      "quality_assessment": {
+        "score": 60,
+        "length_ok": true,
+        "has_required_keywords": true,
+        "no_excluded_keywords": true,
+        "professional_terms_count": 0,
+        "readability_score": 0,
+        "pass": true
+      },
+      "collection_timestamp": "2025-07-27T13:32:31.138893",
+      "content_length": 322,
+      "title": "Talking therapies and counselling - NHS"
+    }
+  ]
+}

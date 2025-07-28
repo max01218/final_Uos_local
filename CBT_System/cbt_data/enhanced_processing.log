@@ -1,0 +1,1076 @@
+2025-07-27 13:51:20,218 - EnhancedCBTProcessor - INFO - Starting enhanced data processing
+2025-07-27 13:51:20,218 - EnhancedCBTProcessor - INFO - Loading data from raw_data/government
+2025-07-27 13:51:20,232 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\cci_australia_1753218868.json
+2025-07-27 13:51:20,245 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\cci_australia_1753391281.json
+2025-07-27 13:51:20,246 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\cci_australia_20250727_133729.json
+2025-07-27 13:51:20,248 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\cci_australia_20250727_134409.json
+2025-07-27 13:51:20,261 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nhs_cbt_1753218848.json
+2025-07-27 13:51:20,272 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nhs_cbt_1753391260.json
+2025-07-27 13:51:20,274 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nhs_cbt_20250727_133245.json
+2025-07-27 13:51:20,276 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nhs_cbt_20250727_133545.json
+2025-07-27 13:51:20,276 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nhs_cbt_20250727_134224.json
+2025-07-27 13:51:20,289 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nimh_psychotherapy_1753218883.json
+2025-07-27 13:51:20,302 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nimh_psychotherapy_1753391296.json
+2025-07-27 13:51:20,303 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nimh_psychotherapy_20250727_133832.json
+2025-07-27 13:51:20,304 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nimh_psychotherapy_20250727_134537.json
+2025-07-27 13:51:20,304 - EnhancedCBTProcessor - INFO - Loading data from raw_data/professional_orgs
+2025-07-27 13:51:20,304 - EnhancedCBTProcessor - INFO - Loading data from raw_data/international_orgs
+2025-07-27 13:51:20,306 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\international_orgs\who_mental_health_20250727_134704.json
+2025-07-27 13:51:20,306 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\international_orgs\who_self_help_20250727_133843.json
+2025-07-27 13:51:20,307 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\international_orgs\who_self_help_20250727_134832.json
+2025-07-27 13:51:20,307 - EnhancedCBTProcessor - INFO - Loading data from raw_data/clinical_guidelines
+2025-07-27 13:51:20,317 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\clinical_guidelines\nice_anxiety_20250727_135113.json
+2025-07-27 13:51:20,318 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\clinical_guidelines\nice_depression_20250727_134951.json
+2025-07-27 13:51:20,318 - EnhancedCBTProcessor - INFO - Loading data from raw_data/academic
+2025-07-27 13:51:20,319 - EnhancedCBTProcessor - INFO - Loading data from raw_data/nonprofit
+2025-07-27 13:51:20,319 - EnhancedCBTProcessor - INFO - Total raw data items loaded: 145
+2025-07-27 13:51:20,319 - EnhancedCBTProcessor - INFO - Starting advanced deduplication process
+2025-07-27 13:51:20,321 - EnhancedCBTProcessor - INFO - Removed 94 exact duplicates
+2025-07-27 13:51:25,823 - EnhancedCBTProcessor - INFO - Removed 7 semantic duplicates
+2025-07-27 13:51:25,823 - EnhancedCBTProcessor - INFO - Deduplication complete: 145 -> 44 items
+2025-07-27 13:51:25,828 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,834 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,838 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,844 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,850 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,856 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,862 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,867 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,873 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,880 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,886 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,893 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,898 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,903 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,911 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,916 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,925 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,933 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,938 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,944 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,949 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,956 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,961 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,967 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,973 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,978 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,984 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,990 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:25,996 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,004 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,011 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,017 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,022 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,027 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,034 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,039 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,045 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,052 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,057 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,064 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,071 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,075 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,081 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,088 - EnhancedCBTProcessor - ERROR - Failed to enhance item: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - 'C:\\Users\\User/nltk_data'
+    - 'D:\\anaconda\\envs\\final\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\share\\nltk_data'
+    - 'D:\\anaconda\\envs\\final\\lib\\nltk_data'
+    - 'C:\\Users\\User\\AppData\\Roaming\\nltk_data'
+    - 'C:\\nltk_data'
+    - 'D:\\nltk_data'
+    - 'E:\\nltk_data'
+**********************************************************************
+
+2025-07-27 13:51:26,088 - EnhancedCBTProcessor - INFO - Quality filtering: 0 -> 0 items
+2025-07-27 13:51:26,100 - EnhancedCBTProcessor - INFO - Enhanced processing completed: cbt_data\raw_data\processed\cbt_enhanced_processed_20250727_135126.json
+2025-07-27 14:26:15,364 - EnhancedCBTProcessor - INFO - Starting enhanced data processing
+2025-07-27 14:26:15,365 - EnhancedCBTProcessor - INFO - Loading data from raw_data/government
+2025-07-27 14:26:15,365 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\cci_australia_1753218868.json
+2025-07-27 14:26:15,365 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\cci_australia_1753391281.json
+2025-07-27 14:26:15,366 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\cci_australia_20250727_133729.json
+2025-07-27 14:26:15,366 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\cci_australia_20250727_134409.json
+2025-07-27 14:26:15,367 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nhs_cbt_1753218848.json
+2025-07-27 14:26:15,367 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nhs_cbt_1753391260.json
+2025-07-27 14:26:15,367 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nhs_cbt_20250727_133245.json
+2025-07-27 14:26:15,367 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nhs_cbt_20250727_133545.json
+2025-07-27 14:26:15,368 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nhs_cbt_20250727_134224.json
+2025-07-27 14:26:15,368 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nimh_psychotherapy_1753218883.json
+2025-07-27 14:26:15,368 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nimh_psychotherapy_1753391296.json
+2025-07-27 14:26:15,369 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nimh_psychotherapy_20250727_133832.json
+2025-07-27 14:26:15,370 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\government\nimh_psychotherapy_20250727_134537.json
+2025-07-27 14:26:15,370 - EnhancedCBTProcessor - INFO - Loading data from raw_data/professional_orgs
+2025-07-27 14:26:15,370 - EnhancedCBTProcessor - INFO - Loading data from raw_data/international_orgs
+2025-07-27 14:26:15,371 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\international_orgs\who_mental_health_20250727_134704.json
+2025-07-27 14:26:15,371 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\international_orgs\who_self_help_20250727_133843.json
+2025-07-27 14:26:15,371 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\international_orgs\who_self_help_20250727_134832.json
+2025-07-27 14:26:15,372 - EnhancedCBTProcessor - INFO - Loading data from raw_data/clinical_guidelines
+2025-07-27 14:26:15,372 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\clinical_guidelines\nice_anxiety_20250727_135113.json
+2025-07-27 14:26:15,373 - EnhancedCBTProcessor - INFO - Loaded data from cbt_data\raw_data\clinical_guidelines\nice_depression_20250727_134951.json
+2025-07-27 14:26:15,373 - EnhancedCBTProcessor - INFO - Loading data from raw_data/academic
+2025-07-27 14:26:15,373 - EnhancedCBTProcessor - INFO - Loading data from raw_data/nonprofit
+2025-07-27 14:26:15,373 - EnhancedCBTProcessor - INFO - Total raw data items loaded: 145
+2025-07-27 14:26:15,373 - EnhancedCBTProcessor - INFO - Starting advanced deduplication process
+2025-07-27 14:26:15,374 - EnhancedCBTProcessor - INFO - Removed 94 exact duplicates
+2025-07-27 14:26:17,987 - EnhancedCBTProcessor - INFO - Removed 7 semantic duplicates
+2025-07-27 14:26:17,987 - EnhancedCBTProcessor - INFO - Deduplication complete: 145 -> 44 items
+2025-07-27 14:26:18,160 - EnhancedCBTProcessor - INFO - Quality filtering: 44 -> 27 items
+2025-07-27 14:26:18,168 - EnhancedCBTProcessor - INFO - Enhanced processing completed: cbt_data\raw_data\processed\cbt_enhanced_processed_20250727_142618.json
