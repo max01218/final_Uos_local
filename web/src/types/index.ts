@@ -33,6 +33,7 @@ export interface Conversation {
   tone: ToneType;
   metadata?: ConversationMetadata;
   userId?: string; // Add user association
+  isArchived?: boolean; // Add archive status
 }
 
 export interface ConversationMetadata {

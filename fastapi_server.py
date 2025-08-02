@@ -1305,6 +1305,10 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
             if "<|assistant|>" in answer:
                 answer = answer.split("<|assistant|>")[-1].strip()
             
+            # Remove any remaining ChatML tags and pipe characters
+            answer = re.sub(r'<\|.*?\|>', '', answer, flags=re.DOTALL)
+            answer = re.sub(r'\|+', '', answer)  # Remove multiple pipe characters
+            
             # Clean up any other ChatML or template remnants
             chatml_patterns = [
                 r'<\|.*?\|>',  # Remove any ChatML tags
@@ -1330,6 +1334,37 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                 r'Context:.*?(?=\n|$)',  # Remove context debug info
                 r'History:.*?(?=\n|$)',  # Remove history debug info
                 r'<\|.*?\|>.*?(?=\n|$)',  # Remove any remaining ChatML tags with content
+                # OPRO specific patterns
+                r'Empathetic Response:.*?(?=\n|$)',  # Remove OPRO response prefixes
+                r'Tone:.*?validating.*?(?=\n|$)',  # Remove tone validation messages
+                r'Tone Adaptation.*?(?=\n|$)',  # Remove tone adaptation messages
+                r'Response Strategy.*?(?=\n|$)',  # Remove response strategy messages
+                r'Guidelines:.*?(?=\n|$)',  # Remove guidelines messages
+                r'Instructions:.*?(?=\n|$)',  # Remove instructions messages
+                r'Template.*?(?=\n|$)',  # Remove template messages
+                r'Format.*?(?=\n|$)',  # Remove format messages
+                r'Structure.*?(?=\n|$)',  # Remove structure messages
+                r'Content.*?(?=\n|$)',  # Remove content messages
+                r'Balance.*?(?=\n|$)',  # Remove balance messages
+                r'Quality.*?(?=\n|$)',  # Remove quality messages
+                r'Personalization.*?(?=\n|$)',  # Remove personalization messages
+                r'Question Type.*?(?=\n|$)',  # Remove question type messages
+                r'Crisis Questions.*?(?=\n|$)',  # Remove crisis questions messages
+                r'How-to Questions.*?(?=\n|$)',  # Remove how-to questions messages
+                r'Symptom Questions.*?(?=\n|$)',  # Remove symptom questions messages
+                r'General Support.*?(?=\n|$)',  # Remove general support messages
+                r'Response Template.*?(?=\n|$)',  # Remove response template messages
+                r'Empathy Opening.*?(?=\n|$)',  # Remove empathy opening messages
+                r'Problem Acknowledgment.*?(?=\n|$)',  # Remove problem acknowledgment messages
+                r'Structured Advice.*?(?=\n|$)',  # Remove structured advice messages
+                r'Professional Resources.*?(?=\n|$)',  # Remove professional resources messages
+                r'Encouragement Closing.*?(?=\n|$)',  # Remove encouragement closing messages
+                r'Each piece of advice.*?(?=\n|$)',  # Remove advice messages
+                r'Reference user.*?(?=\n|$)',  # Remove reference messages
+                r'Adapt advice.*?(?=\n|$)',  # Remove adapt messages
+                r'Consider cultural.*?(?=\n|$)',  # Remove cultural messages
+                r'Provide age-appropriate.*?(?=\n|$)',  # Remove age-appropriate messages
+                r'Response:.*?(?=\n|$)',  # Remove response messages
             ]
             
             for pattern in problematic_patterns:
@@ -1341,7 +1376,17 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                 "user message:", "context:", "conversation history:",
                 "parkinson", "tremor", "dementia", "neurological", "rigidity",
                 "sudden onset", "early disability", "cognitive function related to mathematics",
-                "user:", "assistant:", "assistant asked:", "context:", "history:"
+                "user:", "assistant:", "assistant asked:", "context:", "history:",
+                # OPRO specific problematic phrases
+                "empathetic response:", "tone:", "validating", "tone adaptation",
+                "response strategy", "guidelines:", "instructions:", "template",
+                "format", "structure", "content", "balance", "quality",
+                "personalization", "question type", "crisis questions",
+                "how-to questions", "symptom questions", "general support",
+                "response template", "empathy opening", "problem acknowledgment",
+                "structured advice", "professional resources", "encouragement closing",
+                "each piece of advice", "reference user", "adapt advice",
+                "consider cultural", "provide age-appropriate", "response:"
             ]
             
             if any(phrase in answer.lower() for phrase in problematic_phrases):
@@ -1350,6 +1395,31 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
             
             # Post-process: automatically trim overly long answers to ensure conciseness
             answer = post_process_response(answer, processed_question)
+            
+            # Additional cleanup for OPRO-specific issues
+            # Remove any lines that start with common OPRO template patterns
+            lines = answer.split('\n')
+            cleaned_lines = []
+            for line in lines:
+                line = line.strip()
+                if line and not any(line.lower().startswith(prefix) for prefix in [
+                    'empathetic response:', 'tone:', 'validating', 'tone adaptation',
+                    'response strategy', 'guidelines:', 'instructions:', 'template',
+                    'format', 'structure', 'content', 'balance', 'quality',
+                    'personalization', 'question type', 'crisis questions',
+                    'how-to questions', 'symptom questions', 'general support',
+                    'response template', 'empathy opening', 'problem acknowledgment',
+                    'structured advice', 'professional resources', 'encouragement closing',
+                    'each piece of advice', 'reference user', 'adapt advice',
+                    'consider cultural', 'provide age-appropriate', 'response:'
+                ]):
+                    cleaned_lines.append(line)
+            
+            answer = '\n'.join(cleaned_lines).strip()
+            
+            # Final cleanup: remove any remaining template artifacts
+            answer = re.sub(r'^.*?(?=I understand|I hear|I can see|It sounds like|I\'m sorry)', '', answer, flags=re.DOTALL | re.IGNORECASE)
+            answer = re.sub(r'^.*?(?=Here are|Let me|I would|You might|Consider)', '', answer, flags=re.DOTALL | re.IGNORECASE)
             
             # Enhance response with CBT techniques if available
             if cbt_integration is not None:

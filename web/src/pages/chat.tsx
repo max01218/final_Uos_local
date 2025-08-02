@@ -11,6 +11,9 @@ import Button from '@/components/ui/Button';
 import HomeButton from '@/components/ui/HomeButton';
 import ProtectedRoute from '@/components/auth/ProtectedRoute';
 import UserMenu from '@/components/auth/UserMenu';
+import { useConversations } from '@/lib/useConversations';
+
+
 import { 
   ArrowLeft, 
   Settings, 
@@ -18,7 +21,9 @@ import {
   Shield, 
   Brain,
   Menu,
-  X
+  X,
+  History,
+  Save
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -49,7 +54,7 @@ const TONE_CONFIGS: Record<ToneType, ToneConfig> = {
 
 function ChatPageContent() {
   const router = useRouter();
-  const { type } = router.query;
+  const { type, conversation: conversationId } = router.query;
   
   const [messages, setMessages] = useState<Message[]>([]);
   const [loading, setLoading] = useState(false);
@@ -57,6 +62,18 @@ function ChatPageContent() {
   const [showSettings, setShowSettings] = useState(false);
   const [showMobileMenu, setShowMobileMenu] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [conversationTitle, setConversationTitle] = useState('New Conversation');
+  const [isSaving, setIsSaving] = useState(false);
+
+  // Conversation management
+  const {
+    conversations,
+    currentConversation,
+    createConversation,
+    addMessage,
+    updateConversationTitle,
+    setCurrentConversation
+  } = useConversations();
 
   // Set tone from URL parameters
   useEffect(() => {
@@ -65,22 +82,70 @@ function ChatPageContent() {
     }
   }, [router.query]);
 
+  // Load existing conversation if conversationId is provided
+  useEffect(() => {
+    if (conversationId && typeof conversationId === 'string') {
+      const existingConversation = conversations.find(c => c.id === conversationId);
+      if (existingConversation) {
+        setCurrentConversation(existingConversation);
+        setMessages(existingConversation.messages);
+        setConversationTitle(existingConversation.title);
+        setCurrentTone(existingConversation.tone);
+      }
+    }
+  }, [conversationId, conversations, setCurrentConversation]);
+
   // Handle sending messages
   const handleSend = useCallback(async (message: string, metadata?: any) => {
     if (!message.trim()) return;
 
     const userMessageId = generateId();
+    // Clean user message metadata to remove undefined values
+    const cleanUserMetadata = metadata ? Object.fromEntries(
+      Object.entries(metadata).filter(([_, value]) => value !== undefined)
+    ) : undefined;
+
     const userMessage: Message = {
       id: userMessageId,
       role: 'user',
       content: message,
       timestamp: new Date(),
-      metadata: metadata
+      metadata: cleanUserMetadata
     };
 
     setMessages(prev => [...prev, userMessage]);
     setLoading(true);
     setError(null);
+
+    // Save conversation if it's new
+    let conversationId: string | null = null;
+    if (!currentConversation) {
+      try {
+        setIsSaving(true);
+        const newConversation = await createConversation(
+          message.length > 50 ? message.substring(0, 50) + '...' : message,
+          currentTone
+        );
+        setCurrentConversation(newConversation);
+        setConversationTitle(newConversation.title);
+        conversationId = newConversation.id;
+        
+        // Save the user message to the new conversation
+        await addMessage(newConversation.id, userMessage);
+      } catch (err) {
+        console.error('Failed to create conversation:', err);
+      } finally {
+        setIsSaving(false);
+      }
+    } else {
+      // Save the user message to existing conversation
+      conversationId = currentConversation.id;
+      try {
+        await addMessage(currentConversation.id, userMessage);
+      } catch (err) {
+        console.error('Failed to save user message:', err);
+      }
+    }
 
     // Limit history messages for better performance
     const filteredHistory = messages.slice(-4);
@@ -110,21 +175,33 @@ function ChatPageContent() {
       
       const data = await response.json();
       const assistantMessageId = generateId();
+      // Filter out undefined values from metadata
+      const metadata: any = {};
+      if (data.confidence !== undefined) metadata.confidence = data.confidence;
+      if (data.processing_time !== undefined) metadata.processing_time = data.processing_time;
+      if (data.safety_alerts !== undefined) metadata.safety_alerts = data.safety_alerts;
+      if (data.emotion_analysis !== undefined) metadata.emotion_analysis = data.emotion_analysis;
+      if (data.follow_up_suggestions !== undefined) metadata.follow_up_suggestions = data.follow_up_suggestions;
+
       const assistantMessage: Message = {
         id: assistantMessageId,
         role: 'assistant',
         content: data.answer,
         timestamp: new Date(),
-        metadata: {
-          confidence: data.confidence,
-          processing_time: data.processing_time,
-          safety_alerts: data.safety_alerts,
-          emotion_analysis: data.emotion_analysis,
-          follow_up_suggestions: data.follow_up_suggestions
-        }
+        metadata: Object.keys(metadata).length > 0 ? metadata : undefined
       };
       
       setMessages(prev => [...prev, assistantMessage]);
+
+      // Save assistant message to conversation
+      if (conversationId) {
+        try {
+          await addMessage(conversationId, assistantMessage);
+        } catch (err) {
+          console.error('Failed to save assistant message:', err);
+        }
+      }
+      
       toast.success('Message sent');
       
     } catch (e) {
@@ -145,7 +222,7 @@ function ChatPageContent() {
     } finally {
       setLoading(false);
     }
-  }, [messages, currentTone]);
+  }, [messages, currentTone, currentConversation, createConversation, addMessage, setCurrentConversation]);
 
   // Handle feedback
   const handleFeedback = useCallback((messageId: string, type: 'positive' | 'negative') => {
@@ -174,9 +251,38 @@ function ChatPageContent() {
   const clearConversation = () => {
     if (confirm('Are you sure you want to clear all conversations? This action cannot be undone.')) {
       setMessages([]);
+      setError(null);
+      setCurrentConversation(null);
+      setConversationTitle('New Conversation');
       toast.success('Conversation cleared');
     }
   };
+
+  // Save conversation manually
+  const handleSaveConversation = async () => {
+    if (!currentConversation || messages.length === 0) return;
+    
+    try {
+      setIsSaving(true);
+      await updateConversationTitle(currentConversation.id, conversationTitle);
+      toast.success('Conversation saved');
+    } catch (err) {
+      console.error('Failed to save conversation:', err);
+      toast.error('Failed to save conversation');
+    } finally {
+      setIsSaving(false);
+    }
+  };
+
+  // Go to conversation history
+  const goToHistory = () => {
+    router.push('/conversation-history');
+  };
+
+
+
+  // Test Firebase operation
+
 
   const currentToneConfig = TONE_CONFIGS[currentTone];
 
@@ -241,11 +347,36 @@ function ChatPageContent() {
               
               <Button
                 variant="ghost"
+                onClick={goToHistory}
+                className="hidden md:flex"
+              >
+                <History className="h-4 w-4 mr-1" />
+                History
+              </Button>
+              
+
+              
+              {currentConversation && (
+                <Button
+                  variant="ghost"
+                  onClick={handleSaveConversation}
+                  disabled={isSaving}
+                  className="hidden md:flex"
+                >
+                  <Save className="h-4 w-4 mr-1" />
+                  {isSaving ? 'Saving...' : 'Save'}
+                </Button>
+              )}
+              
+              <Button
+                variant="ghost"
                 onClick={changeTone}
                 className="hidden md:flex"
               >
                 Change Style
               </Button>
+              
+
               
               <Button
                 variant="ghost"
@@ -276,6 +407,25 @@ function ChatPageContent() {
           <div className="container-responsive py-4 space-y-2">
             <Button
               variant="ghost"
+              onClick={goToHistory}
+              className="w-full justify-start"
+            >
+              <History className="h-4 w-4 mr-2" />
+              Conversation History
+            </Button>
+            {currentConversation && (
+              <Button
+                variant="ghost"
+                onClick={handleSaveConversation}
+                disabled={isSaving}
+                className="w-full justify-start"
+              >
+                <Save className="h-4 w-4 mr-2" />
+                {isSaving ? 'Saving...' : 'Save Conversation'}
+              </Button>
+            )}
+            <Button
+              variant="ghost"
               onClick={changeTone}
               className="w-full justify-start"
             >
@@ -288,6 +438,7 @@ function ChatPageContent() {
             >
               Clear Conversation
             </Button>
+
           </div>
         </div>
       )}

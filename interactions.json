@@ -2349,5 +2349,311 @@
     "user_feedback": null,
     "context_length": 389,
     "response_time": 1753990576.077326
+  },
+  {
+    "timestamp": "2025-08-02T17:28:00.871595",
+    "question": "Hi, I feel sad recently",
+    "answer": "Hi there. It sounds like you're going through a difficult time. Can you tell me more about how you're feeling?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 110,
+    "response_time": 1754152080.8715959
+  },
+  {
+    "timestamp": "2025-08-02T17:28:50.375892",
+    "question": "I just feel empty. Like I’m here, but not really here.",
+    "answer": "Empathetic Response: Tone: validating Tone Adaptation - Acknowledge that the user is experiencing emptiness, which may be a common symptom in times of stress and anxiety. - Validate the user's emotions by acknowledging that they may be experiencing a range of emotions, including sadness, confusion, and loneliness. - Encourage the user to find comfort and meaning in their experiences by reminding them that they are valuable and important people who matter. - Offer reassurance and support by reminding the user that they will receive help from professionals and that there are resources available to them.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 608,
+    "response_time": 1754152130.375892
+  },
+  {
+    "timestamp": "2025-08-02T17:33:07.615051",
+    "question": "Hi, I feel sad recently",
+    "answer": "Empathetic Response: Tone: validating Tone Adaptation - Acknowledge that the use...",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 83,
+    "response_time": 1754152387.6150513
+  },
+  {
+    "timestamp": "2025-08-02T17:33:20.527884",
+    "question": "“I’m not exactly sure why I feel this way… it just feels heavy, like I’m stuck.”",
+    "answer": "Empathetic Response: Tone: validating Tone Adaptation - Acknowledge that the use...",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 83,
+    "response_time": 1754152400.5278845
+  },
+  {
+    "timestamp": "2025-08-02T17:33:44.015656",
+    "question": "“I’m not exactly sure why I feel this way… it just feels heavy, like I’m stuck.”",
+    "answer": "Empathetic Response: Tone: validating Tone Adaptation - Acknowledge that the use...",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 83,
+    "response_time": 1754152424.0156567
+  },
+  {
+    "timestamp": "2025-08-02T17:43:52.126639",
+    "question": "I feel anxious and need some coping strategies",
+    "answer": "here are people who care about you. What Can I Help You With?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 61,
+    "response_time": 1754153032.1266396
+  },
+  {
+    "timestamp": "2025-08-02T17:44:21.635694",
+    "question": "some coping strategies to solve my anxiety",
+    "answer": "Here are some coping strategies that may help you: 1. Deep Breathing: Take slow, deep breaths in through your nose and out through your mouth. Repeat this several times until you feel calmer.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 191,
+    "response_time": 1754153061.635694
+  },
+  {
+    "timestamp": "2025-08-02T18:15:26.173873",
+    "question": "I feel overwhelmed with work pressure",
+    "answer": "Here are some coping strategies that may help you: 1. Deep Breathing: Take slow... I feel anxious about upcoming job interviews <|| || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || || ||.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 846,
+    "response_time": 1754154926.1738737
+  },
+  {
+    "timestamp": "2025-08-02T18:34:06.158960",
+    "question": "I feel overwhelmed with work pressure",
+    "answer": "I'm here to listen and support you. Can you tell me more about what's been on your mind?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 88,
+    "response_time": 1754156046.15896
+  },
+  {
+    "timestamp": "2025-08-02T18:35:59.862798",
+    "question": "Lately, I feel like I’m constantly running on empty. Work, expectations, everything just piles up, and I don’t feel like I’m handling it well.",
+    "answer": "I understand that feeling overwhelmed with work pressure can be difficult, and it's normal to experience these emotions. However, I encourage you to take a deep breath and focus on your surroundings. The sound of birds chirping or the smell of flowers can help you relax and refocus.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 283,
+    "response_time": 1754156159.8627985
+  },
+  {
+    "timestamp": "2025-08-02T19:12:25.296913",
+    "question": "Lately, I feel like I’m constantly running on empty. Work, expectations, everything just piles up, and I don’t feel like I’m handling it well.",
+    "answer": "1. Take a deep breath and relax. Grounding is an important skill in managing stress and anxiety.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 96,
+    "response_time": 1754158345.2969134
+  },
+  {
+    "timestamp": "2025-08-02T20:55:21.488669",
+    "question": "What relaxation techniques can I try?",
+    "answer": "here are several relaxation techniques available, such as: 1. Deep Breathing - Inhale deeply through your nose and exhale slowly through your mouth.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 148,
+    "response_time": 1754164521.4886699
+  },
+  {
+    "timestamp": "2025-08-02T21:17:28.347569",
+    "question": "I feel sad",
+    "answer": "It sounds like sadness may be related to a recent event or loss. Have you experienced any significant events lately?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 116,
+    "response_time": 1754165848.34757
+  },
+  {
+    "timestamp": "2025-08-02T21:17:38.133237",
+    "question": "How can I do",
+    "answer": "Let me know what additional in.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 31,
+    "response_time": 1754165858.133237
+  },
+  {
+    "timestamp": "2025-08-02T21:18:13.000737",
+    "question": "I need help",
+    "answer": "let me know what more in.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 25,
+    "response_time": 1754165893.0007374
+  },
+  {
+    "timestamp": "2025-08-02T21:24:42.085935",
+    "question": "I feel really sad",
+    "answer": "Here are some coping strategies that may help: 1.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 49,
+    "response_time": 1754166282.0859358
+  },
+  {
+    "timestamp": "2025-08-02T21:25:12.876420",
+    "question": "I feel really sad",
+    "answer": "Here are some coping strategies that may help: 1.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 49,
+    "response_time": 1754166312.8764203
+  },
+  {
+    "timestamp": "2025-08-02T21:28:57.627597",
+    "question": "I feel really sad",
+    "answer": "Here are some coping strategies that may help: 1. Deep Breathing (3 minutes) 1. Grounding (3 minutes) 1. Identify (2 minutes).",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 126,
+    "response_time": 1754166537.6275973
+  },
+  {
+    "timestamp": "2025-08-02T21:35:58.366316",
+    "question": "I feel sad",
+    "answer": "Here are some coping strategies that may help: 1. Deep Breathing (3 minutes) 1. Relaxation Techniques 2. Grounding Techniques 3. Physical Activity.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 147,
+    "response_time": 1754166958.3663163
+  },
+  {
+    "timestamp": "2025-08-02T21:40:21.441979",
+    "question": "I feel sad",
+    "answer": "Here are some coping strategies that may help: 1.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 49,
+    "response_time": 1754167221.44198
+  },
+  {
+    "timestamp": "2025-08-02T21:52:36.186009",
+    "question": "I feel sad",
+    "answer": "Here are some coping strategies that may help: 1. Deep Breathing (3 minutes): * Start by sitting down in a comfortable position.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 128,
+    "response_time": 1754167956.1860092
+  },
+  {
+    "timestamp": "2025-08-02T22:03:57.595396",
+    "question": "I feel sad",
+    "answer": "Here are some coping strategies that may help: 1. Deep Breathing (3 minutes): * * * 1.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 86,
+    "response_time": 1754168637.5953965
+  },
+  {
+    "timestamp": "2025-08-02T22:13:58.364029",
+    "question": "I feel sad",
+    "answer": "I understand you're feeling sad. That's difficult. Would you like to talk about what's weighing on you?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 103,
+    "response_time": 1754169238.3640292
+  },
+  {
+    "timestamp": "2025-08-02T22:20:45.969497",
+    "question": "I feel sad",
+    "answer": "Here are some coping strategies that may help: 1. Deep Breathing (3 minutes): * * * 2.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 86,
+    "response_time": 1754169645.9694972
+  },
+  {
+    "timestamp": "2025-08-02T22:27:56.852924",
+    "question": "I feel sad",
+    "answer": "Here are some coping strategies that may help: 1. Deep Breathing (3 minutes): * * * * *.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 88,
+    "response_time": 1754170076.852924
+  },
+  {
+    "timestamp": "2025-08-02T22:37:10.123183",
+    "question": "I feel sad",
+    "answer": "Here are some coping strategies that may help: 1. Deep Breathing (3 minutes): * * * * * 2. Grounding (use senses such as touch, taste, etc.).",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 141,
+    "response_time": 1754170630.1231837
+  },
+  {
+    "timestamp": "2025-08-02T22:41:45.979546",
+    "question": "I feel sad",
+    "answer": "Here are some coping strategies that may help: 1. Deep Breathing (3 minutes): * * * 2. These coping strategies that may help: 1. Deep Breathing (3 minutes): * * * These coping strategies that may help: 1.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 204,
+    "response_time": 1754170905.9795468
+  },
+  {
+    "timestamp": "2025-08-02T22:47:30.950097",
+    "question": "I feel sad",
+    "answer": "I understand you're feeling sad. That's difficult. Would you like to talk about what's weighing on you?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 103,
+    "response_time": 1754171250.950098
+  },
+  {
+    "timestamp": "2025-08-02T22:50:51.731560",
+    "question": "I feel really sad",
+    "answer": "Here are some coping strategies that may help: 1. Deep Breathing (3 minutes): * ...",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 83,
+    "response_time": 1754171451.731561
+  },
+  {
+    "timestamp": "2025-08-02T22:57:34.454445",
+    "question": "I feel sad",
+    "answer": "Here are some coping strategies that may help: 1. Deep Breathing (3 minutes): * ... 2. Grounding (3 minutes): * ...",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 115,
+    "response_time": 1754171854.4544458
+  },
+  {
+    "timestamp": "2025-08-02T23:00:16.790635",
+    "question": "I feel sad",
+    "answer": "Here are some coping strategies that may help: 1. Deep Breathing (3 minutes): * ... 2. Grounding (3 minutes): * ... 3. Mindfulness (3 minutes): * ...",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 149,
+    "response_time": 1754172016.7906353
+  },
+  {
+    "timestamp": "2025-08-02T23:03:00.272709",
+    "question": "I feel sad",
+    "answer": "Here are some coping strategies that may help: 1. Deep Breathing (3 minutes): * * * 2.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 86,
+    "response_time": 1754172180.2727091
+  },
+  {
+    "timestamp": "2025-08-02T23:07:12.890574",
+    "question": "I feel sad",
+    "answer": "Here are some coping strategies that may help: 1. Deep Breathing (3 minutes) <br> * Take slow, deep breaths through your nose and exhale slowly through your mouth.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 163,
+    "response_time": 1754172432.890575
+  },
+  {
+    "timestamp": "2025-08-02T23:07:32.302560",
+    "question": "I don't have motivate to do anything",
+    "answer": "Here are some suggestions for overcoming motivation: 1. Identify underlying causes: review previous conversations with the user to identify any underlying reasons for feeling unmotivated. Set realistic goals: set achievable, short-term goals that help build momentum and confidence.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 282,
+    "response_time": 1754172452.30256
   }
 ]

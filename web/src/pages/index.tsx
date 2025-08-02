@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useRouter } from 'next/router';
 import Head from 'next/head';
-import { Heart, Shield, Users, Sparkles, ArrowRight, Leaf, Sun, Moon } from 'lucide-react';
+import { Heart, Shield, Users, Sparkles, ArrowRight, Leaf, Sun, Moon, History } from 'lucide-react';
 import { useAuth } from '@/lib/AuthContext';
 import UserMenu from '@/components/auth/UserMenu';
 import Button from '@/components/ui/Button';
@@ -237,6 +237,19 @@ export default function Home() {
                 {isAuthenticated ? 'Start Conversation' : 'Get Started'}
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
+              
+              {isAuthenticated && (
+                <div className="mt-4">
+                  <Button
+                    variant="secondary"
+                    onClick={() => router.push('/conversation-history')}
+                    className="inline-flex items-center gap-2"
+                  >
+                    <History className="h-4 w-4" />
+                    View Conversation History
+                  </Button>
+                </div>
+              )}
               
               <p className="text-secondary-500 text-sm mt-4">
                 {isAuthenticated 

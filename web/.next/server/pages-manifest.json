@@ -1,8 +1,9 @@
 {
-  "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
+  "/_app": "pages/_app.js",
   "/_document": "pages/_document.js",
-  "/auth": "pages/auth.js",
-  "/": "pages/index.js",
-  "/chat": "pages/chat.js"
+  "/chat": "pages/chat.js",
+  "/conversation-history": "pages/conversation-history.js",
+  "/api/empathetic_professional": "pages/api/empathetic_professional.js",
+  "/auth": "pages/auth.js"
 }

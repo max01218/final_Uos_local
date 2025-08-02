@@ -68,7 +68,13 @@ const ChatWindow: React.FC<ChatWindowProps> = ({
   useEffect(() => {
     if (messages.length > 0) {
       const lastMessage = messages[messages.length - 1];
-      const isRecent = Date.now() - lastMessage.timestamp.getTime() < 5000;
+      
+      // Ensure timestamp is a Date object
+      const timestamp = lastMessage.timestamp instanceof Date 
+        ? lastMessage.timestamp 
+        : new Date(lastMessage.timestamp);
+      
+      const isRecent = Date.now() - timestamp.getTime() < 5000;
       
       if (isRecent && !isScrolling) {
         setHasNewMessages(true);

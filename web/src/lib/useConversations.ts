@@ -1,50 +1,78 @@
 import { useState, useEffect, useCallback } from 'react';
-import { Conversation, Message } from '@/types';
+import { useAuth } from './AuthContext';
 import { 
   saveConversation, 
   getUserConversations, 
-  updateConversation 
+  updateConversation,
+  deleteConversation,
+  getUserConversationsPaginated,
+  searchConversations,
+  archiveConversation,
+  getConversationStats,
+  addMessageToConversation
 } from './firebase';
-import { useAuth } from './AuthContext';
+import { Conversation, Message, ToneType } from '@/types';
 
-export function useConversations() {
+interface ConversationStats {
+  totalConversations: number;
+  totalMessages: number;
+  archivedConversations: number;
+  activeConversations: number;
+  toneStats: Record<string, number>;
+}
+
+interface UseConversationsReturn {
+  conversations: Conversation[];
+  currentConversation: Conversation | null;
+  loading: boolean;
+  error: string | null;
+  stats: ConversationStats | null;
+  hasMore: boolean;
+  lastDoc: any;
+  
+  // Basic operations
+  createConversation: (title: string, tone?: ToneType) => Promise<Conversation>;
+  addMessage: (conversationId: string, message: Message) => Promise<void>;
+  updateConversationTitle: (conversationId: string, title: string) => Promise<void>;
+  deleteConversationById: (conversationId: string) => Promise<void>;
+  
+  // Advanced operations
+  loadConversations: (pageSize?: number) => Promise<void>;
+  loadMoreConversations: () => Promise<void>;
+  searchConversationsByTerm: (searchTerm: string) => Promise<void>;
+  archiveConversationById: (conversationId: string, isArchived?: boolean) => Promise<void>;
+  loadConversationStats: () => Promise<void>;
+  
+  // State management
+  setCurrentConversation: (conversation: Conversation | null) => void;
+  clearError: () => void;
+}
+
+export const useConversations = (): UseConversationsReturn => {
   const { user } = useAuth();
   const [conversations, setConversations] = useState<Conversation[]>([]);
+  const [currentConversation, setCurrentConversation] = useState<Conversation | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [stats, setStats] = useState<ConversationStats | null>(null);
+  const [hasMore, setHasMore] = useState(true);
+  const [lastDoc, setLastDoc] = useState<any>(null);
 
-  // Load user conversations
-  const loadConversations = useCallback(async () => {
-    if (!user) return;
+  const clearError = useCallback(() => {
+    setError(null);
+  }, []);
 
-    try {
-      setLoading(true);
-      setError(null);
-      const userConversations = await getUserConversations(user.id);
-      setConversations(userConversations);
-    } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Failed to load conversations';
-      setError(errorMessage);
-      console.error('Error loading conversations:', err);
-    } finally {
-      setLoading(false);
-    }
-  }, [user]);
-
-  // Create new conversation
-  const createConversation = useCallback(async (title: string, initialMessage?: Message): Promise<Conversation> => {
-    if (!user) {
-      throw new Error('User not authenticated');
-    }
+  const createConversation = useCallback(async (title: string, tone: ToneType = 'professional'): Promise<Conversation> => {
+    if (!user) throw new Error('User not authenticated');
 
     const newConversation: Conversation = {
       id: `conv_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
       title,
-      messages: initialMessage ? [initialMessage] : [],
+      messages: [],
       userId: user.id,
       createdAt: new Date(),
       updatedAt: new Date(),
-      tone: 'professional'
+      tone: tone
     };
 
     try {
@@ -58,115 +86,194 @@ export function useConversations() {
     }
   }, [user]);
 
-  // Add message to conversation
-  const addMessageToConversation = useCallback(async (
-    conversationId: string, 
-    message: Message
-  ) => {
-    if (!user) {
-      throw new Error('User not authenticated');
-    }
+  const addMessage = useCallback(async (conversationId: string, message: Message): Promise<void> => {
+    if (!user) throw new Error('User not authenticated');
 
     try {
-      const conversation = conversations.find(c => c.id === conversationId);
-      if (!conversation) {
-        throw new Error('Conversation not found');
-      }
-
-      const updatedConversation: Conversation = {
-        ...conversation,
-        messages: [...conversation.messages, message],
-        updatedAt: new Date()
-      };
-
-      await updateConversation(conversationId, updatedConversation);
+      // Use the dedicated function to add message to conversation
+      await addMessageToConversation(conversationId, message);
       
-      setConversations(prev => 
-        prev.map(c => 
-          c.id === conversationId 
-            ? updatedConversation 
-            : c
-        )
-      );
+      // Update local state
+      const conversation = conversations.find(c => c.id === conversationId);
+      if (conversation) {
+        const updatedConversation: Conversation = {
+          ...conversation,
+          messages: [...conversation.messages, message],
+          updatedAt: new Date()
+        };
+        
+        setConversations(prev => 
+          prev.map(c => c.id === conversationId ? updatedConversation : c)
+        );
 
-      return updatedConversation;
+        if (currentConversation?.id === conversationId) {
+          setCurrentConversation(updatedConversation);
+        }
+      }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Failed to add message';
       setError(errorMessage);
       throw err;
     }
-  }, [user, conversations]);
+  }, [user, conversations, currentConversation]);
 
-  // Update conversation title
-  const updateConversationTitle = useCallback(async (
-    conversationId: string, 
-    newTitle: string
-  ) => {
-    if (!user) {
-      throw new Error('User not authenticated');
-    }
+  const updateConversationTitle = useCallback(async (conversationId: string, title: string): Promise<void> => {
+    if (!user) throw new Error('User not authenticated');
 
     try {
-      await updateConversation(conversationId, { 
-        title: newTitle,
-        updatedAt: new Date()
-      });
+      await updateConversation(conversationId, { title });
       
       setConversations(prev => 
-        prev.map(c => 
-          c.id === conversationId 
-            ? { ...c, title: newTitle, updatedAt: new Date() }
-            : c
-        )
+        prev.map(c => c.id === conversationId ? { ...c, title, updatedAt: new Date() } : c)
       );
+
+      if (currentConversation?.id === conversationId) {
+        setCurrentConversation(prev => prev ? { ...prev, title, updatedAt: new Date() } : null);
+      }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Failed to update conversation title';
       setError(errorMessage);
       throw err;
     }
-  }, [user]);
+  }, [user, currentConversation]);
 
-  // Delete conversation
-  const deleteConversation = useCallback(async (conversationId: string) => {
-    if (!user) {
-      throw new Error('User not authenticated');
-    }
+  const deleteConversationById = useCallback(async (conversationId: string): Promise<void> => {
+    if (!user) throw new Error('User not authenticated');
 
     try {
-      // Note: You'll need to implement deleteConversation in firebase.ts
-      // For now, we'll just remove it from local state
+      await deleteConversation(conversationId);
+      
       setConversations(prev => prev.filter(c => c.id !== conversationId));
+      
+      if (currentConversation?.id === conversationId) {
+        setCurrentConversation(null);
+      }
     } catch (err) {
       const errorMessage = err instanceof Error ? err.message : 'Failed to delete conversation';
       setError(errorMessage);
       throw err;
     }
+  }, [user, currentConversation]);
+
+  const loadConversations = useCallback(async (pageSize: number = 10): Promise<void> => {
+    if (!user) return;
+
+    setLoading(true);
+    setError(null);
+
+    try {
+      const result = await getUserConversationsPaginated(user.id, pageSize);
+      setConversations(result.conversations);
+      setLastDoc(result.lastDoc);
+      setHasMore(result.hasMore);
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Failed to load conversations';
+      setError(errorMessage);
+    } finally {
+      setLoading(false);
+    }
   }, [user]);
 
-  // Get conversation by ID
-  const getConversation = useCallback((conversationId: string): Conversation | undefined => {
-    return conversations.find(c => c.id === conversationId);
-  }, [conversations]);
+  const loadMoreConversations = useCallback(async (): Promise<void> => {
+    if (!user || !hasMore || loading) return;
 
-  // Load conversations when user changes
-  useEffect(() => {
-    if (user) {
-      loadConversations();
-    } else {
-      setConversations([]);
+    setLoading(true);
+    setError(null);
+
+    try {
+      const result = await getUserConversationsPaginated(user.id, 10, lastDoc);
+      setConversations(prev => [...prev, ...result.conversations]);
+      setLastDoc(result.lastDoc);
+      setHasMore(result.hasMore);
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Failed to load more conversations';
+      setError(errorMessage);
+    } finally {
+      setLoading(false);
+    }
+  }, [user, hasMore, loading, lastDoc]);
+
+  const searchConversationsByTerm = useCallback(async (searchTerm: string): Promise<void> => {
+    if (!user || !searchTerm.trim()) {
+      await loadConversations();
+      return;
+    }
+
+    setLoading(true);
+    setError(null);
+
+    try {
+      const searchResults = await searchConversations(user.id, searchTerm);
+      setConversations(searchResults);
+      setHasMore(false);
+      setLastDoc(null);
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Failed to search conversations';
+      setError(errorMessage);
+    } finally {
+      setLoading(false);
     }
   }, [user, loadConversations]);
 
+  const archiveConversationById = useCallback(async (conversationId: string, isArchived: boolean = true): Promise<void> => {
+    if (!user) throw new Error('User not authenticated');
+
+    try {
+      await archiveConversation(conversationId, isArchived);
+      
+      setConversations(prev => 
+        prev.map(c => c.id === conversationId ? { ...c, isArchived, updatedAt: new Date() } : c)
+      );
+    } catch (err) {
+      const errorMessage = err instanceof Error ? err.message : 'Failed to archive conversation';
+      setError(errorMessage);
+      throw err;
+    }
+  }, [user]);
+
+  const loadConversationStats = useCallback(async (): Promise<void> => {
+    if (!user) return;
+
+    try {
+      const conversationStats = await getConversationStats(user.id);
+      setStats(conversationStats);
+    } catch (err) {
+      console.error('Failed to load conversation stats:', err);
+    }
+  }, [user]);
+
+  // Load conversations on mount
+  useEffect(() => {
+    if (user) {
+      loadConversations();
+      loadConversationStats();
+    }
+  }, [user, loadConversations, loadConversationStats]);
+
   return {
     conversations,
+    currentConversation,
     loading,
     error,
-    loadConversations,
+    stats,
+    hasMore,
+    lastDoc,
+    
+    // Basic operations
     createConversation,
-    addMessageToConversation,
+    addMessage,
     updateConversationTitle,
-    deleteConversation,
-    getConversation,
-    clearError: () => setError(null)
+    deleteConversationById,
+    
+    // Advanced operations
+    loadConversations,
+    loadMoreConversations,
+    searchConversationsByTerm,
+    archiveConversationById,
+    loadConversationStats,
+    
+    // State management
+    setCurrentConversation,
+    clearError
   };
-} 
+}; 
