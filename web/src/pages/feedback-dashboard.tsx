@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import HomeButton from '@/components/ui/HomeButton';
 
 interface FeedbackData {
   satisfaction: number;
@@ -76,10 +77,15 @@ export default function FeedbackDashboard() {
 
   return (
     <div style={{ padding: '20px', maxWidth: '1200px', margin: '0 auto' }}>
-      <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
-        <button onClick={goBack} style={{ marginRight: '15px', padding: '8px 12px' }}>
-          Back
-        </button>
+             <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
+         <div style={{ marginRight: '15px' }}>
+           <HomeButton 
+             variant="secondary" 
+             size="md"
+             style="back"
+             className="shadow-md"
+           />
+         </div>
         <h1>Feedback Dashboard</h1>
       </div>
 

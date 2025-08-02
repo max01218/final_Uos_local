@@ -635,6 +635,19 @@ class CBTKnowledgeBase:
         if any(social in query_lower for social in social_exclusions):
             return False
         
+        # Exclude definitional questions that should get medical info, not CBT
+        definitional_patterns = [
+            r'what is\s+\w+',  # "what is anxiety", "what is depression"
+            r'what are\s+\w+',  # "what are symptoms"
+            r'define\s+\w+',  # "define anxiety"
+            r'meaning of\s+\w+',  # "meaning of anxiety"
+            r'definition of\s+\w+',  # "definition of anxiety"
+        ]
+        
+        # If it's a definitional question, don't use CBT (use medical info instead)
+        if any(re.search(pattern, query_lower) for pattern in definitional_patterns):
+            return False
+        
         # Keywords that suggest CBT might be helpful - more specific
         cbt_indicators = [
             'how can i cope', 'what should i do about', 'help me with', 'strategies for',
@@ -643,12 +656,19 @@ class CBTKnowledgeBase:
             'struggling with', 'i struggle with', 'i need help dealing'
         ]
         
+        # "How to" questions that should trigger CBT
+        how_to_questions = [
+            'how to', 'how do i', 'what should i do', 'what can i do',
+            'how can i', 'what steps', 'what techniques', 'what methods',
+            'how do you', 'what do you do', 'can you show me', 'can you tell me'
+        ]
+        
         # Mental health conditions that commonly use CBT
         condition_keywords = [
             'anxiety', 'anxious', 'depression', 'depressed', 'stress', 'stressed',
             'worry', 'worried', 'panic', 'fear', 'afraid', 'nervous',
             'thoughts', 'thinking', 'behavior', 'mood', 'overwhelmed',
-            'sad', 'down', 'upset', 'tense'
+            'sad', 'down', 'upset', 'tense', 'release', 'relieve', 'reduce'
         ]
         
         # Direct CBT technique requests
@@ -659,6 +679,7 @@ class CBTKnowledgeBase:
         ]
         
         has_cbt_indicator = any(indicator in query_lower for indicator in cbt_indicators)
+        has_how_to_question = any(question in query_lower for question in how_to_questions)
         has_condition_keyword = any(keyword in query_lower for keyword in condition_keywords)
         has_direct_request = any(request in query_lower for request in direct_cbt_requests)
         
@@ -666,6 +687,7 @@ class CBTKnowledgeBase:
         # 1. Has both CBT indicator and condition keyword (original logic)
         # 2. Has direct CBT technique request
         # 3. Has strong emotional/mental health indicators (even without explicit help request)
+        # 4. Has "how to" question with mental health condition
         strong_indicators = [
             'feel anxious', 'feeling anxious', 'feel depressed', 'feeling depressed',
             'feel overwhelmed', 'feeling overwhelmed', 'panic attacks', 'anxiety attacks',
@@ -675,7 +697,8 @@ class CBTKnowledgeBase:
         
         has_strong_indicator = any(indicator in query_lower for indicator in strong_indicators)
         
-        return (has_cbt_indicator and has_condition_keyword) or has_direct_request or has_strong_indicator
+        # Enhanced logic: Include CBT for "how to" questions with mental health conditions
+        return (has_cbt_indicator and has_condition_keyword) or has_direct_request or has_strong_indicator or (has_how_to_question and has_condition_keyword)
         
     def get_cbt_status(self) -> Dict:
         """Get CBT integration status"""

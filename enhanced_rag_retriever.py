@@ -343,8 +343,14 @@ class EnhancedRAGRetriever:
         
     def load_knowledge_bases(self, cbt_path: str = None, icd11_path: str = None):
         """Load CBT and ICD-11 knowledge bases"""
+        # Set default paths if not provided
+        if cbt_path is None:
+            cbt_path = "CBT_System/cbt_data/embeddings/cbt_index_standard_20250727_143814.faiss"
+        if icd11_path is None:
+            icd11_path = "embeddings/index.faiss"
+            
         # Load CBT knowledge base
-        if cbt_path and Path(cbt_path).exists():
+        if Path(cbt_path).exists():
             try:
                 self.cbt_index = faiss.read_index(cbt_path)
                 
@@ -375,7 +381,7 @@ class EnhancedRAGRetriever:
                 self.logger.error(f"Failed to load CBT knowledge base: {e}")
                 
         # Load ICD-11 knowledge base (if available)
-        if icd11_path and Path(icd11_path).exists():
+        if Path(icd11_path).exists():
             try:
                 self.icd11_index = faiss.read_index(icd11_path)
                 
@@ -389,8 +395,32 @@ class EnhancedRAGRetriever:
                     if isinstance(metadata_tuple, tuple) and len(metadata_tuple) == 2:
                         # This is likely (docstore, index_to_docstore_id) format
                         docstore, index_to_docstore_id = metadata_tuple
-                        if hasattr(docstore, 'dict'):
+                        # Try different ways to access docstore content
+                        if hasattr(docstore, '_dict'):
                             # Convert docstore to list format
+                            self.icd11_metadata = []
+                            for i in range(len(index_to_docstore_id)):
+                                doc_id = index_to_docstore_id[i]
+                                if doc_id in docstore._dict:
+                                    doc = docstore._dict[doc_id]
+                                    if hasattr(doc, 'page_content'):
+                                        self.icd11_metadata.append({
+                                            "content": doc.page_content,
+                                            "metadata": getattr(doc, 'metadata', {})
+                                        })
+                                    else:
+                                        self.icd11_metadata.append({
+                                            "content": str(doc),
+                                            "metadata": {}
+                                        })
+                                else:
+                                    # Fallback for missing documents
+                                    self.icd11_metadata.append({
+                                        "content": f"Document {doc_id} not found",
+                                        "metadata": {}
+                                    })
+                        elif hasattr(docstore, 'dict'):
+                            # Fallback to 'dict' attribute
                             self.icd11_metadata = []
                             for i in range(len(index_to_docstore_id)):
                                 doc_id = index_to_docstore_id[i]

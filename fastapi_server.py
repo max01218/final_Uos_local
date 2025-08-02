@@ -197,9 +197,12 @@ def load_opro_prompt() -> str:
 
 def get_dynamic_prompt(tone: str = "empathetic_professional") -> str:
     """Get the appropriate prompt based on tone and OPRO availability"""
-    if tone == "empathetic_professional":
-        return load_opro_prompt()
+    # All tones now use OPRO optimized prompt
+    opro_prompt = load_opro_prompt()
+    if opro_prompt and opro_prompt != FALLBACK_PROMPTS["empathetic_professional"]:
+        return opro_prompt
     else:
+        # Fallback to tone-specific prompts if OPRO not available
         return FALLBACK_PROMPTS.get(tone, FALLBACK_PROMPTS["empathetic_professional"])
 
 def save_interaction(question: str, answer: str, tone: str, user_feedback: Optional[int] = None):
@@ -429,7 +432,7 @@ def load_psychologist_llm():
             "text-generation",
             model=model,
             tokenizer=tok,
-            max_new_tokens=120,  # Further reduced for concise responses
+            max_new_tokens=512,  # Increased from 120 to allow longer responses
             do_sample=True,
             temperature=0.8, 
             top_p=0.9,
@@ -638,6 +641,30 @@ def validate_user_input(question):
     
     return True, question
 
+def detect_crisis_keywords(text: str) -> bool:
+    """Detect crisis keywords indicating potential suicide risk"""
+    crisis_keywords = [
+        'suicide', 'kill myself', 'end my life', 'want to die',
+        'no reason to live', 'better off dead', 'hurt myself',
+        'want to suicide', 'commit suicide', 'take my life',
+        'don\'t want to live', 'can\'t go on', 'give up',
+        'no point in living', 'everyone would be better off'
+    ]
+    return any(keyword in text.lower() for keyword in crisis_keywords)
+
+def generate_crisis_response() -> str:
+    """Generate appropriate crisis response with emergency resources"""
+    return """I'm very concerned about what you're sharing. Your life has value, and there are people who want to help you.
+
+**Immediate Help Available:**
+• Call 988 (Suicide & Crisis Lifeline) - 24/7 free support
+• Text HOME to 741741 (Crisis Text Line)
+• Go to your nearest emergency room
+• Call 911 if you're in immediate danger
+
+**You're Not Alone:**
+Professional help is available and effective. Please reach out to one of these resources right now. You deserve support and care."""
+
 def analyze_conversation_context(question: str, history: List[Message]) -> dict:
     """
     Analyze conversation context to determine appropriate response strategy
@@ -695,6 +722,49 @@ def analyze_conversation_context(question: str, history: List[Message]) -> dict:
     else:
         analysis["information_level"] = "basic"
         analysis["response_strategy"] = "ask_clarification"
+    
+    # Check for "how to" questions that should get direct advice
+    how_to_patterns = [
+        r'how to\s+\w+',  # "how to cope", "how to manage"
+        r'how do i\s+\w+',  # "how do i deal", "how do i handle"
+        r'what should i do\s+\w+',  # "what should i do about"
+        r'what can i do\s+\w+',  # "what can i do about"
+        r'how can i\s+\w+',  # "how can i help", "how can i manage"
+        r'what steps\s+\w+',  # "what steps should i take"
+        r'what techniques\s+\w+',  # "what techniques can i use"
+        r'can you show me\s+\w+',  # "can you show me how"
+        r'can you tell me\s+\w+',  # "can you tell me how"
+    ]
+    
+    # Check for mental health conditions in "how to" questions
+    mental_health_conditions = [
+        'anxiety', 'anxious', 'depression', 'depressed', 'stress', 'stressed',
+        'worry', 'worried', 'panic', 'fear', 'afraid', 'nervous',
+        'thoughts', 'thinking', 'behavior', 'mood', 'overwhelmed',
+        'sad', 'down', 'upset', 'tense', 'release', 'relieve', 'reduce',
+        'cope', 'manage', 'deal', 'handle', 'overcome'
+    ]
+    
+    # If it's a "how to" question with mental health content, provide direct advice
+    is_how_to_question = any(re.search(pattern, question_lower) for pattern in how_to_patterns)
+    has_mental_health_content = any(condition in question_lower for condition in mental_health_conditions)
+    
+    if is_how_to_question and has_mental_health_content:
+        analysis["response_strategy"] = "provide_advice"
+        # If it's a detailed "how to" question, give specific help
+        if detailed_count >= 1:
+            analysis["response_strategy"] = "give_specific_help"
+    
+    # Check for simple greetings or social interactions
+    simple_greetings = [
+        'hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening',
+        'how are you', 'how\'s it going', 'nice to meet you', 'pleasure to meet you'
+    ]
+    
+    # If it's a simple greeting without additional context, ask for clarification
+    if any(greeting in question_lower for greeting in simple_greetings) and len(question_lower.split()) <= 3:
+        analysis["response_strategy"] = "ask_clarification"
+        analysis["information_level"] = "basic"
     
     # Analyze emotional state
     emotional_keywords = {
@@ -782,6 +852,59 @@ def post_process_response(answer: str, question: str = "") -> str:
     for pattern in self_question_patterns:
         answer = re.sub(pattern, '', answer, flags=re.IGNORECASE)
     
+    # Remove internal instruction leaks (CRITICAL FIX)
+    internal_instruction_patterns = [
+        r'INSTRUCTIONS?:.*?(?=\n|$)',  # "INSTRUCTIONS: - Start with empathy..."
+        r'INSTRUCTATIONS?:.*?(?=\n|$)',  # Typo version
+        r'RESPONSE TEMPLATE:.*?(?=\n|$)',  # "RESPONSE TEMPLATE:"
+        r'GUIDELINES:.*?(?=\n|$)',  # "GUIDELINES:"
+        r'Start with empathy.*?(?=\n|$)',  # "Start with empathy (1 sentence)"
+        r'Cite ICD-11.*?(?=\n|$)',  # "Cite ICD-11 context if relevant"
+        r'Ask 1 gentle.*?(?=\n|$)',  # "Ask 1 gentle follow-up question"
+        r'Keep response.*?(?=\n|$)',  # "Keep response to 2-4 sentences"
+        r'Avoid generic.*?(?=\n|$)',  # "Avoid generic lifestyle advice"
+        r'Response Structure.*?(?=\n|$)',  # "Response Structure Guidelines:"
+        r'Formatting Guidelines.*?(?=\n|$)',  # "Formatting Guidelines:"
+        r'Content Depth.*?(?=\n|$)',  # "Content Depth Guidelines:"
+        r'Professional Resource.*?(?=\n|$)',  # "Professional Resource Guidelines:"
+        r'Balance Guidelines.*?(?=\n|$)',  # "Balance Guidelines:"
+        r'Question Type.*?(?=\n|$)',  # "Question Type Adaptations:"
+        r'Quality Standards.*?(?=\n|$)',  # "Quality Standards:"
+        r'Personalization Elements.*?(?=\n|$)',  # "Personalization Elements:"
+        r'Response Template.*?(?=\n|$)',  # "Response Template Structure:"
+        r'1\. Empathy.*?(?=\n|$)',  # "1. Empathy Opening"
+        r'2\. Problem.*?(?=\n|$)',  # "2. Problem Acknowledgment"
+        r'3\. Structured.*?(?=\n|$)',  # "3. Structured Advice"
+        r'4\. Professional.*?(?=\n|$)',  # "4. Professional Resources"
+        r'5\. Encouragement.*?(?=\n|$)',  # "5. Encouragement Closing"
+        r'Crisis Questions.*?(?=\n|$)',  # "Crisis Questions:"
+        r'How-to Questions.*?(?=\n|$)',  # "How-to Questions:"
+        r'Symptom Questions.*?(?=\n|$)',  # "Symptom Questions:"
+        r'General Support.*?(?=\n|$)',  # "General Support:"
+        r'Each piece of advice.*?(?=\n|$)',  # "Each piece of advice should be"
+        r'Include the reasoning.*?(?=\n|$)',  # "Include the reasoning behind"
+        r'Provide multiple options.*?(?=\n|$)',  # "Provide multiple options"
+        r'Ensure advice is.*?(?=\n|$)',  # "Ensure advice is evidence-based"
+        r'Include appropriate.*?(?=\n|$)',  # "Include appropriate disclaimers"
+        r'Reference user.*?(?=\n|$)',  # "Reference user's specific situation"
+        r'Adapt advice based.*?(?=\n|$)',  # "Adapt advice based on emotional state"
+        r'Consider cultural.*?(?=\n|$)',  # "Consider cultural and contextual"
+        r'Provide age-appropriate.*?(?=\n|$)',  # "Provide age-appropriate"
+        # Additional patterns for template structure leaks
+        r'Empathy Opening.*?(?=\n|$)',  # "Empathy Opening (1-2 sentences)"
+        r'Problem Acknowledgment.*?(?=\n|$)',  # "Problem Acknowledgment (1 sentence)"
+        r'Structured Advice.*?(?=\n|$)',  # "Structured Advice (numbered steps)"
+        r'Professional Resources.*?(?=\n|$)',  # "Professional Resources (when relevant)"
+        r'Encouragement Closing.*?(?=\n|$)',  # "Encouragement Closing (1-2 sentences)"
+        r'Acknowledge the user.*?(?=\n|$)',  # "Acknowledge the user's feelings"
+        r'Let the user know.*?(?=\n|$)',  # "Let the user know that they understand"
+        r'Express empathy.*?(?=\n|$)',  # "Express empathy and understanding"
+        r'Understanding how.*?(?=\n|$)',  # "Understanding how sad they are feeling"
+    ]
+    
+    for pattern in internal_instruction_patterns:
+        answer = re.sub(pattern, '', answer, flags=re.IGNORECASE | re.MULTILINE)
+    
     # Remove any non-ASCII characters that might have crept in
     answer = re.sub(r'[^\x00-\x7F]+', '', answer)
     
@@ -808,19 +931,53 @@ def post_process_response(answer: str, question: str = "") -> str:
     is_how_to_question = any(phrase in question.lower() for phrase in 
                             ['how to', 'how do', 'what steps', 'what should', 'can you show'])
     
-    if len(sentences) > 6 and not is_how_to_question:
+    # Check for incomplete sentences (sentences that don't end with punctuation)
+    incomplete_sentences = []
+    complete_sentences = []
+    
+    for sentence in sentences:
+        if sentence.strip() and sentence.strip()[-1] in '.!?':
+            complete_sentences.append(sentence)
+        elif sentence.strip():
+            incomplete_sentences.append(sentence)
+    
+    # If we have incomplete sentences, try to complete them or remove them
+    if incomplete_sentences:
+        # For incomplete sentences, try to complete them with common endings
+        for incomplete in incomplete_sentences:
+            if 'could involve' in incomplete.lower():
+                # Complete common patterns
+                if 'relaxation' in incomplete.lower():
+                    complete_sentences.append(incomplete + ' deep breathing, progressive muscle relaxation, or guided imagery.')
+                elif 'technique' in incomplete.lower():
+                    complete_sentences.append(incomplete + ' various relaxation methods.')
+                else:
+                    complete_sentences.append(incomplete + ' different approaches.')
+            elif 'this could' in incomplete.lower():
+                complete_sentences.append(incomplete + ' help you feel better.')
+            else:
+                # For other incomplete sentences, try to complete them
+                complete_sentences.append(incomplete + '.')
+    
+    # Reconstruct answer with complete sentences
+    answer = ' '.join(complete_sentences)
+    
+    if len(complete_sentences) > 6 and not is_how_to_question:
         # For regular questions, keep it concise (3-4 sentences max)
         important_keywords = ['understand', 'feel', 'support', 'help', 'care', 'important', 'okay']
-        important_sentences = sentences[:2]  # Always keep first 2 sentences
+        important_sentences = complete_sentences[:2]  # Always keep first 2 sentences
         
-        for sentence in sentences[2:4]:  # Check next 2 sentences
+        for sentence in complete_sentences[2:4]:  # Check next 2 sentences
             if any(keyword in sentence.lower() for keyword in important_keywords):
                 important_sentences.append(sentence)
         
         answer = ' '.join(important_sentences)
-    elif len(sentences) > 10:
+    elif len(complete_sentences) > 15:
         # For "how to" questions, allow more sentences but still limit
-        answer = ' '.join(sentences[:8])
+        answer = ' '.join(complete_sentences[:12])
+    elif len(complete_sentences) > 10 and not is_how_to_question:
+        # For regular questions with many sentences, limit more strictly
+        answer = ' '.join(complete_sentences[:6])
     
     # Remove generic customer service phrases
     generic_phrases = [
@@ -860,7 +1017,24 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
         if store is None or psychologist_llm is None:
             raise HTTPException(status_code=500, detail="RAG system not initialized")
 
-        # Step 1: Input validation
+        # Step 1: Crisis detection (HIGHEST PRIORITY)
+        if detect_crisis_keywords(request_data.question):
+            logger.warning(f"CRISIS DETECTED in user input: {request_data.question}")
+            return RAGResponse(
+                answer=generate_crisis_response(),
+                question=request_data.question,
+                tone="empathetic_professional",
+                status="crisis_detected",
+                context_used="crisis_response",
+                prompt_source="crisis",
+                confidence=1.0,
+                fusion_strategy="crisis_intervention",
+                source_breakdown={"crisis": 1.0},
+                follow_up_suggestions=["Please call 988 immediately"],
+                safety_notes=["User expressed suicidal thoughts - immediate intervention required"]
+            )
+
+        # Step 2: Input validation
         is_valid, processed_question = validate_user_input(request_data.question)
         if not is_valid:
             return RAGResponse(
@@ -1072,7 +1246,8 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                 context=limited_context,
                 question=processed_question,
                 history=limited_history,
-                response_strategy=response_strategy
+                response_strategy=response_strategy,
+                tone=request_data.type
             )
             logger.info("Variables successfully replaced in prompt")
         except KeyError as e:
@@ -1238,11 +1413,8 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
             response_time = time.time() - start_time
             logger.info(f"Response generated in {response_time:.2f} seconds")
             
-            # Determine prompt source
-            if request_data.type == "empathetic_professional":
-                prompt_source = "opro" if os.path.exists(OPRO_PROMPT_PATH) else "fallback"
-            else:
-                prompt_source = request_data.type
+            # Determine prompt source - all tones now use OPRO
+            prompt_source = "opro" if os.path.exists(OPRO_PROMPT_PATH) else "fallback"
             
             return RAGResponse(
                 answer=answer.strip(),
@@ -1264,11 +1436,8 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
             response_time = time.time() - start_time
             logger.info(f"Fallback response generated in {response_time:.2f} seconds")
             
-            # Determine prompt source
-            if request_data.type == "empathetic_professional":
-                prompt_source = "opro" if os.path.exists(OPRO_PROMPT_PATH) else "fallback"
-            else:
-                prompt_source = request_data.type
+            # Determine prompt source - all tones now use OPRO
+            prompt_source = "opro" if os.path.exists(OPRO_PROMPT_PATH) else "fallback"
             
             return RAGResponse(
                 answer=fallback,

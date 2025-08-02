@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import HomeButton from '@/components/ui/HomeButton';
 
 interface TestResult {
   endpoint: string;
@@ -61,7 +62,17 @@ export default function TestPage() {
 
   return (
     <div style={{ maxWidth: 1200, margin: '0 auto', padding: 20 }}>
-      <h1>Backend Endpoint Testing</h1>
+             <div style={{ display: 'flex', alignItems: 'center', marginBottom: '20px' }}>
+         <div style={{ marginRight: '15px' }}>
+           <HomeButton 
+             variant="secondary" 
+             size="md"
+             style="back"
+             className="shadow-md"
+           />
+         </div>
+        <h1>Backend Endpoint Testing</h1>
+      </div>
       
       <div style={{ marginBottom: 20 }}>
         <div style={{ marginBottom: 10 }}>

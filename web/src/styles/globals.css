@@ -1,66 +1,139 @@
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f7f9fa;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+  
+  body {
+    @apply bg-secondary-50 text-secondary-900 antialiased;
+  }
+  
+  * {
+    @apply border-secondary-200;
+  }
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  padding: 24px;
+@layer components {
+  /* 自定义组件样式 */
+  .btn {
+    @apply inline-flex items-center justify-center rounded-lg px-4 py-2 text-sm font-medium transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  
+  .btn-primary {
+    @apply btn bg-primary-600 text-white hover:bg-primary-700 focus:ring-primary-500;
+  }
+  
+  .btn-secondary {
+    @apply btn bg-secondary-200 text-secondary-900 hover:bg-secondary-300 focus:ring-secondary-500;
+  }
+  
+  .btn-ghost {
+    @apply btn bg-transparent text-secondary-700 hover:bg-secondary-100 focus:ring-secondary-500;
+  }
+  
+  .input {
+    @apply w-full rounded-lg border border-secondary-300 bg-white px-4 py-3 text-sm placeholder-secondary-500 focus:border-primary-500 focus:outline-none focus:ring-2 focus:ring-primary-500/20 transition-all duration-200;
+  }
+  
+  .textarea {
+    @apply input resize-none;
+  }
+  
+  .card {
+    @apply rounded-xl bg-white p-6 shadow-soft border border-secondary-200;
+  }
+  
+  .message-bubble {
+    @apply max-w-[85%] rounded-2xl px-4 py-3 text-sm leading-relaxed shadow-soft;
+  }
+  
+  .message-user {
+    @apply message-bubble bg-gradient-to-br from-primary-500 to-primary-600 text-white ml-auto;
+  }
+  
+  .message-assistant {
+    @apply message-bubble bg-white text-secondary-900 border border-secondary-200;
+  }
+  
+  .message-system {
+    @apply message-bubble bg-secondary-100 text-secondary-700;
+  }
+  
+  .message-alert {
+    @apply message-bubble bg-gradient-to-br from-error-500 to-error-600 text-white border-2 border-error-400;
+  }
+  
+  .message-suggestion {
+    @apply message-bubble bg-gradient-to-br from-mental-500 to-mental-600 text-white;
+  }
+  
+  /* 滚动条样式 */
+  .scrollbar-thin {
+    scrollbar-width: thin;
+    scrollbar-color: theme('colors.secondary.300') transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background-color: theme('colors.secondary.300');
+    border-radius: 3px;
+  }
+  
+  .scrollbar-thin::-webkit-scrollbar-thumb:hover {
+    background-color: theme('colors.secondary.400');
+  }
+  
+  /* 动画类 */
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .animate-slide-up {
+    animation: slideUp 0.3s ease-out;
+  }
+  
+  .animate-bounce-gentle {
+    animation: bounceGentle 2s infinite;
+  }
+  
+  /* 响应式工具类 */
+  .container-responsive {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+  
+  /* 可访问性增强 */
+  .sr-only {
+    @apply absolute w-px h-px p-0 -m-px overflow-hidden whitespace-nowrap border-0;
+  }
+  
+  .focus-visible {
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-500 focus:ring-offset-2;
+  }
 }
 
-.rag-row {
-  width: 100%;
-  margin-bottom: 16px;
-}
-
-.main-row {
-  display: flex;
-  flex: 1;
-  min-height: 400px;
-}
-
-.prompt-col {
-  flex: 1;
-  margin-right: 16px;
-}
-.fm-col {
-  flex: 2;
-  margin-right: 16px;
-}
-.dialogue-col {
-  flex: 1;
-}
-
-.diagnosis-row {
-  width: 100%;
-  margin-top: 16px;
-}
-
-.panel {
-  background: #fff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  padding: 20px;
-  margin-bottom: 8px;
-}
-
-h3 {
-  margin-top: 0;
-}
-
-.prompt-section {
-  margin-bottom: 12px;
-}
-
-input, textarea {
-  width: 100%;
-  padding: 8px;
-  margin-top: 4px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 1em;
-  box-sizing: border-box;
+@layer utilities {
+  /* 自定义工具类 */
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .backdrop-blur-soft {
+    backdrop-filter: blur(8px);
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 to-mental-600 bg-clip-text text-transparent;
+  }
 } 
