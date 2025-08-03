@@ -324,7 +324,7 @@ class PromptEvaluator:
                 score += 0.6
         
         # Mandatory crisis statement check
-        crisis_keywords = ['自殺', '緊急', '立即', '危險']
+        crisis_keywords = ['suicidal', 'Emergency', 'danger']
         for keyword in crisis_keywords:
             if keyword in prompt:
                 score += 1.0

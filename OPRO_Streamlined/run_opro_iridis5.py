@@ -16,7 +16,7 @@ sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'core')
 
 # Import with fallback handling
 try:
-    from opro_optimizer_iridis5 import OPROOptimizer, OptimizationResult
+    from opro_optimizer import OPROOptimizer, OptimizationResult
     print("Using Iridis5-optimized OPRO module")
 except ImportError:
     try:
@@ -132,7 +132,7 @@ def run_optimization():
         # Test actual Llama model usage
         print("\n=== Testing Llama Model Actual Call ===")
         try:
-            from OPRO_Streamlined.core.opro_optimizer_iridis5 import call_local_llm, _transformers_available
+            from OPRO_Streamlined.core.opro_optimizer import call_local_llm, _transformers_available
             
             print(f"Transformers available: {_transformers_available}")
             
@@ -256,7 +256,6 @@ def display_system_info():
     required_files = [
         "config/config.json",
         "core/opro_optimizer.py",
-        "core/opro_optimizer_iridis5.py",
         "core/scheduler.py"
     ]
     
