@@ -1,0 +1,22 @@
+{
+  "optimization_summary": {
+    "best_score": 1.1,
+    "total_iterations": 25,
+    "improvement_achieved": 0.0,
+    "time_elapsed": 0.01741170883178711,
+    "tone_classification": "professional",
+    "calibration_applied": true
+  },
+  "tone_distribution": {
+    "professional": 252,
+    "empathetic": 0,
+    "caring": 0,
+    "unsafe": 0,
+    "off-tone": 0
+  },
+  "calibration_stats": {
+    "calibrations_applied": 4,
+    "total_improvements": 16
+  },
+  "timestamp": "2025-08-04T01:09:27.704833"
+}

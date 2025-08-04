@@ -384,8 +384,8 @@ def load_enhanced_systems():
         enhanced_rag_retriever = EnhancedRAGRetriever(flattened_config)
         
         # Load knowledge bases with correct file paths
-        # Use the standard CBT index which has more data (12 items vs 1 item)
-        cbt_index_path = "CBT_System/cbt_data/embeddings/cbt_index_standard_20250727_143814.faiss"
+        # Use the basic CBT index which has the most data (21 items vs 1 item)
+        cbt_index_path = "CBT_System/cbt_data/embeddings/cbt_index_basic_20250727_143814.faiss"
         icd11_index_path = "embeddings/index.faiss"
         
         enhanced_rag_retriever.load_knowledge_bases(cbt_index_path, icd11_index_path)

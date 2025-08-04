@@ -1,0 +1,38 @@
+[
+  {
+    "timestamp": "2025-08-04T02:48:34.707728",
+    "question": "I feel really sad",
+    "answer": "It's understandable to feel sad. Remember that sadness doesn't define who you are or your worth as a person. It's a natural part of the human experience, and it's okay to experience it.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 185,
+    "response_time": 1754272114.7077286
+  },
+  {
+    "timestamp": "2025-08-04T02:48:49.520977",
+    "question": "How can I do",
+    "answer": "I'm sorry if it seems like my response isn't providing enough in.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 65,
+    "response_time": 1754272129.5209768
+  },
+  {
+    "timestamp": "2025-08-04T02:49:17.357826",
+    "question": "How can I do to realise my sadness",
+    "answer": "Thank you for sharing your feelings. It's understandable that you may feel overwhelmed by your sadness. However, dwelling on these feelings can prevent you from moving forward in your life.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 189,
+    "response_time": 1754272157.3578262
+  },
+  {
+    "timestamp": "2025-08-04T02:53:37.883709",
+    "question": "I feel anxious and need some coping strategies",
+    "answer": "here are things you can do to manage it.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 40,
+    "response_time": 1754272417.8837094
+  }
+]
