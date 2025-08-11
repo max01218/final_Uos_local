@@ -20,12 +20,18 @@ import torch
 
 class EnhancedCBTVectorizer:
     def __init__(self, base_dir="cbt_data"):
-        self.base_dir = Path(base_dir)
+        # Resolve base_dir relative to this file if not absolute
+        base_dir_path = Path(base_dir)
+        if not base_dir_path.is_absolute():
+            base_dir_path = Path(__file__).resolve().parent / base_dir_path
+        # Ensure directory exists
+        base_dir_path.mkdir(parents=True, exist_ok=True)
+        self.base_dir = base_dir_path
         self.setup_logging()
         
         # Model configurations
         self.embedding_models = {
-            "primary": "all-MiniLM-L6-v2",           # Fast, good for general content
+            "primary": "sentence-transformers/all-mpnet-base-v2",  # Unified embedding model
             "clinical": "sentence-transformers/all-mpnet-base-v2",  # Better for clinical text
             "domain_specific": "sentence-transformers/all-roberta-large-v1"  # Best quality
         }
@@ -54,6 +60,8 @@ class EnhancedCBTVectorizer:
         
         formatter = logging.Formatter(log_format)
         
+        # Ensure base dir exists before creating log file
+        self.base_dir.mkdir(parents=True, exist_ok=True)
         file_handler = logging.FileHandler(self.base_dir / 'enhanced_vectorization.log')
         file_handler.setFormatter(formatter)
         file_handler.setLevel(logging.INFO)
@@ -108,7 +116,7 @@ class EnhancedCBTVectorizer:
         except Exception as e:
             self.logger.error(f"Failed to load model {model_name}: {e}")
             # Fallback to default model
-            return SentenceTransformer("all-MiniLM-L6-v2", device=self.device)
+            return SentenceTransformer("sentence-transformers/all-mpnet-base-v2", device=self.device)
             
     def extract_vectorization_text(self, item: Dict, strategy: str) -> str:
         """Extract appropriate text for vectorization based on strategy"""

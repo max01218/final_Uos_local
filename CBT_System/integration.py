@@ -55,7 +55,7 @@ class CBTKnowledgeBase:
             with open(summary_path, 'r', encoding='utf-8') as f:
                 summary = json.load(f)
                 
-            model_name = summary.get('embedding_model', 'all-MiniLM-L6-v2')
+            model_name = summary.get('embedding_model', 'sentence-transformers/all-mpnet-base-v2')
             
             # Load embedding model
             if SentenceTransformer:
@@ -621,18 +621,26 @@ class CBTKnowledgeBase:
         return result
         
     def should_include_cbt(self, query: str) -> bool:
-        """Determine if query would benefit from CBT techniques"""
-        query_lower = query.lower()
+        """
+        Determine if CBT techniques should be included in the response.
+        Enhanced logic to better detect CBT-relevant queries.
+        """
+        if not query or not query.strip():
+            return False
         
-        # Exclude simple social interactions that don't need CBT
+        query_lower = query.lower().strip()
+        
+        # Exclude simple greetings and social interactions
         social_exclusions = [
-            'thank you', 'thanks', 'hello', 'hi', 'good morning', 'good afternoon',
+            'hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening',
+            'how are you', 'how\'s it going', 'nice to meet you', 'pleasure to meet you',
             'goodbye', 'bye', 'see you', 'nice talking', 'have a good day',
             'you too', 'same to you', 'no problem', 'you\'re welcome'
         ]
         
         # If it's a simple social interaction, don't use CBT
         if any(social in query_lower for social in social_exclusions):
+            self.logger.debug(f"Excluded as social interaction: '{query}'")
             return False
         
         # Exclude definitional questions that should get medical info, not CBT
@@ -642,18 +650,25 @@ class CBTKnowledgeBase:
             r'define\s+\w+',  # "define anxiety"
             r'meaning of\s+\w+',  # "meaning of anxiety"
             r'definition of\s+\w+',  # "definition of anxiety"
+            r'what does\s+\w+\s+mean',  # "what does depression mean"
+            r'explain\s+\w+',  # "explain depression"
+            r'tell me about\s+\w+',  # "tell me about depression"
         ]
         
         # If it's a definitional question, don't use CBT (use medical info instead)
-        if any(re.search(pattern, query_lower) for pattern in definitional_patterns):
-            return False
+        for pattern in definitional_patterns:
+            if re.search(pattern, query_lower):
+                self.logger.debug(f"Excluded as definitional question (pattern: {pattern}): '{query}'")
+                return False
         
         # Keywords that suggest CBT might be helpful - more specific
         cbt_indicators = [
             'how can i cope', 'what should i do about', 'help me with', 'strategies for',
             'coping with', 'deal with my', 'manage my', 'overcome my',
             'techniques for', 'methods for', 'ways to cope', 'exercises for', 'i need help with',
-            'struggling with', 'i struggle with', 'i need help dealing'
+            'struggling with', 'i struggle with', 'i need help dealing',
+            'suggestions', 'improve', 'feel better', 'better mood', 'improve mood',
+            'i feel', 'feeling', 'i am feeling', 'i\'m feeling'  # Add emotional expression indicators
         ]
         
         # "How to" questions that should trigger CBT
@@ -668,7 +683,8 @@ class CBTKnowledgeBase:
             'anxiety', 'anxious', 'depression', 'depressed', 'stress', 'stressed',
             'worry', 'worried', 'panic', 'fear', 'afraid', 'nervous',
             'thoughts', 'thinking', 'behavior', 'mood', 'overwhelmed',
-            'sad', 'down', 'upset', 'tense', 'release', 'relieve', 'reduce'
+            'sad', 'sadness', 'down', 'upset', 'tense', 'release', 'relieve', 'reduce',
+            'emotions', 'emotional', 'feeling', 'feelings'
         ]
         
         # Direct CBT technique requests
@@ -688,17 +704,48 @@ class CBTKnowledgeBase:
         # 2. Has direct CBT technique request
         # 3. Has strong emotional/mental health indicators (even without explicit help request)
         # 4. Has "how to" question with mental health condition
+        # 5. Has emotional expression with condition keywords (NEW)
         strong_indicators = [
             'feel anxious', 'feeling anxious', 'feel depressed', 'feeling depressed',
             'feel overwhelmed', 'feeling overwhelmed', 'panic attacks', 'anxiety attacks',
             'negative thoughts', 'negative thinking', 'cant sleep', "can't sleep",
-            'feel stressed', 'feeling stressed'
+            'feel stressed', 'feeling stressed', 'feel sad', 'feeling sad'  # Add sad indicators
         ]
         
         has_strong_indicator = any(indicator in query_lower for indicator in strong_indicators)
         
+        # Enhanced logic: Include CBT for emotional expressions with condition keywords
+        # This specifically handles "I feel really sad" type queries
+        emotional_expression_with_condition = (
+            any(emotion in query_lower for emotion in ['i feel', 'feeling', 'i am feeling', 'i\'m feeling']) and
+            has_condition_keyword
+        )
+        
         # Enhanced logic: Include CBT for "how to" questions with mental health conditions
-        return (has_cbt_indicator and has_condition_keyword) or has_direct_request or has_strong_indicator or (has_how_to_question and has_condition_keyword)
+        result = (
+            (has_cbt_indicator and has_condition_keyword) or 
+            has_direct_request or 
+            has_strong_indicator or 
+            (has_how_to_question and has_condition_keyword) or
+            emotional_expression_with_condition  # NEW condition
+        )
+        
+        # Debug logging with more detail
+        self.logger.debug(f"CBT relevance check for '{query}':")
+        self.logger.debug(f"  has_cbt_indicator: {has_cbt_indicator}")
+        self.logger.debug(f"  has_how_to_question: {has_how_to_question}")
+        self.logger.debug(f"  has_condition_keyword: {has_condition_keyword}")
+        self.logger.debug(f"  has_direct_request: {has_direct_request}")
+        self.logger.debug(f"  has_strong_indicator: {has_strong_indicator}")
+        self.logger.debug(f"  emotional_expression_with_condition: {emotional_expression_with_condition}")
+        self.logger.debug(f"  result: {result}")
+        
+        # Add specific debug for emotional expressions
+        if any(emotion in query_lower for emotion in ['i feel', 'feeling', 'i am feeling', 'i\'m feeling']):
+            self.logger.debug(f"  Emotional expression detected in query")
+            self.logger.debug(f"  Condition keywords found: {[kw for kw in condition_keywords if kw in query_lower]}")
+        
+        return result
         
     def get_cbt_status(self) -> Dict:
         """Get CBT integration status"""

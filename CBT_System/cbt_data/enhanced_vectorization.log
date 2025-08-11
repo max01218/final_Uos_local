@@ -36,3 +36,40 @@
 2025-07-27 14:38:14,661 - EnhancedCBTVectorizer - INFO - Enhanced vectorization saved to cbt_data\embeddings
 2025-07-27 14:38:14,662 - EnhancedCBTVectorizer - INFO - Total indices created: 4
 2025-07-27 14:38:14,662 - EnhancedCBTVectorizer - INFO - Enhanced vectorization completed successfully
+2025-08-10 11:56:45,842 - EnhancedCBTVectorizer - INFO - Using device: cpu
+2025-08-10 11:56:45,842 - EnhancedCBTVectorizer - INFO - Starting enhanced vectorization process
+2025-08-10 11:56:45,852 - EnhancedCBTVectorizer - INFO - Loaded 27 enhanced processed items from D:\Southampton_final\dataset\ICD-11\CBT_System\cbt_data\raw_data\processed\cbt_enhanced_processed_20250727_142618.json
+2025-08-10 11:56:48,924 - EnhancedCBTVectorizer - INFO - Loaded embedding model: sentence-transformers/all-mpnet-base-v2 on cpu
+2025-08-10 11:56:48,924 - EnhancedCBTVectorizer - INFO - Creating embeddings using strategy: content_based
+2025-08-10 11:56:54,309 - EnhancedCBTVectorizer - INFO - Created 27 embeddings with dimension 768
+2025-08-10 11:56:54,311 - EnhancedCBTVectorizer - INFO - Created premium tier index with 1 embeddings
+2025-08-10 11:56:54,311 - EnhancedCBTVectorizer - INFO - Created standard tier index with 12 embeddings
+2025-08-10 11:56:54,311 - EnhancedCBTVectorizer - INFO - Created basic tier index with 21 embeddings
+2025-08-10 11:56:54,312 - EnhancedCBTVectorizer - INFO - Created category index for psychoeducation: 20 embeddings
+2025-08-10 11:56:54,448 - EnhancedCBTVectorizer - INFO - Enhanced vectorization saved to D:\Southampton_final\dataset\ICD-11\CBT_System\cbt_data\embeddings
+2025-08-10 11:56:54,448 - EnhancedCBTVectorizer - INFO - Total indices created: 4
+2025-08-10 11:56:54,448 - EnhancedCBTVectorizer - INFO - Enhanced vectorization completed successfully
+2025-08-10 11:56:54,448 - EnhancedCBTVectorizer - INFO - Starting enhanced vectorization process
+2025-08-10 11:56:54,452 - EnhancedCBTVectorizer - INFO - Loaded 27 enhanced processed items from D:\Southampton_final\dataset\ICD-11\CBT_System\cbt_data\raw_data\processed\cbt_enhanced_processed_20250727_142618.json
+2025-08-10 11:56:55,729 - EnhancedCBTVectorizer - INFO - Loaded embedding model: sentence-transformers/all-mpnet-base-v2 on cpu
+2025-08-10 11:56:55,729 - EnhancedCBTVectorizer - INFO - Creating embeddings using strategy: technique_focused
+2025-08-10 11:56:59,943 - EnhancedCBTVectorizer - INFO - Created 27 embeddings with dimension 768
+2025-08-10 11:56:59,945 - EnhancedCBTVectorizer - INFO - Created premium tier index with 1 embeddings
+2025-08-10 11:56:59,946 - EnhancedCBTVectorizer - INFO - Created standard tier index with 12 embeddings
+2025-08-10 11:56:59,946 - EnhancedCBTVectorizer - INFO - Created basic tier index with 21 embeddings
+2025-08-10 11:56:59,946 - EnhancedCBTVectorizer - INFO - Created category index for psychoeducation: 20 embeddings
+2025-08-10 11:57:00,065 - EnhancedCBTVectorizer - INFO - Enhanced vectorization saved to D:\Southampton_final\dataset\ICD-11\CBT_System\cbt_data\embeddings
+2025-08-10 11:57:00,065 - EnhancedCBTVectorizer - INFO - Total indices created: 4
+2025-08-10 11:57:00,065 - EnhancedCBTVectorizer - INFO - Enhanced vectorization completed successfully
+2025-08-10 11:57:00,065 - EnhancedCBTVectorizer - INFO - Starting enhanced vectorization process
+2025-08-10 11:57:00,068 - EnhancedCBTVectorizer - INFO - Loaded 27 enhanced processed items from D:\Southampton_final\dataset\ICD-11\CBT_System\cbt_data\raw_data\processed\cbt_enhanced_processed_20250727_142618.json
+2025-08-10 11:57:01,582 - EnhancedCBTVectorizer - INFO - Loaded embedding model: sentence-transformers/all-mpnet-base-v2 on cpu
+2025-08-10 11:57:01,583 - EnhancedCBTVectorizer - INFO - Creating embeddings using strategy: structured_steps
+2025-08-10 11:57:05,734 - EnhancedCBTVectorizer - INFO - Created 27 embeddings with dimension 768
+2025-08-10 11:57:05,736 - EnhancedCBTVectorizer - INFO - Created premium tier index with 1 embeddings
+2025-08-10 11:57:05,736 - EnhancedCBTVectorizer - INFO - Created standard tier index with 12 embeddings
+2025-08-10 11:57:05,736 - EnhancedCBTVectorizer - INFO - Created basic tier index with 21 embeddings
+2025-08-10 11:57:05,736 - EnhancedCBTVectorizer - INFO - Created category index for psychoeducation: 20 embeddings
+2025-08-10 11:57:05,852 - EnhancedCBTVectorizer - INFO - Enhanced vectorization saved to D:\Southampton_final\dataset\ICD-11\CBT_System\cbt_data\embeddings
+2025-08-10 11:57:05,852 - EnhancedCBTVectorizer - INFO - Total indices created: 4
+2025-08-10 11:57:05,852 - EnhancedCBTVectorizer - INFO - Enhanced vectorization completed successfully

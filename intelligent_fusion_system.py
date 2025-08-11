@@ -295,6 +295,10 @@ class ResponseTemplateEngine:
         follow_up_suggestions = self._generate_follow_up_suggestions(fusion_strategy, context)
         safety_notes = self._generate_safety_notes(context)
         
+        # If both contents are empty due to filtering, return a graceful fallback
+        if not cbt_content and not icd11_content:
+            return self._generate_fallback_response("", context, fusion_strategy)
+
         return FusedResponse(
             primary_content=primary_content,
             supporting_content=supporting_content,
@@ -534,7 +538,7 @@ class IntelligentFusionSystem:
         return {
             "enable_safety_monitoring": True,
             "enable_context_awareness": True,
-            "min_confidence_threshold": 0.3,
+            "min_confidence_threshold": 0.1,
             "max_response_length": 500,
             "enable_follow_up_suggestions": True,
             "safety_keywords": ["suicide", "kill myself", "hurt myself", "end it all"],
@@ -650,9 +654,14 @@ class IntelligentFusionSystem:
             
         # Combine top results from this source
         combined_content = []
+        # Allow slightly below-threshold results to still contribute minimally
+        threshold = float(self.config.get("min_confidence_threshold", 0.1))
         for result in source_results[:3]:  # Top 3 results
-            if result.relevance_score > self.config["min_confidence_threshold"]:
+            if result.relevance_score >= threshold:
                 combined_content.append(result.content)
+            elif result.relevance_score >= max(0.05, threshold * 0.6):
+                # Include attenuated content to avoid full fallback
+                combined_content.append(result.content[:150])
                 
         return " ".join(combined_content)
         

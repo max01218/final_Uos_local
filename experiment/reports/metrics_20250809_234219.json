@@ -1,0 +1,35 @@
+{
+  "run_dir": "20250809_234219",
+  "variants": {
+    "P3": {
+      "count": 753,
+      "errors": 753,
+      "avg_latency_ms": 0.0,
+      "avg_cost_usd": 0.0,
+      "task_success": 0.0,
+      "factual_alignment": 0.0,
+      "safety_pass": 0.0,
+      "consistency": 0.0
+    },
+    "P2": {
+      "count": 753,
+      "errors": 753,
+      "avg_latency_ms": 0.0,
+      "avg_cost_usd": 0.0,
+      "task_success": 0.0,
+      "factual_alignment": 0.0,
+      "safety_pass": 0.0,
+      "consistency": 0.0
+    },
+    "P1": {
+      "count": 753,
+      "errors": 753,
+      "avg_latency_ms": 0.0,
+      "avg_cost_usd": 0.0,
+      "task_success": 0.0,
+      "factual_alignment": 0.0,
+      "safety_pass": 0.0,
+      "consistency": 0.0
+    }
+  }
+}

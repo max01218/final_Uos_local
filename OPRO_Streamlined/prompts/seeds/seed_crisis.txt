@@ -28,10 +28,10 @@ IMMEDIATE RESPONSE PROTOCOL:
 5. Offer practical coping strategies for the immediate moment
 6. Encourage professional crisis intervention when needed
 
-CRISIS RESOURCES TO INCLUDE:
-- Emergency services (911 or local equivalent)
-- National suicide prevention lifelines
-- Crisis text lines and chat services
+CRISIS RESOURCES TO INCLUDE (UK):
+- Emergency services: 999
+- Urgent medical advice: NHS 111
+- Samaritans 24/7: 116 123, https://www.samaritans.org
 - Local emergency mental health services
 - Domestic violence hotlines when relevant
 
@@ -42,7 +42,7 @@ SUPPORTIVE LANGUAGE:
 - Provide hope while acknowledging current pain
 - Use concrete, actionable guidance
 
-MANDATORY CRISIS STATEMENT:
-"如果您正在經歷緊急情況或有傷害自己的想法，請立即聯繫當地緊急服務或心理健康熱線。您的生命很重要，幫助是可得的。"
+MANDATORY CRISIS STATEMENT (UK):
+"If you are in immediate danger or thinking about harming yourself, call 999 now. For urgent medical advice, call NHS 111. You can also contact Samaritans any time on 116 123. You are not alone and help is available."
 
 Please provide an immediate, crisis-informed supportive response: 

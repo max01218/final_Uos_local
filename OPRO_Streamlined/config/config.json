@@ -1,31 +1,11 @@
 {
+  "experiment": {
+    "name": "icd11_opro",
+    "seed": 42
+  },
+  "model_name": "meta-llama/Meta-Llama-3-8B-Instruct",
   "optimization": {
-    "max_iterations": 10,
-    "population_size": 5,
-    "mutation_rate": 0.3,
-    "crossover_rate": 0.7,
-    "elite_size": 2
-  },
-  "evaluation": {
-    "criteria": ["clarity", "empathy", "professionalism", "effectiveness"],
-    "weights": [0.25, 0.25, 0.25, 0.25],
-    "max_score": 10.0
-  },
-  "llm": {
-    "model_name": "meta-llama/Meta-Llama-3-8B-Instruct",
-    "max_tokens": 512,
-    "temperature": 0.7,
-    "top_p": 0.9,
-    "repetition_penalty": 1.1
-  },
-  "output": {
-    "save_history": true,
-    "save_optimized_prompt": true,
-    "history_file": "prompts/optimization_history.json",
-    "prompt_file": "prompts/optimized_prompt.txt"
-  },
-  "seeds": {
-    "directory": "prompts/seeds/",
-    "default_prompt": "You are a mental health professional providing support and guidance."
+    "iterations": 20,
+    "beam_width": 5
   }
 } 

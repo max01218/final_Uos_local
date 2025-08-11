@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Experiment Run Metadata",
+  "type": "object",
+  "properties": {
+    "run_id": {"type": "string"},
+    "timestamp": {"type": "string"},
+    "input_id": {"type": "string"},
+    "input_source": {"type": "string"},
+    "prompt_variant": {"type": "string", "enum": ["P1", "P2", "P3"]},
+    "prompt_version_info": {"type": "string"},
+    "model_name": {"type": "string"},
+    "parameters": {
+      "type": "object",
+      "properties": {
+        "temperature": {"type": "number"},
+        "top_p": {"type": "number"},
+        "max_tokens": {"type": "integer"},
+        "seed": {"type": "integer"}
+      },
+      "required": ["temperature", "top_p", "max_tokens"]
+    },
+    "input_text": {"type": "string"},
+    "output_text": {"type": "string"},
+    "token_usage": {
+      "type": "object",
+      "properties": {
+        "prompt_tokens": {"type": "integer"},
+        "completion_tokens": {"type": "integer"},
+        "total_tokens": {"type": "integer"}
+      }
+    },
+    "cost": {"type": "number"},
+    "latency_ms": {"type": "number"},
+    "errors": {"type": "array", "items": {"type": "string"}},
+    "safety_flags": {"type": "array", "items": {"type": "string"}},
+    "auto_metrics": {
+      "type": "object",
+      "properties": {
+        "task_success": {"type": "number"},
+        "factual_alignment": {"type": "number"},
+        "safety_pass": {"type": "number"},
+        "consistency": {"type": "number"}
+      }
+    },
+    "human_scores": {
+      "type": "object",
+      "properties": {
+        "usefulness": {"type": "number"},
+        "clarity": {"type": "number"},
+        "empathy": {"type": "number"},
+        "professionalism": {"type": "number"},
+        "boundaries": {"type": "number"},
+        "crisis_handling": {"type": "number"}
+      }
+    }
+  },
+  "required": ["run_id", "timestamp", "input_id", "prompt_variant", "model_name", "parameters"]
+}
+
+

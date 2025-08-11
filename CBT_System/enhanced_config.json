@@ -108,7 +108,7 @@
     "enabled": true,
     "models": {
       "primary": {
-        "name": "all-MiniLM-L6-v2",
+        "name": "sentence-transformers/all-mpnet-base-v2",
         "description": "Fast, good for general content",
         "use_cases": ["content_based", "general_search"]
       },

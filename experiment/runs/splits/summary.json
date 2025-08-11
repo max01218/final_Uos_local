@@ -1,0 +1,28 @@
+{
+  "created_at": "2025-08-09T16:19:39Z",
+  "root": "D:\\Southampton_final\\dataset\\ICD-11",
+  "plan_path": "experiment\\config\\split_plan.json",
+  "summary": {
+    "train": {
+      "total": 889,
+      "crisis": 63,
+      "crisis_ratio": 0.07086614173228346,
+      "icd11_raw": 451,
+      "user_prompts": 438
+    },
+    "val": {
+      "total": 265,
+      "crisis": 13,
+      "crisis_ratio": 0.04905660377358491,
+      "icd11_raw": 141,
+      "user_prompts": 124
+    },
+    "test": {
+      "total": 251,
+      "crisis": 16,
+      "crisis_ratio": 0.06374501992031872,
+      "icd11_raw": 124,
+      "user_prompts": 127
+    }
+  }
+}

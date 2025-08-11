@@ -1,0 +1,17 @@
+# Emotion Analysis Fallback Configuration
+# This file is created when primary emotion models fail to load
+
+fallback_mode: "keyword_based"
+alternative_models:
+  - "cardiffnlp/twitter-roberta-base-emotion"
+  - "SamLowe/roberta-base-go_emotions"
+  - "bhadresh-savani/emotion-english-distilroberta-base"
+
+keyword_emotions:
+  joy: ["happy", "joy", "excited", "great", "wonderful", "amazing", "fantastic", "good"]
+  sadness: ["sad", "depressed", "down", "hopeless", "worthless", "empty", "lonely", "miserable"]
+  anger: ["angry", "mad", "furious", "irritated", "frustrated", "annoyed", "upset"]
+  fear: ["afraid", "scared", "fearful", "anxious", "worried", "nervous", "terrified", "panic"]
+  surprise: ["surprised", "shocked", "amazed", "astonished", "unexpected"]
+  disgust: ["disgusted", "sick", "nauseated", "repulsed"]
+  love: ["love", "loved", "caring", "affectionate", "warm", "tender"]

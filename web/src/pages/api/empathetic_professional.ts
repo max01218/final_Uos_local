@@ -1,6 +1,9 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-const API_BASE_URL = process.env.API_BASE_URL || 'http://localhost:8000'
+// Prefer IPv4 loopback to avoid potential IPv6 (::1) resolution issues on Windows
+const RAW_API_BASE_URL = process.env.API_BASE_URL || 'http://127.0.0.1:8000'
+const API_BASE_URL = RAW_API_BASE_URL.replace('localhost', '127.0.0.1')
+const API_TIMEOUT_MS = Number(process.env.API_TIMEOUT_MS || 60000)
 
 export default async function handler(
   req: NextApiRequest,
@@ -26,7 +29,11 @@ export default async function handler(
 
     try {
       console.log('Next.js API: Calling FastAPI empathetic_professional endpoint')
-      
+
+      // Add timeout to avoid hanging requests
+      const controller = new AbortController()
+      const timer = setTimeout(() => controller.abort(), API_TIMEOUT_MS)
+
       const response = await fetch(`${API_BASE_URL}/api/empathetic_professional`, {
         method: 'POST',
         headers: {
@@ -37,7 +44,10 @@ export default async function handler(
           type: type || 'empathetic_professional', 
           history: history || [] 
         }),
+        signal: controller.signal,
       });
+
+      clearTimeout(timer)
 
       console.log('Next.js API: FastAPI response status:', response.status)
 

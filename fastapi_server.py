@@ -15,6 +15,7 @@ from pydantic import BaseModel
 import logging
 import uvicorn
 import time
+import asyncio
 from datetime import datetime
 import re
 
@@ -101,6 +102,82 @@ cbt_integration = None
 enhanced_rag_retriever = None
 intelligent_fusion_system = None
 
+# Unified Conversation Store
+class ConversationStore:
+    """Unified conversation management for all system components"""
+    
+    def __init__(self):
+        self.memory = ConversationBufferMemory(return_messages=True)
+        self.session_data = {}
+        self.user_preferences = {}
+        self.emotional_trajectory = []
+        
+    def add_interaction(self, user_message: str, assistant_message: str, metadata: dict = None):
+        """Add interaction to memory and update session data"""
+        self.memory.chat_memory.add_user_message(user_message)
+        self.memory.chat_memory.add_ai_message(assistant_message)
+        
+        if metadata:
+            self.session_data[time.time()] = metadata
+            
+    def get_conversation_history(self) -> str:
+        """Get formatted conversation history"""
+        messages = self.memory.chat_memory.messages
+        if not messages:
+            return ""
+            
+        history = []
+        for i in range(0, len(messages), 2):
+            if i + 1 < len(messages):
+                history.append(f"User: {messages[i].content}")
+                history.append(f"Assistant: {messages[i+1].content}")
+                
+        return "\n".join(history[-10:])  # Last 10 exchanges
+        
+    def get_recent_messages(self, count: int = 5) -> List[dict]:
+        """Get recent messages in dict format"""
+        messages = self.memory.chat_memory.messages
+        recent = []
+        
+        for i in range(max(0, len(messages) - count * 2), len(messages), 2):
+            if i + 1 < len(messages):
+                recent.append({"role": "user", "content": messages[i].content})
+                recent.append({"role": "assistant", "content": messages[i+1].content})
+                
+        return recent
+        
+    def reset_conversation(self):
+        """Reset conversation memory"""
+        self.memory = ConversationBufferMemory(return_messages=True)
+        self.session_data = {}
+        self.emotional_trajectory = []
+        
+    def update_emotional_state(self, emotion: str, confidence: float):
+        """Track emotional trajectory"""
+        self.emotional_trajectory.append({
+            'emotion': emotion,
+            'confidence': confidence,
+            'timestamp': time.time()
+        })
+        
+    def get_emotional_trend(self) -> str:
+        """Get emotional trend analysis"""
+        if len(self.emotional_trajectory) < 2:
+            return "insufficient_data"
+            
+        recent = self.emotional_trajectory[-3:]  # Last 3 emotions
+        emotions = [e['emotion'] for e in recent]
+        
+        if all(e == 'positive' for e in emotions):
+            return "improving"
+        elif all(e == 'negative' for e in emotions):
+            return "declining"
+        else:
+            return "mixed"
+
+# Initialize unified conversation store
+conversation_store = ConversationStore()
+
 # OPRO Integration
 OPRO_PROMPT_PATH = "OPRO_Streamlined/prompts/optimized_prompt.txt"  
 OPRO_FALLBACK_PATH = "ICD11_OPRO/prompts/optimized_prompt.txt"  
@@ -109,9 +186,9 @@ INTERACTIONS_FILE = "interactions.json"
 # Enhanced System Configuration
 ENHANCED_CONFIG_PATH = "intelligent_fusion_config.json"
 
-# Debug settings
-SHOW_PROMPT_DEBUG = os.getenv("SHOW_PROMPT_DEBUG", "true").lower() == "true"
-SHOW_ENHANCED_DEBUG = os.getenv("SHOW_ENHANCED_DEBUG", "true").lower() == "true"
+# Debug settings (default to false to reduce overhead)
+SHOW_PROMPT_DEBUG = os.getenv("SHOW_PROMPT_DEBUG", "false").lower() == "true"
+SHOW_ENHANCED_DEBUG = os.getenv("SHOW_ENHANCED_DEBUG", "false").lower() == "true"
 
 # Fallback prompts (used when OPRO prompt is not available)
 FALLBACK_PROMPTS = {
@@ -276,16 +353,18 @@ class HealthResponse(BaseModel):
     cbt_available: bool
     cbt_techniques: Optional[int] = None
     cbt_content: Optional[int] = None
+    cbt_smoke_test_passed: Optional[bool] = None
     enhanced_systems_available: bool
     enhanced_rag_loaded: bool
     intelligent_fusion_loaded: bool
+    resolved_paths: Optional[dict] = None
 
 # Load components
 def load_embeddings():
     try:
         logger.info(f"Loading HuggingFace embeddings on {DEVICE}...")
         embedder = HuggingFaceEmbeddings(
-            model_name="sentence-transformers/all-MiniLM-L6-v2",
+            model_name="sentence-transformers/all-mpnet-base-v2",
             model_kwargs={"device": DEVICE},
             encode_kwargs={"normalize_embeddings": True}
         )
@@ -306,16 +385,39 @@ def load_faiss_index(embedder):
         return None
 
 def load_emotion_classifier():
-    """Load emotion classification model"""
+    """Load emotion classification model with fallback options"""
     try:
         logger.info("Loading emotion classifier...")
         classifier = pipeline(
             "text-classification",
             model="j-hartmann/emotion-english-distilroberta-base",
-            device=DEVICE
+            device=DEVICE,
+            torch_dtype=torch.float32,
+            use_safetensors=True
         )
         logger.info("Emotion classifier loaded successfully")
         return classifier
+    except Exception as e:
+        logger.warning(f"Primary emotion classifier failed: {e}")
+        
+        # Fallback: Try alternative model
+        try:
+            logger.info("Trying fallback emotion classifier...")
+            classifier = pipeline(
+                "text-classification",
+                model="cardiffnlp/twitter-roberta-base-emotion",
+                device=DEVICE,
+                torch_dtype=torch.float32,
+                use_safetensors=True
+            )
+            logger.info("Fallback emotion classifier loaded successfully")
+            return classifier
+        except Exception as e2:
+            logger.warning(f"Fallback emotion classifier also failed: {e2}")
+            
+            # Final fallback: Simple keyword-based emotion detection
+            logger.info("Using simple keyword-based emotion detection")
+            return "keyword_based"
     except Exception as e:
         logger.error(f"Error loading emotion classifier: {e}")
         return None
@@ -371,11 +473,13 @@ def load_enhanced_systems():
             "context_weight": enhanced_rag_config.get("retrieval_weights", {}).get("context_weight", 0.2),
             "intent_boost": enhanced_rag_config.get("retrieval_weights", {}).get("intent_boost", 0.15),
             "urgency_boost": enhanced_rag_config.get("retrieval_weights", {}).get("urgency_boost", 0.1),
-            "min_relevance_threshold": enhanced_rag_config.get("filtering", {}).get("min_relevance_threshold", 0.3),
+            "min_relevance_threshold": enhanced_rag_config.get("filtering", {}).get("min_relevance_threshold", 0.45),  # Increased from 0.3
             "max_results": enhanced_rag_config.get("filtering", {}).get("max_results", 5),
+            "diversity_threshold": enhanced_rag_config.get("filtering", {}).get("diversity_threshold", 0.85),  # Added diversity threshold
             "enable_query_expansion": enhanced_rag_config.get("features", {}).get("enable_query_expansion", True),
             "enable_intent_filtering": enhanced_rag_config.get("features", {}).get("enable_intent_filtering", True),
-            "enable_context_awareness": enhanced_rag_config.get("features", {}).get("enable_context_awareness", True)
+            "enable_context_awareness": enhanced_rag_config.get("features", {}).get("enable_context_awareness", True),
+            "enable_diversity_filtering": True  # Enable diversity filtering
         }
         
         # Debug: print the flattened config
@@ -383,12 +487,48 @@ def load_enhanced_systems():
         
         enhanced_rag_retriever = EnhancedRAGRetriever(flattened_config)
         
-        # Load knowledge bases with correct file paths
-        # Use the basic CBT index which has the most data (21 items vs 1 item)
-        cbt_index_path = "CBT_System/cbt_data/embeddings/cbt_index_basic_20250727_143814.faiss"
-        icd11_index_path = "embeddings/index.faiss"
+        # Validate and resolve knowledge base paths from config
+        knowledge_bases = config.get('knowledge_bases', {})
+        resolved_paths = {}
+        
+        for kb_name, kb_config in knowledge_bases.items():
+            primary_path = kb_config.get('index_path')
+            fallback_paths = kb_config.get('fallback_paths', [])
+            
+            # Try primary path first
+            if primary_path and os.path.exists(primary_path):
+                resolved_paths[kb_name] = primary_path
+                logger.info(f"Using primary path for {kb_name}: {primary_path}")
+            else:
+                # Try fallback paths
+                for fallback_pattern in fallback_paths:
+                    if '*' in fallback_pattern:
+                        # Handle wildcard patterns
+                        import glob
+                        matches = glob.glob(fallback_pattern)
+                        if matches:
+                            # Sort by modification time, use most recent
+                            matches.sort(key=lambda x: os.path.getmtime(x), reverse=True)
+                            resolved_paths[kb_name] = matches[0]
+                            logger.info(f"Using fallback path for {kb_name}: {matches[0]}")
+                            break
+                    elif os.path.exists(fallback_pattern):
+                        resolved_paths[kb_name] = fallback_pattern
+                        logger.info(f"Using fallback path for {kb_name}: {fallback_pattern}")
+                        break
+                else:
+                    logger.warning(f"No valid path found for {kb_name}")
+        
+        # Update config with resolved paths
+        config['resolved_paths'] = resolved_paths
+        
+        # Load knowledge bases with resolved paths
+        cbt_index_path = resolved_paths.get('cbt', "CBT_System/cbt_data/embeddings/cbt_index.faiss")
+        icd11_index_path = resolved_paths.get('icd11', "embeddings/index.faiss")
         
         enhanced_rag_retriever.load_knowledge_bases(cbt_index_path, icd11_index_path)
+        # Store the full config separately without overwriting retriever's internal config
+        setattr(enhanced_rag_retriever, "full_config", config)
         logger.info("Enhanced RAG Retriever loaded successfully")
         
         # Initialize Intelligent Fusion System
@@ -415,26 +555,29 @@ def load_psychologist_llm():
     logger.info(f"Loading Psychologist LLM on {DEVICE}...")
     try:
         tok = AutoTokenizer.from_pretrained(
-            "Qwen/Qwen-1_8B-Chat",
+            "meta-llama/Meta-Llama-3-8B-Instruct",
             trust_remote_code=True,
             padding_side="left"
         )
         
         model = AutoModelForCausalLM.from_pretrained(
-            "Qwen/Qwen-1_8B-Chat",
+            "meta-llama/Meta-Llama-3-8B-Instruct",
             trust_remote_code=True,
             device_map=DEVICE,
             torch_dtype=torch.float16 if DEVICE == "cuda" else torch.float32,
             low_cpu_mem_usage=True
         )
         
+        # Get temperature from environment or use default
+        temperature = float(os.getenv("LLM_TEMPERATURE", "0.7"))
+        
         pipe = pipeline(
             "text-generation",
             model=model,
             tokenizer=tok,
-            max_new_tokens=512,  # Increased from 120 to allow longer responses
+            max_new_tokens=256,
             do_sample=True,
-            temperature=0.8, 
+            temperature=temperature,
             top_p=0.9,
             repetition_penalty=1.1,
             pad_token_id=tok.eos_token_id,
@@ -510,23 +653,80 @@ async def health_check():
         except:
             pass
     
-    # Get CBT status
+    # Get CBT status with smoke test
     cbt_available = False
     cbt_techniques = None
     cbt_content = None
+    cbt_smoke_test_passed = False
+    
     if cbt_integration is not None:
         try:
             cbt_status = cbt_integration.get_cbt_status()
             cbt_available = cbt_status['available']
             cbt_techniques = cbt_status['total_techniques']
             cbt_content = cbt_status['total_content']
-        except:
-            pass
+            
+            # Perform smoke test if CBT is available
+            if cbt_available and cbt_techniques > 0:
+                try:
+                    # Test query for CBT functionality
+                    test_query = "I feel anxious, what can I do?"
+                    is_relevant = cbt_integration.should_include_cbt(test_query)
+                    if is_relevant:
+                        recommendations = cbt_integration.cbt_kb.get_cbt_recommendation(test_query)
+                        if recommendations.get('recommended_techniques'):
+                            cbt_smoke_test_passed = True
+                            logger.info("CBT smoke test passed")
+                        else:
+                            logger.warning("CBT smoke test failed: no techniques found")
+                    else:
+                        logger.warning("CBT smoke test failed: query not recognized as CBT relevant")
+                except Exception as e:
+                    logger.warning(f"CBT smoke test failed: {e}")
+        except Exception as e:
+            logger.error(f"Error getting CBT status: {e}")
     
         # Check enhanced systems status
     enhanced_systems_available = ENHANCED_SYSTEMS_AVAILABLE
     enhanced_rag_loaded = globals().get('enhanced_rag_retriever') is not None
     intelligent_fusion_loaded = globals().get('intelligent_fusion_system') is not None
+    
+    # Get resolved paths from enhanced systems if available
+    resolved_paths = {}
+    if enhanced_rag_retriever and hasattr(enhanced_rag_retriever, 'config'):
+        resolved_paths = enhanced_rag_retriever.config.get('resolved_paths', {})
+    
+    # Calculate CBT statistics if available
+    if enhanced_rag_retriever and hasattr(enhanced_rag_retriever, 'cbt_metadata'):
+        try:
+            # Count techniques and content from CBT metadata
+            cbt_techniques = 0
+            cbt_content = 0
+            if enhanced_rag_retriever.cbt_metadata:
+                for item in enhanced_rag_retriever.cbt_metadata:
+                    if isinstance(item, dict):
+                        # Check if it's a technique or content based on metadata
+                        content_type = (item.get('content_type') or '').lower()
+                        primary_category = (item.get('primary_category') or '').lower()
+                        
+                        # Count as technique if it's a technique, protocol, or assessment tool
+                        if any(keyword in content_type for keyword in ['technique', 'protocol', 'assessment']):
+                            cbt_techniques += 1
+                        elif any(keyword in primary_category for keyword in ['technique', 'protocol', 'assessment']):
+                            cbt_techniques += 1
+                        else:
+                            cbt_content += 1
+                    else:
+                        cbt_content += 1
+                        
+                logger.info(f"CBT statistics calculated: {cbt_techniques} techniques, {cbt_content} content items")
+        except Exception as e:
+            logger.warning(f"Error calculating CBT statistics: {e}")
+            cbt_techniques = 0
+            cbt_content = 0
+    else:
+        cbt_techniques = 0
+        cbt_content = 0
     
     return HealthResponse(
         status="healthy",
@@ -539,93 +739,61 @@ async def health_check():
         cbt_available=cbt_available,
         cbt_techniques=cbt_techniques,
         cbt_content=cbt_content,
+        cbt_smoke_test_passed=cbt_smoke_test_passed,
         enhanced_systems_available=enhanced_systems_available,
         enhanced_rag_loaded=enhanced_rag_loaded,
-        intelligent_fusion_loaded=intelligent_fusion_loaded
+        intelligent_fusion_loaded=intelligent_fusion_loaded,
+        resolved_paths=resolved_paths
     )
 
 def analyze_emotion(text):
-    """Analyze emotion from user input"""
+    """Analyze emotion from user input with fallback support"""
     if emotion_classifier is None:
         return "neutral"
+    
+    # Handle keyword-based fallback
+    if emotion_classifier == "keyword_based":
+        return analyze_emotion_keywords(text)
     
     try:
         result = emotion_classifier(text)
         return result[0]['label'] if result else "neutral"
     except Exception as e:
         logger.error(f"Emotion analysis error: {e}")
+        return analyze_emotion_keywords(text)
+
+def analyze_emotion_keywords(text):
+    """Simple keyword-based emotion detection as fallback"""
+    text_lower = text.lower()
+    
+    # Emotion keywords mapping
+    emotion_keywords = {
+        'joy': ['happy', 'joy', 'excited', 'great', 'wonderful', 'amazing', 'fantastic', 'good'],
+        'sadness': ['sad', 'depressed', 'down', 'hopeless', 'worthless', 'empty', 'lonely', 'miserable'],
+        'anger': ['angry', 'mad', 'furious', 'irritated', 'frustrated', 'annoyed', 'upset'],
+        'fear': ['afraid', 'scared', 'fearful', 'anxious', 'worried', 'nervous', 'terrified', 'panic'],
+        'surprise': ['surprised', 'shocked', 'amazed', 'astonished', 'unexpected'],
+        'disgust': ['disgusted', 'sick', 'nauseated', 'repulsed'],
+        'love': ['love', 'loved', 'caring', 'affectionate', 'warm', 'tender']
+    }
+    
+    # Count emotion keywords
+    emotion_scores = {}
+    for emotion, keywords in emotion_keywords.items():
+        score = sum(1 for keyword in keywords if keyword in text_lower)
+        if score > 0:
+            emotion_scores[emotion] = score
+    
+    # Return the emotion with highest score, or neutral if none found
+    if emotion_scores:
+        return max(emotion_scores, key=emotion_scores.get)
+    else:
         return "neutral"
 
 def get_conversation_history():
-    """Get conversation history with enhanced context understanding"""
+    """Get conversation history using unified conversation store"""
     try:
-        messages = memory.chat_memory.messages
-        if not messages:
-            return ""
-            
-        if len(messages) > 6:  # Keep last 3 exchanges
-            messages = messages[-6:]
-        
-        # Analyze conversation for key context
-        user_emotions = []
-        user_goals = []
-        topics_discussed = []
-        
-        history_parts = []
-        for i, msg in enumerate(messages):
-            content = msg.content
-            
-            if msg.type == "human":
-                # Extract user emotional state and goals
-                content_lower = content.lower()
-                
-                # Detect emotional keywords
-                emotion_words = ['anxious', 'stressed', 'worried', 'calm', 'better', 'worse', 'overwhelmed', 'peaceful']
-                found_emotions = [word for word in emotion_words if word in content_lower]
-                user_emotions.extend(found_emotions)
-                
-                # Detect goal keywords  
-                goal_words = ['want to', 'need to', 'help with', 'stop', 'feel calmer', 'think clearly', 'be better']
-                found_goals = [goal for goal in goal_words if goal in content_lower]
-                user_goals.extend(found_goals)
-                
-                history_parts.append(f"User: {content}")
-            else:
-                # Summarize assistant responses
-                if len(content) > 100:
-                    # Extract the key question or guidance from assistant response
-                    if '?' in content:
-                        questions = [q.strip() + '?' for q in content.split('?') if q.strip()]
-                        if questions:
-                            summary = f"Assistant asked: {questions[-1]}"
-                        else:
-                            summary = f"Assistant: {content[:80]}..."
-                    else:
-                        summary = f"Assistant: {content[:80]}..."
-                else:
-                    summary = f"Assistant: {content}"
-                    
-                history_parts.append(summary)
-        
-        # Build enhanced context
-        context_parts = []
-        
-        if history_parts:
-            context_parts.append("Recent conversation:")
-            context_parts.extend(history_parts)
-        
-        # Add emotional context if available
-        if user_emotions:
-            recent_emotions = list(set(user_emotions[-3:]))  # Last 3 unique emotions
-            context_parts.append(f"User's recent emotional state: {', '.join(recent_emotions)}")
-        
-        # Add goal context if available
-        if user_goals:
-            recent_goals = list(set(user_goals[-2:]))  # Last 2 unique goals
-            context_parts.append(f"User's expressed goals: {', '.join(recent_goals)}")
-        
-        return '\n'.join(context_parts)
-        
+        return conversation_store.get_conversation_history()
     except Exception as e:
         logger.error(f"Error getting conversation history: {e}")
         return ""
@@ -653,14 +821,14 @@ def detect_crisis_keywords(text: str) -> bool:
     return any(keyword in text.lower() for keyword in crisis_keywords)
 
 def generate_crisis_response() -> str:
-    """Generate appropriate crisis response with emergency resources"""
+    """Generate appropriate crisis response with UK emergency resources"""
     return """I'm very concerned about what you're sharing. Your life has value, and there are people who want to help you.
 
-**Immediate Help Available:**
-• Call 988 (Suicide & Crisis Lifeline) - 24/7 free support
-• Text HOME to 741741 (Crisis Text Line)
-• Go to your nearest emergency room
-• Call 911 if you're in immediate danger
+**Immediate Help (UK):**
+• Call 999 for emergency services (immediate danger)
+• Call NHS 111 for urgent medical advice
+• Contact Samaritans (24/7): 116 123 or visit https://www.samaritans.org
+• Go to your nearest A&E (Accident & Emergency)
 
 **You're Not Alone:**
 Professional help is available and effective. Please reach out to one of these resources right now. You deserve support and care."""
@@ -852,7 +1020,7 @@ def post_process_response(answer: str, question: str = "") -> str:
     for pattern in self_question_patterns:
         answer = re.sub(pattern, '', answer, flags=re.IGNORECASE)
     
-    # Remove internal instruction leaks (CRITICAL FIX)
+    # Remove internal instruction leaks (CRITICAL FIX) - More targeted approach
     internal_instruction_patterns = [
         r'INSTRUCTIONS?:.*?(?=\n|$)',  # "INSTRUCTIONS: - Start with empathy..."
         r'INSTRUCTATIONS?:.*?(?=\n|$)',  # Typo version
@@ -900,6 +1068,13 @@ def post_process_response(answer: str, question: str = "") -> str:
         r'Let the user know.*?(?=\n|$)',  # "Let the user know that they understand"
         r'Express empathy.*?(?=\n|$)',  # "Express empathy and understanding"
         r'Understanding how.*?(?=\n|$)',  # "Understanding how sad they are feeling"
+        # Remove specific problematic patterns from the output
+        r'EMPATHIC Connection:.*?(?=\n|$)',  # Remove "EMPATHIC Connection:" lines
+        r'EMPHATIC Connection:.*?(?=\n|$)',  # Remove "EMPHATIC Connection:" lines  
+        r'EVIDENCE-BASED支持:.*?(?=\n|$)',  # Remove "EVIDENCE-BASED支持:" lines
+        r'SAFETY Awareness:.*?(?=\n|$)',  # Remove "SAFETY Awareness:" lines
+        r'PROFESSIONAL Boundaries:.*?(?=\n|$)',  # Remove "PROFESSIONAL Boundaries:" lines
+        r'Please provide your feedback.*?(?=\n|$)',  # Remove feedback requests
     ]
     
     for pattern in internal_instruction_patterns:
@@ -924,12 +1099,16 @@ def post_process_response(answer: str, question: str = "") -> str:
     for pattern in repetitive_patterns:
         answer = re.sub(pattern, '', answer, flags=re.IGNORECASE | re.DOTALL)
     
-    # Limit response length, but be more lenient for "how to" questions
+    # Enhanced response structuring and length control
     sentences = re.split(r'(?<=[.!?]) +', answer)
     
-    # Check if this is a "how to" question
+    # Check if this is a "how to" question or emotional expression
     is_how_to_question = any(phrase in question.lower() for phrase in 
-                            ['how to', 'how do', 'what steps', 'what should', 'can you show'])
+                            ['how to', 'how do', 'what steps', 'what should', 'can you show', 'improve', 'feel better'])
+    
+    # Check if this is an emotional expression
+    is_emotional_expression = any(phrase in question.lower() for phrase in 
+                                 ['i feel', 'feeling', 'i am feeling', 'i\'m feeling', 'sad', 'anxious', 'depressed'])
     
     # Check for incomplete sentences (sentences that don't end with punctuation)
     incomplete_sentences = []
@@ -962,22 +1141,41 @@ def post_process_response(answer: str, question: str = "") -> str:
     # Reconstruct answer with complete sentences
     answer = ' '.join(complete_sentences)
     
-    if len(complete_sentences) > 6 and not is_how_to_question:
+    # Enhanced length control with better structure preservation
+    if is_emotional_expression or is_how_to_question:
+        # For emotional expressions and how-to questions, allow structured responses
+        if len(complete_sentences) > 12:
+            # Keep empathy + 3-4 structured points
+            empathy_sentences = []
+            technique_sentences = []
+            
+            # Separate empathy from techniques
+            for sentence in complete_sentences:
+                if any(word in sentence.lower() for word in ['understand', 'hear', 'sorry', 'feel', 'know']):
+                    empathy_sentences.append(sentence)
+                else:
+                    technique_sentences.append(sentence)
+            
+            # Keep first 2 empathy sentences and first 3-4 technique sentences
+            selected_sentences = empathy_sentences[:2] + technique_sentences[:4]
+            answer = ' '.join(selected_sentences)
+        elif len(complete_sentences) > 8:
+            # For medium length, keep first 6-8 sentences
+            answer = ' '.join(complete_sentences[:8])
+    else:
         # For regular questions, keep it concise (3-4 sentences max)
-        important_keywords = ['understand', 'feel', 'support', 'help', 'care', 'important', 'okay']
-        important_sentences = complete_sentences[:2]  # Always keep first 2 sentences
-        
-        for sentence in complete_sentences[2:4]:  # Check next 2 sentences
-            if any(keyword in sentence.lower() for keyword in important_keywords):
-                important_sentences.append(sentence)
-        
-        answer = ' '.join(important_sentences)
-    elif len(complete_sentences) > 15:
-        # For "how to" questions, allow more sentences but still limit
-        answer = ' '.join(complete_sentences[:12])
-    elif len(complete_sentences) > 10 and not is_how_to_question:
-        # For regular questions with many sentences, limit more strictly
-        answer = ' '.join(complete_sentences[:6])
+        if len(complete_sentences) > 6:
+            important_keywords = ['understand', 'feel', 'support', 'help', 'care', 'important', 'okay', 'mindfulness', 'breathing', 'technique']
+            important_sentences = complete_sentences[:2]  # Always keep first 2 sentences
+            
+            for sentence in complete_sentences[2:5]:  # Check next 3 sentences
+                if any(keyword in sentence.lower() for keyword in important_keywords):
+                    important_sentences.append(sentence)
+            
+            answer = ' '.join(important_sentences)
+        elif len(complete_sentences) > 8:
+            # For regular questions with many sentences, limit more strictly
+            answer = ' '.join(complete_sentences[:6])
     
     # Remove generic customer service phrases
     generic_phrases = [
@@ -1007,7 +1205,72 @@ def post_process_response(answer: str, question: str = "") -> str:
     if answer and not answer[-1] in '.!?':
         answer += '.'
     
+    # Final optimization: ensure structured format for numbered lists
+    answer = optimize_response_structure(answer, question)
+    
     return answer.strip()
+
+def optimize_response_structure(answer: str, question: str) -> str:
+    """Optimize response structure for better readability"""
+    
+    # Check if this is an emotional expression or how-to question
+    is_emotional_expression = any(phrase in question.lower() for phrase in 
+                                 ['i feel', 'feeling', 'i am feeling', 'i\'m feeling', 'sad', 'anxious', 'depressed'])
+    is_how_to_question = any(phrase in question.lower() for phrase in 
+                            ['how to', 'how do', 'what steps', 'what should', 'can you show', 'improve', 'feel better'])
+    
+    # If it's an emotional expression or how-to question, ensure proper structure
+    if is_emotional_expression or is_how_to_question:
+        # Look for numbered patterns and ensure they're properly formatted
+        sentences = re.split(r'(?<=[.!?]) +', answer)
+        
+        # Find empathy sentences and technique sentences
+        empathy_sentences = []
+        technique_sentences = []
+        
+        for sentence in sentences:
+            # Skip sentences that are just "Here are some suggestions" or similar
+            if any(phrase in sentence.lower() for phrase in ['here are some suggestions', 'here are some techniques', 'here are some ways']):
+                continue
+            elif any(word in sentence.lower() for word in ['understand', 'hear', 'sorry', 'feel', 'know']):
+                empathy_sentences.append(sentence)
+            else:
+                technique_sentences.append(sentence)
+        
+        # Reconstruct with better structure
+        if empathy_sentences and technique_sentences:
+            # Keep first empathy sentence and first 3 technique sentences
+            selected_empathy = empathy_sentences[:1]
+            selected_techniques = technique_sentences[:3]
+            
+            # Clean up technique sentences - remove any existing numbering and extract the core content
+            formatted_techniques = []
+            for i, technique in enumerate(selected_techniques, 1):
+                # Remove any existing numbering and clean up
+                technique = re.sub(r'^\d+[\.\)]\s*', '', technique.strip())
+                technique = re.sub(r'^\d+\)\s*', '', technique.strip())
+                
+                # Extract the main content (before any colons or dashes)
+                if ':' in technique:
+                    technique = technique.split(':', 1)[1].strip()
+                elif ' - ' in technique:
+                    technique = technique.split(' - ', 1)[1].strip()
+                
+                # Ensure it's not empty and add proper numbering
+                if technique and len(technique) > 5:
+                    formatted_techniques.append(f"{i}) {technique}")
+            
+            # Combine with proper spacing
+            if formatted_techniques:
+                result = ' '.join(selected_empathy) + ' Here are some suggestions: ' + ' '.join(formatted_techniques)
+                
+                # Add a follow-up question if not present
+                if not any(word in result.lower() for word in ['what', 'how', 'can you', 'tell me']):
+                    result += ' What has been contributing to these feelings?'
+                
+                return result
+    
+    return answer
 
 @app.post("/api/empathetic_professional", response_model=RAGResponse)
 async def empathetic_professional_endpoint(request_data: RAGRequest):
@@ -1030,7 +1293,7 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                 confidence=1.0,
                 fusion_strategy="crisis_intervention",
                 source_breakdown={"crisis": 1.0},
-                follow_up_suggestions=["Please call 988 immediately"],
+                follow_up_suggestions=["Please call 999 immediately"],
                 safety_notes=["User expressed suicidal thoughts - immediate intervention required"]
             )
 
@@ -1217,15 +1480,36 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
         
         logger.info(f"Retrieved context length: {len(context)} characters")
 
-        # Step 5: Dynamically load prompt based on tone selection
-        prompt = get_dynamic_prompt(request_data.type)
+        # Step 5: Check if this is a definitional question and handle accordingly
+        is_definitional = is_definitional_question(processed_question)
+        
+        if is_definitional:
+            logger.info(f"Definitional question detected: {processed_question}")
+            # Use definitional prompt for medical information
+            prompt = load_definitional_prompt()
+            if not prompt:
+                # Fallback to dynamic prompt if definitional prompt not available
+                prompt = get_dynamic_prompt(request_data.type)
+            
+            # Get specialized medical context for definitional questions
+            medical_context = get_medical_context_for_definition(processed_question, store)
+            if medical_context:
+                context = medical_context
+                logger.info(f"Using specialized medical context for definitional question")
+        else:
+            # Use regular dynamic prompt for non-definitional questions
+            prompt = get_dynamic_prompt(request_data.type)
         
         # Display prompt source for debugging
         if SHOW_PROMPT_DEBUG:
             print("PROMPT SOURCE:")
             print("="*80)
             print(f"Selected tone: {request_data.type}")
-            if request_data.type == "empathetic_professional":
+            print(f"Is definitional question: {is_definitional}")
+            
+            if is_definitional:
+                print("Using definitional prompt for medical information")
+            elif request_data.type == "empathetic_professional":
                 opro_exists = os.path.exists(OPRO_PROMPT_PATH)
                 print(f"OPRO file exists: {opro_exists}")
                 if opro_exists:
@@ -1286,13 +1570,27 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
         # Step 7: LLM generation
         try:
             logger.info("Starting LLM inference...")
-            # Reset LLM generation parameters - optimize for concise, helpful responses
+            # Reset LLM generation parameters - optimize for detailed, helpful responses
             pipe = psychologist_llm.pipeline
-            pipe.model.config.max_new_tokens = 150  # Shorter to prevent template leakage
-            pipe.model.config.temperature = 0.6     # More consistent responses
-            pipe.model.config.top_p = 0.8
-            result = psychologist_llm.invoke(formatted_prompt)
-            answer = result if isinstance(result, str) else str(result)
+            # Reduce generation length to lower latency
+            default_max_new_tokens = os.getenv("LLM_MAX_NEW_TOKENS", "160")
+            pipe.model.config.max_new_tokens = int(default_max_new_tokens)
+            pipe.model.config.temperature = float(os.getenv("LLM_TEMPERATURE", "0.7"))  # Use unified temperature
+            pipe.model.config.top_p = 0.9
+
+            # Add timeout to avoid hanging requests returning 500
+            llm_timeout_seconds = float(os.getenv("LLM_TIMEOUT_SECONDS", "25"))
+
+            async def _invoke_llm() -> str:
+                loop = asyncio.get_event_loop()
+                result_inner = await loop.run_in_executor(None, psychologist_llm.invoke, formatted_prompt)
+                return result_inner if isinstance(result_inner, str) else str(result_inner)
+
+            try:
+                answer = await asyncio.wait_for(_invoke_llm(), timeout=llm_timeout_seconds)
+            except asyncio.TimeoutError:
+                logger.warning(f"LLM inference timed out after {llm_timeout_seconds}s; raising 504")
+                raise HTTPException(status_code=504, detail=f"LLM inference timed out after {llm_timeout_seconds} seconds")
             
             # Display raw LLM output for debugging
             if SHOW_PROMPT_DEBUG:
@@ -1389,8 +1687,10 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                 "consider cultural", "provide age-appropriate", "response:"
             ]
             
-            if any(phrase in answer.lower() for phrase in problematic_phrases):
-                logger.warning("Detected problematic content in response, using fallback")
+            # Only use fallback if the response is completely problematic
+            problematic_count = sum(1 for phrase in problematic_phrases if phrase in answer.lower())
+            if problematic_count > 3:  # Only if more than 3 problematic phrases found
+                logger.warning("Detected too many problematic phrases in response, using fallback")
                 answer = create_fallback_response(processed_question, context, "empathetic_professional")
             
             # Post-process: automatically trim overly long answers to ensure conciseness
@@ -1465,15 +1765,33 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                 print()
             
             logger.info(f"Generated answer length: {len(answer)} characters")
-            # Check response quality
-            if len(answer.strip()) < 10:
-                logger.warning("[FALLBACK] Generated answer too short, using fallback for question: %s", processed_question)
+            # Check response quality - more lenient for emotional expressions and how-to questions
+            is_emotional_expression = any(phrase in processed_question.lower() for phrase in 
+                                         ['i feel', 'feeling', 'i am feeling', 'i\'m feeling', 'sad', 'anxious', 'depressed'])
+            is_how_to_question = any(phrase in processed_question.lower() for phrase in 
+                                    ['how to', 'how do', 'what steps', 'what should', 'can you show', 'improve', 'feel better'])
+            
+            min_length = 10 if (is_emotional_expression or is_how_to_question) else 20
+            
+            if len(answer.strip()) < min_length:
+                logger.warning(f"[FALLBACK] Generated answer too short ({len(answer.strip())} chars), using fallback for question: %s", processed_question)
                 answer = create_fallback_response(processed_question, context, "empathetic_professional")
             
-            # Step 8: Update conversation memory
+            # Step 8: Update conversation memory using unified store
             try:
-                memory.chat_memory.add_user_message(processed_question)
-                memory.chat_memory.add_ai_message(answer)
+                conversation_store.add_interaction(
+                    user_message=processed_question,
+                    assistant_message=answer,
+                    metadata={
+                        'emotion': emotion,
+                        'response_strategy': response_strategy,
+                        'confidence': enhanced_metadata.get("confidence"),
+                        'fusion_strategy': enhanced_metadata.get("fusion_strategy")
+                    }
+                )
+                # Update emotional state tracking
+                if emotion:
+                    conversation_store.update_emotional_state(emotion, 0.8)  # Default confidence
             except Exception as e:
                 logger.error(f"Error updating conversation memory: {e}")
             
@@ -1483,8 +1801,13 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
             response_time = time.time() - start_time
             logger.info(f"Response generated in {response_time:.2f} seconds")
             
-            # Determine prompt source - all tones now use OPRO
-            prompt_source = "opro" if os.path.exists(OPRO_PROMPT_PATH) else "fallback"
+            # Determine prompt source based on question type
+            if is_definitional:
+                prompt_source = "definitional"
+            elif os.path.exists(OPRO_PROMPT_PATH):
+                prompt_source = "opro"
+            else:
+                prompt_source = "fallback"
             
             return RAGResponse(
                 answer=answer.strip(),
@@ -1506,8 +1829,13 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
             response_time = time.time() - start_time
             logger.info(f"Fallback response generated in {response_time:.2f} seconds")
             
-            # Determine prompt source - all tones now use OPRO
-            prompt_source = "opro" if os.path.exists(OPRO_PROMPT_PATH) else "fallback"
+            # Determine prompt source based on question type
+            if is_definitional:
+                prompt_source = "definitional"
+            elif os.path.exists(OPRO_PROMPT_PATH):
+                prompt_source = "opro"
+            else:
+                prompt_source = "fallback"
             
             return RAGResponse(
                 answer=fallback,
@@ -1528,32 +1856,45 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
         raise HTTPException(status_code=500, detail=str(e))
 
 def create_fallback_response(question: str, context: str, tone: str) -> str:
-    """Create appropriate fallback responses without repeating user input"""
+    """Create appropriate fallback responses with practical suggestions"""
     
     question_lower = question.lower() if question else ""
     
-    # Detect emotion/topic and respond appropriately
-    if any(word in question_lower for word in ['sad', 'sadness', 'down', 'depressed']):
-        return "I understand you're feeling sad. That's difficult. Would you like to talk about what's weighing on you?"
-    elif any(word in question_lower for word in ['anxious', 'anxiety', 'worried', 'stressed']):
-        return "I hear that anxiety is affecting you. What's been causing you the most worry?"
-    elif any(word in question_lower for word in ['angry', 'mad', 'frustrated']):
-        return "It sounds like you're feeling frustrated. What's been bothering you?"
-    elif any(word in question_lower for word in ['lonely', 'alone', 'isolated']):
-        return "Feeling lonely can be painful. I'm here to listen. What's making you feel this way?"
-    elif any(word in question_lower for word in ['help', 'support', 'advice']):
-        return "I'm here to support you. Can you tell me more about what you need help with?"
+    # Check if this is a definitional question
+    if is_definitional_question(question):
+        # Provide medical definitions for common mental health conditions
+        if any(word in question_lower for word in ['depression', 'depressed']):
+            return "Depression is a mental health disorder characterized by persistent feelings of sadness, hopelessness, and loss of interest in activities. According to medical guidelines, common symptoms include persistent low mood, loss of interest in previously enjoyable activities, changes in sleep patterns, fatigue, difficulty concentrating, feelings of worthlessness, changes in appetite, and thoughts of death or suicide. If you're experiencing these symptoms, it's important to speak with a mental health professional for proper evaluation and treatment."
+        elif any(word in question_lower for word in ['anxiety', 'anxious']):
+            return "Anxiety is a mental health condition characterized by excessive worry, fear, and nervousness. According to medical guidelines, common symptoms include persistent worry, restlessness, difficulty concentrating, irritability, muscle tension, sleep problems, and physical symptoms like rapid heartbeat or sweating. If you're experiencing these symptoms, it's important to speak with a mental health professional for proper evaluation and treatment."
+        elif any(word in question_lower for word in ['ptsd', 'post traumatic', 'trauma']):
+            return "Post-traumatic stress disorder (PTSD) is a mental health condition that can develop after experiencing or witnessing a traumatic event. According to medical guidelines, common symptoms include intrusive memories, nightmares, flashbacks, avoidance of reminders, negative changes in thinking and mood, and changes in physical and emotional reactions. If you're experiencing these symptoms, it's important to speak with a mental health professional for proper evaluation and treatment."
+        elif any(word in question_lower for word in ['ocd', 'obsessive', 'compulsive']):
+            return "Obsessive-compulsive disorder (OCD) is a mental health condition characterized by unwanted, intrusive thoughts (obsessions) and repetitive behaviors (compulsions). According to medical guidelines, common symptoms include persistent unwanted thoughts, repetitive behaviors performed to reduce anxiety, and significant distress or impairment in daily functioning. If you're experiencing these symptoms, it's important to speak with a mental health professional for proper evaluation and treatment."
+        else:
+            return "I can provide information about mental health conditions. Could you please specify which condition you'd like to learn more about? Common conditions include depression, anxiety, PTSD, OCD, and others."
+    
+    # Enhanced emotion/topic detection with concise, structured responses
+    if any(word in question_lower for word in ['sad', 'sadness', 'down', 'depressed', 'mood', 'feel better', 'i feel sad']):
+        return "I understand you're feeling sad. Here are some practical suggestions: 1) Try a 5-minute mindfulness meditation focusing on your breath. 2) Practice the 5-4-3-2-1 grounding technique - name 5 things you can see, 4 you can touch, 3 you can hear, 2 you can smell, and 1 you can taste. 3) Write down three things you're grateful for today. Remember, it's okay to not feel okay. What's been contributing to these feelings?"
+    elif any(word in question_lower for word in ['anxious', 'anxiety', 'worried', 'stressed', 'nervous']):
+        return "I hear that anxiety is affecting you. Here are some techniques that might help: 1) Try the 4-7-8 breathing technique - inhale for 4 counts, hold for 7, exhale for 8. 2) Progressive muscle relaxation - tense and release each muscle group. 3) Take a 10-minute walk outside to help clear your mind. What's been causing you the most worry lately?"
+    elif any(word in question_lower for word in ['angry', 'mad', 'frustrated', 'irritated']):
+        return "It sounds like you're feeling frustrated. Here are some ways to help: 1) Take a few deep breaths and count to 10 before responding. 2) Try journaling your feelings to process them. 3) Physical activity like walking can help release tension. What's been bothering you the most?"
+    elif any(word in question_lower for word in ['lonely', 'alone', 'isolated', 'disconnected']):
+        return "Feeling lonely can be painful. Here are some suggestions: 1) Reach out to a friend or family member for a brief chat. 2) Join an online community with similar interests. 3) Practice self-compassion - treat yourself with kindness. What's making you feel this way?"
+    elif any(word in question_lower for word in ['help', 'support', 'advice', 'suggestions']):
+        return "I'm here to support you. Here are some wellness techniques: 1) Practice daily gratitude by writing down one good thing each day. 2) Try 5-10 minutes of mindfulness meditation. 3) Set small, achievable goals for yourself. Can you tell me more about what you need help with?"
     elif any(word in question_lower for word in ['thank', 'thanks', 'hello', 'hi']):
-        return "You're welcome. Is there anything else I can help you with?"
+        return "You're welcome! I'm here to support you. Is there anything specific you'd like to talk about or any techniques you'd like to learn more about?"
     else:
-        return "I'm here to listen and support you. Can you tell me more about what's been on your mind?"
+        return "I'm here to listen and support you. Here are some wellness practices: 1) Take a few deep breaths and notice how you're feeling. 2) Try a short mindfulness exercise - focus on your breath for 2-3 minutes. 3) Practice self-compassion by being kind to yourself. Can you tell me more about what's been on your mind?"
 
 @app.post("/api/reset_conversation")
 async def reset_conversation():
-    """Reset conversation memory"""
+    """Reset conversation memory using unified store"""
     try:
-        global memory
-        memory = ConversationBufferMemory(return_messages=True)
+        conversation_store.reset_conversation()
         return {"message": "Conversation reset successfully", "status": "success"}
     except Exception as e:
         logger.error(f"Error resetting conversation: {e}")
@@ -1699,6 +2040,147 @@ async def root():
             "cbt_search": "/api/cbt/search"
         }
     }
+
+def is_definitional_question(question: str) -> bool:
+    """
+    Detect if a question is asking for a definition or medical information
+    """
+    if not question or not question.strip():
+        return False
+    
+    question_lower = question.lower().strip()
+    
+    # Definitional question patterns
+    definitional_patterns = [
+        r'what is\s+\w+',  # "what is anxiety", "what is depression"
+        r'what are\s+\w+',  # "what are symptoms"
+        r'define\s+\w+',  # "define anxiety"
+        r'meaning of\s+\w+',  # "meaning of anxiety"
+        r'definition of\s+\w+',  # "definition of anxiety"
+        r'what does\s+\w+\s+mean',  # "what does depression mean"
+        r'explain\s+\w+',  # "explain depression"
+        r'tell me about\s+\w+',  # "tell me about depression"
+        r'describe\s+\w+',  # "describe anxiety"
+        r'what is the\s+\w+',  # "what is the difference"
+        r'what are the\s+\w+',  # "what are the symptoms"
+        r'how is\s+\w+\s+defined',  # "how is depression defined"
+        r'what constitutes\s+\w+',  # "what constitutes anxiety"
+    ]
+    
+    # Check if question matches any definitional pattern
+    for pattern in definitional_patterns:
+        if re.search(pattern, question_lower):
+            return True
+    
+    # Additional checks for medical terminology questions
+    medical_terms = [
+        'depression', 'anxiety', 'ptsd', 'ocd', 'bipolar', 'schizophrenia',
+        'panic disorder', 'social anxiety', 'generalized anxiety',
+        'major depressive disorder', 'dysthymia', 'cyclothymia',
+        'borderline personality', 'narcissistic personality',
+        'antisocial personality', 'avoidant personality'
+    ]
+    
+    # Check for help-seeking patterns that should NOT be definitional
+    help_seeking_patterns = [
+        r'what should i do\s+\w+',  # "what should i do about"
+        r'what can i do\s+\w+',  # "what can i do about"
+        r'how can i\s+\w+',  # "how can i help"
+        r'how do i\s+\w+',  # "how do i deal"
+        r'i need help\s+\w+',  # "i need help with"
+        r'can you help\s+\w+',  # "can you help me"
+        r'help me\s+\w+',  # "help me with"
+        r'struggling with\s+\w+',  # "struggling with"
+        r'dealing with\s+\w+',  # "dealing with"
+        r'coping with\s+\w+',  # "coping with"
+    ]
+    
+    # If it's a help-seeking question, it's not definitional
+    for pattern in help_seeking_patterns:
+        if re.search(pattern, question_lower):
+            return False
+    
+    # If question contains medical terms and asks for information (but not help)
+    has_medical_term = any(term in question_lower for term in medical_terms)
+    is_information_request = any(word in question_lower for word in ['what', 'define', 'explain', 'tell', 'describe'])
+    
+    return has_medical_term and is_information_request
+
+def load_definitional_prompt() -> str:
+    """
+    Load the definitional question prompt template
+    """
+    definitional_prompt_path = "OPRO_Streamlined/prompts/definitional_prompt.txt"
+    
+    try:
+        if os.path.exists(definitional_prompt_path):
+            with open(definitional_prompt_path, 'r', encoding='utf-8') as f:
+                return f.read().strip()
+        else:
+            logger.warning(f"Definitional prompt not found at {definitional_prompt_path}")
+            return ""
+    except Exception as e:
+        logger.error(f"Error loading definitional prompt: {e}")
+        return ""
+
+def get_medical_context_for_definition(question: str, store) -> str:
+    """
+    Retrieve relevant medical context for definitional questions
+    """
+    if not store:
+        return ""
+    
+    try:
+        # Extract the medical term from the question
+        question_lower = question.lower()
+        
+        # Common medical terms to search for
+        medical_terms = {
+            'depression': ['depression', 'depressive', 'major depressive', 'dysthymia'],
+            'anxiety': ['anxiety', 'anxious', 'panic', 'generalized anxiety'],
+            'ptsd': ['ptsd', 'post traumatic', 'trauma', 'traumatic'],
+            'ocd': ['ocd', 'obsessive', 'compulsive'],
+            'bipolar': ['bipolar', 'manic', 'mania', 'cyclothymia'],
+            'schizophrenia': ['schizophrenia', 'psychotic', 'psychosis'],
+            'personality': ['personality disorder', 'borderline', 'narcissistic', 'antisocial']
+        }
+        
+        # Find the most relevant medical term
+        search_terms = []
+        for category, terms in medical_terms.items():
+            if any(term in question_lower for term in terms):
+                search_terms.extend(terms)
+                break
+        
+        if not search_terms:
+            # If no specific term found, use the question itself
+            search_terms = [question]
+        
+        # Search for relevant medical information
+        context_parts = []
+        for term in search_terms[:3]:  # Limit to 3 terms to avoid too much context
+            try:
+                # Use similarity search to find relevant medical information
+                results = store.similarity_search(term, k=2)
+                for result in results:
+                    if result.page_content and len(result.page_content) > 50:
+                        context_parts.append(result.page_content[:300])  # Limit each part
+            except Exception as e:
+                logger.debug(f"Error searching for term '{term}': {e}")
+                continue
+        
+        # Combine context parts
+        if context_parts:
+            combined_context = " ".join(context_parts)
+            # Clean up the context
+            combined_context = re.sub(r'\s+', ' ', combined_context).strip()
+            return combined_context[:800]  # Limit total context length
+        
+        return ""
+        
+    except Exception as e:
+        logger.error(f"Error getting medical context: {e}")
+        return ""
 
 if __name__ == "__main__":
     logger.info(f"Starting FastAPI server on port 8000 with {DEVICE}...")

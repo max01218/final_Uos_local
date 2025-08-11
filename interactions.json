@@ -34,5 +34,275 @@
     "user_feedback": null,
     "context_length": 40,
     "response_time": 1754272417.8837094
+  },
+  {
+    "timestamp": "2025-08-04T14:27:58.501451",
+    "question": "Hi I feel really upset recently",
+    "answer": "I'm sorry to hear that you're feeling upset. It's understandable to experience these emotions in response to challenging events. Is there anything I can do to help you feel better today?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 186,
+    "response_time": 1754314078.5014515
+  },
+  {
+    "timestamp": "2025-08-04T14:29:26.296860",
+    "question": "Yeah… I’ve been dealing with a lot lately. Work’s been overwhelming and I just feel really alone, even around people.",
+    "answer": "It sounds like you're going through a tough time. Can you please tell me more about what you're feeling? Is there anything in particular that's causing you distress?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 165,
+    "response_time": 1754314166.296861
+  },
+  {
+    "timestamp": "2025-08-04T14:29:50.118246",
+    "question": "I think it’s a mix of things… I’ve been feeling overwhelmed, like no matter what I do, it’s never enough. And it’s starting to really wear me down",
+    "answer": "Thank you for sharing your concerns. It can be very difficult to feel overwhelmed in our daily lives. It's important to recognize that we all experience these emotions at times.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 177,
+    "response_time": 1754314190.1182466
+  },
+  {
+    "timestamp": "2025-08-04T14:30:33.160568",
+    "question": "Do you have any suggestions on how I can improve my mood or feel a bit better?",
+    "answer": "It sounds like you're looking for practical ways to cope with your emotions.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 76,
+    "response_time": 1754314233.1605682
+  },
+  {
+    "timestamp": "2025-08-04T14:41:38.408800",
+    "question": "I feel really sad",
+    "answer": "I'm sorry to hear that you're feeling sad. It's natural to experience emotions during difficult times. Is there anything in particular that brings you sadness?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 159,
+    "response_time": 1754314898.4088
+  },
+  {
+    "timestamp": "2025-08-04T14:41:55.622151",
+    "question": "Do you have any suggestions on how I can improve my mood or feel a bit better?",
+    "answer": "let me know if there's anything else I can assist you with.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 59,
+    "response_time": 1754314915.622151
+  },
+  {
+    "timestamp": "2025-08-04T16:26:35.509643",
+    "question": "I feel really sad",
+    "answer": "Here are some suggestions that may help: 1. Remember that even though things are difficult, there are always people who care about you and want to see you succeed.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 163,
+    "response_time": 1754321195.5096438
+  },
+  {
+    "timestamp": "2025-08-04T16:38:32.206457",
+    "question": "I feel really sad",
+    "answer": "I'm sorry to hear that you're feeling this way. It takes time to process emotions and heal from past experiences. Let's try some simple techniques together to help you feel better. Firstly, let's focus on your breathing. Take a deep breath in through your nose, hold it for a moment, and then exhale slowly through your mouth. Repeat this process several times. You'll find your body relaxes and your mind starts to calm down. Next, we'll move onto grounding techniques. This involves identifying physical sensations in your body, such as tingles or sensations of weightlessness. As you identify these sensations, try to picture them in a safe and supportive place. For example, if you notice a tingling sensation in your arm, imagine yourself holding a comforting hug. Or if you notice a sense of weightlessness in your head, imagine yourself floating above the ground. Remember to take your time with each gesture and focus on one at a time. With practice, you'll find your mind becomes more aware and grounded. Finally, let's talk about progressive muscle relaxation. This involves tensing and relaxing different muscle groups in your body. Start by tensing your toes, then release, and repeat the process for your arms, legs, neck, shoulders, back, and hands. As you tense and relax different muscles, pay attention to any sensations that arise. These sensations may become more noticeable, or they may go away altogether. When you're done with this exercise, take a few deep breaths in through your nose, hold it for a moment, and then exhale slowly through your mouth.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 1574,
+    "response_time": 1754321912.2064576
+  },
+  {
+    "timestamp": "2025-08-04T16:50:57.848473",
+    "question": "I feel really sad",
+    "answer": "Here are some suggestions: 1) It's natural to experience these emotions from time to time. 2) It's important to remember that sadness doesn't last forever, but it can affect your mood and daily functioning. 3) Here are some practical techniques that may help: 1. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 308,
+    "response_time": 1754322657.848473
+  },
+  {
+    "timestamp": "2025-08-04T17:30:05.806194",
+    "question": "what is depression",
+    "answer": "I would like to validate your feelings of sadness, hopelessness, and emptiness.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 79,
+    "response_time": 1754325005.8061945
+  },
+  {
+    "timestamp": "2025-08-04T17:44:22.889784",
+    "question": "what is depression",
+    "answer": "I'm sorry to hear that you're going through a difficult time in your life. It typically involves feelings of hopelessness, worthlessness, and loss of interest in activities that were once enjoyable.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 198,
+    "response_time": 1754325862.8897846
+  },
+  {
+    "timestamp": "2025-08-04T17:44:51.110653",
+    "question": "I feel really sad",
+    "answer": "Here are some suggestions: 1) It's completely normal to experience emotions like sadness from time to time. 2) It's important to remember that sadness is a normal part of life. 3) What sets us apart is how we respond to it.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 223,
+    "response_time": 1754325891.1106536
+  },
+  {
+    "timestamp": "2025-08-04T17:45:05.611437",
+    "question": "what is depression",
+    "answer": "Thank you for reaching out with your concern. It is understandable that you may be feeling overwhelmed by this topic. If you are experiencing any distress related to depression, it is important to seek support from trusted individuals such as family members, friends, or mental health professionals.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 299,
+    "response_time": 1754325905.6114373
+  },
+  {
+    "timestamp": "2025-08-04T17:45:19.808902",
+    "question": "what is depression",
+    "answer": "Thank you for reaching out to me. It's great to hear from you, but I must clarify that depression is an actual mental health disorder that requires treatment. In order to receive proper care and support, it's important to understand the symptoms and signs associated with depression. They include persistent sadness or hopelessness, loss of interest in activities, difficulty sleeping or oversleeping, fatigue or weakness, and feeling hopeless. If you're experiencing any of these symptoms, it's important to seek professional help immediately.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 544,
+    "response_time": 1754325919.8089025
+  },
+  {
+    "timestamp": "2025-08-04T17:57:30.200996",
+    "question": "what is depression",
+    "answer": "Depression is a mental health disorder characterized by persistent feelings of sadness, hopelessness, and worthlessness, along with changes in appetite and sleep patterns. It can also lead to physical symptoms such as fatigue, dizziness, and shortness of breath. It is important to note that these definitions may vary depending on the specific criteria used in medical research and practice.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 392,
+    "response_time": 1754326650.2009962
+  },
+  {
+    "timestamp": "2025-08-04T17:57:53.791143",
+    "question": "I feel depress",
+    "answer": "Here are some suggestions: 2) Take a few deep breaths in through your nose and out through your mouth. 3) Focus on your breath as you inhale and exhale. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 198,
+    "response_time": 1754326673.7911434
+  },
+  {
+    "timestamp": "2025-08-10T16:59:53.159221",
+    "question": "I feel persistent anxiety and insomnia. What can I do right now?",
+    "answer": "Here are some suggestions: 1) Many people face similar difficulties, and there is help available. 2) Right now, let's focus on some immediate strategies to help calm your mind and body. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 231,
+    "response_time": 1754841593.1592212
+  },
+  {
+    "timestamp": "2025-08-10T17:04:49.094280",
+    "question": "I feel persistent anxiety and insomnia. What can I do right now?",
+    "answer": "Here are some suggestions: 1) Firstly, try taking slow, deep breaths. 2) Inhale for a count of four, hold for seven, and exhale for eight. 3) Repeat this process several times, focusing on the sensation of the air moving in and out of your body. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 291,
+    "response_time": 1754841889.0942802
+  },
+  {
+    "timestamp": "2025-08-10T17:24:18.048160",
+    "question": "I feel persistent anxiety and insomnia. What can I do right now?",
+    "answer": "Here are some suggestions: 2) Take slow, deliberate breaths in through your nose and out through your mouth. 3) Focus on the sensation of the air moving in and out of your body. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 223,
+    "response_time": 1754843058.04816
+  },
+  {
+    "timestamp": "2025-08-10T17:34:57.148436",
+    "question": "I feel persistent anxiety and insomnia. What can I do right now?",
+    "answer": "Here are some suggestions: 1) Take slow, deep breaths in through your nose and out through your mouth. 2) Try to focus on the sensation of the breath moving in and out of your body. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 227,
+    "response_time": 1754843697.1484363
+  },
+  {
+    "timestamp": "2025-08-10T17:44:40.072271",
+    "question": "I feel persistent anxiety and insomnia. What can I do right now?",
+    "answer": "Here are some suggestions: 1) First, let me assure you that you're not alone in this struggle. 2) Many people face similar challenges, and there is hope for relief. 3) Right now, I'd like to offer some simple yet powerful techniques to help calm your mind and body. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 311,
+    "response_time": 1754844280.0722716
+  },
+  {
+    "timestamp": "2025-08-10T18:09:28.732351",
+    "question": "I feel persistent anxiety and insomnia. What can I do right now?",
+    "answer": "it sounds like you're really struggling with some tough emotions right now. 2) It takes a lot of courage to admit when we need help, so thank you for reaching out. 3) Firstly, try taking a few deep breaths in through your nose and out through your mouth. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 300,
+    "response_time": 1754845768.7323513
+  },
+  {
+    "timestamp": "2025-08-10T18:21:26.698595",
+    "question": "I feel persistent anxiety and insomnia. What can I do right now?",
+    "answer": "Here are some suggestions: 1) Firstly, try taking slow, deep breaths in through your nose and out through your mouth. 2) Focus on the sensation of the air moving in and out of your body. 3) This can help calm your nervous system. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 275,
+    "response_time": 1754846486.6985953
+  },
+  {
+    "timestamp": "2025-08-10T18:34:10.421284",
+    "question": "I feel persistent anxiety and insomnia. What can I do right now?",
+    "answer": "Here are some suggestions: 1) Many people face similar struggles, and it's okay to ask for help. 2) In this moment, let's focus on some simple yet powerful techniques that might bring you relief. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 241,
+    "response_time": 1754847250.4212847
+  },
+  {
+    "timestamp": "2025-08-10T21:49:47.950199",
+    "question": "I feel persistent anxiety and insomnia. What can I do right now?",
+    "answer": "Here are some suggestions: 1) Many people face similar struggles, and there are ways to find relief. 2) In this moment, let's focus on some simple yet powerful techniques that can help calm your mind and body. 3) Would you be willing to try these with me? What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 301,
+    "response_time": 1754858987.9501998
+  },
+  {
+    "timestamp": "2025-08-10T22:00:18.625762",
+    "question": "I feel persistent anxiety and insomnia. What can I do right now?",
+    "answer": "Here are some suggestions: 2) Take slow, deep breaths in through your nose and out through your mouth. 3) Focus on the sensation of the air moving in and out of your body. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 217,
+    "response_time": 1754859618.6257622
+  },
+  {
+    "timestamp": "2025-08-10T22:09:30.792387",
+    "question": "I feel persistent anxiety and insomnia. What can I do right now?",
+    "answer": "Here are some suggestions: 1) Many people face similar challenges, and there are ways to cope and find relief. 2) In this moment, I recommend trying some simple yet powerful techniques to calm your mind and body. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 258,
+    "response_time": 1754860170.792387
+  },
+  {
+    "timestamp": "2025-08-10T22:25:43.289748",
+    "question": "I feel persistent anxiety and insomnia. What can I do right now?",
+    "answer": "Here are some suggestions: 1) Many people face similar challenges, and there are ways to cope with them. 2) Firstly, try taking slow, deep breaths in through your nose and out through your mouth. 3) Focus on the sensation of the air moving in and out of your body. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 310,
+    "response_time": 1754861143.2897482
+  },
+  {
+    "timestamp": "2025-08-10T22:55:34.296447",
+    "question": "I feel persistent anxiety and insomnia. What can I do right now?",
+    "answer": "it sounds like you're really struggling right now. 3) Take slow, deep breaths in through your nose and out through your mouth. What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 172,
+    "response_time": 1754862934.296447
+  },
+  {
+    "timestamp": "2025-08-11T21:28:43.034421",
+    "question": "I feel anxious and need some coping strategies",
+    "answer": "Here are some suggestions: 1) Anxiety can be such a heavy burden to carry. 2) You're not alone in this. 3) Have you tried mindfulness meditation? What has been contributing to these feelings?",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 191,
+    "response_time": 1754944123.0344217
   }
 ]

@@ -1,8 +1,12 @@
 {
+  "resolved_paths": {
+    "cbt": "CBT_System/cbt_data/embeddings/cbt_index.faiss",
+    "icd11": "embeddings/index.faiss"
+  },
   "enhanced_rag_config": {
     "semantic_engine": {
-      "model_name": "all-MiniLM-L6-v2",
-      "fallback_model": "all-mpnet-base-v2",
+      "model_name": "sentence-transformers/all-mpnet-base-v2",
+      "fallback_model": "sentence-transformers/all-mpnet-base-v2",
       "device": "auto",
       "max_sequence_length": 512
     },
@@ -14,7 +18,7 @@
       "urgency_boost": 0.1
     },
     "filtering": {
-      "min_relevance_threshold": 0.3,
+      "min_relevance_threshold": 0.15,
       "max_results": 5,
       "diversity_threshold": 0.85
     },
@@ -119,9 +123,9 @@
       "low": ["struggling", "difficult", "hard time"]
     },
     "crisis_resources": {
-      "crisis_text_line": "Text HOME to 741741",
-      "suicide_prevention_lifeline": "988",
-      "emergency_services": "911",
+      "emergency_services": "999",
+      "urgent_medical_advice": "NHS 111",
+      "samaritans": "116 123",
       "international_helplines": "https://findahelpline.com"
     }
   },

@@ -139,7 +139,7 @@ def preprocess_text(df: pd.DataFrame) -> pd.DataFrame:
 def create_embeddings_and_index(df: pd.DataFrame) -> Tuple[List, object]:
     """
     Stage 3: Embedding and Indexing
-    - Use sentence-transformers (all-MiniLM-L6-v2)
+    - Use sentence-transformers (all-mpnet-base-v2)
     - Generate 384-d vectors
     - Build FAISS index (IndexFlatIP)
     """
@@ -157,7 +157,7 @@ def create_embeddings_and_index(df: pd.DataFrame) -> Tuple[List, object]:
     
     # Load model
     print("Loading sentence transformer model...")
-    model = SentenceTransformer('all-MiniLM-L6-v2')
+    model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
     
     # Generate embeddings
     print("Generating embeddings...")
@@ -383,7 +383,7 @@ def main():
         
         # Load model for validation
         from sentence_transformers import SentenceTransformer
-        model = SentenceTransformer('all-MiniLM-L6-v2')
+        model = SentenceTransformer('sentence-transformers/all-mpnet-base-v2')
         
         # Stage 4: Retrieval validation
         hit_rate = validate_retrieval(df_processed, embeddings, index, model)

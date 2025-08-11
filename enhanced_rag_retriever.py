@@ -177,10 +177,10 @@ class IntentClassifier:
 class SemanticSimilarityEngine:
     """Advanced semantic similarity computation"""
     
-    def __init__(self, model_name: str = "all-MiniLM-L6-v2"):
+    def __init__(self, model_name: str = "sentence-transformers/all-mpnet-base-v2"):
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
         try:
-            self.model = SentenceTransformer(model_name, device=self.device)
+            self.model = SentenceTransformer("sentence-transformers/all-mpnet-base-v2", device=self.device)
         except:
             self.model = None
             
@@ -312,9 +312,9 @@ class EnhancedRAGRetriever:
         self.intent_classifier = IntentClassifier()
         
         # Use different models for different knowledge bases
-        # CBT uses all-mpnet-base-v2 (768d), ICD-11 uses all-MiniLM-L6-v2 (384d)
-        self.cbt_semantic_engine = SemanticSimilarityEngine("all-mpnet-base-v2")
-        self.icd11_semantic_engine = SemanticSimilarityEngine("all-MiniLM-L6-v2")
+        # Use a single unified embedding model for both CBT and ICD-11
+        self.cbt_semantic_engine = SemanticSimilarityEngine("sentence-transformers/all-mpnet-base-v2")
+        self.icd11_semantic_engine = SemanticSimilarityEngine("sentence-transformers/all-mpnet-base-v2")
         self.context_retriever = ContextAwareRetriever()
         
         # Knowledge base references
@@ -345,7 +345,7 @@ class EnhancedRAGRetriever:
         """Load CBT and ICD-11 knowledge bases"""
         # Set default paths if not provided
         if cbt_path is None:
-            cbt_path = "CBT_System/cbt_data/embeddings/cbt_index_standard_20250727_143814.faiss"
+            cbt_path = "CBT_System/cbt_data/embeddings/cbt_index.faiss"
         if icd11_path is None:
             icd11_path = "embeddings/index.faiss"
             
@@ -545,8 +545,8 @@ class EnhancedRAGRetriever:
                 
             query_embedding = semantic_engine.model.encode([query])[0].reshape(1, -1)
             
-            # Search in FAISS index
-            k = min(self.config["max_results"] * 2, index.ntotal)  # Get more results for filtering
+            # Search in FAISS index (keep k small for latency)
+            k = min(self.config["max_results"], index.ntotal)
             distances, indices = index.search(query_embedding, k)
             
             # Get metadata for retrieved documents
@@ -574,9 +574,38 @@ class EnhancedRAGRetriever:
                     content = str(item)
                 documents.append(content)
             
-            # Compute different similarity scores using appropriate semantic engine
-            semantic_scores = semantic_engine.compute_semantic_similarity(query, documents)
-            keyword_scores = semantic_engine.compute_keyword_similarity(query, documents)
+            # Compute similarity scores without re-encoding documents to reduce latency
+            # Convert FAISS distances to a similarity score in [0,1]
+            def normalize_distance_to_similarity(d: float) -> float:
+                try:
+                    # Works for L2 (smaller is better). If using IP (larger better), distances may be negative.
+                    # Use a monotonic transform that stays in (0,1].
+                    return 1.0 / (1.0 + max(d, 0.0))
+                except Exception:
+                    return 0.0
+
+            semantic_scores = np.array([normalize_distance_to_similarity(d) for d in distances[0]])
+
+            # Lightweight keyword overlap score to avoid TF-IDF fitting cost per request
+            def keyword_overlap_similarity(q: str, texts: List[str]) -> np.ndarray:
+                import re
+                def tokenize(s: str) -> set:
+                    return set(re.findall(r"[a-zA-Z0-9']+", s.lower()))
+                q_tokens = tokenize(q)
+                if not q_tokens:
+                    return np.zeros(len(texts))
+                sims = []
+                for t in texts:
+                    t_tokens = tokenize(t)
+                    if not t_tokens:
+                        sims.append(0.0)
+                        continue
+                    inter = len(q_tokens & t_tokens)
+                    denom = len(q_tokens | t_tokens)
+                    sims.append(inter / denom if denom > 0 else 0.0)
+                return np.array(sims)
+
+            keyword_scores = keyword_overlap_similarity(query, documents)
             
             results = []
             
@@ -615,7 +644,8 @@ class EnhancedRAGRetriever:
                 # Filter by minimum threshold
                 if relevance_score >= self.config["min_relevance_threshold"]:
                     result = RetrievalResult(
-                        content=meta.get("content", ""),
+                        #content=meta.get("content", ""),
+                        content=documents[i],
                         source=source,
                         relevance_score=relevance_score,
                         confidence=semantic_score,

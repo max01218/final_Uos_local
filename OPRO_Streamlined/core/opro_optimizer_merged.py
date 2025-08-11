@@ -76,9 +76,7 @@ def call_local_llm(prompt, max_new_tokens=512, temperature=0.7):
             
             # Try models in order of preference
             models_to_try = [
-                "meta-llama/Meta-Llama-3-8B-Instruct",  # Best performance
-                "meta-llama/Llama-3.2-3B-Instruct",     # Medium performance
-                "meta-llama/Llama-3.2-1B-Instruct"      # Fast performance
+                "meta-llama/Meta-Llama-3-8B-Instruct"
             ]
             
             for model_name in models_to_try:
