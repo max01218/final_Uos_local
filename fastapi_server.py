@@ -8,14 +8,17 @@ import os
 import sys
 import json
 from pathlib import Path
-from typing import List, Optional
+from typing import List, Optional, Dict, Tuple
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 import logging
 import uvicorn
 import time
 import asyncio
+import sqlite3
+from functools import lru_cache
+from threading import RLock
 from datetime import datetime
 import re
 
@@ -92,6 +95,7 @@ enhanced_logger.addHandler(console_handler)
 
 # Global variables
 psychologist_llm = None
+psychologist_tokenizer = None
 store = None
 embedder = None
 emotion_classifier = None
@@ -102,7 +106,7 @@ cbt_integration = None
 enhanced_rag_retriever = None
 intelligent_fusion_system = None
 
-# Unified Conversation Store
+# Unified Conversation Store with session persistence
 class ConversationStore:
     """Unified conversation management for all system components"""
     
@@ -111,14 +115,20 @@ class ConversationStore:
         self.session_data = {}
         self.user_preferences = {}
         self.emotional_trajectory = []
+        self.summary_memory: Dict[str, str] = {}
+        self.lock = RLock()
         
-    def add_interaction(self, user_message: str, assistant_message: str, metadata: dict = None):
+    def add_interaction(self, user_message: str, assistant_message: str, metadata: dict = None, session_id: Optional[str] = None):
         """Add interaction to memory and update session data"""
-        self.memory.chat_memory.add_user_message(user_message)
-        self.memory.chat_memory.add_ai_message(assistant_message)
-        
-        if metadata:
-            self.session_data[time.time()] = metadata
+        with self.lock:
+            self.memory.chat_memory.add_user_message(user_message)
+            self.memory.chat_memory.add_ai_message(assistant_message)
+            if metadata:
+                # persist by session
+                if session_id:
+                    self.session_data.setdefault(session_id, {})[time.time()] = metadata
+                else:
+                    self.session_data[time.time()] = metadata
             
     def get_conversation_history(self) -> str:
         """Get formatted conversation history"""
@@ -146,19 +156,33 @@ class ConversationStore:
                 
         return recent
         
-    def reset_conversation(self):
+    def reset_conversation(self, session_id: Optional[str] = None):
         """Reset conversation memory"""
-        self.memory = ConversationBufferMemory(return_messages=True)
-        self.session_data = {}
-        self.emotional_trajectory = []
+        with self.lock:
+            self.memory = ConversationBufferMemory(return_messages=True)
+            if session_id and session_id in self.session_data:
+                del self.session_data[session_id]
+            else:
+                self.session_data = {}
+            self.emotional_trajectory = []
         
-    def update_emotional_state(self, emotion: str, confidence: float):
+    def update_emotional_state(self, emotion: str, confidence: float, session_id: Optional[str] = None):
         """Track emotional trajectory"""
-        self.emotional_trajectory.append({
-            'emotion': emotion,
-            'confidence': confidence,
-            'timestamp': time.time()
-        })
+        with self.lock:
+            record = {
+                'emotion': emotion,
+                'confidence': confidence,
+                'timestamp': time.time(),
+                'session_id': session_id
+            }
+            self.emotional_trajectory.append(record)
+
+    def get_session_summary(self, session_id: str) -> str:
+        return self.summary_memory.get(session_id, "")
+
+    def update_session_summary(self, session_id: str, new_summary: str):
+        with self.lock:
+            self.summary_memory[session_id] = new_summary
         
     def get_emotional_trend(self) -> str:
         """Get emotional trend analysis"""
@@ -177,6 +201,78 @@ class ConversationStore:
 
 # Initialize unified conversation store
 conversation_store = ConversationStore()
+
+# Simple SQLite-based session persistence for summaries and metadata
+DB_PATH = os.getenv("SESSION_DB_PATH", "sessions.db")
+
+def init_session_db():
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cur = conn.cursor()
+        cur.execute(
+            """
+            CREATE TABLE IF NOT EXISTS session_summary (
+                session_id TEXT PRIMARY KEY,
+                summary TEXT,
+                updated_at REAL
+            );
+            """
+        )
+        cur.execute(
+            """
+            CREATE TABLE IF NOT EXISTS session_metrics (
+                session_id TEXT,
+                ts REAL,
+                weekly_goal TEXT,
+                feasibility REAL,
+                anxiety_level REAL
+            );
+            """
+        )
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        logger.warning(f"Failed to init session DB: {e}")
+
+def save_session_summary(session_id: str, summary: str):
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cur = conn.cursor()
+        cur.execute(
+            "REPLACE INTO session_summary(session_id, summary, updated_at) VALUES(?,?,?)",
+            (session_id, summary, time.time()),
+        )
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        logger.warning(f"Failed to save session summary: {e}")
+
+def load_session_summary(session_id: str) -> str:
+    try:
+        conn = sqlite3.connect(DB_PATH)
+        cur = conn.cursor()
+        cur.execute("SELECT summary FROM session_summary WHERE session_id=?", (session_id,))
+        row = cur.fetchone()
+        conn.close()
+        return row[0] if row else ""
+    except Exception as e:
+        logger.warning(f"Failed to load session summary: {e}")
+        return ""
+
+def append_session_metrics(session_id: str, weekly_goal: Optional[str], feasibility: Optional[float], anxiety_level: Optional[float]):
+    try:
+        if weekly_goal is None and feasibility is None and anxiety_level is None:
+            return
+        conn = sqlite3.connect(DB_PATH)
+        cur = conn.cursor()
+        cur.execute(
+            "INSERT INTO session_metrics(session_id, ts, weekly_goal, feasibility, anxiety_level) VALUES(?,?,?,?,?)",
+            (session_id, time.time(), weekly_goal, feasibility, anxiety_level),
+        )
+        conn.commit()
+        conn.close()
+    except Exception as e:
+        logger.warning(f"Failed to append session metrics: {e}")
 
 # OPRO Integration
 OPRO_PROMPT_PATH = "OPRO_Streamlined/prompts/optimized_prompt.txt"  
@@ -321,7 +417,11 @@ class Message(BaseModel):
 class RAGRequest(BaseModel):
     question: str
     type: str = "empathetic_professional"
-    history: Optional[List[Message]] = []
+    session_id: Optional[str] = None
+    history: Optional[List[Message]] = Field(default_factory=list)
+    weekly_goal: Optional[str] = None
+    feasibility: Optional[float] = None  # 0-10
+    anxiety_level: Optional[float] = None  # 0-10
 
 class RAGResponse(BaseModel):
     answer: str
@@ -332,9 +432,17 @@ class RAGResponse(BaseModel):
     prompt_source: str = "fallback"  # "opro" or "fallback"
     confidence: Optional[float] = None
     fusion_strategy: Optional[str] = None
-    source_breakdown: Optional[dict[str, float]] = None
+    source_breakdown: Optional[Dict[str, float]] = None
     follow_up_suggestions: Optional[List[str]] = None
     safety_notes: Optional[List[str]] = None
+    # conversation and intent metadata
+    session_id: Optional[str] = None
+    intent: Optional[str] = None
+    strategy: Optional[str] = None
+    tone_suggested: Optional[str] = None
+    weekly_goal: Optional[str] = None
+    feasibility: Optional[float] = None
+    anxiety_level: Optional[float] = None
 
 class FeedbackRequest(BaseModel):
     question: str
@@ -586,6 +694,7 @@ def load_psychologist_llm():
         )
         
         psychologist_llm = HuggingFacePipeline(pipeline=pipe)
+        globals()['psychologist_tokenizer'] = tok
         logger.info(f"Psychologist LLM loaded successfully on {DEVICE}")
         return psychologist_llm
     except Exception as e:
@@ -630,6 +739,7 @@ async def startup_event():
     if not initialize_rag_system():
         logger.error("Failed to initialize RAG system")
         sys.exit(1)
+    init_session_db()
 
 @app.get("/health", response_model=HealthResponse)
 async def health_check():
@@ -1272,6 +1382,16 @@ def optimize_response_structure(answer: str, question: str) -> str:
     
     return answer
 
+def summarize_session_transcript(transcript: str) -> str:
+    """Heuristic short summary for session memory. Keep it model-agnostic."""
+    if not transcript:
+        return ""
+    # Keep first 600 chars, focus on problem/goal signals
+    text = transcript[-1200:]
+    # Simple compression: remove extra spaces
+    text = re.sub(r"\s+", " ", text).strip()
+    return text[:600]
+
 @app.post("/api/empathetic_professional", response_model=RAGResponse)
 async def empathetic_professional_endpoint(request_data: RAGRequest):
     start_time = time.time()
@@ -1328,8 +1448,10 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
             print(f"DETECTED EMOTION: {emotion}")
             print("="*80)
         
-        # Step 3: Get conversation history
+        # Step 3: Get conversation history and session summary
         history = get_conversation_history()
+        session_id = request_data.session_id or str(int(time.time() * 1000))
+        session_summary = load_session_summary(session_id)
         
         # Display conversation history for debugging
         if SHOW_PROMPT_DEBUG:
@@ -1480,6 +1602,17 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
         
         logger.info(f"Retrieved context length: {len(context)} characters")
 
+        # Step 4.5: Intent-aware strategy adjustment (work-stress specialization)
+        try:
+            work_stress_keywords = [
+                'job', 'deadline', 'workload', 'boss', 'manager', 'office', 'overtime', 'project',
+                'deliverables', 'sprint', 'jira', 'ticket', 'shift'
+            ]
+            if any(k in processed_question.lower() for k in work_stress_keywords):
+                response_strategy = 'work_stress_support'
+        except Exception:
+            pass
+
         # Step 5: Check if this is a definitional question and handle accordingly
         is_definitional = is_definitional_question(processed_question)
         
@@ -1524,7 +1657,8 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
         try:
             # Limit context and history to prevent template overflow
             limited_context = context[:1000] + "..." if len(context) > 1000 else context
-            limited_history = history[:500] + "..." if len(history) > 500 else history
+            combined_history = (session_summary + "\n\n" + history).strip() if session_summary else history
+            limited_history = combined_history[:500] + "..." if len(combined_history) > 500 else combined_history
             
             formatted_prompt = prompt.format(
                 context=limited_context,
@@ -1786,17 +1920,37 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                         'emotion': emotion,
                         'response_strategy': response_strategy,
                         'confidence': enhanced_metadata.get("confidence"),
-                        'fusion_strategy': enhanced_metadata.get("fusion_strategy")
-                    }
+                        'fusion_strategy': enhanced_metadata.get("fusion_strategy"),
+                        'weekly_goal': request_data.weekly_goal,
+                        'feasibility': request_data.feasibility,
+                        'anxiety_level': request_data.anxiety_level,
+                    },
+                    session_id=session_id
                 )
                 # Update emotional state tracking
                 if emotion:
-                    conversation_store.update_emotional_state(emotion, 0.8)  # Default confidence
+                    conversation_store.update_emotional_state(emotion, 0.8, session_id=session_id)  # Default confidence
             except Exception as e:
                 logger.error(f"Error updating conversation memory: {e}")
+
+            # Step 8.1: Periodic summary memory update (every N interactions)
+            try:
+                N = int(os.getenv("SUMMARY_EVERY_N", "3"))
+                # Count per-session records
+                interactions = conversation_store.session_data.get(session_id, {})
+                if isinstance(interactions, dict) and len(interactions) % N == 0:
+                    transcript = conversation_store.get_conversation_history()
+                    summary = summarize_session_transcript(transcript)
+                    if summary:
+                        conversation_store.update_session_summary(session_id, summary)
+                        save_session_summary(session_id, summary)
+                        logger.info("Session summary updated")
+            except Exception as e:
+                logger.warning(f"Summary update failed: {e}")
             
             # Step 9: Save interaction for OPRO optimization
             save_interaction(processed_question, answer.strip(), "empathetic_professional")
+            append_session_metrics(session_id, request_data.weekly_goal, request_data.feasibility, request_data.anxiety_level)
             
             response_time = time.time() - start_time
             logger.info(f"Response generated in {response_time:.2f} seconds")
@@ -1820,7 +1974,14 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                 fusion_strategy=enhanced_metadata.get("fusion_strategy"),
                 source_breakdown=enhanced_metadata.get("source_breakdown"),
                 follow_up_suggestions=enhanced_metadata.get("follow_up_suggestions"),
-                safety_notes=enhanced_metadata.get("safety_notes")
+                safety_notes=enhanced_metadata.get("safety_notes"),
+                session_id=session_id,
+                intent=conversation_analysis.get("response_strategy"),
+                strategy=response_strategy,
+                tone_suggested=request_data.type,
+                weekly_goal=request_data.weekly_goal,
+                feasibility=request_data.feasibility,
+                anxiety_level=request_data.anxiety_level,
             )
             
         except Exception as e:
