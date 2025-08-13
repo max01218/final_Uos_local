@@ -304,5 +304,59 @@
     "user_feedback": null,
     "context_length": 191,
     "response_time": 1754944123.0344217
+  },
+  {
+    "timestamp": "2025-08-12T22:22:15.158174",
+    "question": "I haven't been sleeping well lately",
+    "answer": "I'm really sorry to hear that you've been struggling with your sleep. Not being able to get enough rest can definitely make everything feel even harder than it already is. Let's try some strategies to see if we can improve things a bit. First up, let's practice some.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 267,
+    "response_time": 1755033735.1581743
+  },
+  {
+    "timestamp": "2025-08-12T22:22:45.145543",
+    "question": "what's the strategies",
+    "answer": "Thank you for reaching out and sharing your concerns. Its really important to take care of yourself during these times. Lets focus on some strategies that might help you feel more grounded and calm. Firstly, try incorporating mindfulness meditation into your routine. Even just five minutes each day.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 300,
+    "response_time": 1755033765.1455436
+  },
+  {
+    "timestamp": "2025-08-12T22:44:36.735913",
+    "question": "I’ve tried meditating before, but my mind keeps wandering and I can’t relax. Is there another way I could calm down before bed?",
+    "answer": "it sounds like a really tough challenge right now. Its completely normal for our minds to wander during meditation, especially when trying something new. Lets explore some other calming techniques that might work better for you tonight. One great option is to.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 260,
+    "response_time": 1755035076.7359133
+  },
+  {
+    "timestamp": "2025-08-12T22:45:03.100145",
+    "question": "ChatGPT 說：\nCould you tell me more about that option? I’m open to trying something different tonight.",
+    "answer": "it sounds like you're looking for new ways to manage your evening. Lets try a few techniques together that might help you feel more grounded and calm: 1. **Mindfulness Meditation**: Spend just five minutes focusing on your breath. Notice each inhale and exh.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 258,
+    "response_time": 1755035103.100145
+  },
+  {
+    "timestamp": "2025-08-12T22:45:29.140931",
+    "question": "ChatGPT 說：\nI think I can try that, but I’m worried I’ll lose focus again. What should I do if my mind starts to wander?",
+    "answer": "Here are some suggestions: 1) Its completely normal, especially when trying something new like mindfulness. 2) Firstly.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 119,
+    "response_time": 1755035129.1409311
+  },
+  {
+    "timestamp": "2025-08-12T22:49:19.214314",
+    "question": "ChatGPT 說：\nCan you walk me through it step-by-step so I can follow along tonight?",
+    "answer": "I'm really sorry to hear that you're feeling overwhelmed right now. It's completely understandable to want to break things down into manageable steps when dealing with something as complex as managing your mental health. Tonight, lets focus on some simple yet effective strategies that can help you feel grounded.",
+    "tone": "empathetic_professional",
+    "user_feedback": null,
+    "context_length": 313,
+    "response_time": 1755035359.2143145
   }
 ]

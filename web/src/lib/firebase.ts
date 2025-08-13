@@ -301,8 +301,7 @@ export const saveConversation = async (userId: string, conversation: Conversatio
       userId,
       createdAt: serverTimestamp(),
       updatedAt: serverTimestamp(),
-      tone: conversation.tone || 'professional',
-      isArchived: conversation.isArchived || false
+      tone: conversation.tone || 'professional'
     };
     
 
@@ -523,19 +522,6 @@ export const searchConversations = async (userId: string, searchTerm: string): P
   }
 };
 
-export const archiveConversation = async (conversationId: string, isArchived: boolean = true) => {
-  try {
-    const conversationRef = doc(db, 'conversations', conversationId);
-    await updateDoc(conversationRef, {
-      isArchived,
-      updatedAt: serverTimestamp()
-    });
-  } catch (error) {
-    console.error('Error archiving conversation:', error);
-    throw new Error('Failed to archive conversation');
-  }
-};
-
 export const getConversationStats = async (userId: string) => {
   try {
     const conversationsRef = collection(db, 'conversations');
@@ -544,17 +530,12 @@ export const getConversationStats = async (userId: string) => {
     
     let totalConversations = 0;
     let totalMessages = 0;
-    let archivedConversations = 0;
     const toneStats: Record<string, number> = {};
 
     querySnapshot.forEach((doc) => {
       const data = doc.data();
       totalConversations++;
       totalMessages += data.messages?.length || 0;
-      
-      if (data.isArchived) {
-        archivedConversations++;
-      }
 
       const tone = data.tone || 'professional';
       toneStats[tone] = (toneStats[tone] || 0) + 1;
@@ -563,8 +544,6 @@ export const getConversationStats = async (userId: string) => {
     return {
       totalConversations,
       totalMessages,
-      archivedConversations,
-      activeConversations: totalConversations - archivedConversations,
       toneStats
     };
   } catch (error) {

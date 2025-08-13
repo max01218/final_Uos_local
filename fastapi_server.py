@@ -12,6 +12,22 @@ from typing import List, Optional, Dict, Tuple
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
+from app.schemas.chat import (
+    Message,
+    RAGRequest,
+    RAGResponse,
+    FeedbackRequest,
+    HealthResponse,
+    CBTRequest,
+    CBTResponse,
+)
+from app.services.memory_service import ConversationStore, summarize_session_transcript
+from app.repositories.session_repo import (
+    init_session_db,
+    save_session_summary,
+    load_session_summary,
+    append_session_metrics,
+)
 import logging
 import uvicorn
 import time
@@ -107,172 +123,11 @@ enhanced_rag_retriever = None
 intelligent_fusion_system = None
 
 # Unified Conversation Store with session persistence
-class ConversationStore:
-    """Unified conversation management for all system components"""
-    
-    def __init__(self):
-        self.memory = ConversationBufferMemory(return_messages=True)
-        self.session_data = {}
-        self.user_preferences = {}
-        self.emotional_trajectory = []
-        self.summary_memory: Dict[str, str] = {}
-        self.lock = RLock()
-        
-    def add_interaction(self, user_message: str, assistant_message: str, metadata: dict = None, session_id: Optional[str] = None):
-        """Add interaction to memory and update session data"""
-        with self.lock:
-            self.memory.chat_memory.add_user_message(user_message)
-            self.memory.chat_memory.add_ai_message(assistant_message)
-            if metadata:
-                # persist by session
-                if session_id:
-                    self.session_data.setdefault(session_id, {})[time.time()] = metadata
-                else:
-                    self.session_data[time.time()] = metadata
-            
-    def get_conversation_history(self) -> str:
-        """Get formatted conversation history"""
-        messages = self.memory.chat_memory.messages
-        if not messages:
-            return ""
-            
-        history = []
-        for i in range(0, len(messages), 2):
-            if i + 1 < len(messages):
-                history.append(f"User: {messages[i].content}")
-                history.append(f"Assistant: {messages[i+1].content}")
-                
-        return "\n".join(history[-10:])  # Last 10 exchanges
-        
-    def get_recent_messages(self, count: int = 5) -> List[dict]:
-        """Get recent messages in dict format"""
-        messages = self.memory.chat_memory.messages
-        recent = []
-        
-        for i in range(max(0, len(messages) - count * 2), len(messages), 2):
-            if i + 1 < len(messages):
-                recent.append({"role": "user", "content": messages[i].content})
-                recent.append({"role": "assistant", "content": messages[i+1].content})
-                
-        return recent
-        
-    def reset_conversation(self, session_id: Optional[str] = None):
-        """Reset conversation memory"""
-        with self.lock:
-            self.memory = ConversationBufferMemory(return_messages=True)
-            if session_id and session_id in self.session_data:
-                del self.session_data[session_id]
-            else:
-                self.session_data = {}
-            self.emotional_trajectory = []
-        
-    def update_emotional_state(self, emotion: str, confidence: float, session_id: Optional[str] = None):
-        """Track emotional trajectory"""
-        with self.lock:
-            record = {
-                'emotion': emotion,
-                'confidence': confidence,
-                'timestamp': time.time(),
-                'session_id': session_id
-            }
-            self.emotional_trajectory.append(record)
-
-    def get_session_summary(self, session_id: str) -> str:
-        return self.summary_memory.get(session_id, "")
-
-    def update_session_summary(self, session_id: str, new_summary: str):
-        with self.lock:
-            self.summary_memory[session_id] = new_summary
-        
-    def get_emotional_trend(self) -> str:
-        """Get emotional trend analysis"""
-        if len(self.emotional_trajectory) < 2:
-            return "insufficient_data"
-            
-        recent = self.emotional_trajectory[-3:]  # Last 3 emotions
-        emotions = [e['emotion'] for e in recent]
-        
-        if all(e == 'positive' for e in emotions):
-            return "improving"
-        elif all(e == 'negative' for e in emotions):
-            return "declining"
-        else:
-            return "mixed"
 
 # Initialize unified conversation store
 conversation_store = ConversationStore()
 
-# Simple SQLite-based session persistence for summaries and metadata
-DB_PATH = os.getenv("SESSION_DB_PATH", "sessions.db")
-
-def init_session_db():
-    try:
-        conn = sqlite3.connect(DB_PATH)
-        cur = conn.cursor()
-        cur.execute(
-            """
-            CREATE TABLE IF NOT EXISTS session_summary (
-                session_id TEXT PRIMARY KEY,
-                summary TEXT,
-                updated_at REAL
-            );
-            """
-        )
-        cur.execute(
-            """
-            CREATE TABLE IF NOT EXISTS session_metrics (
-                session_id TEXT,
-                ts REAL,
-                weekly_goal TEXT,
-                feasibility REAL,
-                anxiety_level REAL
-            );
-            """
-        )
-        conn.commit()
-        conn.close()
-    except Exception as e:
-        logger.warning(f"Failed to init session DB: {e}")
-
-def save_session_summary(session_id: str, summary: str):
-    try:
-        conn = sqlite3.connect(DB_PATH)
-        cur = conn.cursor()
-        cur.execute(
-            "REPLACE INTO session_summary(session_id, summary, updated_at) VALUES(?,?,?)",
-            (session_id, summary, time.time()),
-        )
-        conn.commit()
-        conn.close()
-    except Exception as e:
-        logger.warning(f"Failed to save session summary: {e}")
-
-def load_session_summary(session_id: str) -> str:
-    try:
-        conn = sqlite3.connect(DB_PATH)
-        cur = conn.cursor()
-        cur.execute("SELECT summary FROM session_summary WHERE session_id=?", (session_id,))
-        row = cur.fetchone()
-        conn.close()
-        return row[0] if row else ""
-    except Exception as e:
-        logger.warning(f"Failed to load session summary: {e}")
-        return ""
-
-def append_session_metrics(session_id: str, weekly_goal: Optional[str], feasibility: Optional[float], anxiety_level: Optional[float]):
-    try:
-        if weekly_goal is None and feasibility is None and anxiety_level is None:
-            return
-        conn = sqlite3.connect(DB_PATH)
-        cur = conn.cursor()
-        cur.execute(
-            "INSERT INTO session_metrics(session_id, ts, weekly_goal, feasibility, anxiety_level) VALUES(?,?,?,?,?)",
-            (session_id, time.time(), weekly_goal, feasibility, anxiety_level),
-        )
-        conn.commit()
-        conn.close()
-    except Exception as e:
-        logger.warning(f"Failed to append session metrics: {e}")
+    
 
 # OPRO Integration
 OPRO_PROMPT_PATH = "OPRO_Streamlined/prompts/optimized_prompt.txt"  
@@ -500,8 +355,7 @@ def load_emotion_classifier():
             "text-classification",
             model="j-hartmann/emotion-english-distilroberta-base",
             device=DEVICE,
-            torch_dtype=torch.float32,
-            use_safetensors=True
+            torch_dtype=torch.float32
         )
         logger.info("Emotion classifier loaded successfully")
         return classifier
@@ -515,8 +369,7 @@ def load_emotion_classifier():
                 "text-classification",
                 model="cardiffnlp/twitter-roberta-base-emotion",
                 device=DEVICE,
-                torch_dtype=torch.float32,
-                use_safetensors=True
+                torch_dtype=torch.float32
             )
             logger.info("Fallback emotion classifier loaded successfully")
             return classifier
@@ -662,29 +515,32 @@ def load_psychologist_llm():
     """Load the psychologist LLM for empathetic professional responses"""
     logger.info(f"Loading Psychologist LLM on {DEVICE}...")
     try:
+        model_id = os.getenv("LLM_MODEL_ID", "Qwen/Qwen2.5-3B-Instruct")
         tok = AutoTokenizer.from_pretrained(
-            "meta-llama/Meta-Llama-3-8B-Instruct",
+            model_id,
             trust_remote_code=True,
             padding_side="left"
         )
         
         model = AutoModelForCausalLM.from_pretrained(
-            "meta-llama/Meta-Llama-3-8B-Instruct",
+            model_id,
             trust_remote_code=True,
             device_map=DEVICE,
             torch_dtype=torch.float16 if DEVICE == "cuda" else torch.float32,
             low_cpu_mem_usage=True
         )
         
-        # Get temperature from environment or use default
-        temperature = float(os.getenv("LLM_TEMPERATURE", "0.7"))
+        # Get decoding parameters from environment
+        max_new_tokens = int(os.getenv("LLM_MAX_NEW_TOKENS", "64"))
+        temperature = float(os.getenv("LLM_TEMPERATURE", "0.4"))
+        do_sample = os.getenv("LLM_DO_SAMPLE", "false").lower() == "true"
         
         pipe = pipeline(
             "text-generation",
             model=model,
             tokenizer=tok,
-            max_new_tokens=256,
-            do_sample=True,
+            max_new_tokens=max_new_tokens,
+            do_sample=do_sample,
             temperature=temperature,
             top_p=0.9,
             repetition_penalty=1.1,
@@ -1181,7 +1037,7 @@ def post_process_response(answer: str, question: str = "") -> str:
         # Remove specific problematic patterns from the output
         r'EMPATHIC Connection:.*?(?=\n|$)',  # Remove "EMPATHIC Connection:" lines
         r'EMPHATIC Connection:.*?(?=\n|$)',  # Remove "EMPHATIC Connection:" lines  
-        r'EVIDENCE-BASED支持:.*?(?=\n|$)',  # Remove "EVIDENCE-BASED支持:" lines
+        r'EVIDENCE-BASED support:.*?(?=\n|$)',  # Remove EVIDENCE-BASED support lines
         r'SAFETY Awareness:.*?(?=\n|$)',  # Remove "SAFETY Awareness:" lines
         r'PROFESSIONAL Boundaries:.*?(?=\n|$)',  # Remove "PROFESSIONAL Boundaries:" lines
         r'Please provide your feedback.*?(?=\n|$)',  # Remove feedback requests
@@ -1596,9 +1452,9 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
                 print(doc.page_content[:200] + "..." if len(doc.page_content) > 200 else doc.page_content)
             print("="*80)
         
-        # Limit context length for faster processing
-        if len(context) > 2000:
-            context = context[:2000] + "..."
+        # Limit context length for faster processing (tighter for latency)
+        if len(context) > 800:
+            context = context[:800] + "..."
         
         logger.info(f"Retrieved context length: {len(context)} characters")
 
@@ -1655,10 +1511,10 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
         
         # Step 1: Always replace variables in prompt first
         try:
-            # Limit context and history to prevent template overflow
-            limited_context = context[:1000] + "..." if len(context) > 1000 else context
+            # Limit context and history to prevent template overflow (tighter for latency)
+            limited_context = context[:800] + "..." if len(context) > 800 else context
             combined_history = (session_summary + "\n\n" + history).strip() if session_summary else history
-            limited_history = combined_history[:500] + "..." if len(combined_history) > 500 else combined_history
+            limited_history = combined_history[:300] + "..." if len(combined_history) > 300 else combined_history
             
             formatted_prompt = prompt.format(
                 context=limited_context,
@@ -1707,13 +1563,21 @@ async def empathetic_professional_endpoint(request_data: RAGRequest):
             # Reset LLM generation parameters - optimize for detailed, helpful responses
             pipe = psychologist_llm.pipeline
             # Reduce generation length to lower latency
-            default_max_new_tokens = os.getenv("LLM_MAX_NEW_TOKENS", "160")
+            default_max_new_tokens = os.getenv("LLM_MAX_NEW_TOKENS", "64")
             pipe.model.config.max_new_tokens = int(default_max_new_tokens)
-            pipe.model.config.temperature = float(os.getenv("LLM_TEMPERATURE", "0.7"))  # Use unified temperature
+            pipe.model.config.temperature = float(os.getenv("LLM_TEMPERATURE", "0.4"))
             pipe.model.config.top_p = 0.9
 
-            # Add timeout to avoid hanging requests returning 500
-            llm_timeout_seconds = float(os.getenv("LLM_TIMEOUT_SECONDS", "25"))
+            # Add timeout to avoid hanging requests returning 500 (tighter default)
+            llm_timeout_seconds = float(os.getenv("LLM_TIMEOUT_SECONDS", "22"))
+
+            # Optional hard wall for generation time inside HF generate
+            try:
+                max_time_sec = float(os.getenv("LLM_MAX_TIME_SECONDS", str(max(1.0, llm_timeout_seconds - 2))))
+                if hasattr(pipe.model, "generation_config"):
+                    pipe.model.generation_config.max_time = max_time_sec
+            except Exception:
+                pass
 
             async def _invoke_llm() -> str:
                 loop = asyncio.get_event_loop()

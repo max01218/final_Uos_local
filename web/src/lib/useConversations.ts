@@ -7,7 +7,6 @@ import {
   deleteConversation,
   getUserConversationsPaginated,
   searchConversations,
-  archiveConversation,
   getConversationStats,
   addMessageToConversation
 } from './firebase';
@@ -16,8 +15,6 @@ import { Conversation, Message, ToneType } from '@/types';
 interface ConversationStats {
   totalConversations: number;
   totalMessages: number;
-  archivedConversations: number;
-  activeConversations: number;
   toneStats: Record<string, number>;
 }
 
@@ -40,7 +37,6 @@ interface UseConversationsReturn {
   loadConversations: (pageSize?: number) => Promise<void>;
   loadMoreConversations: () => Promise<void>;
   searchConversationsByTerm: (searchTerm: string) => Promise<void>;
-  archiveConversationById: (conversationId: string, isArchived?: boolean) => Promise<void>;
   loadConversationStats: () => Promise<void>;
   
   // State management
@@ -215,22 +211,6 @@ export const useConversations = (): UseConversationsReturn => {
     }
   }, [user, loadConversations]);
 
-  const archiveConversationById = useCallback(async (conversationId: string, isArchived: boolean = true): Promise<void> => {
-    if (!user) throw new Error('User not authenticated');
-
-    try {
-      await archiveConversation(conversationId, isArchived);
-      
-      setConversations(prev => 
-        prev.map(c => c.id === conversationId ? { ...c, isArchived, updatedAt: new Date() } : c)
-      );
-    } catch (err) {
-      const errorMessage = err instanceof Error ? err.message : 'Failed to archive conversation';
-      setError(errorMessage);
-      throw err;
-    }
-  }, [user]);
-
   const loadConversationStats = useCallback(async (): Promise<void> => {
     if (!user) return;
 
@@ -269,7 +249,6 @@ export const useConversations = (): UseConversationsReturn => {
     loadConversations,
     loadMoreConversations,
     searchConversationsByTerm,
-    archiveConversationById,
     loadConversationStats,
     
     // State management

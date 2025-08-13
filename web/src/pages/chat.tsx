@@ -159,7 +159,6 @@ function ChatPageContent() {
         body: JSON.stringify({
           question: message,
           type: currentTone,
-          tone: currentTone,
           history: filteredHistory,
           metadata: {
             userAgent: navigator.userAgent,

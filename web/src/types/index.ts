@@ -33,7 +33,6 @@ export interface Conversation {
   tone: ToneType;
   metadata?: ConversationMetadata;
   userId?: string; // Add user association
-  isArchived?: boolean; // Add archive status
 }
 
 export interface ConversationMetadata {
@@ -182,7 +181,6 @@ export interface ApiResponse<T = any> {
 export interface ChatApiRequest {
   question: string;
   type: ToneType;
-  tone: ToneType;
   history: Message[];
   metadata?: {
     userAgent?: string;

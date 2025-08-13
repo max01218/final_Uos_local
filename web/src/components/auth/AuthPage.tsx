@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import LoginForm from './LoginForm';
 import RegisterForm from './RegisterForm';
@@ -19,8 +19,14 @@ const AuthPage: React.FC<AuthPageProps> = ({
   const [mode, setMode] = useState<'login' | 'register'>(defaultMode);
   const router = useRouter();
 
+  useEffect(() => {
+    // Prefetch target route to avoid fetch abort on immediate navigation
+    router.prefetch(redirectTo).catch(() => {});
+  }, [router, redirectTo]);
+
   const handleSuccess = () => {
-    router.push(redirectTo);
+    // Use replace to reduce history churn; ignore abort errors
+    Promise.resolve().then(() => router.replace(redirectTo)).catch(() => {});
   };
 
   const switchToLogin = () => setMode('login');

@@ -11,7 +11,6 @@ import {
   Calendar, 
   Clock, 
   Trash2, 
-  Archive, 
   Edit3,
   MoreHorizontal,
   ChevronDown,
@@ -33,7 +32,6 @@ const ConversationHistory: React.FC<ConversationHistoryProps> = () => {
     loadMoreConversations,
     loadConversations,
     deleteConversationById,
-    archiveConversationById,
     updateConversationTitle,
     clearError
   } = useConversations();
@@ -41,7 +39,6 @@ const ConversationHistory: React.FC<ConversationHistoryProps> = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [editingTitle, setEditingTitle] = useState<string | null>(null);
   const [newTitle, setNewTitle] = useState('');
-  const [showArchived, setShowArchived] = useState(false);
   const [filterTone, setFilterTone] = useState<string>('all');
 
   // Redirect if not authenticated
@@ -80,14 +77,6 @@ const ConversationHistory: React.FC<ConversationHistoryProps> = () => {
       } catch (err) {
         console.error('Failed to delete conversation:', err);
       }
-    }
-  };
-
-  const handleArchiveConversation = async (conversationId: string, isArchived: boolean) => {
-    try {
-      await archiveConversationById(conversationId, isArchived);
-    } catch (err) {
-      console.error('Failed to archive conversation:', err);
     }
   };
 
@@ -132,9 +121,6 @@ const ConversationHistory: React.FC<ConversationHistoryProps> = () => {
 
   const filteredConversations = conversations.filter(conversation => {
     if (filterTone !== 'all' && conversation.tone !== filterTone) {
-      return false;
-    }
-    if (!showArchived && conversation.isArchived) {
       return false;
     }
     return true;
@@ -186,7 +172,7 @@ const ConversationHistory: React.FC<ConversationHistoryProps> = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Stats Cards */}
         {stats && (
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             <div className="bg-white rounded-lg shadow p-6">
               <div className="flex items-center">
                 <MessageSquare className="h-8 w-8 text-blue-500" />
@@ -202,24 +188,6 @@ const ConversationHistory: React.FC<ConversationHistoryProps> = () => {
                 <div className="ml-4">
                   <p className="text-sm font-medium text-gray-600">Total Messages</p>
                   <p className="text-2xl font-bold text-gray-900">{stats.totalMessages}</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow p-6">
-              <div className="flex items-center">
-                <Archive className="h-8 w-8 text-yellow-500" />
-                <div className="ml-4">
-                  <p className="text-sm font-medium text-gray-600">Active Conversations</p>
-                  <p className="text-2xl font-bold text-gray-900">{stats.activeConversations}</p>
-                </div>
-              </div>
-            </div>
-            <div className="bg-white rounded-lg shadow p-6">
-              <div className="flex items-center">
-                <Clock className="h-8 w-8 text-purple-500" />
-                <div className="ml-4">
-                  <p className="text-sm font-medium text-gray-600">Archived</p>
-                  <p className="text-2xl font-bold text-gray-900">{stats.archivedConversations}</p>
                 </div>
               </div>
             </div>
@@ -253,13 +221,6 @@ const ConversationHistory: React.FC<ConversationHistoryProps> = () => {
                   <option value="caring">Caring</option>
                   <option value="empathetic_professional">Balanced</option>
                 </select>
-                <Button
-                  variant={showArchived ? "primary" : "secondary"}
-                  size="sm"
-                  onClick={() => setShowArchived(!showArchived)}
-                >
-                  {showArchived ? 'Hide Archived' : 'Show Archived'}
-                </Button>
               </div>
             </div>
           </div>
@@ -334,11 +295,6 @@ const ConversationHistory: React.FC<ConversationHistoryProps> = () => {
                             {conversation.title}
                           </h3>
                         )}
-                        {conversation.isArchived && (
-                          <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-yellow-100 text-yellow-800">
-                            Archived
-                          </span>
-                        )}
                         <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-100 text-blue-800">
                           {getToneLabel(conversation.tone)}
                         </span>
@@ -398,14 +354,6 @@ const ConversationHistory: React.FC<ConversationHistoryProps> = () => {
                     >
                       <Edit3 className="h-4 w-4 mr-1" />
                       Edit Title
-                    </Button>
-                    <Button
-                      variant="ghost"
-                      size="sm"
-                      onClick={() => handleArchiveConversation(conversation.id, !conversation.isArchived)}
-                    >
-                      <Archive className="h-4 w-4 mr-1" />
-                      {conversation.isArchived ? 'Unarchive' : 'Archive'}
                     </Button>
                     <Button
                       variant="ghost"

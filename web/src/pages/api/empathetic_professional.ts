@@ -3,7 +3,8 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 // Prefer IPv4 loopback to avoid potential IPv6 (::1) resolution issues on Windows
 const RAW_API_BASE_URL = process.env.API_BASE_URL || 'http://127.0.0.1:8000'
 const API_BASE_URL = RAW_API_BASE_URL.replace('localhost', '127.0.0.1')
-const API_TIMEOUT_MS = Number(process.env.API_TIMEOUT_MS || 60000)
+const DEFAULT_TIMEOUT_MS = Number(process.env.API_TIMEOUT_MS || 65000)
+const USE_FASTAPI_V2 = (process.env.USE_FASTAPI_V2 || 'true').toLowerCase() === 'true'
 
 export default async function handler(
   req: NextApiRequest,
@@ -14,7 +15,13 @@ export default async function handler(
   }
 
   try {
-    const { question, type, history } = req.body
+    const { question, type, history, session_id, weekly_goal, feasibility, anxiety_level } = req.body
+
+    // Optional timeout override via query
+    const timeoutOverride = req.query.timeoutMs ? Number(req.query.timeoutMs) : undefined
+    const API_TIMEOUT_MS = Number.isFinite(timeoutOverride as number) && (timeoutOverride as number) > 0
+      ? (timeoutOverride as number)
+      : DEFAULT_TIMEOUT_MS
 
     // Add input validation
     if (!question || typeof question !== 'string') {
@@ -24,7 +31,9 @@ export default async function handler(
     console.log('Next.js API (Empathetic Professional): Processing request:', { 
       question: question.substring(0, 50), 
       type, 
-      historyLength: history?.length || 0 
+      historyLength: history?.length || 0,
+      timeoutMs: API_TIMEOUT_MS,
+      v2: USE_FASTAPI_V2,
     })
 
     try {
@@ -34,7 +43,8 @@ export default async function handler(
       const controller = new AbortController()
       const timer = setTimeout(() => controller.abort(), API_TIMEOUT_MS)
 
-      const response = await fetch(`${API_BASE_URL}/api/empathetic_professional`, {
+      const path = USE_FASTAPI_V2 ? '/api/v2/empathetic_professional' : '/api/empathetic_professional'
+      const response = await fetch(`${API_BASE_URL}${path}`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -42,9 +52,14 @@ export default async function handler(
         body: JSON.stringify({ 
           question, 
           type: type || 'empathetic_professional', 
-          history: history || [] 
+          history: history || [],
+          session_id,
+          weekly_goal,
+          feasibility,
+          anxiety_level,
         }),
         signal: controller.signal,
+        cache: 'no-store',
       });
 
       clearTimeout(timer)

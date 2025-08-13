@@ -334,11 +334,12 @@ class EnhancedRAGRetriever:
             "context_weight": 0.2,
             "intent_boost": 0.15,
             "urgency_boost": 0.1,
-            "min_relevance_threshold": 0.3,
-            "max_results": 5,
-            "enable_query_expansion": True,
+            "min_relevance_threshold": 0.35,
+            "max_results": 2,
+            "enable_query_expansion": False,
             "enable_intent_filtering": True,
-            "enable_context_awareness": True
+            "enable_context_awareness": True,
+            "enable_diversity_filtering": False
         }
         
     def load_knowledge_bases(self, cbt_path: str = None, icd11_path: str = None):
