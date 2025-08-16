@@ -112,6 +112,7 @@ const convertFirebaseUserToAuthUser = (firebaseUser: FirebaseUser): AuthUser => 
     id: firebaseUser.uid,
     email: firebaseUser.email || '',
     name: firebaseUser.displayName || '',
+    // Optional demographic fields will be merged at registration time
     createdAt: firebaseUser.metadata.creationTime ? new Date(firebaseUser.metadata.creationTime) : new Date(),
     lastActive: new Date(),
     isVerified: firebaseUser.emailVerified,
@@ -152,6 +153,9 @@ export const getUserDocument = async (userId: string): Promise<AuthUser | null> 
         id: data.id,
         email: data.email,
         name: data.name,
+        gender: data.gender,
+        age: data.age,
+        occupation: data.occupation,
         createdAt: data.createdAt?.toDate() || new Date(),
         lastActive: data.lastActive?.toDate() || new Date(),
         isVerified: data.isVerified,
@@ -203,7 +207,15 @@ export const registerWithFirebase = async (credentials: RegisterCredentials): Pr
     const refreshToken = firebaseUser.refreshToken;
 
     // Convert to our AuthUser type
-    const authUser = convertFirebaseUserToAuthUser(firebaseUser);
+    // Base user from Firebase
+    const baseUser = convertFirebaseUserToAuthUser(firebaseUser);
+    // Enrich with registration demographics
+    const authUser: AuthUser = {
+      ...baseUser,
+      gender: credentials.gender,
+      age: credentials.age,
+      occupation: credentials.occupation,
+    };
 
     // Create user document in Firestore
     await createUserDocument(authUser);

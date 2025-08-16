@@ -92,6 +92,67 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
           )}
         </div>
 
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="space-y-2">
+            <label htmlFor="gender" className="block text-sm font-medium text-secondary-700">
+              Gender
+            </label>
+            <select
+              id="gender"
+              className="w-full border border-secondary-300 rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary-500"
+              {...register('gender', { required: 'Gender is required' })}
+            >
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+              <option value="prefer_not_to_say">Prefer not to say</option>
+            </select>
+            {errors.gender && (
+              <p className="text-sm text-error-600">{String(errors.gender.message || '')}</p>
+            )}
+          </div>
+
+          <div className="space-y-2">
+            <label htmlFor="age" className="block text-sm font-medium text-secondary-700">
+              Age
+            </label>
+            <Input
+              id="age"
+              type="number"
+              placeholder="Enter your age"
+              error={errors.age?.message as string}
+              {...register('age', {
+                required: 'Age is required',
+                valueAsNumber: true,
+                min: { value: 13, message: 'Minimum age is 13' },
+                max: { value: 120, message: 'Maximum age is 120' }
+              })}
+            />
+            {errors.age && (
+              <p className="text-sm text-error-600">{String(errors.age.message || '')}</p>
+            )}
+          </div>
+
+          <div className="space-y-2">
+            <label htmlFor="occupation" className="block text-sm font-medium text-secondary-700">
+              Occupation
+            </label>
+            <Input
+              id="occupation"
+              type="text"
+              placeholder="Your occupation"
+              error={errors.occupation?.message as string}
+              {...register('occupation', {
+                required: 'Occupation is required',
+                minLength: { value: 2, message: 'Too short' }
+              })}
+            />
+            {errors.occupation && (
+              <p className="text-sm text-error-600">{String(errors.occupation.message || '')}</p>
+            )}
+          </div>
+        </div>
+
         <div className="space-y-2">
           <label htmlFor="email" className="block text-sm font-medium text-secondary-700">
             Email Address
@@ -193,36 +254,7 @@ const RegisterForm: React.FC<RegisterFormProps> = ({
           )}
         </div>
 
-        <div className="space-y-2">
-          <label className="flex items-start">
-            <input
-              type="checkbox"
-              className="h-4 w-4 text-primary-600 focus:ring-primary-500 border-secondary-300 rounded mt-1"
-              {...register('agreeToTerms', {
-                required: 'You must agree to the terms and conditions'
-              })}
-            />
-            <span className="ml-2 text-sm text-secondary-600">
-              I agree to the{' '}
-              <button
-                type="button"
-                className="text-primary-600 hover:text-primary-500 font-medium"
-              >
-                Terms of Service
-              </button>{' '}
-              and{' '}
-              <button
-                type="button"
-                className="text-primary-600 hover:text-primary-500 font-medium"
-              >
-                Privacy Policy
-              </button>
-            </span>
-          </label>
-          {errors.agreeToTerms && (
-            <p className="text-sm text-error-600">{errors.agreeToTerms.message}</p>
-          )}
-        </div>
+        {/* Terms checkbox removed as requested */}
 
         <Button
           type="submit"

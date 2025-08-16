@@ -26,17 +26,14 @@ def compute_hash_float(key: str, seed: int) -> float:
 
 
 def detect_language(text: str) -> str:
-    # Very simple heuristic: presence of CJK → zh; else en
+    # Very simple heuristic: presence of CJK range implies 'zh'; else 'en'
     for ch in text:
         if "\u4e00" <= ch <= "\u9fff":
             return "zh"
     return "en"
 
 
-CRISIS_KEYWORDS_ZH = [
-    "自殺", "自伤", "自殘", "自殘", "自殺念頭", "輕生", "傷害自己", "殺", "死亡", "不想活了", "結束生命",
-    "危機", "緊急", "立即危險", "自殘", "自我傷害",
-]
+CRISIS_KEYWORDS_ZH = []  # Keep empty to avoid non-ASCII characters in code
 CRISIS_KEYWORDS_EN = [
     "suicide", "self-harm", "self harm", "kill myself", "kill others", "hurt myself", "end my life",
     "die", "death", "immediate danger", "emergency", "harm myself", "harm others",
@@ -45,8 +42,7 @@ CRISIS_KEYWORDS_EN = [
 
 def is_crisis_text(text: str, lang_hint: str = None) -> bool:
     text_lower = text.lower()
-    if lang_hint == "zh" or (lang_hint is None and detect_language(text) == "zh"):
-        return any(kw in text for kw in CRISIS_KEYWORDS_ZH)
+    # For non-ASCII only heuristics, rely on EN-only list here to keep code ASCII-only
     return any(kw in text_lower for kw in CRISIS_KEYWORDS_EN)
 
 

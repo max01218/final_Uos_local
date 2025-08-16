@@ -1,4 +1,5 @@
 import os
+import re
 import time
 import asyncio
 import logging
@@ -21,7 +22,7 @@ from app.utils.definitions import (
     load_definitional_prompt,
     get_medical_context_for_definition,
 )
-from app.utils.prompting import get_dynamic_prompt, get_step_by_step_prompt
+from app.utils.prompting import get_dynamic_prompt
 from app.utils.crisis_detection import (
     detect_crisis_keywords,
     generate_crisis_response,
@@ -69,12 +70,18 @@ class ChatService:
         if len(context) > 2000:
             context = context[:2000] + "..."
 
-        # Detect step-by-step intent keywords (English/Chinese)
+        # Detect step-by-step intent keywords (used for formatting and continuation hints)
         step_keywords = [
             "step-by-step", "walk me through", "step by step", "steps",
-            "Tonight", "Steps", "Teach me", "How to", "Show me how to"
+            "tonight", "teach me", "how to", "show me how to", "continue"
         ]
-        wants_steps = any(k in req.question.lower() for k in step_keywords)
+        lower_q = req.question.lower()
+        wants_steps = any(k in lower_q for k in step_keywords)
+
+        # Track technique continuity and greeting usage via session flags
+        greeted_once = self.cs.get_flag(session_id, "greeted_once", False)
+        last_technique = self.cs.get_flag(session_id, "last_technique", None)
+        technique_step_index = int(self.cs.get_flag(session_id, "technique_step_index", 0) or 0)
 
         is_def = is_definitional_question(req.question)
         if is_def:
@@ -83,11 +90,24 @@ class ChatService:
             if medical_context:
                 context = medical_context
         else:
-            # If user explicitly wants step-by-step, switch to step template
-            if wants_steps:
-                prompt = get_step_by_step_prompt()
-            else:
-                prompt = get_dynamic_prompt(req.type)
+            # Always use OPRO prompt, optionally append continuation context
+            prompt = get_dynamic_prompt(req.type)
+            if "continue" in lower_q and last_technique is not None:
+                prompt += f"\n\nTECHNIQUE CONTEXT:\n- technique={last_technique}\n- next_step_index={technique_step_index + 1}\n"
+
+        # Lightweight personalization: append user profile cues to the prompt if available
+        try:
+            if getattr(req, "user_profile", None):
+                prompt += (
+                    "\n\nPERSONALIZATION:\n"
+                    "- User name: {user_name}\n"
+                    "- Age: {user_age}\n"
+                    "- Gender: {user_gender}\n"
+                    "- Occupation: {user_occupation}\n"
+                    "- Guidance: Greet the user by their name once at the start (if provided), adapt tone and examples to their age/occupation, keep the reply concise and professional.\n"
+                )
+        except Exception:
+            pass
 
         combined_history = (session_summary + "\n\n" + history).strip() if session_summary else history
         limited_context = context[:1000] + "..." if len(context) > 1000 else context
@@ -101,6 +121,10 @@ class ChatService:
                 history=limited_history,
                 response_strategy=response_strategy,
                 tone=req.type,
+                user_name=(req.user_profile.name if req.user_profile else ""),
+                user_gender=(req.user_profile.gender if req.user_profile else ""),
+                user_age=(req.user_profile.age if req.user_profile else ""),
+                user_occupation=(req.user_profile.occupation if req.user_profile else ""),
             )
         except Exception:
             formatted_prompt = prompt
@@ -120,6 +144,37 @@ class ChatService:
             logger.exception("LLM inference failed")
             raise HTTPException(status_code=500, detail=f"LLM inference failed: {e}")
         answer = post_process_response(answer, req.question)
+
+        # Ensure greeting with user's name once, if provided. Then disable further automatic greetings.
+        try:
+            user_name = (
+                getattr(req.user_profile, "name", None)
+                if getattr(req, "user_profile", None)
+                else None
+            )
+            if isinstance(user_name, str):
+                clean_name = user_name.strip()
+            else:
+                clean_name = ""
+            if clean_name and not greeted_once:
+                head_window = answer[:120].lower()
+                if clean_name.lower() not in head_window:
+                    stripped = answer.lstrip()
+                    # If starts with a greeting, attach the name; else prepend a greeting
+                    if re.match(r"^(hi|hello|hey|dear)\b", stripped, flags=re.IGNORECASE):
+                        answer = re.sub(
+                            r"^(hi|hello|hey|dear)\b\s*",
+                            lambda m: f"{m.group(0).strip()} {clean_name}, ",
+                            stripped,
+                            count=1,
+                            flags=re.IGNORECASE,
+                        )
+                    else:
+                        answer = f"Hi {clean_name}, " + stripped
+                # mark greeted once to avoid repeating name in future turns
+                self.cs.set_flag(session_id, "greeted_once", True)
+        except Exception:
+            pass
 
         # Post-trim: enforce single follow-up question and concise length, avoid mid-sentence cuts
         try:
@@ -178,6 +233,25 @@ class ChatService:
                 },
                 session_id=session_id,
             )
+            # Infer the technique label from the answer heuristically and update flags
+            try:
+                a_low = answer.lower()
+                if any(k in a_low for k in ["inhale", "exhale", "breath", "breathing", "4 seconds", "6 seconds"]):
+                    current_technique = "breathing"
+                elif any(k in a_low for k in ["progressive muscle relaxation", "pmr", "clench", "relax"]):
+                    current_technique = "pmr"
+                elif any(k in a_low for k in ["grounding", "5 things you can see", "5-4-3-2-1", "notice three things"]):
+                    current_technique = "grounding"
+                else:
+                    current_technique = last_technique
+                if current_technique:
+                    if current_technique == last_technique:
+                        self.cs.set_flag(session_id, "technique_step_index", technique_step_index + 1)
+                    else:
+                        self.cs.set_flag(session_id, "technique_step_index", 0)
+                    self.cs.set_flag(session_id, "last_technique", current_technique)
+            except Exception:
+                pass
             if conversation_analysis.get("emotional_state"):
                 self.cs.update_emotional_state(conversation_analysis["emotional_state"], 0.8, session_id=session_id)
         except Exception as e:
@@ -203,6 +277,14 @@ class ChatService:
             "weekly_goal": req.weekly_goal,
             "feasibility": req.feasibility,
             "anxiety_level": req.anxiety_level,
+            "prompt_source": "opro+tone" if "STYLE GUIDANCE" in prompt else "fallback",
+            "loaded_prompt_path": os.environ.get("LOADED_PROMPT_PATH"),
+            "user_profile": {
+                "name": getattr(req.user_profile, "name", None) if req.user_profile else None,
+                "gender": getattr(req.user_profile, "gender", None) if req.user_profile else None,
+                "age": getattr(req.user_profile, "age", None) if req.user_profile else None,
+                "occupation": getattr(req.user_profile, "occupation", None) if req.user_profile else None,
+            },
         }
 
         return answer, meta

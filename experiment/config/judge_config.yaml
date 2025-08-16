@@ -1,0 +1,7 @@
+local_hf: true
+hf_model_id: "Qwen/Qwen2.5-3B-Instruct"  
+hf_max_new_tokens: 256
+local_hf: true
+ollama_cli_fallback: false
+base_url: ""
+progress_every: 5

@@ -93,7 +93,7 @@ def infer_one(provider: Dict[str, Any], model_name: str, system_prompt: str, use
         timeout_s = int(provider.get("request_timeout_s", 60))
         return request_openai_compatible(base_url, api_key, model_name, build_prompt(system_prompt, user_text), gen_cfg["max_tokens"], gen_cfg["temperature"], gen_cfg["top_p"], timeout_s)
     elif p_type == "ollama":
-        # 使用 Ollama 原生 CLI（優先 generate，再回退）
+        # Ollama native CLI (prefer generate, then fallback)
         import subprocess
         import json
 
@@ -132,12 +132,12 @@ def infer_one(provider: Dict[str, Any], model_name: str, system_prompt: str, use
             content = run_cmd(cmd).strip()
         except subprocess.CalledProcessError as e1:
             err1 = (e1.stderr or "").lower()
-            # 方案B：generate -m -p（去掉 --options）
+            # Plan B: generate -m -p (without --options)
             try:
                 content = run_cmd(["ollama", "generate", "-m", model_name, "-p", ollama_prompt]).strip()
             except subprocess.CalledProcessError as e2:
                 err2 = (e2.stderr or "").lower()
-                # 方案C：run <model> <prompt>（老版本允許將 prompt 作為參數）
+                # Plan C: run <model> <prompt> (older versions allow prompt as a parameter)
                 try:
                     content = run_cmd(["ollama", "run", model_name, ollama_prompt]).strip()
                 except subprocess.CalledProcessError as e3:
@@ -153,12 +153,12 @@ def infer_one(provider: Dict[str, Any], model_name: str, system_prompt: str, use
         return {"content": content, "usage": usage, "latency_ms": latency_ms}
             
     elif p_type == "dry_run":
-        # 不調用外部服務，生成佔位輸出，便於流水線測試
+        # Dry-run without external service; produce placeholder output for pipeline testing
         t0 = time.perf_counter()
         time.sleep(0.01)
         latency_ms = (time.perf_counter() - t0) * 1000.0
         approx_tokens = max(1, (len(system_prompt) + len(user_text)) // 4)
-        content = "[DRY_RUN] 此為佔位輸出；請配置 provider 後獲取真實模型結果。"
+        content = "[DRY_RUN] Placeholder output; configure provider to get real model results."
         usage = {"prompt_tokens": approx_tokens, "completion_tokens": 0, "total_tokens": approx_tokens}
         return {"content": content, "usage": usage, "latency_ms": latency_ms}
     else:
@@ -175,7 +175,7 @@ def main() -> None:
     plan = read_yaml(PLAN_PATH)
     prompts_cfg = plan["prompts"]
     inf_cfg = plan["inference"]
-    # 在未擴充 YAML 的情況下，允許透過環境變數配置；否則採用 dry_run
+    # Allow env-based provider when YAML lacks config; otherwise default to dry_run
     provider_cfg = inf_cfg.get("provider")
     if not provider_cfg:
         provider_cfg = {
@@ -220,8 +220,7 @@ def main() -> None:
     with out_jsonl.open("w", encoding="utf-8") as fo:
         for row in dataset:
             input_id = row["id"]
-            user_text = input_id  # Baseline: use file path as proxy input; real pipeline可替換為文件內容
-            # 若需要真實文本，可在這裡打開文件讀取
+            user_text = input_id  # Baseline: use file path as proxy input; replace with file content if needed
             fp = REPO_ROOT / input_id
             if fp.suffix.lower() == ".txt" and fp.exists():
                 user_text = fp.read_text(encoding="utf-8", errors="ignore")[:1000]

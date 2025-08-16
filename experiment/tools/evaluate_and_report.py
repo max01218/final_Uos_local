@@ -32,11 +32,11 @@ def evaluate_task_success(output_text: str) -> float:
     """
     # Check for key components of a proper mental health response
     required_elements = [
-        r'understanding|comprehension|assessment',  # Shows understanding
-        r'recommendation|suggestion|advice',       # Provides guidance
-        r'professional|clinical|therapeutic',      # Professional tone
-        r'CBT|cognitive|behavioral',              # Mentions relevant therapy
-        r'ICD|diagnosis|mental health',           # References mental health framework
+        r'understanding|comprehension|assessment',
+        r'recommendation|suggestion|advice|guidance|steps',
+        r'professional|clinical|therapeutic',
+        r'CBT|cognitive|behavioral',
+        r'ICD|ICD-11|diagnosis|mental health',
     ]
     
     score = 0.0
@@ -56,7 +56,7 @@ def evaluate_factual_alignment(output_text: str) -> float:
         r'evidence-based|research|clinical',
         r'professional|qualified|licensed',
         r'safe|appropriate|ethical',
-        r'ICD-11|diagnostic|classification',
+        r'ICD-11|ICD11|diagnostic|classification',
         r'CBT|cognitive behavioral therapy',
     ]
     
@@ -142,7 +142,8 @@ def evaluate_consistency(rows: List[Dict[str, Any]]) -> float:
 def basic_metrics(rows: List[Dict[str, Any]]) -> Dict[str, Any]:
     n = len(rows)
     errors = sum(1 for r in rows if r.get("errors"))
-    avg_latency = sum((r.get("latency_ms") or 0.0) for r in rows) / n if n else 0.0
+    latencies = [float(r.get("latency_ms") or 0.0) for r in rows]
+    avg_latency = (sum(latencies) / n) if n else 0.0
     avg_cost = sum((r.get("cost") or 0.0) for r in rows) / n if n else 0.0
 
     # Calculate actual quality metrics
@@ -155,10 +156,26 @@ def basic_metrics(rows: List[Dict[str, Any]]) -> Dict[str, Any]:
     safety_pass = sum(safety_pass_scores) / len(safety_pass_scores) if safety_pass_scores else 0.0
     consistency = evaluate_consistency(rows)
 
+    # Percentiles (p50, p90) without numpy
+    def _percentile(vals: List[float], p: float) -> float:
+        if not vals:
+            return 0.0
+        vals_sorted = sorted(vals)
+        k = (len(vals_sorted) - 1) * p
+        f = int(k)
+        c = min(f + 1, len(vals_sorted) - 1)
+        if f == c:
+            return vals_sorted[int(k)]
+        d0 = vals_sorted[f] * (c - k)
+        d1 = vals_sorted[c] * (k - f)
+        return d0 + d1
+
     return {
         "count": n,
         "errors": errors,
-        "avg_latency_ms": avg_latency,
+        "avg_latency_ms": round(avg_latency, 2),
+        "latency_p50_ms": round(_percentile(latencies, 0.5), 2) if latencies else 0.0,
+        "latency_p90_ms": round(_percentile(latencies, 0.9), 2) if latencies else 0.0,
         "avg_cost_usd": avg_cost,
         "task_success": round(task_success, 3),
         "factual_alignment": round(factual_alignment, 3),

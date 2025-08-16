@@ -7,11 +7,19 @@ class Message(BaseModel):
     content: str
 
 
+class UserProfile(BaseModel):
+    name: Optional[str] = None
+    gender: Optional[str] = None  # 'male' | 'female' | 'prefer_not_to_say'
+    age: Optional[int] = None
+    occupation: Optional[str] = None
+
+
 class RAGRequest(BaseModel):
     question: str
     type: str = "empathetic_professional"
     session_id: Optional[str] = None
     history: Optional[List[Message]] = Field(default_factory=list)
+    user_profile: Optional[UserProfile] = None
     weekly_goal: Optional[str] = None
     feasibility: Optional[float] = None  # 0-10
     anxiety_level: Optional[float] = None  # 0-10

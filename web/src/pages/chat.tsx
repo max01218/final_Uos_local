@@ -12,6 +12,7 @@ import HomeButton from '@/components/ui/HomeButton';
 import ProtectedRoute from '@/components/auth/ProtectedRoute';
 import UserMenu from '@/components/auth/UserMenu';
 import { useConversations } from '@/lib/useConversations';
+import { useAuth } from '@/lib/AuthContext';
 
 
 import { 
@@ -55,6 +56,7 @@ const TONE_CONFIGS: Record<ToneType, ToneConfig> = {
 function ChatPageContent() {
   const router = useRouter();
   const { type, conversation: conversationId } = router.query;
+  const { user } = useAuth();
   
   const [messages, setMessages] = useState<Message[]>([]);
   const [loading, setLoading] = useState(false);
@@ -160,6 +162,12 @@ function ChatPageContent() {
           question: message,
           type: currentTone,
           history: filteredHistory,
+          user_profile: user ? {
+            name: user.name,
+            gender: (user as any).gender,
+            age: (user as any).age,
+            occupation: (user as any).occupation,
+          } : undefined,
           metadata: {
             userAgent: navigator.userAgent,
             sessionId: generateId(),

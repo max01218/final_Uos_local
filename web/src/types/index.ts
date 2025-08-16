@@ -58,6 +58,9 @@ export interface AuthUser {
   id: string;
   email: string;
   name: string;
+  gender?: 'male' | 'female' | 'other' | 'prefer_not_to_say';
+  age?: number;
+  occupation?: string;
   createdAt: Date;
   lastActive: Date;
   isVerified: boolean;
@@ -72,6 +75,9 @@ export interface LoginCredentials {
 
 export interface RegisterCredentials {
   name: string;
+  gender: 'male' | 'female' | 'prefer_not_to_say';
+  age: number;
+  occupation: string;
   email: string;
   password: string;
   confirmPassword: string;

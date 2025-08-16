@@ -1,0 +1,84 @@
+{
+  "project_name": "icd11_prompt_comparison",
+  "version": "0.1.0",
+  "created_at": "2025-08-09T16:07:34Z",
+  "prompts": {
+    "P1_manual": {
+      "path": "experiment/templates/P1_manual.txt",
+      "description": "Handwritten and frozen templates"
+    },
+    "P2_ai_optimized": {
+      "path": "OPRO_Streamlined/prompts/optimized_prompt.txt",
+      "source_hint": "OPRO_Streamlined/prompts/optimized_prompt.txt",
+      "source_sha256": "107D779749561A279E41FDFE39A47E308A16D822D57D3395BF11A65E8B321B6E",
+      "frozen_at": "2025-08-09T16:07:34Z"
+    },
+    "P3_hybrid": {
+      "path": "experiment/templates/P3_hybrid.txt",
+      "description": "Artificial structure + AI optimised wording"
+    }
+  },
+  "datasets": {
+    "sources": [
+      {
+        "path": "prompts/",
+        "type": "user_prompts"
+      },
+      {
+        "path": "icd11_ch6_data/raw/",
+        "type": "icd11_raw"
+      }
+    ],
+    "split_plan": "experiment/config/split_plan.json",
+    "seed": 20250809
+  },
+  "inference": {
+    "model_name": "qwen2:7b-instruct-q4_0",
+    "temperature": 0.2,
+    "top_p": 1.0,
+    "max_tokens": 128,
+    "repetitions_per_sample": 3,
+    "randomize_prompt_order": true,
+    "provider": {
+      "type": "ollama",
+      "request_timeout_s": 60
+    },
+    "pricing_per_1k_tokens": {
+      "prompt_usd": 0.0,
+      "completion_usd": 0.0
+    }
+  },
+  "evaluation": {
+    "automatic_metrics": {
+      "task_success": true,
+      "factual_alignment": true,
+      "safety_triggers": true,
+      "cost_latency": true,
+      "consistency": true
+    },
+    "bootstrap_iterations": 1000,
+    "significance_tests": [
+      "paired_t",
+      "wilcoxon"
+    ],
+    "report_dir": "experiment/reports/"
+  },
+  "logging": {
+    "run_dir": "experiment/runs/",
+    "metadata_schema": "experiment/config/metadata_schema.json",
+    "keep_raw_io": true
+  },
+  "human_review": {
+    "enabled": true,
+    "rubric_path": "experiment/rubrics/human_eval_rubric.md",
+    "reviewers": [
+      "R1",
+      "R2"
+    ]
+  },
+  "go_no_go_criteria": {
+    "require_p2_or_p3_better_than_p1": true,
+    "crisis_samples_zero_critical_errors": true,
+    "cost_overhead_pct_max": 30
+  }
+}

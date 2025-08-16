@@ -15,7 +15,7 @@ export default async function handler(
   }
 
   try {
-    const { question, type, history, session_id, weekly_goal, feasibility, anxiety_level } = req.body
+    const { question, type, history, session_id, weekly_goal, feasibility, anxiety_level, user_profile } = req.body
 
     // Optional timeout override via query
     const timeoutOverride = req.query.timeoutMs ? Number(req.query.timeoutMs) : undefined
@@ -57,6 +57,7 @@ export default async function handler(
           weekly_goal,
           feasibility,
           anxiety_level,
+          user_profile,
         }),
         signal: controller.signal,
         cache: 'no-store',

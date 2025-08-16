@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { useRouter } from 'next/router';
 import { useAuth } from '@/lib/AuthContext';
 import Button from '@/components/ui/Button';
 import { User, Settings, LogOut, ChevronDown, Shield } from 'lucide-react';
@@ -9,6 +10,7 @@ interface UserMenuProps {
 
 const UserMenu: React.FC<UserMenuProps> = ({ className }) => {
   const { user, logout, isAuthenticated } = useAuth();
+  const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -101,7 +103,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ className }) => {
             <button
               onClick={() => {
                 setIsOpen(false);
-                // Navigate to profile/settings
+                router.push('/profile');
               }}
               className="flex items-center w-full px-4 py-2 text-sm text-secondary-700 hover:bg-secondary-50 transition-colors"
             >
@@ -112,7 +114,7 @@ const UserMenu: React.FC<UserMenuProps> = ({ className }) => {
             <button
               onClick={() => {
                 setIsOpen(false);
-                // Navigate to settings
+                router.push('/settings');
               }}
               className="flex items-center w-full px-4 py-2 text-sm text-secondary-700 hover:bg-secondary-50 transition-colors"
             >
