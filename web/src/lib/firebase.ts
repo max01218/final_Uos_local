@@ -185,6 +185,10 @@ export const updateUserDocument = async (userId: string, updates: Partial<AuthUs
 
 // Authentication functions
 export const registerWithFirebase = async (credentials: RegisterCredentials): Promise<{ user: AuthUser; token: string; refreshToken: string }> => {
+  if (!auth) {
+    throw new Error('Firebase authentication is not configured. Please set up Firebase or use demo mode.');
+  }
+  
   try {
     // Create user with Firebase Auth
     const userCredential = await createUserWithEmailAndPassword(
@@ -243,6 +247,10 @@ export const registerWithFirebase = async (credentials: RegisterCredentials): Pr
 };
 
 export const loginWithFirebase = async (credentials: LoginCredentials): Promise<{ user: AuthUser; token: string; refreshToken: string }> => {
+  if (!auth) {
+    throw new Error('Firebase authentication is not configured. Please set up Firebase or use demo mode.');
+  }
+  
   try {
     // Sign in with Firebase Auth
     const userCredential = await signInWithEmailAndPassword(
@@ -292,6 +300,11 @@ export const loginWithFirebase = async (credentials: LoginCredentials): Promise<
 };
 
 export const logoutFromFirebase = async (): Promise<void> => {
+  if (!auth) {
+    console.warn('Firebase auth not configured - logout is a no-op');
+    return;
+  }
+  
   try {
     await signOut(auth);
   } catch (error) {
@@ -566,6 +579,13 @@ export const getConversationStats = async (userId: string) => {
 
 // Auth state listener
 export const onAuthStateChange = (callback: (user: AuthUser | null) => void) => {
+  if (!auth) {
+    // Firebase not configured, return a no-op function
+    console.warn('Firebase auth not configured - no auth state changes will be tracked');
+    callback(null);
+    return () => {}; // Return empty unsubscribe function
+  }
+  
   return onAuthStateChanged(auth, async (firebaseUser) => {
     if (firebaseUser) {
       try {

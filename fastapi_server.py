@@ -131,7 +131,7 @@ conversation_store = ConversationStore()
 
 # OPRO Integration
 OPRO_PROMPT_PATH = "OPRO_Streamlined/prompts/optimized_prompt.txt"  
-OPRO_FALLBACK_PATH = "ICD11_OPRO/prompts/optimized_prompt.txt"  
+OPRO_FALLBACK_PATH =  "OPRO_Streamlined/prompts/optimized_prompt.txt"  
 INTERACTIONS_FILE = "interactions.json"
 
 # Enhanced System Configuration

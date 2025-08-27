@@ -1,62 +1,104 @@
+# app/bootstrap.py
 import logging
-import os
 import torch
-from app.clients.vectorstore import load_embeddings, load_faiss_index
-from app.clients.llm_adapter import LLMAdapter
-from app.services.chat_service import ChatService
-from app.services.memory_service import ConversationStore
-from app.core.di import set_chat_service
-from app.repositories.session_repo import init_session_db
 from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
-from langchain.llms.huggingface_pipeline import HuggingFacePipeline
 from app.core.settings import settings
 
 logger = logging.getLogger(__name__)
 
+def build_llm(device: str = None):
+    model_id = getattr(settings, "llm_model_id", "Qwen/Qwen2.5-7B-Instruct")
+    device = device or ("cuda:0" if torch.cuda.is_available() else "cpu")
 
-def build_llm(device: str):
-    model_id = os.getenv("LLM_MODEL_ID", "Qwen/Qwen2.5-3B-Instruct")
-    tok = AutoTokenizer.from_pretrained(
-        model_id,
-        trust_remote_code=True,
-        padding_side="left",
-    )
+    tok = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
+    if tok.pad_token_id is None and tok.eos_token_id is not None:
+        tok.pad_token_id = tok.eos_token_id
+
+    torch.backends.cuda.matmul.allow_tf32 = True
+
     model = AutoModelForCausalLM.from_pretrained(
         model_id,
         trust_remote_code=True,
-        device_map=device,
-        torch_dtype=torch.float16 if device == "cuda" else torch.float32,
-        low_cpu_mem_usage=True,
+        torch_dtype=(torch.bfloat16 if device.startswith("cuda") else torch.float32),
+        attn_implementation=getattr(settings, "llm_attn_impl", "sdpa"),
     )
-    pipe = pipeline(
+    model.to(device)
+
+    gen_pipe = pipeline(
         "text-generation",
         model=model,
         tokenizer=tok,
-        max_new_tokens=settings.llm_max_new_tokens,
         do_sample=True,
-        temperature=0.7,
-        top_p=0.9,
-        repetition_penalty=1.1,
-        pad_token_id=tok.eos_token_id,
+        max_new_tokens=getattr(settings, "llm_max_new_tokens", 90),
+        temperature=getattr(settings, "llm_temperature", 0.35),
+        top_p=getattr(settings, "llm_top_p", 0.85),
+        repetition_penalty=getattr(settings, "llm_repetition_penalty", 1.05),
+        pad_token_id=tok.pad_token_id,
         eos_token_id=tok.eos_token_id,
         return_full_text=False,
+        device=0 if device.startswith("cuda") else -1,
     )
-    return HuggingFacePipeline(pipeline=pipe), tok
+    return gen_pipe, tok
 
+def warmup_pipeline(gen_pipe):
+    try:
+        _ = gen_pipe("E: ok\nS: ok\nQ: ok?<END>", max_new_tokens=1)
+        logger.info("LLM warmup complete.")
+    except Exception as e:
+        logger.warning(f"LLM warmup skipped: {e}")
 
 def bootstrap_services():
-    device = "cuda" if torch.cuda.is_available() else "cpu"
-    # Ensure session DB schema exists before any read/write
+    """
+    Build core singletons and register them in app.core.di, including ChatService.
+    """
     try:
-        init_session_db()
-    except Exception:
-        logger.exception("Failed to initialize session DB; proceeding may cause errors")
-    embedder = load_embeddings(device)
-    store = load_faiss_index(embedder) if embedder else None
-    llm, tok = build_llm(device)
-    conv_store = ConversationStore()
-    svc = ChatService(store=store, llm_client=LLMAdapter(llm, tokenizer=tok), conversation_store=conv_store, embedder=embedder)
-    set_chat_service(svc)
-    logger.info("ChatService initialized and registered")
+        from app.clients.llm_adapter import LLMAdapter
+        from app.services.memory_service import ConversationStore
+        from app.services.chat_service import ChatService
+        from app.core import di  # DI container
 
+        # LLM
+        pipe, tok = build_llm()
+        warmup_pipeline(pipe)
+        llm = LLMAdapter(pipe, tokenizer=tok)
 
+        # Conversation store
+        cs = ConversationStore()
+
+        # Optional knowledge store (RAG); tolerate absence
+        kb_store = None
+        if hasattr(di, "get_vector_store"):
+            try:
+                kb_store = di.get_vector_store()  # type: ignore
+            except Exception as e:
+                logger.warning(f"Vector store init failed, continue without RAG: {e}")
+
+        # Build ChatService
+        chat_service = ChatService(store=kb_store, llm_client=llm, conversation_store=cs, embedder=None)
+
+        # Register into DI (prefer setters)
+        if hasattr(di, "set_llm"):
+            di.set_llm(llm)  # type: ignore
+        else:
+            di.llm = llm  # type: ignore
+
+        if hasattr(di, "set_conversation_store"):
+            di.set_conversation_store(cs)  # type: ignore
+        else:
+            di.conversation_store = cs  # type: ignore
+
+        if hasattr(di, "set_store"):
+            di.set_store(kb_store)  # type: ignore
+        else:
+            di.store = kb_store  # type: ignore
+
+        if hasattr(di, "set_chat_service"):
+            di.set_chat_service(chat_service)  # type: ignore
+        else:
+            di.chat_service = chat_service  # type: ignore
+
+        logger.info("bootstrap_services completed (ChatService registered).")
+        return True
+    except Exception as e:
+        logger.exception(f"bootstrap_services failed: {e}")
+        return False

@@ -2,9 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/conversation-history": "pages/conversation-history.js",
-  "/chat": "pages/chat.js",
   "/": "pages/index.js",
-  "/tone-select": "pages/tone-select.js",
+  "/auth": "pages/auth.js",
+  "/chat": "pages/chat.js",
   "/api/empathetic_professional": "pages/api/empathetic_professional.js"
 }

@@ -154,6 +154,44 @@ def post_process_response(answer: str, question: Optional[str] = "") -> str:
 
 	return answer
 
+_NAME_SALUTATION = re.compile(r'^\s*(hi|hello|hey)\b[^A-Za-z0-9]*', re.I)
+_USER_NAME = re.compile(r'\b(jui\s*chang|jui)\b[:,]?', re.I)
+def format_e_s_q_output(raw: str, word_limit: int = 120) -> str:
+    if not raw:
+        return raw
+    e = re.search(r'^\s*E:\s*(.+)$', raw, re.I | re.M)
+    s = re.search(r'^\s*S:\s*(.+)$', raw, re.I | re.M)
+    q = re.search(r'^\s*Q:\s*(.+)$', raw, re.I | re.M)
+
+    parts = []
+    if e: parts.append(e.group(1).strip())
+    if s: parts.append(s.group(1).strip())
+    if q:
+        qtxt = q.group(1).strip()
+        if not qtxt.lower().startswith('q:'):
+            qtxt = 'Q: ' + qtxt
+        parts.append(qtxt)
+
+    # 清除稱呼與名字
+    if parts:
+        parts[0] = _NAME_SALUTATION.sub('', parts[0])
+        parts[0] = _USER_NAME.sub('', parts[0])
+
+    # 去重
+    out_lines, seen = [], set()
+    for p in parts:
+        key = re.sub(r'[^a-z0-9]+', '', p.lower())
+        if p and key not in seen:
+            seen.add(key)
+            out_lines.append(p)
+    out = '\n'.join(out_lines[:3]).strip()
+
+    # 字數限制
+    words = out.split()
+    if len(words) > word_limit:
+        out = ' '.join(words[:word_limit])
+        out = out.replace(' Q:', '\nQ:')
+    return out
 
 
 

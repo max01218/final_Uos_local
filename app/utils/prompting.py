@@ -1,167 +1,107 @@
-import os
-import logging
-from app.core.settings import settings
+# app/utils/prompting.py
+from textwrap import dedent
+from typing import List, Optional
 
-logger = logging.getLogger(__name__)
+TONE_STYLE = {
+    "professional": "concise, objective, clinically precise; use plain English, not jargon; no emojis.",
+    "caring": "warm, gentle, validating; use soft hedges like 'might/let's/if you're up for it'.",
+    "balanced": "professional clarity with warm empathy; brief, human, and grounded.",
+}
 
+BANNED_DEFAULT = [
+    "It's okay to feel",
+    "I am here with you",
+    "That sounds heavy",
+    "Let's take a few deep breaths",
+    "I'm sorry to hear that",
+]
 
-FALLBACK_PROMPTS = {
-    "professional": """You are a professional mental health advisor. Provide concise, evidence-based responses.
+def _tone_style(tone: Optional[str]) -> str:
+    t = (tone or "balanced").lower()
+    return TONE_STYLE.get(t, TONE_STYLE["balanced"])
 
-MEDICAL CONTEXT:
-{context}
+def build_therapist_prompt(
+    *,
+    context: str,
+    question: str,
+    history: str,
+    tone: Optional[str],
+    topics: str = "",
+    preferred_tech: str = "",
+    last_technique: str = "",
+    next_step_index: int = 0,
+    banned_phrases: Optional[List[str]] = None,
+    fewshot: str = "",
+) -> str:
+    bans = list(dict.fromkeys((banned_phrases or []) + BANNED_DEFAULT))
+    bans_str = "\n".join(f"- {b}" for b in bans)
+    style = _tone_style(tone)
 
-CONVERSATION HISTORY:
-{history}
+    core = dedent(f"""
+    You are a licensed mental-health clinician. Sound like a real human, not a template.
 
-USER QUESTION: {question}
+    CONSTRAINTS
+    - Output EXACTLY 3 lines:
+      1) Empathy: ONE short sentence that paraphrases the user's words (no clichés).
+      2) Step: ONE micro-step with explicit timing/reps (e.g., "inhale 4, hold 2, exhale 6 — 4 cycles").
+      3) Q: ONE question only, prefixed with "Q:", preferably a 0–10 rating or permission to proceed.
+    - ≤150 words. Complete sentences. No emojis. No bullet points.
+    - If the user says "continue" or posts a 0–10 number, advance to the NEXT micro-step of the current technique.
+    - Avoid these phrases and close paraphrases:
+    {bans_str}
 
-INSTRUCTIONS:
-- Keep response to 2-4 sentences maximum
-- Reference medical context only when highly relevant
-- Ask 1 thoughtful follow-up question
-- Maintain professional but warm tone
-- Avoid generic lifestyle advice
+    TONE
+    - Style: {style}
+    - Natural conversational English with contractions. Vary openings each turn; never reuse the same first 5 words.
 
-RESPONSE:""",
+    TECHNIQUE CONTEXT
+    - Topics: {topics or "n/a"}
+    - Preferred technique: {preferred_tech or "n/a"}
+    - Last technique: {last_technique or "n/a"}
+    - Next step index: {next_step_index}
 
-    "caring": """You are a compassionate mental health companion. Provide brief emotional support.
-
-MEDICAL CONTEXT:
-{context}
-
-CONVERSATION HISTORY:
-{history}
-
-USER MESSAGE: {question}
-
-INSTRUCTIONS:
-- Start with emotional validation (1 sentence)
-- Ask 1 open-ended question to explore feelings
-- Keep response to 2-3 sentences maximum
-- Focus on emotional support over medical information
-- Avoid generic advice
-
-RESPONSE:""",
-
-    "empathetic_professional": """You are a compassionate mental health professional. Provide concise emotional support with gentle guidance.
-
-MEDICAL CONTEXT:
-{context}
-
-CONVERSATION HISTORY:
-{history}
-
-USER'S CONCERN: {question}
-
-INSTRUCTIONS:
-- Start with empathy (1 sentence)
-- Cite ICD-11 context if relevant (1 sentence)
-- Ask 1 gentle follow-up question
-- Keep response to 2-4 sentences maximum
-- Avoid generic lifestyle advice unless ICD-11 mentions it
-
-RESPONSE:""",
-    
-    "step_by_step": """You are a compassionate mental health coach. The user requested step-by-step guidance.
-
-    CONTEXT (concise):
+    KNOWLEDGE (use only if helpful; keep concise)
     {context}
 
-    RECENT MESSAGES (concise):
+    HISTORY (recent summary + last turns)
     {history}
 
-    USER'S CONCERN: {question}
+    OUTPUT FORMAT (strict)
+    Line 1: empathy (human, varied, paraphrase the user)
+    Line 2: one actionable micro-step with timing/reps
+    Line 3: Q: <one question>
+    """).strip()
 
-    HARD CONSTRAINTS (must follow exactly):
-    - Begin with ONE short sentence of empathy/validation, then move immediately to the step.
-    - Provide EXACTLY ONE micro-step only (1–2 sentences) with a concrete duration or repetitions (e.g., "inhale 4, hold 2, exhale 6 — 4 cycles").
-    - Keep the entire reply within 120–150 words.
-    - End with EXACTLY ONE question prefixed with "Q:" that asks the user to rate stress or body tension 0–10 after completing the step.
-    - Do NOT greet by name or add salutations. Keep tone warm and professional.
-    - If the message implies "continue", continue the SAME technique and provide the NEXT micro-step only. Do NOT switch techniques unless the user explicitly requests a change.
-    - If a technique was previously rejected in the conversation, do NOT suggest it again; choose a suitable alternative instead.
-    - Output ONE step and ONE question only. No lists of multiple steps.
+    if fewshot:
+        core += "\n\n" + fewshot.strip()
 
-    OPTIONAL CONTEXT FOR CONTINUATION (may be empty):
-    - The assistant may receive a brief TECHNIQUE CONTEXT appended after this block with keys like technique=<name> and next_step_index=<n>. If provided, use it to produce the next logical micro-step of the same technique.
+    return core
 
-    OUTPUT FORMAT:
-    - <empathy sentence>
-    - <one concise micro-step with concrete timing/reps>
-    - Q: <Ask for 0–10 rating after the step>
+def build_repair_prompt(*, raw: str, question: str, tone: str) -> str:
+    style = _tone_style(tone)
+    return dedent(f"""
+    Rewrite the assistant reply to strictly follow the E/S/Q three-line format.
 
-    RESPONSE:""",
-}
+    RULES:
+    - 3 lines only: Empathy, Step (timing/reps), Q: ...
+    - ≤150 words total. Human, varied, no clichés.
+    - Tone: {style}
 
+    USER: {question}
+    ASSISTANT_RAW:
+    {raw}
+    """).strip()
 
-def load_opro_prompt() -> str:
-    try:
-        if os.path.exists(settings.opro_prompt_path):
-            with open(settings.opro_prompt_path, 'r', encoding='utf-8') as f:
-                prompt = f.read().strip()
-            logger.info(f"Loaded OPRO Streamlined prompt ({len(prompt)} characters)")
-            # Record path for downstream debugging
-            os.environ["LOADED_PROMPT_PATH"] = settings.opro_prompt_path
-            return prompt
-        elif os.path.exists(settings.opro_fallback_path):
-            with open(settings.opro_fallback_path, 'r', encoding='utf-8') as f:
-                prompt = f.read().strip()
-            logger.info(f"Loaded OPRO fallback prompt ({len(prompt)} characters)")
-            os.environ["LOADED_PROMPT_PATH"] = settings.opro_fallback_path
-            return prompt
-        else:
-            logger.warning("No OPRO prompt found, using system fallback")
-            os.environ["LOADED_PROMPT_PATH"] = "FALLBACK_PROMPTS"
-            return FALLBACK_PROMPTS["empathetic_professional"]
-    except Exception as e:
-        logger.error(f"Error loading OPRO prompt: {e}")
-        os.environ["LOADED_PROMPT_PATH"] = "FALLBACK_PROMPTS"
-        return FALLBACK_PROMPTS["empathetic_professional"]
+def build_minimal_esq_prompt(question: str, tone: str) -> str:
+    style = _tone_style(tone)
+    return dedent(f"""
+    Produce a minimal E/S/Q reply (3 lines only) that still feels human and specific.
 
+    USER: {question}
+    TONE: {style}
 
-def get_dynamic_prompt(tone: str = "empathetic_professional") -> str:
-    opro_prompt = load_opro_prompt()
-    if opro_prompt and opro_prompt != FALLBACK_PROMPTS["empathetic_professional"]:
-        # Apply tone-specific style guidance on top of the OPRO prompt so tone still influences outputs
-        return _apply_tone_style_to_opro(opro_prompt, tone)
-    return FALLBACK_PROMPTS.get(tone, FALLBACK_PROMPTS["empathetic_professional"])
-
-
-def get_step_by_step_prompt() -> str:
-    return FALLBACK_PROMPTS["step_by_step"]
-
-
-
-
-# Tone style snippets appended to OPRO prompt to preserve user-selected style
-_TONE_STYLE_SNIPPETS = {
-    "professional": (
-        "STYLE GUIDANCE (professional):\n"
-        "- Maintain a professional, objective, evidence-based tone.\n"
-        "- Keep each reply short (1-3 sentences).\n"
-        "- Offer EXACTLY ONE actionable micro-step with concrete duration/reps.\n"
-        "- End with ONE brief yes/no question inviting the next step."
-    ),
-    "caring": (
-        "STYLE GUIDANCE (caring):\n"
-        "- Begin with a brief emotional validation (about 1 sentence).\n"
-        "- Keep a warm, supportive, and non-judgmental tone.\n"
-        "- Provide EXACTLY ONE small supportive step (1 sentence) and avoid long lists.\n"
-        "- End with ONE gentle question asking if they're ready for the next step."
-    ),
-    "empathetic_professional": (
-        "STYLE GUIDANCE (balanced):\n"
-        "- Start with empathy (1 sentence), then give ONE concrete micro-step (1 sentence).\n"
-        "- Keep response within 1-3 sentences total.\n"
-        "- If relevant, briefly connect to ICD-11 context (optional, 1 short clause).\n"
-        "- End with ONE brief question inviting the next step."
-    ),
-}
-
-
-def _apply_tone_style_to_opro(base_prompt: str, tone: str) -> str:
-    snippet = _TONE_STYLE_SNIPPETS.get(tone, _TONE_STYLE_SNIPPETS["empathetic_professional"])  # default balanced
-    # Avoid curly braces in snippets to prevent accidental .format collisions upstream
-    return f"{base_prompt}\n\n{snippet}"
-
+    Output:
+    - Line 1 Empathy (paraphrase the user)
+    - Line 2 ONE micro-step with duration/reps
+    - Line 3 Q: <one question>
+    """).strip()

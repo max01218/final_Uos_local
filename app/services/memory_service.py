@@ -74,6 +74,23 @@ class ConversationStore:
         with self.lock:
             self.summary_memory[session_id] = new_summary
             save_session_summary(session_id, new_summary)
+    
+    def get_flag(self, session_id: str, flag_name: str, default_value=None):
+        """Get a session-specific flag value"""
+        with self.lock:
+            session_flags = self.session_data.get(session_id, {})
+            if isinstance(session_flags, dict):
+                return session_flags.get(f"flag_{flag_name}", default_value)
+            return default_value
+    
+    def set_flag(self, session_id: str, flag_name: str, value):
+        """Set a session-specific flag value"""
+        with self.lock:
+            if session_id not in self.session_data:
+                self.session_data[session_id] = {}
+            if not isinstance(self.session_data[session_id], dict):
+                self.session_data[session_id] = {}
+            self.session_data[session_id][f"flag_{flag_name}"] = value
 
 
 def summarize_session_transcript(transcript: str) -> str:

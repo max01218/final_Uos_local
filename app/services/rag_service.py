@@ -73,7 +73,18 @@ class RAGService:
 
     def build_context(self, docs: List[Any], max_docs: int = 2) -> str:
         final_docs = docs[:max_docs]
-        return "\n\n".join([doc.page_content for doc in final_docs if getattr(doc, 'page_content', None)])
+        chunks = []
+        for doc in final_docs:
+            if not getattr(doc, "page_content", None):
+                continue
+            meta = getattr(doc, "metadata", {}) or {}
+            code  = meta.get("code") or meta.get("id") or ""
+            title = meta.get("title") or meta.get("source") or meta.get("url") or ""
+            prefix = f"[{code}] {title}".strip()
+            text = doc.page_content.strip()
+            snippet = text[:800] + ("..." if len(text) > 800 else "")
+            chunks.append(f"{prefix}\n{snippet}" if prefix else snippet)
+        return "\n\n---\n\n".join(chunks) if chunks else ""
 
     @staticmethod
     def _cosine(a: List[float], b: List[float]) -> float:
