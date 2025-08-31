@@ -1,11 +1,16 @@
 # app/main.py
+import logging
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-
+from app.core.settings import settings
 from app.api.routers import chat_v2, chat, latency
 from app.bootstrap import bootstrap_services
+
+# Setup logging
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 # --- E/S/Q global defaults (routers can read from app.state.*) ---
 ESQ_STOP = ["<END>"]
@@ -17,7 +22,14 @@ ESQ_WORD_LIMIT = 120
 @asynccontextmanager
 async def lifespan(app: FastAPI):
     # Startup
-    bootstrap_services()
+    logger.info("Starting application bootstrap...")
+    success = bootstrap_services()
+    if not success:
+        logger.error("Bootstrap failed! Application may not work correctly.")
+        raise RuntimeError("Failed to initialize services")
+    else:
+        logger.info("Bootstrap completed successfully")
+    
     # expose decoding/format settings to routers
     app.state.esq_stop = ESQ_STOP
     app.state.esq_max_new_tokens = ESQ_MAX_NEW_TOKENS
@@ -65,6 +77,7 @@ async def healthz():
 async def root():
     return {
         "message": "ICD-11 Enhanced RAG API with CBT Integration",
+        "model_in_use": settings.llm_model_id,
         "version": "4.0.0",
         "esq": {
             "stop": ESQ_STOP,

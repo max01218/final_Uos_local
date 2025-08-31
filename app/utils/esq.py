@@ -2,6 +2,7 @@
 # E/S/Q formatting utilities + greeting-aware, emotion-aware smart fallback.
 
 import re
+import random
 from typing import List, Optional
 
 # ----------------------- Output contract (reference text) -----------------------
@@ -62,13 +63,46 @@ def format_esq(raw: str, word_limit: int = 120) -> str:
     return f"E: {e}\nS: {s}\nQ: {q}"
 
 # ------------------------------ Simple fallback --------------------------------
+def _infer_topic(text: str) -> str:
+    """Infer topic from text to select a fallback technique."""
+    text_lower = (text or "").lower()
+    for topic, technique in TOPIC_TO_TECHNIQUE.items():
+        if topic in text_lower:
+            return technique
+    # More keywords can be added here
+    if "panic" in text_lower or "attack" in text_lower: return "breathing"
+    if "sleep" in text_lower or "awake" in text_lower: return "stimulus_control"
+    if "sad" in text_lower or "depress" in text_lower: return "pmr"
+    return "grounding" # Default
+
+def _pick_empathy_by_mood(text: str) -> str:
+    """Infer mood from text and pick a random empathy statement."""
+    mood = "neutral"
+    text_lower = (text or "").lower()
+    if "panic" in text_lower:
+        mood = "panic"
+    elif any(k in text_lower for k in ["anxiety", "anxious", "worry"]):
+        mood = "anxious"
+    elif any(k in text_lower for k in ["sad", "low", "down", "depress", "grief"]):
+        mood = "sad"
+    
+    bank = EMPATHY_BY_MOOD.get(mood, EMPATHY_BY_MOOD["neutral"])
+    return random.choice(bank)
+
+def _technique_first_step_for(text: str) -> str:
+    """Get the first step of a technique based on inferred topic."""
+    technique = _infer_topic(text)
+    return STEP_MAP.get(technique, STEP_MAP["grounding"])[0]
+
 def fallback_esq(question: str) -> str:
-    step = "Name 5 things you can see — 60 seconds."
-    return (
-        "E: That sounds heavy, and I am here with you.\n"
-        f"S: {step}\n"
-        "Q: After that, what is your tension level from 0–10?"
-    )
+    """
+    Emotion/topic-aware fallback.
+    Infers mood and topic from the user's question to generate a relevant E/S/Q response.
+    """
+    e = _pick_empathy_by_mood(question)
+    s = _technique_first_step_for(question)
+    q = "After that, what’s your tension level from 0–10?"
+    return f"E: {e}\nS: {s}\nQ: {q}"
 
 # ------------------------------ Smart fallback --------------------------------
 # Step maps for techniques used when we must produce a safe answer without model help.
@@ -211,9 +245,17 @@ def is_greeting_text(text: str) -> bool:
 import re
 def humanize_esq(text: str) -> str:
     t = text
+    # From BANNED_DEFAULT
     t = re.sub(r"\bIt(?:'| i)s okay to feel\b", "It makes sense to feel", t, flags=re.I)
+    t = re.sub(r"\bI am here with you\b", "I'm with you", t, flags=re.I)
+    t = re.sub(r"\bThat sounds heavy\b", "That sounds really tough", t, flags=re.I)
+    t = re.sub(r"\bLet's take a few deep breaths\b", "Let's try a slow breath", t, flags=re.I)
+    t = re.sub(r"\bI'm sorry to hear that\b", "Thank you for sharing that", t, flags=re.I)
+
+    # Existing ones
     t = re.sub(r"\bNotice your breath\b", "Gently notice your breath", t, flags=re.I)
     t = re.sub(r"\bBreathe deeply for\b", "Let’s take a slow breath for", t, flags=re.I)
+    
     parts = t.strip().splitlines()
     if parts and parts[-1].startswith("Q:"):
         import re as _re

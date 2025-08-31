@@ -108,10 +108,11 @@ const ChatWindow: React.FC<ChatWindowProps> = ({
   // Render loading indicator
   const renderLoadingIndicator = () => (
     <div className="flex justify-start mb-4">
-      <div className="flex items-center gap-2 p-3 bg-secondary-100 rounded-2xl">
-        <Loader2 className="h-4 w-4 animate-spin text-secondary-600" />
-        <span className="text-sm text-secondary-600">Thinking...</span>
-      </div>
+        <div className="flex items-center gap-2 p-3 bg-gray-100 rounded-2xl">
+            <div className="text-sm text-gray-500 animate-pulse">
+                assistant is typing…
+            </div>
+        </div>
     </div>
   );
 

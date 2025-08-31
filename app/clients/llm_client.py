@@ -1,149 +1,184 @@
 # app/clients/llm_client.py
 import asyncio
-from typing import List, Optional
-
-from transformers import (
-    AutoTokenizer,
-    AutoModelForCausalLM,
-    pipeline,
-    StoppingCriteria,
-    StoppingCriteriaList,
-)
-from langchain.llms.huggingface_pipeline import HuggingFacePipeline
+import logging
+import time
+import threading
+from typing import Optional, List
+from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline, TextIteratorStreamer
+import torch
 from app.core.settings import settings
 
-
-class _StopOnText(StoppingCriteria):
-    """Stop when any of the stop strings appears at the end of the generated ids."""
-    def __init__(self, stop_strings: List[str], tokenizer):
-        super().__init__()
-        self.stop_ids = [tokenizer(s, add_special_tokens=False).input_ids for s in stop_strings]
-        self.max_len = max((len(s) for s in self.stop_ids), default=0)
-
-    def __call__(self, input_ids, scores, **kwargs) -> bool:
-        if self.max_len == 0:
-            return False
-        seq = input_ids[0].tolist()  # assumes batch size 1
-        for sids in self.stop_ids:
-            L = len(sids)
-            if L and len(seq) >= L and seq[-L:] == sids:
-                return True
-        return False
-
+logger = logging.getLogger(__name__)
 
 class LLMClient:
-    def __init__(
-        self,
-        device: str,
-        *,
-        stop: Optional[List[str]] = None,
-        temperature: Optional[float] = None,
-        top_p: Optional[float] = None,
-        max_new_tokens: Optional[int] = None,
-        repetition_penalty: float = 1.05,
-    ):
-        self.device = device
-        # defaults (overridable via settings or init kwargs)
-        self.model_id = getattr(settings, "llm_model_id", "meta-llama/Meta-Llama-3-8B-Instruct")
-        self.stop = stop or ["<END>"]
-        self.temperature = temperature if temperature is not None else getattr(settings, "llm_temperature", 0.3)
-        self.top_p = top_p if top_p is not None else getattr(settings, "llm_top_p", 0.8)
-        self.max_new_tokens = (
-            max_new_tokens
-            if max_new_tokens is not None
-            else min(90, getattr(settings, "llm_max_new_tokens", 90))
-        )
-        self.repetition_penalty = repetition_penalty
-
-        self.tokenizer = None
+    def __init__(self, model_id: str, temperature: float, top_p: float, 
+                 max_new_tokens: int, repetition_penalty: Optional[float] = None):
+        self.model_id = model_id
+        self.temperature = temperature
+        self.top_p = top_p
+        self.max_new_tokens = max_new_tokens
+        self.repetition_penalty = repetition_penalty or 1.0
         self.pipeline = None
-        self.llm = None
-        self._stopper = None
+        self.tokenizer = None
+        self.model = None
+        self._initialized = False
 
-    def load(self):
-        tok = AutoTokenizer.from_pretrained(
-            self.model_id,
-            trust_remote_code=True,
-            padding_side="left",
-        )
-        model = AutoModelForCausalLM.from_pretrained(
-            self.model_id,
-            trust_remote_code=True,
-            device_map=self.device,
-            torch_dtype=None,
-            low_cpu_mem_usage=True,
-        )
+    def _initialize(self):
+        """Lazy initialization of the model pipeline"""
+        if self._initialized:
+            return
+            
+        try:
+            device = "cuda:0" if torch.cuda.is_available() else "cpu"
+            
+            # Load tokenizer
+            self.tokenizer = AutoTokenizer.from_pretrained(
+                self.model_id, 
+                trust_remote_code=True
+            )
+            if self.tokenizer.pad_token_id is None and self.tokenizer.eos_token_id is not None:
+                self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
 
-        # ensure pad/eos ids set
-        if tok.pad_token_id is None and tok.eos_token_id is not None:
-            tok.pad_token_id = tok.eos_token_id
+            # Load model
+            model = AutoModelForCausalLM.from_pretrained(
+                self.model_id,
+                trust_remote_code=True,
+                torch_dtype=(torch.bfloat16 if device.startswith("cuda") else torch.float32),
+                attn_implementation=getattr(settings, "llm_attn_impl", "sdpa"),
+            )
+            model.to(device)
+            self.model = model
 
-        self._stopper = _StopOnText(self.stop, tok)
+            # Create pipeline
+            self.pipeline = pipeline(
+                "text-generation",
+                model=model,
+                tokenizer=self.tokenizer,
+                do_sample=True,
+                max_new_tokens=self.max_new_tokens,
+                temperature=self.temperature,
+                top_p=self.top_p,
+                repetition_penalty=self.repetition_penalty,
+                pad_token_id=self.tokenizer.pad_token_id,
+                eos_token_id=self.tokenizer.eos_token_id,
+                return_full_text=False,
+                device=0 if device.startswith("cuda") else -1,
+            )
+            
+            self._initialized = True
+            logger.info(f"LLMClient initialized successfully with model: {self.model_id}")
+            
+        except Exception as e:
+            logger.error(f"Failed to initialize LLMClient with model {self.model_id}: {e}")
+            raise
 
-        pipe = pipeline(
-            task="text-generation",
-            model=model,
-            tokenizer=tok,
-            max_new_tokens=self.max_new_tokens,
-            do_sample=True,
-            temperature=self.temperature,
-            top_p=self.top_p,
-            repetition_penalty=self.repetition_penalty,
-            pad_token_id=tok.pad_token_id or tok.eos_token_id,
-            eos_token_id=tok.eos_token_id,
-            return_full_text=False,
-        )
-        # Keep both for backward compatibility
-        self.llm = HuggingFacePipeline(pipeline=pipe)
-        self.pipeline = pipe
-        self.tokenizer = tok
-
-    async def generate(
+    async def complete(
         self,
         prompt: str,
-        *,
         stop: Optional[List[str]] = None,
-        temperature: Optional[float] = None,
-        top_p: Optional[float] = None,
+        *,
+        max_time: Optional[float] = None,
         max_new_tokens: Optional[int] = None,
-        repetition_penalty: Optional[float] = None,
+        stream: bool = False,
     ) -> str:
-        """Generate text with unified decoding params and stop strings."""
-        if self.pipeline is None:
-            raise RuntimeError("LLMClient not loaded. Call load() first.")
-
-        stop_strings = stop or self.stop
-        stopper = self._stopper if stop_strings == self.stop else _StopOnText(stop_strings, self.tokenizer)
-
-        gen_kwargs = dict(
-            max_new_tokens=max_new_tokens or self.max_new_tokens,
-            temperature=self._coalesce(temperature, self.temperature),
-            top_p=self._coalesce(top_p, self.top_p),
-            repetition_penalty=self._coalesce(repetition_penalty, self.repetition_penalty),
-            stopping_criteria=StoppingCriteriaList([stopper]),
-        )
-
-        def _run_sync() -> str:
-            out = self.pipeline(prompt, **gen_kwargs)
-            text = out[0]["generated_text"] if isinstance(out, list) else str(out)
-            # hard-trim at first occurrence of any stop string
-            for s in stop_strings:
-                idx = text.find(s)
-                if idx != -1:
-                    text = text[:idx]
-                    break
-            return text
+        """Complete the given prompt and return the generated text.
+        Supports optional model-level timeboxing and streaming.
+        """
+        if not self._initialized:
+            self._initialize()
+            
+        stop = stop or []
+        stop_set = [s for s in stop if s]
+        
+        # Add common stop tokens
+        common_stops = ["<|im_end|>", "\n\n", "User:", "Human:", "\nUser", "\nHuman"]
+        for stop in common_stops:
+            if stop not in stop_set:
+                stop_set.append(stop)
+        if self.tokenizer and self.tokenizer.eos_token and self.tokenizer.eos_token not in stop_set:
+            stop_set.append(self.tokenizer.eos_token)
 
         loop = asyncio.get_event_loop()
-        result = await asyncio.wait_for(_to_thread(_run_sync), timeout=getattr(settings, "llm_timeout_seconds", 25))
-        return result if isinstance(result, str) else str(result)
 
-    @staticmethod
-    def _coalesce(x, default):
-        return default if x is None else x
+        # Shared generation kwargs
+        gen_kwargs = {
+            "max_new_tokens": max_new_tokens or self.max_new_tokens,
+            "temperature": self.temperature,
+            "top_p": self.top_p,
+            "repetition_penalty": self.repetition_penalty,
+            "eos_token_id": self.tokenizer.eos_token_id,
+            "pad_token_id": self.tokenizer.pad_token_id,
+        }
+        if max_time is not None:
+            gen_kwargs["max_time"] = max_time
+        
+        def _run():
+            try:
+                t0 = time.perf_counter()
+                out = self.pipeline(prompt, **gen_kwargs)[0]["generated_text"]
+                dt = time.perf_counter() - t0
+                logger.info(f"LLM complete in {dt:.2f}s / max_time={max_time}")
+                
+                # Apply manual stop token cutting and cleaning
+                for s in stop_set:
+                    idx = out.find(s)
+                    if idx != -1:
+                        out = out[:idx]
+                        break
+                
+                # Simple cleaning for now
+                if "Human:" in out:
+                    out = out.split("Human:")[0]
+                if "User:" in out:
+                    out = out.split("User:")[0]
+                        
+                return out.strip()
+            except Exception as e:
+                logger.error(f"LLM generation failed: {e}")
+                return ""
 
+        if not stream:
+            try:
+                return await asyncio.wait_for(
+                    loop.run_in_executor(None, _run),
+                    timeout=getattr(settings, "llm_timeout_seconds", 60)
+                )
+            except asyncio.TimeoutError:
+                logger.error("LLM generation timed out")
+                return ""
 
-# small helper to keep asyncio code tidy across Python versions
-async def _to_thread(func, /, *args, **kwargs):
-    loop = asyncio.get_event_loop()
-    return await loop.run_in_executor(None, lambda: func(*args, **kwargs))
+        # Streaming path using TextIteratorStreamer
+        def _run_streaming(chunks: List[str]):
+            try:
+                inputs = self.tokenizer(prompt, return_tensors="pt").to(self.model.device)
+                streamer = TextIteratorStreamer(self.tokenizer, skip_special_tokens=True)
+                kwargs = dict(gen_kwargs)
+                kwargs["streamer"] = streamer
+
+                def _gen():
+                    self.model.generate(**inputs, **kwargs)
+
+                th = threading.Thread(target=_gen)
+                th.start()
+                t0 = time.perf_counter()
+                first = True
+                for piece in streamer:
+                    if first:
+                        first = False
+                        ttft = time.perf_counter() - t0
+                        logger.info(f"TTFT={ttft:.2f}s")
+                    chunks.append(piece)
+                th.join()
+            except Exception as e:
+                logger.error(f"LLM streaming failed: {e}")
+
+        chunks: List[str] = []
+        await loop.run_in_executor(None, _run_streaming, chunks)
+        out = "".join(chunks)
+        # Apply stop trimming on the combined output
+        for s in stop_set:
+            idx = out.find(s)
+            if idx != -1:
+                out = out[:idx]
+                break
+        return out.strip()

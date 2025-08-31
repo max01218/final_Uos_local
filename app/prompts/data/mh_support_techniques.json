@@ -1,0 +1,132 @@
+{
+  "grounding_visual": {
+    "name": "Visual Grounding",
+    "description": "Focus on immediate environment to reduce anxiety",
+    "steps": [
+      {
+        "action": "Look around and name 5 things you can see",
+        "duration": "30 seconds",
+        "detail": "Take your time, describe colors or shapes"
+      },
+      {
+        "action": "Focus on one object and describe it in detail",
+        "duration": "1 minute", 
+        "detail": "Texture, color, size, purpose"
+      },
+      {
+        "action": "Notice the lighting in your space",
+        "duration": "20 seconds",
+        "detail": "Bright, dim, natural, artificial"
+      },
+      {
+        "action": "Find something that brings you calm to look at",
+        "duration": "30 seconds",
+        "detail": "A photo, plant, or calming object"
+      }
+    ]
+  },
+  "breathing_box": {
+    "name": "Box Breathing",
+    "description": "Structured breathing to regulate nervous system",
+    "steps": [
+      {
+        "action": "Breathe in for 4 counts",
+        "duration": "4 seconds",
+        "detail": "Slow, steady through nose"
+      },
+      {
+        "action": "Hold breath for 4 counts", 
+        "duration": "4 seconds",
+        "detail": "Comfortable hold, no strain"
+      },
+      {
+        "action": "Exhale for 4 counts",
+        "duration": "4 seconds",
+        "detail": "Slow release through mouth"
+      },
+      {
+        "action": "Repeat the full cycle 3 times",
+        "duration": "1 minute",
+        "detail": "Find your natural rhythm"
+      }
+    ]
+  },
+  "PMR_hand": {
+    "name": "Hand Progressive Relaxation",
+    "description": "Release tension through guided muscle relaxation",
+    "steps": [
+      {
+        "action": "Make fists with both hands for 5 seconds",
+        "duration": "5 seconds",
+        "detail": "Tight but not painful"
+      },
+      {
+        "action": "Release and notice the relaxation for 10 seconds",
+        "duration": "10 seconds", 
+        "detail": "Feel the contrast between tense and relaxed"
+      },
+      {
+        "action": "Flex your wrists upward for 5 seconds",
+        "duration": "5 seconds",
+        "detail": "Feel the stretch in forearms"
+      },
+      {
+        "action": "Let hands rest naturally and breathe",
+        "duration": "15 seconds",
+        "detail": "Notice any lingering sensations"
+      }
+    ]
+  },
+  "cognitive_reframe": {
+    "name": "Simple Thought Check",
+    "description": "Gentle challenging of anxious thoughts",
+    "steps": [
+      {
+        "action": "Notice your current worried thought",
+        "duration": "30 seconds",
+        "detail": "Don't judge it, just acknowledge"
+      },
+      {
+        "action": "Ask: Is this thought helpful right now?",
+        "duration": "20 seconds",
+        "detail": "Simple yes or no question"
+      },
+      {
+        "action": "Think of one small thing you can control",
+        "duration": "30 seconds",
+        "detail": "Something concrete and immediate"
+      },
+      {
+        "action": "Focus on that controllable action",
+        "duration": "1 minute",
+        "detail": "Even planning it counts"
+      }
+    ]
+  },
+  "mindful_pause": {
+    "name": "Mindful Pause",
+    "description": "Brief mindfulness to interrupt anxiety cycles",
+    "steps": [
+      {
+        "action": "Pause whatever you're doing for 10 seconds",
+        "duration": "10 seconds",
+        "detail": "Just stop and be still"
+      },
+      {
+        "action": "Take 3 deeper breaths than usual",
+        "duration": "30 seconds",
+        "detail": "Don't force it, just slightly deeper"
+      },
+      {
+        "action": "Notice your feet touching the ground",
+        "duration": "20 seconds",
+        "detail": "Physical connection to support"
+      },
+      {
+        "action": "Set a small intention for the next few minutes",
+        "duration": "30 seconds",
+        "detail": "One simple thing you want to do"
+      }
+    ]
+  }
+}

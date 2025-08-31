@@ -49,7 +49,16 @@ def get_chat_service():
 def _try_bootstrap():
     # Lazy attempt to bootstrap if not yet initialized
     try:
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.info("Attempting lazy bootstrap...")
         from app.bootstrap import bootstrap_services
-        bootstrap_services()
-    except Exception:
-        pass
+        success = bootstrap_services()
+        if success:
+            logger.info("Lazy bootstrap successful")
+        else:
+            logger.error("Lazy bootstrap failed")
+    except Exception as e:
+        import logging
+        logger = logging.getLogger(__name__)
+        logger.error(f"Lazy bootstrap exception: {e}")

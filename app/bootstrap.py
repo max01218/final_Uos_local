@@ -52,50 +52,90 @@ def bootstrap_services():
     Build core singletons and register them in app.core.di, including ChatService.
     """
     try:
+        logger.info("Starting bootstrap_services...")
         from app.clients.llm_adapter import LLMAdapter
+        from app.clients.llm_client import LLMClient
         from app.services.memory_service import ConversationStore
         from app.services.chat_service import ChatService
         from app.core import di  # DI container
 
-        # LLM
+        # Main LLM (legacy adapter for compatibility)
+        logger.info("Initializing legacy LLM adapter...")
         pipe, tok = build_llm()
         warmup_pipeline(pipe)
-        llm = LLMAdapter(pipe, tokenizer=tok)
+        legacy_llm = LLMAdapter(pipe, tokenizer=tok)
+        logger.info("Legacy LLM adapter initialized successfully")
+
+        # Main LLM Client (new architecture)
+        logger.info("Initializing main LLM client...")
+        main_llm_client = LLMClient(
+            model_id=settings.llm_model_id,
+            temperature=settings.llm_temperature,
+            top_p=settings.llm_top_p,
+            repetition_penalty=settings.llm_repetition_penalty,
+            max_new_tokens=settings.llm_max_new_tokens,
+        )
+        logger.info("Main LLM client initialized successfully")
 
         # Conversation store
+        logger.info("Initializing ConversationStore...")
         cs = ConversationStore()
+        logger.info("ConversationStore initialized successfully")
 
         # Optional knowledge store (RAG); tolerate absence
         kb_store = None
         if hasattr(di, "get_vector_store"):
             try:
+                logger.info("Attempting to initialize vector store...")
                 kb_store = di.get_vector_store()  # type: ignore
+                logger.info("Vector store initialized successfully")
             except Exception as e:
                 logger.warning(f"Vector store init failed, continue without RAG: {e}")
 
-        # Build ChatService
-        chat_service = ChatService(store=kb_store, llm_client=llm, conversation_store=cs, embedder=None)
+        # Pre-warm models for faster response times
+        logger.info("Pre-warming models...")
+        from app.clients.model_manager import model_manager
+        model_manager.prewarm_models()
+        
+        # Build ChatService with new architecture
+        logger.info("Initializing ChatService...")
+        chat_service = ChatService(
+            store=kb_store, 
+            llm_client=main_llm_client, 
+            conversation_store=cs, 
+            embedder=None
+        )
+        logger.info("ChatService initialized successfully")
 
         # Register into DI (prefer setters)
+        logger.info("Registering services in DI container...")
         if hasattr(di, "set_llm"):
-            di.set_llm(llm)  # type: ignore
+            di.set_llm(legacy_llm)  # type: ignore
+            logger.info("LLM registered in DI")
         else:
-            di.llm = llm  # type: ignore
+            di.llm = legacy_llm  # type: ignore
+            logger.info("LLM set as DI attribute")
 
         if hasattr(di, "set_conversation_store"):
             di.set_conversation_store(cs)  # type: ignore
+            logger.info("ConversationStore registered in DI")
         else:
             di.conversation_store = cs  # type: ignore
+            logger.info("ConversationStore set as DI attribute")
 
         if hasattr(di, "set_store"):
             di.set_store(kb_store)  # type: ignore
+            logger.info("Store registered in DI")
         else:
             di.store = kb_store  # type: ignore
+            logger.info("Store set as DI attribute")
 
         if hasattr(di, "set_chat_service"):
             di.set_chat_service(chat_service)  # type: ignore
+            logger.info("ChatService registered in DI successfully")
         else:
             di.chat_service = chat_service  # type: ignore
+            logger.info("ChatService set as DI attribute")
 
         logger.info("bootstrap_services completed (ChatService registered).")
         return True

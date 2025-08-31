@@ -23,11 +23,18 @@ async def empathetic_professional_v2(
         # 取得模型原始輸出
         answer, meta = await chat_service.handle_chat(request_data)
 
-        # 轉為 E/S/Q 三行；若失敗或為空，用保底
-        word_limit = getattr(request.app.state, "esq_word_limit", 120)
-        final_text = format_esq(answer, word_limit=word_limit)
-        if not final_text.strip():
-            final_text = fallback_esq(request_data.question)
+        # 根據路由決定是否套用ESQ格式
+        route = meta.get("route", "other") if isinstance(meta, dict) else "other"
+        
+        if route in ("greeting", "small_talk"):
+            # 簡單路由直接使用原始回應，不套用ESQ格式
+            final_text = answer
+        else:
+            # 複雜路由轉為 E/S/Q 三行；若失敗或為空，用保底
+            word_limit = getattr(request.app.state, "esq_word_limit", 120)
+            final_text = format_esq(answer, word_limit=word_limit)
+            if not final_text.strip():
+                final_text = fallback_esq(request_data.question)
 
         resp = RAGResponse(
             answer=final_text,
