@@ -33,11 +33,13 @@ class Orchestrator:
         # Crisis hard gate (regex only for safety)
         if CRISIS_RE.search(question):
             route = "crisis"
+            route_score = 1.0
             logger.warning(f"Crisis detected: {question[:50]}...")
         else:
             # Stage-1: Router LLM classification
             decision = await self.router.classify(question)
             route = decision.route
+            route_score = getattr(decision, 'score', getattr(decision, 'confidence', None))
 
         # Special handling for mh_support route with guided flow
         if route == "mh_support" and self.flow:
@@ -72,13 +74,13 @@ class Orchestrator:
         )
         
         # Stage-2: Generator LLM produces final response
-        logger.info(f"Stage-2 Generator LLM generating for route: {route}")
+        logger.info(f"Stage-2 Generator LLM generating for route: {route} (score: {route_score})")
         raw = await self.main.complete(prompt)
         
         # For simple routes like greeting, skip judge/repair to improve speed and quality
         if route in ("greeting", "small_talk"):
             logger.info(f"Skipping judge/repair for simple route: {route}")
-            return raw.strip(), {"route": route, "repaired": False, "fast_path": True}
+            return raw.strip(), {"route": route, "route_score": route_score, "repaired": False, "fast_path": True}
         
         # Judge and repair for complex routes only
         spec = self.compiler.routes[route]
@@ -90,12 +92,12 @@ class Orchestrator:
             logger.info(f"Response failed judge, attempting repair for route: {route}")
             try:
                 fixed = await self.repairer.repair(contract, constraints, question, raw)
-                return fixed.strip(), {"route": route, "repaired": True}
+                return fixed.strip(), {"route": route, "route_score": route_score, "repaired": True}
             except Exception as e:
                 logger.warning(f"Repair failed: {e}, using original")
-                return raw.strip(), {"route": route, "repaired": False, "repair_error": str(e)}
+                return raw.strip(), {"route": route, "route_score": route_score, "repaired": False, "repair_error": str(e)}
         
-        return raw.strip(), {"route": route, "repaired": False}
+        return raw.strip(), {"route": route, "route_score": route_score, "repaired": False}
 
     async def _handle_guided_flow(self, *, question: str, history: str, session_id: str = None):
         """Handle guided flow for mh_support route"""
