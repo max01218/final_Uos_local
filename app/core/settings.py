@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 class Settings(BaseModel):
     # Main LLM settings
-    llm_model_id: str = "Qwen/Qwen2.5-3B-Instruct"
+    llm_model_id: str = "Qwen/Qwen2.5-7B-Instruct"
     llm_temperature: float = 0.55
     llm_top_p: float = 0.9
     llm_repetition_penalty: float = 1.12
@@ -12,7 +12,7 @@ class Settings(BaseModel):
     llm_max_time_seconds: float = 45.0
     
     # Router LLM settings (lightweight)
-    router_model_id: str = "Qwen/Qwen2.5-1.5B-Instruct"
+    router_model_id: str = "Qwen/Qwen2.5-3B-Instruct"
     router_temperature: float = 0.1
     router_top_p: float = 0.9
     router_max_new_tokens: int = 120
