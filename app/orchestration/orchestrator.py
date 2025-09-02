@@ -40,7 +40,10 @@ DRAFT:
 
 Message:"""
 
-CRISIS_RE = re.compile(r"(suicid(e|al)|kill myself|self[- ]?harm|end my life|homicide|kill (him|her|them))", re.I)
+CRISIS_RE = re.compile(
+    r"(suicid(e|al)|kill myself|self[- ]?harm|end my life|homicide|kill (him|her|them))",
+    re.I,
+)
 
 # ---------- surface cleanup helpers ----------
 _LABEL_LINE = re.compile(r"^\s*(E|S|Q)\s*:\s*", re.I)
@@ -75,7 +78,7 @@ def _clean_roles(text: str) -> str:
     return " ".join([ln for ln in lines if ln]).strip()
 
 def _sentences(text: str) -> list[str]:
-    s = re.split(r"(?<=[.!?])\s+", text.strip())
+    s = re.split(r"(?<=[.!?])\s+", (text or "").strip())
     return [x.strip() for x in s if x.strip()]
 
 def _dedupe_sentences(text: str) -> str:
@@ -90,9 +93,9 @@ def _dedupe_sentences(text: str) -> str:
     return " ".join(out)
 
 def _clip_words(text: str, max_words: int) -> str:
-    words = text.split()
+    words = (text or "").split()
     if len(words) <= max_words:
-        return text
+        return text or ""
     return " ".join(words[:max_words]).rstrip(".,;:!?")
 # ------------------------------------------------
 
@@ -115,7 +118,10 @@ class Orchestrator:
             logger.info("Naturalizer: rewriting draft to conversational surface...")
             resp = await self.main.complete(
                 NATURALIZER_PROMPT.format(draft=draft),
-                temperature=0.6, top_p=0.9, max_new_tokens=200, max_time=8.0
+                temperature=0.6,
+                top_p=0.9,
+                max_new_tokens=200,
+                max_time=8.0,
             )
             return _strip_labels(resp or draft)
         except Exception as e:
@@ -129,7 +135,9 @@ class Orchestrator:
         try:
             prompt = NATURALIZER_GREETING.format(draft=draft)
             logger.info("Naturalizer: rewriting draft to conversational surface...")
-            resp = await self.main.complete(prompt, temperature=0.6, top_p=0.9, max_new_tokens=200, max_time=8.0)
+            resp = await self.main.complete(
+                prompt, temperature=0.6, top_p=0.9, max_new_tokens=200, max_time=8.0
+            )
             out = _strip_labels(resp or draft)
             return _short_surface_enforce(out, 35, True)
         except Exception as e:
@@ -148,7 +156,9 @@ class Orchestrator:
             f"User said: {user_text}\n"
             "Reply:"
         )
-        resp = await self.main.complete(prompt, temperature=0.4, top_p=0.9, max_new_tokens=60, max_time=6.0)
+        resp = await self.main.complete(
+            prompt, temperature=0.4, top_p=0.9, max_new_tokens=60, max_time=6.0
+        )
         out = _strip_labels(resp or "")
         return _short_surface_enforce(out, 20, True)
 
@@ -187,22 +197,27 @@ class Orchestrator:
             route = decision.route
             route_score = getattr(decision, "score", getattr(decision, "confidence", None))
 
-        # Guided flow (mh_support)
+        # Guided flow (mh_support) -> DO NOT naturalize; keep ESQ for API to convert
         if route == "mh_support" and self.flow:
             final_raw, meta = await self._handle_guided_flow(
                 question=question, history=history, session_id=session_id
             )
-            # keep naturalizer if you want softer surface; ESQ formatting is handled in API layer
-            final = await self._naturalize(final_raw)
-            meta = {**(meta or {}), "route": route, "route_score": route_score, "naturalized": True}
-            return final, meta
+            return (final_raw or "").strip(), {
+                **(meta or {}),
+                "route": route,
+                "route_score": route_score,
+                "naturalized": False,  # important: keep ESQ; API will make it natural
+            }
 
         # Greeting shortcut (small-talk merged)
         if route == "greeting":
             final = await self._gen_greeting(question)
             return final, {
-                "route": route, "route_score": route_score, "repaired": False,
-                "fast_path": True, "naturalized": True
+                "route": route,
+                "route_score": route_score,
+                "repaired": False,
+                "fast_path": True,
+                "naturalized": True,
             }
 
         # Info-definition: concise factual explanation with cleanup
@@ -219,17 +234,31 @@ class Orchestrator:
                 except Exception as e:
                     logger.warning(f"RAG retrieval failed: {e}")
             final = await self._gen_info_definition(question, history, context)
-            return final, {"route": route, "route_score": route_score, "repaired": False, "naturalized": True}
+            return final, {
+                "route": route,
+                "route_score": route_score,
+                "repaired": False,
+                "naturalized": True,
+            }
 
         # Other routes: compile + generate + light naturalization
         context = ""
-        prompt = self.compiler.compile(route=route, question=question, history=history, context=context, tone=tone)
-        logger.info(f"Stage-2 Generator LLM generating for route: {route} (score: {route_score})")
+        prompt = self.compiler.compile(
+            route=route, question=question, history=history, context=context, tone=tone
+        )
+        logger.info(
+            f"Stage-2 Generator LLM generating for route: {route} (score: {route_score})"
+        )
         raw = await self.main.complete(prompt)
 
         if route in ("other",):
             final = await self._naturalize(raw.strip())
-            return final, {"route": route, "route_score": route_score, "repaired": False, "naturalized": True}
+            return final, {
+                "route": route,
+                "route_score": route_score,
+                "repaired": False,
+                "naturalized": True,
+            }
 
         # For any remaining complex route types that still use constraints
         spec = self.compiler.routes[route]
@@ -240,17 +269,30 @@ class Orchestrator:
             try:
                 fixed = await self.repairer.repair(contract, constraints, question, raw)
                 final = await self._naturalize(fixed.strip())
-                return final, {"route": route, "route_score": route_score, "repaired": True, "naturalized": True}
+                return final, {
+                    "route": route,
+                    "route_score": route_score,
+                    "repaired": True,
+                    "naturalized": True,
+                }
             except Exception as e:
                 logger.warning(f"Repair failed: {e}, using original")
                 final = await self._naturalize(raw.strip())
                 return final, {
-                    "route": route, "route_score": route_score, "repaired": False,
-                    "repair_error": str(e), "naturalized": True
+                    "route": route,
+                    "route_score": route_score,
+                    "repaired": False,
+                    "repair_error": str(e),
+                    "naturalized": True,
                 }
 
         final = await self._naturalize(raw.strip())
-        return final, {"route": route, "route_score": route_score, "repaired": False, "naturalized": True}
+        return final, {
+            "route": route,
+            "route_score": route_score,
+            "repaired": False,
+            "naturalized": True,
+        }
 
     async def _handle_guided_flow(self, *, question: str, history: str, session_id: str = None):
         logger.info("Handling guided flow for mh_support route")
@@ -305,17 +347,29 @@ class Orchestrator:
 
         return (raw or "").strip(), {"route": "mh_support", "repaired": not ok, "flow_active": True}
 
-    async def _hedged_turn_generate(self, *, question: str, history: str, context: str, plan_json: str, session_id: str = None) -> str:
+    async def _hedged_turn_generate(
+        self, *, question: str, history: str, context: str, plan_json: str, session_id: str = None
+    ) -> str:
         s = self.flow.load_state(session_id)
         main_prompt = self.compiler.compile_flow_turn(
-            route="mh_support", question=question, history=history, context=context,
-            technique=s.technique or "", step_index=s.step_index,
-            plan_json=plan_json or "{}", expected_question_type=s.last_question_type,
+            route="mh_support",
+            question=question,
+            history=history,
+            context=context,
+            technique=s.technique or "",
+            step_index=s.step_index,
+            plan_json=plan_json or "{}",
+            expected_question_type=s.last_question_type,
         )
         fast_prompt = self.compiler.compile_flow_turn_fast(
-            route="mh_support", question=question, history=history, context=context,
-            technique=s.technique or "", step_index=s.step_index,
-            plan_json=plan_json or "{}", expected_question_type=s.last_question_type,
+            route="mh_support",
+            question=question,
+            history=history,
+            context=context,
+            technique=s.technique or "",
+            step_index=s.step_index,
+            plan_json=plan_json or "{}",
+            expected_question_type=s.last_question_type,
         )
 
         async def _gen_main():
