@@ -1,9 +1,7 @@
-# app/orchestration/orchestrator.py
 import re
 import logging
 import asyncio
 
-from app.core.settings import settings
 from app.clients.model_manager import model_manager
 from app.orchestration.prompt_compiler import PromptCompiler
 from app.orchestration.router_service import LLMRouter
@@ -13,14 +11,13 @@ from app.orchestration.flow_service import GuidedFlowService
 
 logger = logging.getLogger(__name__)
 
-# Naturalizers
 NATURALIZER_PROMPT = """You will be given a DRAFT reply for a chat. It may include labels like "E:", "S:", "Q:".
 Rewrite it as ONE natural chat message in warm, professional English.
 
 Rules:
 - Do NOT show any labels (E:, S:, Q:) or bullets/numbers.
 - Start with a brief human acknowledgement (1 short sentence).
-- Keep 1–2 concrete, low-burden suggestions as plain sentences.
+- Keep 1-2 concrete, low-burden suggestions as plain sentences.
 - Ask EXACTLY ONE short question at the end.
 - Vary sentence length with gentle connectors ("if it's okay", "we can start small").
 - Under 120 words.
@@ -48,6 +45,28 @@ CRISIS_RE = re.compile(
     re.I,
 )
 
+def _short_surface_enforce(t: str, max_words: int = 35) -> str:
+    if not t:
+        return t
+    # drop code fences & system-ish headers
+    t = re.sub(r"(?is)`{3}.*?`{3}", "", t)
+    t = re.sub(r"(?i)\b(system|assistant|human|message)\b\s*[:：]\s*", "", t)
+    t = t.strip()
+    # first non-empty line
+    for line in t.splitlines():
+        line = line.strip()
+        if line:
+            t = line
+            break
+    # clip to max words
+    words = t.split()
+    if len(words) > max_words:
+        t = " ".join(words[:max_words]).rstrip(".,;:! ")
+    # ensure one short question ending
+    if not t.endswith("?"):
+        t = t.rstrip(".! ") + " - is that okay?"
+    return t
+
 
 class Orchestrator:
     def __init__(self, rag=None, conversation_store=None):
@@ -60,7 +79,6 @@ class Orchestrator:
         self.flow = GuidedFlowService(conversation_store, self.compiler, self.main) if conversation_store else None
 
     async def _naturalize(self, text: str) -> str:
-        """Default naturalizer used for non-greeting routes."""
         draft = (text or "").strip()
         if not draft:
             return draft
@@ -76,7 +94,6 @@ class Orchestrator:
             return draft
 
     async def _naturalize_with_style(self, text: str, style: str = "default") -> str:
-        """Style-aware naturalizer (use 'greeting' for very short hello)."""
         draft = (text or "").strip()
         if not draft:
             return draft
@@ -84,10 +101,11 @@ class Orchestrator:
             prompt = NATURALIZER_GREETING.format(draft=draft) if style == "greeting" else NATURALIZER_PROMPT.format(draft=draft)
             logger.info("Naturalizer: rewriting draft to conversational surface...")
             resp = await self.main.complete(prompt, temperature=0.6, top_p=0.9, max_new_tokens=200, max_time=8.0)
-            return (resp or draft).strip()
+            out = (resp or draft).strip()
+            return _short_surface_enforce(out, max_words=35) if style == "greeting" else out
         except Exception as e:
             logger.warning(f"Naturalizer failed: {e}")
-            return draft
+            return _short_surface_enforce(draft, max_words=35) if style == "greeting" else draft
 
     async def generate(self, *, question: str, history: str, tone: str = "balanced", session_id: str = None):
         # Stage 0: crisis hard gate
@@ -173,7 +191,6 @@ class Orchestrator:
         return final, {"route": route, "route_score": route_score, "repaired": False, "naturalized": True}
 
     async def _handle_guided_flow(self, *, question: str, history: str, session_id: str = None):
-        """Handle guided flow for mh_support route."""
         logger.info("Handling guided flow for mh_support route")
 
         # Plan if needed
@@ -205,7 +222,7 @@ class Orchestrator:
         tone_block = self.compiler.get_tone_block("balanced")
         banned = getattr(self.compiler, "banned_phrases", [])
 
-        # Quick check on common failures before LLM judge
+        # Quick check before LLM judge
         e_history = []
         try:
             recent = self.flow.cs.get_recent_messages(3)

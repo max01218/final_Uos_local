@@ -80,7 +80,6 @@ class LLMRouter:
         text = (user_text or "").strip()
         default_guess = "greeting" if _GREETING.match(text) else "other"
 
-        # small-input cache
         key = text.lower()
         if self.cache and len(text) <= 15:
             hit = self.cache.get(key)
@@ -90,7 +89,7 @@ class LLMRouter:
 
         logger.info(f"Stage-1 Router LLM classifying: {text[:30]}...")
 
-        # ---- 1) call classifier (with stable sampling) ----
+        # 1) call the classifier (no parsing here)
         try:
             raw = await self.client.complete(
                 CLASSIFIER_PROMPT.format(user_text=text),
@@ -105,7 +104,7 @@ class LLMRouter:
                 self.cache.set(key, dec)
             return dec
 
-        # ---- 2) robust parse & normalize ----
+        # 2) robust parse
         try:
             obj: Dict[str, Any]
             if isinstance(raw, dict):
@@ -114,22 +113,18 @@ class LLMRouter:
                 payload = _extract_json_obj(raw)
                 obj = json.loads(payload) if payload else {}
 
-            label = obj.get("route") or obj.get("label") or obj.get("class")
-            conf = obj.get("confidence", obj.get("score", obj.get("prob", None)))
+            label = (obj.get("route") or obj.get("label") or obj.get("class") or "").strip().lower()
+            conf_raw = obj.get("confidence", obj.get("score", obj.get("prob", 0.0)))
             try:
-                conf = float(conf) if conf is not None else 0.0
+                conf = float(conf_raw)
             except Exception:
                 conf = 0.0
             triggers = obj.get("triggers") or []
             if not isinstance(triggers, list):
                 triggers = [str(triggers)]
 
-            if not label:
-                raise KeyError("route")
-
-            label = str(label).strip().lower()
             if label not in ROUTES:
-                label = default_guess
+                raise KeyError("route missing/invalid")
 
             dec = RouteDecision(route=label, confidence=conf, triggers=triggers)
             try:
@@ -139,7 +134,6 @@ class LLMRouter:
             logger.info(f"Stage-1 classified '{text[:30]}...' as '{dec.route}' (conf: {dec.confidence:.2f})")
         except Exception as e:
             logger.warning(f"Router parsing failed: {e!r}; trying mini router...")
-            # ---- 3) mini backup classifier ----
             try:
                 mini = await self.client.complete(
                     MINI_PROMPT.format(user_text=text),
