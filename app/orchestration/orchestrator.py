@@ -18,7 +18,7 @@ Rewrite it as ONE natural chat message in warm, professional English.
 Rules:
 - Do NOT show any labels (E:, S:, Q:) or bullets/numbers.
 - Start with a brief human acknowledgement (1 short sentence).
-- Keep 1-2 concrete, low-burden suggestions as plain sentences.
+- Keep 1–2 concrete, low-burden suggestions as plain sentences.
 - Ask EXACTLY ONE short question at the end.
 - Under 120 words.
 
@@ -42,12 +42,11 @@ Message:"""
 
 CRISIS_RE = re.compile(r"(suicid(e|al)|kill myself|self[- ]?harm|end my life|homicide|kill (him|her|them))", re.I)
 
-# --------- hard post-processing to ensure clean surface ----------
-_LABEL_LINE = re.compile(r"^\s*(E|S|Q)\s*:\s*", re.I)
-_ROLE_HEAD = re.compile(r"(?i)\b(system|assistant|human|message)\b\s*[:：]\s*")
-_CODE_FENCE = re.compile(r"(?is)`{3}.*?`{3}")
-
 def _strip_labels(text: str) -> str:
+    import re
+    _LABEL_LINE = re.compile(r"^\s*(E|S|Q)\s*:\s*", re.I)
+    _ROLE_HEAD = re.compile(r"(?i)\b(system|assistant|human|message)\b\s*[:：]\s*")
+    _CODE_FENCE = re.compile(r"(?is)`{3}.*?`{3}")
     if not text:
         return text
     text = _CODE_FENCE.sub("", text)
@@ -68,8 +67,6 @@ def _short_surface_enforce(t: str, max_words: int = 35, ensure_question: bool = 
     if ensure_question and not t.endswith("?"):
         t = t.rstrip(".! ") + " — is that okay?"
     return t
-# -----------------------------------------------------------------
-
 
 class Orchestrator:
     def __init__(self, rag=None, conversation_store=None):
@@ -96,23 +93,22 @@ class Orchestrator:
             logger.warning(f"Naturalizer failed: {e}")
             return _strip_labels(draft)
 
-    async def _naturalize_with_style(self, text: str, style: str = "default") -> str:
+    async def _naturalize_with_style(self, text: str, style: str = "greeting") -> str:
         draft = (text or "").strip()
         if not draft:
             return draft
         try:
-            prompt = NATURALIZER_GREETING.format(draft=draft) if style == "greeting" else NATURALIZER_PROMPT.format(draft=draft)
+            prompt = NATURALIZER_GREETING.format(draft=draft)
             logger.info("Naturalizer: rewriting draft to conversational surface...")
             resp = await self.main.complete(prompt, temperature=0.6, top_p=0.9, max_new_tokens=200, max_time=8.0)
             out = _strip_labels(resp or draft)
-            return _short_surface_enforce(out, 35, True) if style == "greeting" else out
+            return _short_surface_enforce(out, 35, True)
         except Exception as e:
             logger.warning(f"Naturalizer failed: {e}")
             out = _strip_labels(draft)
-            return _short_surface_enforce(out, 35, True) if style == "greeting" else out
+            return _short_surface_enforce(out, 35, True)
 
     async def generate(self, *, question: str, history: str, tone: str = "balanced", session_id: str = None):
-        # Stage-0: crisis hard gate
         if CRISIS_RE.search(question or ""):
             route, route_score = "crisis", 1.0
         else:
@@ -120,14 +116,11 @@ class Orchestrator:
             route = decision.route
             route_score = getattr(decision, "score", getattr(decision, "confidence", None))
 
-        # Guided flow
         if route == "mh_support" and self.flow:
             final_raw, meta = await self._handle_guided_flow(question=question, history=history, session_id=session_id)
-            final = await self._naturalize(final_raw)
-            meta = {**(meta or {}), "route_score": route_score, "naturalized": True}
-            return final, meta
+            meta = {**(meta or {}), "route_score": route_score, "naturalized": False}
+            return (final_raw or "").strip(), meta
 
-        # Optional RAG
         context = ""
         if route in ("info_definition", "mh_support") and self.rag:
             try:
@@ -141,48 +134,125 @@ class Orchestrator:
                 logger.warning(f"RAG retrieval failed: {e}")
                 context = ""
 
-        # Stage-2: compile & generate
         prompt = self.compiler.compile(route=route, question=question, history=history, context=context, tone=tone)
         logger.info(f"Stage-2 Generator LLM generating for route: {route} (score: {route_score})")
         raw = await self.main.complete(prompt)
 
-        # Simple routes -> naturalize & short surface
         if route in ("greeting", "small_talk"):
             logger.info(f"Skipping judge/repair for simple route: {route}")
             final = await self._naturalize_with_style(raw.strip(), style="greeting")
-            return final, {
-                "route": route, "route_score": route_score, "repaired": False, "fast_path": True, "naturalized": True
-            }
+            return final, {"route": route, "route_score": route_score, "repaired": False, "fast_path": True, "naturalized": True}
 
-        # Complex routes -> judge & repair
-        spec = self.compiler.routes[route]
+        try:
+            spec = self.compiler.routes[route]
+        except Exception as e:
+            logger.warning(f"Compiler spec missing for route '{route}': {e}; returning raw")
+            return (raw or "").strip(), {"route": route, "route_score": route_score, "repaired": False, "naturalized": False}
+
         constraints = self.compiler._join_constraints(spec.get("constraints", []))
-        contract = self.compiler.contracts[spec["output_contract"]]
+        contract_key = spec.get("output_contract", "")
+        contract = self.compiler.contracts.get(contract_key, "")
+        requires_esq = (contract_key == "esq_three_lines")
 
         ok = await self.judge.pass_fail(contract, constraints, question, raw)
         if not ok:
             logger.info(f"Response failed judge, attempting repair for route: {route}")
             try:
                 fixed = await self.repairer.repair(contract, constraints, question, raw)
-                final = await self._naturalize(fixed.strip())
+                if requires_esq:
+                    return (fixed or "").strip(), {"route": route, "route_score": route_score, "repaired": True, "naturalized": False}
+                final = await self._naturalize((fixed or "").strip())
                 return final, {"route": route, "route_score": route_score, "repaired": True, "naturalized": True}
             except Exception as e:
                 logger.warning(f"Repair failed: {e}, using original")
-                final = await self._naturalize(raw.strip())
-                return final, {
-                    "route": route, "route_score": route_score, "repaired": False, "repair_error": str(e), "naturalized": True
-                }
+                if requires_esq:
+                    return (raw or "").strip(), {"route": route, "route_score": route_score, "repaired": False, "repair_error": str(e), "naturalized": False}
+                final = await self._naturalize((raw or "").strip())
+                return final, {"route": route, "route_score": route_score, "repaired": False, "repair_error": str(e), "naturalized": True}
 
-        final = await self._naturalize(raw.strip())
+        if requires_esq:
+            return (raw or "").strip(), {"route": route, "route_score": route_score, "repaired": False, "naturalized": False}
+        final = await self._naturalize((raw or "").strip())
         return final, {"route": route, "route_score": route_score, "repaired": False, "naturalized": True}
 
-    # ---- guided flow path trimmed for brevity ----
     async def _handle_guided_flow(self, *, question: str, history: str, session_id: str = None):
         logger.info("Handling guided flow for mh_support route")
-        # ... keep your existing implementation (judge/repair + tone) ...
-        # make sure to final = await self._naturalize(raw.strip()) before return
-        raise NotImplementedError  # keep your previous implementation here
+        plan_json = await self.flow.plan_if_needed(question=question, history=history, session_id=session_id)
+
+        context = ""
+        if self.rag:
+            try:
+                if hasattr(self.rag, "retrieve"):
+                    docs = await self.rag.retrieve(question, k=3)
+                    context = self.rag.build_context(docs, max_docs=2)
+                else:
+                    docs = self.rag.retrieve(question, k=3)
+                    context = self.rag.build_context(docs, max_docs=2)
+            except Exception as e:
+                logger.warning(f"RAG retrieval failed: {e}")
+                context = ""
+
+        raw = await self._hedged_turn_generate(
+            question=question, history=history, context=context, plan_json=plan_json or "{}", session_id=session_id
+        )
+
+        try:
+            spec = self.compiler.routes["mh_support"]
+            constraints = self.compiler._join_constraints(spec.get("constraints", []))
+            contract = self.compiler.contracts[spec.get("output_contract", "esq_three_lines")]
+        except Exception as e:
+            logger.warning(f"Compiler spec missing for mh_support: {e}")
+            return (raw or "").strip(), {"route": "mh_support", "repaired": False, "flow_active": True}
+
+        ok = True
+        try:
+            ok = await asyncio.wait_for(self.judge.pass_fail(contract, constraints, question, raw), timeout=8.0)
+        except asyncio.TimeoutError:
+            ok = True
+        except Exception as e:
+            logger.warning(f"judge.pass_fail error: {e}")
+            ok = True
+
+        if not ok:
+            try:
+                raw = await asyncio.wait_for(self.repairer.repair(contract, constraints, question, raw), timeout=12.0)
+            except Exception as e:
+                logger.warning(f"Flow repair failed: {e}")
+
+        return (raw or "").strip(), {"route": "mh_support", "repaired": not ok, "flow_active": True}
 
     async def _hedged_turn_generate(self, *, question: str, history: str, context: str, plan_json: str, session_id: str = None) -> str:
-        # unchanged from your version
-        raise NotImplementedError  # keep your previous implementation here
+        s = self.flow.load_state(session_id)
+        main_prompt = self.compiler.compile_flow_turn(
+            route="mh_support", question=question, history=history, context=context,
+            technique=s.technique or "", step_index=s.step_index,
+            plan_json=plan_json or "{}", expected_question_type=s.last_question_type,
+        )
+        fast_prompt = self.compiler.compile_flow_turn_fast(
+            route="mh_support", question=question, history=history, context=context,
+            technique=s.technique or "", step_index=s.step_index,
+            plan_json=plan_json or "{}", expected_question_type=s.last_question_type,
+        )
+
+        async def _gen_main():
+            return await self.main.complete(main_prompt, max_time=30.0, max_new_tokens=None)
+
+        async def _gen_fast():
+            return await self.main.complete(fast_prompt, max_time=8.0, max_new_tokens=80)
+
+        t_main = asyncio.create_task(_gen_main())
+        await asyncio.sleep(2.0)
+        t_fast = asyncio.create_task(_gen_fast())
+        done, pending = await asyncio.wait({t_main, t_fast}, return_when=asyncio.FIRST_COMPLETED)
+        winner = next(iter(done))
+        for p in pending:
+            p.cancel()
+        try:
+            return await winner
+        except Exception:
+            for p in pending:
+                try:
+                    return await p
+                except Exception:
+                    pass
+            return ""
