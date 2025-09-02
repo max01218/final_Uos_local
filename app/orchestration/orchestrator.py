@@ -1,4 +1,3 @@
-# app/orchestration/orchestrator.py
 import re
 import logging
 import asyncio
@@ -13,7 +12,7 @@ from app.orchestration.flow_service import GuidedFlowService
 logger = logging.getLogger(__name__)
 
 CRISIS_RE = re.compile(
-    r"(suicid(e|al)|kill myself|self[- ]?harm|end my life|i want to die|想死|自殺|傷害自己)",
+    r"(suicid(e|al)|kill myself|self[- ]?harm|end my life|i want to die)",
     re.I,
 )
 
@@ -30,14 +29,14 @@ CRISIS_TEMPLATE = (
 )
 
 _LABEL_LINE = re.compile(r"^\s*(E|S|Q)\s*:\s*", re.I)
-_ROLE_HEAD = re.compile(r"(?i)\b(system|assistant|human|message|user)\b\s*[:：]\s*")
+_ROLE_HEAD  = re.compile(r"(?i)\b(system|assistant|human|message|user)\b\s*[:：]\s*")
 _CODE_FENCE = re.compile(r"(?is)`{3}.*?`{3}")
-_ROLE_PREFIX = re.compile(r"^\s*(system|assistant|user|human|message)\s*[:：]\s*", re.I)
+_ROLE_PREFIX= re.compile(r"^\s*(system|assistant|user|human|message)\s*[:：]\s*", re.I)
 
 TONE_HINT = {
     "balanced": "Use a balanced, calm and supportive tone.",
-    "warm": "Use a warmer, gentler, more encouraging tone.",
-    "direct": "Use a concise, straightforward, no-fluff professional tone.",
+    "warm":     "Use a warmer, gentler, more encouraging tone.",
+    "direct":   "Use a concise, straightforward, no-fluff professional tone.",
 }
 def _tone_hint(tone: str) -> str:
     return TONE_HINT.get((tone or "balanced").lower(), TONE_HINT["balanced"])
@@ -97,18 +96,24 @@ def _remove_qna_noise(text: str) -> str:
             continue
         kept.append(s)
     return " ".join(kept)
+
+_GUIDED_NOISE = re.compile(r"^\s*(plan:|encourage|repaired reply:|answer:|question:)\b", re.I)
+_ROLE_LINE    = re.compile(r"^\s*(system|assistant|user|human|message)\s*[:：]\s*", re.I)
+
 def _extract_name(user_text: str) -> str | None:
     if not user_text:
         return None
     m = re.search(r"(?:my name is|i am|i'm)\s+([A-Za-z][A-Za-z\-']{1,30})", user_text, re.I)
     return m.group(1) if m else None
+
 _EMOJI_RE = re.compile(r"[\U00010000-\U0010ffff]", flags=re.UNICODE)
+
 def _sanitize_greeting(text: str, max_words: int = 28) -> str:
     t = _strip_labels(text or "")
     t = _clean_roles(t)
     t = _EMOJI_RE.sub("", t)
     t = _dedupe_sentences(t)
-    sents = _sentences(t)[:2]                
+    sents = _sentences(t)[:2]
     t = " ".join(sents).strip()
     t = _clip_words(t, max_words)
     q = t.find("?")
@@ -120,40 +125,28 @@ def _sanitize_greeting(text: str, max_words: int = 28) -> str:
 
 def _tone_to_temp(tone: str) -> float:
     tone_l = (tone or "balanced").lower()
-    if tone_l == "warm":
-        return 0.7
-    if tone_l == "direct":
-        return 0.2
+    if tone_l == "warm":   return 0.7
+    if tone_l == "direct": return 0.2
     return 0.5
-# ------------------------------------
-_GUIDED_NOISE = re.compile(r"^\s*(plan:|encourage|repaired reply:|answer:|question:)\b", re.I)
-_ROLE_LINE = re.compile(r"^\s*(system|assistant|user|human|message)\s*[:：]\s*", re.I)
+
 class Orchestrator:
     def __init__(self, rag=None, conversation_store=None):
-        self.router = LLMRouter()
-        self.compiler = PromptCompiler("app/prompts/registry.yaml")
-        self.main = model_manager.get_main_client()
-        self.judge = JudgeService(self.main)
-        self.repairer = RepairService(self.main)
-        self.rag = rag
-        self.flow = GuidedFlowService(conversation_store, self.compiler, self.main) if conversation_store else None
-
-    
+        self.router  = LLMRouter()
+        self.compiler= PromptCompiler("app/prompts/registry.yaml")
+        self.main    = model_manager.get_main_client()
+        self.judge   = JudgeService(self.main)
+        self.repairer= RepairService(self.main)
+        self.rag     = rag
+        self.flow    = GuidedFlowService(conversation_store, self.compiler, self.main) if conversation_store else None
 
     def _strip_guided_noise(self, text: str) -> str:
         out = []
         for ln in (text or "").splitlines():
             raw = _ROLE_LINE.sub("", ln).strip()
-            if not raw:
-                continue
-            if _GUIDED_NOISE.match(raw):
-                continue
+            if not raw: continue
+            if _GUIDED_NOISE.match(raw): continue
             out.append(raw)
         return "\n".join(out).strip()
-
-    
-
-    
 
     async def _gen_greeting(self, user_text: str, tone: str = "balanced") -> str:
         name = _extract_name(user_text)
@@ -164,26 +157,19 @@ class Orchestrator:
             f"{_tone_hint(tone)}\n"
             "Rules:\n"
             "- Keep it to 1–2 short sentences (<=28 words total).\n"
-            "- No lists, no labels, no emojis, no jokes, no trivia, no new topics.\n"
-            "- Do not ask multiple questions; at most one short question is acceptable.\n"
+            "- No lists, no labels, no emojis, no jokes, no new topics.\n"
             "- Do not include instructions or meta text.\n"
             f"- {name_hint}\n\n"
             f"User said: {user_text}\n"
             "Reply ONLY with the final greeting."
         )
-
         try:
             resp = await self.main.complete(
-                prompt,
-                temperature=_tone_to_temp(tone),
-                top_p=0.9,
-                max_new_tokens=60,
-                max_time=6.0,
+                prompt, temperature=_tone_to_temp(tone), top_p=0.9, max_new_tokens=60, max_time=6.0
             )
         except Exception:
             base = "Hi" + (f" {name}" if name else "") + ", how can I help today?"
-            return base if tone != "warm" else (base.replace("Hi", "Hey") if name else "Hey, how can I help today?")
-
+            return base if tone != "warm" else (base.replace("Hi","Hey") if name else "Hey, how can I help today?")
         return _sanitize_greeting(resp or "")
 
     async def _gen_info_definition(self, question: str, context: str, tone: str = "balanced") -> str:
@@ -211,38 +197,40 @@ class Orchestrator:
         return cleaned.strip()
 
     async def generate(self, *, question: str, history: str, tone: str = "balanced", session_id: str = None):
+        # 先危機模板
         if CRISIS_RE.search(question or ""):
             return CRISIS_TEMPLATE, {"route": "crisis", "route_score": 1.0, "naturalized": True}
 
-        decision = await self.router.classify(question or "")
-        route = decision.route
-        route_score = decision.confidence
+        # Router（不含危機）
+        decision   = await self.router.classify(question or "")
+        route      = decision.route
+        route_score= decision.confidence
 
+        # mh_support → Guided flow（此處不 naturalize，讓 API 端做 ESQ 壓縮）
         if route == "mh_support" and self.flow:
             final_raw, meta = await self._handle_guided_flow(
                 question=question, history=history, session_id=session_id, tone=tone
             )
             return (final_raw or "").strip(), {**(meta or {}), "route": route, "route_score": route_score}
 
+        # greeting → 依 tone 生成短訊
         if route == "greeting":
             final = await self._gen_greeting(question, tone)
             return final, {"route": route, "route_score": route_score, "naturalized": True}
 
+        # info_definition → 依規則產生乾淨解釋
         if route == "info_definition":
             context = ""
             if self.rag:
                 try:
-                    if hasattr(self.rag, "retrieve"):
-                        docs = await self.rag.retrieve(question, k=3)
-                        context = self.rag.build_context(docs, max_docs=2)
-                    else:
-                        docs = self.rag.retrieve(question, k=3)
-                        context = self.rag.build_context(docs, max_docs=2)
+                    docs = await self.rag.retrieve(question, k=3) if hasattr(self.rag,"retrieve") else self.rag.retrieve(question, k=3)
+                    context = self.rag.build_context(docs, max_docs=2)
                 except Exception as e:
                     logger.warning("RAG retrieval failed: %s", e)
             final = await self._gen_info_definition(question, context, tone)
             return final, {"route": route, "route_score": route_score, "naturalized": True}
 
+        # other → 簡短幫忙 + tone 提示
         prompt = self.compiler.compile(route=route, question=question, history=history, context="", tone=tone)
         prompt = f"{prompt}\n\nTone guideline:\n{_tone_hint(tone)}"
         raw = await self.main.complete(prompt)
@@ -251,19 +239,13 @@ class Orchestrator:
 
     async def _handle_guided_flow(self, *, question: str, history: str, session_id: str = None, tone: str = "balanced"):
         logger.info("Handling guided flow for mh_support route")
-        plan_json = await self.flow.plan_if_needed(
-            question=question, history=history, session_id=session_id
-        )
+        plan_json = await self.flow.plan_if_needed(question=question, history=history, session_id=session_id)
 
         context = ""
         if self.rag:
             try:
-                if hasattr(self.rag, "retrieve"):
-                    docs = await self.rag.retrieve(question, k=3)
-                    context = self.rag.build_context(docs, max_docs=2)
-                else:
-                    docs = self.rag.retrieve(question, k=3)
-                    context = self.rag.build_context(docs, max_docs=2)
+                docs = await self.rag.retrieve(question, k=3) if hasattr(self.rag,"retrieve") else self.rag.retrieve(question, k=3)
+                context = self.rag.build_context(docs, max_docs=2)
             except Exception as e:
                 logger.warning("RAG retrieval failed: %s", e)
 
@@ -271,6 +253,7 @@ class Orchestrator:
             question=question, history=history, context=context, plan_json=plan_json or "{}", session_id=session_id, tone=tone
         )
 
+        # ESQ 結構 judge/repair（限時）
         try:
             spec = self.compiler.routes["mh_support"]
             constraints = self.compiler._join_constraints(spec.get("constraints", []))
@@ -291,9 +274,9 @@ class Orchestrator:
                 raw = await asyncio.wait_for(self.repairer.repair(contract, constraints, question, raw), timeout=12.0)
             except Exception:
                 pass
+
         clean = self._strip_guided_noise(raw or "")
         return clean, {"route": "mh_support", "repaired": not ok, "flow_active": True}
-        # return (raw or "").strip(), {"route": "mh_support", "repaired": not ok, "flow_active": True}
 
     async def _hedged_turn_generate(self, *, question: str, history: str, context: str, plan_json: str, session_id: str = None, tone: str = "balanced") -> str:
         s = self.flow.load_state(session_id)
