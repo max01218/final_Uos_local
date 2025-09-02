@@ -3,6 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/auth": "pages/auth.js",
-  "/chat": "pages/chat.js",
-  "/api/empathetic_professional": "pages/api/empathetic_professional.js"
+  "/api/empathetic_professional": "pages/api/empathetic_professional.js",
+  "/chat": "pages/chat.js"
 }
