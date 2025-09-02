@@ -70,8 +70,7 @@ class LLMRouter:
 
         logger.info(f"Stage-1 Router LLM classifying: {text[:30]}...")
         try:
-            raw_out = await self.client.complete(CLASSIFIER_PROMPT.format(user_text=text),
-                                                temperature=0.1, max_new_tokens=80)
+            raw_out = await self.client.complete(CLASSIFIER_PROMPT.format(user_text=text))
         except Exception as e:
             logger.warning(f"Router LLM call failed: {e}; falling back to '{default_guess}'")
             dec = RouteDecision(route=default_guess,

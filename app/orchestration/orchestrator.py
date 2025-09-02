@@ -58,13 +58,8 @@ class Orchestrator:
             return draft
         try:
             logger.info("Naturalizer: rewriting draft to conversational surface...")
-            resp = await self.main.complete(
-                NATURALIZER_PROMPT.format(draft=draft),
-                temperature=0.6,
-                max_new_tokens=200,
-            )
-            final = (resp or draft).strip()
-            return final
+            resp = await self.main.complete(NATURALIZER_PROMPT.format(draft=draft))
+            return (resp or draft).strip()
         except Exception as e:
             logger.warning(f"Naturalizer failed: {e}")
             return draft
