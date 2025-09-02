@@ -6,29 +6,28 @@ from app.clients.model_manager import model_manager
 
 logger = logging.getLogger(__name__)
 
-# ---------- 強訊號啟發式（更窄更準） ----------
+# Strong cues for definition/explanation-type intents
 DEFN_CUES = re.compile(
     r"\b(what\s+is|what's|define|definition|explain|explanation|"
-    r"difference\s+between|symptoms\s+of|signs\s+of|how\s+does\s+.*\bwork)\b",
+    r"difference\s+between|symptoms\s+of|signs\s+of|how\s+does\s+.+\bwork)\b",
     re.I,
 )
 
-# 盡量涵蓋常見 MH 描述，但避免把「解釋題」誤判（由 DEFN_CUES 先攔）
+# Mental health cues; kept reasonably narrow
 MH_CUES = re.compile(
     r"\b("
-    r"depress(ed|ion)|anxious|anxiety|panic|panic\s+attack|overthink(ing)?|"
+    r"depress(ed|ion)|anxious|anxiety|panic(\s+attack)?|overthink(ing)?|"
     r"can't\s+sleep|cannot\s+sleep|insomnia|lonely|hopeless|worthless|"
     r"cry(ing)?|burnout|overwhelmed|numb|empty|no\s+motivation"
     r")\b",
     re.I,
 )
 
+# A very tight greeting detector (very short pure hello)
 GREET_CUES = re.compile(
     r"^\s*(hi|hello|hey|good\s+(morning|afternoon|evening))\b[^\w]*$",
     re.I,
 )
-
-# ------------------------------------------------
 
 PROMPT = (
     "You are a router. Read the user's line and choose exactly ONE label:\n"
@@ -56,7 +55,8 @@ class LLMRouter:
 
     async def classify(self, text: str) -> RouteDecision:
         t = (text or "").strip()
-        # 1) 先問 LLM（單字母）
+
+        # Ask the LLM for a single-letter label
         try:
             resp = await self.client.complete(
                 PROMPT.format(text=t),
@@ -72,19 +72,15 @@ class LLMRouter:
             logger.warning("Router LLM failed (%s), fallback to heuristic only.", e)
             label = "O"
 
-        # 2) 啟發式覆寫（窄而準）
-        #   * 先定義/解釋 → I
+        # Heuristic overrides (narrow & precise)
         if DEFN_CUES.search(t):
             label = "I"
-        #   * 強 MH 描述 且不是定義題 → M
         elif MH_CUES.search(t):
             label = "M"
-        #   * 純招呼（極短）→ G
         elif GREET_CUES.match(t):
             label = "G"
 
         route = _LABEL_MAP[label]
-        # 粗估 confidence：啟發式命中就給 0.9，否則 0.5
         conf = 0.9 if (DEFN_CUES.search(t) or MH_CUES.search(t) or GREET_CUES.match(t)) else 0.5
         logger.info("Router classified '%s' -> %s (label=%s, conf=%.2f)", t[:30], route, label, conf)
         return RouteDecision(route=route, confidence=conf, label=label)
