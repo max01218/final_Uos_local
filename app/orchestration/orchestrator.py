@@ -54,15 +54,17 @@ class Orchestrator:
     async def _naturalize(self, text: str) -> str:
         """把產生的草稿改寫成自然對話（失敗則回原文）"""
         draft = (text or "").strip()
-        if not draft:
-            return draft
+        if not draft: return draft
         try:
             logger.info("Naturalizer: rewriting draft to conversational surface...")
-            resp = await self.main.complete(NATURALIZER_PROMPT.format(draft=draft))
+            resp = await self.main.complete(
+                NATURALIZER_PROMPT.format(draft=draft),
+                temperature=0.6, top_p=0.9, max_new_tokens=200, max_time=8.0
+            )
             return (resp or draft).strip()
         except Exception as e:
             logger.warning(f"Naturalizer failed: {e}")
-            return draft
+        return draft
 
     async def generate(
         self, *, question: str, history: str, tone: str = "balanced", session_id: str = None

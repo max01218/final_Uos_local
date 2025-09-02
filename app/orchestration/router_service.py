@@ -12,7 +12,6 @@ class RouterCache:
     def __init__(self, ttl_seconds: int = 30):
         self.ttl = ttl_seconds
         self._store: Dict[str, Tuple[float, RouteDecision]] = {}
-
     def get(self, key: str) -> Optional[RouteDecision]:
         now = time.time()
         item = self._store.get(key)
@@ -22,7 +21,6 @@ class RouterCache:
             self._store.pop(key, None)
             return None
         return val
-
     def set(self, key: str, value: RouteDecision) -> None:
         self._store[key] = (time.time() + self.ttl, value)
 
@@ -45,9 +43,17 @@ OUTPUT: {"route":"mh_support","confidence":0.86,"triggers":["low_mood"]}
 USER: {user_text}
 JSON:"""
 
+# 保險用的極簡分類（不是 JSON，回單一 label）
+MINI_PROMPT = """Choose one label for the user message:
+[greeting, small_talk, crisis, mh_support, info_definition, other]
+Return ONLY the label word, nothing else.
+
+USER: {user_text}
+LABEL:"""
+
 def _extract_json(text: str) -> Optional[str]:
     if not text: return None
-    cleaned = text.replace("```json","").replace("```","").replace("JSON:","").strip()
+    cleaned = str(text).replace("```json","").replace("```","").replace("JSON:","").strip()
     m = _JSON_RE.search(cleaned)
     return m.group(0) if m else None
 
@@ -58,9 +64,9 @@ class LLMRouter:
 
     async def classify(self, user_text: str) -> RouteDecision:
         text = (user_text or "").strip()
-        # 只作為回退的猜測（仍然會呼叫 LLM）
         default_guess = "greeting" if _GREETING_RE.match(text) else "other"
 
+        # 短輸入快取
         key = text.lower()
         if self.cache and len(text) <= 15:
             hit = self.cache.get(key)
@@ -69,37 +75,66 @@ class LLMRouter:
                 return hit
 
         logger.info(f"Stage-1 Router LLM classifying: {text[:30]}...")
+        # ① 主分類（不帶 temperature 等參數）
         try:
-            raw_out = await self.client.complete(CLASSIFIER_PROMPT.format(user_text=text))
+            raw_out = await self.client.complete(
+                CLASSIFIER_PROMPT.format(user_text=text),
+                temperature=0.1,            
+                top_p=0.9,
+                max_new_tokens=80,
+                max_time=8.0
+            )
         except Exception as e:
-            logger.warning(f"Router LLM call failed: {e}; falling back to '{default_guess}'")
+            logger.warning(f"Router LLM call failed: {e!r}; falling back to '{default_guess}'")
             dec = RouteDecision(route=default_guess,
                                 confidence=0.5 if default_guess=="greeting" else 0.0,
                                 triggers=[])
             if self.cache and len(text) <= 15: self.cache.set(key, dec)
             return dec
 
-        payload = _extract_json(raw_out)
+        # ② 嘗試解析 JSON 或 dict
         try:
-            obj: Dict[str, Any] = json.loads(payload) if payload else {}
-            label = obj.get("route") or obj.get("label") or obj.get("class") or default_guess
-            conf = obj.get("confidence")
-            if conf is None: conf = obj.get("score", obj.get("prob", 0.0))
-            try: conf = float(conf)
-            except Exception: conf = 0.0
+            obj: Dict[str, Any]
+            if isinstance(raw_out, dict):
+                obj = raw_out
+            else:
+                payload = _extract_json(raw_out)
+                obj = json.loads(payload) if payload else {}
+            label = obj.get("route") or obj.get("label") or obj.get("class")
+            conf = obj.get("confidence", obj.get("score", obj.get("prob", None)))
+            try:
+                conf = float(conf) if conf is not None else None
+            except Exception:
+                conf = None
             triggers = obj.get("triggers") or []
             if not isinstance(triggers, list): triggers = [str(triggers)]
-            dec = RouteDecision(route=label, confidence=conf, triggers=triggers)
-            try: setattr(dec, "score", conf)
+
+            if not label:
+                raise ValueError("missing route in JSON")
+
+            dec = RouteDecision(route=label, confidence=float(conf or 0.0), triggers=triggers)
+            try: setattr(dec, "score", dec.confidence)
             except Exception: pass
             logger.info(f"Stage-1 classified '{text[:30]}...' as '{dec.route}' (conf: {dec.confidence:.2f})")
         except Exception as e:
-            logger.warning(f"Router parsing failed: {e}; raw_out={raw_out!r}")
-            dec = RouteDecision(route=default_guess,
-                                confidence=0.5 if default_guess=="greeting" else 0.0,
-                                triggers=[])
-            try: setattr(dec, "score", dec.confidence)
-            except Exception: pass
+            logger.warning(f"Router parsing failed: {e!r}; trying mini router...")
+            # ③ 極簡保險分類：只要拿到 label 就算成功
+            try:
+                mini = await self.client.complete(MINI_PROMPT.format(user_text=text))
+                label = (mini or "").strip().split()[0].strip(",. ").lower()
+                if label not in {"greeting","small_talk","crisis","mh_support","info_definition","other"}:
+                    label = default_guess
+                dec = RouteDecision(route=label,
+                                    confidence=0.6 if label=="greeting" else 0.5 if label=="mh_support" else 0.0,
+                                    triggers=[])
+                try: setattr(dec, "score", dec.confidence)
+                except Exception: pass
+            except Exception as e2:
+                logger.warning(f"Mini router also failed: {e2!r}; using default '{default_guess}'")
+                dec = RouteDecision(route=default_guess,
+                                    confidence=0.5 if default_guess=="greeting" else 0.0,
+                                    triggers=[])
 
-        if self.cache and len(text) <= 15: self.cache.set(key, dec)
+        if self.cache and len(text) <= 15:
+            self.cache.set(key, dec)
         return dec
