@@ -6,33 +6,32 @@ from app.clients.model_manager import model_manager
 
 logger = logging.getLogger(__name__)
 
-# Heuristic keywords to force mh_support when LLM is unsure/mislabels
-MH_HINTS = re.compile(
-    r"(sad|depress|anxiet|anxious|panic|overthink|can[’']?t sleep|insomnia|lonely|"
-    r"worthless|low mood|empty|burnout|stressed|therapy|therapist|cbt|cope|coping|"
-    , re.I
-)
-
 @dataclass
 class RouteDecision:
     route: str
     confidence: float
 
 def _map_label_to_route(label: str) -> str:
-    # G: greeting, M: mh_support, I: info_definition, O: other
-    m = {"G": "greeting", "M": "mh_support", "I": "info_definition", "O": "other"}
-    return m.get(label.upper(), "other")
+    mapping = {"G": "greeting", "M": "mh_support", "I": "info_definition", "O": "other"}
+    return mapping.get(label.upper(), "other")
 
 def _parse_label(text: str) -> str | None:
-    """Extract first label letter from model output."""
     if not text:
         return None
-    # common patterns: "G", "Label: G", "Answer: M", "G - greeting"
     m = re.search(r"\b([GMIO])\b", text.strip(), re.I)
     return m.group(1).upper() if m else None
 
+# ---------- Robust MH heuristic (ASCII-only, regex-safe) ----------
+# word stems (plain regex, word-bounded)
+MH_STEMS_RE = r"\b(?:sad|depress|anxiet|anxious|panic|overthink|insomnia|lonely|worthless|empty|burnout|stressed|therapy|therapist|cbt|cope|coping)\b"
+
+# phrases with spaces/apostrophes — escape each safely
+_MH_PHRASES = ["low mood", "can't sleep", "cant sleep"]
+_MH_PHRASES_ESC = [re.escape(p) for p in _MH_PHRASES]
+MH_HINTS = re.compile(r"(?:%s|%s)" % (MH_STEMS_RE, "|".join(_MH_PHRASES_ESC)), re.I)
+# ------------------------------------------------------------------
+
 def _fallback_label_by_words(text: str) -> str:
-    """Very light heuristic fallback if LLM output is noisy."""
     t = (text or "").lower()
     if any(w in t for w in ("hi", "hello", "hey", "nice to meet you", "my name is")):
         return "G"
@@ -42,7 +41,7 @@ def _fallback_label_by_words(text: str) -> str:
         return "I"
     return "O"
 
-# NOTE: escape braces for str.format — use double braces {{ }} around the label set.
+# NOTE: Escape braces for str.format with double braces {{ }}
 PROMPT = (
     "You are a router that classifies the user's message into EXACTLY ONE label.\n"
     "Labels:\n"
@@ -65,7 +64,6 @@ class LLMRouter:
         try:
             prompt = PROMPT.format(text=t)
         except KeyError as e:
-            # Safety: if future edits introduce braces again
             logger.error("Router prompt format error: %s", e)
             prompt = PROMPT.replace("{text}", t).replace("{", "{{").replace("}", "}}")
             prompt = prompt.replace("{{text}}", t)
@@ -81,20 +79,25 @@ class LLMRouter:
         except Exception as e:
             logger.warning("[router] LLM call failed: %s; using heuristic", e)
             label = _fallback_label_by_words(t)
-            # mh override
+            # force M when strong MH cues are present
             if label != "M" and re.search(MH_HINTS, t):
                 label = "M"
             return RouteDecision(route=_map_label_to_route(label), confidence=0.6)
 
         label = _parse_label(resp)
         if not label:
-            label = _fallback_label_by_words(resp + " " + t)
+            # try to infer from response content; fallback to original text too
+            label = _fallback_label_by_words((resp or "") + " " + t)
 
-        # Heuristic override to mh_support if strong signals present
+        # final override to M if text clearly contains MH cues
         if label != "M" and re.search(MH_HINTS, t):
             label = "M"
 
         route = _map_label_to_route(label)
         conf = 0.9 if label in ("G", "M", "I", "O") else 0.6
-        logger.info("Router classified %r -> %s (label=%s, conf=%.2f)", t[:40] + ("..." if len(t) > 40 else ""), route, label, conf)
+        logger.info(
+            "Router classified %r -> %s (label=%s, conf=%.2f)",
+            t[:40] + ("..." if len(t) > 40 else ""),
+            route, label, conf
+        )
         return RouteDecision(route=route, confidence=conf)
