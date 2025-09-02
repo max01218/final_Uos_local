@@ -1,6 +1,7 @@
-import re
 import logging
+import re
 import asyncio
+from typing import Optional, List
 
 from app.clients.model_manager import model_manager
 from app.orchestration.prompt_compiler import PromptCompiler
@@ -11,8 +12,9 @@ from app.orchestration.flow_service import GuidedFlowService
 
 logger = logging.getLogger(__name__)
 
+# -------- Crisis bypass (template, no LLM) --------
 CRISIS_RE = re.compile(
-    r"(suicid(e|al)|kill myself|self[- ]?harm|end my life|i want to die)",
+    r"(suicid(e|al)|kill myself|self[- ]?harm|end my life|i want to die|i dont want to live|i don't want to live|想死|自殺|傷害自己)",
     re.I,
 )
 
@@ -28,18 +30,14 @@ CRISIS_TEMPLATE = (
     "Would you like help finding the right number or planning one small step for safety tonight?"
 )
 
-_LABEL_LINE  = re.compile(r"^\s*(E|S|Q)\s*:\s*", re.I)
-_ROLE_HEAD   = re.compile(r"(?i)\b(system|assistant|human|message|user)\b\s*[:：]\s*")
-_CODE_FENCE  = re.compile(r"(?is)`{3}.*?`{3}")
+# -------- Surface cleanup helpers --------
+_LABEL_LINE = re.compile(r"^\s*(E|S|Q)\s*:\s*", re.I)
+_ROLE_HEAD = re.compile(r"(?i)\b(system|assistant|human|message|user)\b\s*[:：]\s*")
+_CODE_FENCE = re.compile(r"(?is)`{3}.*?`{3}")
 _ROLE_PREFIX = re.compile(r"^\s*(system|assistant|user|human|message)\s*[:：]\s*", re.I)
+_ROLE_ANY = re.compile(r"(?i)\b(human|assistant|system|user|message)\b\s*[:：]\s*")
 
-TONE_HINT = {
-    "balanced": "Use a balanced, calm and supportive tone.",
-    "warm":     "Use a warmer, gentler, more encouraging tone.",
-    "direct":   "Use a concise, straightforward, no-fluff professional tone.",
-}
-def _tone_hint(tone: str) -> str:
-    return TONE_HINT.get((tone or "balanced").lower(), TONE_HINT["balanced"])
+_GUIDED_NOISE = re.compile(r"^\s*(plan:|encourage|repaired reply:|answer:|question:)\b", re.I)
 
 def _strip_labels(text: str) -> str:
     if not text:
@@ -51,17 +49,19 @@ def _strip_labels(text: str) -> str:
         ln = _LABEL_LINE.sub("", ln).strip()
         if ln:
             out_lines.append(ln)
-    import re as _re
     out = " ".join(out_lines).strip()
-    return _re.sub(r"\s{2,}", " ", out)
+    return re.sub(r"\s{2,}", " ", out)
 
 def _clean_roles(text: str) -> str:
     lines = [_ROLE_PREFIX.sub("", ln).strip() for ln in (text or "").splitlines()]
     return " ".join([ln for ln in lines if ln]).strip()
 
-def _sentences(text: str):
-    import re as _re
-    s = _re.split(r"(?<=[.!?])\s+", (text or "").strip())
+def _normalize_punct(text: str) -> str:
+    # ensure a space after sentence-ending punctuation
+    return re.sub(r"([.!?])([A-Za-z])", r"\1 \2", text or "")
+
+def _sentences(text: str) -> List[str]:
+    s = re.split(r"(?<=[.!?])\s+", (text or "").strip())
     return [x.strip() for x in s if x.strip()]
 
 def _dedupe_sentences(text: str) -> str:
@@ -82,159 +82,75 @@ def _clip_words(text: str, max_words: int) -> str:
     return " ".join(words[:max_words]).rstrip(".,;:!?")
 
 def _remove_qna_noise(text: str) -> str:
-    bad_starts = (
+    """Drop any sentence that contains Q&A scaffolding or role markers."""
+    bad_fragments = (
         "human:", "assistant:", "system:", "user:", "message:",
-        "can you", "could you", "how do i", "how can i",
         "answer:", "question:", "repaired reply:", "natural chat",
-        "let's generate", "generate a", "write a", "guideline", "rule",
+        "can you", "how do i", "how can i", "could you", "would you"
     )
     kept = []
     for s in _sentences(text):
-        low = s.lower().strip()
-        if any(low.startswith(b) for b in bad_starts):
-            continue
-        if " answer:" in low or " question:" in low:
+        low = s.lower()
+        if any(b in low for b in bad_fragments):
             continue
         kept.append(s)
     return " ".join(kept)
 
-_GUIDED_NOISE = re.compile(r"^\s*(plan:|encourage|repaired reply:|answer:|question:|json:|technique)\b", re.I)
-_ROLE_LINE    = re.compile(r"^\s*(system|assistant|user|human|message)\s*[:：]\s*", re.I)
-_EMOJI_RE     = re.compile(r"[\U00010000-\U0010ffff]", flags=re.UNICODE)
+def _first_sentence_only(text: str) -> str:
+    sents = _sentences(text)
+    return sents[0] if sents else text
 
-def _extract_name(user_text: str) -> str | None:
-    if not user_text:
-        return None
-    m = re.search(r"(?:my name is|i am|i'm)\s+([A-Za-z][A-Za-z\-']{1,30})", user_text, re.I)
-    return m.group(1) if m else None
+def _sanitize_greeting(text: str) -> str:
+    """Keep only the first clean sentence; drop echoes like 'my name is ...'."""
+    s = _first_sentence_only(text or "")
+    s = _ROLE_ANY.sub("", s).strip()
+    low = s.lower()
+    if "my name is" in low or low.startswith(("hi, i", "hi i", "hello i", "hey i")):
+        s = "How can I help today?"
+    # enforce punctuation and length
+    if s and s[-1] not in ".?!":
+        s = s + "."
+    return _clip_words(s, 28)
 
-def _remove_meta_speak(text: str) -> str:
-    kill = ("rule", "instruction", "guideline", "as an ai", "you are", "reply", "only", "final", "output",
-            "write", "generate", "max", "words", "no list", "no labels", "system", "assistant", "user", "human")
-    sents = []
-    for s in _sentences(text):
-        low = s.lower()
-        if any(k in low for k in kill):
-            continue
-        sents.append(s)
-    return " ".join(sents)
+# -------- Tone hints --------
+TONE_HINT = {
+    "balanced": "Use a balanced, calm and supportive tone.",
+    "warm": "Use a warmer, gentler, more encouraging tone.",
+    "direct": "Use a concise, straightforward, no-fluff professional tone.",
+}
+def _tone_hint(tone: str) -> str:
+    return TONE_HINT.get((tone or "balanced").lower(), TONE_HINT["balanced"])
 
-def _sanitize_greeting(text: str, user_text: str, max_words: int = 28) -> str:
-    t = _strip_labels(text or "")
-    t = _clean_roles(t)
-    t = _EMOJI_RE.sub("", t)
-    t = _remove_meta_speak(t)
-    t = _dedupe_sentences(t)
-    # avoid echoing user's raw line
-    u = (" ".join(re.findall(r"[a-z]+", (user_text or "").lower())))
-    sents = []
-    for s in _sentences(t):
-        s_norm = " ".join(re.findall(r"[a-z]+", s.lower()))
-        if u and s_norm == u:
-            continue
-        sents.append(s)
-    t = " ".join(sents[:2]).strip()
-    t = _clip_words(t, max_words)
-    if t and t[-1] not in ".?!":
-        t += "."
-    return t or "Hi, how can I help today?"
-
-def _extract_keywords(question: str) -> set[str]:
-    tokens = re.findall(r"[a-z]+", (question or "").lower())
-    stop = {
-        "what","is","are","the","a","an","and","or","of","to","in","on","for","with","about","explain","definition",
-        "difference","between","how","does","work","can","you","please"
-    }
-    return {t for t in tokens if len(t) >= 3 and t not in stop}
-
-def _filter_by_keywords(text: str, keywords: set[str]) -> str:
-    if not keywords:
-        return text
-    kept = []
-    for s in _sentences(text):
-        low = s.lower()
-        if any(k in low for k in keywords):
-            kept.append(s)
-    return " ".join(kept) or text
-
-def _tone_to_temp(tone: str) -> float:
-    tone_l = (tone or "balanced").lower()
-    if tone_l == "warm":   return 0.7
-    if tone_l == "direct": return 0.2
-    return 0.5
-
-def _extract_esq(text: str) -> str:
-    # Keep only E:/S:/Q: lines; if missing, attempt to infer; else fallback to first 3 sentences.
-    lines = [ln.strip() for ln in (text or "").splitlines() if ln.strip()]
-    esq = []
-    for ln in lines:
-        if ln.lower().startswith("e:") or ln.lower().startswith("s:") or ln.lower().startswith("q:"):
-            esq.append(ln)
-    if len(esq) >= 3:
-        return "\n".join(esq[:3])
-
-    # Try to locate labels inside long lines
-    joined = " ".join(lines)
-    parts = re.findall(r"(E:\s*[^SQ]+|S:\s*[^EQ]+|Q:\s*[^ES]+)", joined, flags=re.I)
-    if parts:
-        out = []
-        for p in parts:
-            p = p.strip()
-            if p:
-                out.append(p)
-            if len(out) == 3:
-                break
-        if out:
-            return "\n".join(out)
-
-    # Fallback: compress to 3 short sentences
-    sts = _sentences(joined)
-    return " ".join(sts[:3])
 
 class Orchestrator:
     def __init__(self, rag=None, conversation_store=None):
-        self.router   = LLMRouter()
+        self.router = LLMRouter()
         self.compiler = PromptCompiler("app/prompts/registry.yaml")
-        self.main     = model_manager.get_main_client()
-        self.judge    = JudgeService(self.main)
+        self.main = model_manager.get_main_client()
+        self.judge = JudgeService(self.main)
         self.repairer = RepairService(self.main)
-        self.rag      = rag
-        self.flow     = GuidedFlowService(conversation_store, self.compiler, self.main) if conversation_store else None
+        self.rag = rag
+        self.flow = GuidedFlowService(conversation_store, self.compiler, self.main) if conversation_store else None
 
-    def _strip_guided_noise(self, text: str) -> str:
-        out = []
-        for ln in (text or "").splitlines():
-            raw = _ROLE_LINE.sub("", ln).strip()
-            if not raw:
-                continue
-            if _GUIDED_NOISE.match(raw):
-                continue
-            out.append(raw)
-        return "\n".join(out).strip()
-
+    # ---------- Generators ----------
     async def _gen_greeting(self, user_text: str, tone: str = "balanced") -> str:
-        name = _extract_name(user_text)
-        name_hint = f"Address the user by name ('{name}') naturally if possible." if name else "Address the user naturally."
-
         prompt = (
-            "Write a concise greeting to the user.\n"
+            "Write a brief, friendly greeting tailored to the user's line.\n"
             f"{_tone_hint(tone)}\n"
             "Rules:\n"
-            "- Keep it to 1–2 short sentences (<=28 words total).\n"
-            "- No lists, no labels, no emojis, no jokes, no meta text.\n"
-            "- Do not repeat the user's message.\n"
-            f"- {name_hint}\n\n"
+            "- Keep to 1–2 short sentences (<= 28 words total).\n"
+            "- No lists, no labels, no emojis, no jokes.\n"
+            "- Do not echo the user's words verbatim.\n"
+            "- End with exactly one short question.\n\n"
             f"User said: {user_text}\n"
-            "Reply ONLY with the final greeting."
+            "Reply:"
         )
-        try:
-            resp = await self.main.complete(
-                prompt, temperature=_tone_to_temp(tone), top_p=0.9, max_new_tokens=60, max_time=6.0
-            )
-        except Exception:
-            base = "Hi" + (f" {name}" if name else "") + ", how can I help today?"
-            return base if tone != "warm" else (base.replace("Hi", "Hey") if name else "Hey, how can I help today?")
-        return _sanitize_greeting(resp or "", user_text)
+        resp = await self.main.complete(
+            prompt, temperature=0.4, top_p=0.9, max_new_tokens=60, max_time=6.0
+        )
+        out = _strip_labels(resp or "")
+        out = _sanitize_greeting(out)
+        return out
 
     async def _gen_info_definition(self, question: str, context: str, tone: str = "balanced") -> str:
         prompt = (
@@ -251,65 +167,91 @@ class Orchestrator:
             prompt += f"Helpful context:\n{context}\n"
         prompt += "\nAnswer:"
 
-        raw = await self.main.complete(prompt, temperature=0.2, top_p=0.95, max_new_tokens=180, max_time=8.0)
-        cleaned = _clean_roles(raw or "")
+        raw = await self.main.complete(
+            prompt, temperature=0.2, top_p=0.95, max_new_tokens=180, max_time=8.0
+        )
+        cleaned = _normalize_punct(_clean_roles(raw or ""))
         cleaned = _remove_qna_noise(_dedupe_sentences(cleaned))
-        # Keep sentences that are on-topic by keyword overlap
-        keywords = _extract_keywords(question)
-        cleaned = _filter_by_keywords(cleaned, keywords)
         sents = _sentences(cleaned)
         if len(sents) > 4:
             cleaned = " ".join(sents[:4])
         cleaned = _clip_words(cleaned, 80)
         return cleaned.strip()
 
-    async def generate(self, *, question: str, history: str, tone: str = "balanced", session_id: str = None):
-        # Direct crisis template
+    # ---------- Public generate ----------
+    async def generate(self, *, question: str, history: str, tone: str = "balanced", session_id: Optional[str] = None):
+        # Crisis bypass
         if CRISIS_RE.search(question or ""):
             return CRISIS_TEMPLATE, {"route": "crisis", "route_score": 1.0, "naturalized": True}
 
-        decision    = await self.router.classify(question or "")
-        route       = decision.route
+        # Route
+        decision = await self.router.classify(question or "")
+        route = decision.route
         route_score = decision.confidence
 
+        # mh_support -> guided flow
         if route == "mh_support" and self.flow:
             final_raw, meta = await self._handle_guided_flow(
                 question=question, history=history, session_id=session_id, tone=tone
             )
-            # Keep ESQ surface; API layer will compress to short ESQ text
+            # Do not naturalize; API layer formats ESQ if needed
             return (final_raw or "").strip(), {**(meta or {}), "route": route, "route_score": route_score}
 
+        # greeting
         if route == "greeting":
             final = await self._gen_greeting(question, tone)
             return final, {"route": route, "route_score": route_score, "naturalized": True}
 
+        # info_definition
         if route == "info_definition":
             context = ""
             if self.rag:
                 try:
-                    docs = await self.rag.retrieve(question, k=3) if hasattr(self.rag, "retrieve") else self.rag.retrieve(question, k=3)
-                    context = self.rag.build_context(docs, max_docs=2)
+                    if hasattr(self.rag, "retrieve"):
+                        docs = await self.rag.retrieve(question, k=3)
+                        context = self.rag.build_context(docs, max_docs=2)
+                    else:
+                        docs = self.rag.retrieve(question, k=3)
+                        context = self.rag.build_context(docs, max_docs=2)
                 except Exception as e:
                     logger.warning("RAG retrieval failed: %s", e)
             final = await self._gen_info_definition(question, context, tone)
             return final, {"route": route, "route_score": route_score, "naturalized": True}
 
-        # other
+        # other (fallback to compiled prompt)
         prompt = self.compiler.compile(route=route, question=question, history=history, context="", tone=tone)
         prompt = f"{prompt}\n\nTone guideline:\n{_tone_hint(tone)}"
         raw = await self.main.complete(prompt)
         final = _strip_labels((raw or "").strip())
         return final, {"route": route, "route_score": route_score, "naturalized": True}
 
-    async def _handle_guided_flow(self, *, question: str, history: str, session_id: str = None, tone: str = "balanced"):
+    # ---------- Guided flow handling ----------
+    def _strip_guided_noise(self, text: str) -> str:
+        out = []
+        for ln in (text or "").splitlines():
+            raw = _ROLE_PREFIX.sub("", ln).strip()
+            if not raw:
+                continue
+            if _GUIDED_NOISE.match(raw):
+                continue
+            out.append(raw)
+        return "\n".join(out).strip()
+
+    async def _handle_guided_flow(self, *, question: str, history: str, session_id: Optional[str] = None, tone: str = "balanced"):
         logger.info("Handling guided flow for mh_support route")
-        plan_json = await self.flow.plan_if_needed(question=question, history=history, session_id=session_id)
+        plan_json = await self.flow.plan_if_needed(
+            question=question, history=history, session_id=session_id
+        )
 
         context = ""
         if self.rag:
             try:
-                docs = await self.rag.retrieve(question, k=3) if hasattr(self.rag, "retrieve") else self.rag.retrieve(question, k=3)
-                context = self.rag.build_context(docs, max_docs=2)
+                if hasattr(self.rag, "retrieve"):
+                    docs = await self.rag.retrieve(question, k=3)
+                    context = self.rag.build_context(docs, max_docs=2)
+                else:
+                    docs = self.rag.retrieve(question, k=3)
+                    context = self.rag.build_context(docs, max_docs=2)
             except Exception as e:
                 logger.warning("RAG retrieval failed: %s", e)
 
@@ -317,13 +259,13 @@ class Orchestrator:
             question=question, history=history, context=context, plan_json=plan_json or "{}", session_id=session_id, tone=tone
         )
 
-        # Judge/repair for ESQ contract (time-boxed)
+        # Judge/repair ESQ structure (time-boxed, best-effort)
         try:
             spec = self.compiler.routes["mh_support"]
             constraints = self.compiler._join_constraints(spec.get("constraints", []))
             contract = self.compiler.contracts[spec.get("output_contract", "esq_three_lines")]
         except Exception:
-            clean = _extract_esq(raw or "")
+            clean = self._strip_guided_noise(raw or "")
             return clean, {"route": "mh_support", "repaired": False, "flow_active": True}
 
         ok = True
@@ -340,11 +282,10 @@ class Orchestrator:
             except Exception:
                 pass
 
-        # Keep only E/S/Q lines (or compact fallback)
-        clean = _extract_esq(raw or "")
+        clean = self._strip_guided_noise(raw or "")
         return clean, {"route": "mh_support", "repaired": not ok, "flow_active": True}
 
-    async def _hedged_turn_generate(self, *, question: str, history: str, context: str, plan_json: str, session_id: str = None, tone: str = "balanced") -> str:
+    async def _hedged_turn_generate(self, *, question: str, history: str, context: str, plan_json: str, session_id: Optional[str] = None, tone: str = "balanced") -> str:
         s = self.flow.load_state(session_id)
         main_prompt = self.compiler.compile_flow_turn(
             route="mh_support", question=question, history=history, context=context,

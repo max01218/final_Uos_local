@@ -9,55 +9,69 @@ from app.utils.esq import OUTPUT_CONTRACT, format_esq, fallback_esq
 logger = logging.getLogger(__name__)
 router = APIRouter()
 
-TONE_MAP = {"balanced":"balanced","warm":"warm","direct":"direct"}
-DEFAULT_TONE = "balanced"
 
 def _get_esq_config(request: Request):
+    """
+    Read ESQ config from app.state.config if present, otherwise use defaults.
+    """
     try:
         cfg = getattr(request.app.state, "config", {}) or {}
         esq = cfg.get("esq", {}) or {}
-        return {"word_limit": int(esq.get("word_limit", 28))}
+        return {"word_limit": int(esq.get("word_limit", 45))}
     except Exception:
-        return {"word_limit": 28}
+        return {"word_limit": 45}
 
-def _resolve_tone(rd: RAGRequest, request: Request) -> str:
-    tone = getattr(rd, "tone", None) or getattr(rd, "type", None) or request.headers.get("x-tone")
-    tone = (tone or DEFAULT_TONE).strip().lower()
-    return TONE_MAP.get(tone, DEFAULT_TONE)
 
 @router.post("/api/v2/empathetic_professional", response_model=RAGResponse)
 async def empathetic_professional_v2(
     request_data: RAGRequest,
     request: Request,
-    chat_service = Depends(get_chat_service),
+    chat_service=Depends(get_chat_service),
 ):
     try:
         esq_cfg = _get_esq_config(request)
         rd = request_data
-        tone = _resolve_tone(rd, request)
 
-        answer, meta = await chat_service.handle_chat(rd, tone_override=tone)
+        # Tone: prefer request_data.type; fall back to "balanced"
+        tone = (rd.type or "").strip().lower() or "balanced"
+
+        # Call ChatService with tone if supported (backward compatible)
+        try:
+            answer, meta = await chat_service.handle_chat(rd, tone_override=tone)  # type: ignore[arg-type]
+        except TypeError:
+            answer, meta = await chat_service.handle_chat(rd)
+
         if not isinstance(answer, str):
             answer = str(answer)
+        if not isinstance(meta, dict):
+            meta = {}
 
-        route = meta.get("route", "other") if isinstance(meta, dict) else "other"
+        # Route-aware post-processing
+        route = (meta.get("route") or "other").strip().lower()
 
-        if route == "greeting":
-            final_text = answer.strip()
-        elif route == "mh_support":
+        if route == "mh_support":
+            # Convert ESQ-like raw text to a compact single message (no E:/S:/Q:)
             try:
-                final_text = format_esq(raw_text=answer, output_contract=OUTPUT_CONTRACT, word_limit=esq_cfg["word_limit"])
+                final_text = format_esq(
+                    raw_text=answer,
+                    output_contract=OUTPUT_CONTRACT,
+                    word_limit=esq_cfg["word_limit"],
+                )
                 if not isinstance(final_text, str) or not final_text.strip():
                     raise ValueError("empty formatted text")
             except Exception as fe:
                 logger.warning("format_esq failed for mh_support: %s; using fallback_esq", fe)
-                final_text = fallback_esq(request_data.question or "")
+                final_text = fallback_esq(rd.question or "")
+        elif route in ("greeting", "info_definition", "crisis"):
+            # Already sanitized upstream; do not reformat
+            final_text = (answer or "").strip()
         else:
-            final_text = answer.strip()
+            # Default: keep as-is but ensure string
+            final_text = (answer or "").strip()
 
         resp = RAGResponse(
             answer=final_text,
-            question=request_data.question,
+            question=rd.question,
             tone=tone,
             status="success",
             context_used=None,
@@ -67,15 +81,16 @@ async def empathetic_professional_v2(
             source_breakdown=None,
             follow_up_suggestions=None,
             safety_notes=None,
-            session_id=(meta.get("session_id") if isinstance(meta, dict) else None),
-            intent=(meta.get("intent") if isinstance(meta, dict) else None),
-            strategy=(meta.get("strategy") if isinstance(meta, dict) else None),
-            tone_suggested=tone,
-            weekly_goal=(meta.get("weekly_goal") if isinstance(meta, dict) else None),
-            feasibility=(meta.get("feasibility") if isinstance(meta, dict) else None),
-            anxiety_level=(meta.get("anxiety_level") if isinstance(meta, dict) else None),
+            session_id=meta.get("session_id"),
+            intent=meta.get("intent"),
+            strategy=meta.get("strategy"),
+            tone_suggested=meta.get("tone_suggested"),
+            weekly_goal=meta.get("weekly_goal"),
+            feasibility=meta.get("feasibility"),
+            anxiety_level=meta.get("anxiety_level"),
         )
         return JSONResponse(status_code=200, content=resp.model_dump())
+
     except HTTPException:
         raise
     except Exception as e:
