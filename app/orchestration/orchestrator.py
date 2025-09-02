@@ -108,7 +108,23 @@ class Orchestrator:
             out = _strip_labels(draft)
             return _short_surface_enforce(out, 35, True)
 
+    async def _gen_greeting(self, user_text: str) -> str:
+        """Generate a very short, safe greeting (no new topics)."""
+        prompt = (
+            "Write a warm, concise greeting to the user based on the line below.\n"
+            "Rules:\n"
+            "- Max 20 words.\n"
+            "- No lists, no labels, no emojis, no new topics.\n"
+            "- End with exactly one short question to continue.\n\n"
+            f"User said: {user_text}\n"
+            "Reply:"
+        )
+        resp = await self.main.complete(prompt, temperature=0.4, top_p=0.9, max_new_tokens=60, max_time=6.0)
+        out = _strip_labels(resp or "")
+        return _short_surface_enforce(out, 20, True)
+
     async def generate(self, *, question: str, history: str, tone: str = "balanced", session_id: str = None):
+        # crisis or routing (your existing router)
         if CRISIS_RE.search(question or ""):
             route, route_score = "crisis", 1.0
         else:
@@ -116,13 +132,21 @@ class Orchestrator:
             route = decision.route
             route_score = getattr(decision, "score", getattr(decision, "confidence", None))
 
+        # Guided flow stays same
         if route == "mh_support" and self.flow:
             final_raw, meta = await self._handle_guided_flow(question=question, history=history, session_id=session_id)
-            meta = {**(meta or {}), "route_score": route_score, "naturalized": False}
-            return (final_raw or "").strip(), meta
+            final = await self._naturalize(final_raw)  # keep your ESQ naturalizer if you want, or skip for ESQ
+            meta = {**(meta or {}), "route": route, "route_score": route_score, "naturalized": True}
+            return final, meta
 
+        # greeting shortcut (merged small-talk)
+        if route == "greeting":
+            final = await self._gen_greeting(question)
+            return final, {"route": route, "route_score": route_score, "repaired": False, "fast_path": True, "naturalized": True}
+
+        # RAG (optional) and normal generation for info_definition/other etc.
         context = ""
-        if route in ("info_definition", "mh_support") and self.rag:
+        if route in ("info_definition",) and self.rag:
             try:
                 if hasattr(self.rag, "retrieve"):
                     docs = await self.rag.retrieve(question, k=3)
@@ -138,41 +162,27 @@ class Orchestrator:
         logger.info(f"Stage-2 Generator LLM generating for route: {route} (score: {route_score})")
         raw = await self.main.complete(prompt)
 
-        if route in ("greeting", "small_talk"):
-            logger.info(f"Skipping judge/repair for simple route: {route}")
-            final = await self._naturalize_with_style(raw.strip(), style="greeting")
-            return final, {"route": route, "route_score": route_score, "repaired": False, "fast_path": True, "naturalized": True}
+        # For non-mh routes, skip ESQ contract. Optionally naturalize lightly.
+        if route in ("info_definition", "other"):
+            final = await self._naturalize(raw.strip())
+            return final, {"route": route, "route_score": route_score, "repaired": False, "naturalized": True}
 
-        try:
-            spec = self.compiler.routes[route]
-        except Exception as e:
-            logger.warning(f"Compiler spec missing for route '{route}': {e}; returning raw")
-            return (raw or "").strip(), {"route": route, "route_score": route_score, "repaired": False, "naturalized": False}
-
+        # (Keep your judge/repair for routes that need structure, excluding mh_support handled above)
+        spec = self.compiler.routes[route]
         constraints = self.compiler._join_constraints(spec.get("constraints", []))
-        contract_key = spec.get("output_contract", "")
-        contract = self.compiler.contracts.get(contract_key, "")
-        requires_esq = (contract_key == "esq_three_lines")
-
+        contract = self.compiler.contracts[spec["output_contract"]]
         ok = await self.judge.pass_fail(contract, constraints, question, raw)
         if not ok:
-            logger.info(f"Response failed judge, attempting repair for route: {route}")
             try:
                 fixed = await self.repairer.repair(contract, constraints, question, raw)
-                if requires_esq:
-                    return (fixed or "").strip(), {"route": route, "route_score": route_score, "repaired": True, "naturalized": False}
-                final = await self._naturalize((fixed or "").strip())
+                final = await self._naturalize(fixed.strip())
                 return final, {"route": route, "route_score": route_score, "repaired": True, "naturalized": True}
             except Exception as e:
                 logger.warning(f"Repair failed: {e}, using original")
-                if requires_esq:
-                    return (raw or "").strip(), {"route": route, "route_score": route_score, "repaired": False, "repair_error": str(e), "naturalized": False}
-                final = await self._naturalize((raw or "").strip())
+                final = await self._naturalize(raw.strip())
                 return final, {"route": route, "route_score": route_score, "repaired": False, "repair_error": str(e), "naturalized": True}
 
-        if requires_esq:
-            return (raw or "").strip(), {"route": route, "route_score": route_score, "repaired": False, "naturalized": False}
-        final = await self._naturalize((raw or "").strip())
+        final = await self._naturalize(raw.strip())
         return final, {"route": route, "route_score": route_score, "repaired": False, "naturalized": True}
 
     async def _handle_guided_flow(self, *, question: str, history: str, session_id: str = None):

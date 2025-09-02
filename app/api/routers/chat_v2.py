@@ -10,7 +10,9 @@ from app.utils.esq import OUTPUT_CONTRACT, format_esq, fallback_esq
 logger = logging.getLogger(__name__)
 router = APIRouter()
 
+
 def _get_esq_config(request: Request):
+    """Read ESQ word_limit from app.state.config if present."""
     try:
         cfg = getattr(request.app.state, "config", {}) or {}
         esq = cfg.get("esq", {}) or {}
@@ -18,31 +20,47 @@ def _get_esq_config(request: Request):
     except Exception:
         return {"word_limit": 45}
 
+
 @router.post("/api/v2/empathetic_professional", response_model=RAGResponse)
 async def empathetic_professional_v2(
     request_data: RAGRequest,
     request: Request,
-    chat_service = Depends(get_chat_service),
+    chat_service=Depends(get_chat_service),
 ):
+    """
+    v2 handler:
+    - Always route first (handled in ChatService/Orchestrator).
+    - Only when route == 'mh_support' do we enforce E/S/Q formatting.
+    - Other routes return the model's natural answer as-is.
+    """
     try:
         esq_cfg = _get_esq_config(request)
         rd = request_data
 
         answer, meta = await chat_service.handle_chat(rd)
         if not isinstance(answer, str):
-            answer = str(answer)
+            answer = str(answer) if answer is not None else ""
 
-        route = meta.get("route", "other") if isinstance(meta, dict) else "other"
-        if route in ("greeting", "small_talk"):
-            final_text = answer.strip()
-        else:
+        route = "other"
+        if isinstance(meta, dict):
+            route = meta.get("route", "other") or "other"
+
+        # === Route-specific post-processing ===
+        if route == "mh_support":
+            # Only mh_support needs E/S/Q
             try:
-                final_text = format_esq(raw_text=answer, output_contract=OUTPUT_CONTRACT, word_limit=esq_cfg["word_limit"])
-                if not isinstance(final_text, str) or not final_text.strip():
-                    raise ValueError("empty formatted text")
+                formatted = format_esq(
+                    raw_text=answer,
+                    output_contract=OUTPUT_CONTRACT,
+                    word_limit=esq_cfg["word_limit"],
+                )
+                final_text = formatted if isinstance(formatted, str) and formatted.strip() else fallback_esq(rd.question or "")
             except Exception as fe:
-                logger.warning("format_esq failed: %s; using fallback_esq", fe)
-                final_text = fallback_esq(request_data.question or "")
+                logger.warning("format_esq failed for mh_support: %s; using fallback_esq", fe)
+                final_text = fallback_esq(rd.question or "")
+        else:
+            # greeting / info_definition / crisis / other → plain text
+            final_text = (answer or "").strip()
 
         resp = RAGResponse(
             answer=final_text,
@@ -65,6 +83,7 @@ async def empathetic_professional_v2(
             anxiety_level=(meta.get("anxiety_level") if isinstance(meta, dict) else None),
         )
         return JSONResponse(status_code=200, content=resp.model_dump())
+
     except HTTPException:
         raise
     except Exception as e:
