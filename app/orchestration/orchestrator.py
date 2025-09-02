@@ -27,29 +27,20 @@ DRAFT:
 
 Natural chat message:"""
 
-NATURALIZER_GREETING = """You will be given a DRAFT greeting reply.
-Rewrite it as ONE short, natural chat message.
-
-Rules:
-- Max 35 words total.
-- Warm, concise, no lists, no labels.
-- End with exactly ONE short question.
-
-DRAFT:
-{draft}
-
-Message:"""
-
-CRISIS_RE = re.compile(
-    r"(suicid(e|al)|kill myself|self[- ]?harm|end my life|homicide|kill (him|her|them))",
-    re.I,
-)
+CRISIS_KEYWORDS = [
+    # English
+    "suicide", "suicidal", "kill myself", "end my life", "self harm", "self-harm",
+    "hurt myself", "want to die", "die by suicide",
+]
 
 # ---------- surface cleanup helpers ----------
 _LABEL_LINE = re.compile(r"^\s*(E|S|Q)\s*:\s*", re.I)
 _ROLE_HEAD = re.compile(r"(?i)\b(system|assistant|human|message|user)\b\s*[:：]\s*")
 _CODE_FENCE = re.compile(r"(?is)`{3}.*?`{3}")
-_ROLE_PREFIX = re.compile(r"^\s*(system|assistant|user|human|message)\s*[:：]\s*", re.I)
+
+# remove role prefixes both at line-start and inline anywhere
+_ROLE_PREFIX_LINE = re.compile(r"^\s*(system|assistant|user|human|message)\s*[:：]\s*", re.I)
+_ROLE_PREFIX_ANY = re.compile(r"\b(system|assistant|user|human|message)\s*[:：]\s*", re.I)
 
 def _strip_labels(text: str) -> str:
     if not text:
@@ -64,18 +55,27 @@ def _strip_labels(text: str) -> str:
     out = " ".join(out_lines).strip()
     return re.sub(r"\s{2,}", " ", out)
 
-def _short_surface_enforce(t: str, max_words: int = 35, ensure_question: bool = True) -> str:
+def _short_surface_enforce(t: str, max_words: int = 35) -> str:
     t = _strip_labels(t or "")
     words = t.split()
     if len(words) > max_words:
         t = " ".join(words[:max_words]).rstrip(".,;:! ")
-    if ensure_question and not t.endswith("?"):
-        t = t.rstrip(".! ") + " — is that okay?"
+    # important: greeting should NOT end with a question (no small talk)
+    if t.endswith("?"):
+        t = t[:-1].rstrip(" .!;:,")
     return t
 
-def _clean_roles(text: str) -> str:
-    lines = [_ROLE_PREFIX.sub("", ln).strip() for ln in (text or "").splitlines()]
-    return " ".join([ln for ln in lines if ln]).strip()
+def _clean_roles_anywhere(text: str) -> str:
+    """Remove role prefixes at line start and inline anywhere."""
+    if not text:
+        return ""
+    # line-start removal
+    lines = [_ROLE_PREFIX_LINE.sub("", ln).strip() for ln in text.splitlines()]
+    s = " ".join([ln for ln in lines if ln]).strip()
+    # inline removal
+    s = _ROLE_PREFIX_ANY.sub("", s)
+    # collapse spaces
+    return re.sub(r"\s{2,}", " ", s).strip()
 
 def _sentences(text: str) -> list[str]:
     s = re.split(r"(?<=[.!?])\s+", (text or "").strip())
@@ -97,6 +97,31 @@ def _clip_words(text: str, max_words: int) -> str:
     if len(words) <= max_words:
         return text or ""
     return " ".join(words[:max_words]).rstrip(".,;:!?")
+
+def _is_crisis_text(s: str) -> bool:
+    if not s:
+        return False
+    t = s.lower()
+    for kw in CRISIS_KEYWORDS:
+        if kw.lower() in t:
+            return True
+    return False
+
+def _crisis_template() -> str:
+    # static template; do not call LLM
+    return (
+        "I'm really sorry you're feeling this way, and I'm here with you. "
+        "If you are in immediate danger or think you might act on these thoughts, "
+        "please call your local emergency number now (e.g., 112 / 999 / 911).\n\n"
+        "You can also talk to someone right away:\n"
+        "- UK: Samaritans 116 123 (24/7)\n"
+        "- US: 988 Suicide & Crisis Lifeline (24/7)\n"
+        "- EU: 112 (general emergency)\n"
+        "- Taiwan: 1925 24h Lifeline\n\n"
+        "If you can, consider telling a trusted person near you. "
+        "Would you like help finding the right number for your location or planning one small step for safety tonight?"
+    )
+
 # ------------------------------------------------
 
 
@@ -118,49 +143,30 @@ class Orchestrator:
             logger.info("Naturalizer: rewriting draft to conversational surface...")
             resp = await self.main.complete(
                 NATURALIZER_PROMPT.format(draft=draft),
-                temperature=0.6,
-                top_p=0.9,
-                max_new_tokens=200,
-                max_time=8.0,
+                temperature=0.6, top_p=0.9, max_new_tokens=200, max_time=8.0,
             )
             return _strip_labels(resp or draft)
         except Exception as e:
             logger.warning(f"Naturalizer failed: {e}")
             return _strip_labels(draft)
 
-    async def _naturalize_with_style(self, text: str, style: str = "greeting") -> str:
-        draft = (text or "").strip()
-        if not draft:
-            return draft
-        try:
-            prompt = NATURALIZER_GREETING.format(draft=draft)
-            logger.info("Naturalizer: rewriting draft to conversational surface...")
-            resp = await self.main.complete(
-                prompt, temperature=0.6, top_p=0.9, max_new_tokens=200, max_time=8.0
-            )
-            out = _strip_labels(resp or draft)
-            return _short_surface_enforce(out, 35, True)
-        except Exception as e:
-            logger.warning(f"Naturalizer failed: {e}")
-            out = _strip_labels(draft)
-            return _short_surface_enforce(out, 35, True)
-
     async def _gen_greeting(self, user_text: str) -> str:
-        """Generate a very short, safe greeting (no new topics)."""
+        """Generate a very short, pure greeting. No question, no small talk, no new topic."""
         prompt = (
             "Write a warm, concise greeting to the user based on the line below.\n"
             "Rules:\n"
-            "- Max 20 words.\n"
-            "- No lists, no labels, no emojis, no new topics.\n"
-            "- End with exactly one short question to continue.\n\n"
+            "- 8 to 12 words.\n"
+            "- No lists, no labels, no emojis.\n"
+            "- Do NOT ask any question.\n"
+            "- Do NOT start any new topic.\n\n"
             f"User said: {user_text}\n"
             "Reply:"
         )
         resp = await self.main.complete(
-            prompt, temperature=0.4, top_p=0.9, max_new_tokens=60, max_time=6.0
+            prompt, temperature=0.3, top_p=0.9, max_new_tokens=40, max_time=6.0
         )
         out = _strip_labels(resp or "")
-        return _short_surface_enforce(out, 20, True)
+        return _short_surface_enforce(out, 12)
 
     async def _gen_info_definition(self, question: str, history: str, context: str) -> str:
         """Produce a concise definition/explanation (2–4 sentences), no ESQ, no role prefixes."""
@@ -180,7 +186,7 @@ class Orchestrator:
         raw = await self.main.complete(
             prompt, temperature=0.2, top_p=0.95, max_new_tokens=180, max_time=8.0
         )
-        cleaned = _clean_roles(raw or "")
+        cleaned = _clean_roles_anywhere(raw or "")
         cleaned = _dedupe_sentences(cleaned)
         sents = _sentences(cleaned)
         if len(sents) > 4:
@@ -189,15 +195,16 @@ class Orchestrator:
         return cleaned.strip()
 
     async def generate(self, *, question: str, history: str, tone: str = "balanced", session_id: str = None):
-        # Stage-0: crisis gate or router
-        if CRISIS_RE.search(question or ""):
-            route, route_score = "crisis", 1.0
-        else:
-            decision = await self.router.classify(question or "")
-            route = decision.route
-            route_score = getattr(decision, "score", getattr(decision, "confidence", None))
+        # Hard crisis gate via simple keyword matching (no LLM)
+        if _is_crisis_text(question or ""):
+            return _crisis_template(), {"route": "crisis", "route_score": 1.0, "naturalized": False}
 
-        # Guided flow (mh_support) -> DO NOT naturalize; keep ESQ for API to convert
+        # Otherwise route via LLM
+        decision = await self.router.classify(question or "")
+        route = decision.route
+        route_score = getattr(decision, "score", getattr(decision, "confidence", None))
+
+        # Guided flow (mh_support) -> keep ESQ; API will convert to natural
         if route == "mh_support" and self.flow:
             final_raw, meta = await self._handle_guided_flow(
                 question=question, history=history, session_id=session_id
@@ -209,7 +216,7 @@ class Orchestrator:
                 "naturalized": False,  # important: keep ESQ; API will make it natural
             }
 
-        # Greeting shortcut (small-talk merged)
+        # Greeting: no small talk, no question
         if route == "greeting":
             final = await self._gen_greeting(question)
             return final, {
@@ -220,7 +227,7 @@ class Orchestrator:
                 "naturalized": True,
             }
 
-        # Info-definition: concise factual explanation with cleanup
+        # Info-definition
         if route == "info_definition":
             context = ""
             if self.rag:
@@ -260,7 +267,7 @@ class Orchestrator:
                 "naturalized": True,
             }
 
-        # For any remaining complex route types that still use constraints
+        # Fallback for any remaining complex route types using constraints
         spec = self.compiler.routes[route]
         constraints = self.compiler._join_constraints(spec.get("constraints", []))
         contract = self.compiler.contracts[spec["output_contract"]]
