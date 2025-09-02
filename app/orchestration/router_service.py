@@ -12,9 +12,7 @@ logger = logging.getLogger(__name__)
 
 _JSON_OBJ = re.compile(r"\{.*?\}", re.S)
 _GREETING = re.compile(r"^\s*(hi|hello|hey|yo|good\s+(morning|afternoon|evening))\W*$", re.I)
-
 ROUTES = {"greeting", "small_talk", "crisis", "mh_support", "info_definition", "other"}
-
 
 def _extract_json_obj(text: str) -> Optional[str]:
     if not text:
@@ -22,7 +20,6 @@ def _extract_json_obj(text: str) -> Optional[str]:
     cleaned = str(text).replace("```json", "").replace("```", "").replace("JSON:", "").strip()
     m = _JSON_OBJ.search(cleaned)
     return m.group(0) if m else None
-
 
 class _Cache:
     def __init__(self, ttl: int = 30):
@@ -42,7 +39,6 @@ class _Cache:
 
     def set(self, k: str, v: RouteDecision) -> None:
         self._m[k] = (time.time() + self.ttl, v)
-
 
 CLASSIFIER_PROMPT = """You are a router for a mental-health assistant.
 Return JSON only as {"route":"...", "confidence":0.0-1.0, "triggers":["..."]}.
@@ -70,7 +66,6 @@ Return ONLY the label word.
 USER: {user_text}
 LABEL:"""
 
-
 class LLMRouter:
     def __init__(self, cache_ttl: int = 30):
         self.client = model_manager.get_router_client()
@@ -80,6 +75,7 @@ class LLMRouter:
         text = (user_text or "").strip()
         default_guess = "greeting" if _GREETING.match(text) else "other"
 
+        # small-input cache
         key = text.lower()
         if self.cache and len(text) <= 15:
             hit = self.cache.get(key)
@@ -89,12 +85,17 @@ class LLMRouter:
 
         logger.info(f"Stage-1 Router LLM classifying: {text[:30]}...")
 
-        # 1) call the classifier (no parsing here)
+        # ---- 1) call the router model (no parsing here) ----
         try:
             raw = await self.client.complete(
                 CLASSIFIER_PROMPT.format(user_text=text),
-                temperature=0.1, top_p=0.9, max_new_tokens=80, max_time=8.0
+                temperature=0.1, top_p=0.9, max_new_tokens=80, max_time=8.0,
             )
+            # helpful debug
+            try:
+                logger.debug("Router raw: %s", (raw or "")[:400].replace("\n", " "))
+            except Exception:
+                pass
         except Exception as e:
             logger.warning(f"Router call failed: {e!r}; fallback='{default_guess}'")
             dec = RouteDecision(route=default_guess,
@@ -104,7 +105,7 @@ class LLMRouter:
                 self.cache.set(key, dec)
             return dec
 
-        # 2) robust parse
+        # ---- 2) robust parse & normalize ----
         try:
             obj: Dict[str, Any]
             if isinstance(raw, dict):
@@ -134,10 +135,11 @@ class LLMRouter:
             logger.info(f"Stage-1 classified '{text[:30]}...' as '{dec.route}' (conf: {dec.confidence:.2f})")
         except Exception as e:
             logger.warning(f"Router parsing failed: {e!r}; trying mini router...")
+            # ---- 3) mini backup classifier ----
             try:
                 mini = await self.client.complete(
                     MINI_PROMPT.format(user_text=text),
-                    temperature=0.0, max_new_tokens=6, max_time=4.0
+                    temperature=0.0, max_new_tokens=6, max_time=4.0,
                 )
                 lbl = (mini or "").strip().split()[0].strip(",. ").lower()
                 if lbl not in ROUTES:
@@ -145,7 +147,7 @@ class LLMRouter:
                 dec = RouteDecision(
                     route=lbl,
                     confidence=0.6 if lbl == "greeting" else 0.5 if lbl == "mh_support" else 0.0,
-                    triggers=[]
+                    triggers=[],
                 )
                 try:
                     setattr(dec, "score", dec.confidence)
