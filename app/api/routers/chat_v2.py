@@ -32,7 +32,8 @@ async def empathetic_professional_v2(
         else:
             # 複雜路由轉為 E/S/Q 三行；若失敗或為空，用保底
             word_limit = getattr(request.app.state, "esq_word_limit", 120)
-            final_text = format_esq(answer, word_limit=word_limit)
+            safe_answer = answer if isinstance(answer, str) else str(answer)
+            final_text = format_esq(safe_answer, word_limit=word_limit)
             if not final_text.strip():
                 final_text = fallback_esq(request_data.question)
 
