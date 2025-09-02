@@ -97,7 +97,37 @@ def _remove_qna_noise(text: str) -> str:
             continue
         kept.append(s)
     return " ".join(kept)
+def _extract_name(user_text: str) -> str | None:
+    if not user_text:
+        return None
+    m = re.search(r"(?:my name is|i am|i'm)\s+([A-Za-z][A-Za-z\-']{1,30})", user_text, re.I)
+    return m.group(1) if m else None
+_EMOJI_RE = re.compile(r"[\U00010000-\U0010ffff]", flags=re.UNICODE)
+def _sanitize_greeting(text: str, max_words: int = 28) -> str:
+    t = _strip_labels(text or "")
+    t = _clean_roles(t)
+    t = _EMOJI_RE.sub("", t)
+    t = _dedupe_sentences(t)
+    sents = _sentences(t)[:2]                
+    t = " ".join(sents).strip()
+    t = _clip_words(t, max_words)
+    q = t.find("?")
+    if q != -1:
+        t = t[:q+1] + t[q+1:].replace("?", ".")
+    if t and t[-1] not in ".?!":
+        t += "."
+    return t.strip()
 
+def _tone_to_temp(tone: str) -> float:
+    tone_l = (tone or "balanced").lower()
+    if tone_l == "warm":
+        return 0.7
+    if tone_l == "direct":
+        return 0.2
+    return 0.5
+# ------------------------------------
+_GUIDED_NOISE = re.compile(r"^\s*(plan:|encourage|repaired reply:|answer:|question:)\b", re.I)
+_ROLE_LINE = re.compile(r"^\s*(system|assistant|user|human|message)\s*[:：]\s*", re.I)
 class Orchestrator:
     def __init__(self, rag=None, conversation_store=None):
         self.router = LLMRouter()
@@ -108,20 +138,53 @@ class Orchestrator:
         self.rag = rag
         self.flow = GuidedFlowService(conversation_store, self.compiler, self.main) if conversation_store else None
 
+    
+
+    def _strip_guided_noise(self, text: str) -> str:
+        out = []
+        for ln in (text or "").splitlines():
+            raw = _ROLE_LINE.sub("", ln).strip()
+            if not raw:
+                continue
+            if _GUIDED_NOISE.match(raw):
+                continue
+            out.append(raw)
+        return "\n".join(out).strip()
+
+    
+
+    
+
     async def _gen_greeting(self, user_text: str, tone: str = "balanced") -> str:
+        name = _extract_name(user_text)
+        name_hint = f"Address the user by name ('{name}') naturally." if name else "If a name is present, address the user by name."
+
         prompt = (
-            "Write a brief greeting to the user based on the line below.\n"
+            "Write a concise greeting to the user.\n"
             f"{_tone_hint(tone)}\n"
             "Rules:\n"
-            "- Max 30 words.\n"
-            "- No lists, no labels, no emojis, no jokes, no new topics.\n"
-            "- The only allowed question is 'How can I help today?'\n\n"
+            "- Keep it to 1–2 short sentences (<=28 words total).\n"
+            "- No lists, no labels, no emojis, no jokes, no trivia, no new topics.\n"
+            "- Do not ask multiple questions; at most one short question is acceptable.\n"
+            "- Do not include instructions or meta text.\n"
+            f"- {name_hint}\n\n"
             f"User said: {user_text}\n"
-            "Reply:"
+            "Reply ONLY with the final greeting."
         )
-        resp = await self.main.complete(prompt, temperature=0.3, top_p=0.9, max_new_tokens=50, max_time=5.0)
-        out = _strip_labels(resp or "")
-        return "How can I help today?" if "?" in out else (out[:120].strip() or "Hi, how can I help today?")
+
+        try:
+            resp = await self.main.complete(
+                prompt,
+                temperature=_tone_to_temp(tone),
+                top_p=0.9,
+                max_new_tokens=60,
+                max_time=6.0,
+            )
+        except Exception:
+            base = "Hi" + (f" {name}" if name else "") + ", how can I help today?"
+            return base if tone != "warm" else (base.replace("Hi", "Hey") if name else "Hey, how can I help today?")
+
+        return _sanitize_greeting(resp or "")
 
     async def _gen_info_definition(self, question: str, context: str, tone: str = "balanced") -> str:
         prompt = (
@@ -228,8 +291,9 @@ class Orchestrator:
                 raw = await asyncio.wait_for(self.repairer.repair(contract, constraints, question, raw), timeout=12.0)
             except Exception:
                 pass
-
-        return (raw or "").strip(), {"route": "mh_support", "repaired": not ok, "flow_active": True}
+        clean = self._strip_guided_noise(raw or "")
+        return clean, {"route": "mh_support", "repaired": not ok, "flow_active": True}
+        # return (raw or "").strip(), {"route": "mh_support", "repaired": not ok, "flow_active": True}
 
     async def _hedged_turn_generate(self, *, question: str, history: str, context: str, plan_json: str, session_id: str = None, tone: str = "balanced") -> str:
         s = self.flow.load_state(session_id)
