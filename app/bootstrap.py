@@ -1,144 +1,121 @@
 # app/bootstrap.py
+import os
+import inspect
 import logging
 import torch
-from transformers import AutoTokenizer, AutoModelForCausalLM, pipeline
+
 from app.core.settings import settings
+from app.clients.model_manager import model_manager
 
 logger = logging.getLogger(__name__)
 
-def build_llm(device: str = None):
-    model_id = getattr(settings, "llm_model_id", "Qwen/Qwen2.5-7B-Instruct")
-    device = device or ("cuda:0" if torch.cuda.is_available() else "cpu")
 
-    tok = AutoTokenizer.from_pretrained(model_id, trust_remote_code=True)
-    if tok.pad_token_id is None and tok.eos_token_id is not None:
-        tok.pad_token_id = tok.eos_token_id
+def _dtype_from_env() -> torch.dtype | None:
+    name = os.getenv("TORCH_DTYPE", "").lower()
+    if name in ("bf16", "bfloat16"):
+        return torch.bfloat16
+    if name in ("fp16", "float16", "half"):
+        return torch.float16
+    if name in ("fp32", "float32"):
+        return torch.float32
+    return None
 
-    torch.backends.cuda.matmul.allow_tf32 = True
 
-    model = AutoModelForCausalLM.from_pretrained(
-        model_id,
-        trust_remote_code=True,
-        torch_dtype=(torch.bfloat16 if device.startswith("cuda") else torch.float32),
-        attn_implementation=getattr(settings, "llm_attn_impl", "sdpa"),
-    )
-    model.to(device)
+def _safe_kwargs_for_ctor(cls, raw: dict) -> dict:
+    """Keep only kwargs accepted by cls.__init__ and drop the rest."""
+    sig = inspect.signature(cls.__init__)
+    allowed = set(sig.parameters.keys())
+    clean = {k: v for k, v in (raw or {}).items() if k in allowed and v is not None}
+    dropped = {k: v for k, v in (raw or {}).items() if k not in allowed and v is not None}
+    if dropped:
+        logger.info(f"{cls.__name__}: dropping unsupported init kwargs: {sorted(dropped.keys())}")
+    return clean
 
-    gen_pipe = pipeline(
-        "text-generation",
-        model=model,
-        tokenizer=tok,
-        do_sample=True,
-        max_new_tokens=getattr(settings, "llm_max_new_tokens", 90),
-        temperature=getattr(settings, "llm_temperature", 0.35),
-        top_p=getattr(settings, "llm_top_p", 0.85),
-        repetition_penalty=getattr(settings, "llm_repetition_penalty", 1.05),
-        pad_token_id=tok.pad_token_id,
-        eos_token_id=tok.eos_token_id,
-        return_full_text=False,
-        device=0 if device.startswith("cuda") else -1,
-    )
-    return gen_pipe, tok
-
-def warmup_pipeline(gen_pipe):
-    try:
-        _ = gen_pipe("E: ok\nS: ok\nQ: ok?<END>", max_new_tokens=1)
-        logger.info("LLM warmup complete.")
-    except Exception as e:
-        logger.warning(f"LLM warmup skipped: {e}")
 
 def bootstrap_services():
     """
-    Build core singletons and register them in app.core.di, including ChatService.
+    Build and register core singletons without duplicating model loads.
+    This version avoids loading the same 7B model multiple times.
     """
     try:
         logger.info("Starting bootstrap_services...")
-        from app.clients.llm_adapter import LLMAdapter
-        from app.clients.llm_client import LLMClient
+
+        # Optional: make CUDA allocator less fragment-prone
+        os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
+
+        # 1) Build / prewarm LLM clients via model_manager ONLY (single source of truth)
+        #    - model_manager should instantiate router/main internally from settings.
+        prewarm_flag = getattr(settings, "prewarm_models", True)
+        env_prewarm = os.getenv("PREWARM_MODELS", "true").lower() == "true"
+        do_prewarm = prewarm_flag and env_prewarm
+
+        if do_prewarm:
+            logger.info("Pre-warming models via model_manager...")
+            model_manager.prewarm_models()
+            logger.info("All models pre-warmed successfully")
+
+        # Ensure main client exists (lazy build if not prewarmed)
+        main_client = model_manager.get_main_client()
+        router_client = model_manager.get_router_client()  # also ensure router exists
+
+        # 2) Conversation store
         from app.services.memory_service import ConversationStore
-        from app.services.chat_service import ChatService
-        from app.core import di  # DI container
-
-        # Main LLM (legacy adapter for compatibility)
-        logger.info("Initializing legacy LLM adapter...")
-        pipe, tok = build_llm()
-        warmup_pipeline(pipe)
-        legacy_llm = LLMAdapter(pipe, tokenizer=tok)
-        logger.info("Legacy LLM adapter initialized successfully")
-
-        # Main LLM Client (new architecture)
-        logger.info("Initializing main LLM client...")
-        main_llm_client = LLMClient(
-            model_id=settings.llm_model_id,
-            temperature=settings.llm_temperature,
-            top_p=settings.llm_top_p,
-            repetition_penalty=settings.llm_repetition_penalty,
-            max_new_tokens=settings.llm_max_new_tokens,
-        )
-        logger.info("Main LLM client initialized successfully")
-
-        # Conversation store
-        logger.info("Initializing ConversationStore...")
         cs = ConversationStore()
         logger.info("ConversationStore initialized successfully")
 
-        # Optional knowledge store (RAG); tolerate absence
+        # 3) Optional vector store (RAG)
         kb_store = None
-        if hasattr(di, "get_vector_store"):
-            try:
+        try:
+            from app.core import di  # DI container
+            if hasattr(di, "get_vector_store"):
                 logger.info("Attempting to initialize vector store...")
                 kb_store = di.get_vector_store()  # type: ignore
                 logger.info("Vector store initialized successfully")
-            except Exception as e:
-                logger.warning(f"Vector store init failed, continue without RAG: {e}")
+        except Exception as e:
+            logger.warning(f"Vector store init failed, continue without RAG: {e}")
 
-        # Pre-warm models for faster response times
-        logger.info("Pre-warming models...")
-        from app.clients.model_manager import model_manager
-        model_manager.prewarm_models()
-        
-        # Build ChatService with new architecture
-        logger.info("Initializing ChatService...")
+        # 4) Chat service uses the SINGLE main client (no legacy pipeline)
+        from app.services.chat_service import ChatService
         chat_service = ChatService(
-            store=kb_store, 
-            llm_client=main_llm_client, 
-            conversation_store=cs, 
-            embedder=None
+            store=kb_store,
+            llm_client=main_client,
+            conversation_store=cs,
+            embedder=None,
         )
         logger.info("ChatService initialized successfully")
 
-        # Register into DI (prefer setters)
-        logger.info("Registering services in DI container...")
-        if hasattr(di, "set_llm"):
-            di.set_llm(legacy_llm)  # type: ignore
-            logger.info("LLM registered in DI")
-        else:
-            di.llm = legacy_llm  # type: ignore
-            logger.info("LLM set as DI attribute")
-
+        # 5) Register into DI
+        from app.core import di  # re-import to set attributes
+        # Prefer setters when available
         if hasattr(di, "set_conversation_store"):
             di.set_conversation_store(cs)  # type: ignore
-            logger.info("ConversationStore registered in DI")
         else:
             di.conversation_store = cs  # type: ignore
-            logger.info("ConversationStore set as DI attribute")
 
         if hasattr(di, "set_store"):
             di.set_store(kb_store)  # type: ignore
-            logger.info("Store registered in DI")
         else:
             di.store = kb_store  # type: ignore
-            logger.info("Store set as DI attribute")
 
         if hasattr(di, "set_chat_service"):
             di.set_chat_service(chat_service)  # type: ignore
-            logger.info("ChatService registered in DI successfully")
         else:
             di.chat_service = chat_service  # type: ignore
-            logger.info("ChatService set as DI attribute")
+
+        # (Optional) For backwards-compat code that expects di.llm,
+        # provide a thin shim that delegates to main_client.complete(...)
+        class _LLMShim:
+            async def complete(self, prompt: str, **kwargs):
+                return await main_client.complete(prompt, **kwargs)
+
+        if hasattr(di, "set_llm"):
+            di.set_llm(_LLMShim())  # type: ignore
+        else:
+            di.llm = _LLMShim()  # type: ignore
 
         logger.info("bootstrap_services completed (ChatService registered).")
         return True
+
     except Exception as e:
         logger.exception(f"bootstrap_services failed: {e}")
         return False
