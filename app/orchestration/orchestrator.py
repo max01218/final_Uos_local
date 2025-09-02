@@ -42,11 +42,13 @@ Message:"""
 
 CRISIS_RE = re.compile(r"(suicid(e|al)|kill myself|self[- ]?harm|end my life|homicide|kill (him|her|them))", re.I)
 
+# ---------- surface cleanup helpers ----------
+_LABEL_LINE = re.compile(r"^\s*(E|S|Q)\s*:\s*", re.I)
+_ROLE_HEAD = re.compile(r"(?i)\b(system|assistant|human|message|user)\b\s*[:：]\s*")
+_CODE_FENCE = re.compile(r"(?is)`{3}.*?`{3}")
+_ROLE_PREFIX = re.compile(r"^\s*(system|assistant|user|human|message)\s*[:：]\s*", re.I)
+
 def _strip_labels(text: str) -> str:
-    import re
-    _LABEL_LINE = re.compile(r"^\s*(E|S|Q)\s*:\s*", re.I)
-    _ROLE_HEAD = re.compile(r"(?i)\b(system|assistant|human|message)\b\s*[:：]\s*")
-    _CODE_FENCE = re.compile(r"(?is)`{3}.*?`{3}")
     if not text:
         return text
     text = _CODE_FENCE.sub("", text)
@@ -67,6 +69,33 @@ def _short_surface_enforce(t: str, max_words: int = 35, ensure_question: bool = 
     if ensure_question and not t.endswith("?"):
         t = t.rstrip(".! ") + " — is that okay?"
     return t
+
+def _clean_roles(text: str) -> str:
+    lines = [_ROLE_PREFIX.sub("", ln).strip() for ln in (text or "").splitlines()]
+    return " ".join([ln for ln in lines if ln]).strip()
+
+def _sentences(text: str) -> list[str]:
+    s = re.split(r"(?<=[.!?])\s+", text.strip())
+    return [x.strip() for x in s if x.strip()]
+
+def _dedupe_sentences(text: str) -> str:
+    seen = set()
+    out = []
+    for s in _sentences(text):
+        key = s.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(s)
+    return " ".join(out)
+
+def _clip_words(text: str, max_words: int) -> str:
+    words = text.split()
+    if len(words) <= max_words:
+        return text
+    return " ".join(words[:max_words]).rstrip(".,;:!?")
+# ------------------------------------------------
+
 
 class Orchestrator:
     def __init__(self, rag=None, conversation_store=None):
@@ -123,8 +152,34 @@ class Orchestrator:
         out = _strip_labels(resp or "")
         return _short_surface_enforce(out, 20, True)
 
+    async def _gen_info_definition(self, question: str, history: str, context: str) -> str:
+        """Produce a concise definition/explanation (2–4 sentences), no ESQ, no role prefixes."""
+        prompt = (
+            "Provide a concise, plain-English explanation to the user's question.\n"
+            "Rules:\n"
+            "- 2 to 4 sentences.\n"
+            "- No empathy lines, no therapeutic steps, no lists, no labels.\n"
+            "- Do not include 'User:' or 'Assistant:' or any role prefixes.\n"
+            "- Avoid repetition. Stay factual and clear.\n\n"
+            f"Question: {question}\n"
+        )
+        if context:
+            prompt += f"Helpful context:\n{context}\n"
+        prompt += "\nAnswer:"
+
+        raw = await self.main.complete(
+            prompt, temperature=0.2, top_p=0.95, max_new_tokens=180, max_time=8.0
+        )
+        cleaned = _clean_roles(raw or "")
+        cleaned = _dedupe_sentences(cleaned)
+        sents = _sentences(cleaned)
+        if len(sents) > 4:
+            cleaned = " ".join(sents[:4])
+        cleaned = _clip_words(cleaned, 90)
+        return cleaned.strip()
+
     async def generate(self, *, question: str, history: str, tone: str = "balanced", session_id: str = None):
-        # crisis or routing (your existing router)
+        # Stage-0: crisis gate or router
         if CRISIS_RE.search(question or ""):
             route, route_score = "crisis", 1.0
         else:
@@ -132,42 +187,51 @@ class Orchestrator:
             route = decision.route
             route_score = getattr(decision, "score", getattr(decision, "confidence", None))
 
-        # Guided flow stays same
+        # Guided flow (mh_support)
         if route == "mh_support" and self.flow:
-            final_raw, meta = await self._handle_guided_flow(question=question, history=history, session_id=session_id)
-            final = await self._naturalize(final_raw)  # keep your ESQ naturalizer if you want, or skip for ESQ
+            final_raw, meta = await self._handle_guided_flow(
+                question=question, history=history, session_id=session_id
+            )
+            # keep naturalizer if you want softer surface; ESQ formatting is handled in API layer
+            final = await self._naturalize(final_raw)
             meta = {**(meta or {}), "route": route, "route_score": route_score, "naturalized": True}
             return final, meta
 
-        # greeting shortcut (merged small-talk)
+        # Greeting shortcut (small-talk merged)
         if route == "greeting":
             final = await self._gen_greeting(question)
-            return final, {"route": route, "route_score": route_score, "repaired": False, "fast_path": True, "naturalized": True}
+            return final, {
+                "route": route, "route_score": route_score, "repaired": False,
+                "fast_path": True, "naturalized": True
+            }
 
-        # RAG (optional) and normal generation for info_definition/other etc.
+        # Info-definition: concise factual explanation with cleanup
+        if route == "info_definition":
+            context = ""
+            if self.rag:
+                try:
+                    if hasattr(self.rag, "retrieve"):
+                        docs = await self.rag.retrieve(question, k=3)
+                        context = self.rag.build_context(docs, max_docs=2)
+                    else:
+                        docs = self.rag.retrieve(question, k=3)
+                        context = self.rag.build_context(docs, max_docs=2)
+                except Exception as e:
+                    logger.warning(f"RAG retrieval failed: {e}")
+            final = await self._gen_info_definition(question, history, context)
+            return final, {"route": route, "route_score": route_score, "repaired": False, "naturalized": True}
+
+        # Other routes: compile + generate + light naturalization
         context = ""
-        if route in ("info_definition",) and self.rag:
-            try:
-                if hasattr(self.rag, "retrieve"):
-                    docs = await self.rag.retrieve(question, k=3)
-                    context = self.rag.build_context(docs, max_docs=2)
-                else:
-                    docs = self.rag.retrieve(question, k=3)
-                    context = self.rag.build_context(docs, max_docs=2)
-            except Exception as e:
-                logger.warning(f"RAG retrieval failed: {e}")
-                context = ""
-
         prompt = self.compiler.compile(route=route, question=question, history=history, context=context, tone=tone)
         logger.info(f"Stage-2 Generator LLM generating for route: {route} (score: {route_score})")
         raw = await self.main.complete(prompt)
 
-        # For non-mh routes, skip ESQ contract. Optionally naturalize lightly.
-        if route in ("info_definition", "other"):
+        if route in ("other",):
             final = await self._naturalize(raw.strip())
             return final, {"route": route, "route_score": route_score, "repaired": False, "naturalized": True}
 
-        # (Keep your judge/repair for routes that need structure, excluding mh_support handled above)
+        # For any remaining complex route types that still use constraints
         spec = self.compiler.routes[route]
         constraints = self.compiler._join_constraints(spec.get("constraints", []))
         contract = self.compiler.contracts[spec["output_contract"]]
@@ -180,14 +244,19 @@ class Orchestrator:
             except Exception as e:
                 logger.warning(f"Repair failed: {e}, using original")
                 final = await self._naturalize(raw.strip())
-                return final, {"route": route, "route_score": route_score, "repaired": False, "repair_error": str(e), "naturalized": True}
+                return final, {
+                    "route": route, "route_score": route_score, "repaired": False,
+                    "repair_error": str(e), "naturalized": True
+                }
 
         final = await self._naturalize(raw.strip())
         return final, {"route": route, "route_score": route_score, "repaired": False, "naturalized": True}
 
     async def _handle_guided_flow(self, *, question: str, history: str, session_id: str = None):
         logger.info("Handling guided flow for mh_support route")
-        plan_json = await self.flow.plan_if_needed(question=question, history=history, session_id=session_id)
+        plan_json = await self.flow.plan_if_needed(
+            question=question, history=history, session_id=session_id
+        )
 
         context = ""
         if self.rag:
@@ -203,9 +272,14 @@ class Orchestrator:
                 context = ""
 
         raw = await self._hedged_turn_generate(
-            question=question, history=history, context=context, plan_json=plan_json or "{}", session_id=session_id
+            question=question,
+            history=history,
+            context=context,
+            plan_json=plan_json or "{}",
+            session_id=session_id,
         )
 
+        # judge/repair for ESQ structure (lightweight / timeboxed)
         try:
             spec = self.compiler.routes["mh_support"]
             constraints = self.compiler._join_constraints(spec.get("constraints", []))
