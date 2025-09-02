@@ -1,58 +1,57 @@
-# app/services/chat_service.py
 from typing import Tuple, Optional
-import logging
-
 from app.schemas.chat import RAGRequest
 from app.orchestration.orchestrator import Orchestrator
 from app.services.memory_service import ConversationStore
 
-logger = logging.getLogger(__name__)
-
 class ChatService:
     def __init__(self, store=None, llm_client=None, conversation_store: ConversationStore = None, embedder=None):
+        # Optional RAG
         rag = None
         if store:
             try:
                 from app.services.rag_service import RAGService
                 rag = RAGService(store, embedder=embedder)
-            except Exception as e:
-                logger.warning("RAGService init failed: %s", e)
+            except Exception:
                 rag = None
 
         self.cs = conversation_store or ConversationStore()
         self.orch = Orchestrator(rag, self.cs)
 
-    async def handle_chat(self, req: RAGRequest) -> Tuple[str, dict]:
-        question: str = (getattr(req, "question", "") or "").strip()
-        tone: str = (getattr(req, "type", None) or "balanced").strip() or "balanced"
-        history_len: int = int(getattr(req, "historyLength", 50) or 50)
+    async def handle_chat(self, req: RAGRequest, tone_override: Optional[str] = None) -> Tuple[str, dict]:
+        question = (req.question or "").strip()
+        # If you keep a long history elsewhere, plug it here.
+        history = getattr(self.cs, "get_conversation_history", lambda: "")()
+        # Accept tone from override, request.tone, or legacy request.type
+        tone = (tone_override
+                or getattr(req, "tone", None)
+                or getattr(req, "type", None)
+                or "balanced")
 
-        session_id: Optional[str] = getattr(req, "session_id", None) or getattr(req, "sessionId", None)
-        if not session_id or not str(session_id).strip():
-            import time
-            session_id = str(int(time.time() * 1000))
+        # Generate a session_id if not provided
+        session_id = getattr(req, "session_id", None) or str(int(__import__('time').time() * 1000))
 
-        history_text: str = self.cs.get_conversation_history(session_id=session_id, limit=history_len, as_text=True)
-
-        try:
-            self.cs.append_user_message(question, session_id=session_id)
-        except Exception as e:
-            logger.warning("append_user_message failed: %s", e)
-
-        try:
-            if self.orch.flow and self.orch.flow.is_flow_active(session_id):
+        # Update flow state if active (optional)
+        if self.orch.flow and self.orch.flow.is_flow_active(session_id):
+            if history:
                 self.orch.flow.advance_or_adjust(question, session_id)
-        except Exception as e:
-            logger.warning("advance_or_adjust failed: %s", e)
 
-        answer, meta = await self.orch.generate(question=question, history=history_text, tone=tone, session_id=session_id)
+        answer, meta = await self.orch.generate(
+            question=question,
+            history=history,
+            tone=tone,
+            session_id=session_id,
+        )
 
-        try:
-            self.cs.append_assistant_message(answer, session_id=session_id)
-        except Exception as e:
-            logger.warning("append_assistant_message failed: %s", e)
+        # Write back to store if such APIs exist
+        if hasattr(self.cs, "add_interaction"):
+            self.cs.add_interaction(
+                user_message=question,
+                assistant_message=answer,
+                metadata=meta,
+                session_id=session_id,
+            )
 
-        if not isinstance(meta, dict):
-            meta = {}
-        meta.setdefault("session_id", session_id)
-        return (answer or "").strip(), meta
+        meta = meta or {}
+        meta["session_id"] = session_id
+        meta["tone"] = tone
+        return answer.strip(), meta

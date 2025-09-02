@@ -1,94 +1,62 @@
 # app/orchestration/router_service.py
-import logging
+from __future__ import annotations
 import re
+import logging
 from dataclasses import dataclass
-from typing import Tuple
-
+from typing import Optional
 from app.clients.model_manager import model_manager
 
 logger = logging.getLogger(__name__)
 
-CRISIS_RE = re.compile(r"(suicid(e|al)|kill myself|self[- ]?harm|end my life|homicide|kill (him|her|them))", re.I)
-
-# Allowed single-char labels -> canonical routes (no S; small-talk merges to greeting)
-LABEL2ROUTE = {
-    "G": "greeting",
-    "M": "mh_support",
-    "I": "info_definition",
-    "C": "crisis",
-    "O": "other",
-}
-ALLOWED = set(LABEL2ROUTE.keys())
-
-PROMPT = """You are a strict router for a mental-health assistant.
-Classify the user's message into ONE label:
-G=greeting (includes small talk), M=mh_support, I=info_definition, C=crisis, O=other.
-
-Return EXACTLY ONE letter from [G,M,I,C,O].
-No words, no punctuation, no markdown, no explanation.
-
-User: {text}
-Answer:
-"""
-
 @dataclass
-class RouteDecision:
+class RouterDecision:
     route: str
-    score: float
+    confidence: float
+
+_LABEL_RE = re.compile(r"\b([GMSIO])\b")
+_CONF_RE = re.compile(r"\b(1\.00|0\.\d{2})\b")
+
+# We intentionally do NOT classify "crisis" here.
+# Crisis is handled upstream by hard keyword gate in Orchestrator.
+
+PROMPT = (
+    "Classify the user's message into ONE label:\n"
+    "G=greeting, M=mh_support, I=info_definition, O=other.\n"
+    "Rules:\n"
+    "- Output exactly two tokens separated by space: <LABEL> <CONFIDENCE>\n"
+    "- <LABEL> is one of G/M/I/O.\n"
+    "- <CONFIDENCE> is 0.90 or 1.00.\n"
+    "- No extra text.\n\n"
+    "User: {text}\n"
+    "Answer:"
+)
 
 class LLMRouter:
     def __init__(self):
         self.client = model_manager.get_router_client()
 
-    async def classify(self, text: str) -> RouteDecision:
-        user_text = (text or "").strip()
+    async def classify(self, text: str) -> RouterDecision:
+        prompt = PROMPT.format(text=text.strip())
+        try:
+            out = await self.client.complete(prompt, temperature=0.0, top_p=0.0, max_new_tokens=12, max_time=6.0)
+            lab_m = _LABEL_RE.search(out or "")
+            conf_m = _CONF_RE.search(out or "")
+            if not lab_m:
+                raise ValueError("no label")
+            label = lab_m.group(1)
+            conf = float(conf_m.group(1)) if conf_m else 0.90
+        except Exception as e:
+            logger.warning("Router classify fallback due to parse: %s", e)
+            # trivial heuristic fallback
+            t = (text or "").lower()
+            if any(x in t for x in ("hello", "hi", "hey")) and len(t) <= 40:
+                label, conf = "G", 0.90
+            elif any(x in t for x in ("what is", "explain", "define", "definition", "meaning of")):
+                label, conf = "I", 0.90
+            else:
+                label, conf = "O", 0.50
 
-        # hard crisis gate
-        if CRISIS_RE.search(user_text):
-            return RouteDecision("crisis", 1.0)
-
-        prompt = PROMPT.format(text=user_text)
-        raw = await self.client.complete(
-            prompt,
-            temperature=0.0,
-            top_p=1.0,
-            max_new_tokens=2,
-            stop=["\n", " ", "\t", "."],
-            max_time=6.0,
-        )
-
-        label, route = self._parse_label(raw)
-        if route is not None:
-            conf = 1.0 if label == "C" else 0.9
-            logger.info("Router classified '%s' -> %s (label=%s, conf=%.2f)",
-                        user_text[:40] + ("..." if len(user_text) > 40 else ""), route, label, conf)
-            return RouteDecision(route, conf)
-
-        # fallback heuristic on USER TEXT (small-talk → greeting)
-        route, conf = self._heuristic(user_text)
-        logger.warning("Router label parse failed (raw='%s'); heuristic -> %s (conf=%.2f)",
-                       raw.strip().replace("\n", "\\n")[:80], route, conf)
-        return RouteDecision(route, conf)
-
-    def _parse_label(self, raw: str) -> Tuple[str, str | None]:
-        if not raw:
-            return "", None
-        for ch in raw.strip():
-            up = ch.upper()
-            if up in ALLOWED:
-                return up, LABEL2ROUTE.get(up)
-            if up.isalpha():
-                continue
-        return "", None
-
-    def _heuristic(self, user_text: str) -> Tuple[str, float]:
-        t = (user_text or "").lower()
-        if CRISIS_RE.search(t):
-            return "crisis", 1.0
-        if re.search(r"\b(sad|depress|anxious|anxiety|panic|overthink|can[’']?t sleep|insomnia|lonely|stress|stressed|worry|hopeless)\b", t):
-            return "mh_support", 0.8
-        if re.search(r"\b(what is|define|meaning of)\b", t):
-            return "info_definition", 0.7
-        if re.search(r"\b(how are you|what'?s up|how'?s it going)\b", t) or re.search(r"\b(hi|hello|hey|good (morning|afternoon|evening))\b", t):
-            return "greeting", 0.6
-        return "other", 0.4
+        route_map = {"G": "greeting", "M": "mh_support", "I": "info_definition", "O": "other"}
+        route = route_map.get(label, "other")
+        logger.info("Router classified '%s' -> %s (label=%s, conf=%.2f)", text[:30], route, label, conf)
+        return RouterDecision(route=route, confidence=conf)

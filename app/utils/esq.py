@@ -1,105 +1,170 @@
 # app/utils/esq.py
+from __future__ import annotations
 import re
+from typing import Tuple
 
-OUTPUT_CONTRACT = "ESQ_THREE_LINES"
+# Minimal contract placeholder to keep imports working.
+OUTPUT_CONTRACT = {"fields": ["E", "S", "Q"]}
 
-def _lines3(s: str):
-    lines = (s or "").strip().splitlines()
-    return [ln.strip() for ln in lines if ln.strip()]
+_LABEL_LINE = re.compile(r"^\s*(E|S|Q)\s*:\s*(.*)$", re.I)
+_ROLE_LINE = re.compile(r"^\s*(system|assistant|user|human|message)\s*[:：]\s*", re.I)
+CODE_FENCE = re.compile(r"(?is)`{3}.*?`{3}")
 
-def format_esq(raw_text: str, output_contract: str, word_limit: int = 45) -> str:
-    if output_contract != "ESQ_THREE_LINES":
-        return (raw_text or "").strip()
+SPLIT_SENT = re.compile(r"(?<=[.!?])\s+")
 
-    text = (raw_text or "").strip()
+# Common filler to strip from starts.
+START_FLAIR = re.compile(
+    r"^(i(?:'| a)m (sorry|here)|thanks for|glad you|it'?s okay|we can|let'?s)\b",
+    re.I,
+)
+
+def _strip_code_and_roles(text: str) -> str:
+    text = CODE_FENCE.sub("", text or "")
+    lines = []
+    for ln in text.splitlines():
+        ln = _ROLE_LINE.sub("", ln).strip()
+        if ln:
+            lines.append(ln)
+    return "\n".join(lines)
+
+def _extract_esq(raw: str) -> Tuple[str, str, str]:
+    """Extract E/S/Q lines. If missing, derive heuristically."""
+    e = s = q = ""
+    for ln in (raw or "").splitlines():
+        m = _LABEL_LINE.match(ln.strip())
+        if not m:
+            continue
+        lab, rest = m.group(1).upper(), m.group(2).strip()
+        if lab == "E" and not e:
+            e = rest
+        elif lab == "S" and not s:
+            s = rest
+        elif lab == "Q" and not q:
+            q = rest
+
+    if e or s or q:
+        return e, s, q
+
+    # Heuristic fallback: map first 3 sentences to E/S/Q-ish.
+    sentences = [x.strip() for x in SPLIT_SENT.split(raw.strip()) if x.strip()]
+    if not sentences:
+        return "", "", ""
+    e = sentences[0]
+    if len(sentences) > 1:
+        s = sentences[1]
+    if len(sentences) > 2:
+        # pick first sentence that ends with '?', else the third one
+        cand_q = next((t for t in sentences[1:] if t.endswith("?")), sentences[2])
+        q = cand_q
+    return e, s, q
+
+def _first_sentence(text: str) -> str:
     if not text:
         return ""
+    return SPLIT_SENT.split(text.strip())[0].strip()
 
-    text = re.sub(r"(?is)`{3}.*?`{3}", "", text)
-    text = re.sub(r"(?i)\b(system|assistant|human|message)\b\s*[:：]\s*", "", text)
+def _clip_words(text: str, max_words: int) -> str:
+    words = text.split()
+    if len(words) <= max_words:
+        return text
+    return " ".join(words[:max_words]).rstrip(",.;:! ")  # keep end clean
 
-    def _pick(label: str) -> str:
-        m = re.search(rf"(^|\n)\s*{label}\s*:\s*(.+)", text, re.I)
-        if not m:
-            return ""
-        seg = m.group(2).strip()
-        seg = re.split(r"(^|\n)\s*[ESQ]\s*:\s*", seg, maxsplit=1, flags=re.I)[0].strip()
-        return seg
+def _drop_extra_questions(text: str) -> str:
+    # Keep only the first question. Convert extra '?' to '.'.
+    out = []
+    q_seen = False
+    for ch in text:
+        if ch == "?":
+            if q_seen:
+                out.append(".")
+            else:
+                q_seen = True
+                out.append("?")
+        else:
+            out.append(ch)
+    return "".join(out)
 
-    e = _pick("E")
-    s = _pick("S")
-    q = _pick("Q")
+def _dedupe_sentences(text: str) -> str:
+    seen = set()
+    out = []
+    for s in [x.strip() for x in SPLIT_SENT.split(text) if x.strip()]:
+        key = s.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append(s)
+    return " ".join(out)
 
-    if not e or not s or not q:
-        raise ValueError("Missing E/S/Q labels")
+def _clean_ack(text: str, max_words: int = 12) -> str:
+    t = _first_sentence(text)
+    t = START_FLAIR.sub("", t).strip()
+    # remove trailing question if any in E
+    if t.endswith("?"):
+        t = t[:-1].rstrip()
+    return _clip_words(t, max_words)
 
-    def _limit(t: str) -> str:
-        words = t.split()
-        if len(words) > word_limit:
-            return " ".join(words[:word_limit]).rstrip(".,;:! ")
-        return t
+def _clean_suggestion(text: str, max_words: int = 16) -> str:
+    # Take only the first actionable clause/sentence.
+    t = _first_sentence(text)
+    # trim common sequencers to reduce length
+    t = re.sub(r"\b(after that|now|then|and then|first|second|next),?\b.*$", "", t, flags=re.I).strip()
+    # Avoid ending with '?' in S
+    t = t.replace("?", ".").strip().rstrip(".")
+    return _clip_words(t, max_words)
 
-    e, s, q = _limit(e), _limit(s), _limit(q)
-    return f"E: {e}\nS: {s}\nQ: {q}"
+def _clean_question(text: str, max_words: int = 16) -> str:
+    # Keep the first question-only sentence; if missing, convert sentence to a short question.
+    if not text:
+        return "What feels manageable to try next?"
+    # pick first question mark span
+    parts = [p.strip() for p in SPLIT_SENT.split(text) if p.strip()]
+    first_q = next((p for p in parts if p.endswith("?")), "")
+    q = first_q or parts[0]
+    q = _clip_words(q, max_words).rstrip(".! ")
+    if not q.endswith("?"):
+        # standardize to a single, short question
+        q = "What feels manageable to try next?"
+    return q
+
+def format_esq(raw_text: str, output_contract: dict | None = None, word_limit: int = 28) -> str:
+    """
+    Convert E/S/Q into ONE short chat message:
+    - 1 short acknowledgment (E)
+    - 1 concrete, low-burden suggestion (S)
+    - EXACTLY ONE short question (Q, ends with '?')
+    Enforces single-question policy and overall word limit.
+    """
+    txt = _strip_code_and_roles(raw_text or "")
+    e, s, q = _extract_esq(txt)
+
+    ack = _clean_ack(e, 12)
+    sug = _clean_suggestion(s, 16)
+    ask = _clean_question(q, 16)
+
+    # Build surface: avoid empty pieces, ensure punctuation.
+    pieces = []
+    if ack:
+        pieces.append(ack)
+    if sug:
+        pieces.append(sug)
+    if ask:
+        pieces.append(ask)
+
+    out = ". ".join(pieces)
+    out = _dedupe_sentences(out)
+    out = _drop_extra_questions(out)
+
+    # Enforce global word limit; keep the question mark at end.
+    end_q = out.endswith("?")
+    out = _clip_words(out, word_limit)
+    if end_q and not out.endswith("?"):
+        # restore '?', but keep single-question policy
+        out = out.rstrip(".! ") + "?"
+    return out.strip()
 
 def fallback_esq(question: str) -> str:
-    e = "I’m here with you; we can take this one step at a time."
-    s = "Try a short grounding: name 5 things you can see in the room."
-    q = "After that, what feels most manageable to try next?"
-    return f"E: {e}\nS: {s}\nQ: {q}"
-
-_ESQ_LINE = re.compile(r"^\s*([ESQ])\s*:\s*(.+)$", re.I)
-_ROLE_PREFIX = re.compile(r"^\s*(system|assistant|user|human|message)\s*[:：]\s*", re.I)
-
-def parse_esq_lines(text: str) -> dict:
-    """
-    Parse lines labeled E:/S:/Q: into a dict like {'E': '...', 'S': '...', 'Q': '...'}.
-    Ignores non-labeled lines. Returns empty dict if nothing parsed.
-    """
-    data = {}
-    if not text:
-        return data
-    for raw in text.splitlines():
-        line = (_ROLE_PREFIX.sub("", raw or "")).strip()
-        m = _ESQ_LINE.match(line)
-        if m:
-            data[m.group(1).upper()] = m.group(2).strip()
-    return data
-
-def esq_to_natural(text: str, max_words: int = 120) -> str:
-    """
-    Convert E:/S:/Q: labeled text into ONE natural chat message:
-    - keep E as an empathetic first sentence
-    - keep S as one concrete, low-effort suggestion sentence
-    - keep Q as exactly one short question at the end
-    - no labels, no role prefixes, trimmed to ~max_words
-    Fallback: if parsing fails, return the original text trimmed.
-    """
-    data = parse_esq_lines(text or "")
-    e = (data.get("E") or "").strip()
-    s = (data.get("S") or "").strip()
-    q = (data.get("Q") or "").strip()
-
-    parts = []
-    if e:
-        e = e.rstrip(".!?")
-        parts.append(e + ".")
-    if s:
-        s = s.rstrip(".!?")
-        parts.append(s + ".")
-    if q:
-        q = q.rstrip(".! ")
-        if not q.endswith("?"):
-            q = q + "?"
-        parts.append(q)
-
-    out = " ".join([p for p in parts if p]).strip()
-    if not out:
-        out = (text or "").strip()
-
-    # clip words softly
-    words = out.split()
-    if len(words) > max_words:
-        out = " ".join(words[:max_words]).rstrip(".!?") + "."
-
-    return out
+    # Safe minimal fallback; one suggestion + one question.
+    base = "I’m here with you. Try a slow 4–2–6 breath once."
+    ask = "What feels manageable to try next?"
+    combo = f"{base} {ask}"
+    return _clip_words(combo, 28)

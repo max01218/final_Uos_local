@@ -75,7 +75,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   });
 
   const { signal, cancel } = buildOptionalTimeoutSignal(API_TIMEOUT_MS);
-
+  const normalizedType = 
+    type === 'empathetic_professional' ? 'balanced' : type ?? 'balanced';
   try {
     const init: any = {
       method: "POST",
@@ -83,9 +84,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         "Content-Type": "application/json",
         Accept: "application/json",
       },
+      
       body: JSON.stringify({
         question,
-        type: type || "empathetic_professional",
+        type: normalizedType,
         history: history || [],
         session_id,
         weekly_goal,
