@@ -9,7 +9,7 @@ from app.clients.model_manager import model_manager
 from app.schemas.route import RouteDecision
 
 logger = logging.getLogger(__name__)
-VERSION = "router-r3"  # bump this if you need to confirm reloads
+VERSION = "router-r4"
 
 _JSON_OBJ = re.compile(r"\{.*?\}", re.S)
 _GREETING = re.compile(r"^\s*(hi|hello|hey|yo|good\s+(morning|afternoon|evening))\W*$", re.I)
@@ -31,10 +31,10 @@ class _Cache:
 
     def get(self, k: str) -> Optional[RouteDecision]:
         now = time.time()
-        item = self._m.get(k)
-        if not item:
+        v = self._m.get(k)
+        if not v:
             return None
-        exp, val = item
+        exp, val = v
         if now > exp:
             self._m.pop(k, None)
             return None
@@ -44,33 +44,36 @@ class _Cache:
         self._m[k] = (time.time() + self.ttl, v)
 
 
+# NOTE: double-braced JSON to avoid .format() interpreting {route} etc.
 CLASSIFIER_PROMPT = """You are a router for a mental-health assistant.
-Return JSON only as {"route":"...", "confidence":0.0-1.0, "triggers":["..."]}.
+Return JSON only as {{ "route": "...", "confidence": 0.0-1.0, "triggers": ["..."] }}.
 - route in: greeting, small_talk, crisis, mh_support, info_definition, other
 - confidence: float in [0,1]
 - triggers: JSON array (can be [])
 
 Examples:
 INPUT: "hi"
-OUTPUT: {"route":"greeting","confidence":0.95,"triggers":[]}
+OUTPUT: {{ "route": "greeting", "confidence": 0.95, "triggers": [] }}
 
 INPUT: "what is depression?"
-OUTPUT: {"route":"info_definition","confidence":0.90,"triggers":["definition"]}
+OUTPUT: {{ "route": "info_definition", "confidence": 0.90, "triggers": ["definition"] }}
 
 INPUT: "I feel really sad recently, what can I do?"
-OUTPUT: {"route":"mh_support","confidence":0.86,"triggers":["low_mood"]}
+OUTPUT: {{ "route": "mh_support", "confidence": 0.86, "triggers": ["low_mood"] }}
 
-If you are unsure, output exactly: {"route":"other","confidence":0.0,"triggers":[]}
+If unsure, output exactly: {{ "route": "other", "confidence": 0.0, "triggers": [] }}
 
 USER: {user_text}
-JSON:"""
+JSON:
+"""
 
 MINI_PROMPT = """Choose one label for the user message:
 [greeting, small_talk, crisis, mh_support, info_definition, other]
 Return ONLY the label word.
 
 USER: {user_text}
-LABEL:"""
+LABEL:
+"""
 
 
 class LLMRouter:
@@ -83,16 +86,16 @@ class LLMRouter:
         text = (user_text or "").strip()
         default_guess = "greeting" if _GREETING.match(text) else "other"
 
-        key = text.lower()
+        # small-input cache
         if self.cache and len(text) <= 15:
-            hit = self.cache.get(key)
+            hit = self.cache.get(text.lower())
             if hit:
                 logger.info(f"[{VERSION}] Router cache hit for: {text[:20]}...")
                 return hit
 
         logger.info(f"Stage-1 Router LLM classifying: {text[:30]}...")
 
-        # ---- 1) call only (no parsing in this try) ----
+        # ---- 1) call the router model (NO parsing in this try) ----
         try:
             raw = await self.client.complete(
                 CLASSIFIER_PROMPT.format(user_text=text),
@@ -110,10 +113,10 @@ class LLMRouter:
                 triggers=[],
             )
             if self.cache and len(text) <= 15:
-                self.cache.set(key, dec)
+                self.cache.set(text.lower(), dec)
             return dec
 
-        # ---- 2) parse & normalize (separate try) ----
+        # ---- 2) robust parse ----
         try:
             obj: Dict[str, Any]
             if isinstance(raw, dict):
@@ -141,9 +144,10 @@ class LLMRouter:
             except Exception:
                 pass
             logger.info(f"[{VERSION}] Stage-1 classified '{text[:30]}...' as '{dec.route}' (conf: {dec.confidence:.2f})")
+
         except Exception as e:
             logger.warning(f"[{VERSION}] Router parsing failed: {e!r}; trying mini router...")
-            # ---- 3) mini backup classifier ----
+            # ---- 3) minimal backup classifier ----
             try:
                 mini = await self.client.complete(
                     MINI_PROMPT.format(user_text=text),
@@ -163,12 +167,11 @@ class LLMRouter:
                     pass
             except Exception as e2:
                 logger.warning(f"[{VERSION}] Mini router failed: {e2!r}; using default '{default_guess}'")
-                dec = RouteDecision(
-                    route=default_guess,
-                    confidence=0.5 if default_guess == "greeting" else 0.0,
-                    triggers=[],
-                )
+                dec = RouteDecision(route=default_guess,
+                                    confidence=0.5 if default_guess == "greeting" else 0.0,
+                                    triggers=[])
 
         if self.cache and len(text) <= 15:
-            self.cache.set(key, dec)
+            self.cache.set(text.lower(), dec)
+
         return dec

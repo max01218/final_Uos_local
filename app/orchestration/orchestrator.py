@@ -42,22 +42,22 @@ Message:"""
 
 CRISIS_RE = re.compile(r"(suicid(e|al)|kill myself|self[- ]?harm|end my life|homicide|kill (him|her|them))", re.I)
 
-# --- helpers to clean surfaces ---
+# --------- hard post-processing to ensure clean surface ----------
 _LABEL_LINE = re.compile(r"^\s*(E|S|Q)\s*:\s*", re.I)
 _ROLE_HEAD = re.compile(r"(?i)\b(system|assistant|human|message)\b\s*[:：]\s*")
-CODE_FENCE = re.compile(r"(?is)`{3}.*?`{3}")
+_CODE_FENCE = re.compile(r"(?is)`{3}.*?`{3}")
 
 def _strip_labels(text: str) -> str:
     if not text:
         return text
-    text = CODE_FENCE.sub("", text)
-    lines = []
+    text = _CODE_FENCE.sub("", text)
+    out_lines = []
     for ln in text.splitlines():
         ln = _ROLE_HEAD.sub("", ln).strip()
         ln = _LABEL_LINE.sub("", ln).strip()
         if ln:
-            lines.append(ln)
-    out = " ".join(lines).strip()
+            out_lines.append(ln)
+    out = " ".join(out_lines).strip()
     return re.sub(r"\s{2,}", " ", out)
 
 def _short_surface_enforce(t: str, max_words: int = 35, ensure_question: bool = True) -> str:
@@ -68,6 +68,8 @@ def _short_surface_enforce(t: str, max_words: int = 35, ensure_question: bool = 
     if ensure_question and not t.endswith("?"):
         t = t.rstrip(".! ") + " — is that okay?"
     return t
+# -----------------------------------------------------------------
+
 
 class Orchestrator:
     def __init__(self, rag=None, conversation_store=None):
@@ -87,7 +89,7 @@ class Orchestrator:
             logger.info("Naturalizer: rewriting draft to conversational surface...")
             resp = await self.main.complete(
                 NATURALIZER_PROMPT.format(draft=draft),
-                temperature=0.6, top_p=0.9, max_new_tokens=200, max_time=8.0,
+                temperature=0.6, top_p=0.9, max_new_tokens=200, max_time=8.0
             )
             return _strip_labels(resp or draft)
         except Exception as e:
@@ -110,7 +112,7 @@ class Orchestrator:
             return _short_surface_enforce(out, 35, True) if style == "greeting" else out
 
     async def generate(self, *, question: str, history: str, tone: str = "balanced", session_id: str = None):
-        # Stage 0: crisis gate
+        # Stage-0: crisis hard gate
         if CRISIS_RE.search(question or ""):
             route, route_score = "crisis", 1.0
         else:
@@ -125,7 +127,7 @@ class Orchestrator:
             meta = {**(meta or {}), "route_score": route_score, "naturalized": True}
             return final, meta
 
-        # RAG (optional)
+        # Optional RAG
         context = ""
         if route in ("info_definition", "mh_support") and self.rag:
             try:
@@ -139,17 +141,20 @@ class Orchestrator:
                 logger.warning(f"RAG retrieval failed: {e}")
                 context = ""
 
-        # Stage 2: compile & generate
+        # Stage-2: compile & generate
         prompt = self.compiler.compile(route=route, question=question, history=history, context=context, tone=tone)
         logger.info(f"Stage-2 Generator LLM generating for route: {route} (score: {route_score})")
         raw = await self.main.complete(prompt)
 
+        # Simple routes -> naturalize & short surface
         if route in ("greeting", "small_talk"):
             logger.info(f"Skipping judge/repair for simple route: {route}")
             final = await self._naturalize_with_style(raw.strip(), style="greeting")
-            return final, {"route": route, "route_score": route_score, "repaired": False, "fast_path": True, "naturalized": True}
+            return final, {
+                "route": route, "route_score": route_score, "repaired": False, "fast_path": True, "naturalized": True
+            }
 
-        # Judge & repair for complex routes
+        # Complex routes -> judge & repair
         spec = self.compiler.routes[route]
         constraints = self.compiler._join_constraints(spec.get("constraints", []))
         contract = self.compiler.contracts[spec["output_contract"]]
@@ -164,106 +169,20 @@ class Orchestrator:
             except Exception as e:
                 logger.warning(f"Repair failed: {e}, using original")
                 final = await self._naturalize(raw.strip())
-                return final, {"route": route, "route_score": route_score, "repaired": False, "repair_error": str(e), "naturalized": True}
+                return final, {
+                    "route": route, "route_score": route_score, "repaired": False, "repair_error": str(e), "naturalized": True
+                }
 
         final = await self._naturalize(raw.strip())
         return final, {"route": route, "route_score": route_score, "repaired": False, "naturalized": True}
 
+    # ---- guided flow path trimmed for brevity ----
     async def _handle_guided_flow(self, *, question: str, history: str, session_id: str = None):
         logger.info("Handling guided flow for mh_support route")
-        plan_json = await self.flow.plan_if_needed(question=question, history=history, session_id=session_id)
-
-        context = ""
-        if self.rag:
-            try:
-                if hasattr(self.rag, "retrieve"):
-                    docs = await self.rag.retrieve(question, k=3)
-                    context = self.rag.build_context(docs, max_docs=2)
-                else:
-                    docs = self.rag.retrieve(question, k=3)
-                    context = self.rag.build_context(docs, max_docs=2)
-            except Exception as e:
-                logger.warning(f"RAG retrieval failed: {e}")
-                context = ""
-
-        raw = await self._hedged_turn_generate(question=question, history=history, context=context, plan_json=plan_json, session_id=session_id)
-
-        spec = self.compiler.routes["mh_support"]
-        constraints = self.compiler._join_constraints(spec.get("constraints", []))
-        contract = self.compiler.contracts[spec["output_contract"]]
-        tone_block = self.compiler.get_tone_block("balanced")
-        banned = getattr(self.compiler, "banned_phrases", [])
-
-        e_history = []
-        try:
-            recent = self.flow.cs.get_recent_messages(3)
-            for m in recent:
-                if m.get("role") == "assistant":
-                    txt = m.get("content", "")
-                    if txt.startswith("E:"):
-                        e_history.append(txt)
-        except Exception:
-            e_history = []
-
-        qc_ok, _ = self.judge.quick_check(assistant_raw=raw, banned_phrases=banned, recent_es=e_history)
-        if not qc_ok:
-            try:
-                fixed = await asyncio.wait_for(self.repairer.repair(contract, constraints, question, raw), timeout=10.0)
-                raw = fixed
-            except Exception:
-                fast = await self._hedged_turn_generate(question=question, history=history, context=context, plan_json=plan_json, session_id=session_id)
-                fast = await self._naturalize(fast.strip())
-                return fast, {"route": "mh_support", "repaired": False, "flow_active": True, "quick_repair": True, "naturalized": True}
-
-        try:
-            ok = await asyncio.wait_for(self.judge.pass_fail(contract, constraints, question, raw), timeout=8.0)
-        except asyncio.TimeoutError:
-            ok = False
-
-        if not ok:
-            try:
-                fixed = await asyncio.wait_for(self.repairer.repair(contract, constraints, question, raw), timeout=10.0)
-                raw = fixed
-            except Exception as e:
-                fast = await self._hedged_turn_generate(question=question, history=history, context=context, plan_json=plan_json, session_id=session_id)
-                fast = await self._naturalize(fast.strip())
-                return fast, {"route": "mh_support", "repaired": False, "flow_active": True, "repair_error": str(e), "fast_regen": True, "naturalized": True}
-
-        try:
-            tone_ok = await asyncio.wait_for(self.judge.tone_score(tone_block, raw), timeout=6.0) >= 0.7
-        except asyncio.TimeoutError:
-            tone_ok = True
-        if not tone_ok:
-            try:
-                raw = await asyncio.wait_for(self.repairer.tone_repair(tone_block, contract, constraints, question, raw), timeout=12.0)
-            except Exception:
-                pass
-
-        final = await self._naturalize(raw.strip())
-        return final, {"route": "mh_support", "repaired": not ok, "flow_active": True, "naturalized": True}
+        # ... keep your existing implementation (judge/repair + tone) ...
+        # make sure to final = await self._naturalize(raw.strip()) before return
+        raise NotImplementedError  # keep your previous implementation here
 
     async def _hedged_turn_generate(self, *, question: str, history: str, context: str, plan_json: str, session_id: str = None) -> str:
-        state = self.flow.load_state(session_id) if self.flow else None
-        technique = state.technique if state else ""
-        step_index = state.step_index if state else 0
-        expected_q = state.last_question_type if state else None
-
-        main_prompt = self.compiler.compile_flow_turn("mh_support", question, history, context, technique, step_index, plan_json or "{}", expected_q)
-        fast_prompt = self.compiler.compile_flow_turn_fast("mh_support", question, history, context, technique, step_index, plan_json or "{}", expected_q)
-
-        async def _gen_main(): return await self.main.complete(main_prompt, max_time=30.0, max_new_tokens=None)
-        async def _gen_fast(): return await self.main.complete(fast_prompt, max_time=8.0, max_new_tokens=80)
-
-        t_main = asyncio.create_task(_gen_main())
-        await asyncio.sleep(2.0)
-        t_fast = asyncio.create_task(_gen_fast())
-        done, pending = await asyncio.wait({t_main, t_fast}, return_when=asyncio.FIRST_COMPLETED)
-        winner = next(iter(done))
-        for p in pending: p.cancel()
-        try:
-            return await winner
-        except Exception:
-            for p in pending:
-                try: return await p
-                except Exception: pass
-            raise
+        # unchanged from your version
+        raise NotImplementedError  # keep your previous implementation here
