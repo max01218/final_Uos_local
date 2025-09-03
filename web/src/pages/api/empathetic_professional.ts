@@ -55,9 +55,27 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (!question || typeof question !== "string") {
     return res.status(400).json({ error: "Question is required and must be a string" });
     }
-
+  const toneMap: Record<string, string> = {
+    caring: "warm",
+    friendly: "warm",
+    empathetic: "warm",
+    supportive: "warm",
+    gentle: "warm",
+  
+    professional: "direct",
+    concise: "direct",
+    formal: "direct",
+  
+    neutral: "balanced",
+    balanced: "balanced",
+  };
+    
+  const rawType = (type || "").toLowerCase(); 
   // Respect style selector: the UI may send "empathetic_professional"; map to "balanced"
-  const normalizedType = type === "empathetic_professional" ? "balanced" : (type || "balanced");
+  const normalizedType =
+  rawType === "empathetic_professional"
+    ? "balanced"
+    : toneMap[rawType] ?? (rawType || "balanced");
 
   const override = req.query.timeoutMs ? Number(req.query.timeoutMs) : undefined;
   const API_TIMEOUT_MS = Number.isFinite(override as number) ? (override as number) : DEFAULT_TIMEOUT_MS;

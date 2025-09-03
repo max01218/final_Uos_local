@@ -37,6 +37,22 @@ _ROLE_PREFIX = re.compile(r"^\s*(system|assistant|user|human|message)\s*[:：]\s
 _ROLE_ANY = re.compile(r"(?i)\b(human|assistant|system|user|message)\b\s*[:：]\s*")
 
 _GUIDED_NOISE = re.compile(r"^\s*(plan:|encourage|repaired reply:|answer:|question:)\b", re.I)
+def _tone_key(tone: Optional[str]) -> str:
+    t = (tone or "balanced").lower()
+    if t in ("warm", "direct", "balanced"):
+        return t
+    alias = {
+        "caring": "warm",
+        "friendly": "warm",
+        "empathetic": "balanced",
+        "supportive": "warm",
+        "gentle": "warm",
+        "professional": "direct",
+        "concise": "direct",
+        "formal": "direct",
+        "neutral": "balanced",
+    }
+    return alias.get(t, "balanced")
 
 def _strip_labels(text: str) -> str:
     if not text:
@@ -272,12 +288,17 @@ class Orchestrator:
                 question=question, history=history, session_id=session_id, tone=tone_used
             )
             # Return raw ESQ-like text; API layer will compress to one message.
-            return (final_raw or "").strip(), {**(meta or {}), "route": route, "route_score": route_score, "tone_used": tone_used}
+            return (final_raw or "").strip(), {**(meta or {}), "route": route, "route_score": route_score, "tone_used": _tone_key(tone)}
 
         # greeting
         if route == "greeting":
-            final = await self._gen_greeting(question, tone_used)
-            return final, {"route": route, "route_score": route_score, "naturalized": True, "tone_used": tone_used}
+            final = await self._gen_greeting(question, tone)
+            return final, {
+                "route": route,
+                "route_score": route_score,
+                "naturalized": True,
+                "tone_used": _tone_key(tone),
+            }
 
         # info_definition
         if route == "info_definition":
@@ -293,14 +314,14 @@ class Orchestrator:
                 except Exception as e:
                     logger.warning("RAG retrieval failed: %s", e)
             final = await self._gen_info_definition(question, context, tone_used)
-            return final, {"route": route, "route_score": route_score, "naturalized": True, "tone_used": tone_used}
+            return final, {"route": route, "route_score": route_score, "naturalized": True, "tone_used": _tone_key(tone)}
 
         # other (fallback to compiled prompt)
         prompt = self.compiler.compile(route=route, question=question, history=history, context="", tone=tone_used)
         prompt = f"{prompt}\n\nSTYLE:\n{_tone_hint(tone_used)}"
         raw = await self.main.complete(prompt)
         final = _strip_labels((raw or "").strip())
-        return final, {"route": route, "route_score": route_score, "naturalized": True, "tone_used": tone_used}
+        return final, {"route": route, "route_score": route_score, "naturalized": True, "tone_used": _tone_key(tone)}
 
     # ---------- Guided flow handling ----------
     def _strip_guided_noise(self, text: str) -> str:
