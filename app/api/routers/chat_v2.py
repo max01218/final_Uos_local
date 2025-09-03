@@ -1,4 +1,3 @@
-#app\api\routers\chat_v2.py
 from fastapi import APIRouter, Depends, HTTPException, Request
 from fastapi.responses import JSONResponse
 import logging
@@ -10,11 +9,7 @@ from app.utils.esq import OUTPUT_CONTRACT, format_esq, fallback_esq
 logger = logging.getLogger(__name__)
 router = APIRouter()
 
-
 def _get_esq_config(request: Request):
-    """
-    Read ESQ config from app.state.config if present, otherwise use defaults.
-    """
     try:
         cfg = getattr(request.app.state, "config", {}) or {}
         esq = cfg.get("esq", {}) or {}
@@ -22,21 +17,19 @@ def _get_esq_config(request: Request):
     except Exception:
         return {"word_limit": 45}
 
-
 @router.post("/api/v2/empathetic_professional", response_model=RAGResponse)
 async def empathetic_professional_v2(
     request_data: RAGRequest,
     request: Request,
-    chat_service=Depends(get_chat_service),
+    chat_service = Depends(get_chat_service),
 ):
     try:
         esq_cfg = _get_esq_config(request)
         rd = request_data
 
-        # Tone: prefer request_data.type; fall back to "balanced"
         tone = (rd.type or "").strip().lower() or "balanced"
 
-        # Call ChatService with tone if supported (backward compatible)
+        # pass tone down when available
         try:
             answer, meta = await chat_service.handle_chat(rd, tone_override=tone)  # type: ignore[arg-type]
         except TypeError:
@@ -47,11 +40,9 @@ async def empathetic_professional_v2(
         if not isinstance(meta, dict):
             meta = {}
 
-        # Route-aware post-processing
         route = (meta.get("route") or "other").strip().lower()
 
         if route == "mh_support":
-            # Convert ESQ-like raw text to a compact single message (no E:/S:/Q:)
             try:
                 final_text = format_esq(
                     raw_text=answer,
@@ -64,10 +55,8 @@ async def empathetic_professional_v2(
                 logger.warning("format_esq failed for mh_support: %s; using fallback_esq", fe)
                 final_text = fallback_esq(rd.question or "")
         elif route in ("greeting", "info_definition", "crisis"):
-            # Already sanitized upstream; do not reformat
             final_text = (answer or "").strip()
         else:
-            # Default: keep as-is but ensure string
             final_text = (answer or "").strip()
 
         resp = RAGResponse(

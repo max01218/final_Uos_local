@@ -57,7 +57,6 @@ def _clean_roles(text: str) -> str:
     return " ".join([ln for ln in lines if ln]).strip()
 
 def _normalize_punct(text: str) -> str:
-    # ensure a space after sentence-ending punctuation
     return re.sub(r"([.!?])([A-Za-z])", r"\1 \2", text or "")
 
 def _sentences(text: str) -> List[str]:
@@ -101,13 +100,12 @@ def _first_sentence_only(text: str) -> str:
     return sents[0] if sents else text
 
 def _sanitize_greeting(text: str) -> str:
-    """Keep only the first clean sentence; drop echoes like 'my name is ...'."""
+    """Keep only the first clean sentence; avoid echo; enforce end punctuation and short length."""
     s = _first_sentence_only(text or "")
     s = _ROLE_ANY.sub("", s).strip()
     low = s.lower()
     if "my name is" in low or low.startswith(("hi, i", "hi i", "hello i", "hey i")):
         s = "How can I help today?"
-    # enforce punctuation and length
     if s and s[-1] not in ".?!":
         s = s + "."
     return _clip_words(s, 28)
@@ -136,7 +134,7 @@ class Orchestrator:
     async def _gen_greeting(self, user_text: str, tone: str = "balanced") -> str:
         prompt = (
             "Write a brief, friendly greeting tailored to the user's line.\n"
-            f"{_tone_hint(tone)}\n"
+            f"STYLE: {_tone_hint(tone)}\n"
             "Rules:\n"
             "- Keep to 1–2 short sentences (<= 28 words total).\n"
             "- No lists, no labels, no emojis, no jokes.\n"
@@ -146,7 +144,7 @@ class Orchestrator:
             "Reply:"
         )
         resp = await self.main.complete(
-            prompt, temperature=0.4, top_p=0.9, max_new_tokens=60, max_time=6.0
+            prompt, temperature=0.45, top_p=0.9, max_new_tokens=60, max_time=6.0
         )
         out = _strip_labels(resp or "")
         out = _sanitize_greeting(out)
@@ -155,7 +153,7 @@ class Orchestrator:
     async def _gen_info_definition(self, question: str, context: str, tone: str = "balanced") -> str:
         prompt = (
             "Provide a concise, plain-English explanation to the user's question.\n"
-            f"{_tone_hint(tone)}\n"
+            f"STYLE: {_tone_hint(tone)}\n"
             "Rules:\n"
             "- 2 to 4 sentences.\n"
             "- No empathy lines, no therapeutic steps, no lists, no labels.\n"
@@ -168,7 +166,7 @@ class Orchestrator:
         prompt += "\nAnswer:"
 
         raw = await self.main.complete(
-            prompt, temperature=0.2, top_p=0.95, max_new_tokens=180, max_time=8.0
+            prompt, temperature=0.25, top_p=0.95, max_new_tokens=180, max_time=8.0
         )
         cleaned = _normalize_punct(_clean_roles(raw or ""))
         cleaned = _remove_qna_noise(_dedupe_sentences(cleaned))
@@ -194,7 +192,7 @@ class Orchestrator:
             final_raw, meta = await self._handle_guided_flow(
                 question=question, history=history, session_id=session_id, tone=tone
             )
-            # Do not naturalize; API layer formats ESQ if needed
+            # Return raw ESQ-like text; API layer will compress to one message.
             return (final_raw or "").strip(), {**(meta or {}), "route": route, "route_score": route_score}
 
         # greeting
@@ -220,7 +218,7 @@ class Orchestrator:
 
         # other (fallback to compiled prompt)
         prompt = self.compiler.compile(route=route, question=question, history=history, context="", tone=tone)
-        prompt = f"{prompt}\n\nTone guideline:\n{_tone_hint(tone)}"
+        prompt = f"{prompt}\n\nSTYLE:\n{_tone_hint(tone)}"
         raw = await self.main.complete(prompt)
         final = _strip_labels((raw or "").strip())
         return final, {"route": route, "route_score": route_score, "naturalized": True}
@@ -298,8 +296,13 @@ class Orchestrator:
             plan_json=plan_json or "{}", expected_question_type=s.last_question_type,
         )
 
-        main_prompt = f"{main_prompt}\n\nTone guideline:\n{_tone_hint(tone)}"
-        fast_prompt = f"{fast_prompt}\n\nTone guideline:\n{_tone_hint(tone)}"
+        # Strong, early style injection so tone actually affects output
+        style = f"STYLE (obey in wording and sentence length): {_tone_hint(tone)}\n" \
+                f"- Offer at most one suggestion and one question.\n" \
+                f"- Keep total under 55 words.\n"
+
+        main_prompt = f"{style}\n{main_prompt}"
+        fast_prompt = f"{style}\n{fast_prompt}"
 
         async def _gen_main():
             return await self.main.complete(main_prompt, max_time=30.0, max_new_tokens=None)
