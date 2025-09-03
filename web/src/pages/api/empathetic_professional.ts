@@ -103,7 +103,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     const raw = await r.text();
     console.log("Next.js API: Raw response text length:", raw.length);
-
+    
     let data: any = null;
     try {
       data = raw ? JSON.parse(raw) : null;
@@ -111,7 +111,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       console.error("Next.js API: JSON parse error:", e);
       return res.status(502).json({ error: "Failed to parse backend response", raw });
     }
-
+    console.log("Route/ToneUsed:", data?.meta?.route, data?.meta?.tone_used);
     if (!r.ok) {
       const detail = data?.detail || data?.error || data || "Backend error";
       console.error(`Next.js API: Backend error ${r.status}:`, detail);

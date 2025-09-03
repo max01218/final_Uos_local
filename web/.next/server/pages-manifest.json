@@ -2,8 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/chat": "pages/chat.js",
   "/": "pages/index.js",
-  "/api/empathetic_professional": "pages/api/empathetic_professional.js",
-  "/auth": "pages/auth.js"
+  "/auth": "pages/auth.js",
+  "/chat": "pages/chat.js"
 }
