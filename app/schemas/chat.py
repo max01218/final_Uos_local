@@ -16,7 +16,7 @@ class UserProfile(BaseModel):
 
 class RAGRequest(BaseModel):
     question: str
-    type: str = "empathetic_professional"
+    type: Optional[str] = None
     session_id: Optional[str] = None
     history: Optional[List[Message]] = Field(default_factory=list)
     user_profile: Optional[UserProfile] = None
