@@ -25,7 +25,6 @@ CRISIS_TEMPLATE = (
     "- UK: Samaritans 116 123 (24/7)\n"
     "- US: 988 Suicide & Crisis Lifeline (24/7)\n"
     "- EU: 112 (general emergency)\n"
-    "- Taiwan: 1925 Lifeline (24/7)\n"
     "If you can, consider telling a trusted person nearby. "
     "Would you like help finding the right number or planning one small step for safety tonight?"
 )
@@ -99,33 +98,65 @@ def _first_sentence_only(text: str) -> str:
     sents = _sentences(text)
     return sents[0] if sents else text
 
-# def _sanitize_greeting(text: str) -> str:
-#     """Keep only the first clean sentence; avoid echo; enforce end punctuation and short length."""
-#     s = _first_sentence_only(text or "")
-#     s = _ROLE_ANY.sub("", s).strip()
-#     low = s.lower()
-#     if "my name is" in low or low.startswith(("hi, i", "hi i", "hello i", "hey i")):
-#         s = "How can I help today?"
-#     if s and s[-1] not in ".?!":
-#         s = s + "."
-#     return _clip_words(s, 28)
+def _ensure_one_question(text: str, fallback_q: str) -> str:
+    """Ensure exactly one question; append fallback if none; trim to at most two sentences."""
+    sents = _sentences(text)
+    if not sents:
+        return fallback_q
+    sents = sents[:2]
+    joined = " ".join(sents).strip()
+    q_count = joined.count("?")
+    if q_count == 0:
+        joined = (joined + " " + fallback_q).strip()
+    elif q_count > 1:
+        # keep up to the first sentence that contains '?'
+        subset = []
+        seen_q = False
+        for s in sents:
+            if not seen_q:
+                subset.append(s)
+                if "?" in s:
+                    seen_q = True
+            else:
+                # skip remaining sentences to avoid multiple questions
+                break
+        joined = " ".join(subset).strip()
+    return joined
 
-def _sanitize_greeting(text: str) -> str:
-    s = _first_sentence_only(text or "")
+def _sanitize_greeting(text: str, fallback_q: str) -> str:
+    s = _clean_roles(text or "")
+    s = _ensure_one_question(s, fallback_q)
     s = _ROLE_ANY.sub("", s).strip()
-    if s and s[-1] not in ".?!":
-        s = s + "."
     return _clip_words(s, 28)
 
-# -------- Tone hints --------
+# -------- Tone mapping & hints --------
 TONE_HINT = {
     "balanced": "Use a balanced, calm and supportive tone.",
     "warm": "Use a warmer, gentler, more encouraging tone.",
     "direct": "Use a concise, straightforward, no-fluff professional tone.",
 }
 
+# UI aliases -> canonical tones
+TONE_ALIASES = {
+    "professional": "direct",
+    "formal": "direct",
+    "friendly": "warm",
+    "casual": "warm",
+    "neutral": "balanced",
+    "standard": "balanced",
+}
+
+def _normalize_tone(t: str) -> str:
+    if not t:
+        return "balanced"
+    tl = t.strip().lower()
+    if tl in TONE_HINT:
+        return tl
+    return TONE_ALIASES.get(tl, "balanced")
+
 def _tone_hint(tone: str) -> str:
-    return TONE_HINT.get((tone or "balanced").lower(), TONE_HINT["balanced"])
+    return TONE_HINT[_normalize_tone(tone)]
+
 # Stronger persona + examples per tone
 TONE_PERSONA = {
     "balanced": {
@@ -159,10 +190,10 @@ TONE_PERSONA = {
         "temperature": 0.3,
     },
 }
-def _tone_spec(tone: str) -> dict:
-    t = (tone or "balanced").lower()
-    return TONE_PERSONA.get(t, TONE_PERSONA["balanced"])
 
+def _tone_spec(tone: str) -> dict:
+    t = _normalize_tone(tone)
+    return TONE_PERSONA.get(t, TONE_PERSONA["balanced"])
 
 class Orchestrator:
     def __init__(self, rag=None, conversation_store=None):
@@ -193,7 +224,7 @@ class Orchestrator:
             prompt, temperature=temp, top_p=0.9, max_new_tokens=60, max_time=6.0
         )
         out = _strip_labels(resp or "")
-        out = _sanitize_greeting(out)
+        out = _sanitize_greeting(out, spec["greet_q"])
         return out
 
     async def _gen_info_definition(self, question: str, context: str, tone: str = "balanced") -> str:
@@ -224,9 +255,11 @@ class Orchestrator:
 
     # ---------- Public generate ----------
     async def generate(self, *, question: str, history: str, tone: str = "balanced", session_id: Optional[str] = None):
+        tone_used = _normalize_tone(tone)
+
         # Crisis bypass
         if CRISIS_RE.search(question or ""):
-            return CRISIS_TEMPLATE, {"route": "crisis", "route_score": 1.0, "naturalized": True}
+            return CRISIS_TEMPLATE, {"route": "crisis", "route_score": 1.0, "naturalized": True, "tone_used": tone_used}
 
         # Route
         decision = await self.router.classify(question or "")
@@ -236,15 +269,15 @@ class Orchestrator:
         # mh_support -> guided flow
         if route == "mh_support" and self.flow:
             final_raw, meta = await self._handle_guided_flow(
-                question=question, history=history, session_id=session_id, tone=tone
+                question=question, history=history, session_id=session_id, tone=tone_used
             )
             # Return raw ESQ-like text; API layer will compress to one message.
-            return (final_raw or "").strip(), {**(meta or {}), "route": route, "route_score": route_score}
+            return (final_raw or "").strip(), {**(meta or {}), "route": route, "route_score": route_score, "tone_used": tone_used}
 
         # greeting
         if route == "greeting":
-            final = await self._gen_greeting(question, tone)
-            return final, {"route": route, "route_score": route_score, "naturalized": True}
+            final = await self._gen_greeting(question, tone_used)
+            return final, {"route": route, "route_score": route_score, "naturalized": True, "tone_used": tone_used}
 
         # info_definition
         if route == "info_definition":
@@ -259,15 +292,15 @@ class Orchestrator:
                         context = self.rag.build_context(docs, max_docs=2)
                 except Exception as e:
                     logger.warning("RAG retrieval failed: %s", e)
-            final = await self._gen_info_definition(question, context, tone)
-            return final, {"route": route, "route_score": route_score, "naturalized": True}
+            final = await self._gen_info_definition(question, context, tone_used)
+            return final, {"route": route, "route_score": route_score, "naturalized": True, "tone_used": tone_used}
 
         # other (fallback to compiled prompt)
-        prompt = self.compiler.compile(route=route, question=question, history=history, context="", tone=tone)
-        prompt = f"{prompt}\n\nSTYLE:\n{_tone_hint(tone)}"
+        prompt = self.compiler.compile(route=route, question=question, history=history, context="", tone=tone_used)
+        prompt = f"{prompt}\n\nSTYLE:\n{_tone_hint(tone_used)}"
         raw = await self.main.complete(prompt)
         final = _strip_labels((raw or "").strip())
-        return final, {"route": route, "route_score": route_score, "naturalized": True}
+        return final, {"route": route, "route_score": route_score, "naturalized": True, "tone_used": tone_used}
 
     # ---------- Guided flow handling ----------
     def _strip_guided_noise(self, text: str) -> str:
@@ -361,10 +394,18 @@ class Orchestrator:
         fast_prompt = f"{style}\n{fast_prompt}"
 
         async def _gen_main():
-            return await self.main.complete(main_prompt, temperature=spec["temperature"], top_p=0.9, max_time=30.0, max_new_tokens=140)
+            return await self.main.complete(
+                main_prompt,
+                temperature=spec["temperature"], top_p=0.9,
+                max_time=30.0, max_new_tokens=140
+            )
 
         async def _gen_fast():
-            return await self.main.complete(fast_prompt, temperature=spec["temperature"], top_p=0.9, max_time=8.0, max_new_tokens=80)
+            return await self.main.complete(
+                fast_prompt,
+                temperature=spec["temperature"], top_p=0.9,
+                max_time=8.0, max_new_tokens=80
+            )
 
         t_main = asyncio.create_task(_gen_main())
         await asyncio.sleep(2.0)
