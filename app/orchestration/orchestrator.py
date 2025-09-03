@@ -99,13 +99,20 @@ def _first_sentence_only(text: str) -> str:
     sents = _sentences(text)
     return sents[0] if sents else text
 
+# def _sanitize_greeting(text: str) -> str:
+#     """Keep only the first clean sentence; avoid echo; enforce end punctuation and short length."""
+#     s = _first_sentence_only(text or "")
+#     s = _ROLE_ANY.sub("", s).strip()
+#     low = s.lower()
+#     if "my name is" in low or low.startswith(("hi, i", "hi i", "hello i", "hey i")):
+#         s = "How can I help today?"
+#     if s and s[-1] not in ".?!":
+#         s = s + "."
+#     return _clip_words(s, 28)
+
 def _sanitize_greeting(text: str) -> str:
-    """Keep only the first clean sentence; avoid echo; enforce end punctuation and short length."""
     s = _first_sentence_only(text or "")
     s = _ROLE_ANY.sub("", s).strip()
-    low = s.lower()
-    if "my name is" in low or low.startswith(("hi, i", "hi i", "hello i", "hey i")):
-        s = "How can I help today?"
     if s and s[-1] not in ".?!":
         s = s + "."
     return _clip_words(s, 28)
@@ -116,8 +123,45 @@ TONE_HINT = {
     "warm": "Use a warmer, gentler, more encouraging tone.",
     "direct": "Use a concise, straightforward, no-fluff professional tone.",
 }
+
 def _tone_hint(tone: str) -> str:
     return TONE_HINT.get((tone or "balanced").lower(), TONE_HINT["balanced"])
+# Stronger persona + examples per tone
+TONE_PERSONA = {
+    "balanced": {
+        "persona": "Sound professional, steady, and kind. Use plain English and mild warmth.",
+        "greet_q": "What would you like to talk about today?",
+        "esq_example": (
+            "E: I hear you, and I'm glad you told me.\n"
+            "S: Try a brief 4-6 breathing: inhale 4s, exhale 6s, for 3 rounds.\n"
+            "Q: After that, what feels like one small next step?"
+        ),
+        "temperature": 0.45,
+    },
+    "warm": {
+        "persona": "Sound caring and gentle. Soften edges, use reassuring language, but stay clear.",
+        "greet_q": "What’s on your mind right now?",
+        "esq_example": (
+            "E: I'm here with you; thank you for sharing this.\n"
+            "S: Let's try a gentle grounding: name 3 things you can see and 2 you can feel.\n"
+            "Q: What would feel okay to try next?"
+        ),
+        "temperature": 0.65,
+    },
+    "direct": {
+        "persona": "Sound concise, practical, and to the point. Prefer short sentences and actionable verbs.",
+        "greet_q": "How can I help right now?",
+        "esq_example": (
+            "E: Got it. Thanks for being clear.\n"
+            "S: Do 60s box breathing: in 4s, hold 4s, out 4s, hold 4s.\n"
+            "Q: What’s one concrete step you’ll take next?"
+        ),
+        "temperature": 0.3,
+    },
+}
+def _tone_spec(tone: str) -> dict:
+    t = (tone or "balanced").lower()
+    return TONE_PERSONA.get(t, TONE_PERSONA["balanced"])
 
 
 class Orchestrator:
@@ -132,19 +176,21 @@ class Orchestrator:
 
     # ---------- Generators ----------
     async def _gen_greeting(self, user_text: str, tone: str = "balanced") -> str:
+        spec = _tone_spec(tone)
         prompt = (
             "Write a brief, friendly greeting tailored to the user's line.\n"
-            f"STYLE: {_tone_hint(tone)}\n"
+            f"STYLE: {spec['persona']}\n"
             "Rules:\n"
-            "- Keep to 1–2 short sentences (<= 28 words total).\n"
-            "- No lists, no labels, no emojis, no jokes.\n"
+            "- Use 1–2 short sentences (<= 28 words total).\n"
             "- Do not echo the user's words verbatim.\n"
-            "- End with exactly one short question.\n\n"
+            "- Avoid lists, labels, and emojis.\n"
+            f"- End with exactly one short question like: '{spec['greet_q']}' (or a close variant that fits the style).\n\n"
             f"User said: {user_text}\n"
             "Reply:"
         )
+        temp = float(spec["temperature"])
         resp = await self.main.complete(
-            prompt, temperature=0.45, top_p=0.9, max_new_tokens=60, max_time=6.0
+            prompt, temperature=temp, top_p=0.9, max_new_tokens=60, max_time=6.0
         )
         out = _strip_labels(resp or "")
         out = _sanitize_greeting(out)
@@ -283,8 +329,13 @@ class Orchestrator:
         clean = self._strip_guided_noise(raw or "")
         return clean, {"route": "mh_support", "repaired": not ok, "flow_active": True}
 
-    async def _hedged_turn_generate(self, *, question: str, history: str, context: str, plan_json: str, session_id: Optional[str] = None, tone: str = "balanced") -> str:
+    async def _hedged_turn_generate(
+        self, *, question: str, history: str, context: str, plan_json: str,
+        session_id: Optional[str] = None, tone: str = "balanced"
+    ) -> str:
         s = self.flow.load_state(session_id)
+        spec = _tone_spec(tone)
+
         main_prompt = self.compiler.compile_flow_turn(
             route="mh_support", question=question, history=history, context=context,
             technique=s.technique or "", step_index=s.step_index,
@@ -296,19 +347,24 @@ class Orchestrator:
             plan_json=plan_json or "{}", expected_question_type=s.last_question_type,
         )
 
-        # Strong, early style injection so tone actually affects output
-        style = f"STYLE (obey in wording and sentence length): {_tone_hint(tone)}\n" \
-                f"- Offer at most one suggestion and one question.\n" \
-                f"- Keep total under 55 words.\n"
+        style = (
+            f"STYLE (obey wording, length, and tone): {spec['persona']}\n"
+            "- Output must read as one natural message (no labels).\n"
+            "- Include at most ONE concrete, low-burden suggestion.\n"
+            "- Ask EXACTLY ONE short follow-up question.\n"
+            "- Keep total under 55 words.\n"
+            "Example shape:\n"
+            f"{spec['esq_example']}\n"
+        )
 
         main_prompt = f"{style}\n{main_prompt}"
         fast_prompt = f"{style}\n{fast_prompt}"
 
         async def _gen_main():
-            return await self.main.complete(main_prompt, max_time=30.0, max_new_tokens=None)
+            return await self.main.complete(main_prompt, temperature=spec["temperature"], top_p=0.9, max_time=30.0, max_new_tokens=140)
 
         async def _gen_fast():
-            return await self.main.complete(fast_prompt, max_time=8.0, max_new_tokens=80)
+            return await self.main.complete(fast_prompt, temperature=spec["temperature"], top_p=0.9, max_time=8.0, max_new_tokens=80)
 
         t_main = asyncio.create_task(_gen_main())
         await asyncio.sleep(2.0)
