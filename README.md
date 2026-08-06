@@ -1,38 +1,62 @@
-#  Intelligent Fusion System for Mental Health
+# Intelligent Fusion System for Mental Health
 
-This is an intelligent conversational AI designed for mental health support, powered by a multi-modal architecture that integrates Retrieval-Augmented Generation (RAG) with advanced Prompt Engineering.
+> 狀態：作品集代表作／研究原型。這是輔助性對話系統，不是醫療器材，不能取代心理師、醫師、診斷或緊急服務。
 
-The system fuses Cognitive Behavioral Therapy (CBT) therapeutic techniques with ICD-11 diagnostic standards to deliver a safe, personalized, and empathetic user experience. The backend is built with FastAPI for modular orchestration, while the frontend uses Next.js to create an adaptive and responsive chat interface.
+這個專案把大型語言模型、檢索增強生成（RAG）、認知行為治療（CBT）對話概念與 ICD-11 參考資料整合成一套心理健康對話系統。後端負責安全檢查、提示詞編排、記憶與模型呼叫；前端提供聊天介面。
 
----
+## 給完全新手的快速理解
 
-##  Core Features
+- **前端（`web/`）**：使用者看見並操作的網頁，技術是 Next.js、React、TypeScript 與 Tailwind CSS。
+- **後端（`app/`）**：接收前端請求、整理對話脈絡、執行 RAG 與呼叫模型，核心框架是 FastAPI。
+- **RAG**：先從資料庫找出相關內容，再交給模型回答，可降低只靠模型記憶造成的錯誤。
+- **Prompt registry**：以 YAML 管理不同語氣、任務與流程，讓提示詞不必散落在程式碼中。
+- **Safety layer**：在回覆前後執行危機語句與格式檢查；它只能降低風險，不能保證醫療安全。
 
-- **Multi-Tone Emotional Intelligence** — Dynamically adjusts its communication style between caring, professional, and balanced tones to provide empathetic interactions.
-- **Self-Optimizing Prompts** — Features built-in repair and judge services that continuously refine prompt outputs for better response quality over time.
-- **RAG-Enhanced Memory** — Utilizes a vector store to retrieve context, ensuring seamless continuity and accuracy across multi-turn conversations.
-- **CBT-Oriented Dialogue Flow** — Follows structured conversation stages inspired by Cognitive Behavioral Therapy (Assessment → Adjustment → Reflection → Wrap-up).
-- **Safety-Embedded Framework** — All conversational routes are pre-validated by structured contracts and safety filters to ensure user well-being.
+## 主要功能
 
----
+1. 依情境切換關懷、專業或平衡語氣。
+2. 以 RAG 取回相關資料，支援多輪對話脈絡。
+3. 依 CBT 概念安排評估、調整、反思與收尾階段。
+4. 使用 repair／judge 類服務檢查與改寫模型輸出。
+5. 由 Next.js 聊天介面連接 FastAPI API。
 
-##  Tech Stack
+## 目錄導覽
 
-- **Backend:** FastAPI, Python 3.10+  
-- **Frontend:** Next.js, TypeScript, TailwindCSS  
-- **LLM Integration:** Supports local or remote LLaMA-based adapters  
-- **Storage:** Vector Store (FAISS / Chroma)  
-- **Prompt Registry:** YAML-based structured prompt definitions  
+| 路徑 | 初學者解釋 |
+|---|---|
+| `app/api/` | 對外提供的 API 入口 |
+| `app/clients/` | 與語言模型或向量資料庫溝通的程式 |
+| `app/orchestration/` | 決定一次對話要依什麼順序處理 |
+| `app/prompts/` | YAML 提示詞、語氣與工作流程 |
+| `app/services/` | 對話、記憶與 RAG 等主要功能 |
+| `app/utils/` | 驗證、危機偵測等共用工具 |
+| `web/` | Next.js 前端 |
 
----
+## 本機啟動概念
 
-##  Project Structure Overview
+### 前端
 
-- /app/
-    - api/ - FastAPI endpoints
-    - clients/ - LLM and vector store clients
-    - orchestration/ - Core flow, routing, and judging logic
-    - prompts/ - YAML-based prompt registry (tones, flows, tasks)
-    - services/ - RAG, chat, and memory services
-    - utils/ - Helpers for validation, crisis detection, etc.
-- /web/ - Next.js frontend application
+1. 安裝 Node.js 18 或以上版本。
+2. 進入 `web/`。
+3. 執行 `npm install`。
+4. 複製根目錄的 `.env.example` 為 `.env`，只在自己的電腦填入值。
+5. 執行 `npm run dev`，再開啟終端機顯示的網址。
+
+### 後端
+
+後端是 Python／FastAPI 專案，但目前依賴與模型資產仍需依本機環境整理。建議先建立虛擬環境，再從實際 import 產生並鎖定依賴版本，確認入口模組後用 Uvicorn 啟動。不要把 API key、token、聊天紀錄或模型檔提交到 Git。
+
+## 安全與隱私
+
+- `.env`、session database 與壓縮備份已從目前分支移除並加入忽略規則。
+- 舊 commit 仍可能保留歷史內容；任何曾提交的金鑰都應立即撤銷並重新產生。
+- 不應把真實個案、可識別個資或未匿名化對話放入 repository。
+- 若要公開展示，請使用合成測試資料，並清楚標示研究限制與危機處理邊界。
+
+## 目前限制與下一步
+
+- 補上可重現的 Python 依賴檔與單一啟動指令。
+- 為安全規則、RAG、API 與前端加入自動化測試。
+- 將大型模型、索引與資料集移到 release、物件儲存或下載腳本。
+- 補上架構圖、螢幕截圖、測試資料與評估指標。
+- 在真實使用前進行專業倫理、隱私、資安與臨床安全審查。
